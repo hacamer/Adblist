@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: CyrAO1nZOwsdRHKx5PorZQ
+! Checksum: bVvSqY+ruo6Ol28SXrD+uQ
 ! Title: My AdFilters（for Mobile）
 ! Expires: 12 hours
-! Version: 202108091409
-! Last Modified: 2021年08月09日 14:09
+! Version: 202108092011
+! Last Modified: 2021年08月09日 20:11
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 感谢各位前辈的分享！
@@ -8509,7 +8509,7 @@ _prx/ba_$script
 /porpoiseant/*
 /prebid-worker/*
 /prebid.$domain=~prebid.org
-/prebid/*
+/prebid/*$~image
 /prebid1.
 /prebid14.js
 /prebid2.
@@ -18708,6 +18708,7 @@ _popunder+$popup
 ##.ad--mobile
 ##.ad--mpu
 ##.ad--native
+##.ad--nativeFlex
 ##.ad--no-bg
 ##.ad--noscroll
 ##.ad--object
@@ -18733,6 +18734,7 @@ _popunder+$popup
 ##.ad--stripe
 ##.ad--stroer
 ##.ad--subcontainer
+##.ad--tabletDesktop
 ##.ad--top
 ##.ad--top-label
 ##.ad--top-leaderboard
@@ -29315,6 +29317,7 @@ _popunder+$popup
 ##.sl_ad6
 ##.sl_ad7
 ##.sl_admarker
+##.slate-ad
 ##.sleekadbubble
 ##.slide-ad
 ##.slide-advert
@@ -48258,6 +48261,7 @@ menstennisforums.com#@#.top_ads
 ||pegloang.com^$popup
 ||perfecttoolmedia.com^$popup
 ||performancetrustednetwork.com^$popup
+||pertersacstyli.com^$popup
 ||pexu.com^$popup
 ||pgmediaserve.com^$popup
 ||phaurtuh.net^$popup
@@ -51512,9 +51516,10 @@ menstennisforums.com#@#.top_ads
 ||tethered-realms.valorbuff.com^
 /^https?:\/\/.*techpowerup\.com\/(?!.*img\/|review\/|forums\/).*/$image,domain=techpowerup.com
 /^https?:\/\/.*tpucdn\.com\/(?!.*images\/|img\/|review\/|forums\/).*/$image,domain=techpowerup.com
-/^https?:\/\/.*tpucdn\.com\/images\/[a-z0-9\d]{5,}\/.*/$image,domain=techpowerup.com
+/^https?:\/\/.*tpucdn\.com\/images\/[a-z0-9@\-\d]{1,4}\/.*/$image,domain=techpowerup.com
+/^https?:\/\/.*tpucdn\.com\/images\/[a-z0-9@\-\d]{5,}\/.*/$image,domain=techpowerup.com
 @@||techpowerup.com/images/logo.svg|$image,domain=techpowerup.com
-||tpucdn.com/images/8ewillrunoutofdirssoon$image,domain=techpowerup.com
+||tpucdn.com/images/-3ad$image,domain=techpowerup.com
 ||bustle.com^*/prebid-
 ||dw.com/js/advertisement/
 ||jwplatform.com/libraries/tdeymorh.js
@@ -51745,6 +51750,7 @@ $popup,third-party,domain=cloudvideo.tv|geoip.redirect-ads.com|highstream.tv|loa
 ||bit.ly^$popup,domain=dexerto.com|eteknix.com|gdriveplayer.us|kitguru.com|ouo.io|ouo.press|sh.st
 ||embed.mystream.to^$popup
 ||hurawatch.com^$popup,domain=9anime.to
+||kissanimeonline.com/driectlink$popup
 ||mp3-convert.org/p/$popup
 ||notube.lol/p/$popup
 ||sendspace.com/defaults/sendspace-pop.html$popup
@@ -54332,6 +54338,7 @@ kreationnext.com##[href^="https://kreationnext.com/servers-and-hosting/"]
 manganelo.com##[href^="https://oackoubs.com/"]
 analyticsindiamag.com##[href^="https://praxis.ac.in/"]
 analyticsindiamag.com##[href^="https://programs.upgrad.com/"]
+spys.one##[href^="https://socksescort.com/"]
 highshortinterest.com##[href^="https://tinyurl.com/"]
 cnx-software.com##[href^="https://url.cnx-software.com/"]
 businessonhome.com##[href^="https://www.binance.com/en/register?ref="]
@@ -65469,6 +65476,7 @@ _yad_jsonp_
 ||zzzyk.com/js/
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+xueqiu.com##.ad-right-aside
 szxx.com.cn###A1
 szxx.com.cn###A2
 gpcxw.com###AA2
@@ -73057,7 +73065,6 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 ||huilan.xyz^
 ||9d6k.cn^
 ||mjpiqb.cn^
-||bytegoofy.com^
 ||cqyijiu.cn^
 ||jingcaiedc.cn^
 ||tchkcc.cn^
