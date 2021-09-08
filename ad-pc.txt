@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: Pm6XTCSc0BBR0XDQPg7aug
+! Checksum: QzZaajPf52hf9oiVU/vP9g
 ! Title: My AdFilters（for PC）
 ! Expires: 12 hours
-! Version: 202109080825
-! Last Modified: 2021年09月08日 08:25
+! Version: 202109081409
+! Last Modified: 2021年09月08日 14:09
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -25087,6 +25087,7 @@ _800x80_
 ##.gallery_ad_wrapper
 ##.gallery_ads_box
 ##.gallery_post--interstitial_ad
+##.galleryad
 ##.galleryads
 ##.gam-300x250-default-ad-container
 ##.gam-ad
@@ -51185,6 +51186,7 @@ codinghorror.com,stackoverflow.com###hireme
 weedhire.com###hireology
 navysports.com,texassports.com###holder-skyscraper
 goairforcefalcons.com,gopack.com,goterriers.com,texassports.com,umassathletics.com###holder-story
+carmag.co.za###home-leaderboard
 transfermarkt.com###home-rectangle-spotlight
 downloadsafer.com###homebannerbottom
 semiconductor-today.com###homeright
@@ -51468,7 +51470,7 @@ capetownmagazine.com###top-leader-wrapper
 thegazette.com###top-leaderboard
 gogetaroomie.com###top-space
 imassera.com###top-sponsor
-gamepur.com###top-sticky-sidebar-wrapper
+dotesports.com,gamepur.com###top-sticky-sidebar-wrapper
 nytimes.com,nytimes3xbfgragh.onion###top-wrapper
 danpatrick.com###topBannerContainer
 investing.com###topBroker
@@ -52210,6 +52212,7 @@ bizarrepedia.com##.holder
 newagebd.net##.homeSlideRightSecTwo
 pbs.org##.home__logo-pond
 geekwire.com##.home_listing
+carmag.co.za##.homepage-300x250-banner
 smallbusiness.co.uk##.homepage-banner-container
 designspiration.com##.homepageBanner
 lushstories.com##.horizhide
@@ -52264,6 +52267,7 @@ formula1.com##.js-promo-item
 stackoverflow.com##.js-sidebar-zone
 theguardian.com##.js-top-banner
 calorieking.com##.jss2
+offerup.com##.jss301
 calorieking.com##.jss356
 essentiallysports.com##.jsx-4249843366
 filecrypt.co##.kda25h1gd_ip
@@ -53146,6 +53150,7 @@ howtogeek.com##div[id^="purch_"]
 sltrib.com##div[id^="sltrib-promo-"]
 nytimes.com##div[id^="story-ad-"]
 filehorse.com##div[id^="td-"]
+weraveyou.com##div[id^="werav-"]
 opensubtitles.org##div[itemscope=""][itemtype="http://schema.org/Movie"] > fieldset
 audiofanzine.com##div[style*="height: 90px;"]
 avherald.com##div[style*="height:250px"]
@@ -61420,7 +61425,6 @@ _yad_jsonp_
 ||kancloud.cn/ad/
 ||kanguba.com/file/js/main.asp
 ||kanjiantu.com/images/*.gif
-||kanjiantu.com/images/2020/*.gif
 ||kanjuwo.com/js/6
 ||kanjuwo.com/js/8
 ||kankanmi.com/js/zjgg
@@ -71101,9 +71105,9 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 @@||zmtt.net^$script,domain=luoqiuzw.com
 !#Novels
 ||cxyldc.com^
-||xahydp.cn^
-||fqigyr.xyz^
+||f8ij9.life^
 ||wuxiap.xyz^
+||jiangjinghe.top^
 ###chaptername + div > div[style="padding:10px;border-radius:10px;background-color:green;"]
 ###content > div[style="padding:10px!important;border-radius:10px;background-color:green;"]
 ###downdiv > .downcode
@@ -86700,6 +86704,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||marktplaats.net/cnt/
 ||npo.nl/divolte/tt/web-event?$domain=zapp.nl
 ||sp.dpgmedia.net^
+||stat.24liveplus.com^
 ||statistics.rbi-nl.com^
 ||ugent.be/js/log.js
 ||counter.zone.ee^$third-party
@@ -87122,7 +87127,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||about.me/track?
 ||academia.edu/record_hit
 ||accuterm.com/data/stat.js
-||acronymfinder.com/~/st/af.js
+||acronymfinder.com/~/tr.ashx
 ||activate.latimes.com/pc/caltimes/?pulse2001=
 ||active.com/ig.track.js
 ||adc-js.nine.com.au^
@@ -98073,6 +98078,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||googleoptimize.com/optimize.js$script,domain=tentree.ca
 @@||googletagmanager.com/gtm.js$domain=ads.spotify.com
 @@||gstatic.com^*/firebase-performance-standalone.js$script,domain=flightradar24.com
+@@||healthgateway.gov.bc.ca/snowplow.js$~third-party
 @@||humaninterest.com/api/analytics/$script,~third-party
 @@||kbctouch.kbc.be^*/dynatrace-$script,~third-party
 @@||lenovo.com/fea/js/adobeAnalytics/adobeAnalytics-searchComponent.js$xmlhttprequest,domain=lenovo.com
