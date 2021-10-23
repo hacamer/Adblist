@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: VWveNkuN8ncDmkefTU/chg
+! Checksum: EwQVEvyvfKksr8TWalCUpQ
 ! Title: AdFilters
 ! Expires: 12 hours
-! Version: 202110230830
-! Last Modified: 2021年10月23日 08:30
+! Version: 202110231409
+! Last Modified: 2021年10月23日 14:09
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、EasyPrivacy，感谢各位大大的分享！
 ! 仅合并规则，未做其余任何处理
@@ -137,6 +137,7 @@ xz6d.com
 ! EasyList China
 !-----------------------General advert blocking filters-----------------------!
 -1688-wp-media/ads/
+/2048/aps/*_pc.js
 -880-80-4.jpg
 -90mh-gg.
 .bid/ads/
@@ -9204,8 +9205,11 @@ _yad_jsonp_
 ||zzsky.cn/images/a_d_
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
+||maxthonimg.com/v6/festival/
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+maxthon.cn##.top-right-pop-wrapper
+maxthon.cn###festival-skin-link
 szxx.com.cn###A1
 szxx.com.cn###A2
 gpcxw.com###AA2
@@ -28404,6 +28408,7 @@ _mongo_stats/
 ||api64.com^$third-party
 ||apicit.net^$third-party
 ||apollofind.com^$third-party
+||apolloprogram.io^$third-party
 ||appboycdn.com^$third-party
 ||appcast.io^$third-party
 ||appn.center^$third-party
@@ -28708,6 +28713,7 @@ _mongo_stats/
 ||cogmatch.net^$third-party
 ||cognativex.com^$third-party
 ||cognitivematch.com^$third-party
+||cognitivlabs.com^$third-party
 ||cohesionapps.com^$third-party
 ||coll2onf.com^$third-party
 ||collarity.com^$third-party
@@ -28940,6 +28946,7 @@ _mongo_stats/
 ||enquisite.com^$third-party
 ||ensighten.com^$third-party
 ||enticelabs.com^$third-party
+||entravision.com^$third-party
 ||eolcdn.com^$third-party
 ||ep4p.com^$third-party
 ||eperfectdata.com^$third-party
@@ -29376,6 +29383,7 @@ _mongo_stats/
 ||ipv6monitoring.eu^$third-party
 ||iqdata.ai^$third-party
 ||iqfp1.com^$third-party
+||iqm.com^$third-party
 ||ironbeast.io^$third-party
 ||ist-track.com^$third-party
 ||istrack.com^$third-party
@@ -29435,6 +29443,7 @@ _mongo_stats/
 ||klldabck.com^$third-party
 ||km-sea.net^$third-party
 ||kmtx.io^$third-party
+||knorex.com^$third-party
 ||knowledgevine.net^$third-party
 ||koddi.com^$third-party
 ||koji-analytics.com^$third-party
@@ -30705,6 +30714,7 @@ _mongo_stats/
 ||webiqonline.com^$third-party
 ||webleads-tracker.com^$third-party
 ||webmasterplan.com^$third-party
+||weborama.com^$third-party
 ||website-hit-counters.com^$third-party
 ||websiteceo.com^$third-party
 ||websiteonlinecounter.com^$third-party
@@ -32876,7 +32886,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||check.ddos-guard.net^$third-party
 ||check.deadlinefunnel.com^$third-party
 ||checkout.com/logger/
-||chicoryapp.com/widget_v2/
+||chicoryapp.com^$third-party
 ||choicestream.com^*/pixel/
 ||chtah.com/a/*/spacer-0.gif$third-party
 ||chtah.com^*/1x1.gif
@@ -36497,6 +36507,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||windy.com/sedlina/ga/
 ||wolfram.com/common/javascript/wal/
 ||wscdn.com/analytics/
+||wsj.com/asset/amt.js
 ||wstats.e-wok.tv^
 ||wtk.db.com^
 ||xfinity.com/event/
@@ -46216,6 +46227,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||ftchinese.com/js/log.js
 ||funshion.com/interface/
 ||gia.jd.com^
+||gk.sina.cn^
 ||hdslb.com/images/isptrack.js
 ||hhytrace.sogoucdn.com^
 ||his.tv.sohu.com/his/ping.do?
@@ -46241,7 +46253,9 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||log.flight.qunar.com^
 ||log.kuwo.cn^
 ||log.m.sm.cn^
+||log.sina.cn^
 ||log1.17173.com^
+||log2.sina.cn^
 ||loginlog.sdo.com^
 ||logs.51cto.com^
 ||logstat.caixin.com^
