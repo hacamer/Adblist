@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: 2vzL3uCzJAUvj/sMKYOfZg
+! Checksum: BKdKflKMawCZ3Bl1W4pdnA
 ! Title: CJX's AdFilters
 ! Expires: 12 hours
-! Version: 202111132011
-! Last Modified: 2021年11月13日 20:11
+! Version: 202111140208
+! Last Modified: 2021年11月14日 02:08
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 仅合并规则，未做其余任何处理
@@ -1517,10 +1517,12 @@ _xiuno_com_ad/
 ##script[src="/templates/frontend/frontend-jiucao/js/jquery.lazyload.min.js"] + .footer_app_box
 ##span[title="neteasefooter"]
 ##style + .vdgdo
+##.stui-pannel > .recommend-two
 ##table[style="border:#7D8C8E solid 1px;height: 30px;text-align: center;"]
 !----------------------------------Ads-Union----------------------------------!
 -*-*-*-*.panda^$script,third-party
 ||lm465.com^
+||bhyblanket.cn^
 .8ox.cn
 .cc/s.php?id=$script,third-party
 .cn/?ss=$script,third-party
@@ -9230,8 +9232,8 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zx590.com/assets/style/js/paigu.js
 ||zxdy777.com/myimg/
 ||zxip.com/2013_ad/
-||zxzj.me/slade
-||zxzj.me/t.js
+||zxzj.fun/slade
+||zxzj.fun/t.js
 ||zywlyy.cn/JS/
 ||zzbaike.com/main/*-20
 ||zzbaike.com/main/arvixe
@@ -9244,8 +9246,14 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
 ||lovek01.com/gif/97-
+||yinghuacd.com/bar/
+||wnacgs.com/data/game/
+||hentaicomic.org/data/game/
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+10besty.com##.banner
+zhenbuka3.com###player_pause
+3dmgame.com##div[class$=" downl_list"]
 nfmovies.com##[onclick^="openurl()"]
 mydowndown.com#?#.bs-component:-abp-has(>a[href*="97jez.com"])
 ctwant.com##.l-ad__wrapper
@@ -11607,7 +11615,7 @@ ifeng.com##.cont_bottom_YySmall
 u-car.com.tw##.contad
 u-car.com.tw##.contad_text
 dragon-guide.net##.container > .gutter:first-child
-zxzj.me##.container > .none
+zxzj.fun##.container > .none
 ygdy8.cc##.container > a[href^="/"]
 rijutv.co##.container > div[style="height: 128px;"]
 vpsdx.com##.container-fluid > .gsfha3 > .gsfha3
@@ -14897,6 +14905,8 @@ fjsen.com,nuomi.com#@#.right-ad
 perfectmatch.tw#@#.right_ad
 360zbz.com#@#.rightad
 zdface.com#@#.top-ad
+hentaicomic.org,wnacg.com,wnacg.org,wnacg4.com,wnacgs.com#@#.google-ads
+hentaicomic.org,wnacg.com,wnacg.org,wnacg4.com,wnacgs.com#@##adsbox
 andylain.com,bee.coupons,blogspot.com,blogspot.hk,blogspot.jp,blogspot.tw,comic.tw,jasonblog.tw#@#.vertical-ads
 i-cable.com#@#.video_ad
 bitauto.com,yinyuetai.com#@#a[href^="http://ad.doubleclick.net/"]
@@ -16920,6 +16930,7 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 ||oxmun.com^
 ||scenegame.cn^
 ||mjywk.cn^
+/jun0120211112090740.
 ###asdw3
 ###asdw3 + img + :not(div)
 ###chaptername + div > div[style="padding:10px;border-radius:10px;background-color:green;"]
