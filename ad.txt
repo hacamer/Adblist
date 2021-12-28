@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: 5J2k+nakMm/kK8AkJkyYIg
+! Checksum: sOWNPp4dT/xorDuaQ2f/HA
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202112280209
-! Last Modified: 2021年12月28日 02:09
+! Version: 202112281410
+! Last Modified: 2021年12月28日 14:10
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -1697,6 +1697,8 @@ ubmcmm.baidustatic.com
 ##.ggpost-below
 ##.ggtop
 ##.ggw
+###player_pause > .tip + A[target="_blank"]
+##.txp_ad[data-role="txpad-interact-pause"]
 ##.global_video_bottom_dbtc
 ##.google-ad2_fixed
 ##.google_adsense2
@@ -2162,6 +2164,8 @@ ubmcmm.baidustatic.com
 ##img[onclick*="/c7.net/"]
 !----------------------------------Ads-Union----------------------------------!
 .8ox.cn
+||hbys66.com^
+||xahggy.com^
 ||00-gov.cn^
 ||000123456789.site^
 ||0024aaaa.com^
@@ -9731,6 +9735,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||2114.com/zb_users/script/advertise.js
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+bilibili.com#?#.bili-video-card:-abp-has(.bili-video-card__info--ad-img)
 hao.360.com#?#.cube-mod:-abp-has(> .cube-bd > .cube-card > .project-root > ._CUBE_A_D_CLK_)
 szxx.com.cn###A1
 szxx.com.cn###A2
@@ -17517,6 +17522,16 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 @@||pstatp.com/cdn/*/jquery/$script,domain=bxwx11.com
 @@||zmtt.net^$script,domain=luoqiuzw.com
 !#Novels
+||zixiaxianhua.shop^
+||yumu.pro^
+||bcjxwlkj.com^
+||jiucaishuo.cn^
+||justwkj.xyz^
+||ssjxwlkj.com^
+||runtai369.cn^
+||yini.link^
+||kuangbang.ltd^
+||thjxwlkj.com^
 ##a[href$=".120ydrayy.com"]
 ##a[href*=".1956hl.com/"]
 ##a[href*=".233787.com/"]
