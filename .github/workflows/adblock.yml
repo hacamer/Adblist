@@ -123,8 +123,8 @@ jobs:
         run: |
           rm -rf download new old_no_title
           sed -i '/url =/d' ./.git/config
-          git config --local user.name "actions"
-          git config --local user.email "action@github.com"
+          git config --local user.name "hacamer"
+          git config --local user.email "hcamer145@gmail.com"
           #git config --add core.compression -1
           git add --all
           git commit -m "${{ env.RELEASE_NAME }}"
