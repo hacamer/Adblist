@@ -1,7 +1,7 @@
 name: Build adblock rules files
 on:
   schedule:
-    - cron: 0 */6 * * *
+    - cron: 0 */1 * * *
   push:
     branches:
       - "master"
@@ -68,7 +68,7 @@ jobs:
         run: |
           mkdir -p ./new/
           cd ./download
-          cat ../mod/GeneralBlock.txt ../mod/TiebaBlock.txt easylist.txt easylistchina.txt easyprivacy.txt cjx-annoyance.txt xinggsf-mv.txt > ../new/ad-pc.txt
+          cat ../mod/GeneralBlock.txt ../mod/TiebaBlock.txt easylist.txt easylistchina.txt easyprivacy.txt cjx-annoyance.txt antiadblockfilters.txt abp-filters-anti-cv.txt anti-adblock-killer-filters.txt > ../new/ad-pc.txt
           cat ../mod/GeneralBlock.txt easylist.txt easylistchina.txt easyprivacy.txt cjx-annoyance.txt > ../new/ad-mo.txt
           cat ../mod/GeneralBlock.txt ../mod/TiebaBlock.txt xinggsf-mv.txt easylistchina.txt cjxlist.txt cjx-annoyance.txt > ../new/ad.txt
           cat xinggsf-mv.txt easylistchina.txt cjxlist.txt cjx-annoyance.txt > ../new/ad2.txt
