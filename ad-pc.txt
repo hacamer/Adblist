@@ -1,9 +1,9 @@
 [Adblock Plus 3.0]
-! Checksum: TKwn2P0ndnDsCh1fPW/2nA
+! Checksum: lX4NqnnV8b2BghypjZUSPA
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202202220829
-! Last Modified: 2022年02月22日 08:29
+! Version: 202202221022
+! Last Modified: 2022年02月22日 10:22
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -1176,7 +1176,7 @@ tieba.baidu.com##.tuijian-wrap
 /ad-exchange.
 /ad-feature-
 /ad-feedback.
-/ad-feedback/*
+/ad-feedback/*$~image
 /ad-fix-
 /ad-flashgame.
 /ad-format.
@@ -18932,6 +18932,7 @@ _800x80_
 ##.ad-under-video
 ##.ad-unit
 ##.ad-unit--leaderboard
+##.ad-unit-2
 ##.ad-unit-300
 ##.ad-unit-300-wrapper
 ##.ad-unit-970x90
@@ -54271,6 +54272,7 @@ nitrome.com###mu_3_container
 atlantatribune.com,footballleagueworld.co.uk,ripplecoinnews.com,tribune.net.ph###mvp-leader-wrap
 twinfinite.net###mvp-main-content-wrap
 mediaupdate.co.za###mycarousel
+mangareader.cc###myModal
 comicbook.com###native-plus-top1
 comicbook.com###native-plus-top2
 gearspace.com###navbar_notice_617
@@ -57200,6 +57202,7 @@ porngals4.com##.affl
 darknessporn.com##.after-boxes
 hentaidude.xxx##.ai_widget
 hotmovs.com,upornia.com##.app-banners
+hotmovs.tube##.app-banners__wrapper
 xnxxhd.pro##.approve
 fuqer.com##.area
 sextb.net##.asg-overlay
@@ -57413,7 +57416,7 @@ hentaistream.com##.othercontent
 beemtube.com##.overspot
 javtiful.com##.p-0[style="margin-top: 0.45rem !important"]
 empflix.com##.pInterstitialx
-hclips.com##.partners-wrap
+hclips.com,hotmovs.tube##.partners-wrap
 xfantazy.com##.partwidg1
 vxxx.com##.pgyytpktyka
 bigtitslust.com,sortporn.com##.pignr.item
@@ -57535,8 +57538,10 @@ megatube.xxx##.video-filter-1
 ok.xxx,pornhat.com##.video-link
 pornzog.com##.video-ntv
 pornhdtube.tv##.video-overlay
+hotmovs.tube##.video-page > .block_label > div
 thegay.com##.video-page__content > .right
 pornhd.com##.video-player-overlay
+hotmovs.tube##.video-right-top
 pornez.net##.video-sidebar
 pornhub.com,pornhubthbh7ap3u.onion##.video-wrapper > #player + [class]
 javynow.com##.videos-ad__ad
@@ -75497,6 +75502,11 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 @@||pstatp.com/cdn/*/jquery/$script,domain=bxwx11.com
 @@||zmtt.net^$script,domain=luoqiuzw.com
 !#Novels
+||htft.store^
+||zhaovip.site^
+##a[href*=".xxmh871.com/"]
+||haohuisheng555.cn^
+||valarmorghulis.top^
 ##a[href$=".120ydrayy.com"]
 ##a[href*=".1956hl.com/"]
 ##a[href*=".233787.com/"]
