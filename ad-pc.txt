@@ -1,9 +1,9 @@
 [Adblock Plus 3.0]
-! Checksum: ffD3KqXhqVKbPrPgjEyWOw
+! Checksum: Ija2dGrXxQtdKne++fzFAg
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202202231208
-! Last Modified: 2022年02月23日 12:08
+! Version: 202202231409
+! Last Modified: 2022年02月23日 14:09
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -1238,7 +1238,7 @@ tieba.baidu.com##.tuijian-wrap
 /ad-overlay-
 /ad-overlay.
 /ad-page/*$~image
-/ad-plate/*
+/ad-plate/*$~image
 /ad-plugin/*
 /ad-point/*
 /ad-position-
@@ -41996,6 +41996,7 @@ tf2r.com#@#.adverts
 ||pagnookr.net^
 ||paht.tech^
 ||pahtzh.tech^
+||paid.outbrain.com^
 ||pailridarm.com^
 ||painfullyneattide.com^
 ||painlessassumedbeing.com^
@@ -47649,7 +47650,9 @@ tf2r.com#@#.adverts
 ||zzghcckpzlhob.com^
 ||zzoacwqfw.com^
 ||bet365.com/*?affiliate=$document
+||dianomi.com^$document
 ||maquiags.com^$document
+||paid.outbrain.com^$document
 ||popcash.net^$document
 ||popmyads.com^$document
 ||exoclick.com^$third-party
@@ -51619,6 +51622,7 @@ tf2r.com#@#.adverts
 ||ad.about.co.kr^
 ||ad.bitbay.net^
 ||ad.bitmedia.io^
+||ad.doubleclick.net/ddm/clk/$domain=ad.doubleclick.net
 ||ad.edugram.com^
 ||ad.jamba.net^
 ||ad.mail.ru^$domain=~mail.ru|~sportmail.ru
@@ -52403,8 +52407,7 @@ tf2r.com#@#.adverts
 ||cdn.optmd.com^$popup
 ||chaturbate.com/affiliates/$popup
 ||cyberprivacy.pro^$popup
-||dianomi.com/*&offer=$popup
-||dianomi.com/*.epl$popup
+||dianomi.com^$popup
 ||download-step1.com^$popup
 ||downloadoperagx.com/ef/$popup
 ||eatcells.com/landing/$popup
@@ -52826,6 +52829,8 @@ tf2r.com#@#.adverts
 ||devicespecifications.com/images/merchant/
 ||dg-premium.com/wp-content/themes/dg-premium/img/siemens.svg
 ||dhakatribune.com/dynamics/dhakaadvs/
+||dianomi.com/brochures.epl?
+||dianomi.com/click.epl
 ||digitalmediaworld.tv/images/banners/
 ||diglloyd.com/js2/pub-wide2-ck.js
 ||directory.romania-insider.com^$subdocument
@@ -67564,8 +67569,10 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zzsky.cn/images/a_d_
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
+||mydrivers.com/img/2005/xrkoray.
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+mydrivers.com##.adds
 szxx.com.cn###A1
 szxx.com.cn###A2
 gpcxw.com###AA2
@@ -75447,6 +75454,10 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 !#Novels ads union
 ||fyan.tech^
 ||sdskj.club^
+||rvpbdcf.cn^
+||yanghuaer.mobi^
+||zllxy.love^
+||edajot.cn^
 ||ahuang.site^
 ||friendliness.work^
 ##a[href$=".120ydrayy.com"]
