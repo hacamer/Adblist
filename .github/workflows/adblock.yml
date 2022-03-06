@@ -117,6 +117,17 @@ jobs:
             *
             !./.git/
 
+      - name: Updata AdGuardFilter
+        run: |
+            cd ./filter/adguard/
+            wget https://filters.adtidy.org/android/filters/2.txt
+            wget https://filters.adtidy.org/android/filters/11.txt
+            wget https://filters.adtidy.org/android/filters/3.txt
+            wget https://filters.adtidy.org/android/filters/224.txt 
+            wget https://filters.adtidy.org/android/filters/14.txt
+            wget https://filters.adtidy.org/android/filters/5.txt
+            wget https://filters.adtidy.org/android/filters/4.txt
+
       - name: Git push assets to "master" branch
         continue-on-error: true
         if: steps.diffResult.outputs.status == 'success'
