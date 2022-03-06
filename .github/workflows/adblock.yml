@@ -118,6 +118,7 @@ jobs:
         run: |
           rm -rf download new old_no_title
           sed -i '/url =/d' ./.git/config
+          git init
           git config --local user.name "hacamer"
           git config --local user.email "hcamer145@gmail.com"
           #git config --add core.compression -1
