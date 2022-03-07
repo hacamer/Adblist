@@ -1,0 +1,35 @@
+name: Update Rules
+on: 
+  push:
+    branches:
+     - main
+  workflow_dispatch:
+  schedule:
+    - cron:  '30 */1 * * *'
+
+
+jobs:
+  Pushed:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@main           
+      - name: Updata AdGuardFilter
+        run: |
+            cd filter/adguard
+            wget https://filters.adtidy.org/android/filters/2.txt
+            wget https://filters.adtidy.org/android/filters/11.txt
+            wget https://filters.adtidy.org/android/filters/3.txt
+            wget https://filters.adtidy.org/android/filters/224.txt 
+            wget https://filters.adtidy.org/android/filters/14.txt
+            wget https://filters.adtidy.org/android/filters/5.txt
+            wget https://filters.adtidy.org/android/filters/4.txt
+
+      - name: Git push assets to github
+        run: |
+          git init
+          git config --local user.name "hacamer"
+          git config --local user.email "hcamer145@gmail.com"
+          git branch -m main
+          git add .
+          git commit -m "Updated at $(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')（北京时间）"
+          git push -
