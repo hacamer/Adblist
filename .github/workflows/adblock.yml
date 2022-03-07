@@ -21,7 +21,7 @@ jobs:
           echo "TAG_NAME=$(date -d "8 hour" -u +%Y%m%d%H%M)" >> $GITHUB_ENV
           echo "MODIFIED_TIME=$(date -d "8 hour" -u "+%Y年%m月%d日 %H:%M")" >> $GITHUB_ENV
           echo "EASYLIST_URL=https://easylist-downloads.adblockplus.org/easylist.txt" >> $GITHUB_ENV
-          echo "EASYLISTCHINA_URL=https://easylist-downloads.adblockplus.org/easylistchina.txt" >> $GITHUB_ENV
+          echo "EASYLISTCHINA_URL=https://easylist-downloads.adblockplus.org/easylistchina+easylistchina_compliance+easylist.txt" >> $GITHUB_ENV
           echo "EASYPRIVACY_URL=https://easylist-downloads.adblockplus.org/easyprivacy.txt" >> $GITHUB_ENV
           echo "CJXLIST_URL=https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt" >> $GITHUB_ENV
           echo "CJX_ANNOYANCE_URL=https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt" >> $GITHUB_ENV
@@ -118,14 +118,16 @@ jobs:
         run: |
           rm -rf download new old_no_title
           sed -i '/url =/d' ./.git/config
-          git init
           git config --local user.name "hacamer"
           git config --local user.email "hcamer145@gmail.com"
           #git config --add core.compression -1
           git add --all
           git commit -m "${{ env.RELEASE_NAME }}"
+          git remote set-url --add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
+          git remote set-url --add origin "https://${{ secrets.GITEE_ACCOUNT }}:${{ secrets.GITEE_PASSWORD }}@gitee.com/${{ secrets.GITEE_NAME }}/list.git"
+          git remote set-url --add origin "https://${{ secrets.CODING_ACCOUNT }}:${{ secrets.CODING_PASSWORD }}@e.coding.net/${{ secrets.CODING_NAME }}/list.git"
           git fetch --unshallow origin
-          git push -u origin master -f
+          git push -u origin master
       - name: Purge jsdelivr cache
         if: steps.diffResult.outputs.status == 'success'
         run: |
