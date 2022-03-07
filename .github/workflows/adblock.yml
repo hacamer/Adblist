@@ -124,7 +124,7 @@ jobs:
           #git config --add core.compression -1
           git add --all
           git commit -m "${{ env.RELEASE_NAME }}"
-          #git fetch --unshallow origin
+          git fetch --unshallow origin
           git push -u origin master -f
       - name: Purge jsdelivr cache
         if: steps.diffResult.outputs.status == 'success'
