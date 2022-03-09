@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: yrnseuyFi/rFElMh1yZ5zQ
+! Checksum: yaek9uOzobSUhXWEhZEFtw
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202203100615
-! Last Modified: 2022年03月10日 06:15
+! Version: 202203100654
+! Last Modified: 2022年03月10日 06:54
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -10744,8 +10744,10 @@
 ##.ad-mobile-300x250
 ##.ad-mobile-300x50
 ##.ad-mobile-banner
+##.ad-mobile-flex-inc
 ##.ad-mobile-flex-pos2
 ##.ad-mobile-mpu
+##.ad-mobile-mpu-plus-outstream-inc
 ##.ad-mod
 ##.ad-module
 ##.ad-mount
@@ -28464,7 +28466,7 @@ $websocket,domain=pornhub.com|pornhubthbh7ap3u.onion|redtube.com|redtube.com.br|
 /adverserve.
 /adversting/*
 /adversting?
-/advert-$domain=~advert-solutions.com|~advert-technology.com|~advert-technology.ru
+/advert-$domain=~advert-ai-landing.firebaseapp.com|~advert-ai-landing.web.app|~advert-ai.com|~advert-solutions.com|~advert-technology.com|~advert-technology.ru
 /advert.
 /advert.$~script,domain=~advert.ae|~advert.club|~advert.ee|~advert.io|~advert.media|~advert.org.pl|~motortrader.com.my
 /advert/*
@@ -33054,6 +33056,7 @@ $websocket,domain=pornhub.com|pornhubthbh7ap3u.onion|redtube.com|redtube.com.br|
 @@||ads.instacart.com/admin/$~third-party
 @@||ads.instacart.com^$popup
 @@||ads.kazakh-zerno.net^$popup
+@@||ads.kbmax.com^$domain=adspipe.com
 @@||ads.memo2.nl/banners/$subdocument
 @@||ads.microsoft.com^$popup
 @@||ads.midwayusa.com^$popup
@@ -64728,7 +64731,6 @@ zznews.cn##.ad:not([style])
 ||leadfamly.com/campaign/sdk/popup.min.js
 ||leadmediapartners.com^
 ||leadsleap.com/widget/
-||leadsleap.com^$third-party
 ||leadzu.com^$third-party
 ||leadzutw.com^
 ||leagent.info^

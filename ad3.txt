@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: urXgeZH+KpTu6CwlbfvNKw
+! Checksum: O01184jAGlFXh1bA8Sk5aw
 ! Title: AdFilters
 ! Expires: 12 hours
-! Version: 202203100615
-! Last Modified: 2022年03月10日 06:15
+! Version: 202203100654
+! Last Modified: 2022年03月10日 06:54
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、EasyPrivacy，感谢各位大大的分享！
 ! 仅合并规则，未做其余任何处理
@@ -10743,8 +10743,10 @@
 ##.ad-mobile-300x250
 ##.ad-mobile-300x50
 ##.ad-mobile-banner
+##.ad-mobile-flex-inc
 ##.ad-mobile-flex-pos2
 ##.ad-mobile-mpu
+##.ad-mobile-mpu-plus-outstream-inc
 ##.ad-mod
 ##.ad-module
 ##.ad-mount
@@ -29339,7 +29341,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /adverserve.
 /adversting/*
 /adversting?
-/advert-$domain=~advert-solutions.com|~advert-technology.com|~advert-technology.ru
+/advert-$domain=~advert-ai-landing.firebaseapp.com|~advert-ai-landing.web.app|~advert-ai.com|~advert-solutions.com|~advert-technology.com|~advert-technology.ru
 /advert.
 /advert.$~script,domain=~advert.ae|~advert.club|~advert.ee|~advert.io|~advert.media|~advert.org.pl|~motortrader.com.my
 /advert/*
@@ -38759,6 +38761,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||ads.instacart.com/admin/$~third-party
 @@||ads.instacart.com^$popup
 @@||ads.kazakh-zerno.net^$popup
+@@||ads.kbmax.com^$domain=adspipe.com
 @@||ads.memo2.nl/banners/$subdocument
 @@||ads.microsoft.com^$popup
 @@||ads.midwayusa.com^$popup
@@ -69088,7 +69091,7 @@ zznews.cn##.ad:not([style])
 ||email.mccoys.com^
 ||email.mediafire.com/wf/open?$third-party
 ||email.member.theknot.com^
-||email.mg.everyonesocial.com^
+||email.mg.everyonesocial.com^$image,script
 ||email.mymandg.co.uk^
 ||email.participaction.com^
 ||email.pray.com^
