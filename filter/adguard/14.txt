@@ -1,8 +1,8 @@
-! Checksum: o5R+D1GFjmJ7Jvajkn2p4Q
+! Checksum: yzo8wOMbUk2Px90RbpEXBw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.11.74
-! TimeUpdated: 2022-03-10T12:30:43+00:00
+! Version: 2.1.11.75
+! TimeUpdated: 2022-03-10T13:02:10+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -3109,6 +3109,7 @@ hgtv.com#@#.showads
 !
 !
 !
+portfolio.hu#%#//scriptlet("abort-current-inline-script", "document.getElementById", "adblock")
 masterduelmeta.com#%#//scriptlet('set-local-storage-item', 'adbViews', '0')
 ||cdn.intergient.com/pageos/pageos.js$xmlhttprequest,redirect=nooptext,domain=masterduelmeta.com
 designtagebuch.de###steady-adblock-overlay-container
@@ -4857,6 +4858,7 @@ postimees.ee#%#//scriptlet('remove-class', 'cookie-paywall-visible', 'article')
 it-actual.ru#$#.adsbygoogle { transform: scale(0) !important; height: 0 !important; }
 !
 !#safari_cb_affinity(general)
+@@||assets.portfolio.hu/js/ad_300x250.js
 postimees.ee#@#.dfp_ad
 @@||flightsim.to/doubleserve.js
 @@||flyertalk.com/ad.min.js
