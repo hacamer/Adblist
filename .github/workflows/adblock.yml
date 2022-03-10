@@ -58,16 +58,8 @@ jobs:
           curl -sSL $ABP_FILTERS_ANTI_CV_URL | sed -e '1c ! abp-filters-anti-cv' -e '/^! Checksum/,/adblockplus.org/d' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./abp-filters-anti-cv.txt
           curl -sSL $ANTI_ADBLOCK_KILLER_FILTERS_URL | sed -e '1c ! AakList (Anti-Adblock Killer)' -e '/^! Title/,/^! RegExpVisualizer/d' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./anti-adblock-killer-filters.txt
           for i in $(ls *.txt); do
-            if [[ `cat $i |wc -l` -eq 0 ]]; then
-              echo "::set-output name=status::failed"
-              break
-            else
-              echo "::set-output name=status::success"
-              echo "" >> $i
-            fi
-          done
+
       - name: Generate adblock files
-        if: steps.download.outputs.status == 'success'
         run: |
           mkdir -p ./new/
           cd ./download
@@ -83,14 +75,12 @@ jobs:
 
       - name: Deliver download Dir
         uses: actions/upload-artifact@v2
-        if: steps.download.outputs.status == 'failed'
         with:
           name: AllFiles
           path: |
             ./download/
       - name: Deliver new and old_no_title Di
         uses: actions/upload-artifact@v2
-        if: steps.diffResult.outputs.status == 'failed'
         with:
           name: AllFiles
           path: |
@@ -99,7 +89,6 @@ jobs:
 
       - name: Git push assets to "master" branch
         continue-on-error: true
-        if: steps.diffResult.outputs.status == 'success'
         run: |
           rm -rf download new old_no_title
           sed -i '/url =/d' ./.git/config
@@ -114,7 +103,6 @@ jobs:
           git fetch --unshallow origin
           git push -u origin master
       - name: Purge jsdelivr cache
-        if: steps.diffResult.outputs.status == 'success'
         run: |
           result=$(curl -s https://purge.jsdelivr.net/gh/hacamer/adblist@master/)
           if echo $result |grep -q 'success.*true'; then
