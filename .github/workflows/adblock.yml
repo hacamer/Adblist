@@ -72,7 +72,7 @@ jobs:
             sed -i '/^$/d' $i
           done
           cd ../
-          mv ./new/* ../ 
+          #mv ./new/* ../ 
       - name: Diff and addChecksum
         run: |
           mkdir -p ./old_no_title/
