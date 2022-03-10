@@ -71,7 +71,7 @@ jobs:
           for i in $(ls ../new/*.txt); do
             sed -i '/^$/d' $i
           done
-
+          mv ./new/* ./ 
       - name: Deliver download Dir
         uses: actions/upload-artifact@v2
         with:
