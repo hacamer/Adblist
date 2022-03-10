@@ -1,8 +1,8 @@
-! Checksum: JnqqiPIpF6UPJtP6cZuF5w
+! Checksum: f2yF+woXuPlWu5Apd+1l+w
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.11.78
-! TimeUpdated: 2022-03-10T15:30:37+00:00
+! Version: 2.1.11.79
+! TimeUpdated: 2022-03-10T16:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -18530,6 +18530,8 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+newsdigest.jp##.app-banner__inner
+newsdigest.jp##.post-inarticle-banner
 voicy.jp##.leftmenu-app-leading
 101soundboards.com##.appStoresContainer
 ask.fm##.lightbox_overlay
@@ -33750,6 +33752,7 @@ twgreatdaily.com$$script[tag-content="indexOf|css|fn|this|attr|unselectable|cons
 ##.plugin-blogroll
 ##[class^="blogroll_wrapper"]
 !
+||feed.mikle.com^$domain=blog.livedoor.jp|crx7601.com|fate-rpg.jp|gadgetlife2ch.blomaga.jp|gtoys.blog.fc2.com|hdouga.com|ibarakinews.jp|obutu.com|totalwar.doorblog.jp|xn--bckadddb2a0d4dnc8dwhngdtb58aya0l4a2om843g5npczp7dwh5g.com|xn--cckea5a6cidcbh6ce7ghug17a2ge3aht3nwigef51658aw7kd.com
 ||ero-mangalife.com/eromangalife.$subdocument
 ||erodoujinshi-world.com/sp_rss_iframe.html
 ||otanew.jp^$subdocument,~third-party
