@@ -125,7 +125,7 @@ jobs:
           git branch -m master
           git add .
           git commit -m "Updated at $(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')（北京时间）"
-          git push -f
+          git push -f -u
       - name: Purge jsdelivr cache
         run: |
           result=$(curl -s https://purge.jsdelivr.net/gh/hacamer/adblist@master/)
