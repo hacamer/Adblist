@@ -1,8 +1,8 @@
-! Checksum: yzo8wOMbUk2Px90RbpEXBw
+! Checksum: Kqq2RM8AIjWC02sEw1VVxQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.11.75
-! TimeUpdated: 2022-03-10T13:02:10+00:00
+! Version: 2.1.11.76
+! TimeUpdated: 2022-03-10T13:30:38+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -32096,6 +32096,8 @@ newsweek.com##iframe[src="http://sns.europe.newsweek.com/newsletter?popup=1"]
 !##############################
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/111584
+vipr.im#%#//scriptlet('set-cookie', 'overlay', 'true')
 ! https://github.com/AdguardTeam/AdguardFilters/pull/110051
 joongang.co.kr#%#//scriptlet("abort-on-property-write", "history.pushState")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/111851
