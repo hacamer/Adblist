@@ -80,27 +80,7 @@ jobs:
           for i in $(ls ../new/*.txt); do
             sed -i '/^$/d' $i
           done
-      - name: Diff and addChecksum
-        id: diffResult
-        if: steps.download.outputs.status == 'success'
-        run: |
-          mkdir -p ./old_no_title/
-          chmod +x ./mod/addChecksum.pl
-          for i in $(ls ad*.txt); do
-            sed '1,/^!$/d' $i > ./old_no_title/$i
-          done
-          diffFile="$(diff -q new/ old_no_title/ |grep -o '[a-zA-Z0-9-]\+.txt' |sort -u)"
-          if [ -n "$diffFile" ]; then
-            for i in $diffFile ; do
-              titleName=$(echo "$i" |sed 's#.txt#-title.txt#')
-              cat ./mod/$titleName ./new/$i > ./$i
-              sed -i -e "s#201412030951#$TAG_NAME#" -e "s#201412030952#$MODIFIED_TIME#" ./$i
-              perl ./mod/addChecksum.pl ./$i
-              echo "::set-output name=status::success"
-            done
-          else
-            echo "::set-output name=status::failed"
-          fi
+
       - name: Deliver download Dir
         uses: actions/upload-artifact@v2
         if: steps.download.outputs.status == 'failed'
