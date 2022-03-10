@@ -119,6 +119,10 @@ jobs:
       - name: Git push assets to github
         run: |
           rm -rf new old*
+          mkdir -p ./tmp/
+          cd tmp
+          touch $RANDOM
+          cd ../
           git init
           git config --local user.name "hacamer"
           git config --local user.email "hcamer145@gmail.com"
