@@ -86,21 +86,15 @@ jobs:
             *
             !./.git/
 
-      - name: Git push assets to "master" branch
-        continue-on-error: true
+      - name: Git push assets to github
         run: |
-          rm -rf download new old_no_title
-          sed -i '/url =/d' ./.git/config
           git init
           git config --local user.name "hacamer"
           git config --local user.email "hcamer145@gmail.com"
-          git config --add core.compression -1
-          git branch -m main
+          git branch -m master
           git add .
-          git commit -m "${{ env.RELEASE_NAME }}"
-          git remote set-url --add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
-          #git fetch --unshallow origin
-          git push -f -u origin main
+          git commit -m "Updated at $(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')（北京时间）"
+          git push -f
       - name: Purge jsdelivr cache
         run: |
           result=$(curl -s https://purge.jsdelivr.net/gh/hacamer/adblist@master/)
