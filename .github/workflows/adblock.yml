@@ -72,7 +72,7 @@ jobs:
             sed -i '/^$/d' $i
           done
           cd ../
-          mv ./new/* ./ 
+          mv ./new/* ../ 
       - name: Deliver download Dir
         uses: actions/upload-artifact@v2
         with:
