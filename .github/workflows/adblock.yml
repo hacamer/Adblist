@@ -29,6 +29,7 @@ jobs:
           echo "ANTIADBLOCKFILTERS_URL=https://easylist-downloads.adblockplus.org/antiadblockfilters.txt" >> $GITHUB_ENV
           echo "ABP_FILTERS_ANTI_CV_URL=https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt" >> $GITHUB_ENV
           echo "XINGGSF_MV_URL=https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt" >> $GITHUB_ENV
+          echo "DMZ_URL=https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt" >> $GITHUB_ENV
           echo "ADGK_URL=https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt" >> $GITHUB_ENV
           echo "GOPATH=$(dirname $GITHUB_WORKSPACE)" >> $GITHUB_ENV
           echo "$(dirname $GITHUB_WORKSPACE)/bin" >> $GITHUB_PATH
@@ -51,7 +52,8 @@ jobs:
           curl -sSL $CJX_ANNOYANCE_URL | sed -e '/^! /d' -e "1c ! CJX's Annoyance List" -e '/^!$/d' -e '/The End/d'  -e '/^$/d' | sed '/热门话题/,+1d' > ./cjx-annoyance.txt
           sed -i '/!#include cjx-ublock.txt/c !#include https://gitee.com/cjx82630/cjxlist/raw/master/cjx-ublock.txt' ./cjx-annoyance.txt
           curl -sSL $XINGGSF_MV_URL | sed -e '/^! /d' -e '1c ! 乘风 视频广告过滤规则' -e '/^!$/d' -e '/^$/d' > ./xinggsf-mv.txt
-          curl -sSL $ADGK_URL > ./adgk.txt
+          curl -sSL $ADGK_URL | grep -v "^!"> ./adgk.txt
+          curl -sSL $DMG_URL | grep -v "^!" > ./dmz.txt
           curl -sSL $ANTIADBLOCKFILTERS_URL | sed -e '1c ! Adblock Warning Removal List' -e '/^! Checksum/,/! Please check our guidelines/d' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./antiadblockfilters.txt
           curl -sSL $ABP_FILTERS_ANTI_CV_URL | sed -e '1c ! abp-filters-anti-cv' -e '/^! Checksum/,/adblockplus.org/d' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./abp-filters-anti-cv.txt
           curl -sSL $ANTI_ADBLOCK_KILLER_FILTERS_URL | sed -e '1c ! AakList (Anti-Adblock Killer)' -e '/^! Title/,/^! RegExpVisualizer/d' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./anti-adblock-killer-filters.txt
@@ -71,8 +73,8 @@ jobs:
           cd ./download
           cat ../mod/GeneralBlock.txt ../mod/TiebaBlock.txt easylist.txt easylistchina.txt easyprivacy.txt cjx-annoyance.txt antiadblockfilters.txt abp-filters-anti-cv.txt anti-adblock-killer-filters.txt | grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/ad-pc.txt
           cat ../mod/GeneralBlock.txt easylist.txt easylistchina.txt easyprivacy.txt cjx-annoyance.txt | grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/ad-mo.txt
-          cat ../mod/GeneralBlock.txt ../mod/TiebaBlock.txt xinggsf-mv.txt easylistchina.txt cjxlist.txt cjx-annoyance.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/ad.txt
-          cat adgk.txt xinggsf-mv.txt easylistchina.txt cjxlist.txt cjx-annoyance.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/ad2.txt
+          cat ../mod/GeneralBlock.txt ../mod/TiebaBlock.txt adgk.txt dmz.txt xinggsf-mv.txt easylistchina.txt cjxlist.txt cjx-annoyance.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/ad.txt
+          cat adgk.txt dmz.txt xinggsf-mv.txt easylistchina.txt cjxlist.txt cjx-annoyance.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/ad2.txt
           cat xinggsf-mv.txt easylistchina.txt cjxlist.txt cjx-annoyance.txt easyprivacy.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/ad3.txt
           cat antiadblockfilters.txt abp-filters-anti-cv.txt anti-adblock-killer-filters.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/ad-edentw.txt
           for i in $(ls ../new/*.txt); do
@@ -134,7 +136,7 @@ jobs:
       - name: Purge jsdelivr cache
         if: steps.diffResult.outputs.status == 'success'
         run: |
-          result=$(curl -s https://purge.jsdelivr.net/gh/o0HalfLife0o/list@master/)
+          result=$(curl -s https://purge.jsdelivr.net/gh/hacamer/adblist@master/)
           if echo $result |grep -q 'success.*true'; then
             echo "jsdelivr缓存更新成功"
           else
