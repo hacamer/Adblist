@@ -43,6 +43,7 @@ jobs:
       - name: Get every files
         id: download
         run: |
+          rm -rf tmp *.txt
           mkdir -p ./download/
           cd ./download
           curl -sSL $EASYLIST_URL | sed -e '/^! /d' -e '1c ! EasyList' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./easylist.txt
