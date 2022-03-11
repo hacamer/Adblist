@@ -1,8 +1,8 @@
-! Checksum: U6/KK05a/GyyB55Drd079A
+! Checksum: hMQW/idAOfW/0BumGcj5yw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.11.85
-! TimeUpdated: 2022-03-11T11:30:35+00:00
+! Version: 2.1.11.87
+! TimeUpdated: 2022-03-11T13:02:06+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1977,8 +1977,7 @@ m.facebook.com##span[data-top-of-feed-unit-type="megaphone_story"] > div[data-si
 ! 44.ua - notification about browser extension
 44.ua##.exp-line
 ! download.cnet.com - annoying useless videoplayer
-download.cnet.com#$##uvp-video { display: none!important; }
-download.cnet.com#%#AG_onLoad(function() { setTimeout(function() { document.getElementById('uvp-video').innerHTML = ''; }, 300); });
+download.cnet.com#$?#.c-avStickyVideo { remove: true; }
 ! ipress.ua - annoying animated banner
 ipress.ua##.swiper-container
 ! afisha.ru - annoying animated banner, redirect to broadcast page
@@ -2484,6 +2483,7 @@ windowstechblog.nl#%#AG_onLoad(function() { window.bizpanda = {}; });
 izlemac75.net##body > div[style*="width:100%;text-align:center"]
 izlemac75.net##body > div#reload
 !
+news.cookpad.com##a[href="https://line.me/R/ti/p/%40oa-cookpadnews"]
 nv.ua##section[data-type="advertising"]
 nashkraj.by##.news_detail_social
 politring.com###body_left > ul.social-links
@@ -7243,6 +7243,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+realvnc.com###elementor-popup-modal-7516
 marketingmorzsak.hu##div[class^="modal-cookie"]
 smtb.jp##.unq-cookie
 ||pcking.de/_javascripts/cookiesolution/
@@ -7304,7 +7305,7 @@ quixel.com##.css-wzviqn
 zutobi.com##div[class^="ModalCookiestyled"]
 blockchain.com##div[class^="TrackingProvider__Banner"]
 whatsonstage.com##div[class^="Cookie__CookieBannerContainer-"]
-twitter.com#?##layers > div[class] > div[class]:has(> div[class] div[role="button"] > div[dir="auto"] > span > span:contains(ookies))
+twitter.com#?##layers > div[class] > div[class]:has(> div[class] div[role="button"] > div[dir="auto"] > span > span:contains(ookie))
 truecaller.com##.fixed.bottom-0
 steller.co##div[class^="Disclaimer_"]
 otelo.de#$?#div[data-reactroot] > div > div.Lightbox:has(p.TextHeadline:contains(/^Cookies/)) { display: none!important; }
@@ -19252,6 +19253,12 @@ tinhte.vn##a[href^="https://tinhte.vn/app/"]
 coolapk.com##.apk_right_two
 coolapk.com##.app_left > div.left_download
 coolapk.com##a[onclick="weixinDownload();"]
+trip.com#$#body { overflow: auto !important; }
+trip.com#$##ibu_tcp_h5_install_pop { display: none !important; }
+trip.com###top-install
+trip.com##.download
+trip.com##.download-bg
+trip.com##.tcp-h5-install-bottom
 trip.com###ibu_app_download_banner
 sirabee.com##a[href^="https://app.sirabee.com"]
 ati.su##.service-app
@@ -20238,6 +20245,7 @@ sodapdf.com##.be-tooltip
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+news.mynavi.jp###pianoj_ribbon
 04868.com.ua,karelia.news,5692.com.ua,0629.com.ua,01.kg,0154.by,0472.ua,048.ua,0512.com.ua,0522.ua,0532.ua,0552.ua,056.ua,0564.ua,061.ua,06153.com.ua,0642.ua,62.ua,7152.kz,7232.kz,city04.kz,go152.by,go232.by,inaktau.kz,inalmaty.kz,inastana.kz,inatyrau.kz,inkaragandy.kz,inshymkent.kz,kaskelenec.kz,oshto.kg,qapshagai-city.kz,uralskcity.kz##.push-panel
 video.laxd.com##.noLoginSticker
 slack.com###slack_101_jp_banner
@@ -27468,6 +27476,7 @@ experts-exchange.com##.ctaSolutionStickyWrapper
 theguardian.com##.contributions__adblock
 ||contributions.guardianapis.com^
 !
+news.cookpad.com##img[width="300"][height="250"]
 66law.cn##.consult-bottom-fixed
 journal.tinkoff.ru##div[class^="banner"]
 energy.rakuten.co.jp##div[class^="banner-"]
@@ -28302,6 +28311,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+reuters.com##div[class^="registration-prompt__container__"]
 news.finance.ua##div[class^="SubscriptionsStyles__EmailContainer-"]
 lodgecastiron.com###block-stickybottompagepromo[aria-label="email sign up promotion"]
 digiday.jp###mail_mag-under_title
