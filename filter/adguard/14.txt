@@ -1,8 +1,8 @@
-! Checksum: VmmIgVaYz/l6H7bPODrr/Q
+! Checksum: JeDuvwENxyyApk+8Y7OCLg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.11.81
-! TimeUpdated: 2022-03-10T18:30:33+00:00
+! Version: 2.1.11.82
+! TimeUpdated: 2022-03-11T07:30:32+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7267,6 +7267,8 @@ ostin.com##.o-cookies-notice__container
 shop.spd.de#$#div[id^="cookieModal"] { display: none!important; }
 shop.spd.de#$#.modal-backdrop { display: none!important; }
 shop.spd.de#$#body { overflow: visible!important; padding-right: 0!important; }
+cualesmiip.com#$#body.dc-cmp-ui-showing { overflow: auto !important; }
+cualesmiip.com#$#.dc-cmp-ui-container { display: none !important; }
 ampcapital.com##.cookies_strip-wrapper
 barenecessities.com###cbt-consent-banner-wrapper
 zentalk.asus.com#$#html { overflow: auto !important; }
@@ -28299,11 +28301,14 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+lodgecastiron.com###block-stickybottompagepromo[aria-label="email sign up promotion"]
 digiday.jp###mail_mag-under_title
 smartpress.by##.top-box
 ottoversand.at###sheet
 polygon.com##.c-toaster[data-cdata*="Polygon Weekly Update Newsletter"]
 digiday.jp,wishtv.com##pnespwidget
+inc.com##.piano-id-container
+deezer.com##.conversion-banner
 ampcapital.com#?#.featured_publications-col > div.featured_publications-item:has(> div.card_signup)
 ampcapital.com#?#.hl-template > div.capital-aem-component:has(> div.capital-aem-component > div.hp-light > div.hl-content_block-content > form[action$="/insights-inpage-subscribe"])
 shiftdelete.net##.thb-google-news
