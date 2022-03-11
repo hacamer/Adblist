@@ -1,8 +1,8 @@
-! Checksum: hMQW/idAOfW/0BumGcj5yw
+! Checksum: f19LnZAHD92sTZdjptl0bg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.11.87
-! TimeUpdated: 2022-03-11T13:02:06+00:00
+! Version: 2.1.11.88
+! TimeUpdated: 2022-03-11T14:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -3627,7 +3627,6 @@ babiato.co,rangerboard.com,multics.eu,smokingmeatforums.com#%#//scriptlet("abort
 yourhowto.net#$#.advert { height: 301px !important; position: absolute !important; top: -99999px !important; }
 @@||utopia.de/advertisement.js
 ||chesterstandard-gb.chesterstandard.co.uk^
-krunker.io###aHolder
 ||g2insights-cdn.azureedge.net/*/mng/g2insights.min.js
 @@||bloximages.*.vip.townnews.com/*/libraries/flex/components/ads/resources/scripts/tnt.ads.advert
 @@||a.omappapi.com/app/js/ads.js
@@ -7243,6 +7242,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+compress-or-die.com##.module_consent__main
 realvnc.com###elementor-popup-modal-7516
 marketingmorzsak.hu##div[class^="modal-cookie"]
 smtb.jp##.unq-cookie
@@ -20245,6 +20245,8 @@ sodapdf.com##.be-tooltip
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+noklapja.hu#$#.blurry { filter: none !important; }
+noklapja.hu#$#.m-fbPopup { display: none !important; }
 news.mynavi.jp###pianoj_ribbon
 04868.com.ua,karelia.news,5692.com.ua,0629.com.ua,01.kg,0154.by,0472.ua,048.ua,0512.com.ua,0522.ua,0532.ua,0552.ua,056.ua,0564.ua,061.ua,06153.com.ua,0642.ua,62.ua,7152.kz,7232.kz,city04.kz,go152.by,go232.by,inaktau.kz,inalmaty.kz,inastana.kz,inatyrau.kz,inkaragandy.kz,inshymkent.kz,kaskelenec.kz,oshto.kg,qapshagai-city.kz,uralskcity.kz##.push-panel
 video.laxd.com##.noLoginSticker
@@ -28311,6 +28313,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+bloomberg.com###plug-banner-outlet
 reuters.com##div[class^="registration-prompt__container__"]
 news.finance.ua##div[class^="SubscriptionsStyles__EmailContainer-"]
 lodgecastiron.com###block-stickybottompagepromo[aria-label="email sign up promotion"]
