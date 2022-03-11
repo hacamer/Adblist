@@ -1,9 +1,9 @@
 [Adblock Plus 3.0]
-! Checksum: qmcGUnn3TWXl8/fo0uHEJQ
+! Checksum: rZkg22scAZKOJPW8YSyOzw
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202203120210
-! Last Modified: 2022年03月12日 02:10
+! Version: 202203120307
+! Last Modified: 2022年03月12日 03:07
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -52451,15 +52451,14 @@ rising.cn##.new-1111
 rising.cn##.search-news1
 rjfcw.cn##li[style*="1200px"]
 rjno1.com##+js(abort-current-script, EventTarget.prototype.addEventListener, event.target.tagName)
-rjno1.com##+js(abort-current-script, onload, document.getElementById)
-rjno1.com##+js(abort-current-script, setTimeout, google)
 rjno1.com##+js(abort-on-stack-trace, document.getElementById, /google|inlineScript/)
+rjno1.com##+js(set-constant, google_global_correlator, 1)
+rjno1.com##+js(set-constant, google_image_requests, emptyArr)
 rjno1.com##div[class*="-a-d1"]
 rjno1.com##div[class*="-a-d2"]
 rjno1.com##div[class*="-a-d3"]
 rjno1.com##div[class*="-a-d4"]
 rjno1.com#$#div[class^="aqn"] { position: absolute !important; left: -4000px !important; }
-rjno1.com#$?#style:contains(@keyframes) { remove: true; }
 rjno1.com#?#.post > div[class^="ivo"] > .adsbygoogle:upward(1)
 rjno1.com#?#.sidebar > div[class^="ivo"]:has(> .space > script:contains(slotbydup))
 rjno1.com#?#.site-main > div[class^="ivo"]:has(.adsbygoogle)

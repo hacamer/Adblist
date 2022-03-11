@@ -1,8 +1,8 @@
-! Checksum: QgUH81RF6RMg+ig7MM7u2Q
+! Checksum: pG32c+rdrH5gPWWz6CvsJw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.11.92
-! TimeUpdated: 2022-03-11T17:30:35+00:00
+! Version: 2.1.11.93
+! TimeUpdated: 2022-03-11T18:30:39+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -10656,7 +10656,6 @@ financial.nikkei.com##.f-privacy
 nikkeibp.co.jp,nikkei.com##.bpPrivacy
 getmailbird.com##.navbar-cookie
 hashicorp.com###g-consent-manager
-! m.facebook.com###page > div[data-sigil=" m-layer-root"] - breaks "..." button when on a page
 telegraph.co.uk,gizmodo.com##div[id^="sp_message_container_"]
 mytime.de#$#.modal__opened { overflow: visible !important; }
 mytime.de#$#.modal--cookie-notice { display: none !important; }
@@ -13396,7 +13395,7 @@ mashable.com###peek > div:not([class]):not([id]) > div[data-reactroot][style*="p
 emathhelp.net,hackedarcadegames.com###pg-gdpr
 apkpure.com###policy-info
 popsugar.co.uk###policy-modal-banner
-laptopmag.com,livescience.com,space.com,tomsguide.com,toptenreviews.com###prism-modal[data-template="banner"]
+laptopmag.com,livescience.com,tomsguide.com,toptenreviews.com###prism-modal[data-template="banner"]
 allrecipes.com###privacyNotification
 starwindsoftware.com###privacyPopup
 motor1.com###privacy_accept
@@ -15972,6 +15971,8 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/112226
+@@||quantcast.mgr.consensu.org/*/vendor-list-trimmed-*.json$domain=space.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/107477
 @@||cdn.privacy-mgmt.com/Notice.$domain=t3n.de
 ! bequiet.com - not able to compare
@@ -18540,6 +18541,8 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+coconala.com###xeory-fixed-banner-sp
+coconala.com##a[data-event-category^="AD_"]
 buyma.com##.js-header-app-launch-placeholder
 newsdigest.jp##.app-banner__inner
 newsdigest.jp##.post-inarticle-banner
