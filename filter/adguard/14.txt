@@ -1,8 +1,8 @@
-! Checksum: N+c6KR6P0uNT8Vji/Ocqmg
+! Checksum: KaSUj/G85fIqraFLl0qNsQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.11.89
-! TimeUpdated: 2022-03-11T15:30:43+00:00
+! Version: 2.1.11.91
+! TimeUpdated: 2022-03-11T17:02:05+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2483,6 +2483,7 @@ windowstechblog.nl#%#AG_onLoad(function() { window.bizpanda = {}; });
 izlemac75.net##body > div[style*="width:100%;text-align:center"]
 izlemac75.net##body > div#reload
 !
+ntv.com.tr##.article-socialFrame-widget
 news.cookpad.com##a[href="https://line.me/R/ti/p/%40oa-cookpadnews"]
 nv.ua##section[data-type="advertising"]
 nashkraj.by##.news_detail_social
@@ -7242,6 +7243,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+ssm.lnk.to##.lnk-c-footnote
 compress-or-die.com##.module_consent__main
 realvnc.com###elementor-popup-modal-7516
 marketingmorzsak.hu##div[class^="modal-cookie"]
@@ -15969,6 +15971,8 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/107477
+@@||cdn.privacy-mgmt.com/Notice.$domain=t3n.de
 ! bequiet.com - not able to compare
 ! https://github.com/AdguardTeam/AdguardFilters/issues/111907
 metro.hu#@#.cookie-container
@@ -20245,6 +20249,8 @@ sodapdf.com##.be-tooltip
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+qobuz.com##.store-launch-injector
+qobuz.com##.modal-backdrop
 noklapja.hu#$#.blurry { filter: none !important; }
 noklapja.hu#$#.m-fbPopup { display: none !important; }
 news.mynavi.jp###pianoj_ribbon
@@ -28314,6 +28320,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+ntv.com.tr##.google-news
 zaks.ru##.zenblock
 bloomberg.com###plug-banner-outlet
 reuters.com##div[class^="registration-prompt__container__"]
