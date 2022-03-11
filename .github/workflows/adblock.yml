@@ -31,6 +31,7 @@ jobs:
           echo "XINGGSF_MV_URL=https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt" >> $GITHUB_ENV
           echo "DMZ_URL=https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt" >> $GITHUB_ENV
           echo "ADGK_URL=https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt" >> $GITHUB_ENV
+          echo "ADGCN_URL=https://filters.adtidy.org/extension/ublock/filters/224.txt" >> $GITHUB_ENV
           echo "GOPATH=$(dirname $GITHUB_WORKSPACE)" >> $GITHUB_ENV
           echo "$(dirname $GITHUB_WORKSPACE)/bin" >> $GITHUB_PATH
         shell: bash
@@ -55,6 +56,7 @@ jobs:
           curl -sSL $XINGGSF_MV_URL | sed -e '/^! /d' -e '1c ! 乘风 视频广告过滤规则' -e '/^!$/d' -e '/^$/d' > ./xinggsf-mv.txt
           curl -sSL $ADGK_URL | grep -v "^!"> ./adgk.txt
           curl -sSL $DMZ_URL | grep -v "^!" > ./dmz.txt
+          curl -sSL $ADGCN_URL | grep -v "^!" > ./adgcn.txt
           curl -sSL $ANTIADBLOCKFILTERS_URL | sed -e '1c ! Adblock Warning Removal List' -e '/^! Checksum/,/! Please check our guidelines/d' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./antiadblockfilters.txt
           curl -sSL $ABP_FILTERS_ANTI_CV_URL | sed -e '1c ! abp-filters-anti-cv' -e '/^! Checksum/,/adblockplus.org/d' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./abp-filters-anti-cv.txt
           curl -sSL $ANTI_ADBLOCK_KILLER_FILTERS_URL | sed -e '1c ! AakList (Anti-Adblock Killer)' -e '/^! Title/,/^! RegExpVisualizer/d' -e '/^!$/d' -e '/The End/d'  -e '/^$/d' > ./anti-adblock-killer-filters.txt
@@ -65,8 +67,8 @@ jobs:
           cd ./download
           cat ../mod/GeneralBlock.txt ../mod/TiebaBlock.txt easylist.txt easylistchina.txt easyprivacy.txt cjx-annoyance.txt antiadblockfilters.txt abp-filters-anti-cv.txt anti-adblock-killer-filters.txt | grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/adp-pc.txt
           cat ../mod/GeneralBlock.txt easylist.txt easylistchina.txt easyprivacy.txt cjx-annoyance.txt | grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/adp-mo.txt
-          cat ../mod/GeneralBlock.txt ../mod/TiebaBlock.txt adgk.txt dmz.txt xinggsf-mv.txt easylistchina.txt cjxlist.txt cjx-annoyance.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/adp.txt
-          cat adgk.txt dmz.txt xinggsf-mv.txt easylistchina.txt cjxlist.txt cjx-annoyance.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/adp2.txt
+          cat ../mod/GeneralBlock.txt ../mod/TiebaBlock.txt adgcn.txt adgk.txt dmz.txt xinggsf-mv.txt easylistchina.txt cjxlist.txt cjx-annoyance.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/adp.txt
+          cat adgcn.txt adgk.txt dmz.txt xinggsf-mv.txt easylistchina.txt cjxlist.txt cjx-annoyance.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/adp2.txt
           cat xinggsf-mv.txt easylistchina.txt cjxlist.txt cjx-annoyance.txt easyprivacy.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/adp3.txt
           cat antiadblockfilters.txt abp-filters-anti-cv.txt anti-adblock-killer-filters.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/adp-edentw.txt
           for i in $(ls ../new/*.txt); do
