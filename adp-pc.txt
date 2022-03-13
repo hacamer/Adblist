@@ -1,9 +1,9 @@
 [Adblock Plus 3.0]
-! Checksum: kD/WJ4w2dwNUc0R8OgV7Ow
+! Checksum: wo2sB469yLDaZu/5h9jgoA
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202203132113
-! Last Modified: 2022年03月13日 21:13
+! Version: 202203132208
+! Last Modified: 2022年03月13日 22:08
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -23969,6 +23969,7 @@
 ##a[href*="/yigeyuming3880.top"]
 ##a[href*="://mgzs.cdn.bcebos.com/"]
 ##a[href*="?channelCode="] > img[src*=".com:"]
+##a[href*="?invite_code="] > img[src*=".com"]
 ##a[href*="itoon.app"]
 ##a[href*="mdapp01.com/"]
 ##a[href*="nnqp.vip"]
@@ -41641,6 +41642,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||serve.popads.net/checkInventory.php$script,domain=imgnova.xyz
 @@||serve.popads.net/checkInventory.php$script,domain=jav4.me
 @@||servebom.com/tmn*.js$script,domain=tomsguide.com|tomshardware.co.uk|tomshardware.com|wonderhowto.com
+@@||served-by.pixfuture.com/www/delivery/gcws.php$xmlhttprequest,domain=premiumtimesng.com
 @@||server.cpmstar.com/view.aspx?poolid=$domain=newgrounds.com
 @@||server1.affiz.net/tracking/ads_display.php$script,domain=fit.sh
 @@||service.4gtv.tv/4gtv/Data/GetAD.ashx
@@ -51968,6 +51970,11 @@ precisionvaccinations.com##.inhouse-block
 preemlinks.com#@##divads
 premierguitar.com###pg_leaderboard
 premierguitar.com##.a_promo
+premiumtimesng.com###text-429
+premiumtimesng.com###text-440
+premiumtimesng.com##.directcampaign
+premiumtimesng.com##.premi-texem-campaign
+premiumtimesng.com##img[alt$=" Ad"]
 preroll$xmlhttprequest,domain=iprima.cz
 presearch.org##.pr-4.max-w-2xl.mb-4.mt-4.md\:mt-0.md\:mb-6.ml-4
 presskitaquat.com##.e3lan-top
@@ -54683,6 +54690,9 @@ wallstreetcn.com##.side-money
 wallstreetcn.com##.wscn-ad
 wallstreetcn.com##.wscn-page-ad
 wallstreetcn.com##.xinren-wrapper
+walmart.com##div[class="mv3 ml3 mv4-xl mh0-xl"][data-testid="sp-item"]
+walmart.com#?#div[class="mb1 ph1 pa0-xl bb b--near-white w-25"]:-abp-has(div[data-ad-component-type="wpa-tile"])
+walmart.com#?#li.items-center:-abp-has(div[data-ad-component-type="wpa-tile"])
 wandhi.com##a[style="display: inline-block;position: relative"]
 wangfz.com##div[class^="my-ad-"]
 wanghualang.com###cx_tag_cloud-2 ~ aside[id^="php_text-"]
@@ -78754,6 +78764,7 @@ zznews.cn##.ad:not([style])
 ||henanzhulongjx.com^
 ||henduoqian.com^
 ||henghost.com^$third-party
+||hengtengds.com^
 ||hengyisoft.vip^
 ||hentaibiz.com^
 ||hentaiblue.com/*=eyJ.js
@@ -97911,6 +97922,7 @@ zznews.cn##.ad:not([style])
 ||sf14g.com^$third-party
 ||sf9yvla26s5t.com^
 ||sfanf.com^
+||sfceco.cn^
 ||sfdecpromwjj.com^
 ||sffsdvc.com^
 ||sfg8mbh.cn^
