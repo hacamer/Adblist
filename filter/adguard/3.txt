@@ -1,8 +1,8 @@
-! Checksum: aa7ASduX6ivxgQVnlgjlcg
+! Checksum: WJD3fs3/N/Nl9yOMe91s9A
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.36.47
-! TimeUpdated: 2022-03-12T15:31:12+00:00
+! Version: 2.0.36.48
+! TimeUpdated: 2022-03-13T08:31:19+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -5783,8 +5783,13 @@ nethunt.com/api/v1/track/email/$image
 ||cmstrendslog.indiatimes.com^
 ||cmstrendslog.timesnow.tv^
 ||cnt.nicemix.com^
+||cnt.hd21.
+||cnt.proporn.
+||cnt.tubeon.
+||cnt.winporn.
+||cnt.yeptube.
 ||cnt.nuvid.
-||cnt.vivatube.com^
+||cnt.vivatube.
 ||collection.theaa.com^
 ||collector-cdn.github.com^
 ||collector-medium.lightstep.com^
@@ -20715,6 +20720,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ! Umami
 /umami.js
 !
+/counter/?domain=$image,~third-party
 /t.gif?
 ://analytics.*/collect
 /access.php?referrer=
