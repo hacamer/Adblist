@@ -112,13 +112,13 @@ jobs:
         run: |
             cd filter/adguard
             rm *
-            wget https://filters.adtidy.org/android/filters/2.txt
-            wget https://filters.adtidy.org/android/filters/11.txt
-            wget https://filters.adtidy.org/android/filters/3.txt
-            wget https://filters.adtidy.org/android/filters/224.txt 
-            wget https://filters.adtidy.org/android/filters/14.txt
-            wget https://filters.adtidy.org/android/filters/5.txt
-            wget https://filters.adtidy.org/android/filters/4.txt
+            wget  --no-hsts --no-cookies -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4937.0 Safari/537.36" --no-check-certificate -t 2 -T 30 https://filters.adtidy.org/android/filters/2.txt
+            wget  --no-hsts --no-cookies -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4937.0 Safari/537.36" --no-check-certificate -t 2 -T 30 https://filters.adtidy.org/android/filters/11.txt
+            wget  --no-hsts --no-cookies -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4937.0 Safari/537.36" --no-check-certificate -t 2 -T 30 https://filters.adtidy.org/android/filters/3.txt
+            wget  --no-hsts --no-cookies -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4937.0 Safari/537.36" --no-check-certificate -t 2 -T 30 https://filters.adtidy.org/android/filters/224.txt 
+            wget  --no-hsts --no-cookies -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4937.0 Safari/537.36" --no-check-certificate -t 2 -T 30 https://filters.adtidy.org/android/filters/14.txt
+            wget  --no-hsts --no-cookies -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4937.0 Safari/537.36" --no-check-certificate -t 2 -T 30 https://filters.adtidy.org/android/filters/5.txt
+            wget  --no-hsts --no-cookies -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4937.0 Safari/537.36" --no-check-certificate -t 2 -T 30 https://filters.adtidy.org/android/filters/4.txt
       - name: Git push assets to github
         run: |
           rm -rf new old*
