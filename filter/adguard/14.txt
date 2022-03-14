@@ -1,8 +1,8 @@
-! Checksum: RATtGoMfnpNoswybm7qjug
+! Checksum: W0SRi70MqeiRerViV9fwcg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.12.10
-! TimeUpdated: 2022-03-14T14:30:40+00:00
+! Version: 2.1.12.11
+! TimeUpdated: 2022-03-14T15:30:38+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7242,6 +7242,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+letgo.com##div[class^="CookieAdvicestyles"]
 xn--80afnfom.xn--80ahmohdapg.xn--80asehdb##.page-notification
 ||cdn.24net.cz/resources/js/cmp.js$domain=mobilenet.cz
 neredekal.com##.css-1fl0mfv
@@ -15040,6 +15041,7 @@ privacy.lecker.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent
 privacy.madame.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent-v2")){var g=new MutationObserver(function(){setTimeout(function(){var b=document.querySelector('button.no-children[path="\[0,2,1\]"]');b&&b.click();},300);setTimeout(function(){var c=document.querySelector('div[title="Berechtigte Interessen"]'); c&&c.click();},300);setTimeout(function(){var d=document.querySelectorAll('label[aria-checked="true"] > .off'); d.forEach(function(d){d.click();});},800); var f=document.querySelector('button.no-children[path="\[0,3,0\]"]'); setTimeout(function(){f&&f.click();},1000);});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},3E4)}});
 consent.gamingbible.co.uk,consent.unilad.co.uk#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var g=new MutationObserver(function(){var b=document.querySelector('button[title*="Accept" i]');b&&(g.disconnect(),b.click())});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
 !
+gala.fr#%#AG_onLoad(function() { setTimeout(function() { var el = document.querySelector('button[title="Accepter"]'); if(el) { el.click(); } }, 300); });
 openingceremony.com#%#(function(){try{"undefined"!==typeof localStorage&&(localStorage.setItem("SHOW_COOKIE_BANNER","no"))}catch(a){}})();
 sex.com#%#//scriptlet('set-cookie', 'sx_cookie_ok', '1')
 play.hbomax.com#%#(function(){try{"undefined"!==typeof localStorage&&(localStorage.setItem("dataservices.PreferencesManager.targetingCookies","off"),localStorage.setItem("dataservices.PreferencesManager.performanceCookies","off"),localStorage.setItem("dataservices.PreferencesManager.functionalCookies","on"))}catch(a){}})();
@@ -19538,8 +19540,8 @@ m.baby.ru##.happy_mama-banner
 news.yahoo.co.jp###wrapper > #peron
 malatyaguncel.com,victorysportsnews.com###app-banner
 sports.yahoo.co.jp###header > #RSAB
-sport.de##a[href^="https://itunes.apple.com"][href*="app"]
-sport.de##a[href^="https://play.google.com"]
+filejoker.net,sport.de##a[href^="https://itunes.apple.com"][href*="app"]
+filejoker.net,sport.de##a[href^="https://play.google.com"]
 kicker.de###ovAppBar
 arukereso.hu##.mobile-application
 arukereso.hu###app-promo
@@ -24726,6 +24728,10 @@ com-magazin.de##w-div[role$="dialog"]
 /jquery.magnific-popup.min.js$domain=ufatime.ru|koreanworld.ru
 !
 !
+!
+! Twitter login popup
+twitter.com#$?#div[data-testid="sheetDialog"]:upward(div[role="group"]) { display: none !important; }
+twitter.com#$?#html { overflow: auto !important; padding-right: 0 !important; }
 ! Yandex
 yandex.*##.desk-notif-card__card[aria-label="Реклама"]
 yandex.*##.dist-overlay__popup
@@ -27505,6 +27511,7 @@ theguardian.com##.contributions__adblock
 search.rakuten.co.jp##div[class="dui-container festival"]
 news.cookpad.com##img[width="300"][height="250"]
 66law.cn##.consult-bottom-fixed
+tokai.hostlove.com###sub
 journal.tinkoff.ru##div[class^="banner"]
 energy.rakuten.co.jp##div[class^="banner-"]
 zerohedge.com##div[class^="TheMarketEarHomePageSidebar_container__"]
@@ -28338,6 +28345,8 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+gala.fr###newsletterPush
+gala.fr###newsletterPush-overlay
 kapital-rus.ru##.subscribe_on_ks_yandex
 ntv.com.tr##.google-news
 zaks.ru##.zenblock
@@ -28716,7 +28725,7 @@ ajansspor.com##.detail__item-sub
 bradford.de###mageplaza-betterpopup-block
 bradford.de###bio_ep_bg
 newsweekjapan.jp###magazine-bnr
-yellowkorner.com##.popin-newsletter
+gala.fr,yellowkorner.com##.popin-newsletter
 yellowkorner.com##.popin-modal-background
 life.tw###box
 schuco.de##.social-v2--newsletter
