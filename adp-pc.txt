@@ -1,9 +1,9 @@
 [Adblock Plus 3.0]
-! Checksum: Q81ZwTRW4imX5qpnVJ5oGg
+! Checksum: gSFCLVl4ovsDxnm0YHGFIg
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202203150410
-! Last Modified: 2022年03月15日 04:10
+! Version: 202203150609
+! Last Modified: 2022年03月15日 06:09
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -20646,6 +20646,7 @@
 ##.product-bar-ads
 ##.product-inlist-ad
 ##.profile-ad-container
+##.profile-ads-container
 ##.profile__ad-wrapper
 ##.profile_ad_bottom
 ##.profile_ad_top
@@ -38504,7 +38505,6 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 ://stats.*/index.js
 ://stats.*/script.js
 ://stats.*/stats.aspx
-://temptation.*/temptation.js
 ://top.*/count/cnt.php?
 ://top.*/hit/
 ://track.*/collect
@@ -39468,6 +39468,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||apk.tw/source/plugin/mydefplugin/advertise.js$script,~third-party
 @@||apk.tw^$generichide
 @@||apk.tw^*/ads.js$script,~third-party
+@@||apkmirror.com^$generichide
 @@||apkmos.com^$generichide
 @@||apmebf.com/ad/$domain=betfair.com
 @@||app-advertise.zhihuishu.com^
@@ -43640,10 +43641,11 @@ apk.tw#?#body > div:has(> div[class^="yap-ad-"])
 apk.tw#@##google_ad
 apk.tw#@#.ad300
 apk.tw#@#.google_ad
-apkmirror.com##.gooWidget
+apkmirror.com##.google-ad-leaderboard
 apkmirror.com##script:contains(canRunAds = false)
 apkmirror.com#@#.adsbygoogle
 apkmirror.com#@#.adslot
+apkmirror.com,net-load.com##.ai_widget.widget
 apkonline.net###adxx
 apkonline.net###adzz
 apkonline.net##div[id^="adxx"]
@@ -50944,7 +50946,6 @@ neihanshequ.com###pageletTopBanner
 nen.com.cn##.for3gagzy
 nen.com.cn##.w610
 neon-pet.com,easylife.tw##.popup_bottom_ad
-net-load.com##.ai_widget.widget
 net-load.com##.m7s-81.m7s
 net.hr#@#.reklama
 netbardh.com###bg_left
@@ -96259,6 +96260,7 @@ zznews.cn##.ad:not([style])
 ||robberets.site^
 ||robiaa.com^
 ||roblox.com/www/e.png?
+||roblox.com^*/_/1px.gif
 ||robotadserver.com^
 ||robovoiz.com^
 ||robsbogsrouse.com^
