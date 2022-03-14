@@ -1,8 +1,8 @@
-! Checksum: W0SRi70MqeiRerViV9fwcg
+! Checksum: Ki8+ErUafgassuPRR1xPDQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.12.11
-! TimeUpdated: 2022-03-14T15:30:38+00:00
+! Version: 2.1.12.13
+! TimeUpdated: 2022-03-14T17:02:31+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7242,6 +7242,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+vladimir-city.ru###cookie_pp
 letgo.com##div[class^="CookieAdvicestyles"]
 xn--80afnfom.xn--80ahmohdapg.xn--80asehdb##.page-notification
 ||cdn.24net.cz/resources/js/cmp.js$domain=mobilenet.cz
@@ -15041,6 +15042,9 @@ privacy.lecker.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent
 privacy.madame.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent-v2")){var g=new MutationObserver(function(){setTimeout(function(){var b=document.querySelector('button.no-children[path="\[0,2,1\]"]');b&&b.click();},300);setTimeout(function(){var c=document.querySelector('div[title="Berechtigte Interessen"]'); c&&c.click();},300);setTimeout(function(){var d=document.querySelectorAll('label[aria-checked="true"] > .off'); d.forEach(function(d){d.click();});},800); var f=document.querySelector('button.no-children[path="\[0,3,0\]"]'); setTimeout(function(){f&&f.click();},1000);});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},3E4)}});
 consent.gamingbible.co.uk,consent.unilad.co.uk#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var g=new MutationObserver(function(){var b=document.querySelector('button[title*="Accept" i]');b&&(g.disconnect(),b.click())});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
 !
+arbeitsagentur.de#$#body { overflow: auto !important; padding-right: 0 !important; }
+arbeitsagentur.de#$#bahf-cookie-disclaimer-dpl3 { display: none !important; }
+arbeitsagentur.de#$#bahf-cookie-disclaimer-dpl3 ~ div.modal-backdrop { display: none !important; }
 gala.fr#%#AG_onLoad(function() { setTimeout(function() { var el = document.querySelector('button[title="Accepter"]'); if(el) { el.click(); } }, 300); });
 openingceremony.com#%#(function(){try{"undefined"!==typeof localStorage&&(localStorage.setItem("SHOW_COOKIE_BANNER","no"))}catch(a){}})();
 sex.com#%#//scriptlet('set-cookie', 'sx_cookie_ok', '1')
@@ -16060,6 +16064,8 @@ wowbiz.ro#@##onetrust-consent-sdk
 1001games.com#@##onetrust-consent-sdk
 ! https://github.com/AdguardTeam/AdguardFilters/issues/108943
 @@||cdn.appconsent.io/*.js$domain=lefigaro.fr
+@@||collector.appconsent.io/save$domain=lefigaro.fr
+@@||collector.appconsent.io/hello$domain=lefigaro.fr
 ! https://github.com/AdguardTeam/AdguardFilters/issues/108662
 autohaus-pauli.de#@##cliSettingsPopup
 autohaus-pauli.de#@##cookie-law-info-bar
@@ -28348,7 +28354,6 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 gala.fr###newsletterPush
 gala.fr###newsletterPush-overlay
 kapital-rus.ru##.subscribe_on_ks_yandex
-ntv.com.tr##.google-news
 zaks.ru##.zenblock
 bloomberg.com###plug-banner-outlet
 reuters.com##div[class^="registration-prompt__container__"]
@@ -29513,7 +29518,7 @@ fahrradmanufaktur.de#%#//scriptlet('set-cookie', 'newsletterBox', '1')
 derprivatpatient.de###block-block-49
 yaplakal.com,yap.ru##.tableborder form[enctype="multipart/form-data"] + div[class^="row"]
 kyiv.media##.post-inserted-form
-ntvspor.net,haberglobal.com.tr,cumhuriyet.com.tr,kyiv.media##.google-news
+habervakti.com,ntv.com.tr,ntvspor.net,haberglobal.com.tr,cumhuriyet.com.tr,kyiv.media##.google-news
 gooverseas.com##.layoutArticle__main > div.views-element-container + aside.island-aside
 reachout.com##hwc-subscription-module
 ef.com##.js-news-signup-cta
