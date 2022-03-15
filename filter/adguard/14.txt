@@ -1,8 +1,8 @@
-! Checksum: lszu0Er4KtolIwyoo3iOBg
+! Checksum: sp+Lo64rTxInniyKF5r76g
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.12.21
-! TimeUpdated: 2022-03-15T08:30:34+00:00
+! Version: 2.1.12.22
+! TimeUpdated: 2022-03-15T10:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2488,6 +2488,7 @@ news.cookpad.com##a[href="https://line.me/R/ti/p/%40oa-cookpadnews"]
 nv.ua##section[data-type="advertising"]
 nashkraj.by##.news_detail_social
 politring.com###body_left > ul.social-links
+freetp.org#$#.pagebg { background: none !important; }
 novayagazeta.ru##div[class^="SocialsBlock_"]
 smartme.pl##.c_ad__container
 life.nv.ua##.content-grid > div.container:not([data-vr-zone]):has(> div.row > div > a[href][target="_blank"] > picture)
@@ -32175,6 +32176,8 @@ newsweek.com##iframe[src="http://sns.europe.newsweek.com/newsletter?popup=1"]
 !##############################
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/112831
+techhelpbd.com#%#//scriptlet("adjust-setInterval", "counter--", "", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/112746
 egyfalcons.com#%#//scriptlet("adjust-setInterval", "location", "", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/111584
@@ -33583,6 +33586,7 @@ now.rememberapp.co.kr,melodelaa.link,asus-zenfone.com,techieway.blogspot.com,chr
 hinfomax.co.kr,britg.kr,japanxxxmovie.com,sexpox.com,47news.jp,learn-from-homey.blogspot.com,belajarbro.id#%#//scriptlet("abort-current-inline-script", "$", "contextmenu")
 !
 priemnaya.duma.gov.ru#%#AG_onLoad(function() {setTimeout(() => $('#treat_body_text').unbind(), 300);});
+gosuslugi.ru#%#//scriptlet("prevent-addEventListener", "click", "native")
 gosuslugi.ru#%#//scriptlet("prevent-addEventListener", "/keyup|keydown/")
 yodu.org,linovelib.com#%#//scriptlet('remove-attr', 'onselectstart', 'body')
 xn--b1aew.xn--p1ai#%#//scriptlet("abort-on-property-write", "document.onselectstart")
