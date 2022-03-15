@@ -1,8 +1,8 @@
-! Checksum: iAOW32AGsq2CXMxw2pU8Pw
+! Checksum: c5mdnYuFUB/3Zf2I3gAT1Q
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.27.64
-! TimeUpdated: 2022-03-14T18:30:23+00:00
+! Version: 2.0.27.65
+! TimeUpdated: 2022-03-15T06:30:21+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -119,9 +119,6 @@
 ! Yandex apps
 ||banners-slb.mobile.yandex.net^
 ||banners.mobile.yandex.net^
-!
-! Crypto-mining -- block completely on mobile (without third-party)
-||coinhive.com^
 !
 ! https://github.com/AdguardTeam/AdguardFilters/issues/61793
 ! Breaks Yahoo Finance app on iOS https://github.com/AdguardTeam/AdguardFilters/issues/63354
@@ -3866,7 +3863,7 @@ fiorentina.it##.advdesksi
 mensxp.com##.list-card > li:not(.track_ga) > div[class*=" "] > div > div > a[onclick]
 m.thisisgame.com##div[id^="ad_layer"]
 m.imgur.com##div[class^="Ad-adhesive"]
-zona.media##.mz-advert-item__root_news
+mediazona.online,fourth-sphere-302420.appspot.com,zona.media##.mz-advert-item__root_news
 zaycev.fm##.not_for_premium
 adme.ru###root h1[data-test-id="title"] ~ div[class^="_"] > div[class] > div[class]:empty
 mpyit.com##a[href^="https://www.laomo.me/cdn/html/go"]
@@ -4367,7 +4364,7 @@ up.ymgt.xyz##.play-wrap > #background
 woman.ru##.notification__ad
 woman.ru##div[data-name^="MobList"]
 woman.ru###div-mob-video
-meduza.io##div[class*="style__Banner-"]
+meduza.global.ssl.fastly.net,meduza.io##div[class*="style__Banner-"]
 al.com###ad-wrapper__mobile-bottom-adhesion
 hdzog.com##.hYbus
 m.haber7.com##.halkbank-mobil
