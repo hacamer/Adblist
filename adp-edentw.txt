@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: MfZSyJzR0PkTGFvEZpnDVw
+! Checksum: l7Oz1gXfyi5OczKl38sGoA
 ! Title: edentwCustom
 ! Expires: 12 hours
-! Version: 202203151908
-! Last Modified: 2022年03月15日 19:08
+! Version: 202203152016
+! Last Modified: 2022年03月15日 20:16
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自Adblock Warning Removal List、ABP filters、anti-adblock-killer-filters，感谢各位大大的分享！
 ! 仅合并规则，未做其余任何处理
@@ -1618,7 +1618,8 @@ erofishki.cc,fishki.net#$#abort-on-property-read fishki.adv
 etextlib.ru##.head_bann
 etextlib.ru##.partners
 etr.fr##.no_block
-etsy.com#$#hide-if-matches-xpath './/a[@class]//div/p[@class][count(child::span[string-length(normalize-space(text()))=1][@class]) > 60 or (contains(text(),"Anzeige")) or (contains(text(),"Anuncio")) or (contains(text(),"Publicité")) or (contains(text(),"Annuncio")) or (contains(text(),"広告")) or (contains(text(),"Advertentie")) or (contains(text(),"Reklama")) or (contains(text(),"Anúncio")) or (contains(text(),"Реклама")) ]/ancestor::li[@class]'
+etsy.com##a.listing-link[href*="&ref=listing_page_ad_"]
+etsy.com##a.listing-link[href*="&ref=sc_gallery-"]
 eurabota.com##.abtop
 euroiphone.eu##.div-download-h
 euroiphone.eu##.div-download-v
