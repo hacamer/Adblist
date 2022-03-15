@@ -1,8 +1,8 @@
-! Checksum: dO9fn3DupXBDOYc+UuwYxw
+! Checksum: kNlCRJUw96/kgY3yJbWYjw
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.0.50.60
-! TimeUpdated: 2022-03-15T17:32:17+00:00
+! Version: 2.0.50.61
+! TimeUpdated: 2022-03-15T19:30:54+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -560,9 +560,6 @@ ebb.io#%#//scriptlet('set-constant', 'google_empty_script_included', 'true')
 ||google-analytics.com/analytics.js$script,redirect=noopjs,important,domain=ebb.io
 ||pagead2.googlesyndication.com/pagead/js/google_top_exp.js$script,redirect=noopjs,important,domain=ebb.io
 ! https://github.com/AdguardTeam/AdguardFilters/issues/33141
-ip.cn#$##result  { display: block!important; }
-ip.cn#?#.container-fluid > #tips[style]:contains(请不要屏蔽广告)
-@@||ip.cn/favicon.ico
 @@||s.ip-cdn.com/img/logo.gif
 ! https://github.com/AdguardTeam/AdguardFilters/issues/35335
 ! https://github.com/AdguardTeam/AdguardFilters/issues/33197
@@ -607,9 +604,6 @@ t66y.com##.tpc_content.do_not_catch > br
 getrelax.cc#@#iframe[width="300"][height="250"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/48036
 ! https://github.com/AdguardTeam/AdguardFilters/issues/45237
-@@||ip.cn^$content
-ip.cn#$#.container-fluid > #result ~ div > a[href*="share_code"] > img[id] { width: 370px!important; position: absolute!important; left: -3000px!important; }
-ip.cn##a[href^="https://www.zeptovm.com/"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/47843
 jav777.xyz#%#//scriptlet("prevent-eval-if", "ADS_BLOCKED")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/52544
@@ -971,8 +965,6 @@ baidu.com#$##content_left > div[style*="display:block !important;"]:not(.result)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/33456
 weihemenye.com#$##player_div { display: block!important; }
 weihemenye.com#$##player_ad_div { display: none!important; }
-! https://github.com/AdguardTeam/AdguardFilters/issues/36092
-ip.cn#$#.container-fluid > div > a[href="#"] > img#tp { position: absolute!important; left: -3000px!important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/39860
 sutin0831.pixnet.net#$#div[class*="-ad-sidebar-"] { position: absolute!important; left: -3000px!important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/37960
@@ -1121,7 +1113,6 @@ cardu.com.tw##img[src*="/ad_images/"]
 kocpc.com.tw##.Zi_ad_ar_O_3
 kocpc.com.tw###custom_html-6
 unwire.hk###post-sidebar-ad
-||img-cos.colg.cn/uploads/images/*/ori_jpg
 bbs.colg.cn##.hdc > a[onclick][target="_blank"]
 south-plus.net##a[onclick*="'ad'"]
 zhangxinxu.com##div[class^="col-left"] > a[href^="https://item.jd.com/"][style="display:block!important;position:sticky;top:0;"]
