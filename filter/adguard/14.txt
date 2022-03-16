@@ -1,8 +1,8 @@
-! Checksum: PHectvTJ+/Neq5bcd3vcbg
+! Checksum: 2I1BKiBq/iWgEdsOLdrUKg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.12.37
-! TimeUpdated: 2022-03-16T13:30:39+00:00
+! Version: 2.1.12.38
+! TimeUpdated: 2022-03-16T14:30:39+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7264,6 +7264,9 @@ xn--80afnfom.xn--80ahmohdapg.xn--80asehdb##.page-notification
 neredekal.com##.css-1fl0mfv
 newtimes.ru##.disclame_block
 ssm.lnk.to##.lnk-c-footnote
+boohoo.com#$#body { overflow: auto !important; height: auto !important; }
+boohoo.com#$#.header-cookies-gdpr { display: none !important; }
+boohoo.com#$#.header-gdrp-cookies-visible body::before { display: none !important; }
 compress-or-die.com##.module_consent__main
 realvnc.com###elementor-popup-modal-7516
 marketingmorzsak.hu##div[class^="modal-cookie"]
@@ -8689,7 +8692,7 @@ outdoor-broker.de#$#.no-scroll { overflow: visible !important; }
 outdoor-broker.de#$##cookie-disclaimer { display: none !important; }
 berufsfeld-info.de,studienwahl.de#$##mrm_gdpr { display: none !important; }
 berufsfeld-info.de,studienwahl.de#$#body { overflow: visible !important; }
-thebulletin.org,schulminator.com,cross.bet,irdeto.com,termly.io,section.io,sorryapp.com##.t-consentPrompt
+thewhiskyexchange.com,thebulletin.org,schulminator.com,cross.bet,irdeto.com,termly.io,section.io,sorryapp.com##.t-consentPrompt
 platformazakupowa.pl##.cookies-infobar
 jdsports.*##.miniConsent
 bruder.de##.p-cookie-layer
@@ -15355,7 +15358,6 @@ godbolt.org#%#AG_onLoad(function() { setTimeout(function() { var el = document.q
 hotscope.tv#%#//scriptlet('set-cookie', 'cookieConsent', '1')
 ! facebook.com#%#AG_onLoad(function() {var a = new MutationObserver(function() {var el = document.querySelector('div[class^="__"][class*="-mode"] > div[class] > div[class] > div[class][tabindex] div[role="dialog"] div[aria-hidden="true"] + div[aria-label]'); if(el) {el.click(); }; setTimeout(function() { var button = document.querySelectorAll('input[aria-checked="true"]'); button.forEach(function(button){button.click();}); }, 500); setTimeout(function(){ var accept = document.querySelector('div[class^="__"][class*="-mode"] div[style*="transform"] div[tabindex]:not([aria-label]) > div[class] > div[class]:last-child > div[aria-label][role="button"][tabindex="0"]');if(accept){accept.click();}; },300);});a.observe(document, {childList: !0,subtree: !0});setTimeout(function() {a.disconnect()}, 3E3)});
 facebook.com#%#AG_onLoad(function() { setTimeout(function() { if(window.location.href.indexOf("/user_cookie_prompt") != -1){var el = document.querySelectorAll('div[role="button"][aria-label] span[dir="auto"] > span'); if(el[0]) { el[0].click()} setTimeout(function() { var a = document.querySelectorAll('input[aria-checked="true"]'); a.forEach(function(a){a.click();});}, 500); setTimeout(function() {var b = document.querySelectorAll('div[role="button"][aria-label] span[dir="auto"] > span'); if(b[0]) {b[0].click();}}, 500); ;}}, 500) });
-boohoo.com#%#document.cookie="dw_cookies_accepted=A; path=/;";
 shpock.com#%#AG_onLoad(function(){var a=new MutationObserver(function(){var b=document.querySelector('button[data-testid="primaryCta"]');b&&b.click()});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E3)});
 greens-efa.eu#%#//scriptlet("set-cookie", "ZEDWCC", "5")
 kasuwa.de#%#//scriptlet('set-cookie-reload', 'cc_main', '1')
