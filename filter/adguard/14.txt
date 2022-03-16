@@ -1,8 +1,8 @@
-! Checksum: Lwvavux+s0xuAB+tq8yhlA
+! Checksum: LcYItctOOjgFGxyut97LGA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.12.31
-! TimeUpdated: 2022-03-15T21:02:16+00:00
+! Version: 2.1.12.32
+! TimeUpdated: 2022-03-16T06:30:36+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -702,13 +702,14 @@ egotter.com#%#//scriptlet('abort-on-property-read', 'SecretModeDetector')
 ownedcore.com###site-header > div > div[style="text-align:center;"] > a[rel="nofollow"][target="_blank"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/76893
 gds.it###oggiinedicola
-! https://github.com/AdguardTeam/AdguardFilters/pull/110014
+! https://github.com/AdguardTeam/AdguardFilters/pull/112959
 ||search.namu.wiki/api/ranking$domain=arca.live
 ||arca.live/api/bywiki.json$domain=arca.live
 namu.wiki#?#aside > div[class]:matches-attr("/data-v-/"):has(> a[href="https://namu.news"])
 namu.wiki#?##app > div[class]:matches-attr("/data-v-/") > div > div:has(> a[href="https://namu.news"])
 board.namu.wiki,arca.live###newsRank
 arca.live###namuRank
+arca.live##body > .root-container > .topbar-area.d-lg-none
 ! https://github.com/AdguardTeam/AdguardFilters/issues/79295
 toroox.com#?#.box-main > div.row > div.col-md-6:has(> div.link-details > div.panel)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/76187
@@ -27550,6 +27551,7 @@ iq.com##div[class^="vipPromotion"]
 news.cookpad.com##img[width="300"][height="250"]
 66law.cn##.consult-bottom-fixed
 tokai.hostlove.com###sub
+glasswire.com##.buy-banner
 journal.tinkoff.ru##div[class^="banner"]
 energy.rakuten.co.jp##div[class^="banner-"]
 zerohedge.com##div[class^="TheMarketEarHomePageSidebar_container__"]
