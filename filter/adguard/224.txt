@@ -1,8 +1,8 @@
-! Checksum: rG9aOjjn0fBLk7v9sV3dcQ
+! Checksum: CU9f21uO/PPVja3sSwTNsA
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.0.50.67
-! TimeUpdated: 2022-03-16T11:30:51+00:00
+! Version: 2.0.50.69
+! TimeUpdated: 2022-03-16T13:02:37+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1071,6 +1071,8 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .r
 !
 !
 !
+pc.yiyouliao.com##.yyl-ads-swiper
+pc.yiyouliao.com##.yyl-ads-main > .yyl-ads-swiper:first-child + .yyl-ads-title
 xixik.com###news_contents_left > .left_gg
 ||img.xixik.net/custom/section/*/banner-$domain=xixik.com
 slashview.com##div[id^="Advertis"]
@@ -6698,8 +6700,9 @@ $websocket,domain=5nj.com|cechi8.com
 /images/*gamble$domain=50.7.31.228|tvboxnow.com
 /Images/ak47/*$domain=hanzify.net|hanzify.org
 /images/content/1436/*$domain=chineseinla.com
-/images/masha*.$domain=imoutolove.me|level-plus.net|snow-plus.net|south-plus.org|spring-plus.net|summer-plus.net|white-plus.net
-/images/sgcrwj*.$domain=imoutolove.me|level-plus.net|snow-plus.net|south-plus.org|spring-plus.net|summer-plus.net|white-plus.net
+/images/masha*.png
+/images/sgcrwj*.gif
+/images/sgcrwj*.jpg
 /img/skin/*_bg.$domain=firefox.com.cn|firefoxchina.cn
 /img/skin/tao$domain=firefox.com.cn|firefoxchina.cn
 /mydisplay.$domain=400gb.com|bego.cc|ctfile.com|pipipan.com

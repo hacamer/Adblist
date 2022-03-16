@@ -1,8 +1,8 @@
-! Checksum: z+inSTkDZ8hNJprltCT5HA
+! Checksum: VF6pM1DYo3PXhsSDeVwLMQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.12.34
-! TimeUpdated: 2022-03-16T10:30:32+00:00
+! Version: 2.1.12.36
+! TimeUpdated: 2022-03-16T13:02:15+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7245,6 +7245,9 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+meteo.be###kmcc-cookie-bar
+obstbau.org##.mod_cms_cookie_bar
+make.com##div[class*="CookieBanner_"]
 immobiliare.it##nd-cookie-bar
 ocr2edit.com##.qg-consent
 arbeitsagentur.de#$#body { overflow: auto !important; padding-right: 0 !important; }
@@ -7302,6 +7305,8 @@ exakta.se,exaktacreative.se,exaktasoftware.se#$#.cookiePopupVisible [canvas]:not
 exakta.se,exaktacreative.se,exaktasoftware.se#$#html.cookiePopupVisible { overflow: auto !important; }
 lww.com##.cookie-jar
 steamgriddb.com##.noty_layout
+oney.pt#$##cookies-flow-container { display: none !important; }
+oney.pt#$#body.prevent-scroll { overflow: auto !important; }
 xlarge.com##.consent-tracking-modal
 linkfly.to###linkfly-ctx
 wark24.de#$##PrivacyCategoryAlert { display: none !important; }
@@ -14903,6 +14908,7 @@ telnyx.com#?#footer + div[class^="styled__Container-"]:has(> div[class^="styled_
 fantrax.com#?#.toast.ng-trigger-enterLeave:has(> article[role="alert"] > p:contains(We use cookies to improve your experience))
 ada.com#?##outer-container > #page-wrap + aside[class]:has(a[href="/cookie-policy/"])
 changeua.com##.warning
+pegast.ru##.top-notification
 play.acast.com#?##app-root > div[class^="Wrapper-sc-"]:has(> aside[class^="Container-sc-"] > div[class^="Body-sc-"] > a[href="https://www.acast.com/cookies"])
 curve.com#?##gatsby-focus-wrapper > div[class^="css-"]:has(> div[class^="css-"] > div[class^="css-"] > p[class^="css-"] > a[href="https://www.curve.com/legal/cookies/index.html"])
 focus-entmt.com#?##app > div > div > div.leading-snug:has(> p > a[href="/cookie-policy"])
@@ -16009,6 +16015,8 @@ zentalk.asus.com#@##cookie-policy-info
 ! css fixes needed
 ! https://github.com/ryanbr/fanboy-adblock/issues/1410
 @@||consent.cookiebot.com^$script,domain=ekstrabladet.dk
+! https://github.com/AdguardTeam/AdguardFilters/issues/110176
+oney.pt#@#.cookies-wrapper
 ! https://github.com/ryanbr/fanboy-adblock/issues/1339#issuecomment-1054313138
 @@||cookielaw.org/langswitch/$script,domain=lippu.fi
 ! https://github.com/AdguardTeam/AdguardFilters/issues/111384
@@ -20301,6 +20309,7 @@ news.mynavi.jp###pianoj_ribbon
 04868.com.ua,karelia.news,5692.com.ua,0629.com.ua,01.kg,0154.by,0472.ua,048.ua,0512.com.ua,0522.ua,0532.ua,0552.ua,056.ua,0564.ua,061.ua,06153.com.ua,0642.ua,62.ua,7152.kz,7232.kz,city04.kz,go152.by,go232.by,inaktau.kz,inalmaty.kz,inastana.kz,inatyrau.kz,inkaragandy.kz,inshymkent.kz,kaskelenec.kz,oshto.kg,qapshagai-city.kz,uralskcity.kz##.push-panel
 video.laxd.com##.noLoginSticker
 slack.com###slack_101_jp_banner
+appuals.com##.wp-timed-p
 m.jd.com###ylWelfareSide
 thetopfivevpn.com##.exit-pop
 gwiazdy.wp.pl,money.pl,wiadomosci.wp.pl,parenting.pl,autokult.pl##.FloatingPlayer.floating
@@ -29360,7 +29369,7 @@ theaggie.org##a[title="Subscribe to our e-newsletter"]
 epic.org##.signup_box
 couponcause.com##div[dusk="newsletter-signup"]
 sharewareonsale.com#?#.widget-area > aside.home-widget:has(> h1[class] > span:contains(Follow Us))
-onedio.com##.social
+upl.uz,onedio.com##.social
 aspistrategist.org.au##.widget_aspi_subscribe
 newstatesman.com##.newsletter-inner-container
 theweek.co.uk##.polaris__newsletter
@@ -33897,6 +33906,7 @@ nius.doorblog.jp,pokemonunite.blog.jp,okanenews24.com,valorantchannel.livedoor.b
 evofone.com##.whatsapp-message
 ||matome-tarou.ldblog.jp/*_rss.html
 matome-tarou.ldblog.jp###j_rss
+||livechatv2.chat2desk.com$third-party
 ||elog-ch.com/news/newsbbs/
 buzzterr.com##.widget_feedzy_wp_widget
 bakuwaro.com#?##test224:upward(1)
