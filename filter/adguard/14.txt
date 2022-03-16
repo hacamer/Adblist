@@ -1,8 +1,8 @@
-! Checksum: Wb+zT0i4WN2cK3K7iesLdA
+! Checksum: VFqqEM7aE8zhvWkDqpzsdQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.12.42
-! TimeUpdated: 2022-03-16T17:30:33+00:00
+! Version: 2.1.12.43
+! TimeUpdated: 2022-03-16T18:30:33+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -26351,6 +26351,8 @@ disk.yandex.*##.mail360-banner
 @@||yastatic.net/daas/atom.js$domain=mail.yandex.by|mail.yandex.kz|mail.yandex.ru|mail.yandex.ua|mail.yandex.com|mail.yandex.com.tr
 !-----------------------------------------------
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/110731
+jp.sharp##.insert-blog-link
 ! https://github.com/AdguardTeam/AdguardFilters/issues/112905
 sofra.com.tr##.header-top > div.container
 ! https://github.com/AdguardTeam/AdguardFilters/issues/112580
@@ -28409,6 +28411,8 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+ubr.ua##.subscription_form_block
+dnl.dn.ua##.facebook-area
 gazetaby.com##.tabs-wrap-two
 9gag.com##.post-signup-list-banner
 f5haber.com##.subscribe-google-news
@@ -29778,7 +29782,6 @@ eadaily.com##.site-follow
 mi.com##.footer-customer-relationship
 canberratimes.com.au##.newsletter-weekly
 benguturk.com#?#div.card:has(> div.card-body > form[action="https://www.benguturk.com/newsletter"])
-magazine.skyeng.ru##.tg-banner
 magazine.skyeng.ru##.banner-socials
 abc13.com##.newsletter-desktop
 oantagonista.com###form_captacao_home
@@ -31869,6 +31872,8 @@ tvrain.ru##.menu3__foreign-agent-wrapper
 !
 !+ NOT_OPTIMIZED
 mail.ru###subscriptionFormWeekMainBlockId
+!+ NOT_OPTIMIZED
+magazine.skyeng.ru##.tg-banner
 !
 !
 !--- Whitelist
