@@ -1,8 +1,8 @@
-! Checksum: HcNy/BOuac92/WzW8jblQQ
+! Checksum: xO7x/yvWzNo0PmQciv0vQQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.12.39
-! TimeUpdated: 2022-03-16T15:30:42+00:00
+! Version: 2.1.12.41
+! TimeUpdated: 2022-03-16T17:05:32+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -92,6 +92,8 @@
 ! https://github.com/AdguardTeam/AdguardFilters/issues/76987
 youtube.com#%#AG_onLoad(function() {var a = new MutationObserver(function() {if (document.querySelector('yt-upsell-dialog-renderer')) {var b = document.querySelector('.ytd-popup-container[popup-size="UPSELL_DIALOG_RENDERER_POPUP_SIZE_LARGE"] #dismiss-button:not(.dismissed), .upsell-dialog-lightbox .upsell-dialog-dismiss-button button:not(.dismissed)');setTimeout(function() {b&&b.click()}, 3E2)}});a.observe(document, {childList: !0,subtree: !0});setTimeout(function() {a.disconnect()}, 3E3)});
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/112760
+ohmymag.com##div.player.desktop-companion
 ! https://github.com/AdguardTeam/AdguardFilters/issues/112287
 lefigaro.fr##figaro-video.is-sticky .jwplayer__player
 ! https://github.com/AdguardTeam/AdguardFilters/issues/111994
@@ -7245,6 +7247,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+ieatfoodtours.co.uk,londraculturale.it,onceinrome.com,weliketuscany.it#%#//scriptlet('set-cookie', 'fh_should_track', 'false')
 otokocikinciel.com###cookieModule
 meteo.be###kmcc-cookie-bar
 obstbau.org##.mod_cms_cookie_bar
@@ -18577,6 +18580,8 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+sbermegamarket.ru##.mobile-app-widget
+banzhu123.com##.s_m
 suumo.jp##.appIntroduction
 suumo.jp##.appbnr
 hipdf.com##.wsc-ad-plugin-container
@@ -20301,6 +20306,7 @@ sodapdf.com##.be-tooltip
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+popmech.ru##.detail-video-recommendation
 jp.sharp##.floating
 pixeldrain.com##.intro_popup
 kokoiko.smbc-card.com##.surfaceFixedBanner
@@ -28402,6 +28408,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+gazetaby.com##.tabs-wrap-two
 9gag.com##.post-signup-list-banner
 f5haber.com##.subscribe-google-news
 7x7-journal.ru##.article__footer-column-subscription-form-column-right
@@ -30699,7 +30706,7 @@ financialexpress.com,indianexpress.com###id_newsletter_subscription
 finegardening.com##.module--email-cta
 windows101tricks.com###bs-newsletter-mailchimp-3
 tdn.com,trib.com##div[id^="pu-email-form"]
-wired.com,blog.masmovil.es,energo.by,thelocalproject.com.au,cointelegraph.com##.subscription-form
+sbermegamarket.ru,wired.com,blog.masmovil.es,energo.by,thelocalproject.com.au,cointelegraph.com##.subscription-form
 digitalstudiome.com##.pane-block.sup-blk
 ramsaydiagnostics.ru##.mailing-box
 inmyroom.ru##.c-subscribe-form

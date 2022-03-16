@@ -1,8 +1,8 @@
-! Checksum: gmUIN/PYm4I4zQIKTJkm6A
+! Checksum: Af/8o5xoCOliHCPfEztp0Q
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.36.73
-! TimeUpdated: 2022-03-16T13:31:23+00:00
+! Version: 2.0.36.74
+! TimeUpdated: 2022-03-16T17:06:17+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -319,6 +319,8 @@ journal-plaza.net#?#.rightside div.block.bnavi[-ext-has="h3.dtitle:contains(Сч
 !||i.snssdk.com/log/*
 !||i.snssdk.com/slardar/sdk.js
 !
+||track.adspire.io^
+||cdn.ddmanager.ru^$third-party
 ||api.tomi.ai^$third-party
 ||dttrk.com^
 ||adara.com^$third-party
@@ -5082,6 +5084,7 @@ nethunt.com/api/v1/track/email/$image
 ! Disabled in DNS filter
 ||telemetry.mozilla.org^
 !
+||rta2.newzit.com^
 ||pxl-*.ozone.ru^
 ||xapi.ozon.ru^
 ||tracking.bloomberg.com^
@@ -23966,6 +23969,7 @@ link.gmapp*.net$image
 !---- Domain pecific rules ----
 !------------------------------
 !
+||popmech.ru^$cookie=popmech_nuid
 ||productreview.com.au^$cookie=pr_guest_id
 ||productreview.com.au^$cookie=pr_visitor_id
 ||11st.co.kr^$cookie=/RAKE_SID/
