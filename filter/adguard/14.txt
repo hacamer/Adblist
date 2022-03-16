@@ -1,8 +1,8 @@
-! Checksum: ukR5FFsT4ErBuff2lp5GTQ
+! Checksum: z+inSTkDZ8hNJprltCT5HA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.12.33
-! TimeUpdated: 2022-03-16T07:30:34+00:00
+! Version: 2.1.12.34
+! TimeUpdated: 2022-03-16T10:30:32+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -10522,7 +10522,7 @@ mobilenet.cz##.sys-alert
 ||privacy.selbst.de^
 magazine.aldi-nord.de,leaflets.kaufland.com##.c-cookieconsent
 bbc.com##header[role="banner"] > div[class^="bbc-"] > div[class^="bbc-"][dir="rtl"]:not([class*="-Banner"])
-bbc.com##header[role="banner"] > div[class^="bbc-"] > div[class^="bbc-"][dir="ltr"]:not([class*="-Banner"])
+bbcrussian.com,bbc.com##header[role="banner"] > div[class^="bbc-"] > div[class^="bbc-"][dir="ltr"]:not([class*="-Banner"])
 nudiejeans.com##div[aria-label="Cookie bar"]
 fashionid.de,peek-cloppenburg.*#$#.cw-modal-overlay { display: none !important; }
 fashionid.de,peek-cloppenburg.*#$#body .cookie-wall { display: none !important; }
@@ -15489,7 +15489,7 @@ consent.youtube.com#%#AG_onLoad(function(){if(window.location.href.includes("con
 zweitausendeins.de,meyer-gartenbedarf.de#%#//scriptlet('set-cookie', 'amcookie_allowed', '1')
 geforcenow.com#%#(function(){var a=new MutationObserver(function(){var b=document.querySelector(".welcome-footer-container > button.mat-button-base");b&&(a.disconnect(),b.click())});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)})();
 tennisassa.fi#%#(function(){if("/cookiewall/"===location.pathname){var a=new MutationObserver(function(){var b=document.querySelector(".js-accept-basic");b&&(a.disconnect(),b.click())});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)}})();
-kabeleinsdoku.at,ran.de,kabeleinsdoku.de,sat1gold.de,prosiebenmaxx.de,sixx.de,kabeleins.de,prosieben.de,sat1.de#%#AG_onLoad(function(){if(null===localStorage.getItem("uc_user_interaction")){var d=new MutationObserver(function(){var a=document.querySelector("cmp-banner");a&&a.shadowRoot&&(a=a.shadowRoot.querySelector("cmp-dialog"));a&&a.shadowRoot&&(a=a.shadowRoot.querySelector(".dialog__action--secondary > cmp-button"));a&&a.shadowRoot&&(a=a.shadowRoot.querySelector("button"));a&&a.click();setTimeout(function(){var c,e,f,g,b=null==(c=document.querySelector("cmp-banner"))?void 0:null==(e=c.shadowRoot)?void 0: null==(f=e.querySelector("cmp-dialog"))?void 0:null==(g=f.shadowRoot)?void 0:g.querySelectorAll('cmp-accordion[label="Berechtigtes Interesse"] > div[slot="content"] > .dialog__item > cmp-item[hasswitch] > cmp-switch');b&&(b[0]&&b[0].shadowRoot.querySelector("input").click(),b[1]&&b[1].shadowRoot.querySelector("input").click(),b[2]&&b[2].shadowRoot.querySelector("input").click(),b[3]&&b[3].shadowRoot.querySelector("input").click(),b[4]&&b[4].shadowRoot.querySelector("input").click());var h,k,l,m;(c= null==(h=document.querySelector("cmp-banner"))?void 0:null==(k=h.shadowRoot)?void 0:null==(l=k.querySelector("cmp-dialog"))?void 0:null==(m=l.shadowRoot)?void 0:m.querySelector('cmp-button[variant="secondary"]'))&&(d.disconnect(),c.click())},300)});d.observe(document,{childList:!0,subtree:!0});setTimeout(function(){d.disconnect()},1E4)}});
+sat1.at,kabeleinsdoku.at,ran.de,kabeleinsdoku.de,sat1gold.de,prosiebenmaxx.de,sixx.de,kabeleins.de,prosieben.de,sat1.de#%#AG_onLoad(function(){if(null===localStorage.getItem("uc_user_interaction")){var d=new MutationObserver(function(){var a=document.querySelector("cmp-banner");a&&a.shadowRoot&&(a=a.shadowRoot.querySelector("cmp-dialog"));a&&a.shadowRoot&&(a=a.shadowRoot.querySelector(".dialog__action--secondary > cmp-button"));a&&a.shadowRoot&&(a=a.shadowRoot.querySelector("button"));a&&a.click();setTimeout(function(){var c,e,f,g,b=null==(c=document.querySelector("cmp-banner"))?void 0:null==(e=c.shadowRoot)?void 0: null==(f=e.querySelector("cmp-dialog"))?void 0:null==(g=f.shadowRoot)?void 0:g.querySelectorAll('cmp-accordion[label="Berechtigtes Interesse"] > div[slot="content"] > .dialog__item > cmp-item[hasswitch] > cmp-switch');b&&(b[0]&&b[0].shadowRoot.querySelector("input").click(),b[1]&&b[1].shadowRoot.querySelector("input").click(),b[2]&&b[2].shadowRoot.querySelector("input").click(),b[3]&&b[3].shadowRoot.querySelector("input").click(),b[4]&&b[4].shadowRoot.querySelector("input").click());var h,k,l,m;(c= null==(h=document.querySelector("cmp-banner"))?void 0:null==(k=h.shadowRoot)?void 0:null==(l=k.querySelector("cmp-dialog"))?void 0:null==(m=l.shadowRoot)?void 0:m.querySelector('cmp-button[variant="secondary"]'))&&(d.disconnect(),c.click())},300)});d.observe(document,{childList:!0,subtree:!0});setTimeout(function(){d.disconnect()},1E4)}});
 glamour.de#%#//scriptlet('remove-attr', 'style', 'html[style="overflow: hidden;"],body[style="overflow: hidden;"]')
 glamour.de#%#AG_onLoad(function(){if(!document.cookie.includes("eupubconsent-v2")){var b=new MutationObserver(function(){setTimeout(function(){var a=document.querySelector("#onetrust-pc-btn-handler");a&&a.click()},300);setTimeout(function(){var a=document.querySelector('input[aria-checked="true"]');a&&a.click()},500);setTimeout(function(){var a=document.querySelector("#ot-group-id-C0003");a&&a.click()},500);var c=document.querySelector(".save-preference-btn-handler");c&&(b.disconnect(),c.click())});b.observe(document,{childList:!0, subtree:!0});setTimeout(function(){b.disconnect()},1E5)}});
 studycheck.de#%#AG_onLoad(function(){-1==document.cookie.indexOf("uc")&&setTimeout(function(){document.querySelector("#usercentrics-root").shadowRoot.querySelector('button[data-testid="uc-accept-all-button"]').click()},1000)});
@@ -17168,14 +17168,14 @@ fega-schmitt.de#@#.cookieWarning
 @@||quantcast.mgr.consensu.org/GVL-v2/vendor-list.json
 ! https://github.com/AdguardTeam/AdguardFilters/issues/69248
 ! https://github.com/AdguardTeam/AdguardFilters/issues/78524
-@@||graphql.usercentrics.eu/graphql$domain=sixx.de|prosiebenmaxx.de|sat1.de|prosieben.de|kabeleins.de|sixx.de|sat1gold.de|ran.de|joyn.de
-@@||consents.usercentrics.eu/consent*?controllerId=$domain=sixx.de|prosiebenmaxx.de|sat1.de|prosieben.de|kabeleins.de|sixx.de|sat1gold.de|ran.de|joyn.de
-@@||api.usercentrics.eu/translations/translations-*.json$domain=sixx.de|prosiebenmaxx.de|sat1.de|prosieben.de|kabeleins.de|sixx.de|sat1gold.de|ran.de|joyn.de
-@@||app.usercentrics.eu/browser-sdk/*/cross-domain-bridge.html$domain=sixx.de|prosiebenmaxx.de|sat1.de|prosieben.de|kabeleins.de|sixx.de|sat1gold.de|ran.de|joyn.de
-@@||api.usercentrics.eu/settings*/latest/languages.json$domain=sixx.de|prosiebenmaxx.de|sat1.de|prosieben.de|kabeleins.de|sixx.de|sat1gold.de|ran.de|joyn.de
-@@||api.usercentrics.eu/settings/*/latest/de.json$domain=sixx.de|prosiebenmaxx.de|sat1.de|prosieben.de|kabeleins.de|sixx.de|sat1gold.de|ran.de|joyn.de
-@@||aggregator.service.usercentrics.eu/aggregate^$domain=sixx.de|prosiebenmaxx.de|sat1.de|prosieben.de|kabeleins.de|sixx.de|sat1gold.de|ran.de|joyn.de
-@@||api.usercentrics.eu/tcf2/*.json$domain=sixx.de|prosiebenmaxx.de|sat1.de|prosieben.de|kabeleins.de|sixx.de|sat1gold.de|ran.de|joyn.de
+@@||graphql.usercentrics.eu/graphql$domain=sixx.de|prosiebenmaxx.de|sat1.de|prosieben.de|kabeleins.de|sixx.de|sat1gold.de|ran.de|joyn.de|sat1.at
+@@||consents.usercentrics.eu/consent*?controllerId=$domain=sixx.de|prosiebenmaxx.de|sat1.de|prosieben.de|kabeleins.de|sixx.de|sat1gold.de|ran.de|joyn.de|sat1.at
+@@||api.usercentrics.eu/translations/translations-*.json$domain=sixx.de|prosiebenmaxx.de|sat1.de|prosieben.de|kabeleins.de|sixx.de|sat1gold.de|ran.de|joyn.de|sat1.at
+@@||app.usercentrics.eu/browser-sdk/*/cross-domain-bridge.html$domain=sixx.de|prosiebenmaxx.de|sat1.de|prosieben.de|kabeleins.de|sixx.de|sat1gold.de|ran.de|joyn.de|sat1.at
+@@||api.usercentrics.eu/settings*/latest/languages.json$domain=sixx.de|prosiebenmaxx.de|sat1.de|prosieben.de|kabeleins.de|sixx.de|sat1gold.de|ran.de|joyn.de|sat1.at
+@@||api.usercentrics.eu/settings/*/latest/de.json$domain=sixx.de|prosiebenmaxx.de|sat1.de|prosieben.de|kabeleins.de|sixx.de|sat1gold.de|ran.de|joyn.de|sat1.at
+@@||aggregator.service.usercentrics.eu/aggregate^$domain=sixx.de|prosiebenmaxx.de|sat1.de|prosieben.de|kabeleins.de|sixx.de|sat1gold.de|ran.de|joyn.de|sat1.at
+@@||api.usercentrics.eu/tcf2/*.json$domain=sixx.de|prosiebenmaxx.de|sat1.de|prosieben.de|kabeleins.de|sixx.de|sat1gold.de|ran.de|joyn.de|sat1.at
 ! https://github.com/AdguardTeam/AdguardFilters/issues/69022
 @@||xe.com/themes/xe/js/react/cookie-consent.*.min.js
 ! https://github.com/AdguardTeam/AdguardFilters/issues/68933
