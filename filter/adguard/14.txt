@@ -1,8 +1,8 @@
-! Checksum: C4KOgEQmWpgaQVoQdFSzCw
+! Checksum: 9OBqksnB0EgFNUqaZDzvxQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.12.45
-! TimeUpdated: 2022-03-17T07:30:33+00:00
+! Version: 2.1.12.47
+! TimeUpdated: 2022-03-17T09:02:18+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -96,6 +96,8 @@ youtube.com#%#AG_onLoad(function() {var a = new MutationObserver(function() {if 
 ohmymag.com##div.player.desktop-companion
 ! https://github.com/AdguardTeam/AdguardFilters/issues/112287
 lefigaro.fr##figaro-video.is-sticky .jwplayer__player
+lefigaro.fr##.flive-loop__media.sticky
+lefigaro.fr##.fig-free-embed div[id^="figaro-live-flive-channel-"][floated-video="yes"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/111994
 surfshark.com##.post-content .get-surfshark
 ! https://github.com/AdguardTeam/AdguardFilters/issues/71439#issuecomment-1057720690
@@ -7247,6 +7249,9 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+wentronic.com,wentronic.pl#$#body { overflow-y: auto !important; }
+wentronic.com,wentronic.pl#$#body .cookie-modal { display: none !important; }
+wentronic.com,wentronic.pl#$#.overlay-block:not(.overlay-block--gallery-modal-open) { display: none !important; }
 meendox.net##.cookies-panel-gdpr
 detmir.ru##.f > div[class="N O"]
 otokocikinciel.com###cookieModule
@@ -8345,7 +8350,8 @@ nordicnest.de#?##container > div[class]:has(> div[class] > div[class] > div[clas
 ||components2.gazzettaobjects.it/rcs_cpmt$domain=~video.gazzetta.it
 ||stihl.de/etc.clientlibs/stihl-frontend/clientlibs/components/content/cookie/cookielayer/
 petz.com.br##.policy-warning-banner
-||cdn.consentmanager.net^$domain=kundendienst-info.de|baunetz.de|rabe-bike.de|heinze.de|ais-online.de|dasoertliche.de|reno.de|walbusch.de|mathe-lexikon.at|katzen-forum.net|deutsche-apotheker-zeitung.de|brandible.de|my.games|vergleich.org|finanztip.de|baunetzwissen.de|trusted.de|universal-music.de|web2.cylex.de|mey-edlich.de|schuhe.de|qiez.de|benz24.de|hervis.de|avena.de|heimwerker.de|bauemotion.de|nw.de
+kicker.de#$#body { overflow: auto !important; }
+||cdn.consentmanager.net^$domain=kundendienst-info.de|baunetz.de|rabe-bike.de|heinze.de|ais-online.de|dasoertliche.de|reno.de|walbusch.de|mathe-lexikon.at|katzen-forum.net|deutsche-apotheker-zeitung.de|brandible.de|my.games|vergleich.org|finanztip.de|baunetzwissen.de|trusted.de|universal-music.de|web2.cylex.de|mey-edlich.de|schuhe.de|qiez.de|benz24.de|hervis.de|avena.de|heimwerker.de|bauemotion.de|nw.de|kicker.de
 mod.io###achtung-overlay
 bringmeister.de##div[data-testid="cookiePopup"]
 planetkey.de##.survey.alert-box
@@ -16008,6 +16014,8 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/113044
+wentronic.com,wentronic.pl#@#.cookie-modal
 ! https://github.com/AdguardTeam/AdguardFilters/issues/112864
 @@||tools.pdf24.org/de/cookie-banner-iframe
 tools.pdf24.org#@##cookieBanner
@@ -24788,7 +24796,8 @@ com-magazin.de##w-div[role$="dialog"]
 !
 !
 ! Twitter login popup
-twitter.com#$?#div[data-testid="sheetDialog"]:upward(div[role="group"]) { display: none !important; }
+! https://github.com/AdguardTeam/AdguardFilters/issues/112718#issuecomment-1069965416
+twitter.com#$?#div[data-testid="sheetDialog"] div[role="button"] + div[role="button"]:upward(div[role="group"]) { display: none !important; }
 twitter.com#$?#html { overflow: auto !important; padding-right: 0 !important; }
 ! Yandex
 yandex.*##.desk-notif-card__card[aria-label="Реклама"]
@@ -32243,6 +32252,8 @@ newsweek.com##iframe[src="http://sns.europe.newsweek.com/newsletter?popup=1"]
 !##############################
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/113045
+noon.khsm.io#%#AG_onLoad(function(){var a=document.querySelector('.content > a[href^="http"].download-link');a&&a.click()});
 ! https://github.com/AdguardTeam/AdguardFilters/issues/112831
 techhelpbd.com#%#//scriptlet("adjust-setInterval", "counter--", "", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/112746
