@@ -1,8 +1,8 @@
-! Checksum: VvmISNYlbjBz5CBtdvhmZA
+! Checksum: BQoMMaAU5OyO6s9ZJxtb0g
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.0.57.83
-! TimeUpdated: 2022-03-17T16:31:21+00:00
+! Version: 2.0.57.84
+! TimeUpdated: 2022-03-17T17:31:23+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -356,6 +356,7 @@ lj_bookmarklet
 ! Good: example.org#?#main > div.row:has(> div.ad)
 ! Bad: example.org##main > div.ad (should be in specific.txt)
 !
+universoformulas.com#?#h4.heading:contains(COMPÁRTELO)
 ozon.ru#?#div[data-popper-placement] > div[class] > div[class]:has(> div[class] > button > span > span:contains(/ВКонтакте|Telegram|Facebook|Twitter|Одноклассники/))
 qiita.com#?#div[id^="PersonalArticlePage-"] > .p-items_wrapper + div[class^="css-"] > div[class^="css-"] > div[class^="css-"]:has(> .fa-share-alt)
 itznaniya.ru#?#h3:contains(/^Поделиться$/)
