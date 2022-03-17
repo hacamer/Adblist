@@ -1,8 +1,8 @@
-! Checksum: iOyaafFg24fINmuGtW2Efg
+! Checksum: Y3XXCvyfdy6Haf7Jkhg1jg
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.0.57.81
-! TimeUpdated: 2022-03-17T13:02:55+00:00
+! Version: 2.0.57.82
+! TimeUpdated: 2022-03-17T15:31:32+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1203,6 +1203,8 @@ windowstechblog.nl#$#.onp-sl-blur-area[style="filter: blur(5px);"] { filter: non
 0lik.ru##.onp-sl-outer-wrap
 0lik.ru$replace=/locker:{\s+timer:\s'\d\d'/locker: { timer: '1'/
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/111997
+ozon.ru#$?#.vue-portal-target > div[data-popper-placement="top"]:has(button > span > span:contains(ВКонтакте)) { top:170!important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/111027
 getnavi.jp#$#.meta-wrap > .sns { visibility: hidden !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/104263
@@ -1442,6 +1444,7 @@ finders.me##.__post-share
 svgoptimizer.com,epstopng.com,epstosvg.com,svgtopdf.com,pdftosvg.com,jpg2svg.com,svgtojpg.com,svgtopng.com,png2svg.com,pngtogif.com,giftopng.com,gifcompressor.com,giftomp4.com##.footer__title
 busan.com##.btns > li[onclick^="cosmosfarm_share_"][class]
 yoromaru.jp##.block-goods-sub--sns
+logmi.jp##hatena-bookmark-counter
 nepisirsem.com###topshare
 conan-mobile.jp###snsbar
 ||mz-cdn.shoeisha.jp/lib/img/cmn/icon_note.svg
@@ -3216,8 +3219,8 @@ my.mail.ru##.b-video__code-block__share-panel
 babyclub.de##.social-links-container
 censor.net##.footer_theme
 diy.obi.ru##.rating-section-share
-betagamer.net,pcfreebook.com,xn--fsqv94c.jp,reliphone.jp,hackit.work,gussan-no-ie.com,ushigyu.net,gadgerba.com,rtain.jp,gamers-info.net,artjuku.com,cinema-sketch.com,chiepedia.club,geek.sc##.fab-btn
-gaddet.com,betagamer.net,pcfreebook.com,xn--fsqv94c.jp,reliphone.jp,hackit.work,videobeginners.com,gussan-no-ie.com,ushigyu.net,gadgerba.com,smartparty.jp,rtain.jp,sdesignlabo.com,gamers-info.net,jiyunagomataro.com,artjuku.com,knowl.jp,b-gamers.net,record-now.com,pinapopo.com,daeudaeu.com,sendaiminami-tusin.com,cinema-sketch.com,mhr-movie.com,proof0309.com,flatdmkobo.com,anime-torrent.com,trovivo.com,makuring.com,appl-y.com,taisy0.com,chiepedia.club,geek.sc##.sns-btn
+mojinavi.com,betagamer.net,pcfreebook.com,xn--fsqv94c.jp,reliphone.jp,hackit.work,gussan-no-ie.com,ushigyu.net,gadgerba.com,rtain.jp,gamers-info.net,artjuku.com,cinema-sketch.com,chiepedia.club,geek.sc##.fab-btn
+mojinavi.com,gaddet.com,betagamer.net,pcfreebook.com,xn--fsqv94c.jp,reliphone.jp,hackit.work,videobeginners.com,gussan-no-ie.com,ushigyu.net,gadgerba.com,smartparty.jp,rtain.jp,sdesignlabo.com,gamers-info.net,jiyunagomataro.com,artjuku.com,knowl.jp,b-gamers.net,record-now.com,pinapopo.com,daeudaeu.com,sendaiminami-tusin.com,cinema-sketch.com,mhr-movie.com,proof0309.com,flatdmkobo.com,anime-torrent.com,trovivo.com,makuring.com,appl-y.com,taisy0.com,chiepedia.club,geek.sc##.sns-btn
 edaily.co.kr##.reporter_sns
 haber7.com,w.atwiki.jp,badische-zeitung.de,amuelle.jp##.social-button
 yle.fi##div[class^="ShareControls__"]
