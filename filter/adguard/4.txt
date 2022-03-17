@@ -1,8 +1,8 @@
-! Checksum: fHJ2pfYqePenc2/OaVvcIg
+! Checksum: iP41BFP+BX6pIYvaQ5Xzaw
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.0.57.77
-! TimeUpdated: 2022-03-16T16:31:23+00:00
+! Version: 2.0.57.78
+! TimeUpdated: 2022-03-17T06:31:22+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -358,6 +358,7 @@ lj_bookmarklet
 !
 qiita.com#?#div[id^="PersonalArticlePage-"] > .p-items_wrapper + div[class^="css-"] > div[class^="css-"] > div[class^="css-"]:has(> .fa-share-alt)
 itznaniya.ru#?#h3:contains(/^Поделиться$/)
+theins.ru#?##articleContainer > div[class]:has(> div[class] > ul.remove > li > a[href^="//www.facebook.com"])
 money.pl#?#div[data-st-area="st-article-reactions"] button[shape="circle"]:has(> svg > circle[cx="4.5"][cy="7.5"][r="2.5"])
 comic.pixiv.net#?#.justify-between > .flex > div[class="w-40"]:has(> div > .cursor-pointer > .icon > img[src^="/static/images/share_"])
 comic.pixiv.net#?#div[class="screen4:hidden"] > .bottom-16.fixed:has(> .bg-surface1-default > span > img[src^="/static/images/share_"])
