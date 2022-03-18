@@ -1,8 +1,8 @@
-! Checksum: fmalAGAfx4DtYbmVnSZ40g
+! Checksum: qad1VKjthWd5+v73tmSQfQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.12.63
-! TimeUpdated: 2022-03-18T17:02:16+00:00
+! Version: 2.1.12.64
+! TimeUpdated: 2022-03-18T19:30:35+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -18603,6 +18603,9 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+girlschannel.net##.topic-items > li > a[href^="https://play.google.com/store/apps/details?id=net.girlschannel"]
+girlschannel.net##.topic-items > li > a[href^="https://itunes.apple.com/app/apple-store/id658785238"]
+girlschannel.net##.banner-wrap
 nikkei.com##a[data-rn-track="open_in_app"]
 booklive.jp##.app_btn_area
 nova.rs##.banner-footer
@@ -18765,7 +18768,6 @@ video.tv-tokyo.co.jp##.adApp-wrapper
 kurashiru.com##.PcToAppBanner
 kurashiru.com##.footer-image-wrapper
 intellipaat.com##.sticky-whatsapp-wrapper
-girlschannel.net##.footer-banner
 ||static.gc-img.net/img/parts/banner_readafter.png
 vecernji.hr##.naslovnice_vecernjeg__app
 newegg.com##.our-apps
@@ -19879,6 +19881,8 @@ svyaznoy.ru#%#//scriptlet('remove-class', 'android-banner-on-page')
 ebay.*###gh-appBanner
 !
 !
+!+ NOT_OPTIMIZED
+girlschannel.net##.footer-banner
 !+ NOT_OPTIMIZED
 kurashiru.com##.header-app-banner
 !+ NOT_OPTIMIZED
