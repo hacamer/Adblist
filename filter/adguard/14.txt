@@ -1,8 +1,8 @@
-! Checksum: fKQDqPscfTw4ZYhiLrPofA
+! Checksum: k6GJd39U8FfFNyfqJFjLKQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.12.53
-! TimeUpdated: 2022-03-17T21:02:20+00:00
+! Version: 2.1.12.54
+! TimeUpdated: 2022-03-18T06:30:35+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7256,9 +7256,12 @@ flatart.pl###kekse
 wentronic.com,wentronic.pl#$#body { overflow-y: auto !important; }
 wentronic.com,wentronic.pl#$#body .cookie-modal { display: none !important; }
 wentronic.com,wentronic.pl#$#.overlay-block:not(.overlay-block--gallery-modal-open) { display: none !important; }
+gomibo.de##div[class^="CookieBannerstyle"]
 meendox.net##.cookies-panel-gdpr
 detmir.ru##.f > div[class="N O"]
 otokocikinciel.com###cookieModule
+wg-gesucht.de#$#body[style^="overflow:"] { overflow: auto !important; }
+wg-gesucht.de#$#div[id^="cmpbox"] { display: none !important; }
 meteo.be###kmcc-cookie-bar
 obstbau.org##.mod_cms_cookie_bar
 make.com##div[class*="CookieBanner_"]
@@ -12732,7 +12735,7 @@ mcdonalds.pl###cookies_message_info
 razer.com###cookies_popup_container
 deac.eu###cookiescript_container
 teknosa.com###cookiescript_injectedone
-forte.com.pl,plny.pl###cookiesinfo
+werruft.info,forte.com.pl,plny.pl###cookiesinfo
 ilanversen.com###cookiesusage
 agenturfilmgesichter.de,agentur-filmgesichter.de###cookietoast
 nanodatex.pl###cookis-box
@@ -28433,6 +28436,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 singlegrain.com##.sticky-bottom-cta
 singlegrain.com##.sidebar-subscribe
 tympanus.net##.ct-sharing
+gomibo.de##section[class^="SubscribeNewsletterstyle"]
 ubr.ua##.subscription_form_block
 dnl.dn.ua##.facebook-area
 baltnews.*##.article-content__banner
