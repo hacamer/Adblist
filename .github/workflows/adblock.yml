@@ -67,16 +67,20 @@ jobs:
           cd ./download
           cat ../mod/GeneralBlock.txt ../mod/TiebaBlock.txt easylist.txt easylistchina.txt easyprivacy.txt cjx-annoyance.txt antiadblockfilters.txt abp-filters-anti-cv.txt anti-adblock-killer-filters.txt adgcn.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/adp-pc.txt
           cat ../mod/GeneralBlock.txt easylist.txt easylistchina.txt easyprivacy.txt cjx-annoyance.txt | grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/adp-mo.txt
-          cat ../mod/GeneralBlock.txt ../mod/TiebaBlock.txt adgk.txt dmz.txt xinggsf-mv.txt easylistchina.txt cjxlist.txt cjx-annoyance.txt | grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/adp.txt
+          cat ../mod/GeneralBlock.txt ../mod/TiebaBlock.txt adgk.txt dmz.txt xinggsf-mv.txt easylistchina.txt adgcn.txt cjxlist.txt cjx-annoyance.txt | grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/adp.txt
           cat adgk.txt dmz.txt xinggsf-mv.txt easylistchina.txt cjxlist.txt cjx-annoyance.txt| grep -v '^!' | sort -ur | uniq -u | awk '!a[$0]++' > ../new/adp2.txt
           cat xinggsf-mv.txt easylistchina.txt cjxlist.txt cjx-annoyance.txt easyprivacy.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/adp3.txt
           cat antiadblockfilters.txt abp-filters-anti-cv.txt anti-adblock-killer-filters.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/adp-edentw.txt
           for i in $(ls ../new/*.txt); do
             sed -i '/^$/d' $i
           done
-          python .././mod/rules.py
           cd ../
           #mv ./new/* ../ 
+      - name: Diff and addChecksum
+        run: |
+          cd ./new/
+          python .././mod/rules.py
+          cd ../
       - name: Diff and addChecksum
         run: |
           mkdir -p ./old_no_title/
