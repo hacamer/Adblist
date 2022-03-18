@@ -74,6 +74,7 @@ jobs:
           for i in $(ls ../new/*.txt); do
             sed -i '/^$/d' $i
           done
+          python ./mod/rules.py
           cd ../
           #mv ./new/* ../ 
       - name: Diff and addChecksum
