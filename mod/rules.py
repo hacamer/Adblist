@@ -35,8 +35,8 @@ os.remove("adp-pc.txt")
 os.rename("adp-pc-test.txt","adp-pc.txt")
 
 resultd = []
-ffod = open("adp.txt")
-fod = open("adp-test.txt", "w")
+ffod = open("adp-edentw.txt")
+fod = open("adp-edentw-test.txt", "w")
 resultd=list(set(ffod.readlines()))
 resultd.sort()
 fod.writelines(resultd)
