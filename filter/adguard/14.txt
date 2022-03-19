@@ -1,8 +1,8 @@
-! Checksum: aDOaZ7S0MAMudnlkfqwuqg
+! Checksum: 1BpQXAXayZP1HghWV5l9mg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.12.69
-! TimeUpdated: 2022-03-19T20:30:33+00:00
+! Version: 2.1.12.70
+! TimeUpdated: 2022-03-19T22:30:32+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1978,6 +1978,8 @@ iphone.facebook.com,m.facebook.com##article > .story_body_container + div[class]
 ! Covid survey
 facebook.com###ssrb_stories_end ~ div[class] > div[class] > div[class*=" "] > div[class] > div[class] > div[style*="border-radius"][class]
 m.facebook.com##span[data-top-of-feed-unit-type="megaphone_story"] > div[data-sigil="m-megaphone"]
+! corona information in profile timeline
+facebook.com##div[data-pagelet="ProfileTimeline"] a[href^="https://www.facebook.com/coronavirus_info"]
 !
 ! 44.ua - notification about browser extension
 44.ua##.exp-line
