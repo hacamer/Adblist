@@ -1,8 +1,8 @@
-! Checksum: zFaMCuKRDirZUPcr57xnPA
+! Checksum: 5Xsr/78OIZADdGoU8a2f9g
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.36.81
-! TimeUpdated: 2022-03-19T13:31:19+00:00
+! Version: 2.0.36.82
+! TimeUpdated: 2022-03-19T15:31:14+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -25336,6 +25336,12 @@ $app=com.miui.analytics
 ! For platforms which do not support $redirect rules
 !
 !
+! https://github.com/easylist/easylist/pull/11359
+@@||google-analytics.com/analytics.js$domain=cmoa.jp
+@@||googletagmanager.com/gtm.js$script,domain=cmoa.jp
+@@||cmoa.jp^$cookie=_ga
+! https://github.com/easylist/easylist/pull/11361
+@@||log000.goo.ne.jp/gcgw.js$domain=nttxstore.jp
 ! https://twitter.com/nkym4575/status/1504995658675093505
 @@||delivery.satr.jp^$script,domain=mieru-ca.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/113174
