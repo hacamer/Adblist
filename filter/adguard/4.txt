@@ -1,8 +1,8 @@
-! Checksum: 6fWiMwPidtTpfETvvNEVGQ
+! Checksum: AEzfagKl7V0CEnhUkAdkWw
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.0.57.94
-! TimeUpdated: 2022-03-18T18:31:21+00:00
+! Version: 2.0.57.95
+! TimeUpdated: 2022-03-19T17:02:56+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -8442,7 +8442,7 @@ magicbase.xyz,kaldata.com##.share-flat
 hackr.io,last.fm##.share-footer
 wonderzine.com##.share-images
 economist.com##.share-inline-footer-reddit
-golem.de,musescore.com,skidkaonline.ru##.share-item
+golem.de,musescore.com,skidkaonline.ru##.share-item:not(.comments)
 bigbangnews.com##.share-me
 vulture.com##.share-mini
 grammarly.com##.share-more-wrap
@@ -10804,6 +10804,8 @@ neokur.com#$#.jquery-modal.blocker { display: none!important; }
 ! #Social locker#
 ! #End Social locker
 !
+! golem.de (android)- comments button missing in article
+golem.de#@#.social-tools
 ! https://github.com/AdguardTeam/AdguardFilters/issues/96066
 eg.ru#@#amp-addthis
 ! https://github.com/uBlockOrigin/uAssets/issues/12233
