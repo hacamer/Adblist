@@ -1,8 +1,8 @@
-! Checksum: 4xNlPYVJ5DdJQxE4iDJV4Q
+! Checksum: 88oRLK/UD5lODzNyaAZHTA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.12.75
-! TimeUpdated: 2022-03-21T11:30:48+00:00
+! Version: 2.1.12.76
+! TimeUpdated: 2022-03-21T12:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1150,8 +1150,8 @@ makeup.ru#%#//scriptlet("set-constant", "Makeup.subscribePopup", "undefined")
 ||player.anyclip.com^$domain=thewindowsclub.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/46788
 adbull.site##.col-sm-4
-! https://github.com/AdguardTeam/AdguardFilters/issues/46661
-pikabu.ru#?#.stories-feed > div.stories-feed__container > article ~ section:has(> div.lightbulbs__welcome)
+! pikabu.ru - sponsor
+pikabu.ru#?#div[class^="stories-feed_"] > article.story > div.story__main span.story__sponsor:upward(article.story)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/46551
 ||i2.kidstaff.com.ua/info-1-5.js
 ! https://github.com/AdguardTeam/AdguardFilters/issues/46392
@@ -7261,6 +7261,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 mobile.scribblelive.com###scrbbl-notification
 found.ee##.disclaimer-text
+ensanahotels.com###ensana-cookie-root
 viva.gr#$#.cc-overlay { display: none !important; }
 viva.gr#$#body.cc--open { overflow-y: auto !important; }
 overclockers.co.uk#$#body { overflow: auto !important; padding-right: 0 !important; }
@@ -13350,7 +13351,7 @@ diariodeleon.es###LegalCookies
 reddit.com###SHORTCUT_FOCUSABLE_DIV > div > div:not([class]):not([id]):not([style]) > .hvdZkC
 forticlient.com,fortiguard.com,fortinet.com###__agreementBar
 shell.co.kr,sony.co.uk,shellsmart.com,shell.com.tr,shell.de,thequietus.com###_evidon-background
-pfizer.de,shell.com.ru,polcard.pl,fiserv.com,techbargains.com,shell.pl,zecken.de,babycenter.com,pfizer.it,pfizer.co.uk,howlongtobeat.com,economist.com,ookla.com,askmen.com,shell.com,mashable.com,extremetech.com,ignboards.com,shell.com.tr,lenovo.com,menshealth.com,esquire.com,geek.com,ign.com,pcmag.com,speedtest.net###_evidon-barrier-wrapper
+humblebundle.com,pfizer.de,shell.com.ru,polcard.pl,fiserv.com,techbargains.com,shell.pl,zecken.de,babycenter.com,pfizer.it,pfizer.co.uk,howlongtobeat.com,economist.com,ookla.com,askmen.com,shell.com,mashable.com,extremetech.com,ignboards.com,shell.com.tr,lenovo.com,menshealth.com,esquire.com,geek.com,ign.com,pcmag.com,speedtest.net###_evidon-barrier-wrapper
 humblebundle.com,last.fm,linuxtoday.com,pcmag.com,techrepublic.com,zdnet.com###_evidon_banner
 totalbike.hu,indamediasales.hu,divany.hu,blog.hu,indavideo.hu,femina.hu,index.hu,totalcar.hu###_iph_cp_popup
 ubuntu-it.org###_ubuntu-it_cookie_policy
@@ -18618,6 +18619,7 @@ m.liputan6.com##.gateway__mobile-app
 sp.netkeiba.com##.HeadBnrWrap
 sp.netkeiba.com##.netkeiba_app_link01
 vc.ru##.mobile-app-redirect
+france24.com##.o-self-promo--app
 girlschannel.net##.topic-items > li > a[href^="https://play.google.com/store/apps/details?id=net.girlschannel"]
 girlschannel.net##.topic-items > li > a[href^="https://itunes.apple.com/app/apple-store/id658785238"]
 girlschannel.net##.banner-wrap
@@ -20356,6 +20358,7 @@ sodapdf.com##.be-tooltip
 ipinfo.io###overlay
 wired.com##.paywall-modal
 englex.ru##.stb-overlay
+france24.com##div[data-pwa-android-screen]
 bigleap.com##.bl-popup
 gaiax-socialmedialab.jp##.js-service-popup
 popmech.ru##.detail-video-recommendation
@@ -32309,7 +32312,7 @@ yalla-shoot-now.us#%#//scriptlet("adjust-setInterval", "counter", "", "0.02")
 ! https://github.com/bogachenko/fuckfuckadblock/commit/a4d302bbb5f75bcd7d3762afb4b8ae3c6fe4d801#commitcomment-69137942
 bitefaucet.com#%#//scriptlet("adjust-setInterval", "timeLeft", "", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/113045
-noon.khsm.io#%#AG_onLoad(function(){var a=document.querySelector('.content > a[href^="http"].download-link');a&&a.click()});
+re.two.re,noon.khsm.io#%#AG_onLoad(function(){var a=document.querySelector('.content > a[href^="http"].download-link');a&&a.click()});
 ! https://github.com/AdguardTeam/AdguardFilters/issues/112831
 techhelpbd.com#%#//scriptlet("adjust-setInterval", "counter--", "", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/112746
