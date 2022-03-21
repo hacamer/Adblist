@@ -1,8 +1,8 @@
-! Checksum: Iljp/UbsYWsLY2zrL9m7Ew
+! Checksum: bDUewJxnF4U7lBEaTUFT/Q
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.12.79
-! TimeUpdated: 2022-03-21T15:30:37+00:00
+! Version: 2.1.12.81
+! TimeUpdated: 2022-03-21T17:02:08+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -18616,6 +18616,9 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+jreast.co.jp###jre_header_appLink
+stylehaus.jp##.smart-app-bnr
+stylehaus.jp##.footer-banner__app
 chess.com##.ready-to-play-banner-component
 arine.jp##.SiteHeader-app-banner
 m.liputan6.com##.gateway__mobile-app
@@ -20359,6 +20362,7 @@ sodapdf.com##.be-tooltip
 !######### Subscription popups add to subscriptions.txt #########
 !
 chess.com##.modal-exit-retention-component
+blick.ch###blick-tv-pop-out
 media.rakuten-sec.net##.m-vote-banner
 ipinfo.io###overlay
 wired.com##.paywall-modal
@@ -27328,6 +27332,8 @@ geoguessr.com#$#.game-usps { display: none!important; }
 ! facebook.com,facebookcorewwwi.onion##.userContentWrapper div[data-ft] > .mtm + .mtm
 ! https://github.com/AdguardTeam/AdguardFilters/issues/28507
 mayoclinic.org##.mayoad
+! xhamster.com promo banner
+xhamster18.*,xhamster17.*,hamsterix.*,xhplanet1.com,xhamster13.*,xhamster4.com,xhamster5.desi,xhamster9.com,xhamster.desi,xhamster.one,xhamster.com##.recomm-promo-banner
 ! xhamster.com - cameras in category/movie pages
 xhamster18.*,xhamster17.*,hamsterix.*,xhplanet1.com,xhamster13.*,xhamster4.com,xhamster5.desi,xhamster9.com,xhamster.desi,xhamster.one,xhamster.com##[class*="cams-widget"]
 xhamster18.*,xhamster17.*,hamsterix.*,xhplanet1.com,xhamster13.*,xhamster4.com,xhamster5.desi,xhamster9.com,xhamster.desi,xhamster.one,xhamster.com##div[class*="cams-thumb-"]
@@ -29097,7 +29103,6 @@ testbytes.net###sub_side
 toptal.com##.is-subscription
 livrariadavila.com.br#?#footer > div.linha-1:has(> div.coluna-1 > div.newsletter-texto)
 stxnext.com##.newsletter_module
-edureka.co##.newsletter-section
 becominghuman.ai,medium.com,plainenglish.io#?#div[data-test-id="post-sidebar"] ~ div:not([class]) div ~ div[class]:has(> div[class] > h2[class]:contains(/^Get an email|^Sign up for/))
 autojournal.fr#?#.list-ms-item > aside.widget:has(> div.textwidget > div.widget_newsletter)
 f1i.autojournal.fr#?#.list-ms-item > aside.widget:has(> div.textwidget > ul.reseaux_sociaux_am)
@@ -30521,7 +30526,7 @@ hackware.ru,fosspost.org###custom_html-9
 fosspost.org#?#.widget-area > section.widget:has(> h3.widget-title > span:contains(Newsletter))
 sante.journaldesfemmes.fr,linternaute.com##.nl-box--right-col
 zapravdu.org###newsform
-tubularinsights.com,rollei.de,hashicorp.com##.newsletter-section
+gestion.pe,edureka.co,tubularinsights.com,rollei.de,hashicorp.com##.newsletter-section
 eroskosmos.org##.subscribe-main
 substack.com##.subscribe-footer
 towardsdatascience.com#?##root div:has(> h2:contains(Sign up for The Daily Pick))
