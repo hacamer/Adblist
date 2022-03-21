@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: AD0mFNmqdgt7z+hBBmSX4A
+! Checksum: olEwuIP+cp6Al0vbqEZlQA
 ! Title: AdFilters
 ! Expires: 12 hours
-! Version: 202203211022
-! Last Modified: 2022年03月21日 10:22
+! Version: 202203211118
+! Last Modified: 2022年03月21日 11:18
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、EasyPrivacy，感谢各位大大的分享！
 ! 仅合并规则，未做其余任何处理
@@ -750,6 +750,7 @@
 ##.sponsor_image
 ##.static-a2d
 ##.stui-pannel > .recommend-two
+##.stui-warp-content > a[target="_blank"] > img[height="120px"]
 ##.subject_link[href$="/thread-index-fid-1-tid-12848.htm"]
 ##.svg-icon + #player_pause
 ##.sxAdBox
@@ -840,6 +841,8 @@
 ##A[href*=".com/?Agent="]
 ##A[href="http://t.cn/A6hQCVsv"]
 ##A[href^="/e/public/ClickAd?adid="]
+##DIV[style=" max-width:1000px;  margin:0 auto;"] > A > IMG[height="120px"]
+##DIV[style=" max-width:980px;  margin:0 auto;"] > A > IMG[height="60px"]
 ##[class][onclick="window.location.href='/api/goapp/'"]
 ##[class][onclick="window.location.href='https://www.suyuexs.com'"]
 ##[class][onclick="window.location.href='https://www.tsqcy.cn'"]
@@ -1197,7 +1200,6 @@
 ##div[onclick*=".rwnyou.com"]
 ##div[onclick^="window.location.href"][onclick*=".bcebos."]
 ##div[onclick^="window.location.href"][onclick*=".haoyundm.com"]
-##div[style=" max-width:1000px;  margin:0 auto;"] > a > img[height="60px"]
 ##div[style="border-radius:8px;background-color:#005737;padding:6px;"]
 ##div[style="box-sizing:border-box;padding:20px 16px;border-radius:8px;width:90%;margin:0 auto;"]
 ##div[style="display: flex;flex-wrap: wrap;margin-right: 5px;margin-left: 5px;"] + style + .container
@@ -10112,7 +10114,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||googletagmanager.com/gtm.js$domain=bunte.de|computerbild.de|finanzen.at|finanzen.net|freenet-funk.de|idealo.at|idealo.de|radiorur.de|saturn.at|sport1.de|vox.de
 @@||googletagmanager.com/gtm.js$domain=eprice.it|euronics.it|iphoneitalia.com|la7.it|raiplayradio.it|savethechildren.it|unieuro.it
 @@||googletagmanager.com/gtm.js$domain=netcombo.com.br|saraiva.com.br|superesportes.com.br|tugatech.com.pt
-@@||googletagmanager.com/gtm.js$script,domain=anond.hatelabo.jp|benesse-style-care.co.jp|book.impress.co.jp|cyclestyle.net|dengekionline.com|dholic.co.jp|hatenacorp.jp|junonline.jp|kakuyomu.jp|mainichi.jp|mangaseek.net|nap-camp.com|radiko.jp|sanwacompany.co.jp|stage.parco.jp|viviennewestwood-tokyo.com|ymobile.jp|zakzak.co.jp
+@@||googletagmanager.com/gtm.js$script,domain=anond.hatelabo.jp|benesse-style-care.co.jp|book.impress.co.jp|cmoa.jp|cyclestyle.net|dengekionline.com|dholic.co.jp|hatenacorp.jp|junonline.jp|kakuyomu.jp|mainichi.jp|mangaseek.net|nap-camp.com|radiko.jp|sanwacompany.co.jp|stage.parco.jp|viviennewestwood-tokyo.com|ymobile.jp|zakzak.co.jp
 @@||googletagmanager.com/gtm.js$script,domain=beterbed.nl|finanzen.ch|mediamarkt.nl
 @@||googletagmanager.com/gtm.js$script,domain=cdon.fi|como.fi|episodi.fi|fum.fi|hobbyhall.fi|inferno.fi|rumba.fi|soundi.fi|tilt.fi|veho.fi
 @@||googletagmanager.com/gtm.js$script,domain=chronopost.fr|linternaute.com|sciencesetavenir.fr|wamiz.com
@@ -10353,6 +10355,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||lnk2.cc/js/ad_code.js
 @@||lnk2.cc^$generichide
 @@||lobi.co/1/track/event/
+@@||log000.goo.ne.jp/gcgw.js$domain=nttxstore.jp
 @@||logcg.content-delivery.top/wp-content/plugins/bwp-minify/min/?f=
 @@||logging.apache.org^$domain=apache.org
 @@||login.ingbank.pl^*/satelliteLib-$script
@@ -10595,7 +10598,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||postnord.no/api/tracking/$~third-party
 @@||pptv.com/webdelivery/webafp?cb=loadAdStatus&*sports.pp
 @@||pro.gooooal.com/ad/ad_2.js
-@@||pro.ip-api.com/json$xmlhttprequest,domain=aljazeera.com|cookappsgames.com|sheee.co.il|walla.co.il
+@@||pro.ip-api.com/json$xmlhttprequest,domain=aljazeera.com|cookappsgames.com|nontongp.xyz|sheee.co.il|walla.co.il
 @@||ps.w.org/google-analytics-dashboard-for-wp/assets/
 @@||ps.w.org/wp-slimstat/$domain=wordpress.org
 @@||pstatp.com/cdn/*/jquery/$script,domain=bxwx11.com
