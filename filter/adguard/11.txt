@@ -1,8 +1,8 @@
-! Checksum: 7BGuLLqoohR3w3+GnYp5pw
+! Checksum: 4koWSSPsMxH9bHMh1Ixjfg
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.27.82
-! TimeUpdated: 2022-03-21T13:30:26+00:00
+! Version: 2.0.27.83
+! TimeUpdated: 2022-03-21T14:30:18+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1280,6 +1280,8 @@ westseattleblog.com#@#.header-ad
 ! Good: example.org#?#main > div.row:has(> div.ad)
 ! Bad: example.org##main > div.ad (should be in specific.txt)
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/113415
+news.ntv.co.jp#?#.module-wrapper > div.contentsWrapper:has(> div.title-card-wrapper > div.OB-REACT-WRAPPER)
 ! "Sponsored" leftover
 gendai.ismedia.jp#?##MG_sp_sponsor_1:upward(1)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/112318
@@ -2608,6 +2610,8 @@ scmp.com,theinventory.com,avclub.com,clickhole.com,deadspin.com,gizmodo.com,jalo
 ! ##.ads
 cartoonpornvideos.com,m.economictimes.com,beethovenmaster.com,m.mistrzowie.org,m.ura.news,siirtpress.com,up.ymgt.xyz,google.de,www-bento-de.cdn.ampproject.org,m-economictimes-com.cdn.ampproject.org,m.winfuture.de##.ads
 !
+arine.jp##.wrapper > div[align="center"][m-section]
+arine.jp##.inner > div[align="center"][m-section]
 m.weathercn.com##.gg-swiper-wrapper
 order-order.com##.v-footer--sticky-ad
 sp.netkeiba.com##.nk_AdvBox_sp_01
