@@ -1,8 +1,8 @@
-! Checksum: WytFYes7WJrivYc0SM0yCQ
+! Checksum: snO6BSzkOWcSMLbhgqxrRQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.12.84
-! TimeUpdated: 2022-03-22T06:30:35+00:00
+! Version: 2.1.12.86
+! TimeUpdated: 2022-03-22T09:02:15+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -3128,6 +3128,7 @@ hgtv.com#@#.showads
 !
 !
 !
+||terraria-servers.com/assets/js/jquery.adblock-detector*.js
 portfolio.hu#%#//scriptlet("abort-current-inline-script", "document.getElementById", "adblock")
 masterduelmeta.com#%#//scriptlet('set-local-storage-item', 'adbViews', '0')
 ||cdn.intergient.com/pageos/pageos.js$xmlhttprequest,redirect=nooptext,domain=masterduelmeta.com
@@ -20134,6 +20135,8 @@ finanzen.net#%#document.cookie="sb-closed=true; path=/;";
 !
 !--- Whitelist
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/113325
+@@||bfn.today/min/*/js/jquery.smartbanner.js
 ! https://github.com/AdguardTeam/AdguardFilters/issues/92920
 @@||mafia.ua/js/jquery.smartbanner.js
 ! https://github.com/AdguardTeam/AdguardFilters/issues/63780
@@ -33730,7 +33733,7 @@ salgoonews.com,postshare.co.kr,rbc.ru,epnc.co.kr,wolyo.co.kr,hinfomax.co.kr,outd
 ! #%#//scriptlet("abort-on-property-read", "disableSelection")
 osomatsusan.hatenablog.com,iembra2or.com,battle-one.com,terbit21.online,wizardsubs.com,audio-sound-premium.com,sysnettechsolutions.com,mustafabukulmez.com,ifdreamscametrue.com#%#//scriptlet("abort-on-property-read", "disableSelection")
 ! #%#//scriptlet("remove-attr", "oncontextmenu|onselectstart|ondragstart", "body")
-slist.kr,3dpchip.com,lover9.net,novelpia.com,dragonball-tube.com,onepiece-tube.com,fairytail-tube.org,baho.com.tr,wholehk.com,siyasetcafe.com,webtv.dothome.co.kr,outdoornews.co.kr,egloos.com,novel.naver.com,eskisehirekspres.net#%#//scriptlet("remove-attr", "oncontextmenu|onselectstart|ondragstart", "body")
+rdsong.com,slist.kr,3dpchip.com,lover9.net,novelpia.com,dragonball-tube.com,onepiece-tube.com,fairytail-tube.org,baho.com.tr,wholehk.com,siyasetcafe.com,webtv.dothome.co.kr,outdoornews.co.kr,egloos.com,novel.naver.com,eskisehirekspres.net#%#//scriptlet("remove-attr", "oncontextmenu|onselectstart|ondragstart", "body")
 ! #%#//scriptlet('set-constant', 'disableEnterKey', 'noopFunc')
 a2zapk.com,flinsetyadi.com,theaircurrent.com,fully-fundedscholarships.com,now.rememberapp.co.kr,codedosa.com,gradium.co.kr,semesters.in#%#//scriptlet('set-constant', 'disableEnterKey', 'noopFunc')
 ! #%#//scriptlet("abort-current-inline-script", "document.onselectstart")
