@@ -1,8 +1,8 @@
-! Checksum: Z4RKufwBJ54b+tASvgSMTg
+! Checksum: +8IZevk5NnhzvLJ+nogdBQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.12.92
-! TimeUpdated: 2022-03-22T15:30:51+00:00
+! Version: 2.1.12.93
+! TimeUpdated: 2022-03-22T16:30:33+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -20374,6 +20374,9 @@ sodapdf.com##.be-tooltip
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+hiroba.dpoint.jp#$##wrapper { position: static !important; }
+hiroba.dpoint.jp#$##gtm-promotionModal-overlay { display: none !important; }
+hiroba.dpoint.jp#$#.js-modal-promotion-banner { display: none !important; }
 wetter.com##.lity-modal
 whisky.fr###popin-optin
 whisky.fr##.footer-sticky
