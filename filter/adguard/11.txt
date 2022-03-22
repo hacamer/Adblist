@@ -1,8 +1,8 @@
-! Checksum: hIp4ZB0qaDZ9lrXmz6T2pQ
+! Checksum: wu0dm4wtJUu05aSnjLXDZA
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.27.85
-! TimeUpdated: 2022-03-22T08:30:25+00:00
+! Version: 2.0.27.86
+! TimeUpdated: 2022-03-22T14:30:19+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1280,6 +1280,8 @@ westseattleblog.com#@#.header-ad
 ! Good: example.org#?#main > div.row:has(> div.ad)
 ! Bad: example.org##main > div.ad (should be in specific.txt)
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/112598
+wetter.com#?#div[id^="somtag-container"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/113415
 news.ntv.co.jp#?#.module-wrapper > div.contentsWrapper:has(> div.title-card-wrapper > div.OB-REACT-WRAPPER)
 ! "Sponsored" leftover
