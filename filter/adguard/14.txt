@@ -1,8 +1,8 @@
-! Checksum: Jr6njmjbShXYi4kbj+NKbg
+! Checksum: nWbqs7rs0HHcUHl1s8dVDw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.12.98
-! TimeUpdated: 2022-03-23T05:02:07+00:00
+! Version: 2.1.12.99
+! TimeUpdated: 2022-03-23T05:30:32+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -9332,7 +9332,7 @@ perspektiven-finden.com##div[id^="mod-eu-cookies"]
 sanktgeorg.de##.cs-cookie-layer
 lkhg-thueringen.de###cookiedisallow-wrap
 klinikum.wolfsburg.de###cookie-consent-manager
-klinikum-niederlausitz.de##.vcModalTarget
+senftenberger-see.de,klinikum-niederlausitz.de##.vcModalTarget
 lrasha.de,klinikum-crailsheim.de###cm-cookie-window
 mgs-eportal.de,uk-augsburg.de###vbcn
 kieskeurig.nl#$#body > .consent { display: none!important; }
@@ -10492,7 +10492,7 @@ oriflame.ru##.ui-cookie-notification
 business.bt.com##.cmp-cookie-notification
 ||wmv-dresden.de/ccm*/public/ccm*.js
 app.element.io##.mx_AnalyticsToast
-m.soundcloud.com##div[class^="CookieBanner_"]
+amie.so,m.soundcloud.com##div[class^="CookieBanner_"]
 instagram.com,facebook.com##div[data-cookiebanner="banner"]
 detmir.ru#?##app-container > div[class] > main ~ div[class]:has(> div[class] > p > a[href="/pages/cookies/"])
 video-shoper.ru##.wrap_cookie_site
@@ -25411,6 +25411,8 @@ easy-deutsch.de#%#AG_onLoad(function() { setTimeout(function() { var el = docume
 !
 !--- Whitelist
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/112988
+@@||form.typeform.com^$domain=amie.so
 ! https://twitter.com/nkym4575/status/1504995658675093505
 @@||delivery.satr.jp^$script,domain=mieru-ca.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/102569
