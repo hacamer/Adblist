@@ -1,8 +1,8 @@
-! Checksum: YaQNSPFaFhLFe63BRPbQkQ
+! Checksum: v2j9rMtqIl2rtGKzNYsAaw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.13.2
-! TimeUpdated: 2022-03-23T10:30:33+00:00
+! Version: 2.1.13.3
+! TimeUpdated: 2022-03-23T11:30:43+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -15318,7 +15318,7 @@ juedische-allgemeine.de#%#//scriptlet('set-cookie', 'ubCmpAccepted', 'true')
 juedische-allgemeine.de#%#document.cookie="ubCmpSettings=eyJnZW1laW5kZW5fc2VsZWN0ZWRfdmFsdWUiOnRydWUsImdvb2dsZV9hbmFseXRpY3MiOmZhbHNlLCJhZF90cmFja2luZyI6ZmFsc2UsInNvY2lhbF9lbWJlZHMiOnRydWV9;path=/;";
 mortalshell.com#%#//scriptlet('set-cookie', '_gdpr_mortal', '1')
 schwalbe.com#%#AG_onLoad(function() {var b=new MutationObserver(function() {var c=document.querySelector('p[class="nl-accept"] > a[data-cookie-accept]'); c&&(b.disconnect(),c.click()) });b.observe(document, {childList: !0,subtree: !0});setTimeout(function() {b.disconnect()}, 1E4)});
-vaillant-group.com,vaillant.at,vaillant.de#%#//scriptlet('set-cookie', 'cookie_consent_shown', 'true')
+vaillant.it,vaillant-group.com,vaillant.at,vaillant.de#%#//scriptlet('set-cookie', 'cookie_consent_shown', 'true')
 infranken.de#%#AG_onLoad(function() {var b=new MutationObserver(function() {var c=document.querySelector('body > div[style^="background:"][style*="position: fixed;"][style*="z-index:"] div[role="button"]:first-child > div > button'); c&&(b.disconnect(),c.click()) });b.observe(document, {childList: !0,subtree: !0});setTimeout(function() {b.disconnect()}, 1E4)});
 inselradio.com#%#//scriptlet('set-cookie', 'irCookieConsent', '3')
 norwegian.com#%#document.cookie="_nasStorageConsent=all=False&analysis=False&marketing=False&v=1; path=/";
@@ -16531,8 +16531,8 @@ bausep.de#@#.notice-cookie
 findamasters.com#@##cookieModal
 ! https://github.com/AdguardTeam/AdguardFilters/issues/93146
 ! https://github.com/AdguardTeam/AdguardFilters/issues/91585
-vaillant-group.com,vaillant.at,vaillant.de#@##cookiewarning
-vaillant-group.com,vaillant.at,vaillant.de#@#.cookiewarning:not(body)
+vaillant.it,vaillant-group.com,vaillant.at,vaillant.de#@##cookiewarning
+vaillant.it,vaillant-group.com,vaillant.at,vaillant.de#@#.cookiewarning:not(body)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/91513
 fensterkoenig.com#@##cookie-law-info-bar
 ! https://github.com/AdguardTeam/AdguardFilters/issues/91467
@@ -20390,6 +20390,7 @@ whisky.fr###popin-optin
 whisky.fr##.footer-sticky
 onet.pl##div[data-run-module="local/main.stayOnServicePopup"]
 bbcnewsd73hkzno2ini43t4gblxvycyac5aw4gnv7t2rccijh7745uqd.onion,bbc.co.uk##.ec-up-next-banner
+donotpay.com##div[class^="PostCTA"]
 chess.com##.modal-exit-retention-component
 blick.ch###blick-tv-pop-out
 media.rakuten-sec.net##.m-vote-banner
@@ -28536,6 +28537,7 @@ banker.ua##.es-form-outer
 banker.ua##.cs_telegram-container
 slidstvo.info#?#.post-content > div#overlay:has(> div.popup > div.post-bottom-subscribe)
 mag.sendenkaigi.com###rightside > div.right-box:not([class$="mb20"])
+donotpay.com##div[style="margin-bottom: 55px; margin-top: 55px;"]
 pravda.com.ua#?#.post_text > blockquote:has(> p > strong > a:contains(Telegram))
 jinjibu.jp##.l-registerarea
 singlegrain.com##.sticky-bottom-cta
