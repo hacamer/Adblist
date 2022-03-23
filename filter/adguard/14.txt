@@ -1,8 +1,8 @@
-! Checksum: nWbqs7rs0HHcUHl1s8dVDw
+! Checksum: dizpoYM9xoe+7fVxF22Tbg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.12.99
-! TimeUpdated: 2022-03-23T05:30:32+00:00
+! Version: 2.1.13.0
+! TimeUpdated: 2022-03-23T06:30:35+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7262,6 +7262,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+restate.ru##.cow
 culture.ru##.Rv1DR
 go.varus.ua##.wrapper__peLDf
 bringbutler.de###CookiesBestaetigen
@@ -18629,6 +18630,8 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
 tiktok.com##.footer-guide
+tanoshiiosake.jp##a[id^="appBanner"]
+tanoshiiosake.jp#%#//scriptlet('remove-class', 'app-appBannerOpen', 'body')
 jreast.co.jp###jre_header_appLink
 stylehaus.jp##.smart-app-bnr
 stylehaus.jp##.footer-banner__app
@@ -20241,6 +20244,7 @@ newzit.com#$#div[class*="hasSmartBanner_"] { padding-top: 0 !important; }
 !
 ! Unhide for Android CB if top padding cannot be removed
 !
+cosme.net##.ContentBanner
 nana-music.com##.heading-banner
 nana-music.com##.link-btn-list__open-apps
 nana-music.com##.snackbar
@@ -28510,6 +28514,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+lgnewsroom.com##.f_newsletter
 dailystorm.ru###footer-panel
 dailystorm.ru#?#.arp__block > div:has(> div.btns > a[href^="https://zen.yandex.ru/"])
 24tv.ua##app-twitter-subscribe
