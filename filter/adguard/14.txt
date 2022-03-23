@@ -1,8 +1,8 @@
-! Checksum: xO5Is2zJ4/7j4Hb8jPwCdA
+! Checksum: NLuQzlWbPsNHXohpEA+CYA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.13.7
-! TimeUpdated: 2022-03-23T14:30:38+00:00
+! Version: 2.1.13.8
+! TimeUpdated: 2022-03-23T15:30:36+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -18632,6 +18632,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+hk01.com##div[id^="ig-"][data-title$="app download"]
 tiktok.com##.footer-guide
 tanoshiiosake.jp##a[id^="appBanner"]
 tanoshiiosake.jp#%#//scriptlet('remove-class', 'app-appBannerOpen', 'body')
@@ -20384,9 +20385,10 @@ sodapdf.com##.be-tooltip
 !######### Subscription popups add to subscriptions.txt #########
 !
 fastalert.jp##.home-popup
-hiroba.dpoint.jp#$##wrapper { position: static !important; }
-hiroba.dpoint.jp#$##gtm-promotionModal-overlay { display: none !important; }
-hiroba.dpoint.jp#$#.js-modal-promotion-banner { display: none !important; }
+hiroba.dpoint.docomo.ne.jp#$##wrapper { position: static !important; }
+hiroba.dpoint.docomo.ne.jp#$##gtm-promotionModal-overlay { display: none !important; }
+hiroba.dpoint.docomo.ne.jp#$#.js-modal-promotion-banner { display: none !important; }
+hiroba.dpoint.docomo.ne.jp###js-floating
 wetter.com##.lity-modal
 whisky.fr###popin-optin
 whisky.fr##.footer-sticky
@@ -28519,6 +28521,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+app-time.ru##.sba-block
 kioskpolis.pl#$##exit-intent { display: none !important; }
 kioskpolis.pl#$#body.exit-intent { overflow: auto !important; }
 kaktus.media##.Article--tg-block
