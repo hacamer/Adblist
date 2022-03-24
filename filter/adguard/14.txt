@@ -1,8 +1,8 @@
-! Checksum: 2MBoJBOFJgulzWyALEP64g
+! Checksum: Cro3hILVfsXkuQe47oRPag
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.13.15
-! TimeUpdated: 2022-03-24T09:30:32+00:00
+! Version: 2.1.13.16
+! TimeUpdated: 2022-03-24T10:30:38+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -10500,7 +10500,7 @@ oriflame.ru##.ui-cookie-notification
 business.bt.com##.cmp-cookie-notification
 ||wmv-dresden.de/ccm*/public/ccm*.js
 app.element.io##.mx_AnalyticsToast
-amie.so,m.soundcloud.com##div[class^="CookieBanner_"]
+betway.com,amie.so,m.soundcloud.com##div[class^="CookieBanner_"]
 instagram.com,facebook.com##div[data-cookiebanner="banner"]
 detmir.ru#?##app-container > div[class] > main ~ div[class]:has(> div[class] > p > a[href="/pages/cookies/"])
 video-shoper.ru##.wrap_cookie_site
@@ -18636,6 +18636,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+windy.com###open-in-app
 hk01.com##div[id^="ig-"][data-title$="app download"]
 tiktok.com##.footer-guide
 tanoshiiosake.jp##a[id^="appBanner"]
@@ -20252,6 +20253,7 @@ newzit.com#$#div[class*="hasSmartBanner_"] { padding-top: 0 !important; }
 !
 ! Unhide for Android CB if top padding cannot be removed
 !
+dtf.ru,vc.ru,tjournal.ru##.mobile-app-redirect
 cosme.net##.ContentBanner
 nana-music.com##.heading-banner
 nana-music.com##.link-btn-list__open-apps
@@ -20402,6 +20404,9 @@ donotpay.com##div[class^="PostCTA"]
 chess.com##.modal-exit-retention-component
 blick.ch###blick-tv-pop-out
 media.rakuten-sec.net##.m-vote-banner
+shopee.*#$#shopee-banner-popup-stateful { display: none !important; }
+shopee.*#$#.shopee-no-scroll { overflow: auto !important; }
+shopee.*##div[class^="shopee-floating-icon"]
 ipinfo.io###overlay
 wired.com##.paywall-modal
 englex.ru##.stb-overlay
@@ -28507,7 +28512,7 @@ bournemouthecho.co.uk,eveningtimes.co.uk,greenocktelegraph.co.uk,heraldscotland.
 ! ##.subscribe
 kp.ua,trendymen.ru,plus-aliance.ru,instyle.ru,slovodel.com,twilio.com,novostivl.ru,exkavator.ru,logincasino.com.ua,newinform.com,riafan.ru,liveposts.ru,320volt.com,versia.ru,neft.by,expert.ru,shopify.com,zoutons.com,myfreesoft.ru,maximonline.ru,woman.ru,parents.ru,vokrugsveta.ru,psychologies.ru,ellegirl.ru,wday.ru,elle.ru,marieclaire.ru,indiatimes.com,shopify.in,vz.ru,searchengineland.com,sport.segodnya.ua,vokrugsveta.ru,censor.net,fizzicseducation.com.au,fparf.ru,revouninstaller.com,logincasino.com,borsagundem.com,officelife.media,kod.ru,masterinvest.info,bessarabia.ua,football.kulichki.net,jeotermalhaberler.com,glavcom.ua,hindustantimes.com,hightech.fm,culture.ru,obozrevatel.com,blog.eva.ua,officiel-online.com,wccftech.com,ideanomics.ru,gazetki.by,goldsilver.com,kp.ru,infobus.eu,atorus.ru,castorama.ru,guzellikbulvari.com,marieclaire.ua,mvs.gov.ua,gadgets.ndtv.com,oneplus.com,tickets.ua,europaplus.ru,krossovki.com,belretail.by,thecollegefix.com,femmie.ru,prostofinovo.ru,mauijim.com,netpeak.net,wday.ru,buhgalteria.ru,ellegirl.ru,gameslog.ru,gizmag.com,healthhacks.ru,klerk.ru,menshealth.com,rbc.ru,snce.ru,turizm.ru,wegame.com.ua##.subscribe
 ! ##.subscription
-slidstvo.info,cozumpark.com,x-team.com,m.vz.ru,shoppinglive.ru,starhit.ru,gamemag.ru,careeraddict.com,glasswire.com,metaratings.ru,starhit.ru,busfor.ua,brighteon.com,championat.com,goodhouse.ru,ichip.ru,irk.ru,thepostmillennial.com,skidochnik.com.ua##.subscription
+ural56.ru,slidstvo.info,cozumpark.com,x-team.com,m.vz.ru,shoppinglive.ru,starhit.ru,gamemag.ru,careeraddict.com,glasswire.com,metaratings.ru,starhit.ru,busfor.ua,brighteon.com,championat.com,goodhouse.ru,ichip.ru,irk.ru,thepostmillennial.com,skidochnik.com.ua##.subscription
 ! ##body > div[id][style*="top: 0px; width: 100%; z-index: 99999999;"]
 quinhillyer.com,johnbiver.com,jasonmattera.com,ipatriot.com,hooligancharters.com,greatamericanpolitics.com,dailylol.com,clickitconservativenews.com,brasspills.com,brandonvallorani.com,affluentinvestor.com,thinkamericana.com,schaftleinreport.com##body > div[id][style*="top: 0px; width: 100%; z-index: 99999999;"]
 ! Turkish digital magazines
@@ -28524,6 +28529,10 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+interfax.ru##.group-btns
+interfax.ru###form__subscribe
+ural56.ru##.subscription-tg-menu
+ural56.ru##.aggr-buttons
 lubimyczytac.pl##body > .js-footer-fixed
 hepacikmagaza.com##.newsletter-bg
 lexpress.fr##.js-newsletter__form
@@ -28553,6 +28562,7 @@ slidstvo.info#?#.post-content > div#overlay:has(> div.popup > div.post-bottom-su
 mag.sendenkaigi.com###rightside > div.right-box:not([class$="mb20"])
 donotpay.com##div[style="margin-bottom: 55px; margin-top: 55px;"]
 pravda.com.ua#?#.post_text > blockquote:has(> p > strong > a:contains(Telegram))
+advertimes.com#?##article-side > div.decoration:has(> ul.follow-us-list)
 jinjibu.jp##.l-registerarea
 singlegrain.com##.sticky-bottom-cta
 singlegrain.com##.sidebar-subscribe
@@ -34466,6 +34476,7 @@ networkguru.ru##.tbForm_CallMe
 ||cdn.gubagoo.io^$third-party
 ##gg-toolbar--specials
 !
+nokuo.blog.jp##.rss-blogroll
 wind10.ru###custom_html-7
 backit.me##.the-jivo-stub
 acefitness.org##.qn-chat-prompt
