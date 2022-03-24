@@ -1,8 +1,8 @@
-! Checksum: kIV4Qr3T+vs3TY8jn0s8Ew
+! Checksum: du0mvXbspsExH6wnCrAjog
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.13.12
-! TimeUpdated: 2022-03-24T07:30:32+00:00
+! Version: 2.1.13.14
+! TimeUpdated: 2022-03-24T09:02:21+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -3130,6 +3130,8 @@ hgtv.com#@#.showads
 !
 !
 !
+@@||components2.corriereobjects.it/rcs_data-tracking/*/distro/openx/corriere/openx_async.js
+corriere.it#%#//scriptlet("set-constant", "isAdblockEnable", "false")
 ||terraria-servers.com/assets/js/jquery.adblock-detector*.js
 portfolio.hu#%#//scriptlet("abort-current-inline-script", "document.getElementById", "adblock")
 masterduelmeta.com#%#//scriptlet('set-local-storage-item', 'adbViews', '0')
@@ -7262,6 +7264,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+viagogo.jp###gdprHeader
 mercadolivre.com.br##.cookie-consent-banner-opt-out
 kleankanteen.de##.cookie--popup
 battlefy.com###cookie-banner-modal
@@ -9007,7 +9010,7 @@ fivepost.ru##.cookieNotification_container
 fedex.com##.fxg-alert__fdx_cookie_notice
 oficinadanet.com.br##.pop-user-data
 jobs.ch##.disclaimer-message
-aiseesoft.*,easeus.*,anymp4.com,macxdvd.com,videoproc.com,fonelab.com##.usernotice_pop
+vidmore.com,aiseesoft.*,easeus.*,anymp4.com,macxdvd.com,videoproc.com,fonelab.com##.usernotice_pop
 hoster.by##.cookies-informer
 fandom.com##.notifications-placeholder
 techbeacon.com###mf-generic-cookie-popup
@@ -10727,7 +10730,7 @@ financial.nikkei.com##.f-privacy
 nikkeibp.co.jp,nikkei.com##.bpPrivacy
 getmailbird.com##.navbar-cookie
 hashicorp.com###g-consent-manager
-e24.no,aftenposten.no,tek.no,vglive.no,bt.no,telegraph.co.uk,gizmodo.com##div[id^="sp_message_container_"]
+vg.no,e24.no,aftenposten.no,tek.no,vglive.no,bt.no,telegraph.co.uk,gizmodo.com##div[id^="sp_message_container_"]
 mytime.de#$#.modal__opened { overflow: visible !important; }
 mytime.de#$#.modal--cookie-notice { display: none !important; }
 ||assets-aws.casualportals.com/gdpr/
@@ -10858,7 +10861,7 @@ free-powerpoint-templates-design.com,sigortammax.com##.snackbar-container
 ||urachhaus.de/out/urachhaus/src/js/libs/jquery.cookie.min.js
 ||cdn.vandalism-sounds.com/pub/static/version*/Magento_Cookie/js/notices.min.js
 obi.*##.colorbox-cookiepolicy
-ozmenpc.com##.cookie-agreement-module
+hepacikmagaza.com,ozmenpc.com##.cookie-agreement-module
 hostettler.com##.cookie-bar-notification
 web.dev#?#.web-snackbar__surface:has(> .web-snackbar__actions > a[href="https://policies.google.com/technologies/cookies"])
 rec.uk.com##.bar[data-behaviour="cookie-consent"]
@@ -19771,7 +19774,7 @@ gran-turismo.com,m.tv.naver.com,m.comic.naver.com##.app_banner
 ||gamer-mods.ru/.s/src/jquery.smartbanner.js
 intellicast.com###promoAd
 intellicast.com###stormLink
-kompas.com,sevenbank.co.jp,booth.pm,reverso.net,bangumi.org,msn.com,m.investing.com,m.spiegel.de,mavcsoport.hu,m.trendyol.com,autobild.de,infranken.de,m.douglas.de,focus.de###smartbanner
+ticketjam.jp,kompas.com,sevenbank.co.jp,booth.pm,reverso.net,bangumi.org,msn.com,m.investing.com,m.spiegel.de,mavcsoport.hu,m.trendyol.com,autobild.de,infranken.de,m.douglas.de,focus.de###smartbanner
 ipaddressguide.com##img[alt="iptools apple app"]
 ipaddressguide.com##img[alt="iptools android app"]
 extramovies.org##.poster > center > .app
@@ -28521,6 +28524,8 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+lubimyczytac.pl##body > .js-footer-fixed
+hepacikmagaza.com##.newsletter-bg
 lexpress.fr##.js-newsletter__form
 app-time.ru##.sba-block
 kioskpolis.pl#$##exit-intent { display: none !important; }

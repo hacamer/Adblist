@@ -1,8 +1,8 @@
-! Checksum: tZ/zdqhzNxcxS/4Oea/k3g
+! Checksum: trpNx7Qa0ujk43V5YKflbA
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.27.89
-! TimeUpdated: 2022-03-23T06:30:21+00:00
+! Version: 2.0.27.90
+! TimeUpdated: 2022-03-24T08:30:23+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1280,6 +1280,9 @@ westseattleblog.com#@#.header-ad
 ! Good: example.org#?#main > div.row:has(> div.ad)
 ! Bad: example.org##main > div.ad (should be in specific.txt)
 !
+!
+! https://github.com/AdguardTeam/AdguardFilters/issues/113683
+trilltrill.jp#?#.articleDetail-RankingList > li.articleDetail-RankingList_Item:has(> div[id^="div-gpt-ad"])
 ! https://github.com/AdguardTeam/AdguardFilters/issues/112598
 wetter.com#?#div[id^="somtag-container"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/113415
@@ -2612,6 +2615,8 @@ scmp.com,theinventory.com,avclub.com,clickhole.com,deadspin.com,gizmodo.com,jalo
 ! ##.ads
 cartoonpornvideos.com,m.economictimes.com,beethovenmaster.com,m.mistrzowie.org,m.ura.news,siirtpress.com,up.ymgt.xyz,google.de,www-bento-de.cdn.ampproject.org,m-economictimes-com.cdn.ampproject.org,m.winfuture.de##.ads
 !
+ponycanyon.co.jp##.ad300sp50
+trilltrill.jp##.articleDetail-GAM
 stolica-s.su##.ad-fullscreen
 washingtonpost.com###mobile-footer-ad-wrapper
 tanoshiiosake.jp##.globalFooter_banner
