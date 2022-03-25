@@ -1,8 +1,8 @@
-! Checksum: V33a0eFNGe88oGaG+u2bNQ
+! Checksum: Ww1u1Wf2Fv5VilWnZP58sw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.13.34
-! TimeUpdated: 2022-03-25T15:30:35+00:00
+! Version: 2.1.13.36
+! TimeUpdated: 2022-03-25T17:02:09+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7271,6 +7271,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+javhd.com##.jcookie
 ubs.com##.privacysettings__banner
 ubs.com##.lightbox__container
 abc.net.au##div[data-component="CookieBanner"]
@@ -27027,6 +27028,8 @@ myanimelist.net##.footer-mini-banner
 mail.yahoo.co.jp###mhd_uhd_pc
 yahoo.co.jp###msthdPrLink
 login.yahoo.co.jp###ads
+! banner https://kakaku.com/item/K0001272155/?lid=20190108pricemenu_hot
+kakaku.com##.bnrBb
 ! https://kakaku.com/pc/ self-promo
 kakaku.com##.p-dell
 ! banner https://kakaku.com/item/J0000034135/?lid=pc_prbox01_pc_J0000034135
@@ -32079,6 +32082,11 @@ magazine.skyeng.ru##.tg-banner
 !######### CSS tweaks #########
 !##############################
 !
+! https://github.com/easylist/easylist/issues/11448 timer
+loanapply.info#$##showlink { display: block !important; }
+loanapply.info#$#.to:style { display: block !important; }
+loanapply.info#$##pleasewait { display none !important; }
+loanapply.info#$##pleasewaits { display none !important; }
 ! jardima.com timer
 jardima.com#$##wpsafe-generate { display: block !important; }
 jardima.com#$##wpsafe-link { display: block !important; }
