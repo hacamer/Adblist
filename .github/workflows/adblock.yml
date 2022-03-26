@@ -21,8 +21,8 @@ jobs:
           echo "RELEASE_NAME=Released on $(date -d "8 hour" -u +%Y%m%d%H%M)" >> $GITHUB_ENV
           echo "TAG_NAME=$(date -d "8 hour" -u +%Y%m%d%H%M)" >> $GITHUB_ENV
           echo "MODIFIED_TIME=$(date -d "8 hour" -u "+%Y年%m月%d日 %H:%M")" >> $GITHUB_ENV
-          echo "EASYLIST_URL=https://easylist-downloads.adblockplus.org/easylist.txt" >> $GITHUB_ENV
-          echo "EASYLISTCHINA_URL=https://easylist-downloads.adblockplus.org/easylistchina.txt" >> $GITHUB_ENV
+          echo "EASYLIST_URL=https://filters.adtidy.org/extension/ublock/filters/2_optimized.txt" >> $GITHUB_ENV
+          echo "EASYLISTCHINA_URL=https://filters.adtidy.org/extension/ublock/filters/104_optimized.txt" >> $GITHUB_ENV
           echo "EASYPRIVACY_URL=https://easylist-downloads.adblockplus.org/easyprivacy.txt" >> $GITHUB_ENV
           echo "CJXLIST_URL=https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt" >> $GITHUB_ENV
           echo "CJX_ANNOYANCE_URL=https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt" >> $GITHUB_ENV
@@ -32,7 +32,7 @@ jobs:
           echo "XINGGSF_MV_URL=https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt" >> $GITHUB_ENV
           echo "DMZ_URL=https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt" >> $GITHUB_ENV
           echo "ADGK_URL=https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt" >> $GITHUB_ENV
-          echo "ADGCN_URL=https://filters.adtidy.org/extension/ublock/filters/224.txt" >> $GITHUB_ENV
+          echo "ADGCN_URL=https://filters.adtidy.org/extension/ublock/filters/224_optimized.txt" >> $GITHUB_ENV
           echo "GOPATH=$(dirname $GITHUB_WORKSPACE)" >> $GITHUB_ENV
           echo "$(dirname $GITHUB_WORKSPACE)/bin" >> $GITHUB_PATH
         shell: bash
