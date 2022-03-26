@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: DVLUcEymLox+8ja2jtgstA
+! Checksum: 0EeRb79GUZ/rzM2ZhrHFqA
 ! Title: My AdFilters Lite
 ! Expires: 1 hours (Sometimes updates are delayed)
-! Version: 202203261509
-! Last Modified: 2022年03月26日 15:09
+! Version: 202203261552
+! Last Modified: 2022年03月26日 15:52
 ! Homepage: https://github.com/hacamer/Adblist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、Adgk、大萌主的规则
 ! 并补充了贴吧过滤规则，感谢各位的分享！
@@ -4885,6 +4885,7 @@ $websocket,domain=5nj.com|cechi8.com
 ?key=$popup,domain=verystream.com
 ?method=baidu.ting.commercial.tactics&
 @@$app=com.x.addon.cast
+@@$domain=avgle.com,webrtc,websocket
 @@&adurl=http://$domain=360bifen.cc|360bifen.com
 @@-social-bar.$domain=mobi.yahoo.com
 @@.adserver.$domain=litv.tv
@@ -4915,7 +4916,6 @@ $websocket,domain=5nj.com|cechi8.com
 @@/adblock_$domain=xingk.cc
 @@/adfile/*$domain=cidianwang.com
 @@/adgpt.$domain=gotrip.hk|nmplus.hk|weekendhk.com
-@@/adguard.$domain=llq.dml.ink
 @@/adimage/*$domain=scyts.com|wacom.tw
 @@/adimages/*$domain=p9.com.tw
 @@/adimg/*$domain=laniqu.com|veryeast.cn
@@ -5392,7 +5392,6 @@ $websocket,domain=5nj.com|cechi8.com
 @@||cpro.baidustatic.com/cpro/ui/f.js$script,domain=www.400gb.com|www.pipipan.com|colayun.com|coladrive.com
 @@||cq.qq.com/js/cody/*scroll_ad.js
 @@||create.jd.com/ad/
-@@||criteo.com/delivery/ajs.php?zoneid=$script,domain=gaus.ee
 @@||cruisecenter.com.tw/data/ad/
 @@||cs-op.douyucdn.cn/dycatr^
 @@||cs-op.douyucdn.cn/vod-cover^
@@ -5635,7 +5634,6 @@ $websocket,domain=5nj.com|cechi8.com
 @@||jav777.cc/advertise/
 @@||jav777.xyz/advertise/
 @@||jbprogramnotes.com^$generichide
-@@||jd.com/adclick?$popup,~third-party
 @@||jd.com/adclick?$~third-party
 @@||jd.com/setCookie?
 @@||jd.com^*&refer=http$script
@@ -5938,6 +5936,7 @@ $websocket,domain=5nj.com|cechi8.com
 @@||sinaimg.cn/cj/deco/$script,domain=finance.sina.com.cn
 @@||sinaimg.cn/dy/deco/*/js/base.js
 @@||sinaimg.cn/dy/deco/*/js/require.js
+@@||sinaimg.cn/large^$domain=xclient.info||yinyouapp.com^
 @@||sinaimg.cn/tech/https_index/share.
 @@||sinaimg.cn/unipro/pub/suda_m_v629.js$domain=video.sina.com.cn
 @@||sinaimg.cn^*/deco/*/sinaObj.js
@@ -13394,7 +13393,6 @@ pcauto.com.cn##div[id^="middle_ad_"]
 pcbaby.com.cn###jpopWinBottom
 pcbeta.com##+js(abort-on-stack-trace, document.createElement, make_rand_div)
 pcbeta.com##div[style*="width:980px;height:170px;"].wp,div[style^="margin:0 0 10px 0;height:169px;"],div[style*="width:960px;height:91px;"],div[style^="height:171px; padding-top:10px;"],div[style^="width:980px; position:relative; height:171px;"],UL.forum_top + DIV,DIV#diynavtop + STYLE + DIV,DIV#sitefocus.focus,DIV.bm.a_c,a[id$="banner"],BODY[id^="nv_"] > IFRAME + A,span#weixinqr,div.a_pt,div.a_pb,[href^="https://clkde.tradedoubler.com/click?p="],.asdad + div
-pcbeta.com#?#div[class]:-abp-properties(/height: (169|171)px;/)
 pcccp.cn##DIV[id^="xydl"]
 pcdiy.com.tw##[width="160"][height="600"],.box-ads
 pcdown.net##.sort_list > .clearfix:first-child
@@ -15973,6 +15971,7 @@ whnews.cn###gd_r
 whnews.cn###panel
 whnews.cn##.whnews_a_dv
 whnight.com##DIV.a_mu,DIV.wp.a_t,DIV.a_pb
+whois.com#@#.full-width-banner
 wholehk.com#?#div[id^="postmessage_"] > div[align="center"][style^="font-size:11px;"] > font:contains(Advertisement)
 whsir.com###adswidget1-quick-adsense-2
 wigcw.cn##.alert-block
@@ -17768,7 +17767,6 @@ zzpzero.com
 |https:$third-party,domain=linkshrink.net
 |https://js.ykimg.com/youku/dist/js/lib/ikuAdapterNew.js
 ||*.$image,redirect=1x1.gif,third-party,domain=rmdown.com
-||*.$image,rewrite=abp-resource:1x1-transparent-gif,third-party,domain=rmdown.com
 ||*.apk$domain=gulingge.com
 ||*.com*.z*.glb.qiniucdn.com/tdata*
 ||*.feipukeplus.com^$domain=m.qqm4.com
@@ -17784,14 +17782,12 @@ zzpzero.com
 ||*.sinaimg.cn/*.gif$domain=ganbi66.com
 ||*.wap.xsbiquge.com^
 ||*/ad/$redirect=noop-0.1s.mp3,domain=huaren.tv,media
-||*/ad/$rewrite=abp-resource:blank-mp3,domain=huaren.tv
 ||*/jd/a.ashx
 ||*/soft.imtt.qq.com/browser/business/video/*.png?mkey=*&f=*&cip=*&proto=http$app=com.tencent.mtt
 ||*/videos/other*.f4v*$redirect=noopmp4-1s,domain=www.iqiyi.com|m.iqiyi.com
 ||*/videos/other/*.f4v$object,rewrite=abp-resource:blank-mp3,domain=iqiyi.com
 ||*/xlchannel.app2amlogic/RouteMsg
 ||*^sdtfrom=^$media,redirect=noop-0.1s.mp3,domain=qq.com
-||*^sdtfrom=^$media,rewrite=abp-resource:blank-mp3,domain=qq.com
 ||*btbtt.*/view/image/QT_
 ||*serror*.wo.com.cn^
 ||*xav.*/guang/*.gif
@@ -18043,11 +18039,6 @@ zzpzero.com
 ||1024wanzhai.$popup,third-party
 ||102tv.cn/js/main.js
 ||104.167.70.98^$domain=chuzuche8.com
-||104.197.140.120^
-||104.198.198.188^
-||104.203.214.3^
-||104.203.72.254^
-||104.233.177.93^
 ||106.15.205.174/api^
 ||107.148.199.181^
 ||107.149.18.1/j/*.js$domain=6161bb.com
@@ -18285,7 +18276,6 @@ zzpzero.com
 ||17173.com/new/
 ||17173.com/x/
 ||17173cdn.com/20*.mp4$redirect=noop-0.1s.mp3,domain=17173.com,media
-||17173cdn.com/20*.mp4$rewrite=abp-resource:blank-mp3,domain=17173.com
 ||17173cdn.com/a/lib/vda/seed.
 ||17173cdn.com/a/lib/vda/seed.js
 ||17173cdn.com/a/lib/vda/sources/ad17173
@@ -19718,7 +19708,6 @@ zzpzero.com
 ||8le8le.com^$third-party
 ||8maple.ru/comic.jpg
 ||8maple.ru/dzcm$redirect=1x1.gif,domain=8maple.ru,image
-||8maple.ru/dzcm$rewrite=abp-resource:1x1-transparent-gif,domain=8maple.ru
 ||8mfty.com^
 ||8nc8shot.txxx.com^
 ||8o9m.cn^
@@ -20918,7 +20907,6 @@ zzpzero.com
 ||amazonaws.com/91/ads_
 ||amazonaws.com/s?z=
 ||amazononline.xyz/mp4/*.mp4$redirect=noop-0.1s.mp3,domain=iyingshi7.tv|localmv1.com,media
-||amazononline.xyz/mp4/*.mp4$rewrite=abp-resource:blank-mp3,domain=iyingshi7.tv|localmv1.com
 ||amd.cn/yyets.js
 ||amdc.m.taobao.com/amdc^$app=com.huawei.hwvplayer.youku
 ||amdc.m.taobao.com^
@@ -23721,7 +23709,6 @@ zzpzero.com
 ||deliver.kuwo.cn^
 ||delivery*.wasu.cn/d/js/1.0?pos=
 ||delivery-pc.wasu.cn/d/frontJs/3.0$redirect=noop.js,domain=wasu.cn,script
-||delivery-pc.wasu.cn/d/frontJs/3.0$rewrite=abp-resource:blank-js,domain=wasu.cn
 ||delivery-pc.wasu.cn/d/js/
 ||delivery.impressionmonster.com/sync.php
 ||delivery.playallvideos.com^
@@ -24332,7 +24319,6 @@ zzpzero.com
 ||e719.net^
 ||e7ymqu6.cn^
 ||e9377f.com^$redirect=noop-0.1s.mp3,domain=eastday.com,media
-||e9377f.com^$rewrite=abp-resource:blank-mp3,domain=eastday.com
 ||e9emh.cn^
 ||ea0jlu8jie.cn^
 ||ea3w.com/pv.js
@@ -25975,7 +25961,6 @@ zzpzero.com
 ||helloavgirls.com/public/hg/
 ||hellocdn.top^
 ||hellocenter.xyz^*.mp4$redirect=noop-1s.mp4,domain=localmv1.com,media
-||hellocenter.xyz^*.mp4$rewrite=abp-resource:blank-mp4,domain=localmv1.com
 ||hellogalaxy.cn^
 ||hellojava.com//bja/tanzhou.jpg
 ||helpantutu1.ksmobile.com/nep/v1/$app=com.antutu.ABenchMark
@@ -28916,7 +28901,6 @@ zzpzero.com
 ||lthzd.cn^
 ||ltn.com.tw/js/ad_door.js
 ||lts*.qq.com^*.ts?index=$media,redirect=noop-0.1s.mp3,domain=qq.com
-||lts*.qq.com^*.ts?index=$media,rewrite=abp-resource:blank-mp3,domain=qq.com
 ||ltsdl.qq.com/$xmlhttprequest
 ||ltxs.me/js/wap.js
 ||ltyonej.cn^
@@ -35939,7 +35923,6 @@ zzpzero.com
 ||yinooo.com^
 ||yinvmh.com^
 ||yinyating.top^
-||yinyouapp.com^
 ||yinyuehu.cn^
 ||yinyuetai.com/others/admin/*_1200x100.
 ||yinyuetai.com/proment/get-play-medias?*&position=overlay
@@ -35969,7 +35952,6 @@ zzpzero.com
 ||yitongfang.com^
 ||yitongfang.com^$third-party
 ||yitongkan.com/splash.xml$redirect=noop.js,domain=yitongkan.com,script
-||yitongkan.com/splash.xml$rewrite=abp-resource:blank-js,domain=yitongkan.com
 ||yituo-patibao.cn^
 ||yivian.com/repo/ad/
 ||yiwad.com^$third-party
