@@ -1,8 +1,8 @@
-! Checksum: 2cV1YdkgZKnJ7whPUO3SGg
+! Checksum: cxwweRQznCew38yuDLj/LQ
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.0.58.41
-! TimeUpdated: 2022-03-25T16:31:21+00:00
+! Version: 2.0.58.42
+! TimeUpdated: 2022-03-25T23:31:21+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -9151,6 +9151,8 @@ rambler.ru#%#//scriptlet('remove-in-shadow-dom','div[data-blocks="content_info"]
 !+ NOT_OPTIMIZED
 m.ynet.co.il##iframe[src*=".youtube.com/subscribe_embed?"]
 !
+!+ PLATFORM(ios, ext_android_cb, android)
+theconversation.com##.content-social-distribution
 !+ PLATFORM(android)
 ichip.ru#?#.article-action
 !+ NOT_OPTIMIZED
