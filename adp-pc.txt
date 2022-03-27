@@ -1,9 +1,9 @@
 [Adblock Plus 3.0]
-! Checksum: SEs3mezRoMwpEfJrdS36DA
+! Checksum: KfsfSha5tumfVTA/sMk1ng
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202203272309
-! Last Modified: 2022年03月27日 23:09
+! Version: 202203280012
+! Last Modified: 2022年03月28日 00:12
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -1804,6 +1804,7 @@
 ##.Ad--awareness-bp
 ##.Ad--empty
 ##.Ad--sidebar
+##.Ad-Advert_Container
 ##.Ad-Container
 ##.Ad-label
 ##.Ad-leaderboard
@@ -2020,6 +2021,7 @@
 ##.ad-970-250
 ##.ad-970-90
 ##.ad-970x90
+##.ad-Advert_Placeholder
 ##.ad-BANNER
 ##.ad-a
 ##.ad-above-footer
@@ -4804,6 +4806,7 @@
 ##.msg-adblock
 ##.msgad
 ##.msw-js-advert
+##.mt_ad
 ##.mt_adv
 ##.mts_ad_300_widget
 ##.mu-ad-container
@@ -5577,6 +5580,7 @@
 ##.tm-ads
 ##.tm3all2h4b
 ##.tmall_ad_container
+##.tmiads
 ##.tmsads
 ##.tncls_ad
 ##.tncls_ad_250
@@ -25534,6 +25538,7 @@ clanky.seznam.cz,search.seznam.cz##.Result.Result--organic > :not(.Result-conten
 clanky.seznam.cz,search.seznam.cz#?#.Result.Result--organic:-abp-has(.Result-title + .Result-contentContainer > :not(.Result-url):not(.Result-dw-wrapper):not(.Result-image) > :not([class="Result-url-link Result-url-link--cr-result"]):not(span):not(.AnchorList-list))
 clanky.seznam.cz,search.seznam.cz#?#.Result:-abp-has(.Result--organic [class^="Result-contentContainer _"])
 clanky.seznam.cz,search.seznam.cz#?#:-abp-has(> .Result--organic .Result-title-link:not([class="Result-title-link"]))
+classicreload.com###content-top
 classicreload.com##+js(set-constant, aawChunk, true)
 classifiedads.com##.resultmarg
 classy-online.jp,thelocal.at,thelocal.ch,thelocal.de,thelocal.dk,thelocal.es,thelocal.fr,thelocal.it,thelocal.no,thelocal.se#@#.ad_container
@@ -25859,7 +25864,7 @@ conservativetribune.com #?#.sidebar > div[class][-ext-has='> div[class] > div[cl
 consobaby.co.uk,gumtree.com,pcgamingwiki.com,thefootballnetwork.net###mpu
 consoletarget.com##.t2 td[colspan="2"] > div[style="width:730px;height:91px;align:center;"]
 constative.com##div[class^="ad_placeholder_"]
-constructionreviewonline.com,cyberparse.co.uk,eindhovennews.com,ericpetersautos.com,gameplayinside.com,gamezone.com,gizmochina.com,greekreporter.com,industryhit.com,musictech.net,newsnext.live,nme.com,radioink.com,sonorannews.com,telugubullet.com,theindependent.co.zw##.td-a-rec
+constructionreviewonline.com,cyberparse.co.uk,eindhovennews.com,ericpetersautos.com,gameplayinside.com,gamezone.com,gizmochina.com,greekreporter.com,industryhit.com,maltabusinessweekly.com,musictech.net,newsnext.live,nme.com,radioink.com,sonorannews.com,telugubullet.com,theindependent.co.zw##.td-a-rec
 consumercomplaints.in##.in-ads
 consumerist.com#@#.after-post-ad
 contents.internet.apps.samsung.com##.page-bar
@@ -37812,6 +37817,8 @@ timesofindia.indiatimes.com##div[data-cb="processCtnAds"]
 timesofindia.indiatimes.com##div[id^="div-clmb-ctn"]
 timesofisrael.com##.banner-placeholder
 timesofisrael.com##.crm-post-module
+timesofmalta.com###article-sponsored
+timesofmalta.com###inscroll-banner
 timesofmalta.com##.sw-Top
 timgate.it##.adv-image
 tineye.com##.bottom
@@ -65921,6 +65928,7 @@ zznews.cn##.ad:not([style])
 ||no2veeamggaseber.com^
 ||no9pldds1lmn3.soundcloud.com^
 ||noa0.compteczam.fr^
+||noagentfees.com^$subdocument,domain=independent.com.mt
 ||noanawie.com^
 ||noapai.name^
 ||noaptauw.com^
