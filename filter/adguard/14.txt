@@ -1,8 +1,8 @@
-! Checksum: Vh4FNjRP0U1ORTBvFJY9hA
+! Checksum: maOu4Ws6KkZowQ4DLBZlGg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.13.40
-! TimeUpdated: 2022-03-26T18:30:34+00:00
+! Version: 2.1.13.41
+! TimeUpdated: 2022-03-27T09:02:14+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -32087,6 +32087,8 @@ magazine.skyeng.ru##.tg-banner
 !######### CSS tweaks #########
 !##############################
 !
+! https://github.com/uBlockOrigin/uAssets/issues/12468
+shavetape.*,adblockstrtape.link,adblockstrtech.link,adblockstreamtape.*,stape.fun,strcloud.link,streamtape.*#%#//scriptlet("adjust-setTimeout", "counter", "", "0.02")
 ! https://github.com/easylist/easylist/issues/11448 timer
 loanapply.info#$##showlink { display: block !important; }
 loanapply.info#$#.to:style { display: block !important; }
@@ -32753,8 +32755,6 @@ c1ne.co#%#//scriptlet('adjust-setInterval', 'countdown', '', '0.02')
 theicongenerator.com#%#//scriptlet("adjust-setInterval", "timer", "", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/89317
 gdfreak.xyz#%#//scriptlet("adjust-setInterval", "sec--", "", "0.02")
-! https://github.com/AdguardTeam/AdguardFilters/issues/89273
-streamtape.*#%#//scriptlet("set-constant", "towait", "0")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/89158
 gamingforecast.com#%#//scriptlet("adjust-setInterval", "Link()", "", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/88883
