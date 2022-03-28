@@ -93,7 +93,7 @@ jobs:
           if [ -n "$diffFile" ]; then
             for i in $diffFile ; do
               titleName=$(echo "$i" |sed 's#.txt#-title.txt#')
-              n=`cat $i | wc -l`
+              n=`cat ./new/$i | wc -l`
               echo "! Total count: $n" > $i-tpdate.txt
               cat ./mod/$titleName ./$i-tpdate.txt ./new/$i > ./$i
               sed -i -e "s#201412030951#$TAG_NAME#" -e "s#201412030952#$MODIFIED_TIME#" ./$i
