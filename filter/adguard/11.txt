@@ -1,8 +1,8 @@
-! Checksum: fHHXvN/kTF5HQ/9H8XTAHw
+! Checksum: vetBhj1d6RLOSlHTNvwkJw
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.28.0
-! TimeUpdated: 2022-03-25T14:30:19+00:00
+! Version: 2.0.28.1
+! TimeUpdated: 2022-03-28T06:30:18+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -307,7 +307,7 @@
 ||restartad.com^
 ||appgiftwall.oss-us-west-1.aliyuncs.com^
 ||appgift.sinaapp.com^
-||ad.mail.ru^|
+||ad.mail.ru^
 ||servedby.o2.co.uk^
 ||amillionads.com^
 ||api.mobshark.net^
@@ -1291,6 +1291,8 @@ eromanga-kong.com#?#.out_single_under > div.img > a[href=""]:upward(2)
 forbesjapan.com#?#.stream-article > div[id^="div-gpt-"]:upward(1)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/113683
 trilltrill.jp#?#.articleDetail-RankingList > li.articleDetail-RankingList_Item:has(> div[id^="div-gpt-ad"])
+! https://github.com/AdguardTeam/AdguardFilters/issues/112309
+limia.jp#?#.Section > div.OUTBRAIN:upward(1)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/112598
 wetter.com#?#div[id^="somtag-container"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/113415
@@ -2638,6 +2640,7 @@ interfax.ru##.i_mobile_only
 ponycanyon.co.jp##.ad300sp50
 trilltrill.jp##.articleDetail-GAM
 stolica-s.su##.ad-fullscreen
+limia.jp##.Post > div.u-textCenter[style="min-height: 160px;"]
 washingtonpost.com###mobile-footer-ad-wrapper
 tanoshiiosake.jp##.globalFooter_banner
 arine.jp##.wrapper > div[align="center"][m-section]

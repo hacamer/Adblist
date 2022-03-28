@@ -1,8 +1,8 @@
-! Checksum: ulAw4+f5fZFhW50ke3DAPA
+! Checksum: rAtZ/EPNvMlykRL3iRaBGQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.13.42
-! TimeUpdated: 2022-03-27T17:02:08+00:00
+! Version: 2.1.13.43
+! TimeUpdated: 2022-03-28T06:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -18652,9 +18652,13 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 !
 m.qoo10.jp##.app_download_banner
 ||baby-calendar.jp/img/common/app/header_
+s.kakaku.com##.homebtnbnr
 windy.com###open-in-app
 hk01.com##div[id^="ig-"][data-title$="app download"]
+aumo.jp###js-smartBanner-footer
 tiktok.com##.footer-guide
+limia.jp##.AppsDownloadBadge
+limia.jp##.InductionOverlay
 tanoshiiosake.jp##a[id^="appBanner"]
 tanoshiiosake.jp#%#//scriptlet('remove-class', 'app-appBannerOpen', 'body')
 jreast.co.jp###jre_header_appLink
@@ -26488,6 +26492,10 @@ disk.yandex.*##.mail360-banner
 m.faz.net###newFooterM
 ! https://github.com/AdguardTeam/AdguardFilters/issues/110731
 jp.sharp##.insert-blog-link
+! https://github.com/AdguardTeam/AdguardFilters/issues/112462
+cookien.com#$##top_banner { display: none !important; }
+cookien.com#$#hgroup { top: 0 !important; }
+cookien.com#$##masthead { height: 45px !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/112905
 sofra.com.tr##.header-top > div.container
 ! https://github.com/AdguardTeam/AdguardFilters/issues/112580
