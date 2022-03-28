@@ -1,9 +1,9 @@
 [Adblock Plus 3.0]
-! Checksum: j8/UrEquI9a017LvzqWeCA
+! Checksum: mtFksBtAfz8nNUa6s8BBAg
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202203282119
-! Last Modified: 2022年03月28日 21:19
+! Version: 202203282211
+! Last Modified: 2022年03月28日 22:11
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -42430,6 +42430,8 @@ wcoanimesub.tv##+js(set-constant, isAdBlockActive, false)
 wcoanimesub.tv,wcofun.com,wcoforever.net,wcoanimedub.tv,wcoforever.com,wcostream.com,watchcartoononline.io##.anti-ad
 wcoforever.net,wcoforever.com##+js(no-setTimeout-if, AdBlock)
 wcoforever.net,wcoforever.com##+js(set-constant, isAdBlockActive, false)
+wcofun.com###reklam_kapat
+wcofun.com##+js(abort-current-script, document.createElement, cpmstarAPI)
 wcofun.com##+js(no-setTimeout-if, AdBlock)
 wcofun.com##+js(set-constant, isAdBlockActive, false)
 wcofun.com,wcoforever.net,wcoforever.com,thewatchcartoononline.tv###sidebar_r1
@@ -53235,6 +53237,7 @@ zznews.cn##.ad:not([style])
 ||bloomberg.com/8FCGYgk4/init.js
 ||blossommo.com^
 ||blotburn.com^
+||bloxplay.com^$third-party
 ||blsenpg.cn^
 ||blue.ktla.com^
 ||bluecava.com^$third-party
