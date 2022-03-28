@@ -1,8 +1,8 @@
-! Checksum: vetBhj1d6RLOSlHTNvwkJw
+! Checksum: jPxgbEFa/Iv+YkgkWaYD8A
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.28.1
-! TimeUpdated: 2022-03-28T06:30:18+00:00
+! Version: 2.0.28.2
+! TimeUpdated: 2022-03-28T07:30:18+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1281,6 +1281,8 @@ westseattleblog.com#@#.header-ad
 ! Bad: example.org##main > div.ad (should be in specific.txt)
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/113846
+news.com.au#?#.news-tops_list > .news-tops_group-rhc > .sticky-wrapper:has(> .sticky-container:only-child > .ad-m-mrec:only-child)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/112945
 matomame.jp#?##article_contents > div.uk-text-center:has(> div[id^="div-gpt-ad"])
 ! https://github.com/AdguardTeam/AdguardFilters/issues/113621
