@@ -1,8 +1,8 @@
-! Checksum: jiIZk6NZ+R8CLW7Ug3wooQ
+! Checksum: TfnATQ6OhiBf3tRXrU/alQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.13.52
-! TimeUpdated: 2022-03-28T15:30:35+00:00
+! Version: 2.1.13.54
+! TimeUpdated: 2022-03-28T17:02:13+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7272,6 +7272,8 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+||dimedic.eu/*/cookies/cookies
+exidegroup.com###exide-gtm-scripts-modal
 glencore.com##footer > div.fixed.rounded.overflow-y-auto
 readspeaker.com#$##cc--main { display: none !important; }
 readspeaker.com#$#html.show--consent:not(#style_important) { overflow: auto !important; }
@@ -20430,6 +20432,7 @@ sodapdf.com##.be-tooltip
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+buhexpert8.ru###popupvideo
 page.auctions.yahoo.co.jp##.idpfLPOpen
 przekroj.pl##.welcome.js-modal
 inwepo.co###pwaforwp-add-to-home-click
@@ -28583,6 +28586,10 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+buhexpert8.ru###exitpopup-modal
+buhexpert8.ru###reg-popup-form-overlay
+buhexpert8.ru##.highlight-form
+wiseadvice-it.ru#%#//scriptlet('set-cookie', 'conversion_action_done', 'true')
 globalaffairs.ru##.dk-newsletter
 theconversation.com###sticky-popup-wrapper
 theconversation.com##.mobile-banner
@@ -30383,7 +30390,7 @@ komyounity.com##.entry-content > p.has-text-align-center.has-vivid-purple-backgr
 komyounity.com##.entry-content > p.has-text-align-center.has-vivid-purple-background-color + div figure > a
 komyounity.com##div[style="height:100px"]:empty
 themaclife.com###sidebar_form
-aajtak.in##.subscribe-banner
+wiseadvice-it.ru,aajtak.in##.subscribe-banner
 derechadiario.com.ar#?#div[class^="jsx-"] > h2[class]:contains(Newsletter):upward(2)
 producthunt.com#?#div[class^="styles_postsList__"] > div[class^="styles_card__"]:has(input[value^="email_capture_"])
 producthunt.com#?#aside[class^="styles_sidebar__"] > div[class^="styles_container__"]:has(> div > span:contains(Newsletter))
