@@ -1,14 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: 7nbfiGcciKxvnRXRJE4d+A
+! Checksum: UoRRDufsXrUm13AtiJM48w
 ! Title: My AdFilters Lite
 ! Expires: 1 hours (Sometimes updates are delayed)
-! Version: 202203282310
-! Last Modified: 2022年03月28日 23:10
+! Version: 202203282335
+! Last Modified: 2022年03月28日 23:35
 ! Homepage: https://github.com/hacamer/Adblist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、Adgk、大萌主的规则
 ! 并补充了贴吧过滤规则，感谢各位的分享！
 ! 如有任何疑问、意见或建议，请反馈给：杏梢
 !
+! Total count: 0
 ###Ad_windows
 ###ChapterView > .slide-baidu
 ###Layeraa1
@@ -14357,7 +14358,9 @@ shanxivideo.net##.banner
 shanxivideo.net##.list-subCont > li[style$="height: 98px;"]
 shanxivideo.net##[class^="c-ad"]
 shanxivideo.net##div[style^="width: 300px; height: 250px"]
-shanxivideo.net#$#.with-ad.only-one-row.main { width: auto !important; }
+shanxivideo.net#$#.app-container[aria-expanded="false"] section.with-ad { width: calc(100% - 20px) !important; }
+shanxivideo.net#$#.with-ad[data-layout="list"] .main-header { width: 100% !important; }
+shanxivideo.net#$#.with-ad[data-layout="list"][data-section-type="new-video"] .content-wrap:nth-child(-n+2) { width: 100% !important; }
 shaoxing.com.cn##.top2
 shaoxing.com.cn##[src^="6201.files/gg"],[height="50"]
 share.acgnx.se##.banner
@@ -14644,6 +14647,7 @@ so.com##div[id^="guang-"]
 so.com##div[id^="mohe-biu_360"] > .g-card
 so.com##li[data-cpc_query]
 so.com##li[data-id^="cm_display_init_text_"]
+so.lenovo.com.cn##.AdSite
 so.toutiao.com##section.commonbox.hasfooter
 sobaidupan.com##.ad_728x90
 sobaigu.com##a[href^="https://cloud.tencent.com/redirect.php?"][target="_blank"][rel="noopener"] > img

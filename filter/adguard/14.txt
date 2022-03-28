@@ -1,8 +1,8 @@
-! Checksum: UEpsSE7U9qFaVf2tmXeDwA
+! Checksum: jiIZk6NZ+R8CLW7Ug3wooQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.13.51
-! TimeUpdated: 2022-03-28T14:30:48+00:00
+! Version: 2.1.13.52
+! TimeUpdated: 2022-03-28T15:30:35+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -6784,6 +6784,7 @@ cc-fan.tv,cn-fan.tv,fox-fan.tv,nf-fan.tv#$#.pub_300x250.pub_300x250m.pub_728x90.
 !######### General URL blocking rules ##################
 !#######################################################
 !
+||consent.nit.ro^$third-party
 /wp-content/plugins/dsgvo-tools-cookie-hinweis-datenschutz/*
 ||delivery.consentconverter.com/delivery/cmp.php
 ||ccm.takuma.de^$third-party
@@ -7271,6 +7272,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+glencore.com##footer > div.fixed.rounded.overflow-y-auto
 readspeaker.com#$##cc--main { display: none !important; }
 readspeaker.com#$#html.show--consent:not(#style_important) { overflow: auto !important; }
 atlatszo.hu###the_popup
@@ -28581,6 +28583,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+globalaffairs.ru##.dk-newsletter
 theconversation.com###sticky-popup-wrapper
 theconversation.com##.mobile-banner
 theconversation.com##.article-inline-amp
