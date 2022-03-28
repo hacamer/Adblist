@@ -1,8 +1,8 @@
-! Checksum: TfnATQ6OhiBf3tRXrU/alQ
+! Checksum: ViZ+DEZ8caMoHNdKF4Mxsg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.13.54
-! TimeUpdated: 2022-03-28T17:02:13+00:00
+! Version: 2.1.13.55
+! TimeUpdated: 2022-03-28T18:30:38+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -18666,6 +18666,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+blogtag.ameba.jp#?##app > aside[class^="sc-"] > div[class^="sc-"] > a[href^="https://ameblo.page.link"]:upward(2)
 bbc.com##section[aria-label="Уведомление"]
 beauty.yahoo.co.jp##.Top__bannerList
 partner.yahoo.co.jp##.Rsab
