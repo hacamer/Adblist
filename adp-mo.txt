@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: eFL4xJY211oaBEcuziWSeA
+! Checksum: PbkyolPNv8tvhjIwzsju3g
 ! Title: My AdFilters（for Mobile）
 ! Expires: 12 hours
-! Version: 202203281613
-! Last Modified: 2022年03月28日 16:13
+! Version: 202203281710
+! Last Modified: 2022年03月28日 17:10
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 感谢各位前辈的分享！
@@ -5028,6 +5028,7 @@
 ##.strip-ad
 ##.stui-pannel > .recommend-two
 ##.stui-warp-content > a[target="_blank"] > img[height="120px"]
+##.stui-warp-content > a[target="_blank"] > img[height="60px"]
 ##.sub-ad
 ##.subAdBannerArea
 ##.subAdBannerHeader
@@ -5525,6 +5526,7 @@
 ##DFP-AD
 ##DIV[style=" max-width:990px;  margin:0 auto;"] > A > IMG[height="60px"]
 ##DIV[style=" max-width:995px;  margin:0 auto;"] > A > IMG[height="120px"]
+##DIV[style=" max-width:995px;  margin:0 auto;"] > A > IMG[height="60px"]
 ##FBS-AD
 ##LEADERBOARD-AD
 ##[class*="__adspot-title-container"]
@@ -24600,6 +24602,7 @@ instrumentationtools.com##.inside-right-sidebar > aside[id^="custom_html-"]
 insurance-space.xyz,issueexplorer.com,coderedirect.com##div[id^="bsa-zone_"]
 interestingengineering.com##.adW
 interia.pl##+js(nano-setTimeout-booster, location.href = "/#iwa_source=timeout", 15000, 0.02)
+interia.pl##+js(remove-attr, style, .mail-container[data-widget^="https://poczta.interia.pl/widget/"] > .mail-popup[style])
 interia.pl##.ad
 interia.pl##.ad + .brief-placeholder-list
 interia.pl##.ad-container
@@ -27497,6 +27500,9 @@ pockettactics.com##+js(abort-current-script, Math.random, isIframeNetworking)
 pockettactics.com#$#body header.banner:not(#style_important) { top: 0 !important; }
 pockettactics.com#$#body { padding-top: 0 !important; }
 pockettactics.com,pcgamesn.com##.legion_primiswrapper
+poczta.interia.pl##.ads-content
+poczta.interia.pl##section[ui-view="message-adv"].section--message > .ad
+poczta.interia.pl#?##main-container > .mail-frame-aside:has(> .ads-content)
 poczta.o2.pl##dd-holder[slot="DOUBLE_BILLBOARD"]
 poczta.o2.pl##dd-holder[slot^="BOX_LEFT_"]
 poczta.o2.pl#@#body > div[class="pub_300x250 text_ads ad_container"][style] + div[class]:not([id])
@@ -31223,6 +31229,7 @@ ye120.com##.fixed_bottom
 yellowfaucet.ovh##+js(abort-on-property-read, _cpp)
 yelp.at,yelp.be,yelp.ca,yelp.ch,yelp.cl,yelp.co.jp,yelp.co.nz,yelp.co.uk,yelp.com,yelp.com.ar,yelp.com.au,yelp.com.br,yelp.com.hk,yelp.com.mx,yelp.com.ph,yelp.com.sg,yelp.com.tr,yelp.cz,yelp.de,yelp.dk,yelp.es,yelp.fi,yelp.fr,yelp.ie,yelp.it,yelp.my,yelp.nl,yelp.no,yelp.pl,yelp.pt,yelp.se##.ABP
 yelp.at,yelp.be,yelp.ca,yelp.ch,yelp.cl,yelp.co.jp,yelp.co.nz,yelp.co.uk,yelp.com,yelp.com.ar,yelp.com.au,yelp.com.br,yelp.com.hk,yelp.com.mx,yelp.com.ph,yelp.com.sg,yelp.com.tr,yelp.cz,yelp.de,yelp.dk,yelp.es,yelp.fi,yelp.fr,yelp.ie,yelp.it,yelp.my,yelp.nl,yelp.no,yelp.pl,yelp.pt,yelp.se#?#div[class^=" container_"]:-abp-has(a[href^="/adredir?"])
+yemancomic.com##button[style="width:380px; height:50px;"]
 yepi.com##+js(set-constant, evitca_kcolbda, false)
 yepi.com#@##PreRollAd
 yeptube.com##.drt-spot-box
@@ -36638,6 +36645,7 @@ zyue.com##div[id^="divad_"]
 ||bigappboi.com^
 ||bigbolz.com^
 ||bigcattracks.com^$third-party
+||bigcity.ink^
 ||bigdata.ssp.samsung.com^
 ||bigday.ru/counter.php?
 ||bigear.cn/cache/htmlcache/
@@ -40948,6 +40956,7 @@ zyue.com##div[id^="divad_"]
 ||e2ma.net/track/
 ||e335udnv6drg78b7.com^
 ||e377.thestar.com^
+||e4440.com/img/hmwang.gif
 ||e5af61b2d8c19c16.online^
 ||e5asyhilodice.com^
 ||e5obq1v261.www.lurkit.com^
@@ -62674,6 +62683,7 @@ zyue.com##div[id^="divad_"]
 ||wl.jd.com^
 ||wl.spotify.com^
 ||wlengrclxzypf.com^
+||wljj56.com^
 ||wlkojk.orange.ro^
 ||wlrjy.com/assets/images/*.gif
 ||wlw.de/unified_search_backend/api/v1/tracking/
@@ -63702,6 +63712,7 @@ zyue.com##div[id^="divad_"]
 ||yaohq.com^
 ||yaojingweiba.com/inc/
 ||yaolan.com/ylk.mini.js
+||yaosahrmncc.top^
 ||yaoyl.com/js/ds.js
 ||yarpp.org/pixels/
 ||yasiwngdihnfe.com^
@@ -63831,6 +63842,7 @@ zyue.com##div[id^="divad_"]
 ||yinvmh.com^
 ||yinyating.top^
 ||yiopse.com^
+||yiotufp.cn^
 ||yiparts.com/Chance.php?aid=
 ||yiqifa.com^$subdocument
 ||yiqifa.com^*.js$third-party
