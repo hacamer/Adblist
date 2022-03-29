@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: SUzRYIU/BzIyxkU2WHewLA
+! Checksum: DFmXTS7lGdzcWjvAdsKPOA
 ! Title: My AdFilters（for Mobile）
 ! Expires: 12 hours
-! Version: 202203292120
-! Last Modified: 2022年03月29日 21:20
+! Version: 202203292209
+! Last Modified: 2022年03月29日 22:09
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 64621
+! Total count: 64627
 ###AC_ad
 ###ADCENTER
 ###ADSLOT_1
@@ -21942,11 +21942,15 @@ dood.*##+js(abort-on-property-read, DoodPop)
 dood.*##+js(set-constant, googleAd, true)
 dood.*##+js(set-constant, xPoPAdS, false)
 doodle.com#@#.googleAd
+doomovie-hd.com###ekcdnplayer > div[style^="position: absolute; top: 0; left: 0;"]
 doomovie-hd.com##+js(json-prune, adParam)
+doomovie-hd.com##.default-horizontal-banana
 doomovie-hd.com##.floating_ads_bt-mid_container
+doomovie-hd.com##.header-banana_container
 doomovie-hd.com##.horizontal-ad-bar
 doomovie-hd.com##.side_floating_ad
 doomovie-hd.com##.topad_container
+doomovie-hd.com##div[class$="floating-banana-container"]
 doordash.com#?#[data-testid="card.store"] > div:-abp-has(div[data-anchor-id="SponsoredBadge"])
 dooseries2uhd.com##.adcen
 dooseries2uhd.com##.adcen-mid
@@ -28827,6 +28831,8 @@ smallseotools.com##+js(no-setInterval-if, google_jobrunner)
 smallseotools.com##.sidebar_adds
 smallseotools.com#$#.adsbygoogle { max-height: 1px !important; }
 smallseotools.com#@#.adsbygoogle
+smart-tv.doomovie-hd.com###video_overlay_a
+smart-tv.doomovie-hd.com##+js(set-constant, ad.isAllAdPlayed, trueFunc)
 smartasset.com##[class^="riklam"]
 smarteasystudy.com##.adsbygoogle
 smartprix.com##.dadow-box

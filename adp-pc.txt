@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: cEFecqAxlL/KUdE1MPyqAg
+! Checksum: YzrIOU6X9yWJ1yFvhBmYWg
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202203292120
-! Last Modified: 2022年03月29日 21:20
+! Version: 202203292209
+! Last Modified: 2022年03月29日 22:09
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 92513
+! Total count: 92519
 ###AC_ad
 ###ADCENTER
 ###ADSLOT_1
@@ -28290,11 +28290,15 @@ dood.*##+js(set-constant, xPoPAdS, false)
 dood.so,dood.to,dood.video,dood.watch,dood.la,dood.ws,doodstream.co,doodstream.com#$#abort-on-property-read DoodPop; abort-on-property-write adb; abort-on-property-write cRAds; abort-on-property-write xRds; abort-on-property-write xPoPAdS
 doodle.com#@#.googleAd
 dooland.com##div#adimage
+doomovie-hd.com###ekcdnplayer > div[style^="position: absolute; top: 0; left: 0;"]
 doomovie-hd.com##+js(json-prune, adParam)
+doomovie-hd.com##.default-horizontal-banana
 doomovie-hd.com##.floating_ads_bt-mid_container
+doomovie-hd.com##.header-banana_container
 doomovie-hd.com##.horizontal-ad-bar
 doomovie-hd.com##.side_floating_ad
 doomovie-hd.com##.topad_container
+doomovie-hd.com##div[class$="floating-banana-container"]
 doordash.com#?#[data-testid="card.store"] > div:-abp-has(div[data-anchor-id="SponsoredBadge"])
 dooseries2uhd.com##.adcen
 dooseries2uhd.com##.adcen-mid
@@ -39599,6 +39603,8 @@ smallseotools.com##+js(no-setInterval-if, google_jobrunner)
 smallseotools.com##.sidebar_adds
 smallseotools.com#$#.adsbygoogle { max-height: 1px !important; }
 smallseotools.com#@#.adsbygoogle
+smart-tv.doomovie-hd.com###video_overlay_a
+smart-tv.doomovie-hd.com##+js(set-constant, ad.isAllAdPlayed, trueFunc)
 smartasset.com##[class^="riklam"]
 smarteasystudy.com##.adsbygoogle
 smartprix.com##.dadow-box

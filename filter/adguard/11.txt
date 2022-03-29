@@ -1,8 +1,8 @@
-! Checksum: VdQMHirG8iKv9XtUJQaLUg
+! Checksum: ATIwVnLoMD1Xo/doO5rYZQ
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.28.8
-! TimeUpdated: 2022-03-29T13:02:44+00:00
+! Version: 2.0.28.9
+! TimeUpdated: 2022-03-29T13:30:30+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1948,6 +1948,9 @@ sasisa.ru#%#AG_onLoad(function() { window.Umobi = function() {}; });
 !-------CSS---------
 !-------------------
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/114041
+javfan.one#$##is_w_area { display: none!important; }
+javfan.one#$#html { overflow: visible!important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/113132
 kisspress.jp#$##articleDetail.collapse .btnCollapseOpen { bottom: 0 !important; }
 kisspress.jp#$##articleDetail.collapse .btnCollapseOpen::before { bottom: -15vmin !important; }
@@ -2615,6 +2618,13 @@ sdamgia.ru##center > div[id*="_"] > div[style*="height: 100%;"]
 sdamgia.ru##center > div[id*="_"] > div[style*="width: 100%;"]
 !
 !
+! Facebook
+!! old interface
+mbasic.facebook.com,d.facebook.com,free.facebook.com,free.facebookcorewwwi.onion,mbasic.facebookcorewwwi.onion,d.facebookcorewwwi.onion,m.facebook.com,m.facebookcorewwwi.onion,b-m.facebook.com,b-m.facebookcorewwwi.onion,mobile.facebook.com,mobile.facebookcorewwwi.onion,0.facebook.com,0.facebookcorewwwi.onion##div[role="article"][data-ft*='"originated_from_recommendation":"1"']
+!! new interface
+!!! Ad in menu
+m.facebook.com##div[data-type="vscroller"][data-comp-id] > div[style]:not([data-action-id]):not([data-focusable="true"]):not([style*="1px"])
+!
 ! Common names
 ! ##amp-embed[type="outbrain"]
 rtl.de,amp.tvspielfilm.de,morgenpost.de,manager-magazin.de,amp.macwelt.de,m.formel1.de,finanzen.at,tagesspiegel.de,futurezone.de,ruhr24.de,spiegel.de,berliner-zeitung.de,businessinsider.de,braunschweiger-abendblatt.de,zeitung.de,bildderfrau.de,derwesten.de,finanzen.net,transfermarkt.de##amp-embed[type="outbrain"]
@@ -2627,6 +2637,7 @@ scmp.com,theinventory.com,avclub.com,clickhole.com,deadspin.com,gizmodo.com,jalo
 ! ##.ads
 cartoonpornvideos.com,m.economictimes.com,beethovenmaster.com,m.mistrzowie.org,m.ura.news,siirtpress.com,up.ymgt.xyz,google.de,www-bento-de.cdn.ampproject.org,m-economictimes-com.cdn.ampproject.org,m.winfuture.de##.ads
 !
+javfan.one##div[style^="width: 300px;"][style*="height: 250px;"]
 baby-calendar.jp##div[id^="JP_BABY_sp_all_"]
 blogtag.ameba.jp###app > aside[class^="sc-"] > div[class]:empty
 blogtag.ameba.jp##main > ul > div[class]:empty
@@ -4455,7 +4466,6 @@ m.megafonpro.ru##div[class="v y m"]
 mamibai.com##.content-ad-spa
 mobil.ksta.de##.is-ad
 sueddeutsche.de##power-stories-embed
-mbasic.facebook.com,d.facebook.com,free.facebook.com,free.facebookcorewwwi.onion,mbasic.facebookcorewwwi.onion,d.facebookcorewwwi.onion,m.facebook.com,m.facebookcorewwwi.onion,b-m.facebook.com,b-m.facebookcorewwwi.onion,mobile.facebook.com,mobile.facebookcorewwwi.onion,0.facebook.com,0.facebookcorewwwi.onion##div[role="article"][data-ft*='"originated_from_recommendation":"1"']
 mobil.macwelt.de,mobil.pcwelt.de##.mobile_mpu
 noticias.uol.com.br##.text > div[style*="height: 20px!important;line-height: 20px!important;"]
 hochu.ua##.exp_300x250
