@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: kn5OnEYjpB6pzrxb4RBE1A
+! Checksum: Ck5JLdKvaXWd67cvrAxqzA
 ! Title: AdFilters
 ! Expires: 12 hours
-! Version: 202203290846
-! Last Modified: 2022年03月29日 08:46
+! Version: 202203291028
+! Last Modified: 2022年03月29日 10:28
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、EasyPrivacy，感谢各位大大的分享！
 ! 仅合并规则，未做其余任何处理
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 36844
+! Total count: 36849
 ###ChapterView > .slide-baidu
 ###SOHU_MAIN > .module-cmt-float-bar
 ###TopAdvert
@@ -522,9 +522,6 @@
 ##.zhanzhang_tuijian_btn
 ##A[href*=".com/?Agent="]
 ##A[href^="/e/public/ClickAd?adid="]
-##DIV[style=" max-width:990px;  margin:0 auto;"] > A > IMG[height="60px"]
-##DIV[style=" max-width:995px;  margin:0 auto;"] > A > IMG[height="120px"]
-##DIV[style=" max-width:995px;  margin:0 auto;"] > A > IMG[height="60px"]
 ##[class][onclick^="window.location.href"][onclick*=".bcebos."]
 ##[class][onclick^="window.location.href"][onclick*=".pypyj.com"]
 ##[style="display:none"] + iframe[scrolling="no"][src*="//"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"]
@@ -632,6 +629,9 @@
 ##div[style=" max-width:1000px;  margin:0 auto;"] > a > img[height="120px"]
 ##div[style=" max-width:1000px;  margin:0 auto;"] > a > img[height="60px"]
 ##div[style=" max-width:985px;  margin:0 auto;"] > a > img[height="60px"]
+##div[style=" max-width:990px;  margin:0 auto;"] > a > img[height="60px"]
+##div[style=" max-width:995px;  margin:0 auto;"] > a > img[height="120px"]
+##div[style=" max-width:995px;  margin:0 auto;"] > a > img[height="60px"]
 ##div[style=" max-width:998px;  margin:0 auto;"] > a > img[height="120px"]
 ##div[style=" max-width:998px;  margin:0 auto;"] > a > img[height="60px"]
 ##div[style=" max-width:999px;  margin:0 auto;"] > a > img[height="60px"]
@@ -7718,10 +7718,10 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||adnxs.com/ast/static/$domain=outlook.live.com
 @@||adnz.co/dmp/publisher.js$domain=finanzen.ch
 @@||adnz.co/header.js?adTagId=$domain=finanzen.ch
-@@||adobedtm.com/*-source.min.js$script,domain=aarp.org|atresplayer.com|backcountry.com|bt.com|dollargeneral.com|kroger.com|personal.natwest.com|verizon.com
-@@||adobedtm.com/*_source.min.js$script,domain=backcountry.com|kroger.com
+@@||adobedtm.com/*-source.min.js$script,domain=aarp.org|atresplayer.com|backcountry.com|bt.com|dollargeneral.com|kroger.com|personal.natwest.com|telus.com|verizon.com
+@@||adobedtm.com/*_source.min.js$script,domain=backcountry.com|kroger.com|telus.com
 @@||adobedtm.com/extensions/$script,domain=antena3.com|atresmedia.com|atresplayer.com|lasexta.com
-@@||adobedtm.com/extensions/$script,domain=apple.com|bravotv.com|foodnetwork.com|verizon.com
+@@||adobedtm.com/extensions/$script,domain=apple.com|bravotv.com|foodnetwork.com|telus.com|verizon.com
 @@||adobedtm.com/launch-$script,xmlhttprequest
 @@||adobedtm.com^$script,domain=sonystyle.com.cn
 @@||adobedtm.com^*-libraryCode_source.min.js$script,domain=disneyplus.disney.co.jp
@@ -9196,7 +9196,7 @@ agmov.com,huaban.com##.promotion
 aguitar.cn##img[width="470"][height="60"]
 aguitar.cn,guitarchina.com##.headerbanner
 ahgame.com,china.com.cn,dandanzan.com,netbardh.com,pangzitv.com,twoeggz.com###pop
-ahtv.cn,frdic.com,huasing.net,it168.com,qinbing.cn###ads
+ahtv.cn,duhama.tv,frdic.com,huasing.net,it168.com,qinbing.cn###ads
 aibing.cc##a[href^="https://aibing.cc/go/"]
 aibing.cc,htcui.com,uho.com.tw##.adsense
 aicoin.net.cn,bccn.net,douyuex.com,hkepc.com,iviewui.com##.advertisement
@@ -9993,7 +9993,6 @@ duba.com,newduba.cn##a[href*=".zhhainiao.com/"]
 duba.com,newduba.cn,uu114.cn##.fav_box
 duba.com,uu114.cn##.hotTitle
 duba.net###login_alert
-duhama.tv###ads
 dujiaoshou.cn###ad1
 duote.com###hengfu
 duote.com##.dl-banner
@@ -15675,6 +15674,7 @@ zyue.com##div[id^="divad_"]
 ||baifendian.com^$third-party
 ||baikalize.com^$third-party
 ||baike.com/newtop/news.html
+||bainiaochaofeng.xyz^
 ||baiten.cn/images/weInternation/
 ||baitugu.com^$third-party
 ||baixing.com/widget/
@@ -16039,6 +16039,7 @@ zyue.com##div[id^="divad_"]
 ||bjcathay.com/s?z=
 ||bjcathay.com^$third-party
 ||bjhengdiao.com^
+||bjhyn.vip^
 ||bjjabc.com^
 ||bjmama.net/a/spc_
 ||bjmantis.net^
@@ -22862,6 +22863,7 @@ zyue.com##div[id^="divad_"]
 ||jia.com/js/zixun/news.js
 ||jia.com/js/zixun/zixun_
 ||jiadunkeji.com^
+||jiahehr.cn^
 ||jialingmm.net/dm/tj.js
 ||jialingmm.net/tj.js
 ||jianbaimei.com^
@@ -24039,6 +24041,7 @@ zyue.com##div[id^="divad_"]
 ||logger.snackly.co^
 ||logger.uol.com.br^
 ||logger.yp.ca^
+||logging.api.intuit.com^
 ||logging.carambo.la^
 ||logging.je-apps.com^
 ||logging.prefixbox.com^
@@ -28546,6 +28549,7 @@ zyue.com##div[id^="divad_"]
 ||ruian.com/img/y13/
 ||ruide168.pw^
 ||ruiwen.com/js/p.js
+||rum.api.intuit.com^
 ||rum.azion.com^
 ||rum.azioncdn.net^
 ||rum.ingress.layer0.co^
@@ -34470,6 +34474,7 @@ zyue.com##div[id^="divad_"]
 ||udemy.com/api-2.0/visits/me/funnel-logs/
 ||udgrbq.malwarebytes.com^
 ||udiab1.jianshu.com^
+||udiy.club^
 ||udkcrj.com^$third-party
 ||udn.com.tw/upf/2015_money/SSI/ad/
 ||udn.com^*/ad/
