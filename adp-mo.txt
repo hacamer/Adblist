@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: GYoXG+wFTQ44ONCPvss5uw
+! Checksum: qm+sYmPDvm6Wu+toP7xeVA
 ! Title: My AdFilters（for Mobile）
 ! Expires: 12 hours
-! Version: 202203291924
-! Last Modified: 2022年03月29日 19:24
+! Version: 202203292017
+! Last Modified: 2022年03月29日 20:17
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 64613
+! Total count: 64617
 ###AC_ad
 ###ADCENTER
 ###ADSLOT_1
@@ -21926,7 +21926,10 @@ donga.com##a[href^="https://adcr.naver.com"]
 donga.com##div[id^="ad_"]
 dongao.com##div[class^="fu_"]
 dongao.com,zgsyz.com###ad
+dongknows.com##+js(abort-current-script, document.getElementById, pagead2.googlesyndication.com)
 dongknows.com##+js(abort-on-property-read, gothamBatAdblock)
+dongknows.com#$#div[id^="chp_ads_block_modal_"] { display: none !important; }
+dongknows.com#$#html > body[class*="chp_ads_blocker"] { overflow: auto !important; }
 dongtw.com#@#.post-share-container
 dongyoungsang.club##+js(abort-current-script, $, disable ad-block)
 dongyoungsang.club#@#.adsbygoogle
@@ -30851,6 +30854,7 @@ winporn.*##+js(set-constant, showspop, undefined)
 winporn.*##.afsite > .thr-rcol
 winscp.net##.promo-block
 winshang.com##.ggwrap
+winterszus.pl##a[href="https://beesafe.pl/kalkulator-oc-ac/"]
 wiocha.pl###bnews
 wiocha.pl##iframe[src^="https://www.wiocha.pl/subpages/"][src*=".php"]
 wionews.com##body .posrelativebox

@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: kS/97OyoWz9hJF/H9sZm5Q
+! Checksum: 2xxEbDAzOwAeXgrSEsA+0A
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202203291924
-! Last Modified: 2022年03月29日 19:24
+! Version: 202203292017
+! Last Modified: 2022年03月29日 20:17
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 92509
+! Total count: 92516
 ###AC_ad
 ###ADCENTER
 ###ADSLOT_1
@@ -12100,6 +12100,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /jquery/slim-3.2.min.js$domain=avple.video|moviemaniac.org|javhdfree.icu|nekolink.site|mambast.tk|netflav.com|fembed-hd.com|ndrama.xyz|pornhole.club|ffem.club|jvembed.com|dzmdplay.xyz|jav247.top|yuistream.xyz|javfu.net|iframe2videos.xyz
 /js-tag-manager/*
 /js.ad/size=
+/js.mangapro.top/*.js^$script,domain=comick.top
 /js/1.js|$script,~third-party,domain=3dsmaxvideo.ru|archicadvideo.ru|autocadvideo.ru|coreldrawvideo.ru|excelvideo.ru|kompasvideo.ru|photoshopvideo.ru|solidworksvideo.ru|wordvideo.ru
 /js/20X4.js
 /js/AD_tv.js
@@ -24642,7 +24643,7 @@ animefire.net,sejasaudavel.net,toolss.net,teamxmanga.com,sudoroot.net,netfile.cc
 animeflv.cc#$#abort-current-inline-script JSON.parse
 animegalaxy.live##+js(abort-current-script, document.createElement, adblock)
 animegalaxy.online##+js(abort-current-script, document.createElement, adblock)
-animeheaven.pro,sexlivesex.net,spankbang.com#$#abort-on-property-write window.open
+animeheaven.pro,emturbovid.com,sexlivesex.net,spankbang.com,supjav.com#$#abort-on-property-write window.open
 animehub.ac###main-content > center
 animehub.ac##.sb-subs
 animeindo.fun##+js(abort-on-property-read, Popper)
@@ -28274,7 +28275,10 @@ donga.com##a[href^="https://adcr.naver.com"]
 donga.com##div[id^="ad_"]
 dongao.com##div[class^="fu_"]
 dongao.com,zgsyz.com###ad
+dongknows.com##+js(abort-current-script, document.getElementById, pagead2.googlesyndication.com)
 dongknows.com##+js(abort-on-property-read, gothamBatAdblock)
+dongknows.com#$#div[id^="chp_ads_block_modal_"] { display: none !important; }
+dongknows.com#$#html > body[class*="chp_ads_blocker"] { overflow: auto !important; }
 dongtw.com#@#.post-share-container
 dongyoungsang.club##+js(abort-current-script, $, disable ad-block)
 dongyoungsang.club#@#.adsbygoogle
@@ -34188,6 +34192,7 @@ leiphone.com,sina.com.cn##.top-banner
 lejj.com##div.dw_ad,div.sideTest,div.ad_link,div#JS_zx_page_ad
 leju.com##.leju-ads,.close_btn
 lenniu.com##.caClass
+lenovo.com.cn##.AdSite
 lenovo.com.cn##.BottomBar
 lenovo.com.cn##.TopBar
 lenovo.com.cn##.ad-calender
@@ -40291,6 +40296,7 @@ supersimple.online##+js(window.open-defuser)
 superuser.com##.site-header--sponsored
 superyachtfan.com##.adsbygoogle
 supfree.net###header_banner,[id^="templetflash_"],#c001
+supjav.com##.asg-overlay
 supjav.com##.video-wrap > div.right
 supportdap.online##.td-post-content > a[rel="nofollow"] > img
 supremesquirters.com##.ima,.rmedia,.sppc
@@ -42742,6 +42748,7 @@ winporn.*##+js(set-constant, showspop, undefined)
 winporn.*##.afsite > .thr-rcol
 winscp.net##.promo-block
 winshang.com##.ggwrap
+winterszus.pl##a[href="https://beesafe.pl/kalkulator-oc-ac/"]
 winxdvd.com##div[style^="position:fixed; width:200px; height:320px;"]
 winzoro.net##.isadNotif
 wiocha.pl###bnews
