@@ -1,8 +1,8 @@
-! Checksum: Hr9/ExWdxBBnBd3VkwoJbw
+! Checksum: wl937Hq4El/ET/eI/wdQCw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.13.72
-! TimeUpdated: 2022-03-30T07:30:35+00:00
+! Version: 2.1.13.73
+! TimeUpdated: 2022-03-30T09:02:14+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -32487,6 +32487,10 @@ newsweek.com##iframe[src="http://sns.europe.newsweek.com/newsletter?popup=1"]
 !##############################
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/114082
+techacode.com#%#//scriptlet("adjust-setTimeout", "#proceed", "*", "0.02")
+! https://github.com/AdguardTeam/AdguardFilters/issues/113948
+azmath.info#%#//scriptlet("adjust-setTimeout", "#proceed", "*", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/112849
 bonus-tv.ru#%#//scriptlet('remove-attr', 'autoplay', 'video')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/111736
