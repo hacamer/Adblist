@@ -1,8 +1,8 @@
-! Checksum: LpTe6b2SShClYqRYsg0+Lg
+! Checksum: knzzFfVcx4Sa1O9GyXJr/w
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.13.81
-! TimeUpdated: 2022-03-30T18:30:36+00:00
+! Version: 2.1.13.82
+! TimeUpdated: 2022-03-30T19:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -18686,6 +18686,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+zara.com##.native-app-banner
 floristics.info##.star-site-w
 blogtag.ameba.jp#?##app > aside[class^="sc-"] > div[class^="sc-"] > a[href^="https://ameblo.page.link"]:upward(2)
 bbc.com##section[aria-label="Уведомление"]
@@ -28607,6 +28608,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+zara.com##.layout-footer-newsletter
 rayon.in.ua##.patriot-image
 svoi.city##.sc-tg-subscribe
 svoi.city##.sc-google-news-link
