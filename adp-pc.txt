@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: N0M1emJd9Rg4AJni5UQ6LA
+! Checksum: KSMTeY1ZhlrwqQEFy8SByw
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202203300843
-! Last Modified: 2022年03月30日 08:43
+! Version: 202203301027
+! Last Modified: 2022年03月30日 10:27
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 92779
+! Total count: 92782
 ###AC_ad
 ###ADCENTER
 ###ADSLOT_1
@@ -6074,6 +6074,8 @@
 ##DIV.sptable_do_not_remove f_one
 ##DIV.tpc_icon
 ##DIV[id*="BAIDU_SSP__wrapper_"]
+##DIV[style=" max-width:992px;  margin:0 auto;"] > A > IMG[height="60px"]
+##DIV[style=" max-width:993px;  margin:0 auto;"] > A > IMG[height="60px"]
 ##FBS-AD
 ##IFRAME[src*="//pos.baidu.com/"]
 ##LEADERBOARD-AD
@@ -24716,7 +24718,7 @@ amazon.com##a[aria-label="Sponsored video, click to navigate to featured page."]
 amazon.com#@#.a-link-normal[href*="&adId="]
 amazon.com#@#h5[data-alt-pixel-url^="/gp/sponsored-products/"]
 amazon.com#@#h5[data-alt-pixel-url^="/gp/sponsored-products/"] + div + .a-row
-amazon.com,faceyourmanga.com,isc2.org,liverc.com,liverpoolfc.com,mit.edu,muscatdaily.com,olx.pl,payback.pl,pccomponentes.com,ripley.com.pe,saitama-np.co.jp,timesofoman.com,virginaustralia.com#@#[id^="div-gpt-ad"]
+amazon.com,cancam.jp,faceyourmanga.com,isc2.org,liverc.com,liverpoolfc.com,mit.edu,muscatdaily.com,olx.pl,payback.pl,pccomponentes.com,ripley.com.pe,saitama-np.co.jp,timesofoman.com,virginaustralia.com#@#[id^="div-gpt-ad"]
 amazon.de,amazon.com,amazon.co.uk,amazon.fr,amazon.in,amazon.it,amazon.es##.aw-campaigns
 amazon.in##div[cel_widget_id^="tetris-creative-desktop_loom-desktop-top-slot"]
 amcplus.com#@#.pub_300x250
@@ -26693,6 +26695,7 @@ canale.live##+js(no-setInterval-if, adblock)
 canale.live##+js(set-constant, google_tag_data, emptyObj)
 canale.live##+js(set-constant, isBlocked, false)
 canarianweekly.com##.banner-in-content
+cancam.jp,saitama-np.co.jp#@#div[id^="div-gpt-"]
 cangjige.net##.wp[style="height:36px;padding-top:15px;"]
 cangku.in##.ad-index,.single-top-ad,.sidebar-game,.panel-zan
 cangku.in,cangku.moe,enjoymore.fun,got001.com,iwan.baidu.com,qq.com,qtv.com.cn,xinhuanet.com,zol.com.cn##.ad-box
@@ -39093,7 +39096,6 @@ safelinku.net##.adsbygoogle
 safetree.com.cn##.logintc,.loginbody
 safeurl.net#@#.adsBox
 sailuniverse.com##+js(set-constant, $tieE3, true)
-saitama-np.co.jp#@#div[id^="div-gpt-"]
 sakai-hk.com,sakai.club###diynavtop,.adsbygoogle,.a_pt
 salidzini.lv###AM_giga
 sallysbakingaddiction.com##div[class^=adthrive-]
@@ -42927,6 +42929,7 @@ winaero.com#?#aside:has(.adsbygoogle)
 windowcleaningforums.co.uk##+js(no-setTimeout-if, test.offsetHeight)
 windowcleaningforums.co.uk#@#.adsbygoogle
 windows101tricks.com##+js(set-constant, better_ads_adblock, true)
+windows101tricks.com##.zanui-container
 windows10gadgets.pro#@#.adsbygoogle
 windows4all.com#@##adWrap
 windows7en.com###ad_btm_down
