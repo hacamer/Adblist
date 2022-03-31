@@ -1,8 +1,8 @@
-! Checksum: 172L/Ohpw4+5WVwYl5qHtw
+! Checksum: cruQ7+i4KPr+gxLGMZPqRA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.13.92
-! TimeUpdated: 2022-03-31T14:30:47+00:00
+! Version: 2.1.13.93
+! TimeUpdated: 2022-03-31T17:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -18691,6 +18691,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+linkedin.com##.apptivation-promo
 wear.jp###hdr_download
 wear.jp###secAppDownload
 ||mangalove.me/images/app_yuudou.png
@@ -32157,6 +32158,8 @@ jardima.com#$#div[id^="wpsafe-wait"] { display none !important; }
 visflakes.com#$##wpsafe-generate { display: block !important; }
 visflakes.com#$##wpsafe-link { display: block !important; }
 visflakes.com#$#div[id^="wpsafe-wait"] { display none !important; }
+! https://github.com/AdguardTeam/AdguardFilters/issues/113620
+news.goo.ne.jp#$##NR-wrapper-in.cx { min-height: auto !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/112415
 markezine.jp#$#.l-sidebar_inner > div.ad-job-board-wrap + div.c-secondarysection { margin-top: 0 !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/112175
