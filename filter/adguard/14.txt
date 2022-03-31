@@ -1,8 +1,8 @@
-! Checksum: 4QTit9OBpNo24n74C0Emzg
+! Checksum: 1GuWKJpMOpYhoRCiYKBZWQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.13.86
-! TimeUpdated: 2022-03-31T09:30:34+00:00
+! Version: 2.1.13.87
+! TimeUpdated: 2022-03-31T10:30:36+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -14999,6 +14999,7 @@ moses-verlag.de,radonline.de,arctic.de#$#.acris-cookie-consent ~ .modal-backdrop
 !
 !
 telnyx.com#?#footer + div[class^="styled__Container-"]:has(> div[class^="styled__CookieText-"])
+cleantalk.org###uses_c
 fantrax.com#?#.toast.ng-trigger-enterLeave:has(> article[role="alert"] > p:contains(We use cookies to improve your experience))
 ada.com#?##outer-container > #page-wrap + aside[class]:has(a[href="/cookie-policy/"])
 changeua.com##.warning
@@ -15363,7 +15364,6 @@ player.addradio.de#%#AG_onLoad(function(){if(!document.cookie.valueOf("FCCDCF").
 ohmydev.pl#%#(function() { try { if ("undefined" != typeof localStorage) { localStorage.setItem("acceptedPolicy", "true") } } catch (ex) {} })();
 babyland.pl#%#//scriptlet('set-cookie-reload', 'VIKI_cookie_alert_closed', '1')
 takprosto.cc#%#AG_onLoad(function() {var b=new MutationObserver(function() {var c=document.querySelector('.cmplz-accept-marketing'); c&&(b.disconnect(),c.click()) });b.observe(document, {childList: !0,subtree: !0});setTimeout(function() {b.disconnect()}, 1E4)});
-jetztspielen.ws#%#AG_onLoad(function() { setTimeout(function() { var el = document.querySelector('#onetrust-accept-btn-handler'); if(el) el.click(); }, 1500); });
 invite.viber.com#%#document.cookie = "cookieAgree=iagree; path=/";
 phoenix.de#%#AG_onLoad(function(){if("undefined"!=typeof localStorage)try{if(!localStorage.getItem("user_anonymous_profile")){var b=new MutationObserver(function(){var a=document.querySelector('div[ng-if="showPrivacySettings()"] button.o-btn');a&&(b.disconnect(),a.click())});b.observe(document,{childList:!0,subtree:!0});setTimeout(function(){b.disconnect()},1E4)}}catch(a){}});
 juedische-allgemeine.de#%#//scriptlet('set-cookie', 'ubCmpAccepted', 'true')
@@ -15726,7 +15726,7 @@ kmweg.de#%#//scriptlet('set-cookie', 'cookie_consent', '1')
 abcya.com#%#//scriptlet('set-cookie', 'abcya_cb', '1')
 fehler-haft.de#%#//scriptlet('set-cookie', 'cookieerlaubnis', 'yes')
 natgeotv.com#%#AG_onLoad(function(){if(-1==document.cookie.indexOf("OptanonAlertBoxClosed")){var a=new MutationObserver(function(){var b=document.querySelector("#onetrust-consent-sdk"),c=document.querySelector("button#onetrust-reject-all-handler");b&&c&&(a.disconnect(),c.click(),b.style="display: none !important;")});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)}});
-1001spiele.de,mcdelivery.de,wowbiz.ro,ikonpass.com,eurogamer.es,eurogamer.de,games.miamiherald.com,dziendobry.tvn.pl,olympics.com,1001spiele.at,kralmuzik.com.tr,ntv.com.tr,ntvspor.net,eurogamer.net,eurogamer.it,eurogamer.pl,eurogamer.pt,rtlnieuws.nl,boomerang-tv.pl,yourdictionary.com,cnbc.com,cbsnews.com,gamespot.com,msn.com,tvn24.pl#%#AG_onLoad(function(){if(-1==document.cookie.indexOf("OptanonAlertBoxClosed")){var a=new MutationObserver(function(){var b=document.querySelector("#onetrust-consent-sdk"),c=document.querySelector("button#onetrust-accept-btn-handler");b&&c&&(a.disconnect(),c.click(),b.style="display: none !important;")});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)}});
+jetztspielen.ws,1001spiele.de,mcdelivery.de,wowbiz.ro,ikonpass.com,eurogamer.es,eurogamer.de,games.miamiherald.com,dziendobry.tvn.pl,olympics.com,1001spiele.at,kralmuzik.com.tr,ntv.com.tr,ntvspor.net,eurogamer.net,eurogamer.it,eurogamer.pl,eurogamer.pt,rtlnieuws.nl,boomerang-tv.pl,yourdictionary.com,cnbc.com,cbsnews.com,gamespot.com,msn.com,tvn24.pl#%#AG_onLoad(function(){if(-1==document.cookie.indexOf("OptanonAlertBoxClosed")){var a=new MutationObserver(function(){var b=document.querySelector("#onetrust-consent-sdk"),c=document.querySelector("button#onetrust-accept-btn-handler");b&&c&&(a.disconnect(),c.click(),b.style="display: none !important;")});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)}});
 cdn.privacy-mgmt.com#%#AG_onLoad(function() {var b=new MutationObserver(function() {var c=document.querySelector('button[title^="Akzeptieren"]'); c&&(b.disconnect(),c.click()) });b.observe(document, {childList: !0,subtree: !0});setTimeout(function() {b.disconnect()}, 1E4)});
 theguardian.com#%#//scriptlet('remove-class', 'sp-message-open', 'html.sp-message-open')
 hsbc.com.tr,advantage.com.tr#%#(function() { try { if ('undefined' != typeof localStorage) { localStorage.setItem('cookiePolicy', 'true') } } catch (ex) {} })();
@@ -18690,6 +18690,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 vandaaginside.nl##.qlf-promo-footer[promotype="promofooter"]
 zara.com##.native-app-banner
 floristics.info##.star-site-w
+azlyrics.biz##a[href="https://azlyrics.biz/azlyricsbiz.apk"]
 blogtag.ameba.jp#?##app > aside[class^="sc-"] > div[class^="sc-"] > a[href^="https://ameblo.page.link"]:upward(2)
 bbc.com##section[aria-label="Уведомление"]
 oceans-nadia.com#$#header.hide-from-app { margin-top: 0px !important;}
@@ -20451,6 +20452,9 @@ lego.com##div[data-test="age-gate-overlay"]
 lego.com##div[class^="HeaderMobilestyles"]
 mail.ru###ph-extension-block
 fastalert.jp##.home-popup
+cleantalk.org#$##popup_modal { display: none !important; }
+cleantalk.org#$#.modal-backdrop { display: none !important; }
+cleantalk.org#$#body.modal-open { overflow: auto !important; }
 hiroba.dpoint.docomo.ne.jp#$##wrapper { position: static !important; }
 hiroba.dpoint.docomo.ne.jp#$##gtm-promotionModal-overlay { display: none !important; }
 hiroba.dpoint.docomo.ne.jp#$#.js-modal-promotion-banner { display: none !important; }
@@ -25762,7 +25766,6 @@ abendzeitung-muenchen.de###webpush-app
 ||admessage.support^$third-party
 ||ntvsw.com^$third-party
 ||ichecknotifyfriends.info^$third-party
-/code/native.js?h=
 ||valkirum.com^$third-party
 ||luravius.com^$third-party
 ||amacritus.com^$third-party
