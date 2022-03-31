@@ -1,8 +1,8 @@
-! Checksum: +2/QGUQnw+15FzbrLu+bzw
+! Checksum: Lt+/YruVmA84Zhx1dVii6A
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.37.32
-! TimeUpdated: 2022-03-30T13:31:22+00:00
+! Version: 2.0.37.34
+! TimeUpdated: 2022-03-31T09:03:03+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -20484,6 +20484,7 @@ _tracking.php?b=
 !
 /analytics.js$domain=bataryapil.com|journey.com.tr|freexcafe.com|rusvideos.tv|nakubani.ru|lun.com|songsara.net|partifabrik.com|newsmax.com|bolgehastanesi.com|ewtc.de
 !
+||infusionsoft.app/app/webTracking/
 ||cdn.lr-in.com/logger-1.min.js
 ||cdn.lr-in.com/LogRocket.min.js
 ||share.9cdn.net/share/long_cache/js/tracking/
@@ -24497,6 +24498,9 @@ $app=com.miui.analytics
 ! For platforms which do not support $redirect rules
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/114148
+@@||tms.delta.com/delta/dl_bastian/*.js$domain=delta.com
+@@||tms.delta.com/delta/dl_bastian/serverComponent.php$domain=delta.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/111180
 @@||ssl.kaptcha.com/collect/$domain=mybalancenow.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/113256
