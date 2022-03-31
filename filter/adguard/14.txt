@@ -1,8 +1,8 @@
-! Checksum: cruQ7+i4KPr+gxLGMZPqRA
+! Checksum: 2+ciVBp/uxM2gdLQqvutDA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.13.93
-! TimeUpdated: 2022-03-31T17:30:34+00:00
+! Version: 2.1.13.94
+! TimeUpdated: 2022-03-31T18:30:40+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -18691,6 +18691,12 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+lulucos-bys.jp##.p-article__app-dl-banner
+lulucos-bys.jp##.p-article__app-download-banner
+lulucos-bys.jp##.m-banner-download-app-top-fixed
+lulucos.jp##.p-home__top
+lulucos.jp##.GlobalSmartAppBanner
+lulucos.jp##.GlobalAppDL
 linkedin.com##.apptivation-promo
 wear.jp###hdr_download
 wear.jp###secAppDownload
@@ -20445,6 +20451,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+lulucos-bys.jp##.m-navi-expert
 quizlet.com##.SetPageTermsStickyBanner
 quizlet.com###UniversalUpsellTarget
 jpshowbiz.us#%#//scriptlet("prevent-setTimeout", "alert")
