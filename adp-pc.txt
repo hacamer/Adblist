@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: GuoW2EAvv1vdI3aOCchFqg
+! Checksum: gSZNQrcVm5+RHtvBzPArQg
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202203311510
-! Last Modified: 2022年03月31日 15:10
+! Version: 202203311613
+! Last Modified: 2022年03月31日 16:13
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 92822
+! Total count: 92829
 ###AC_ad
 ###ADCENTER
 ###ADSLOT_1
@@ -20429,6 +20429,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||google.com/analytics/web/$document
 @@||google.com/images/integrations/$image,~third-party
 @@||google.com/recaptcha/$csp,subdocument
+@@||google.com/recaptcha/$domain=vidoza.net
 @@||google.com/recaptcha/api.js
 @@||google.com/recaptcha/api2/$document
 @@||google.com/translate_$media,third-party,xmlhttprequest
@@ -23430,6 +23431,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||unique-tutorials.info^$generichide
 @@||universfreebox.com/js/advertisement.js
 @@||unpkg.com/@optimizely/optimizely-sdk$script,domain=talktalk.co.uk
+@@||unpkg.com/vue-recaptcha@*/dist/vue-recaptcha.js$domain=vidoza.net
 @@||unpkg.com/web-vitals/dist/web-vitals.base.iife.js$script,domain=wpolityce.pl
 @@||unshowmasonline.com/banner.gif$image
 @@||up-load.io^$generichide
@@ -25050,6 +25052,7 @@ applefans.today#$#.timed-pup { display: none !important; }
 applefans.today#$#.tipi-overlay { display: none !important; }
 applefans.today#$#body { overflow: auto !important; }
 appleinsider.com##.primis-ad-wrap
+appleworld.today,closerweekly.com,deshdoaba.com,foreverconscious.com,intouchweekly.com,lifeandstylemag.com,mensjournal.com,patriotfetch.com,pctechmag.com,washingtonmonthly.com##.widget_media_image
 apprcn.com##a[href*=".lizhi."]
 apps.evozi.com##div#adunit,div.iab-ad,ins.adsbygoogle
 apps2app.com##+js(abort-on-property-read, adsBlocked)
@@ -38268,6 +38271,7 @@ pupudy.com##.asst-post_header
 pupudy.com##.sidebar
 pupudy.com##.sidebar > .widget-textasst:nth-child(n+3)
 purepc.pl##+js(no-setInterval-if, fixbg())
+purepc.pl##.sidebar > div > a[href^="https://www.lenovo.com/"] > img
 purepc.pl#$#html > body:not(#style_important) { background-image: none !important; background-color: #d5d5d5 !important; }
 purepc.pl#@#.reklama
 purepc.pl#@#[class$="reklama"]
@@ -42019,6 +42023,7 @@ upvideo.to##+js(abort-current-script, $, return decodeURIComponent)
 upvideo.to##+js(window.open-defuser)
 upxin.net##ins.adsbygoogle,div[id^="ad_"]
 ur.ly,urly.mobi#@##bottomad
+urbandictionary.com#?#main > .container > .items-center:has(> div[data-ad-slot])
 urbanlifehk.com##.desktop-sidebar__block--ad
 urbanlifehk.com##.pl-main-article__ad-block
 urbanmilwaukee.com##+js(set-constant, canRunAds, true)
@@ -56392,6 +56397,7 @@ zznews.cn##.ad:not([style])
 ||connectportal.netapp.com^
 ||connecttest.arubanetworks.com^
 ||connexity.net^$third-party
+||connext-cdn.azureedge.net^
 ||connextra.com^
 ||consciouschairs.com^$third-party
 ||consciouscheese.com^
@@ -79868,6 +79874,7 @@ zznews.cn##.ad:not([style])
 ||shidaikejivip.cn^
 ||shidailw.com^
 ||shield.sitelock.com^$third-party
+||shigl.top^
 ||shiguangyx.cn^
 ||shihualandun.cn^
 ||shihuo.cn/alibtn_
