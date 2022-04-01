@@ -1,8 +1,8 @@
-! Checksum: 0sS6n1Sk75AWhbh3FHxzhw
+! Checksum: iKzQ/24X53jKDmU4sI04eQ
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.37.38
-! TimeUpdated: 2022-03-31T19:31:25+00:00
+! Version: 2.0.37.39
+! TimeUpdated: 2022-04-01T07:31:22+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -84,6 +84,8 @@
 ! Bad: example.org###rek (should be in specific.txt)
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/114227
+valleybreeze.com#%#//scriptlet('remove-attr', 'hidden', '#asset-content[hidden]')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/112998
 ttv.pl#%#//scriptlet("set-constant", "gemiusStream", "noopFunc")
 ttv.pl,tvn24.pl#%#(function(){window.__pix2={event:function(){},track:function(){}}})();
@@ -24507,6 +24509,7 @@ $app=com.miui.analytics
 ! For platforms which do not support $redirect rules
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/114227
 ! https://github.com/AdguardTeam/AdguardFilters/issues/113819
 @@||googletagmanager.com/gtm.js$domain=systemrequirementslab.com
 ||googletagmanager.com/gtm.js$script,xmlhttprequest,redirect=googletagmanager-gtm,domain=systemrequirementslab.com,important
