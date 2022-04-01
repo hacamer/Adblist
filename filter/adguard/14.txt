@@ -1,8 +1,8 @@
-! Checksum: QsumFOJjoH/PaMsv5e7k1w
+! Checksum: HEL27cGiI8+Px4zoOglmAQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.14.4
-! TimeUpdated: 2022-04-01T14:30:35+00:00
+! Version: 2.1.14.5
+! TimeUpdated: 2022-04-01T15:30:41+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7278,6 +7278,8 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+mitsubishi.com##.l-cookieAlert
+||cmp.impress.co.jp^
 tver.jp#?#.ReactModalPortal a[class^="terms-modal_privacy"]:upward(.ReactModalPortal)
 khronos.org###cookie_decline
 polpharma.pl##.app__cookies
@@ -20462,6 +20464,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+instagram.com#?##react-root ~ div[class$=" "][role="presentation"]:has(a[href^="/accounts/"][href*="signup/"]):not(:has(button[type="button"] > div > svg[aria-label][width="18"][height="18"][viewBox*="48"]))
 diamond.jp###piano-cframe
 tver.jp#?#.ReactModalPortal form[class^="questionnaire-modal_content"]:upward(.ReactModalPortal)
 ozerki.ru##.express_popup
@@ -22404,7 +22407,7 @@ indirimdemarket.com#$##social-media-modal { display: none!important; }
 indirimdemarket.com#$#body { overflow: visible!important; }
 indirimdemarket.com#$#.modal-backdrop { display: none !important; }
 oggusto.com###myModal
-sklum.com,oggusto.com,tiojoao.com.br,thryv.com,nordvpn.com,~connect.deezer.com,kiiw.icu,aipa551.com,aipa552.com,baba-mail.co.il,catwalkyourself.com,tfc.tv,ports.com.ua,deezer.com,bitdefender.com##.modal-backdrop
+sklum.com,oggusto.com,tiojoao.com.br,thryv.com,nordvpn.com,kiiw.icu,aipa551.com,aipa552.com,baba-mail.co.il,catwalkyourself.com,tfc.tv,ports.com.ua,bitdefender.com##.modal-backdrop
 autostrada-a4.com.pl#$#div.topbaner.tos-opened { display: none !important; }
 autostrada-a4.com.pl#%#//scriptlet('remove-class', 'tos-opened', 'body.tos-opened')
 radiobells.com###chrome_badge
@@ -27097,6 +27100,8 @@ myanimelist.net##.footer-mini-banner
 mail.yahoo.co.jp###mhd_uhd_pc
 yahoo.co.jp###msthdPrLink
 login.yahoo.co.jp###ads
+! https://github.com/AdguardTeam/AdguardFilters/issues/113836#issuecomment-1085718159
+kakaku.com##.c-global_pr
 ! banner https://kakaku.com/item/K0001272155/?lid=20190108pricemenu_hot
 kakaku.com##.bnrBb
 ! https://kakaku.com/pc/ self-promo
