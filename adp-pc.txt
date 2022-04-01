@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: 7JEdV1TStC/vE2SjnQJ0yw
+! Checksum: Ls+JQty+GUnv0MgmZrNOjg
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202204020013
-! Last Modified: 2022年04月02日 00:13
+! Version: 202204020114
+! Last Modified: 2022年04月02日 01:14
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 92850
+! Total count: 92860
 ###AC_ad
 ###ADCENTER
 ###ADSLOT_1
@@ -12291,6 +12291,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /js/cpc_i.js
 /js/cpv_dl.js
 /js/cpv_fm_
+/js/customscript.js^$domain=pornwhite.com
 /js/dart.js
 /js/db.js$script,third-party
 /js/dcstorm/*
@@ -12551,6 +12552,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /loader-counter.
 /loader/counter.js
 /local_p.js^
+/local_p.js^$domain=megatube.xxx
 /local_ssu.js|
 /localga.js
 /locotrack.js
@@ -20620,6 +20622,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||hdnumerique.com/tpl/jscript/advert.js
 @@||hdsky.net/ad/down.png
 @@||hdslb.com/bfs/archive/*@$domain=bilibili.com,image
+@@||hdslb.com/bfs/cm/cm-sdk/static/js/bili-collect.js
 @@||hdslb.com/bfs/seed/log/report/log-reporter.js$domain=message.bilibili.com
 @@||hdslb.com/u_user/$~object,domain=bilibili.com
 @@||hdvid.tv/js/jquery.cookie.js
@@ -36971,6 +36974,7 @@ olevod.eu##a.wbalist_thumb[target="_blank"]
 olgame.tw##.nex_floor_banner
 olgame.tw##.nex_index_ads
 olgame.tw##.nex_mid_ads
+olx.ro#@#.swiper-slide-active.swiper-slide
 olx.ro,olx.kz,olx.pl,olx.pt,olx.ua,olx.uz,olx.in,olx.com#@##adContainer
 olx.ro,olx.kz,olx.pl,olx.pt,olx.ua,olx.uz,olx.in,olx.com#@#.adLink
 olx.ro,olx.kz,olx.pl,olx.pt,olx.ua,olx.uz,olx.in,olx.com#@#.adRow
@@ -38052,8 +38056,12 @@ porntube.com##.cppBanner
 porntube.com##.pre-footer
 pornvideotop.com##+js(no-setTimeout-if, location.href)
 pornwatchers.com##.stage-promo
+pornwhite.com###pre-spots
 pornwhite.com##+js(abort-on-property-read, customScript)
 pornwhite.com##+js(window.open-defuser)
+pornwhite.com##.bottom-banners
+pornwhite.com##.content-aside
+pornwhite.com##.video-options.long
 pornwhite.com,pervclips.com###under-video
 pornwhite.com,sleazyneasy.com###after-adv
 pornwhite.com,wankoz.com,pornicom.com,sleazyneasy.com,fetishshrine.com,vikiporn.com##.text_adv
@@ -42709,6 +42717,7 @@ wdzj.com##.logo-banner
 wdzj.com##.opentb
 wdzj.com##div[class$="-ad-top"]
 we5200.com##table[bordercolor="#ffcc66"][width="900"]
+weakstreams.com##+js(no-setTimeout-if, atob(e).)
 wealth.com.tw#?#div[class]:-abp-has(>div[class]>div[class*="-ad-manager-"])
 wealth.com.tw#?#div[class]:has(> div[class] > div[class^="rytass-ad-manager-"]:only-child)
 weather-forecast.com##.bn-placeholder
@@ -87263,6 +87272,7 @@ zznews.cn##.ad:not([style])
 ||unimhk.com^$third-party
 ||unimr0k7em.cn^
 ||uninterestedquarter.com^$third-party
+||unioch.com^
 ||union*.365inews.com^
 ||union-wifi.com^$third-party
 ||union.360.cn/1899.js

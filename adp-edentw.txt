@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: p55Ho6OlpAVIpIssQkUbyQ
+! Checksum: 48GoqzocdXc4DZQosGwUTg
 ! Title: edentwCustom
 ! Expires: 12 hours
-! Version: 202204020013
-! Last Modified: 2022年04月02日 00:13
+! Version: 202204020114
+! Last Modified: 2022年04月02日 01:14
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自Adblock Warning Removal List、ABP filters、anti-adblock-killer-filters，感谢各位大大的分享！
 ! 仅合并规则，未做其余任何处理
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 3440
+! Total count: 3446
 ###AdBlockDialog
 ###WarningCodec
 ###aabl-container
@@ -285,6 +285,7 @@
 /js/bsa-script-doctype.js$script
 /js/bsa-script-no-doctype.js$script
 /js/check.js$domain=pro-zik.ws|pro-tect.ws|pro-ddl.ws|pro-sport.ws
+/js/customscript.js^$domain=pornwhite.com
 /js/ec_connectorDelivery.js$script,domain=cpasbien.io
 /js/include_name.js|$script,~third-party,domain=3dsmaxvideo.ru|archicadvideo.ru|autocadvideo.ru|coreldrawvideo.ru|excelvideo.ru|kompasvideo.ru|photoshopvideo.ru|solidworksvideo.ru|wordvideo.ru
 /js/initsite.js^$domain=anysex.com|xcafe.com
@@ -295,6 +296,7 @@
 /kill-adblock//js/function.js$script
 /kill-adblock/js/function.js$script
 /ledo2vnyce=$xmlhttprequest,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
+/local_p.js^$domain=megatube.xxx
 /mod_ablockdetector/*
 /mya/lfa.js$domain=thewatchcartoononline.tv|wcostream.com
 /naChotina=$xmlhttprequest,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
@@ -2470,6 +2472,10 @@ porn00.org#$#abort-current-inline-script popup_url
 pornhub.com#$#abort-on-property-read HTMLElement.prototype.attachShadow
 pornhub.com,tube8.fr,tube8.es,tube8.com###abAlert
 pornhub.com,tube8.fr,tube8.es,tube8.com###adBlockAlertWrap
+pornwhite.com###pre-spots
+pornwhite.com##.bottom-banners
+pornwhite.com##.content-aside
+pornwhite.com##.video-options.long
 postroll$xmlhttprequest,domain=iprima.cz
 poznamka.ru##body > [id]:not([class])[style^="z-index"]
 ppc.world##.detected-block-modal
