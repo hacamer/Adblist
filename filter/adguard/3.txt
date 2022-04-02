@@ -1,8 +1,8 @@
-! Checksum: 0tziIoMCm1CTN86BTrQhpQ
+! Checksum: W8Nn+lCeVHwN01YEvJ5WyQ
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.37.44
-! TimeUpdated: 2022-04-01T20:31:30+00:00
+! Version: 2.0.37.45
+! TimeUpdated: 2022-04-02T10:31:18+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -5102,6 +5102,7 @@ nethunt.com/api/v1/track/email/$image
 ! Disabled in DNS filter
 ||telemetry.mozilla.org^
 !
+||analytics.tver.jp^
 ||tracking.komoot.de^
 ||telemetry.battle.net^
 ||telemetry-in.battle.net^
@@ -24429,6 +24430,8 @@ $app=com.miui.analytics
 ! Bad:  @@||example.org^$stealth (should be in AdGuard Base - whitelist_stealth.txt)
 !
 !
+! https://play.google.com/store/apps/details?id=jp.hamitv.hamiand1 broken on startup
+@@||measure.ic.tver.jp^$app=jp.hamitv.hamiand1
 ! https://github.com/AdguardTeam/AdguardFilters/issues/100669
 @@||amplify.outbrain.com^$app=jp.co.alc.eow
 @@||b92.yahoo.co.jp^$app=jp.co.alc.eow
