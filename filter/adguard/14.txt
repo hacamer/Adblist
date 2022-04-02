@@ -1,8 +1,8 @@
-! Checksum: GT+imndGIaEQdq2LwrOn2Q
+! Checksum: paEfGdLUWW8SAX9EM+65eg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.14.14
-! TimeUpdated: 2022-04-02T18:30:34+00:00
+! Version: 2.1.14.15
+! TimeUpdated: 2022-04-02T20:31:12+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7280,6 +7280,8 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 filecloud.com###gdpr_accept
+digitalocean.com#?#body > div[class^="_panel_"]:has(> div > p > a[href*="privacy-policy"])
+wirexapp.com##wx-cookie-policy-notification
 ||compliance-pack.carlsberggroup.com/cbgCConsent.js
 mitsubishi.com##.l-cookieAlert
 ||cmp.ganref.jp^
@@ -10474,7 +10476,6 @@ newhollandsp.ru##.policy_popup
 devismart.de##.cookie-popup-gdpr
 chess24.com##.dataConsentModal
 chess24.com##.background
-digitalocean.com##body > script + div[class^="_"]
 80.lv##div[id="__next"] > div[class]:last-child > div[class]:last-child > div[class]
 att.com##.cookie-disclaimer-component
 online.sberbank.ru##footer div + div:contains(Cookies)
@@ -10605,7 +10606,6 @@ kocailem.com##.cookie-message-box
 cissamagazine.com.br##.informativo-lgpd
 stockwatch.pl##.cppa
 gebe.com###cookiePolicyBox
-digitalocean.com##body > div[class^="_panel_"]:last-child > div[class^="_wrap_"]
 spbtvonline.ru###agreeC
 babel.ua##.js-cookies-modal
 medicina.ru##.popup--policy-absolutely
@@ -12851,7 +12851,7 @@ deluxe-marketing.com###dsgvo-cookie-container
 otosklep24.pl###dymek
 schuh-armbruster.de###egg-cookie-bar
 ephe.fr###elytics
-surfeasy.com,vw.com.br,vueling.com,easyjet.com,fidelity.de,experianidentityservice.co.uk,nortonlifelock.com,experian.co.uk,norton.com,beerwulf.com,volkswagen.ch,volkswagenplus.ca,bhphotovideo.com,binekarac.vw.com.tr,latimes.com,scotsman.com###ensNotifyBanner
+ensighten.com,surfeasy.com,vw.com.br,vueling.com,easyjet.com,fidelity.de,experianidentityservice.co.uk,nortonlifelock.com,experian.co.uk,norton.com,beerwulf.com,volkswagen.ch,volkswagenplus.ca,bhphotovideo.com,binekarac.vw.com.tr,latimes.com,scotsman.com###ensNotifyBanner
 strato.de,strato.nl###eu-cookie-guideline
 yourdigitalrights.org##.react-cookie-law-dialog
 rail.cc###eucookiebox
@@ -28648,6 +28648,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 androidinsider.ru#?#.article-body > p:has(> code > a[href="https://zen.yandex.ru/androidinsider.ru"])
 androidinsider.ru#?#.article-body > p:has(> code > a[href="https://t.me/sunduk_aliexpress"])
 mir24.tv##article a[href^="https://yandex.ru/chat/"]
+aljazeera.com##.sib-newsletter-form
 greenbelarus.info##.block--subscribe
 hi-news.ru#?#.text > p:has(> code > a[href="https://t.me/hinews_ru"])
 partnerkin.com##.subscriber_form
