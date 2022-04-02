@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: NaOb51Lf2O5De4bwOOJZfg
+! Checksum: oi9GI/jh0gzPU1sFCi1OZA
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202204021308
-! Last Modified: 2022年04月02日 13:08
+! Version: 202204021411
+! Last Modified: 2022年04月02日 14:11
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 92849
+! Total count: 92858
 ###AC_ad
 ###ADCENTER
 ###ADSLOT_1
@@ -2100,6 +2100,7 @@
 ##.ad-bg
 ##.ad-big
 ##.ad-bigbox
+##.ad-bigbox-double-inread
 ##.ad-bigbox-fixed
 ##.ad-billboard
 ##.ad-block
@@ -2178,6 +2179,7 @@
 ##.ad-description
 ##.ad-desktop
 ##.ad-desktop-only
+##.ad-detail
 ##.ad-disclaimer
 ##.ad-disclaimer-container
 ##.ad-display
@@ -3894,6 +3896,8 @@
 ##.c-ad
 ##.c-ad--rectangle
 ##.c-ad-banner
+##.c-ad-flex
+##.c-ad-fluid
 ##.c-ad-size2
 ##.c-ad-size3
 ##.c-adDisplay
@@ -4624,6 +4628,7 @@
 ##.js-ad-buttons
 ##.js-ad-container
 ##.js-ad-slot
+##.js-ad-unit
 ##.js-ad-whitelist-notice
 ##.js-ad-wrapper
 ##.js-ad_iframe
@@ -4837,6 +4842,7 @@
 ##.mobile-ad
 ##.mobile-ad-container
 ##.mobile-ads
+##.mobile-fixed-ad
 ##.mobile-instream-ad-holder-single
 ##.mobileAd
 ##.mobile_leaderboard_ad
@@ -32697,6 +32703,8 @@ inbox.lv##div[class^="AdContainer-"]
 inc.com##div[class^="Article__articleContent"] > div.title-bar:has(> span:contains(Sponsored Business Content))
 inc42.com#@#.tag-social
 inddir.com#@#.ad_336
+independant.co.uk##.gWTMJf
+independant.co.uk##.stickyFooterRoot
 independent.co.uk##+js(set-constant, google_tag_manager.dataLayer.gtmDom, true)
 independent.co.uk##.amp-live-list-item[id^="ad-"]
 independent.co.uk##.taboola-below-article
@@ -40886,6 +40894,7 @@ thecambabes.com,celebsroulette.com,camuploads.com,heroero.com,thebestshemalevide
 thecinemaholic.com##.cinemaholic-ad-below-header
 theculturetrip.com##div[class^="billboard_"]
 thedailybeast.com##.DEPRECATEDAdSlot
+thedailybeast.com##.Sizer
 thedailybeast.com##aside > div[style*="min-height:600px"][style*="min-width:300px"]
 thedailybeast.com##div[data-pos2]
 thedailystar.net##.block-region-footer-sticky
