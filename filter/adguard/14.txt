@@ -1,8 +1,8 @@
-! Checksum: iVTl+u5bcwy3MyoHMgt6NQ
+! Checksum: oncUac0cqISCAskXAg9o8A
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.14.22
-! TimeUpdated: 2022-04-04T08:30:34+00:00
+! Version: 2.1.14.23
+! TimeUpdated: 2022-04-04T09:30:43+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -19711,7 +19711,7 @@ oneindia.com##.extensionElem
 m.baomoi.com##.footer__anchor-event
 sport1.de,amazon.de,amazon.com,amazon.co.uk,amazon.fr,amazon.it,amazon.es###smart-app-banner
 amazon.de,amazon.com,amazon.co.uk,amazon.fr,amazon.it,amazon.es##div.afap-above-nav#afap-above-nav
-arukereso.hu,msg.aliexpress.ru,uinterview.com,eapteka.ru,locator.transitcard.ru##.mobile-app
+arukereso.hu,msg.aliexpress.*,uinterview.com,eapteka.ru,locator.transitcard.ru##.mobile-app
 rt.com##.offers
 instagram.com###react-root > section > nav > div > div > section.xZ2Xk
 instagram.com##main[role="main"] .APQi1
@@ -28252,7 +28252,6 @@ hackers.co.kr##.closing_banner_container
 hackers.co.kr##.floor_layer_pop
 twitch.tv##.side-info-container
 ||img1.infobank.by/images/imagesindb/banner-perevody-150419-3.png.aspx
-liga.net##.donation-fixed
 imobie.com##.sprtadv
 ||zviazda.by/banners/padpiska202025.jpg
 dermaclub.com.br##.promotion-banner
@@ -28551,10 +28550,12 @@ tele2.ru##div[data-cartridge-type="PersonalizedTizer"]
 ||bb.tele2.ru/media/video/*mobile$domain=tele2.ru
 ||bb.tele2.ru/media/video/*desktop$domain=tele2.ru
 !
-! https://github.com/AdguardTeam/AdguardFilters/issues/110736
+!
+!
+!+ NOT_OPTIMIZED
+liga.net##.donation-fixed
 !+ NOT_OPTIMIZED
 blog.goo.ne.jp##.navbar__link--bottom
-! promo banner on mobile
 !+ NOT_OPTIMIZED
 eiga.com##.header-pure-banner
 !
