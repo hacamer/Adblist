@@ -1,8 +1,8 @@
-! Checksum: C8GHK5LZKGGVT5rsw4Fs3Q
+! Checksum: aEgpHVHg6/d3EwDPVFJVKg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.14.24
-! TimeUpdated: 2022-04-04T10:30:34+00:00
+! Version: 2.1.14.25
+! TimeUpdated: 2022-04-04T11:30:35+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -5118,7 +5118,6 @@ $script,redirect-rule=noopjs,domain=aternos.org
 @@||securepubads.g.doubleclick.net/pagead/ppub_config?ippd=aternos.org$domain=aternos.org
 @@||securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1$domain=aternos.org
 !
-aternos.org#$?#.ad-label { remove: true; }
 aternos.org##.ad.responsive-skyscraper
 @@||aternos.org^$generichide
 @@||onetag-sys.com/prebid-request$domain=aternos.org
@@ -5170,6 +5169,7 @@ aternos.org##.ad.responsive-skyscraper
 ||as-sec.casalemedia.com/cygnus|$redirect=nooptext,important,domain=aternos.org
 ||fastlane.rubiconproject.com/a/api/fastlane.json|$redirect=nooptext,important,domain=aternos.org
 ||flashtalking.com/lgc|$redirect=nooptext,important,domain=aternos.org
+$xmlhttprequest,redirect-rule=nooptext,domain=aternos.org
 !
 ! https://github.com/AdguardTeam/AdguardFilters/issues/99916
 promote.telegram.org#$#.pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links.ads-header.ads-content { display: block !important; }
@@ -18712,6 +18712,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+recipe.rakuten.co.jp##div[class^="rakuten_recipe_app"]
 webstatic-sea.hoyolab.com##.bbs-qr
 prostovasya.ru##.t-popup_show
 jumpbookstore.com###header_app_banner
@@ -28601,6 +28602,9 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+blog.statcounter.com,kuponla.com,forums.flyer.co.uk,page-online.de##.widget_newsletter
+gs.statcounter.com,7labs.io###email-subscribe
+pagesix.com##.nyp-zephr-flyout
 androidinsider.ru#?#.article-body > p:has(> code > a[href="https://zen.yandex.ru/androidinsider.ru"])
 androidinsider.ru#?#.article-body > p:has(> code > a[href="https://t.me/sunduk_aliexpress"])
 mir24.tv##article a[href^="https://yandex.ru/chat/"]
@@ -30317,7 +30321,6 @@ vozpopuli.com##.widget_sf_newsletter_form
 bestreviews.net###contact-form
 htxt.co.za#?#.elementor-widget-container:has(> h2:contains(NEWSLETTER))
 notateslaapp.com#?#.content > div[class^="col-a"] > div.container:has(> div.release > div.subscribe-container)
-7labs.io###email-subscribe
 forward.com##.newsletter-signup-container
 britannica.com##.col-da-300 > div.rr-module > div.pl300
 hackaday.com##.widget-had-subscribe
@@ -30335,7 +30338,6 @@ careercontessa.com##div[class^="col-xs-"] > div.sidebar-item-container:first-chi
 sleepfoundation.org##div[class^="sf-newsletter-signup"]
 health.harvard.edu##.widget-newsletter-signup
 deathwithdignity.org###email-signup
-kuponla.com##.widget_newsletter
 zapier.com##.e1741cg91
 oggusto.com##.home-newsletter
 premierguitar.com##div[id^="sNewsletter_"]
@@ -30943,7 +30945,6 @@ ewn.co.za##.mailer-signup-sidebar
 kanzler-style.ru##.copyright_block div.columns.text-right
 executive-shaving.co.uk##footer .newsletter
 wtftime.ru##.art-telegram-container
-forums.flyer.co.uk##.widget_newsletter
 techradar.com##.region_redirect_popup
 marstranslation.com##.new_letter_block
 dongknows.com###secondary > .widget_oih_opt_in_widget
@@ -31953,7 +31954,6 @@ decider.com##.widget__newsletter
 wowdigital.com,tamiltunes.network,omgfoss.com,sleduizamnoi.com##.widget_bloomwidget
 extremetech.com##.widget_email_signup
 vertex-academy.com##.widget_knews_widget
-page-online.de##.widget_newsletter
 techsolutiontips.com##.widget_newsletter-pack
 factandfurious.com,androidsis.com,blog.desdelinux.net,elprocus.com,minhaoperadora.com.br,technuws.com,likegeeks.com,thatoneguy.com.au,fotografwdrodze.pl,sceptr.net##.widget_newsletterwidget
 courseforfree.com,modelist-konstruktor.com,smopo.ch##.widget_newsletterwidgetminimal
