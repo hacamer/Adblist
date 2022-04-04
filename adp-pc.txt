@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: SiSkbnAeOVKoSkKntDGB6A
+! Checksum: j0V2XGDe+F2j2CFy4FqiYw
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202204041412
-! Last Modified: 2022年04月04日 14:12
+! Version: 202204041510
+! Last Modified: 2022年04月04日 15:10
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 83812
+! Total count: 83816
 ###AC_ad
 ###ADCENTER
 ###ADSLOT_1
@@ -9561,6 +9561,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /assets/analytics.
 /assets/analytics:
 /assets/application-$domain=iamdisappoint.com|shitbrix.com|tattoofailure.com
+/assets/banners/*$domain=fmovies.to|vizcloud.*|mcloud.to|vizcloud2.*|vidstreamz.online
 /assets/banners/600x100/*
 /assets/beacons.js
 /assets/frameworks/types-*?plm=$script,third-party
@@ -28147,6 +28148,8 @@ fmkorea.com###adpost
 fmovies.app##+js(addEventListener-defuser, , prefetchAdEnabled)
 fmovies.app##+js(no-setTimeout-if, et(e)
 fmovies.ps,movies2watch.tv,moviesjoy.to,myflixertv.to###gift-middle
+fmovies.to,vizcloud.*,mcloud.to,vizcloud2.*,vidstreamz.online###player-wrapper > #player ~ div[style^="position: absolute;"]
+fmovies.to,vizcloud.*,mcloud.to,vizcloud2.*,vidstreamz.online##+js(remove-attr, data-ad-img|data-ad-target, #player-wrapper)
 fmovies.to,vizcloud.*,mcloud.to,vizcloud2.*,vidstreamz.online##.xad-wrapper
 fmoviesto.cc##+js(abort-on-property-read, Object.prototype.initBrowserSession)
 fmoviesto.cc##+js(json-prune, *, bannerId)
@@ -32857,7 +32860,6 @@ medicalnewstoday.com#?#span ~ div[class]:has(> aside[class] div[data-empty="true
 medicalxpress.com,techxplore.com##.embed-responsive-trendmd
 medindia.net,addictivetips.com##.adslabel
 medonet.pl##.pageHeader > #medServices > .floatLeft
-medonet.pl,komputerswiat.pl###onet-ad-flat-belkagorna
 medpagetoday.com#$##siteWrapper { padding-top: 0!important; }
 medpagetoday.com#$#.mpt-content-header { padding-top: 50px!important; }
 medsci.cn##.adv1201
@@ -34282,6 +34284,7 @@ onet.pl##.desktop-ad-placeholder
 onet.pl##aside[class^="CenterAd_container"]
 onet.pl##div[class^="AdPlaceholder_"]
 onet.pl#$#.insertedSlot { display: none !important; }
+onet.pl,medonet.pl,komputerswiat.pl###onet-ad-flat-belkagorna
 oneurls.org##+js(abort-on-property-read, popunder)
 onifile.com#$#abort-on-property-read _pop
 onionplay.*##+js(remove-attr, href, a[href]#clickfakeplayer)
@@ -62144,6 +62147,7 @@ zznews.cn##.ad:not([style])
 ||liangpinge.com^$third-party
 ||liangxiaoru.cn^
 ||liangyi360.com^$third-party
+||liangzhuangxiu.top^
 ||liangzimo.ltd^
 ||liangziweixg.com^
 ||lianjie.phpwind.com^$third-party
