@@ -1,8 +1,8 @@
-! Checksum: PgoVVlP3+tAM/C0DQG9Ypw
+! Checksum: iVTl+u5bcwy3MyoHMgt6NQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.14.21
-! TimeUpdated: 2022-04-04T07:30:38+00:00
+! Version: 2.1.14.22
+! TimeUpdated: 2022-04-04T08:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7279,6 +7279,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+timesnownews.com##div[class^="GdprCSS-container"]
 medizinfuchs.de,medizinfuchs.at##.ConsentHint
 bike.shimano.com##.cmp-cookies-notification
 filecloud.com###gdpr_accept
@@ -32217,7 +32218,7 @@ lover9.net#$##sex.sexmaster[style*="display:"] { display: block !important; }
 isi7.net#$##wpsafe-wait1 {display: none !important; }
 isi7.net#$##wpsafe-generate {display: block !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/100236
-cinemakottaga.ml#$##wpsafe-link { display: block !important; }
+cinemakottaga.*#$##wpsafe-link { display: block !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/100856
 techymedies.com#$##timer { display: none !important; }
 techymedies.com#$##getlink { display: block !important; }
