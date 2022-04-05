@@ -1,8 +1,8 @@
-! Checksum: 77AS78xW21KfnHleHmzJVg
+! Checksum: /2e3FnTf7CLdhqhyp1BjJw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.14.48
-! TimeUpdated: 2022-04-05T15:30:33+00:00
+! Version: 2.1.14.49
+! TimeUpdated: 2022-04-05T20:30:33+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -3151,6 +3151,7 @@ hgtv.com#@#.showads
 !
 !
 !
+hypebeast.com###ad-blocker-popups
 fnbrjp.com#%#//scriptlet("prevent-setTimeout", "広告")
 sovetromantica.com##pjsdiv[id^="sovetromantica_"][id$="_disable_message"]
 signupgenius.com#$#.ads.ad.adsbox.ad-placement.carbon-ads { display: block !important; }
@@ -7293,6 +7294,11 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+supermicro.com###alert-container
+tommy.com#$##cookiesMessage { display: none !important; }
+tommy.com#$#.cookies-message { display: none !important; }
+tommy.com#$#.overlay--cookies { display: none !important; }
+tommy.com#$#html { overflow: auto !important; }
 tiktok.com##tiktok-cookie-banner
 tushy.empirestores.co###acceptCookiesBar
 lookandlearn.com##div[aria-describedby="cookies"]
@@ -16163,6 +16169,9 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/114405
+tommy.com#@##cookiesMessage
+tommy.com#@#.cookies-message
 ! https://github.com/AdguardTeam/AdguardFilters/issues/114536
 @@||cdn.iubenda.com^$script,domain=atlantico.fr
 @@||cdn.iubenda.com/cs/*.json$domain=atlantico.fr
