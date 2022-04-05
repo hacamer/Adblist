@@ -1,8 +1,8 @@
-! Checksum: U92Z9sdYfAUFfcfAApdbMg
+! Checksum: HEgR77MZBkxcU4v+CGwQ4Q
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.14.44
-! TimeUpdated: 2022-04-05T11:30:42+00:00
+! Version: 2.1.14.45
+! TimeUpdated: 2022-04-05T12:30:40+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7292,6 +7292,8 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+lookandlearn.com##div[aria-describedby="cookies"]
+lookandlearn.com##.ui-widget-overlay
 funnelcockpit.com##.gdpr-cookie-notice-center-loaded::before
 atlantico.fr#$#html { overflow: auto !important; }
 pranarom.fr#$#.cookiesplus-modal { display: none !important; }
@@ -18755,6 +18757,7 @@ townwork.net##div[class$="AppBanner"]
 townwork.net##.MP-appDl
 pierrotshop.jp##.cta
 evroopt.by##.top-bar-app
+iq.com##.multiport-show
 wondershare.com##.d-lg-none
 biletall.com###mobile-applications
 gunosy.com##div[class*="_app_d"]
@@ -19558,7 +19561,7 @@ coolapk.com##a[onclick="weixinDownload();"]
 smotrim.ru,tieba.baidu.com,m.economictimes.com,trip.com#$#body { overflow: auto !important; }
 trip.com#$##ibu_tcp_h5_install_pop { display: none !important; }
 trip.com###top-install
-news.awa.fm,trip.com##.download
+iq.com,news.awa.fm,trip.com##.download
 trip.com##.download-bg
 trip.com##.tcp-h5-install-bottom
 trip.com###ibu_app_download_banner
@@ -20551,6 +20554,9 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 moviepilot.de#?#main > div[class^="sc-"] > div[class^="sc-"]:only-child:has(> button + a[data-ga-on][data-ga-event-category="Bottom Drawer"][data-ga-event-action="Click News"])
 fairygodboss.com##.component-Login-LoginWall
 video.tv-tokyo.co.jp##.md-question
+videosxgays.com##.yellow-bar
+videosxgays.com##div[class^="news-ticker"]
+videosxgays.com#%#//scriptlet('remove-class', 'with-ticker', 'body')
 techradar.com##.regionRedirectBanner
 instagram.com#?##react-root ~ div[class$=" "][role="presentation"]:has(a[href^="/accounts/"][href*="signup/"]):not(:has(button[type="button"] > div > svg[aria-label][width="18"][height="18"][viewBox*="48"]))
 diamond.jp###piano-cframe
@@ -28678,7 +28684,9 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+bits.media##.subscribe-form-news
 becloud.by##.rss
+howtogeek.com##.subscribe-button
 tproger.ru##.main__container-telegram-widget
 gorod214.by##.information-new + div.col-md-12 > p[style="text-align: center;"]
 allthatsinteresting.com#?#div[class^="css-"] > div[class^="css-"][style^="margin-bottom:"]:has(> div[class^="css-"] div[class^="css-"] > div[dir="auto"]:contains(Sign up to our newsletter))

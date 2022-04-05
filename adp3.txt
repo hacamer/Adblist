@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: ZBlwape7vSSPmQWBK8NCug
+! Checksum: Lfj0TkmYFhTCuSRxQjGheg
 ! Title: AdFilters
 ! Expires: 12 hours
-! Version: 202204052014
-! Last Modified: 2022年04月05日 20:14
+! Version: 202204052120
+! Last Modified: 2022年04月05日 21:20
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、EasyPrivacy，感谢各位大大的分享！
 ! 仅合并规则，未做其余任何处理
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 36739
+! Total count: 36742
 ###ChapterView > .slide-baidu
 ###SOHU_MAIN > .module-cmt-float-bar
 ###TopAdvert
@@ -500,6 +500,7 @@
 ##.ui-ad
 ##.uk-width-1-1.adbox
 ##.video-holder > a[target="_blank"] > img[src*=".360buyimg.com"]
+##.video-item-ads
 ##.w_ad
 ##.widget-ad
 ##.widget-ads
@@ -644,6 +645,7 @@
 ##div[style="text-align:center;"] > a[href*="/register/?i_code="]
 ##div[style^="width: 100%;"]:not([id]):not([class]) > iframe[scrolling="no"][src^="http"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"]:not([allowfullscreen])
 ##div[style^="width: 100%;"][style$="visibility: visible;"] iframe[scrolling="no"][src*="//"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"]
+##iframe[src*=".xxmh"][src*="?u="]
 ##img[data-link][data-src*="/u/"]:not([data-link*="/i/"])
 ##img[onclick*=".gghktv.com/"]
 ##img[onclick*=".qq.com/doc/"]
@@ -7455,6 +7457,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 ://*.tv/ad/$domain=~moviedj.tv
 ://*:*/api/v4/g?kyurl=$script,third-party
 ://*:*/jscode/*.js$script,third-party
+://*:*/oklist/vars.js
 ://*:*/s.php?id=$script,third-party
 ://18comic*/templates/frontend/airav/js/jquery.avs-0.4.js
 ://a.ads.
@@ -7513,7 +7516,6 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 :12443/*/*-*-*.$script,third-party
 :18443/*/*-*-*.html$subdocument,third-party
 :18443/*/*-*-*.js$third-party
-:22666/oklist/vars.js
 :4433/hm/cdn/static/jq_
 :8080/ad/
 :8898/ads_
@@ -18738,6 +18740,7 @@ zyue.com##div[id^="divad_"]
 ||doubtfulrainstorm.com^
 ||doug1izaerwt3.cloudfront.net^
 ||doulaihai.top^
+||douyinstatic.com/obj/tos-cn-i-xg/6fea25a4f79d4ec88428ce202a9aa395?.appdownv4.js
 ||douyu.com/dygev/*.swf
 ||douyu.com/japi/sign/web/getinfo
 ||douyucdn.cn/adxdsp/$image

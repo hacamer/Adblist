@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: 5ofM7YQnMaGGBVUatRiv9g
+! Checksum: n+GvvFM77hSdNli3Szaz/w
 ! Title: AdFilters Lite
 ! Expires: 1 hours (Sometimes updates are delayed)
-! Version: 202204052014
-! Last Modified: 2022年04月05日 20:14
+! Version: 202204052120
+! Last Modified: 2022年04月05日 21:20
 ! Homepage: https://github.com/hacamer/Adblist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、Adgk、大萌主的规则
 ! 仅合并并去重规则，未做其余任何处理
 ! 如有任何疑问、意见或建议，请反馈给：杏梢
 !
-! Total count: 21129
+! Total count: 21132
 ###ChapterView > .slide-baidu
 ###SOHU_MAIN > .module-cmt-float-bar
 ###TopAdvert
@@ -545,6 +545,7 @@
 ##.ui-ad
 ##.uk-width-1-1.adbox
 ##.video-holder > a[target="_blank"] > img[src*=".360buyimg.com"]
+##.video-item-ads
 ##.w_ad
 ##.widget-ad
 ##.widget-ads
@@ -860,6 +861,7 @@
 ##div[style^="width: 100%;"]:not([id]):not([class]) > iframe[scrolling="no"][src^="http"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"]:not([allowfullscreen])
 ##div[style^="width: 100%;"][style$="display: block;"] iframe[scrolling="no"][src*="//"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"]
 ##div[style^="width: 100%;"][style$="visibility: visible;"] iframe[scrolling="no"][src*="//"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"]
+##iframe[src*=".xxmh"][src*="?u="]
 ##img[data-link][data-src*="/u/"]:not([data-link*="/i/"])
 ##img[onclick*=".gghktv.com/"]
 ##img[onclick*=".qq.com/doc/"]
@@ -2998,6 +3000,7 @@ $webrtc,domain=avgle.com
 ://*.tv/ad/$domain=~moviedj.tv
 ://*:*/api/v4/g?kyurl=$script,third-party
 ://*:*/jscode/*.js$script,third-party
+://*:*/oklist/vars.js
 ://*:*/s.php?id=$script,third-party
 ://18comic*/templates/frontend/airav/js/jquery.avs-0.4.js
 ://a.ads.
@@ -3019,7 +3022,6 @@ $webrtc,domain=avgle.com
 :12443/*/*-*-*.$script,third-party
 :18443/*/*-*-*.html$subdocument,third-party
 :18443/*/*-*-*.js$third-party
-:22666/oklist/vars.js
 :4433/hm/cdn/static/jq_
 :8080/ad/
 :8898/ads_
@@ -13782,6 +13784,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||doupapa.com/js/autoclose.js
 ||doupuer.com^
 ||douyaobuy.com^
+||douyinstatic.com/obj/tos-cn-i-xg/6fea25a4f79d4ec88428ce202a9aa395?.appdownv4.js
 ||douyu.com/dygev/*.swf
 ||douyu.com/japi/sign/web/getinfo
 ||douyucdn.cn/adxdsp/$image

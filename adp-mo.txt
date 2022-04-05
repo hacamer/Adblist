@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: F+MIXzXy0jV+In3H/Era3w
+! Checksum: BA7hK4C5Xh21EfLC5eMCww
 ! Title: My AdFilters（for Mobile）
 ! Expires: 12 hours
-! Version: 202204052014
-! Last Modified: 2022年04月05日 20:14
+! Version: 202204052120
+! Last Modified: 2022年04月05日 21:20
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 64535
+! Total count: 64540
 ###AC_ad
 ###ADCENTER
 ###ADSLOT_1
@@ -5292,6 +5292,7 @@
 ##.video-boxad
 ##.video-brs
 ##.video-holder > a[target="_blank"] > img[src*=".360buyimg.com"]
+##.video-item-ads
 ##.video-page__adv
 ##.video-side__adv_title
 ##.videoAd300
@@ -5916,6 +5917,7 @@
 ##embed[width="468"][height="60"]
 ##embed[width="728"][height="90"]
 ##iframe[id^="google_ads_frame"]
+##iframe[src*=".xxmh"][src*="?u="]
 ##iframe[src^="//tempest.services.disqus.com/ads-iframe/"]
 ##iframe[src^="https://pagead2.googlesyndication.com/"]
 ##iframe[src^="https://tpc.googlesyndication.com/"]
@@ -14509,6 +14511,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 ://*.tv/ad/$domain=~moviedj.tv
 ://*:*/api/v4/g?kyurl=$script,third-party
 ://*:*/jscode/*.js$script,third-party
+://*:*/oklist/vars.js
 ://*:*/s.php?id=$script,third-party
 ://18comic*/templates/frontend/airav/js/jquery.avs-0.4.js
 ://a02342.
@@ -14574,7 +14577,6 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 :12443/*/*-*-*.$script,third-party
 :18443/*/*-*-*.html$subdocument,third-party
 :18443/*/*-*-*.js$third-party
-:22666/oklist/vars.js
 :4433/hm/cdn/static/jq_
 :8080/ad/
 :8898/ads_
@@ -30606,6 +30608,8 @@ vxxx.com##.video-page-content + div[class]
 vxxx.com##.video-page-content-left + div[class]:last-child
 vxxx.com##.videoplayer + div > div[class]
 vxxx.com##.wrapper-margin + div[class]:last-child
+w2g.tv##+js(set-constant, W2gDFP.loadAcceptableAds, noopFunc)
+w2g.tv##.w2g-doit
 w3cplus.com###block-block-49
 w3cschool.cn##.abox-item
 w3cschool.cn##.widget-main
@@ -40724,6 +40728,7 @@ zyue.com##div[id^="divad_"]
 ||douhooke.net^
 ||doulaihai.top^
 ||doupteju.com^
+||douyinstatic.com/obj/tos-cn-i-xg/6fea25a4f79d4ec88428ce202a9aa395?.appdownv4.js
 ||douyu.com/dygev/*.swf
 ||douyu.com/japi/sign/web/getinfo
 ||douyucdn.cn/butterfly-java/*?width=1200&height=120&
