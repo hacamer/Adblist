@@ -1,8 +1,8 @@
-! Checksum: UFGyLFJTqwJ2SmJkmU1g6w
+! Checksum: 92yzh3P8K5/nNVM00PfCgg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.14.50
-! TimeUpdated: 2022-04-05T21:30:38+00:00
+! Version: 2.1.14.51
+! TimeUpdated: 2022-04-05T22:30:35+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -18764,6 +18764,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+stanby.com#%#(function() { try { if ("undefined" != typeof localStorage) { localStorage.setItem('app_banner_close', '{"value":"close"}') } } catch (ex) {} })();
 townwork.net##div[class^="mp-app-bnr-"]
 townwork.net##div[class$="AppBanner"]
 townwork.net##.MP-appDl
@@ -28699,6 +28700,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+starhit.ru#?#.article > p:has(> b > a[href="https://zen.yandex.ru/starhit.ru"])
 graty.me##.widget_3
 368.media##.telegram-promo
 bits.media##.subscribe-form-news
