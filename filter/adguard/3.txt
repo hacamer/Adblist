@@ -1,8 +1,8 @@
-! Checksum: 6XFl5UrHJ2/v6VKTQLzYHQ
+! Checksum: HeiKz0i0F5JyT7FvXzloXg
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.37.58
-! TimeUpdated: 2022-04-05T07:31:19+00:00
+! Version: 2.0.37.59
+! TimeUpdated: 2022-04-05T08:31:19+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -322,6 +322,7 @@ journal-plaza.net#?#.rightside div.block.bnavi[-ext-has="h3.dtitle:contains(Сч
 !||i.snssdk.com/log/*
 !||i.snssdk.com/slardar/sdk.js
 !
+||taplytics.com^$third-party
 ||event-stream.spot.im^
 ||1ee085aa-4c05-43a8-a4fe-fafedbedd062.xyz^
 ||track.swaptrap.live^
@@ -5104,6 +5105,8 @@ nethunt.com/api/v1/track/email/$image
 ! Disabled in DNS filter
 ||telemetry.mozilla.org^
 !
+||metrics.beyondwords.io^
+||launcher.spot.im^
 ||api.data.ciceksepeti.com^
 ||wlog.tmon.co.kr^
 ||analytics.appservice.tech^
@@ -24435,7 +24438,6 @@ $app=com.miui.analytics
 ||api.gameanalytics.com^
 ||api.gimbal.com^
 ||api.sec.miui.com^
-||api.taplytics.com^
 ||appmetrica.yandex.net^
 ||appmetrica.yandex.com^
 ||ar.umeng.com^
@@ -24509,7 +24511,6 @@ $app=com.miui.analytics
 ||oc.umeng.com^
 ||online-metrix.net^
 ||openstat.net^
-||ping.taplytics.com^
 ||ping.xlmc.sandai.net^
 ||pingma.qq.com/mstat/
 ||pingma.qq.com^
