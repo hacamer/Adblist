@@ -1,8 +1,8 @@
-! Checksum: gSFgDjGNBU1lNcsD6Zf5sw
+! Checksum: +0lZ/QDhE8BIUw8wTp+7FQ
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.28.34
-! TimeUpdated: 2022-04-06T13:01:53+00:00
+! Version: 2.0.28.35
+! TimeUpdated: 2022-04-06T14:30:21+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1197,6 +1197,8 @@
 !---
 ! Rules for AdFender to block injected ads when AdGuard DNS is active
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/114806
+eromanga-kishin.com#@#.ad_widget
 ! https://github.com/uBlockOrigin/uAssets/issues/10674
 @@||t7z.cupid.iqiyi.com/show2?$xmlhttprequest,domain=m.iqiyi.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/85017
@@ -2646,6 +2648,12 @@ scmp.com,theinventory.com,avclub.com,clickhole.com,deadspin.com,gizmodo.com,jalo
 ! ##.ads
 cartoonpornvideos.com,m.economictimes.com,beethovenmaster.com,m.mistrzowie.org,m.ura.news,siirtpress.com,up.ymgt.xyz,google.de,www-bento-de.cdn.ampproject.org,m-economictimes-com.cdn.ampproject.org,m.winfuture.de##.ads
 !
+sirogohan.com##.sp-banner
+yomiuri.co.jp##.p-ad-txt-wrap
+yomiuri.co.jp##.p-ad-list-item
+eromanga-kishin.com##.ad_morelow
+eromanga-kishin.com###spwrapper
+eromanga-kishin.com##.picad2row
 yomiuri.co.jp##.home-2021-ad-head-sp
 yomiuri.co.jp##.sp_ad_banner
 nukerumannga.com,ero-mangasokuhou.com,ero-mangalife.com,eromanga-cafe.com,doujincafe.com##.archive > div[style="margin:0 auto;"]:not([class])

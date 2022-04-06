@@ -1,8 +1,8 @@
-! Checksum: +msgSJFT74y1894JPdr+Xg
+! Checksum: UBWKGf73r6qcczlyzm579A
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.14.66
-! TimeUpdated: 2022-04-06T13:30:48+00:00
+! Version: 2.1.14.67
+! TimeUpdated: 2022-04-06T14:30:37+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -18786,6 +18786,10 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+abema.tv##.c-application-MobileAppContainer__floating-app-button
+abema.tv##.c-application-MobileAppContainer__footer
+abema.tv##.com-application-MobileHeaderBannerBase
+abema.tv##.com-vod-MobileVODScreen__view-in-app-overlay
 recipe-blog.jp###topBnrAppBadge
 nissen.co.jp###nissen_app_area
 m.augsburger-allgemeine.de###piano_wrapper_unten
@@ -18817,7 +18821,6 @@ kurashiru.com##.SpApp-recipesShowFloatButton
 sp.nicovideo.jp###jsSmartAppBanner
 sp.nicovideo.jp##.watch-OpeningPlayerInfo_LaunchAppsButton
 sp.nicovideo.jp##.siteWide-AppModalWithLogin
-s.tabelog.com##.p-webtoapp-banner
 s.tabelog.com###js-webtoapp-floating-banner-overlay
 s.tabelog.com##.area-ranking-wrap
 s.tabelog.com##.search-temp__floating-app
@@ -19182,7 +19185,6 @@ kiro7.com##.layout-section a[href="/mobile-apps/"]
 kalingatv.com###ctenkbr-7
 freshercooker.in###custom_html-5
 prabhasakshi.com#?#.left-sticky > div.ps-left-app:has(> a[href^="https://play.google.com/"])
-abema.tv##.com-application-MobileHeaderAppButton
 inshorts.com##.hide-on-med-and-down
 blu-ray.com##img[width="148"][height="52"]
 m.infox.ru###install_bg
@@ -20125,6 +20127,16 @@ ebay.*###gh-appBanner
 !
 !
 !+ NOT_OPTIMIZED
+s.tabelog.com#$#.js-modal-overlay-clickarea { display: none !important; }
+!+ NOT_OPTIMIZED
+s.tabelog.com#$#html.is-overlay-visible { overflow-y: auto !important; }
+!+ NOT_OPTIMIZED
+s.tabelog.com#$#html.is-overlay-visible body { overflow-y: auto !important; }
+!+ NOT_OPTIMIZED
+s.tabelog.com##.rstlst-map-box__tabelog-appli
+!+ NOT_OPTIMIZED
+s.tabelog.com##.p-webtoapp-banner
+!+ NOT_OPTIMIZED
 gorodche.ru##div[class^="subPop"]
 !+ NOT_OPTIMIZED
 oceans-nadia.com###js-getAppHeader
@@ -20595,6 +20607,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+blog.livedoor.com##body[data-page="top"] > a[href="https://blog.livedoor.com/tag/"]
 xhamster.com##.vpn-geo-picker-container
 pixnet.net##.pixnet-happix-pilot__launcher-bubble
 euractiv.com###contribs_banner
@@ -26083,7 +26096,7 @@ abendzeitung-muenchen.de###webpush-app
 ||pushmaster.xyz^$third-party
 !
 /firebase.js$domain=novayagazeta.ru|comments.ua|kinosimka.net|ilan365.net|cnbcindonesia.com|haberzamani.net|oxy.cloud|allbasketball.org|auslogics.com|kartalyuvasi.com.tr|cnnindonesia.com|fbc.ua|astv.ru|pln-pskov.ru
-/firebase-messaging.js$domain=focus.ua|ukranews.com|comments.ua|coub.com|porno90.me|cnnamador.com|giallozafferano.it|wcostream.com|fptplay.vn|jooble.org|mobile01.com|myinstants.com|pdalife.ru|rg.ru|m.iguides.ru|donanimhaber.com|profile.ru|womanhit.ru|news.noteru.com|narodna-pravda.ua|newstm.in|sabah.com.tr|dreamstime.com|popbee.com|avtovzglyad.ru|allbasketball.org|tw.news.yahoo.com|takvim.com.tr|jn.pt|ria.ru|pars.host|calculator-online.net|operanewsapp.com|ahaber.com.tr|tamindir.com|concursosnobrasil.com.br|kompas.com|news.ebc.net.tw|recyclingtoday.com|homedecoratione.com|khersondaily.com|mirtesen.ru|womanhit.ru|belsat.eu|gearbest.com|op.gg|novayagazeta.ru|pocket-lint.com|turunculevye.com|bloomberght.com|stardima.com|aksam.com.tr|portamur.ru|fishki.net|ranking.goo.ne.jp|ohmymag.com|mgronline.com|semnasem.org
+/firebase-messaging.js$domain=focus.ua|ukranews.com|comments.ua|coub.com|porno90.me|cnnamador.com|giallozafferano.it|wcostream.com|fptplay.vn|jooble.org|mobile01.com|myinstants.com|pdalife.ru|rg.ru|m.iguides.ru|donanimhaber.com|profile.ru|womanhit.ru|news.noteru.com|narodna-pravda.ua|newstm.in|sabah.com.tr|dreamstime.com|popbee.com|avtovzglyad.ru|allbasketball.org|tw.news.yahoo.com|takvim.com.tr|jn.pt|ria.ru|pars.host|calculator-online.net|operanewsapp.com|ahaber.com.tr|tamindir.com|concursosnobrasil.com.br|kompas.com|news.ebc.net.tw|recyclingtoday.com|homedecoratione.com|khersondaily.com|mirtesen.ru|womanhit.ru|belsat.eu|gearbest.com|op.gg|novayagazeta.ru|pocket-lint.com|turunculevye.com|bloomberght.com|stardima.com|aksam.com.tr|portamur.ru|fishki.net|ranking.goo.ne.jp|ohmymag.com|mgronline.com|semnasem.org|bluradio.com
 !
 ||thehindubusinessline.com/serviceworker.js
 fellowsfilm.com##.u-bottomFixer
