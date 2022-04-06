@@ -1,8 +1,8 @@
-! Checksum: 0YMNwkXwBkVD/9RcKWNHhg
+! Checksum: eKrPFPXTWWV4CzfFAQxwmg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.14.54
-! TimeUpdated: 2022-04-06T01:30:37+00:00
+! Version: 2.1.14.55
+! TimeUpdated: 2022-04-06T03:30:33+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7296,6 +7296,8 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+mystudylife.com##.pix-cookie-banner
+fahrrad-xxl.de#%#//scriptlet('set-cookie', 'fxxl_erforderliche_cookies', 'true')
 kitapyurdu.com##.popupContainer
 euractiv.com###termly-code-snippet-support
 supermicro.com###alert-container
@@ -16172,6 +16174,8 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/114696
+fahrrad-xxl.de#@#.fxxl-cookie-mainmodal
 ! https://github.com/AdguardTeam/AdguardFilters/issues/114387
 @@||cdn.privacy-mgmt.com/wrapperMessagingWithoutDetection.js$domain=freiepresse.de
 ! https://github.com/AdguardTeam/AdguardFilters/issues/114200
@@ -26077,6 +26081,7 @@ abendzeitung-muenchen.de###webpush-app
 /firebase.js$domain=novayagazeta.ru|comments.ua|kinosimka.net|ilan365.net|cnbcindonesia.com|haberzamani.net|oxy.cloud|allbasketball.org|auslogics.com|kartalyuvasi.com.tr|cnnindonesia.com|fbc.ua|astv.ru|pln-pskov.ru
 /firebase-messaging.js$domain=focus.ua|ukranews.com|comments.ua|coub.com|porno90.me|cnnamador.com|giallozafferano.it|wcostream.com|fptplay.vn|jooble.org|mobile01.com|myinstants.com|pdalife.ru|rg.ru|m.iguides.ru|donanimhaber.com|profile.ru|womanhit.ru|news.noteru.com|narodna-pravda.ua|newstm.in|sabah.com.tr|dreamstime.com|popbee.com|avtovzglyad.ru|allbasketball.org|tw.news.yahoo.com|takvim.com.tr|jn.pt|ria.ru|pars.host|calculator-online.net|operanewsapp.com|ahaber.com.tr|tamindir.com|concursosnobrasil.com.br|kompas.com|news.ebc.net.tw|recyclingtoday.com|homedecoratione.com|khersondaily.com|mirtesen.ru|womanhit.ru|belsat.eu|gearbest.com|op.gg|novayagazeta.ru|pocket-lint.com|turunculevye.com|bloomberght.com|stardima.com|aksam.com.tr|portamur.ru|fishki.net|ranking.goo.ne.jp|ohmymag.com|mgronline.com|semnasem.org
 !
+||thehindubusinessline.com/serviceworker.js
 fellowsfilm.com##.u-bottomFixer
 graty.me###push-modal
 ||wondershare.com/notification/wsNotification.js
@@ -28712,6 +28717,13 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+anews.com##.rb-subscriber
+anews.com##.btn-readmore
+hindustantimes.com##.new__newsletter__signup
+indiatoday.in##.newsltter-iframe-new
+manomano.de##div[class^="Newsletter_container"]
+manomano.de#$#.overlay_80600516 { display: none !important; }
+manomano.de#$#body { overflow: auto !important; }
 starhit.ru#?#.article > p:has(> b > a[href="https://zen.yandex.ru/starhit.ru"])
 graty.me##.widget_3
 368.media##.telegram-promo
