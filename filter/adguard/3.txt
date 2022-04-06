@@ -1,8 +1,8 @@
-! Checksum: r1M8cB8UGrd54it+NVrHlA
+! Checksum: ktDrrXVOAgrDJPlDQOqBHw
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.37.66
-! TimeUpdated: 2022-04-06T14:31:22+00:00
+! Version: 2.0.37.67
+! TimeUpdated: 2022-04-06T18:31:19+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -5107,6 +5107,7 @@ nethunt.com/api/v1/track/email/$image
 ||telemetry.mozilla.org^
 !
 ||ts.delfi.lt^
+||tracking.gvm.com.tw^
 ||metrics.beyondwords.io^
 ||launcher.spot.im^
 ||api.data.ciceksepeti.com^
@@ -23303,11 +23304,12 @@ link.gmapp*.net$image
 ! Good: ||lemurov.net^$cookie=flat_r_mb
 ! Bad:  ||monerominer.rocks^$third-party (should be in adservers.txt)
 !
-!
 !------------------------------
 !---- Domain pecific rules ----
 !------------------------------
 !
+||ok.ru^$cookie=_statid
+||ok.ru^$cookie=mtrc
 ||popmech.ru^$cookie=popmech_nuid
 ||productreview.com.au^$cookie=pr_guest_id
 ||productreview.com.au^$cookie=pr_visitor_id
@@ -23374,10 +23376,10 @@ $cookie=wuuid,domain=duolingo.com|duolingo.cn
 ! ad networks
 ||exoclick.com^$cookie
 ||realsrv.com^$cookie
+!
 !------------------------------
 !---- Generic rules -----------
 !------------------------------
-!
 !
 ! flocktory.com - identifier of the user
 $cookie=flocktory-uuid
