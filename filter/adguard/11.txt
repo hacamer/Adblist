@@ -1,8 +1,8 @@
-! Checksum: +0lZ/QDhE8BIUw8wTp+7FQ
+! Checksum: Id7wMfKGgVpF5qJh/AyF5A
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.28.35
-! TimeUpdated: 2022-04-06T14:30:21+00:00
+! Version: 2.0.28.36
+! TimeUpdated: 2022-04-06T15:30:24+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2010,9 +2010,9 @@ news.owata-net.com#$#.adnetwork.article-interstitial.overlay { display: none!imp
 news.owata-net.com#$#html[style="overflow: hidden;"] { overflow: auto!important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/96652
 coolaler.com#$#.message-inner { display: flex !important; }
-! shikotch.net overlay on mobile
-shikotch.net#$##is_w_area { display: none!important; }
-shikotch.net#$#html.inv_scroll_cancel { overflow: auto!important; }
+! https://github.com/AdguardTeam/AdguardFilters/issues/114749
+jav.direct,shikotch.net#$##is_w_area { display: none!important; }
+jav.direct,shikotch.net#$#html.inv_scroll_cancel { overflow: auto !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/92726
 izi.ua#$#div[class^="ProductFooter__root-"] { height: 0 !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/92579
@@ -2648,6 +2648,8 @@ scmp.com,theinventory.com,avclub.com,clickhole.com,deadspin.com,gizmodo.com,jalo
 ! ##.ads
 cartoonpornvideos.com,m.economictimes.com,beethovenmaster.com,m.mistrzowie.org,m.ura.news,siirtpress.com,up.ymgt.xyz,google.de,www-bento-de.cdn.ampproject.org,m-economictimes-com.cdn.ampproject.org,m.winfuture.de##.ads
 !
+jav.direct##div[style^="width: 300px; height: 250px"]
+trinixy.ru##div.mdl-card[style^="text-align: center;"]
 sirogohan.com##.sp-banner
 yomiuri.co.jp##.p-ad-txt-wrap
 yomiuri.co.jp##.p-ad-list-item
