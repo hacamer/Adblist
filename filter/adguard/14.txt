@@ -1,8 +1,8 @@
-! Checksum: 92yzh3P8K5/nNVM00PfCgg
+! Checksum: /aOQm49FYZnaVS9gUPqJvw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.14.51
-! TimeUpdated: 2022-04-05T22:30:35+00:00
+! Version: 2.1.14.53
+! TimeUpdated: 2022-04-06T00:30:33+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -92,6 +92,8 @@
 ! https://github.com/AdguardTeam/AdguardFilters/issues/76987
 youtube.com#%#AG_onLoad(function() {var a = new MutationObserver(function() {if (document.querySelector('yt-upsell-dialog-renderer')) {var b = document.querySelector('.ytd-popup-container[popup-size="UPSELL_DIALOG_RENDERER_POPUP_SIZE_LARGE"] #dismiss-button:not(.dismissed), .upsell-dialog-lightbox .upsell-dialog-dismiss-button button:not(.dismissed)');setTimeout(function() {b&&b.click()}, 3E2)}});a.observe(document, {childList: !0,subtree: !0});setTimeout(function() {a.disconnect()}, 3E3)});
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/114143
+anime.dmkt-sp.jp##.footerBottomMenu
 ! https://github.com/AdguardTeam/AdguardFilters/issues/109526
 townwork.net##.keep-navi-wrap
 townwork.net##.ico-followup-app-label
@@ -7294,6 +7296,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+euractiv.com###termly-code-snippet-support
 supermicro.com###alert-container
 tommy.com#$##cookiesMessage { display: none !important; }
 tommy.com#$#.cookies-message { display: none !important; }
@@ -16169,6 +16172,8 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/114200
+@@||quantcast.mgr.consensu.org^$domain=t3.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/114405
 tommy.com#@##cookiesMessage
 tommy.com#@#.cookies-message
@@ -18764,6 +18769,8 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+m.hoyolab.com#%#//scriptlet('set-local-storage-item', 'closedAppHeader', '1')
+fontanka.ru#?#footer ~ div:has(> div > div#adv_mob_sticky)
 stanby.com#%#(function() { try { if ("undefined" != typeof localStorage) { localStorage.setItem('app_banner_close', '{"value":"close"}') } } catch (ex) {} })();
 townwork.net##div[class^="mp-app-bnr-"]
 townwork.net##div[class$="AppBanner"]
@@ -20566,6 +20573,8 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+pixnet.net##.pixnet-happix-pilot__launcher-bubble
+euractiv.com###contribs_banner
 moviepilot.de#?#main > div[class^="sc-"] > div[class^="sc-"]:only-child:has(> button + a[data-ga-on][data-ga-event-category="Bottom Drawer"][data-ga-event-action="Click News"])
 fairygodboss.com##.component-Login-LoginWall
 video.tv-tokyo.co.jp##.md-question
