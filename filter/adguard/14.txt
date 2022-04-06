@@ -1,8 +1,8 @@
-! Checksum: Tk9QPtj0FmA7ja4BVM/nWA
+! Checksum: 2ytXakHFmss++k6ZkePf7w
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.14.61
-! TimeUpdated: 2022-04-06T09:30:34+00:00
+! Version: 2.1.14.62
+! TimeUpdated: 2022-04-06T10:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7298,6 +7298,8 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+onlinefinanzierung.vr-smart-finanz.de##.cookieconsentContainer
+gl-inet.com,youfibre.com,trt1.com.tr,naxi.com.br##.cookieConsentContainer
 danmis.com.pl##body #catapult-cookie-bar
 tools.pdf24.org#$##cookieBannerOverlay { display: none !important; }
 tools.pdf24.org#$#html.hasCookieBannerOverlay { overflow: auto !important; }
@@ -9376,7 +9378,6 @@ mediamarkt.nl,saturn.de##div[class^="gdpr-cookie-layer"]
 klingspor.id###vinegar-bottle
 truecaller.com###app > footer + div.fixed > span
 blog.musixmatch.com##body > div#root ~ div:not([class]):not([id]) > div[class*=" "]
-gl-inet.com,youfibre.com,trt1.com.tr,naxi.com.br##.cookieConsentContainer
 madeiramadeira.com.br,lojaasus.com.br##.lgpd-container
 catho.com.br###__next > div[class^="style__OverlayBlock-"]
 ||comic.pixiv.net/api/app/gdpr/messages|$xmlhttprequest
@@ -20485,6 +20486,7 @@ temp-mail.org##.smartbanner
 ||delivery.satr.jp^$third-party
 /wp-content/themes/Newspaper-child/*$~stylesheet,domain=~dyvys.info|~capital.de|~inside-digital.de
 ||server.connecto.io^$third-party
+||elp.evolok.net^$third-party
 ||api.sorunapp.com^$third-party
 ||widget.pico.tools^$third-party
 ||popupmaker.com^$third-party
