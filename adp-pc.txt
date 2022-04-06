@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: J0RTny9ED5AO3rkXJXpesg
+! Checksum: o7qJgI1VrauQFsIwZxmmSg
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202204070410
-! Last Modified: 2022年04月07日 04:10
+! Version: 202204070509
+! Last Modified: 2022年04月07日 05:09
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 84148
+! Total count: 84155
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -4053,6 +4053,7 @@
 ##.d_banner_inner
 ##.dac__banner__wrapper
 ##.dac__mpu-card
+##.daily-adlabel
 ##.dart-advertisement
 ##.dart_ad
 ##.davwheat-ad
@@ -19538,6 +19539,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||gpt-worldwide.com/js/gpt.js$~third-party
 @@||gradown.com^$generichide
 @@||gram.pl/js/advertising.js$script
+@@||grapeshot.co.uk/main/channels.cgi$script,domain=telegraph.co.uk
 @@||graphiq-stories.graphiq.com/ad?_=$~third-party
 @@||gratisbitco.in/scripts/ads.js$script
 @@||grattable.com/blogads.css
@@ -20540,7 +20542,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||mparticle.com/js/v2/*/mparticle.js$script,domain=cnbc.com
 @@||mps.nbcuni.com/fetch/ext/load-nbcsports-web.js$domain=nbcsports.com
 @@||mpsnare.iesnare.com/general5/wdp.js$domain=usbank.com
-@@||mpsnare.iesnare.com/snare.js$domain=citi.com|citibank.com|enmasse.com|login.skype.com|vitacost.com
+@@||mpsnare.iesnare.com/snare.js$domain=citi.com|citibank.com|enmasse.com|equifax.ca|login.skype.com|vitacost.com
 @@||mpsnare.iesnare.com/snare.js$script,domain=power.fi
 @@||mpsnare.iesnare.com/wu/snare.js$domain=westernunion.com
 @@||mrtechmyth.com^$generichide
@@ -25991,6 +25993,7 @@ colourlovers.com#@#[style*="background-image:"]
 colourlovers.com#@#div > iframe:first-child
 com.tw###space > a[target="_blank"] > img[width="160"]
 com.tw#$#img[width="960"][height="90"] { height: 0 !important; }
+comando.to,gogoplay5.com,asianembed.io,querofilmehd.net,voirseries.io,animelandtv.me,seeeed.xyz,arabseed.*,crichd.*,mangadna.com,anime-sanka.com,tomatomatela.com,akwam.*,seriestv.watch,megafilmeshd50.com,dood.*,prmovies.ph,uploadrar.com,go-stream.site,mp3juice.info,gogoplay.*,freemoviesfull.com,nxbrew.com,vipleague.tv,clickupload.cc,stape.fun,dopebox.to,gomovies.*,xsanime.com,rodanesia.com,komikindo.id,gnula.nu,sflix.to,filmovi.co,123movies2022.org,myflixer.to,thenetnaija.co,anime4up.com,extralinks.*,katlinks.site,animasu.vip,1movieshd.com,dopebox.to,4anime.gg,deportealdia.live,noweconomy.live,hindilinks4u.to,lodynet.art,criarjogosandroid.com,mp3download.to,fbstream.tv,mangalek.com,skidrowcodex.net,daddylive.me,animebee.to,f1stream.me,katflys.com,futebolplayhd.com,cricstream.me,watchonlinemovies50.com.pk,viprow.*,strikeout.*,emule-island.eu,hdfilme.cx,downloadhub.cfd,masteredutech.com,dl-protect.info,zone-telechargement.work,123moviesc.*,pahe.ph,cuevana3.*,adshort.*,2embed.ru,nuroflix.club,mlsbd.shop,appvn.com,yifysubtitles.vip,myoplay.club,oploverz.*,jkanime.net,tamilfreemp3songs.com,ostreaming.tv,vipbox.*,govid.cyou,uqload.com,watchseries.*,onedaythreeautumns.com,romshub.com,mp3juices.cc,cima4u.*,gdtot.*,comedyshow.to,streamta.*,streamingcommunity.*,watchdoctorwhoonline.com,allinonedownloadzz.site,gogoplay1.com,gogoplay2.com,gdriveplayer.us,watchtheoffice.cc,gogoplay2.com,watchcharmedonline.com,exey.io,witanime.com,egyshare.cc,clipconverter.cc,animesanka.*,vidembed.*##+js(abort-current-script, Promise, delete window)
 comefromchina.com##.ad_navtext_11 > li:nth-child(n+2)
 comic.qq.com###fixed_right > div
 comicallyincorrect.com#@##sponsoredwellcontainertop
@@ -28273,6 +28276,7 @@ footballstream.pw##+js(window.open-defuser)
 footdirect24.com###hid
 footy.to##+js(abort-current-script, $, ad-modal)
 footybite.cc###kis
+footybite.cc##div[style^="border: 2px solid "]
 forbes.com##.channel--ad
 forbes.com##.top-ad-container
 forbes.com##.vestpocket
@@ -29172,7 +29176,6 @@ gogoanime.pro##+js(set-constant, fired, true)
 gogoanimes.tv#$#abort-on-property-write atob
 gogodl.com##+js(abort-current-script, document.getElementById, bannerad)
 gogoplay1.com,komikcast.com,prmovies.bz,speedostream.com#$#abort-current-inline-script JSON.parse
-gogoplay5.com,asianembed.io,querofilmehd.net,voirseries.io,animelandtv.me,seeeed.xyz,arabseed.*,crichd.*,mangadna.com,anime-sanka.com,tomatomatela.com,akwam.*,seriestv.watch,megafilmeshd50.com,dood.*,prmovies.ph,uploadrar.com,go-stream.site,mp3juice.info,gogoplay.*,freemoviesfull.com,nxbrew.com,vipleague.tv,clickupload.cc,stape.fun,dopebox.to,gomovies.*,xsanime.com,rodanesia.com,komikindo.id,gnula.nu,sflix.to,filmovi.co,123movies2022.org,myflixer.to,thenetnaija.co,anime4up.com,extralinks.*,katlinks.site,animasu.vip,1movieshd.com,dopebox.to,4anime.gg,deportealdia.live,noweconomy.live,hindilinks4u.to,lodynet.art,criarjogosandroid.com,mp3download.to,fbstream.tv,mangalek.com,skidrowcodex.net,daddylive.me,animebee.to,f1stream.me,katflys.com,futebolplayhd.com,cricstream.me,watchonlinemovies50.com.pk,viprow.*,strikeout.*,emule-island.eu,hdfilme.cx,downloadhub.cfd,masteredutech.com,dl-protect.info,zone-telechargement.work,123moviesc.*,pahe.ph,cuevana3.*,adshort.*,2embed.ru,nuroflix.club,mlsbd.shop,appvn.com,yifysubtitles.vip,myoplay.club,oploverz.*,jkanime.net,tamilfreemp3songs.com,ostreaming.tv,vipbox.*,govid.cyou,uqload.com,watchseries.*,onedaythreeautumns.com,romshub.com,mp3juices.cc,cima4u.*,gdtot.*,comedyshow.to,streamta.*,streamingcommunity.*,watchdoctorwhoonline.com,allinonedownloadzz.site,gogoplay1.com,gogoplay2.com,gdriveplayer.us,watchtheoffice.cc,gogoplay2.com,watchcharmedonline.com,exey.io,witanime.com,egyshare.cc,clipconverter.cc,animesanka.*,vidembed.*##+js(abort-current-script, Promise, delete window)
 goha.ru#@#.goha_ads
 goha.ru#@#.goha_ads_acceptable
 gohome.com.hk##div[id^="div-gpt-ad"][style]
@@ -29993,6 +29996,7 @@ hmog.me##a[href^="http://www.masadora.net/"]
 hoastie.com##+js(abort-on-property-read, open)
 hobby-machinist.com##+js(no-setInterval-if, options)
 hobby.porn##.pad
+hobbylark.com##.l-content-recommendation
 hockeybuzz.com###outer > #leaderboard
 hog.*##.content__info--vis
 hog.*##.player-block__line
@@ -32250,6 +32254,7 @@ lightnovel.us##.author + .poster
 lightnovelpub.com##.adsbox
 lightreading.com##a[href^="/lg_redirect.asp?piddl_lgid_docid="]
 lihkg.com##iframe[src^="https://pb.lihkg.com/"][style^="height:"]
+lihkg.com##iframe[src^="https://pb.lihkg.com/primis?"]
 lihkg.com#?##rightPanel div[id^="page-"] ~ div[class] > div > div[style^="display:"] ins.adsbygoogle:upward(div[style^="display:"])
 liisex.com###apDiv22
 likr.tw###avivid_waterfall_wp_product_area
@@ -36656,6 +36661,7 @@ shorttey.org##+js(set-constant, canRunAds, true)
 shorttey.org##+js(window.open-defuser)
 shortz.one##+js(window.open-defuser)
 shortzzy.in##+js(window.open-defuser)
+shotcut.org##[style="background-color: #fff; padding: 6px; text-align: center"]
 shotfly.in##+js(window.open-defuser)
 shotly.io##+js(abort-on-property-read, S9tt)
 shouji56.com###gg_top_banner
@@ -37164,6 +37170,8 @@ sou-yun.cn###ads_index_2
 soufun.com##.danmu_inbox
 sound-park.rocks,sound-park.world,soundpark.rocks#$#abort-current-inline-script $ open
 soundandvision.com,stereophile.com#@##topbannerad
+soundofhope.org###itb_ads_catfish
+soundofhope.org##.itb_ads
 soundofhope.org##div[class*="AD_"]
 soup.io##+js(set-constant, canRunAds, true)
 soup.io#@#.showads
@@ -76681,7 +76689,6 @@ zznews.cn##.ad:not([style])
 ||teethfan.com^
 ||teindsrangier.com^
 ||tekproxy.com/$popup,domain=turkdown.com
-||telegraph.co.uk/telegraph-advertising/tmg-cmp.min.js
 ||telemetric.dk^$third-party
 ||telemetrics.klaviyo.com^
 ||telemetry.adobe.io^
