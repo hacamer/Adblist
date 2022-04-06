@@ -1,8 +1,8 @@
-! Checksum: eKrPFPXTWWV4CzfFAQxwmg
+! Checksum: qDhiaLAIcCjHkQYfX/TKng
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.14.55
-! TimeUpdated: 2022-04-06T03:30:33+00:00
+! Version: 2.1.14.56
+! TimeUpdated: 2022-04-06T04:30:33+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -3153,6 +3153,8 @@ hgtv.com#@#.showads
 !
 !
 !
+drnasserelbatal.com#%#//scriptlet("set-constant", "canRunAds", "true")
+@@||drnasserelbatal.com/assets/js/prebid-ads.js
 hypebeast.com###ad-blocker-popups
 fnbrjp.com#%#//scriptlet("prevent-setTimeout", "広告")
 sovetromantica.com##pjsdiv[id^="sovetromantica_"][id$="_disable_message"]
