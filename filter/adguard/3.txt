@@ -1,8 +1,8 @@
-! Checksum: 48cMx3VGw5DZvLhG65f1Fg
+! Checksum: /gUDEPyvnSB7lEQVq2nPrg
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.37.74
-! TimeUpdated: 2022-04-07T14:31:26+00:00
+! Version: 2.0.37.75
+! TimeUpdated: 2022-04-07T15:31:20+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -4932,6 +4932,7 @@ journal-plaza.net#?#.rightside div.block.bnavi[-ext-has="h3.dtitle:contains(Сч
 ||wkclick.baidu.com^
 !
 ! popin.cc tracking
+||trace.popin.cc^
 ||rlog.popin.cc^
 ||log.popin.cc^
 ||r.popin.cc^
@@ -21418,9 +21419,6 @@ the-ans.jp##.side-reccomend
 ||scv.band.us/jackpotlog/*/logs
 ||gate.upclick.com/btn/visitor.min.js
 ||macg.co/modules/statistics/statistics.php
-||popin.cc/td_js_sdk_
-||popin.cc/popin_discovery5-$script
-||popin.cc/popin_discovery/$script
 ||bilanx.dcard.tw/*/configs
 ||bilanx.dcard.tw/*/events
 ||dcf.espn.com/privacy/
@@ -25215,8 +25213,6 @@ woman.excite.co.jp#%#//scriptlet('remove-attr', 'data-woman-ex', 'a[href][data-w
 @@||googletagmanager.com/gtm.js$script,domain=dpoint.jp
 ! https://github.com/hirorpt/filters/commit/7368d27f494e7fd3e9c3f460d72fab7b370892fd
 @@||googletagmanager.com/gtm.js$script,domain=maidonanews.jp
-! https://github.com/AdguardTeam/AdguardFilters/issues/83191
-@@||popin.cc/popin_discovery/$script,domain=mainichikirei.jp
 ! https://github.com/AdguardTeam/AdguardFilters/issues/82604
 @@||stuttgarter-zeitung.de/cre-*/tracking/tracking.js
 ! jolie.de - picture gallery broken
