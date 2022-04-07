@@ -1,8 +1,8 @@
-! Checksum: BEeBjjXiHPWlKYjyATADzw
+! Checksum: ElxecxtsvHxYwoh/TkXTfQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.14.80
-! TimeUpdated: 2022-04-07T09:30:36+00:00
+! Version: 2.1.14.81
+! TimeUpdated: 2022-04-07T10:30:35+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -15680,7 +15680,7 @@ elearningindustry.com#%#document.cookie = "cookie_preferences=0-0-0-0";
 kinopoisk.ru,yandex.*#%#//scriptlet("set-cookie", "gdpr", "0")
 selgros.pl#%#//scriptlet('set-cookie', 'cookie_new_msg', '1')
 guard.io#%#//scriptlet('set-cookie', 'cookie_consent_seen', '1')
-youtube.com#%#AG_onLoad(function(){if(document.cookie.split('CONSENT').filter((el) => el.includes('YES+'))){var a=new MutationObserver(function(){var b=document.querySelector('.termlinks + div[class*="ytd-consent-bump-"] > ytd-button-renderer:last-child');b&&(a.disconnect(),b.click())});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)}});
+youtube.com#%#AG_onLoad(function(){if(document.cookie.indexOf('CONSENT=YES+yt.') === -1){var a=new MutationObserver(function(){var b=document.querySelector('.termlinks + div[class*="ytd-consent-bump-"] > ytd-button-renderer:last-child');b&&(a.disconnect(),b.click())});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)}});
 consent.google.*#%#AG_onLoad(function(){if(window.location.href.includes("consent.google.")){var a=document.querySelector('form[action^="https://consent.google."][action$="/s"]');if(a)a.submit();else{var b=new MutationObserver(function(){a&&(b.disconnect(),a.submit())});b.observe(document,{childList:!0,subtree:!0});setTimeout(function(){b.disconnect()},1E4)}}});
 consent.youtube.com#%#AG_onLoad(function(){if(window.location.href.includes("consent.youtube.com")){var a=new MutationObserver(function(){var b=document.querySelector('form[action="https://consent.youtube.com/s"]');b&&(a.disconnect(),b.submit())});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)}});
 zweitausendeins.de,meyer-gartenbedarf.de#%#//scriptlet('set-cookie', 'amcookie_allowed', '1')
@@ -18792,6 +18792,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+mc.163.com##.down-box
 abema.tv##.c-application-MobileAppContainer__floating-app-button
 abema.tv##.c-application-MobileAppContainer__footer
 abema.tv##.com-application-MobileHeaderBannerBase
