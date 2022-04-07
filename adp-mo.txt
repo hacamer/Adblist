@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: 8pEhzVItY8eOeiRaK5Xlmg
+! Checksum: tB/sltaM+zONsKW9BfuVqg
 ! Title: My AdFilters（for Mobile）
 ! Expires: 12 hours
-! Version: 202204072209
-! Last Modified: 2022年04月07日 22:09
+! Version: 202204072309
+! Last Modified: 2022年04月07日 23:09
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 64645
+! Total count: 64648
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -29101,11 +29101,12 @@ spanishdict.com###removeAdsSidebar
 spanishdict.com##+js(nano-setTimeout-booster, function(){c(e)}, *)
 spanishdict.com##.video-ad
 spanishdict.com##div[id^="adSide"]
-spankbang.com###interstitial_div
 spankbang.com##+js(no-setTimeout-if, window.location=page_url)
+spankbang.com##+js(set-constant, chrome, undefined)
 spankbang.com##+js(window.open-defuser)
 spankbang.com##.ptgncdn_holder
 spankbang.com##.video-item:not([id]):not([data-id])
+spankbang.com#$##interstitial_div { display: none !important; }
 sparknotes.com##.distroscale_container_right_rail
 sparknotes.com##.incontent-ads-container
 sparknotes.com##.partner__pw__header
@@ -44903,6 +44904,8 @@ zyue.com##div[id^="divad_"]
 ||howbuy.com/subject/js/layer/layer.js
 ||howsmyssl.com^$third-party
 ||howtogeek.com/emv2/
+||hpav.tv/a720.html
+||hpjav.tv/a720.html
 ||hpjhmgip.com^
 ||hpr.outbrain.com^
 ||hpr.outbrain.com^$domain=focus.de

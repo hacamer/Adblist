@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: V8BW+oalYzB3MXThh4dF/A
+! Checksum: 0fHIKWL5OB9CAkgYw2YFkw
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202204072209
-! Last Modified: 2022年04月07日 22:09
+! Version: 202204072309
+! Last Modified: 2022年04月07日 23:09
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 84132
+! Total count: 84135
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -37192,11 +37192,12 @@ spanishdict.com##+js(nano-setTimeout-booster, function(){c(e)}, *)
 spanishdict.com##.video-ad
 spanishdict.com##.whitelist
 spanishdict.com##div[id^="adSide"]
-spankbang.com###interstitial_div
 spankbang.com##+js(no-setTimeout-if, window.location=page_url)
+spankbang.com##+js(set-constant, chrome, undefined)
 spankbang.com##+js(window.open-defuser)
 spankbang.com##.ptgncdn_holder
 spankbang.com##.video-item:not([id]):not([data-id])
+spankbang.com#$##interstitial_div { display: none !important; }
 spankwire.com#$#abort-on-property-write ppAb
 sparknotes.com##.distroscale_container_right_rail
 sparknotes.com##.incontent-ads-container
@@ -58615,6 +58616,8 @@ zznews.cn##.ad:not([style])
 ||howsmyssl.com^$third-party
 ||howtogeek.com/emv2/
 ||howtoremoveadblock.com/js/adblock-detector.js$script
+||hpav.tv/a720.html
+||hpjav.tv/a720.html
 ||hpjhmgip.com^
 ||hpr.outbrain.com^
 ||hpr.outbrain.com^$domain=focus.de
