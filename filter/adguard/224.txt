@@ -1,8 +1,8 @@
-! Checksum: t1oCFtL4AdCtPLsXmDVyDA
+! Checksum: 3xMBPxhPcLCnw0lx+UnqfQ
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.0.52.48
-! TimeUpdated: 2022-04-07T11:30:55+00:00
+! Version: 2.0.52.49
+! TimeUpdated: 2022-04-07T12:31:01+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -548,14 +548,10 @@ alotof.software#%#window.google_jobrunner = function() {};
 @@||av4u.info/source/plugin/unadblock^
 ! https://github.com/AdguardTeam/AdguardFilters/issues/13976
 @@||yesiget.i234.me^$generichide
-! https://github.com/AdguardTeam/AdguardFilters/issues/14444
-@@||av01.tv/wp-content/themes/wp-script-theme/vendor/*/trigger_video_hls.js
 ! https://github.com/AdguardTeam/AdguardFilters/issues/16028
 ! https://github.com/AdguardTeam/AdguardFilters/issues/17249
 ||xianzhenyuan.cn/data/attachment^$image
 @@||xianzhenyuan.cn/data/attachment/common/guanggao/adjs.htm
-! https://github.com/AdguardTeam/AdguardFilters/issues/23160
-@@||av01.tv/av01/videojs/imads.js
 ! https://github.com/AdguardTeam/AdguardFilters/issues/28211
 91wii.com#%#window.ad = window.ads = window.dzad = window.dzads = true;
 @@||91wii.com/source/plugin/unadblock/adjs_pic_cpc_cpm_cpa_guanggao_gg_ads_250x250.js
@@ -1081,6 +1077,7 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .r
 !
 !
 !
+v2ex.com##div[class^="wwads-"]
 mc.163.com###NIE-topBar-news
 soundofhope.org##.itb_ads
 soundofhope.org###itb_ads_catfish
@@ -1493,7 +1490,6 @@ aotu43.com##center > a[rel="nofollow"] > .king
 ||z4a.net^$domain=aotu43.com
 ||sinaimg.cn^$domain=88files.net
 ||dioimg.net^$domain=88files.net
-av01.tv###overlay-advertising
 vipthz.com###fwin_content_imc_attachad [style="WIDTH: 100%; padding-left:10px;"] > div > p > a[href][target="_blank"]
 vipthz.com###fwin_content_imc_attachad [style="WIDTH: 100%; padding-left:10px;"] > div > a[href][target="_blank"] > img
 kocpc.com.tw##ads
