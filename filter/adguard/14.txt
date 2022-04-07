@@ -1,8 +1,8 @@
-! Checksum: cHY6bLA8t1Qs8/nP0p9iNg
+! Checksum: SyOcT9T0XzM7gmv1ZuIEeA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.14.86
-! TimeUpdated: 2022-04-07T15:30:35+00:00
+! Version: 2.1.14.88
+! TimeUpdated: 2022-04-07T17:02:04+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -19220,8 +19220,6 @@ jianshu.com##.download-app-guidance
 jianshu.com##.call-app-btn
 mihoyo.com##.mhy-hoyolab-app-header
 sm.ms##.download-box
-ameblo.jp#$?#.skinBody2.skinTextColor > div[class^="_"][role="navigation"] { top: 0!important; }
-ameblo.jp#?#aside[class^="_"] > a[class^="_"][href$="app-download-upper"]:upward(1)
 talkspace.com##.text-5
 economictimes.indiatimes.com##.artData > div.disclamerText
 economictimes.indiatimes.com##.artData > div[data-url="/primebenefits_slider.cms"]
@@ -20135,6 +20133,10 @@ ebay.*###gh-appBanner
 !
 !
 !+ NOT_OPTIMIZED
+ameblo.jp#$?#.skinBody2.skinTextColor > div[class^="_"][role="navigation"] { top: 0!important; }
+!+ NOT_OPTIMIZED
+ameblo.jp#?#aside[class^="_"] > a[class^="_"][href$="app-download-upper"]:upward(1)
+!+ NOT_OPTIMIZED
 s.tabelog.com#$#.js-modal-overlay-clickarea { display: none !important; }
 !+ NOT_OPTIMIZED
 s.tabelog.com#$#html.is-overlay-visible { overflow-y: auto !important; }
@@ -20763,7 +20765,7 @@ banco.bradesco##.btnAbraContaFixed
 invitro.ru##.monitoring_widget
 tsargrad.tv##.sticky-bottom
 nd.edu###network_notice
-leparisien.fr##.dailymotion-player-wrapper[style*="position: fixed;"]
+leparisien.fr##.dailymotion-cpe > div.pip
 facebook.com#%#//scriptlet('prevent-addEventListener', 'scroll', 'showPopup')
 shopback.com.au###extension-onsite-slider
 quto.ru##iframe[src^="https://vp.rambler.ru/player/"][style*="position: fixed;"]
@@ -28736,6 +28738,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+leparisien.fr##.article-section .nl-article-card
 sputniknews-uz.com,sputnik-tj.com,sputnik-ossetia.com,sputnik-abkhazia.info,sputniknewslv.com,armeniasputnik.am,sputnik-ossetia.ru,sputnik-georgia.ru,sputnik-abkhazia.ru,sputnik.*,sputniknews.*##.article-messengers
 star.com.tr##.ebulletin
 auto.ru##.ListingPromoSubscription
