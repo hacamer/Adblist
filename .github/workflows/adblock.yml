@@ -72,6 +72,7 @@ jobs:
           cat adgk.txt dmz.txt xinggsf-mv.txt easylistchina.txt cjxlist.txt cjx-annoyance.txt| grep -v '^!' | sort -ur | uniq -u | awk '!a[$0]++' > ../new/adp2.txt
           cat xinggsf-mv.txt easylistchina.txt cjxlist.txt cjx-annoyance.txt easyprivacy.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/adp3.txt
           cat antiadblockfilters.txt abp-filters-anti-cv.txt anti-adblock-killer-filters.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/adp-edentw.txt
+          cat *.txt |grep -E "^[(\@\@)|(\|\|)][^\/\^]+\^$"  |sort -n |uniq > ../dns.txt
           for i in $(ls ../new/*.txt); do
             sed -i '/^$/d' $i
           done
