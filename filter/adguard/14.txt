@@ -1,8 +1,8 @@
-! Checksum: j47Ca9IsDb6zXZnaFeSmZQ
+! Checksum: /wySQbL5c3W115yWiMRN1Q
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.15.3
-! TimeUpdated: 2022-04-08T13:30:44+00:00
+! Version: 2.1.15.4
+! TimeUpdated: 2022-04-08T14:30:35+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -180,8 +180,8 @@ chip.de###footer-white-global
 biglobe.ne.jp###spage-bnr
 ! https://github.com/AdguardTeam/AdguardFilters/issues/104390
 meduza.global.ssl.fastly.net,meduza.io##div[class^="AnnouncementInText-module_root__"]
-! https://github.com/AdguardTeam/AdguardFilters/issues/103517
-banbye.pl#%#(function(){try{"undefined"!==typeof localStorage&&(localStorage.getItem("npm-vuex")||localStorage.setItem("npm-vuex",'{"app":{"snackbarMessage":"","snackbarDelay":5000,"snackbar":false},"auth":{"user":{},"token":"","loginDialogDismissed":true}}'))}catch(a){}})();
+! https://github.com/AdguardTeam/AdguardFilters/issues/115016
+banbye.com#%#(function(){try{"undefined"!==typeof localStorage&&(localStorage.getItem("npm-vuex")||localStorage.setItem("npm-vuex",'{"app":{"snackbarMessage":"","snackbarDelay":5000,"snackbar":false},"auth":{"user":{},"token":"","loginDialogDismissed":true}}'))}catch(a){}})();
 ! https://github.com/AdguardTeam/AdguardFilters/issues/100595
 entrepreneur.com###mainDomContainer > noscript + div.bg-gray-200
 ! https://github.com/AdguardTeam/AdguardFilters/issues/102956
@@ -15349,7 +15349,7 @@ sportrecs.com#%#//scriptlet('set-local-storage-item', 'header:cookie-banner-clos
 kjell.com#%#//scriptlet("set-cookie", "ccValues", "1")
 energetyka24.com,space24.pl,cyberdefence24.pl,defence24.pl,defence24.com#%#//scriptlet('set-local-storage-item', 'd24Cookie', 'true')
 galaxy-centrum.pl#%#//scriptlet("set-cookie", "cookies-shown", "true")
-banbye.pl#%#//scriptlet('set-local-storage-item', 'cookiesDismissed', 'true')
+banbye.com#%#//scriptlet('set-local-storage-item', 'cookiesDismissedMarch', 'true')
 bitburger.de#%#//scriptlet('set-cookie', 'cookies-general', 'true')
 albelli.de#%#//scriptlet('set-cookie', 'cookie_consent', '0')
 draeger.com#%#(function(){try{var a=location.pathname.split("/")[1],b="dra_cookie_consent_allowed_"+a,c=new RegExp(/[a-z]+_[a-z]+/);if(!document.cookie.includes(b)&&c.test(a)){var d=encodeURIComponent("v=1&t=1&f=1&s=0&m=0");document.cookie=b+"="+d+"; path=/;"}}catch(e){}})();
@@ -26139,6 +26139,8 @@ abendzeitung-muenchen.de###webpush-app
 /firebase.js$domain=novayagazeta.ru|comments.ua|kinosimka.net|ilan365.net|cnbcindonesia.com|haberzamani.net|oxy.cloud|allbasketball.org|auslogics.com|kartalyuvasi.com.tr|cnnindonesia.com|fbc.ua|astv.ru|pln-pskov.ru
 /firebase-messaging.js$domain=focus.ua|ukranews.com|comments.ua|coub.com|porno90.me|cnnamador.com|giallozafferano.it|wcostream.com|fptplay.vn|jooble.org|mobile01.com|myinstants.com|pdalife.ru|rg.ru|m.iguides.ru|donanimhaber.com|profile.ru|womanhit.ru|news.noteru.com|narodna-pravda.ua|newstm.in|sabah.com.tr|dreamstime.com|popbee.com|avtovzglyad.ru|allbasketball.org|tw.news.yahoo.com|takvim.com.tr|jn.pt|ria.ru|pars.host|calculator-online.net|operanewsapp.com|ahaber.com.tr|tamindir.com|concursosnobrasil.com.br|kompas.com|news.ebc.net.tw|recyclingtoday.com|homedecoratione.com|khersondaily.com|mirtesen.ru|womanhit.ru|belsat.eu|gearbest.com|op.gg|novayagazeta.ru|pocket-lint.com|turunculevye.com|bloomberght.com|stardima.com|aksam.com.tr|portamur.ru|fishki.net|ranking.goo.ne.jp|ohmymag.com|mgronline.com|semnasem.org|bluradio.com
 !
+timesnownews.com##div[class^="ArticleShow-ze__subscribe-container-"]
+ndtv.com##.live__updts
 chinatimes.com###avivid_waterfall_subscribe
 mediazona.by,mediazona.ca##.mz-push-banner
 ||thehindubusinessline.com/serviceworker.js
@@ -27613,12 +27615,19 @@ geoguessr.com#$#.game-usps { display: none!important; }
 ! facebook.com,facebookcorewwwi.onion##.userContentWrapper div[data-ft] > .mtm + .mtm
 ! https://github.com/AdguardTeam/AdguardFilters/issues/28507
 mayoclinic.org##.mayoad
-! xhamster.com promo banner
-xhamster18.*,xhamster17.*,hamsterix.*,xhplanet1.com,xhamster13.*,xhamster4.com,xhamster5.desi,xhamster9.com,xhamster.desi,xhamster.one,xhamster.com##.recomm-promo-banner
-! xhamster.com - cameras in category/movie pages
-xhamster18.*,xhamster17.*,hamsterix.*,xhplanet1.com,xhamster13.*,xhamster4.com,xhamster5.desi,xhamster9.com,xhamster.desi,xhamster.one,xhamster.com##[class*="cams-widget"]
-xhamster18.*,xhamster17.*,hamsterix.*,xhplanet1.com,xhamster13.*,xhamster4.com,xhamster5.desi,xhamster9.com,xhamster.desi,xhamster.one,xhamster.com##div[class*="cams-thumb-"]
+!
+! xhamster.com
+xhtab2.com,xhamster4.com,xhamster.com,xhamster2.com,xhamster7.com,xhamster8.com,xhamster9.com,xhamster10.com,xhamster11.com,xhamster12.com,xhamster13.com,xhamster14.com,xhamster15.com,xhamster17.com,xhamster18.com,xhamster19.com,xhamster1.desi,xhamster2.desi,xhamster3.desi,xhamster4.desi,xhamster20.com,xhamster22.com,xhamster23.com,xhamster25.com,xhamster26.com,xhamster27.com,openxh.com,xhamster31.com,xhamster32.com,xhamster34.com,xhamster35.com,xhamster36.com,xhamster37.com,xhamster38.com,xhamster500.com,xhamster5.desi,xhopen.com,openxh1.com,xhamster39.com,xhamster40.com,openxh2.com,xhamster.one,xhamster.desi,xhamsterpremium.com,stripchat.com##.earning-block
+! promo banner
+xhtab2.com,xhamster18.*,xhamster17.*,hamsterix.*,xhplanet1.com,xhamster13.*,xhamster4.com,xhamster5.desi,xhamster9.com,xhamster.desi,xhamster.one,xhamster.com##.recomm-promo-banner
+! cameras in category/movie pages
+xhtab2.com,xhamster18.*,xhamster17.*,hamsterix.*,xhplanet1.com,xhamster13.*,xhamster4.com,xhamster5.desi,xhamster9.com,xhamster.desi,xhamster.one,xhamster.com##[class*="cams-widget"]
+xhtab2.com,xhamster18.*,xhamster17.*,hamsterix.*,xhplanet1.com,xhamster13.*,xhamster4.com,xhamster5.desi,xhamster9.com,xhamster.desi,xhamster.one,xhamster.com##div[class*="cams-thumb-"]
 ||img.stripst.com/*/previews$domain=xhamster.com
+||xhamsterpremium.com^$third-party
+xhamster4.*,xhamster2.com,xhamster10.com,xhamster.com##iframe[src^="https://xhamsterpremium.com/"]
+xhamster.com##.premium-overlay
+!
 ! https://github.com/AdguardTeam/AdguardFilters/issues/78407
 ! https://github.com/AdguardTeam/AdguardFilters/issues/36686
 ! https://github.com/AdguardTeam/AdguardFilters/issues/28792
@@ -28577,9 +28586,6 @@ premier.ua##.flying-action
 search.yahoo.com###browserExtensionPromotionBanner
 sports.ru##div[class*="news-item__content"] > .ad
 autogrodno.by###gkPageContent > aside#gkSidebar
-||xhamsterpremium.com^$third-party
-xhamster4.*,xhamster2.com,xhamster10.com,xhamster.com##iframe[src^="https://xhamsterpremium.com/"]
-xhamster.com##.premium-overlay
 multiplex.ua##.catfish-masterpass
 tvigle.ru##.turn-off-ads
 tnt-online.ru##.top_info_block
@@ -28781,9 +28787,12 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+timesnownews.com##div[class^="ArticleShow-googleFollow-"]
 epravda.com.ua#?#.post__text > blockquote:has(> p > a[href="https://t.me/epravda"])
 life.pravda.com.ua##.content-block-column > div.img-wrap > div[style="text-align:center; padding-top: 0px;"]
 pravda.com.ua##.unit_sp_place
+lifeonvirginiastreet.com###genesis-content > div.after-entry
+lifeonvirginiastreet.com#?#.sidebar > section.widget > div.widget-wrap > h3.widget-title:contains(Subscribe):upward(2)
 mag.auto.ru##div[class^="SubscriptionForm"]
 mag.auto.ru##.ArticleFooterTelegram__card
 mag.auto.ru##.SectionBlock a[href="https://zen.yandex.ru/autoru_mag"]
