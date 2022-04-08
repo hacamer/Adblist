@@ -1,8 +1,8 @@
-! Checksum: nCFwfOkyUNuCQfzKFJvp/g
+! Checksum: V+03JvD54LD+/2NVFEHXCw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.15.0
-! TimeUpdated: 2022-04-08T11:30:36+00:00
+! Version: 2.1.15.2
+! TimeUpdated: 2022-04-08T13:02:10+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7302,6 +7302,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+consilium.europa.eu##.cookie-section
 mattermost.com##.module-gdpr-acceptance
 steambuy.com###sb-privacy-policy
 aecom.com###aecomCookieNotificationBar
@@ -15259,6 +15260,7 @@ privacy.lecker.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent
 privacy.madame.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent-v2")){var g=new MutationObserver(function(){setTimeout(function(){var b=document.querySelector('button.no-children[path="\[0,2,1\]"]');b&&b.click();},300);setTimeout(function(){var c=document.querySelector('div[title="Berechtigte Interessen"]'); c&&c.click();},300);setTimeout(function(){var d=document.querySelectorAll('label[aria-checked="true"] > .off'); d.forEach(function(d){d.click();});},800); var f=document.querySelector('button.no-children[path="\[0,3,0\]"]'); setTimeout(function(){f&&f.click();},1000);});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},3E4)}});
 consent.gamingbible.co.uk,consent.unilad.co.uk#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var g=new MutationObserver(function(){var b=document.querySelector('button[title*="Accept" i]');b&&(g.disconnect(),b.click())});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
 !
+jysk.nl#%#(function(){if(!document.cookie.includes("CookieInformationConsent=")){var a=encodeURIComponent('{"website_uuid":"","timestamp":"","consent_url":"","consent_website":"jysk.nl","consent_domain":"jysk.nl","user_uid":"","consents_approved":["cookie_cat_necessary","cookie_cat_functional","cookie_cat_statistic"],"consents_denied":[],"user_agent":""}');document.cookie="CookieInformationConsent="+a+"; path=/;"}})();
 apexlegendsstatus.com#%#AG_onLoad(function() {var b=new MutationObserver(function() {var c=document.querySelector('button#c-p-bn'); c&&(b.disconnect(),c.click()) });b.observe(document, {childList: !0,subtree: !0});setTimeout(function() {b.disconnect()}, 1E4)});
 filmzie.com#%#//scriptlet('set-local-storage-item', 'cookiesAccepted', 'true')
 cmp.dpgmedia.nl#%#AG_onLoad(function() { setTimeout(function() { if(window.location.href.indexOf("consent") != -1){ var el = document.querySelector('button[title="Akkoord"]'); if(el) el.click(); }}, 300); });
@@ -16210,6 +16212,10 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/uBlockOrigin/uAssets/issues/12646
+@@||policy.cookieinformation.com/uc.js$domain=jysk.nl
+@@||policy.app.cookieinformation.com/cookiesharingiframe.html$domain=jysk.nl
+@@||policy.app.cookieinformation.com/*/jysk.nl/nl.js$domain=jysk.nl
 ! https://github.com/AdguardTeam/AdguardFilters/issues/114592
 @@/dist/cookieconsent.js$domain=apexlegendsstatus.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/114696
@@ -18976,7 +18982,6 @@ retty.me##.app-store-banner-wrap
 retty.me##.js-app-store-banner
 hatalike.jp##.hdr_app_wrap
 gu-global.com###smbn_app
-clubdam.com##.bnr-app
 m.kuku.lu#?#table[width="100%"] > tbody > tr > td:has(> a[href^="https://play.google.com"])
 ekitan.com##.header-app-invitation
 tapple.me#?##gatsby-focus-wrapper > div.py-10.pl-4.pr-16:has(> div > div > a.w-full[href^="https://go.onelink.me"])
@@ -20154,6 +20159,8 @@ ebay.*###gh-appBanner
 !
 !
 !+ NOT_OPTIMIZED
+clubdam.com##.bnr-app
+!+ NOT_OPTIMIZED
 ameblo.jp#$?#.skinBody2.skinTextColor > div[class^="_"][role="navigation"] { top: 0!important; }
 !+ NOT_OPTIMIZED
 ameblo.jp#?#aside[class^="_"] > a[class^="_"][href$="app-download-upper"]:upward(1)
@@ -20638,6 +20645,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+techacademy.jp##.pum-overlay[data-popmake*="640px"]
 hindustantimes.com##.toolTip
 hindustantimes.com##.blackOverlay
 ||ok.ru/res/js/app/AuthLoginPopup_
@@ -27914,6 +27922,8 @@ experts-exchange.com##.ctaSolutionStickyWrapper
 theguardian.com##.contributions__adblock
 ||contributions.guardianapis.com^
 !
+g2a.com##.exit-modal--image > a[title="Weekly Sale"]
+g2a.com##.exit-modal--background
 opennet.ru##div[style="background-color: #E9EAD6; width:100%; height: 61px;"]
 ubackup.com#?#body > div.am-promotion-entry
 feebee.com.tw###promote_ad
