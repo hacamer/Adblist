@@ -1,4 +1,5 @@
 ! EasyList
+||gooddaywith-captcha.top^$all
 ||ytieylhxjlectp.com^
 ||desktopmessages.com^$all
 ||dropkickmedia.com^$third-party
@@ -7488,7 +7489,8 @@ komikcast.com##+js(abort-current-script, document.attachEvent, window.open)
 afreesms.com##+js(window.open-defuser)
 pastehouse.com##+js(abort-current-script, document.write, Banner)
 vmovee.watch##+js(remove-attr, href, a[href]#clickfakeplayer)
-streamlare.com##+js(abort-on-property-read, StreamlarePop)
+streamlare.com##+js(window.open-defuser, 1)
+streamlare.com##+js(abort-on-property-read, bPop)
 slreamplay.cc##+js(window.open-defuser)
 unblocked.id##+js(abort-current-script, document.write, VPN)
 welovestream.xyz##+js(window.open-defuser)
@@ -11207,6 +11209,7 @@ businessinsider.com##.targeted-recommended
 highstream.tv##.cover
 msn.com##.secondary > li[data-m*='NativeAdHeadlineItemViewModel']
 eurosport.*,play.typeracer.com,slant.co##.AdContainer
+eurogamer.*##div[class^="commercial-slot-"]
 eurogamer.*##.desktop_mpu
 eurogamer.*##.desktop-mpu
 eurogamer.*##.homepage-billboard-container
@@ -12102,6 +12105,7 @@ msn.com#@#[src*="data:"]
 @@||read.amazon.com^$elemhide
 @@||reports.adguard.com/*.json
 !#########################################
+$popup,third-party,domain=streamlare.com,badfilter
 ||suzihaza.com^$badfilter
 ||a2zapk.com^$script,third-party,badfilter
 listcrawler.eu#@#.listad

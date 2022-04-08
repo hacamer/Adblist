@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: Vbo0myGgZWb2+gHqRmTl7Q
+! Checksum: HcRn/BgrOj2nMjPkd0GXvw
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202204081510
-! Last Modified: 2022年04月08日 15:10
+! Version: 202204081612
+! Last Modified: 2022年04月08日 16:12
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 84094
+! Total count: 84098
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -6799,6 +6799,7 @@ $popup,third-party,domain=geoip.redirect-ads.com,badfilter
 $popup,third-party,domain=mixdrop.*,badfilter
 $popup,third-party,domain=myflixer.to,badfilter
 $popup,third-party,domain=sbplay2.com,badfilter
+$popup,third-party,domain=streamlare.com,badfilter
 $popup,third-party,domain=videovard.sx,badfilter
 $popup,third-party,domain=webkaka.com
 $script,stylesheet,subdocument,third-party,xmlhttprequest,domain=cocomanga.com|cocomanhua.com
@@ -27588,6 +27589,7 @@ euractiv.com##.ea-gat-slot-wrapper
 eurogamer.*##.desktop-mpu
 eurogamer.*##.desktop_mpu
 eurogamer.*##.homepage-billboard-container
+eurogamer.*##div[class^="commercial-slot-"]
 eurogamer.net##.desktop-mpu
 eurogamer.net,eurogamer.de##.game-spotlight-advertising
 eurogamer.pl##.mpu
@@ -37408,7 +37410,8 @@ streaming-foot.info,stream-foot.tv,foot-live.info,total-sport.tv##[id^="timer"]
 streamingcommunity.net#$#abort-current-inline-script String.fromCharCode /btoa|break/
 streaminporn.com,gaypornmasters.com#@##adsense
 streamjav.net#@#.adsBox
-streamlare.com##+js(abort-on-property-read, StreamlarePop)
+streamlare.com##+js(abort-on-property-read, bPop)
+streamlare.com##+js(window.open-defuser, 1)
 streamlive.to###adblockplus
 streamm4u.club##+js(window.open-defuser)
 streamon.to##+js(no-setTimeout-if, nextStep())
@@ -57083,6 +57086,7 @@ zznews.cn##.ad:not([style])
 ||goodcache.ml^
 ||goodcome.com.tw/block/ad/rndtopad.php
 ||goodcounter.org^$third-party
+||gooddaywith-captcha.top^$all
 ||goodfon.com/stat/
 ||goodgamesmanship.com^
 ||goodgoodluck.cn^
