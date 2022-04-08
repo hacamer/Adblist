@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: x3ZI5iOs5R5XBDNmMYUjog
+! Checksum: GpK8JisbZCpbVKqGUeThRg
 ! Title: My AdFilters Lite
 ! Expires: 1 hours (Sometimes updates are delayed)
-! Version: 202204081612
-! Last Modified: 2022年04月08日 16:12
+! Version: 202204081710
+! Last Modified: 2022年04月08日 17:10
 ! Homepage: https://github.com/hacamer/Adblist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、Adgk、大萌主的规则
 ! 并补充了贴吧过滤规则，感谢各位的分享！
 ! 如有任何疑问、意见或建议，请反馈给：杏梢
 !
-! Total count: 37004
+! Total count: 37009
 ###Ad_windows
 ###ChapterView > .slide-baidu
 ###Layeraa1
@@ -69,6 +69,7 @@
 ###adleft
 ###adright
 ###adrights14
+###ads.row
 ###ads_c_tpc
 ###ads_in_video
 ###ads_inner
@@ -93,12 +94,14 @@
 ###asdw2 + img
 ###asdw3
 ###asdw3 + img + :not(div)
+###aside_cat_ad_bottom
 ###asx_text
 ###avshow
 ###bannerAd
 ###bd-hl-content
 ###bgad
 ###bgframe[style^="position: fixed;"]
+###bl_mobile_float
 ###body > #left-promotion
 ###body > #right-promotion
 ###bottom-ads-container
@@ -112,7 +115,10 @@
 ###bottombanner
 ###breadCrumb + .c + .t[style="margin-top:8px"]
 ###breadCrumb + .t[style="margin-top:8px"]
+###cat_intro_first_ad
+###cat_intro_second_ad
 ###chaptername + div > div[style="padding:10px;border-radius:10px;background-color:green;"]
+###comic_reader + #adDisabledBtn
 ###comiis_xizi_gg02
 ###container > .item.title_normal
 ###container > .item.title_top
@@ -521,6 +527,7 @@
 ##.afc_close_content,.cfa_popup,[href='http://kst6632.com/']
 ##.afc_popup
 ##.anniversary-wrap-2018
+##.appdownload_ad + .hider
 ##.appguide-wrap[onclick*="bcebos.com"]
 ##.area_ad
 ##.artad
@@ -7183,10 +7190,6 @@ bootcss.com##.bs-docs-sidebar a[href^="http://click.aliyun.com/"]
 boquge.com##.gad2,.adsbygoogle
 boroboromi.com##.mod-ad
 bouweenpc.nl###header-banner
-boyboy.cc###adDisabledBtn
-boyboy.cc###bl_mobile_float
-boyboy.cc###cat_intro_first_ad
-boyboy.cc###cat_intro_second_ad
 boylove.cc##.reader-home-swiper
 boyoushe.com##a[href^="http"]:not([href*=".boyoushe"]) > .j-lazy
 bozhou.cn##.bannerad
@@ -21210,6 +21213,7 @@ zznews.cn##.ad:not([style])
 ||castplatform.com^
 ||catbox.moe/bb5wdv.jpg
 ||cathaycentury.com^
+||catherinebeverly.com^
 ||caupdcloud.cn^
 ||cav.cavuc.com^
 ||cb.baidu.com^
@@ -22983,6 +22987,7 @@ zznews.cn##.ad:not([style])
 ||dsp.com^
 ||dsp.lenovo.com.cn^*&clientType=api|
 ||dspdy.cn^
+||dsqzk.cn^
 ||dss8l0f.cn^
 ||dssdr.top^
 ||dsxdn.com^

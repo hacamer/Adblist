@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: c0j3l6VTLmlIjdQ0QtQ6cg
+! Checksum: 6wQbvi6PbZDVWC06nDbruw
 ! Title: AdFilters Lite
 ! Expires: 1 hours (Sometimes updates are delayed)
-! Version: 202204081612
-! Last Modified: 2022年04月08日 16:12
+! Version: 202204081710
+! Last Modified: 2022年04月08日 17:10
 ! Homepage: https://github.com/hacamer/Adblist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、Adgk、大萌主的规则
 ! 仅合并并去重规则，未做其余任何处理
 ! 如有任何疑问、意见或建议，请反馈给：杏梢
 !
-! Total count: 21099
+! Total count: 21106
 ###ChapterView > .slide-baidu
 ###SOHU_MAIN > .module-cmt-float-bar
 ###TopAdvert
@@ -49,6 +49,7 @@
 ###adjs_id
 ###adleft
 ###adright
+###ads.row
 ###ads_c_tpc
 ###ads_in_video
 ###ads_inner
@@ -68,12 +69,14 @@
 ###asdw
 ###asdw2
 ###asdw2 + img
+###aside_cat_ad_bottom
 ###asx_text
 ###avshow
 ###bannerAd
 ###bd-hl-content
 ###bgad
 ###bgframe[style^="position: fixed;"]
+###bl_mobile_float
 ###bottom-ads-container
 ###bottom-gg1
 ###bottomAD
@@ -83,6 +86,9 @@
 ###bottom_qr_code
 ###bottomad
 ###bottombanner
+###cat_intro_first_ad
+###cat_intro_second_ad
+###comic_reader + #adDisabledBtn
 ###container > .item.title_normal
 ###container > .wrapper > .fl
 ###container > a.block
@@ -346,6 +352,7 @@
 ##.advertising_lightbox
 ##.afc_close_content,.cfa_popup,[href='http://kst6632.com/']
 ##.afc_popup
+##.appdownload_ad + .hider
 ##.appguide-wrap[onclick*="bcebos.com"]
 ##.area_ad
 ##.article_ad
@@ -4487,8 +4494,6 @@ boosj.com##[id^="ad_"]
 boquge.com##.gad2,.adsbygoogle
 boroboromi.com##.mod-ad
 bouweenpc.nl###header-banner
-boyboy.cc###cat_intro_first_ad
-boyboy.cc###cat_intro_second_ad
 boyoushe.com##a[href^="http"]:not([href*=".boyoushe"]) > .j-lazy
 bozhou.cn##.bannerad
 bqg5200.com##.content_ad,.ad250left
@@ -12799,6 +12804,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||casee.cn^
 ||castplatform.com^
 ||cathaycentury.com^
+||catherinebeverly.com^
 ||cav.cavuc.com^
 ||cb.baidu.com^
 ||cb.lomark.cn^
@@ -13814,6 +13820,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||dsp.brand.sogo.com^
 ||dsp.com^
 ||dsp.lenovo.com.cn^*&clientType=api|
+||dsqzk.cn^
 ||dssdr.top^
 ||dsxdn.com^
 ||dsxgg.com^
