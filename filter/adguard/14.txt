@@ -1,8 +1,8 @@
-! Checksum: rDot/fJJuuIlrmIUgnAtTg
+! Checksum: qrtZxRYTk6Bl5yUHSb2Nug
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.15.11
-! TimeUpdated: 2022-04-09T11:30:32+00:00
+! Version: 2.1.15.12
+! TimeUpdated: 2022-04-10T08:30:33+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -25127,7 +25127,7 @@ com-magazin.de##w-div[role$="dialog"]
 !
 ! Twitter login popup
 ! https://github.com/AdguardTeam/AdguardFilters/issues/112718#issuecomment-1069965416
-twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion,twitter.com#$?#div[data-testid="sheetDialog"] div[role="button"] + div[role="button"]:upward(div[role="group"]) { display: none !important; }
+twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion,twitter.com#$?#div[data-testid="sheetDialog"] div[role="button"]:not([data-testid]) + div[role="button"]:not([data-testid]):upward(div[role="group"]) { display: none !important; }
 twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion,twitter.com#$?#html { overflow: auto !important; padding-right: 0 !important; }
 ! Yandex
 yandex.*##.desk-notif-card__card[aria-label="Реклама"]
