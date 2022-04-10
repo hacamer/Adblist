@@ -45,7 +45,10 @@ $lists = array(
 	'dmz' => 'https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt',
 	
 	// xinggsf
-	'xinggsf' => 'https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt'
+	'xinggsf' => 'https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt',
+	
+	// abppc
+	'abppc' +> 'https://raw.githubusercontent.com/hacamer/Adblist/master/adp-pc.txt'
 
 
 );
