@@ -24,13 +24,13 @@ $lists = array(
 	'EasyPrivacy3rdParty' => 'https://raw.githubusercontent.com/easylist/easylist/master/easyprivacy/easyprivacy_thirdparty.txt',
 
 	// EasyPrivacy CNAME
-	'EasyPrivacyCNAME' => 'https://raw.githubusercontent.com/easylist/easylist/master/easyprivacy/easyprivacy_specific_cname.txt'
+	'EasyPrivacyCNAME' => 'https://raw.githubusercontent.com/easylist/easylist/master/easyprivacy/easyprivacy_specific_cname.txt',
 
 	// EasyListChina
-	//'EasyListChina' => 'https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt'
+	'EasyListChina' => 'https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt',
 
 	// EasyPrivacy 
-	'EasyPrivacy' => 'https://easylist-downloads.adblockplus.org/easyprivacy.txt'
+	'EasyPrivacy' => 'https://easylist-downloads.adblockplus.org/easyprivacy.txt',
 	
 	// xinggsf
 	'xinggsf' => 'https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt'
