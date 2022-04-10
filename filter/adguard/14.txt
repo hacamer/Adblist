@@ -1,8 +1,8 @@
-! Checksum: qrtZxRYTk6Bl5yUHSb2Nug
+! Checksum: asdbchDRXsdO7VmFF9bG3g
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.15.12
-! TimeUpdated: 2022-04-10T08:30:33+00:00
+! Version: 2.1.15.14
+! TimeUpdated: 2022-04-10T17:02:12+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -15804,7 +15804,7 @@ indy100.com#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent-v2"))
 pacesuite.com#%#//scriptlet("remove-class", "cookies-requested", "body")
 kaufhold-bau.com#%#AG_onLoad(() => {if (!document.cookie.includes('edithConsent')) { window.COOKIE?.acceptAll(); }});
 echa.europa.eu#%#//scriptlet('set-cookie', 'disclaimer', 'true')
-hummelsport.se,hummel.pl,hummel.co.uk,hummel.fr,hummel.dk,hummelsport.de,hummel.net#%#//scriptlet('set-cookie', 'CookieInformationConsent', '1')
+elkjop.no,hummelsport.se,hummel.pl,hummel.co.uk,hummel.fr,hummel.dk,hummelsport.de,hummel.net#%#//scriptlet('set-cookie', 'CookieInformationConsent', '1')
 fega-schmitt.de#%#//scriptlet('set-cookie', 'cookieWarningSeen', 'true')
 wikia.org,gamepedia.com,fandom.com#%#document.cookie = "tracking-opt-in-status=rejected";
 ~www.expo-ip.com,expo-ip.com#%#//scriptlet('set-cookie', 'cookies_dialog', 'true')
@@ -16216,6 +16216,9 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/uBlockOrigin/uAssets/issues/12680
+elkjop.no#@##CookieConsent
+@@||policy.app.cookieinformation.com/*/elkjop.no/nb.js$domain=elkjop.no
 ! https://github.com/uBlockOrigin/uAssets/issues/12646
 @@||policy.cookieinformation.com/uc.js$domain=jysk.nl
 @@||policy.app.cookieinformation.com/cookiesharingiframe.html$domain=jysk.nl
@@ -18825,6 +18828,8 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+spacemarket.com##div[class^="AppInstallBannerPresenter__StyledBannerContainer"]
+nipponrentacar.co.jp##.appArea
 mc.163.com##.down-box
 cookpad.com##.appinstall
 weathernews.jp###link_banner > ul.small > li.web
@@ -20653,6 +20658,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+nipponrentacar.co.jp##.noticeArea
 techacademy.jp##.pum-overlay[data-popmake*="640px"]
 techcrunch.com##.announcement-banner[style="position: fixed;"]
 hindustantimes.com##.toolTip
