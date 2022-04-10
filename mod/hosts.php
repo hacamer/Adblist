@@ -48,7 +48,7 @@ $lists = array(
 	'xinggsf' => 'https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt',
 	
 	// abppc
-	'abppc' +> 'https://raw.githubusercontent.com/hacamer/Adblist/master/adp-pc.txt'
+	'abppc' => 'https://raw.githubusercontent.com/hacamer/Adblist/master/adp-pc.txt'
 
 
 );
