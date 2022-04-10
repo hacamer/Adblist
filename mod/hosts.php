@@ -32,6 +32,18 @@ $lists = array(
 	// EasyPrivacy 
 	'EasyPrivacy' => 'https://easylist-downloads.adblockplus.org/easyprivacy.txt',
 	
+	// 
+	'fanboy-annoyance' => 'https://easylist.to/easylist/fanboy-annoyance.txt',
+	
+	//
+	'adguard-basic' => 'https://filters.adtidy.org/windows/filters/2.txt',
+	
+	//
+	'adguard-chinese' => 'https://filters.adtidy.org/windows/filters/224.txt',
+	
+	//
+	'dmz' => 'https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt',
+	
 	// xinggsf
 	'xinggsf' => 'https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt'
 
