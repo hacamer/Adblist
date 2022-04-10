@@ -26,12 +26,13 @@ $lists = array(
 	// EasyPrivacy CNAME
 	'EasyPrivacyCNAME' => 'https://raw.githubusercontent.com/easylist/easylist/master/easyprivacy/easyprivacy_specific_cname.txt'
 
-	// Easychina
+	// EasyListChina
 	'EasyListChina' => 'https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt'
+
 	// EasyPrivacy 
 	'EasyPrivacy' => 'https://easylist-downloads.adblockplus.org/easyprivacy.txt'
 	
-	// EasyP
+	// xinggsf
 	'xinggsf' => 'https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt'
 
 
