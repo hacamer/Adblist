@@ -1,8 +1,8 @@
-! Checksum: lqCFu/HGwg3RurVjHpWvHA
+! Checksum: A7Mg4kkkRmuQ+xP9CuuuWQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.15.30
-! TimeUpdated: 2022-04-11T18:30:34+00:00
+! Version: 2.1.15.31
+! TimeUpdated: 2022-04-11T19:30:33+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -28844,6 +28844,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+informburo.kz##.article-social-block
 primpress.ru##.b-channels
 primpress.ru##.b-socials
 carwale.com#?#section > div > div > button:contains(Subscribe Now):upward(1)
@@ -32433,6 +32434,8 @@ magazine.skyeng.ru##.tg-banner
 !######### CSS tweaks #########
 !##############################
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/115284
+itigic.com#$#body { padding-bottom: 0!important; }
 ! https://github.com/uBlockOrigin/uAssets/issues/12468
 shavetape.*,adblockstrtape.link,adblockstrtech.link,adblockstreamtape.*,stape.fun,strcloud.link,streamtape.*#%#//scriptlet("adjust-setTimeout", "counter", "", "0.02")
 ! jardima.com timer
