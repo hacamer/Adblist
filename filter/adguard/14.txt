@@ -1,8 +1,8 @@
-! Checksum: GjBBaP543LgBnXjQha81zQ
+! Checksum: DAAG0gRpbDyrJXDedLr4kg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.15.15
-! TimeUpdated: 2022-04-11T06:30:44+00:00
+! Version: 2.1.15.17
+! TimeUpdated: 2022-04-11T08:30:36+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -92,6 +92,9 @@
 ! https://github.com/AdguardTeam/AdguardFilters/issues/76987
 youtube.com#%#AG_onLoad(function() {var a = new MutationObserver(function() {if (document.querySelector('yt-upsell-dialog-renderer')) {var b = document.querySelector('.ytd-popup-container[popup-size="UPSELL_DIALOG_RENDERER_POPUP_SIZE_LARGE"] #dismiss-button:not(.dismissed), .upsell-dialog-lightbox .upsell-dialog-dismiss-button button:not(.dismissed)');setTimeout(function() {b&&b.click()}, 3E2)}});a.observe(document, {childList: !0,subtree: !0});setTimeout(function() {a.disconnect()}, 3E3)});
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/114333#issuecomment-1093685116
+niusnews.com##div[class^="divLogin"]
+niusnews.com##.divMPop
 ! https://github.com/AdguardTeam/AdguardFilters/issues/114967
 auto.ru##.ListingCars__c1Promo
 ! https://github.com/AdguardTeam/AdguardFilters/commit/cc85b4d94882cc02a9a7fce4580730cdd5af15c5#r70606842
@@ -7304,6 +7307,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+movavi.ru###toppopupgdpr
 news.acer.com##div[class^="CookieConsentBar_"]
 kddi.com##.add-get-cookie
 consilium.europa.eu##.cookie-section
@@ -20520,6 +20524,7 @@ newzit.com#$#div[class*="hasSmartBanner_"] { padding-top: 0 !important; }
 !
 ! Unhide for Android CB if top padding cannot be removed
 !
+niusnews.com##div[id^="evtBot"]
 dtf.ru,vc.ru,tjournal.ru##.mobile-app-redirect
 cosme.net##.ContentBanner
 nana-music.com##.heading-banner
@@ -25743,6 +25748,7 @@ abendzeitung-muenchen.de###webpush-app
 .name/?pus=$script,third-party
 .site/?pus=$script,third-party
 !
+||calculator.codes^$third-party
 ||swaptrap.live^
 ||pushpro.co.za^$third-party
 /storefrontmarketing/webpush/webpush.client.
@@ -28804,6 +28810,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 !
 news.acer.com##div[class^="SubscribeForm_"]
 timesnownews.com##div[class^="ArticleShow-googleFollow-"]
+vivaldi.com#?#.blocks > div.row > div.column:has(> div.color6 h2:contains(Будьте в курсе))
 epravda.com.ua#?#.post__text > blockquote:has(> p > a[href="https://t.me/epravda"])
 life.pravda.com.ua##.content-block-column > div.img-wrap > div[style="text-align:center; padding-top: 0px;"]
 pravda.com.ua##.unit_sp_place
@@ -32736,6 +32743,10 @@ newsweek.com##iframe[src="http://sns.europe.newsweek.com/newsletter?popup=1"]
 !##############################
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/113960
+tinyurl.is#%#//scriptlet("adjust-setInterval", "skip-btn", "*", "0.02")
+tinyurl.is#%#//scriptlet('remove-class', 'disabled', 'a[id^="newskip-"].disabled')
+tinyurl.is#%#AG_onLoad(function(){var a=document.querySelector("a[id^='newskip-'][href^='http']");a&&a.click()});
 ! https://github.com/AdguardTeam/AdguardFilters/issues/114874
 usanewstoday.club,earnme.club#%#//scriptlet("adjust-setInterval", "tp-", "*", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/114665
