@@ -1,8 +1,8 @@
-! Checksum: VvlB0MQATrbd5VwiJbteuw
+! Checksum: 9FL3HxDRuFpGfeHcBJFIeA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.15.25
-! TimeUpdated: 2022-04-11T14:31:51+00:00
+! Version: 2.1.15.27
+! TimeUpdated: 2022-04-11T16:30:37+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -16231,6 +16231,8 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/115177
+@@||cdn.cookielaw.org/scripttemplates/otSDKStub.js$domain=all.accor.com
 ! https://github.com/easylist/easylist/issues/11607
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115140
 @@||sdk.privacy-center.org^$domain=sudinfo.be
@@ -18849,6 +18851,8 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+wetransfer.com##.AppDownloadDrawer
+wetransfer.com##.downloader__collect-header
 trovo.live##.app-sidebar
 trovo.live#%#//scriptlet('set-session-storage-item', 'download-dialog-closed', '1')
 m.momoshop.com.tw###smartbanner
@@ -19939,7 +19943,7 @@ bleacherreport.com##.notification.smart_banner
 bleacherreport.com##.notification.mobile_interstitial
 givemesport.com##.gms-notification-app
 m.baby.ru##.happy_mama-banner
-malatyaguncel.com,victorysportsnews.com###app-banner
+yenihaberden.com,malatyaguncel.com,victorysportsnews.com###app-banner
 filejoker.net,sport.de##a[href^="https://itunes.apple.com"][href*="app"]
 filejoker.net,sport.de##a[href^="https://play.google.com"]
 kicker.de###ovAppBar
@@ -20689,6 +20693,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+v8.1c.ru###modalChoosePartner
 popdaily.com.tw##.buoy
 popdaily.com.tw##div[class^="FixedRecommendedArticleCard__"]
 ||buy.tinypass.com/checkout/template/cacheableShow?$domain=journaldemontreal.com
