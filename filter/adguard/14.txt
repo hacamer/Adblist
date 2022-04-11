@@ -1,8 +1,8 @@
-! Checksum: ODf782TRhSecrjYyoAaU5g
+! Checksum: VvlB0MQATrbd5VwiJbteuw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.15.24
-! TimeUpdated: 2022-04-11T13:34:50+00:00
+! Version: 2.1.15.25
+! TimeUpdated: 2022-04-11T14:31:51+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -3162,6 +3162,7 @@ hgtv.com#@#.showads
 !
 !
 !
+hitfm.ru##.wrap-ad-blocked-message
 howjsay.com#%#//scriptlet("prevent-setTimeout", "adsbygoogle")
 drnasserelbatal.com#%#//scriptlet("set-constant", "canRunAds", "true")
 @@||drnasserelbatal.com/assets/js/prebid-ads.js
@@ -7308,6 +7309,8 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+ftx.com#%#//scriptlet('set-local-storage-item', 'rejectAllCookies', 'true')
+coda.io#?#div[data-layer-id-3] > div > span:contains(Got it):upward(1)
 nmsu.edu#$##cookieModal { display: none !important; }
 nmsu.edu#$#body.modal-open { overflow: auto !important; padding-right: 0 !important; }
 bitso.com##.jUXBqh
@@ -9442,7 +9445,7 @@ armedangels.com#$#.cookie-permission-modal { display: none !important; }
 armedangels.com#$#body { overflow: auto !important; }
 armedangels.com#$#html { overflow: auto !important; }
 ||bookwalker.jp/shared/gdpr/
-daicel.com##.js-gdpr-popup
+jpfbs.com,daicel.com##.js-gdpr-popup
 weightwatchers.de###bannerWrapper
 hallhuber.com#$#body { overflow-y: visible !important; }
 hallhuber.com#$#.cookie-box-modal { display: none !important; }
