@@ -1,8 +1,8 @@
-! Checksum: CF2kkkQmVAsECH0qXFkJ3g
+! Checksum: NKk1XaKx+aSxHoSyj7M9Pw
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.37.92
-! TimeUpdated: 2022-04-10T17:31:18+00:00
+! Version: 2.0.37.93
+! TimeUpdated: 2022-04-11T06:31:29+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -84,6 +84,8 @@
 ! Bad: example.org###rek (should be in specific.txt)
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/pull/115192
+gmarket.co.kr#%#//scriptlet("set-constant", "pvprofiler.sendEvt", "noopFunc")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/114901
 popin.cc#%#//scriptlet('set-local-storage-item', '_ss_pp_id', '')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/114227
@@ -5115,6 +5117,7 @@ nethunt.com/api/v1/track/email/$image
 ! Disabled in DNS filter
 ||telemetry.mozilla.org^
 !
+||montelena-rcv.gmarket.co.kr^
 ||alxc.addlv.smt.docomo.ne.jp^
 ||pa.pinpoll.com^
 ||d2wu036mkcz52n.cloudfront.net^
@@ -20646,6 +20649,7 @@ _tracking.php?b=
 /analytics.js$domain=bataryapil.com|journey.com.tr|freexcafe.com|rusvideos.tv|nakubani.ru|lun.com|songsara.net|partifabrik.com|newsmax.com|bolgehastanesi.com|ewtc.de
 !
 ||delamer.jp/sites/cremedelamer2/themes/cremedelamer2_base/js/shared/analytics.js
+||utsgw.gmarket.co.kr/vi/send
 ||daxab.com/cdn-cgi/beacon/
 bizjournals.com##.c1-ad-sticky
 ||player.filmizle.vip/js/video.counters.2.js
