@@ -1,8 +1,8 @@
-! Checksum: uqYrbdi1pnVaKfFetYmWPw
+! Checksum: ODf782TRhSecrjYyoAaU5g
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.15.23
-! TimeUpdated: 2022-04-11T13:08:29+00:00
+! Version: 2.1.15.24
+! TimeUpdated: 2022-04-11T13:34:50+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7308,6 +7308,8 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+nmsu.edu#$##cookieModal { display: none !important; }
+nmsu.edu#$#body.modal-open { overflow: auto !important; padding-right: 0 !important; }
 bitso.com##.jUXBqh
 movavi.ru###toppopupgdpr
 news.acer.com##div[class^="CookieConsentBar_"]
@@ -16226,6 +16228,7 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/easylist/easylist/issues/11607
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115140
 @@||sdk.privacy-center.org^$domain=sudinfo.be
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115003
