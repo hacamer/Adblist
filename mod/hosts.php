@@ -193,8 +193,5 @@ foreach ( $lists as $name => $list ) {
 	}
 	// Output the file.
 	file_put_contents( "{$name}.txt", $hosts );
-        $line = count(file('{$name}.txt'))
-	$fxname = '{$name}.txt';
-	file_put_contents($fxname,"$line\n".file_get_contents($fxname));
 	echo "{$name} converted to HOSTS file - see {$name}.txt\n";
 }
