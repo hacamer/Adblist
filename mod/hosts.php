@@ -191,7 +191,9 @@ foreach ( $lists as $name => $list ) {
 		$hosts .= implode( "\n", $domains );
 		unset( $domains );
 	}
-
+        $src_content = file_get_contents($hosts);
+	$line_count += substr_count($src_content, "\n");
+	$src_content = str_replace("!Total lines: 00000\n", '!Total lines: ' . ($line_count - 6) . "\n" . $src_content);
 	// Output the file.
 	file_put_contents( "{$name}.txt", $hosts );
 
