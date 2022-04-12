@@ -1,8 +1,8 @@
-! Checksum: JpUg72e9C5NKkeZNq6vLcQ
+! Checksum: Ad0SYUZxNUVcbO9WclTQpA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.15.38
-! TimeUpdated: 2022-04-12T10:30:35+00:00
+! Version: 2.1.15.40
+! TimeUpdated: 2022-04-12T12:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -92,6 +92,11 @@
 ! https://github.com/AdguardTeam/AdguardFilters/issues/76987
 youtube.com#%#AG_onLoad(function() {var a = new MutationObserver(function() {if (document.querySelector('yt-upsell-dialog-renderer')) {var b = document.querySelector('.ytd-popup-container[popup-size="UPSELL_DIALOG_RENDERER_POPUP_SIZE_LARGE"] #dismiss-button:not(.dismissed), .upsell-dialog-lightbox .upsell-dialog-dismiss-button button:not(.dismissed)');setTimeout(function() {b&&b.click()}, 3E2)}});a.observe(document, {childList: !0,subtree: !0});setTimeout(function() {a.disconnect()}, 3E3)});
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/115178
+eurosport.tvn24.pl#%#//scriptlet('prevent-requestAnimationFrame', 'toggleFloatingClass')
+! https://github.com/AdguardTeam/AdguardFilters/issues/115052
+||img.weblogssl.com/*/js/dailymotion-$domain=xataka.com
+xataka.com##.base-asset-video
 ! https://github.com/AdguardTeam/AdguardFilters/issues/114333#issuecomment-1093685116
 niusnews.com##div[class^="divLogin"]
 niusnews.com##.divMPop
@@ -7309,6 +7314,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+magicland.it##.CookiePolicyManager-Banner
 inconcertcc.com#$#html.gdpr-cookie-notice-loaded { overflow: auto !important; }
 inconcertcc.com#$#.gdpr-cookie-overlay:not(#style_important) { display: none !important; }
 coda.io#?#div[data-layer-id-3] > div > span:contains(Got it):upward(1)
@@ -8555,7 +8561,7 @@ nordicnest.de#?##container > div[class]:has(> div[class] > div[class] > div[clas
 ||stihl.de/etc.clientlibs/stihl-frontend/clientlibs/components/content/cookie/cookielayer/
 petz.com.br##.policy-warning-banner
 kicker.de#$#body { overflow: auto !important; }
-||cdn.consentmanager.net^$domain=kundendienst-info.de|baunetz.de|rabe-bike.de|heinze.de|ais-online.de|dasoertliche.de|reno.de|walbusch.de|mathe-lexikon.at|katzen-forum.net|deutsche-apotheker-zeitung.de|brandible.de|my.games|vergleich.org|finanztip.de|baunetzwissen.de|trusted.de|universal-music.de|web2.cylex.de|mey-edlich.de|schuhe.de|qiez.de|benz24.de|hervis.de|avena.de|heimwerker.de|bauemotion.de|nw.de|kicker.de|herold.at|kalledaskabel.de|bussgeldkatalog.org|plantopedia.de
+||cdn.consentmanager.net^$domain=hausgarten.net|kundendienst-info.de|baunetz.de|rabe-bike.de|heinze.de|ais-online.de|dasoertliche.de|reno.de|walbusch.de|mathe-lexikon.at|katzen-forum.net|deutsche-apotheker-zeitung.de|brandible.de|my.games|vergleich.org|finanztip.de|baunetzwissen.de|trusted.de|universal-music.de|web2.cylex.de|mey-edlich.de|schuhe.de|qiez.de|benz24.de|hervis.de|avena.de|heimwerker.de|bauemotion.de|nw.de|kicker.de|herold.at|kalledaskabel.de|bussgeldkatalog.org|plantopedia.de
 mod.io###achtung-overlay
 bringmeister.de##div[data-testid="cookiePopup"]
 planetkey.de##.survey.alert-box
@@ -18855,6 +18861,10 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+weather.yahoo.co.jp##.mdStickyFooter
+weather.yahoo.co.jp##a[href^="https://app.adjust.com/"]
+weather.yahoo.co.jp##.doubleImage_cardBetween > div[data-doubleimage="short"]
+rapidgator.net##a[href="https://play.google.com/store/apps/details?id=net.rapidgator"]
 xn--pckua2a7gp15o89zb.com##.p-balloon_bm
 girlswalker.com##.gw-header-app
 shingakunet.com###kikakuKomaArea > div[style="margin:20px 0 0 0;"]
@@ -20702,6 +20712,8 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 !
 softbank.jp##.mbox-banner
 shingakunet.com##.l-footerFix
+businesstoday.in##.bottomSliderSwipe
+besthealthmag.ca#%#//scriptlet('remove-class', 'jw-flag-floating', '.jwplayer.jw-flag-floating')
 geo-online.co.jp###balloonWrapper
 v8.1c.ru###modalChoosePartner
 popdaily.com.tw##.buoy
@@ -28857,13 +28869,17 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+magicland.it##.PopupNewsletter
 informburo.kz##.article-social-block
+businesstoday.in##.newsltter-iframe
 primpress.ru##.b-channels
 primpress.ru##.b-socials
+bustle.com#?#aside[class] > div > div[class] > div:contains(newsletter):upward(1)
 carwale.com#?#section > div > div > button:contains(Subscribe Now):upward(1)
 womenforwomen.org##.webform-submission-newsletter-signup-form-add-form
 danamon.co.id##.form-dcwcoid
 danamon.co.id##.dcwcoid-newsletter
+besthealthmag.ca###cmu_right_rail_widget-3
 mashable.com##div[data-ga-category="newsletters"]
 cnews.ru##.notification
 news.acer.com##div[class^="SubscribeForm_"]
