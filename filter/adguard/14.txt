@@ -1,8 +1,8 @@
-! Checksum: 4SBb43DQwBuTjCilGO1xoQ
+! Checksum: h/iK1fmlL7mvpoG7rKslYQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.15.43
-! TimeUpdated: 2022-04-12T15:30:38+00:00
+! Version: 2.1.15.44
+! TimeUpdated: 2022-04-12T16:30:38+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -20710,6 +20710,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+oneesports.vn#%#//scriptlet('prevent-setTimeout', 'userVisited')
 ||askanydifference.com/beardeddragon/iguana.js
 icotto.jp##.c-instagram-balloon
 softbank.jp##.mbox-banner
@@ -28872,6 +28873,9 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+manomano.de#%#(function() { try { if ('undefined' != typeof localStorage) {var date = new Date(); window.localStorage.setItem("newsletter_displayed_timestamp", date.getTime()); } } catch (ex) {} })();
+oneesports.vn###oes-dedicated-article-card
+oneesports.vn##.oes-hbs-sticky-bar
 magicland.it##.PopupNewsletter
 informburo.kz##.article-social-block
 businesstoday.in##.newsltter-iframe
