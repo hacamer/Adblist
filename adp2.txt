@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: CLgd64JRaAQ7IlSdIOdT+w
+! Checksum: RfEKyDQvneeZkEUb9FJxlA
 ! Title: AdFilters Lite
 ! Expires: 1 hours (Sometimes updates are delayed)
-! Version: 202204122053
-! Last Modified: 2022年04月12日 20:53
+! Version: 202204122139
+! Last Modified: 2022年04月12日 21:39
 ! Homepage: https://github.com/hacamer/Adblist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、Adgk、大萌主的规则
 ! 仅合并并去重规则，未做其余任何处理
 ! 如有任何疑问、意见或建议，请反馈给：杏梢
 !
-! Total count: 22271
+! Total count: 22296
 ###ChapterView > .slide-baidu
 ###SOHU_MAIN > .module-cmt-float-bar
 ###TopAdvert
@@ -177,6 +177,7 @@
 ###player > #ADtip
 ###player-advertising
 ###playerAd
+###playerAdvLayer
 ###player_ad
 ###player_pause > .tip + a[target="_blank"]
 ###player_pause[style^="position"] > a[target="_blank"]
@@ -381,6 +382,7 @@
 ##.bottomSponsor
 ##.bottom_mengcheng_ad_wrap
 ##.bottomads + .leftd
+##.bottomd + .leftd
 ##.bottomd > .closebox2
 ##.box-ad
 ##.box_con[style="border-radius:10px;background-color:#ff0000;padding:15px;"]
@@ -459,6 +461,7 @@
 ##.jq_infoflow_ad_wrap
 ##.jqrp_infoflow_ad
 ##.js-cui-pt-item[data-qhb]
+##.jsv > .mobile-adv
 ##.kf_qycn_com_cckf_welcomebox
 ##.ksads
 ##.layui-row[style="border-radius:10px;background-color:#ff0000;padding:15px;margin:15px;"]
@@ -499,6 +502,7 @@
 ##.r-ad
 ##.r_ad
 ##.readmidad
+##.recommended-grids > .file[style="margin: 5px 2px 5px 2px;"]
 ##.right > .content > .ads
 ##.right-ad
 ##.rightAD
@@ -552,6 +556,7 @@
 ##.uk-width-1-1.adbox
 ##.video-holder > a[target="_blank"] > img[src*=".360buyimg.com"]
 ##.video-item-ads
+##.vodads
 ##.w_ad
 ##.widget-ad
 ##.widget-ads
@@ -583,6 +588,7 @@
 ##A[href*=".com/?Agent="]
 ##A[href='/xinghuo-20.html']
 ##A[href^="/e/public/ClickAd?adid="]
+##A[onclick^="gtag"] > .add
 ##DIV.sptable_do_not_remove f_one
 ##DIV.tpc_icon
 ##DIV[id*="BAIDU_SSP__wrapper_"]
@@ -875,6 +881,8 @@
 ##script[src="/static/base.js"] + #couplet
 ##script[src="/template/kuhei2/skin/base.js"] + #couplet
 ##span[title="neteasefooter"]
+##style + .topd
+##style + .topd + .bottomd
 ##table[style="border:#e8e8e8 1px solid;"] + div[style="margin-top:5px"] > table[style="width:100%;"][cellspacing="0"][cellpadding="1"][bordercolor="#22222"][border="1"]
 ##vg-pause-ads
 #.col-12 position-relative,[onclick*='www.l4lui.com'],.col-12.position-relative>b
@@ -2037,6 +2045,8 @@ $webrtc,domain=avgle.com
 /attachment/freeaddon_banner/*
 /avbebe/ad/*
 /avgle.com/avideos.
+/avple-images/ad.
+/avple-images/ad_
 /banma.
 /banner-ad.
 /banner/*$domain=leiphone.com
@@ -4693,6 +4703,8 @@ avcn18.com##div.header-bar
 avi.blog.jp##div[class="clearfix nav_list icon_list"]
 avidh.net##div#ad_right,div#ad_left,div.tupian
 avlang\d{2}\.info##[height="60"]
+avple.tv##.jss13
+avple.tv##.jss20
 avppx.com##.top
 avseesee.com##.ads,.ads-player,iframe[width="585"][height="260"]
 avsuggest.com##.overlay
@@ -4700,6 +4712,10 @@ avsuggest.com,qiaobutang.com##.overlay
 avtb579.com###content > div.col-xs.col-sm-12.col-md-10:last-child > div.panel.panel-default:nth-child(2) > div.panel-body.panel-padding:last-child > a:first-child
 avtb6677.com###menu-main-content > li:nth-child(n+5)
 awaker.cn###bew_10010,.adsbygoogle,div#wp125-2,div#text-31
+axios-js.com###lagou-vip
+axios-js.com##.lessonlist
+axios-js.com##.recommand
+axios-js.com##.vultr-desc
 azhibo.tv##.fill-content,[width="680"][height="60"],[href^="http://www.00880808.com/go/"],[src="/images/leisu.png"]
 azofreeware.com###HTML7
 azofreeware.com,pttjoke.com###HTML3
@@ -7665,6 +7681,7 @@ liweidianqi.com/a4.js
 lkong.com##.lkong-ads
 llduang.com##[class$="cokitaobao1"]
 llss.bz###secondary img:not(.avatar)
+llysc.cn###fbi-top-fixed-ad
 lm-us.com#@#.advertisement_above_footer
 lm343.com
 ln.xinhuanet.com##.l-ad,[class^="nav_adv"]
@@ -9969,6 +9986,7 @@ whcykj.cn###InviteContainerl
 whcykj.cn##.swt_bottom
 whnight.com##DIV.a_mu,DIV.wp.a_t,DIV.a_pb
 whois.com#@#.full-width-banner
+widgets.outbrain.com/outbrain.js
 wiki.mbalib.com###ad-phone
 wiley.com##.advert-leaderboard__container,.skyscraper--left
 win007.com##[id^="ad_"]
@@ -11034,7 +11052,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 |https:$script,third-party,xmlhttprequest,domain=m.733.so|m.umei.cc
 |https:$subdocument,domain=nodkey.xyz
 |https://imgcache.qq.com/qzone/biz/comm/js/qbs.js
-|https://js.ykimg.com/youku/dist/js/lib/ikuAdapterNew.js
+|https://static.youku.com/index/js/ikuAdapterNew.js
 |https://www.36dm.com/js/
 ||*.$image,redirect=1x1.gif,third-party,domain=rmdown.com
 ||*.apk$domain=gulingge.com
@@ -12241,6 +12259,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||a.hbf23.cn^
 ||a.huocheba.com^
 ||a.jyeoo.com/js?
+||a.llysc.cn^
 ||a.lz13.cn/
 ||a.lz13.cn^
 ||a.mfcad.net^
@@ -13686,6 +13705,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||cav.cavuc.com^
 ||cb.baidu.com^
 ||cb.lomark.cn^
+||cbcspace.xyz^
 ||cbctp.top^
 ||cbfw.cn/gonggong/chibi/cf_
 ||cbhif.com^
@@ -16283,6 +16303,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||imall.cctv.com/$subdocument
 ||imall.cctv.com^
 ||imall.cntv.cn^
+||imasdk.googleapis.com^
 ||imdns.hpplay.cn^
 ||imedia.bokecc.com/! EasyList China
 ||imeijiajia.com^
@@ -20540,6 +20561,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||unitelogreport.reader.qq.com^
 ||unityads.
 ||unjs.jingyanben.com^
+||unpk41.online^
 ||unta.cn^
 ||untenable.wang^
 ||untitled.dwstatic.com^
@@ -21702,6 +21724,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||yezi.cn/_ad/
 ||yezilm.com$third-party
 ||yezilm.com/
+||yezkon.com^
 ||yfi8.com^
 ||yfycy.com^
 ||ygdy8.com/js$script
@@ -21776,6 +21799,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||yiqiwin.com^
 ||yiren00.com/js/$script
 ||yishengad.com^
+||yishu.red^
 ||yishuifa.org^
 ||yituo-patibao.cn^
 ||yiwanuu.com^
@@ -21811,6 +21835,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||ynbyutongdianqi.com^
 ||yncfwy.net^
 ||yncjsc.cn^
+||ynd41r.online^
 ||ynet.com/c/js/manto.min.js
 ||ynfzxh.com^
 ||ynxhsy.com^

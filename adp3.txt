@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: DPzrKcmd6KWNiSrDF+nYRQ
+! Checksum: q4q18IYhMz+x9aJ5uOQqHw
 ! Title: AdFilters 
 ! Expires: 12 hours
-! Version: 202204122053
-! Last Modified: 2022年04月12日 20:53
+! Version: 202204122139
+! Last Modified: 2022年04月12日 21:39
 ! Homepage: https://github.com/hacamer/Adblist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、EasyPrivacy、大萌主
 ! 仅合并规则，未做其余任何处理
 ! 如有任何疑问、意见或建议，请反馈至：杏梢
 !
-! Total count: 39676
+! Total count: 39701
 ###ChapterView > .slide-baidu
 ###SOHU_MAIN > .module-cmt-float-bar
 ###TopAdvert
@@ -165,6 +165,7 @@
 ###piao_div_0[style*="width:140px;"]
 ###player > #ADtip
 ###playerAd
+###playerAdvLayer
 ###player_ad
 ###player_pause > .tip + a[target="_blank"]
 ###player_pause[style^="position"] > a[target="_blank"]
@@ -364,6 +365,7 @@
 ##.bottomSponsor
 ##.bottom_mengcheng_ad_wrap
 ##.bottomads + .leftd
+##.bottomd + .leftd
 ##.bottomd > .closebox2
 ##.box-ad
 ##.box_con[style="border-radius:10px;background-color:#ff0000;padding:15px;"]
@@ -441,6 +443,7 @@
 ##.jq_infoflow_ad_wrap
 ##.jqrp_infoflow_ad
 ##.js-cui-pt-item[data-qhb]
+##.jsv > .mobile-adv
 ##.kf_qycn_com_cckf_welcomebox
 ##.ksads
 ##.layui-row[style="border-radius:10px;background-color:#ff0000;padding:15px;margin:15px;"]
@@ -481,6 +484,7 @@
 ##.r-ad
 ##.r_ad
 ##.readmidad
+##.recommended-grids > .file[style="margin: 5px 2px 5px 2px;"]
 ##.right > .content > .ads
 ##.right-ad
 ##.rightAD
@@ -534,6 +538,7 @@
 ##.uk-width-1-1.adbox
 ##.video-holder > a[target="_blank"] > img[src*=".360buyimg.com"]
 ##.video-item-ads
+##.vodads
 ##.w_ad
 ##.widget-ad
 ##.widget-ads
@@ -565,6 +570,7 @@
 ##A[href*=".com/?Agent="]
 ##A[href='/xinghuo-20.html']
 ##A[href^="/e/public/ClickAd?adid="]
+##A[onclick^="gtag"] > .add
 ##[alt=' 腐乐漫 '],[alt=' 西瓜社 ']
 ##[class*="isboostSideSlideShow"]
 ##[class][onclick^="window.location.href"][onclick*=".bcebos."]
@@ -838,6 +844,8 @@
 ##script[src="/static/base.js"] + #couplet
 ##script[src="/template/kuhei2/skin/base.js"] + #couplet
 ##span[title="neteasefooter"]
+##style + .topd
+##style + .topd + .bottomd
 ##table[style="border:#e8e8e8 1px solid;"] + div[style="margin-top:5px"] > table[style="width:100%;"][cellspacing="0"][cellpadding="1"][bordercolor="#22222"][border="1"]
 ##vg-pause-ads
 #.col-12 position-relative,[onclick*='www.l4lui.com'],.col-12.position-relative>b
@@ -3091,6 +3099,8 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /avant_sfpc_
 /avantlink/*$third-party
 /avmws_*.js
+/avple-images/ad.
+/avple-images/ad_
 /avtstats.
 /aw-tracker.
 /awAnalytics.
@@ -10209,7 +10219,13 @@ autohome.com.cn##.union-ad-placeholder
 autohome.com.cn##.vocalcon-btn
 autohome.com.cn,jdzj.com,loveshang.com##.advbox
 autohome.com.cn,sina.com.cn##div[class*="game"]
+avple.tv##.jss13
+avple.tv##.jss20
 avsuggest.com,qiaobutang.com##.overlay
+axios-js.com###lagou-vip
+axios-js.com##.lessonlist
+axios-js.com##.recommand
+axios-js.com##.vultr-desc
 azofreeware.com###HTML7
 azofreeware.com,pttjoke.com###HTML3
 baby-kingdom.com##.right5
@@ -11977,6 +11993,7 @@ liweidianqi.com/a3.js
 liweidianqi.com/a4.js
 lkong.com##.lkong-ads
 llss.bz###secondary img:not(.avatar)
+llysc.cn###fbi-top-fixed-ad
 lm-us.com#@#.advertisement_above_footer
 lm343.com
 localking.com.tw###adbannerurl
@@ -13283,6 +13300,7 @@ whcykj.cn###BDBridgeInviteWrap
 whcykj.cn###InviteContainerl
 whcykj.cn##.swt_bottom
 whois.com#@#.full-width-banner
+widgets.outbrain.com/outbrain.js
 wiki.mbalib.com###ad-phone
 win007.com##td[id^="Ad"]
 win7w.com###xldz
@@ -13699,8 +13717,8 @@ zyue.com##div[id^="divad_"]
 |https:$script,third-party,xmlhttprequest,domain=m.733.so|m.umei.cc
 |https://a.pr-cy.ru^$third-party
 |https://imgcache.qq.com/qzone/biz/comm/js/qbs.js
-|https://js.ykimg.com/youku/dist/js/lib/ikuAdapterNew.js
 |https://r.i.ua^
+|https://static.youku.com/index/js/ikuAdapterNew.js
 |https://www.36dm.com/js/
 ||*.$image,redirect=1x1.gif,third-party,domain=rmdown.com
 ||*^sdtfrom=^$media,redirect=noop-0.1s.mp3,domain=qq.com
@@ -14497,6 +14515,7 @@ zyue.com##div[id^="divad_"]
 ||a.jyeoo.com/js?
 ||a.kryptonitewp.com^
 ||a.linkz.ai^
+||a.llysc.cn^
 ||a.lz13.cn/
 ||a.lz13.cn^
 ||a.mfcad.net^
@@ -18058,6 +18077,7 @@ zyue.com##div[id^="divad_"]
 ||cb-mms.carbuyer.co.uk^
 ||cb.baidu.com^
 ||cbc.ca/g/stats/
+||cbcspace.xyz^
 ||cbctp.top^
 ||cbdatatracker.com^$third-party
 ||cbfw.cn/gonggong/chibi/cf_
@@ -23906,6 +23926,7 @@ zyue.com##div[id^="divad_"]
 ||imall.cctv.com/$subdocument
 ||imall.cctv.com^
 ||imall.cntv.cn^
+||imasdk.googleapis.com^
 ||imcht.net^$third-party
 ||imdb.com/api/_ajax/metrics/
 ||imdb.com/tr/
@@ -37057,6 +37078,7 @@ zyue.com##div[id^="divad_"]
 ||unknowntray.com^
 ||unknowntray.com^$third-party
 ||unnaturalcaption.com^
+||unpk41.online^
 ||unpkg.com/web-vitals?
 ||unsplash.com/a/third-party/snow-
 ||unsplash.com/nmetrics
@@ -39118,6 +39140,7 @@ zyue.com##div[id^="divad_"]
 ||yeyulingfeng.com/img/eat.
 ||yeyushe.cn^
 ||yezi.cn/_ad/
+||yezkon.com^
 ||yf5.voyage-prive.at^
 ||yfepff.raymourflanigan.com^
 ||yfhauq.bodybuilding.com^
@@ -39183,6 +39206,7 @@ zyue.com##div[id^="divad_"]
 ||yiparts.com/Chance.php?aid=
 ||yiqifa.com^*.js$third-party
 ||yishengad.com^
+||yishu.red^
 ||yishuifa.org^
 ||yituo-patibao.cn^
 ||yizhibo.com/special/h5corner.html
@@ -39214,6 +39238,7 @@ zyue.com##div[id^="divad_"]
 ||ynbojie.com^
 ||ynbyutongdianqi.com^
 ||yncjsc.cn^
+||ynd41r.online^
 ||ynet.com/c/js/manto.min.js
 ||yoc.younited-credit.com^
 ||yoka.com/s?z=
