@@ -1,8 +1,8 @@
-! Checksum: DwlwaYiOVyOa+PiDr6HbAw
+! Checksum: mk+H1iPhUqoRHk07RVuBwA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.15.48
-! TimeUpdated: 2022-04-12T19:30:47+00:00
+! Version: 2.1.15.49
+! TimeUpdated: 2022-04-12T20:30:33+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7314,6 +7314,9 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 deccanherald.com###dk_gdpr
+world.rugby#$#.tcf-cmp {display: none !important; }
+world.rugby#$#body > div[class^="_"][class*=" _"]:empty {display: none !important; }
+world.rugby#$#body { position: static !important; overflow: visible !important; }
 magicland.it##.CookiePolicyManager-Banner
 inconcertcc.com#$#html.gdpr-cookie-notice-loaded { overflow: auto !important; }
 inconcertcc.com#$#.gdpr-cookie-overlay:not(#style_important) { display: none !important; }
@@ -18867,6 +18870,7 @@ weather.yahoo.co.jp##.doubleImage_cardBetween > div[data-doubleimage="short"]
 rapidgator.net##a[href="https://play.google.com/store/apps/details?id=net.rapidgator"]
 xn--pckua2a7gp15o89zb.com##.p-balloon_bm
 girlswalker.com##.gw-header-app
+world.rugby###laws_landing_app_wrap
 shingakunet.com###kikakuKomaArea > div[style="margin:20px 0 0 0;"]
 wetransfer.com##.AppDownloadDrawer
 wetransfer.com##.downloader__collect-header
@@ -20714,6 +20718,8 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+aliexpress.ru#$#div[class^="ali-kit_Dialog__"] { display: none!important; }
+aliexpress.ru#$#body { overflow: visible!important; }
 oneesports.vn#%#//scriptlet('prevent-setTimeout', 'userVisited')
 ||askanydifference.com/beardeddragon/iguana.js
 icotto.jp##.c-instagram-balloon

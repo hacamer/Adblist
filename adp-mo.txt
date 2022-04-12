@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: 8cFyLxhdss6fVl4IFjGgAA
+! Checksum: zY+KqM5dlabVxCGpdfbCCw
 ! Title: My AdFilters（for Mobile）
 ! Expires: 12 hours
-! Version: 202204130431
-! Last Modified: 2022年04月13日 04:31
+! Version: 202204130530
+! Last Modified: 2022年04月13日 05:30
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 64703
+! Total count: 64721
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -2177,6 +2177,7 @@
 ##.ad-wireframe-wrapper
 ##.ad-wrap
 ##.ad-wrapper
+##.ad-wrapper-outer
 ##.ad-wrapper-top
 ##.ad-wrapper__ad-slug
 ##.ad-x10x20x30
@@ -2359,6 +2360,7 @@
 ##.ad_300_250
 ##.ad_300_600
 ##.ad_300x250
+##.ad_300x250_container
 ##.ad_300x600
 ##.ad_336
 ##.ad_4
@@ -2369,7 +2371,9 @@
 ##.ad_728_90
 ##.ad_728_top
 ##.ad_728x90
+##.ad_728x90_container
 ##.ad_960
+##.ad_970x250_container
 ##.ad__300x250
 ##.ad__300x600
 ##.ad__970x250
@@ -16371,6 +16375,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||gn-web-assets.api.bbc.com/bbcdotcom/assets/$script,domain=bbc.co.uk
 @@||go.affec.tv/cookie^$domain=youronlinechoices.com
 @@||go.com/b/ss/$image
+@@||gocomics.com/assets/ad-dependencies-$script,~third-party
 @@||gocoo.co^$generichide
 @@||gogoanime.tv/images^
 @@||gogoplay1.com/download?id=$popup
@@ -18980,7 +18985,6 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||ygodl.com/images/ads.jpg
 @@||ygodl.com^$generichide
 @@||yibada.com^$generichide
-@@||yify.store/js/ad-iframe.js
 @@||yimg.com/*/*.css
 @@||yimg.com/*/css/
 @@||yimg.com/rq/darla/*/g-r-min.js$domain=yahoo.com
@@ -23001,6 +23005,7 @@ freecourselab.com##.adsbygoogle
 freecoursesite.com##+js(no-setTimeout-if, ()=>this.display())
 freecoursesite.com##.adsbygoogle
 freecoursesite.com##.widget_better-ads
+freecoursesite.com,xscholarship.com,psdly.com##.widget_media_image
 freecoursesites.*##.herald_adsense_widget
 freecoursesonline.me##+js(abort-current-script, document.addEventListener, |kcolbdakcolb|)
 freecoursesonline.me##+js(abort-on-property-write, adregain_wall)
@@ -23884,6 +23889,7 @@ healthtune.site##+js(addEventListener-defuser, load, .nextFunction)
 heartinkstone.pixnet.net###spotlight
 heavy-r.com##.a-d-holder-new
 heavy-r.com##.first-row > a[href][target="_blank"]:not([href="http://pornedup.com/"]):not([href="https://www.mrporngeek.com"])
+heavyfetish.com,tabootube.xxx,amateur8.com,maturetubehere.com,cum-shows.net,pornwild.to,crazyporn.xxx,pornissimo.org,lesbian8.com,enf-cmnf.com,recorded-webcams.com,filtercams.com,thesquarshers.com,bigassporn.tv,camhoes.tv,hdporn.org,porn00.org,keekass.com,fuckit.cc,camwhoresbay.com,vqtube.com,private-shows.net,camwhoreshd.com,fapster.xxx##.block-video > div.table
 hebdenbridge.co.uk#@#.smallads
 hefei.cc##.bbs_app_fk > a:first-child
 hehagame.com##.webad_bottom
@@ -24633,10 +24639,10 @@ investing.com##.dfpVideo
 investing.com##.generalOverlay
 investing.com##.largeBannerCloser
 investing.com##.midHeader
-investing.com##div[class^="ad_"]
 investing.com##div[class^="outbrain_outbrain-wrapper_"]
 investing.com#?#.wrapper div > div.OUTBRAIN:upward(1)
 investing.com,esportsearnings.com##div[class^="ad_"]
+investing.com,newsday.com##div[class^="ad_"]
 investopedia.com##.partnerlinks
 iobit.com##[class^="itop"]
 iogames.onl##.Adv
@@ -26639,8 +26645,19 @@ nba.com##+js(set-constant, adBlockerDetected, false)
 nba.com##div[class^="DisplayAd_"]
 nbastreams.xyz##+js(window.open-defuser)
 nbaup.live,goalup.live##+js(abort-on-property-read, popup)
+nbcbayarea.com#?#.most-popular__post:-abp-has(.most-popular__presented_by)
+nbcboston.com#?#.most-popular__post:-abp-has(.most-popular__presented_by)
+nbcchicago.com#?#.most-popular__post:-abp-has(.most-popular__presented_by)
+nbcconnecticut.com#?#.most-popular__post:-abp-has(.most-popular__presented_by)
+nbcdfw.com#?#.most-popular__post:-abp-has(.most-popular__presented_by)
+nbclosangeles.com#?#.most-popular__post:-abp-has(.most-popular__presented_by)
+nbcmiami.com#?#.most-popular__post:-abp-has(.most-popular__presented_by)
+nbcnewyork.com#?#.most-popular__post:-abp-has(.most-popular__presented_by)
+nbcphiladelphia.com#?#.most-popular__post:-abp-has(.most-popular__presented_by)
+nbcsandiego.com#?#.most-popular__post:-abp-has(.most-popular__presented_by)
 nbcsports.com###nbcsports-leaderboard
 nbcsports.com#$#.entry-footer { min-height: 0!important; }
+nbcwashington.com#?#.most-popular__post:-abp-has(.most-popular__presented_by)
 ncaa.com###banner-purse
 ncno1.playno1.com##.eis_box_s > div:first-child
 ncore.cc#@#.text-ad-links
@@ -29095,6 +29112,7 @@ speedtest.net##div[data-ad-placeholder]
 speedtest.net#@#.pure-u-custom-ad-skyscraper
 speedtest.pl##a[href^="https://track.adform.net/"]
 speedtest.pl#$#.adsbygoogle { position: absolute!important; left: -3000px!important; }
+speedtest.vn###sponsorRow
 spicy-flix.com##.desktop-rec-bottom
 spicy-flix.com##.desktop-under-video-rec
 spicy-flix.com##.desktop-video-rec
@@ -29378,7 +29396,6 @@ t66y.com##.sptable_do_not_remove
 t66y.com##.tips
 tabletowo.pl##.grad
 tabootube.xxx##.spot-primary
-tabootube.xxx,amateur8.com,maturetubehere.com,cum-shows.net,pornwild.to,crazyporn.xxx,pornissimo.org,lesbian8.com,enf-cmnf.com,recorded-webcams.com,filtercams.com,thesquarshers.com,bigassporn.tv,camhoes.tv,hdporn.org,porn00.org,keekass.com,fuckit.cc,camwhoresbay.com,vqtube.com,private-shows.net,camwhoreshd.com,fapster.xxx##.block-video > div.table
 tagmp3.net##+js(abort-current-script, document.getElementById, $(".warning"))
 taian.com##.ggtp
 taifile.net###content_download > a[target="_blank"] > img
@@ -30950,6 +30967,7 @@ worder.cat#@#.adsbygoogle
 wordreference.com##.adtitle
 wordreference.com#?#.rightcolumn > tbody > .adtitle + tr[style]:has(> td:only-child > div[id^="adright"])
 workercn.cn#@#.ad_main
+world.rugby##.main-nav__promo-link
 worldappsstore.xyz##+js(no-fetch-if, pagead2.googlesyndication.com)
 worldsex.com##.dazone
 worldsex.com##.hide-on-mobile
@@ -31370,7 +31388,6 @@ yicai.com##.gg_pop
 yiche.com##div[class*="-adv"]
 yiche.com##div[class*="words-ad"]
 yidianzixun.com##.layer-download
-yify.store##+js(set-constant, isAdBlockActive, false)
 yifyhdtorrent.org##+js(json-prune, *.*, *.clk)
 yifysub.cc##+js(abort-current-script, document.querySelectorAll, ads_host)
 yigujin.cn##a[href^="http"]:not([href$=".html"]) > img[src*="/abc/"]
@@ -64113,6 +64130,7 @@ zyue.com##div[id^="divad_"]
 ||ymggnrsnrlf.com^
 ||ymliveqi.com^
 ||ymlykj.com/nuxt/static/liveBanner.jpg
+||ymprove.gmx.net^
 ||ymprove.web.de^
 ||ymtrqt.cn^
 ||ynagqs.vidaxl.pl^
