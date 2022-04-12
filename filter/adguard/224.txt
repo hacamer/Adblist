@@ -1,8 +1,8 @@
-! Checksum: 0L0zX1UMUar361mC7zXELw
+! Checksum: wFapeiylJc4JmOmIiY3DJQ
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.0.52.80
-! TimeUpdated: 2022-04-12T09:02:45+00:00
+! Version: 2.0.52.82
+! TimeUpdated: 2022-04-12T10:30:57+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2310,6 +2310,8 @@ nfmovies.com#@?#div[id]:-abp-has(>img[onclick="openurl()"])
 -*-*-*-*.panda^$script,third-party
 -1688-wp-media/ads/
 -880-80-4.jpg
+/avple-images/ad.
+/avple-images/ad_
 -90mh-gg.
 .bid/ads/
 .blog/ads/
@@ -3460,6 +3462,8 @@ ubmcmm.baidustatic.com
 ##.heg > .div-list
 ##.his-sign-cont[data-dysign-adid]
 ##.hlol_ad
+###playerAdvLayer
+##.jsv > .mobile-adv
 ##.hongbao_hd
 ##.hzxld
 ##.iHead960x90
@@ -11590,6 +11594,12 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
 szxx.com.cn###A0
+avple.tv##.jss20
+avple.tv##.jss13
+axios-js.com##.recommand
+axios-js.com##.vultr-desc
+axios-js.com###lagou-vip
+axios-js.com##.lessonlist
 llysc.cn###fbi-top-fixed-ad
 szxx.com.cn###A1
 szxx.com.cn###A2
@@ -19257,6 +19267,13 @@ verystream.com#@#.adsbox
 /img/hgame/*_1280x
 /img/hgame/*_600x
 /img/q/movie_*.gif
+!#jokerlu
+##.vodads
+##.recommended-grids > .file[style="margin: 5px 2px 5px 2px;"]
+##.bottomd + .leftd
+##style + .topd
+##style + .topd + .bottomd
+##A[onclick^="gtag"] > .add
 !#k
 !#l
 !#Mining
@@ -19489,6 +19506,9 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 ||haohud.cc^
 ||cbcspace.xyz^
 ||yishu.red^
+||yezkon.com^
+||ynd41r.online^
+||unpk41.online^
 ##a[href$=".120ydrayy.com"]
 ##a[href*=".1956hl.com/"]
 ##a[href*=".233787.com/"]

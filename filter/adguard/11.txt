@@ -1,8 +1,8 @@
-! Checksum: gTrIdslg1DduTCPqLbcbzA
+! Checksum: +3WjNvyxd+w2u29E0GkKaA
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.28.52
-! TimeUpdated: 2022-04-12T09:02:06+00:00
+! Version: 2.0.28.53
+! TimeUpdated: 2022-04-12T09:30:21+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1959,6 +1959,9 @@ sasisa.ru#%#AG_onLoad(function() { window.Umobi = function() {}; });
 !-------CSS---------
 !-------------------
 !
+! https://github.com/uBlockOrigin/uAssets/issues/12688
+w3schools.com#$#@media (max-width: 727px) { #tryitLeaderboard ~ .trytopnav { top: 0!important; } }
+w3schools.com#$#@media (max-width: 727px) { #tryitLeaderboard ~ #container { top: 48px!important; } }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/114041
 javfan.one#$##is_w_area { display: none!important; }
 javfan.one#$#html { overflow: visible!important; }
@@ -2663,6 +2666,7 @@ scmp.com,theinventory.com,avclub.com,clickhole.com,deadspin.com,gizmodo.com,jalo
 ! ##.ads
 cartoonpornvideos.com,m.economictimes.com,beethovenmaster.com,m.mistrzowie.org,m.ura.news,siirtpress.com,up.ymgt.xyz,google.de,www-bento-de.cdn.ampproject.org,m-economictimes-com.cdn.ampproject.org,m.winfuture.de##.ads
 !
+idou.me##.ad__search-infeed-banner
 girlswalker.com##.dfp_recommend_for_sp
 girlswalker.com##.dfp_single_banner_for_sp
 flightconnections.com#$#.free .map-container { top: 0 !important; }

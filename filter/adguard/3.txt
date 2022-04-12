@@ -1,8 +1,8 @@
-! Checksum: hZPNUhfbwkR7kdGa2Q9T+A
+! Checksum: cHVc/kO3iXalGdO5SO9F3A
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.38.2
-! TimeUpdated: 2022-04-12T06:31:20+00:00
+! Version: 2.0.38.3
+! TimeUpdated: 2022-04-12T10:31:21+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -5119,6 +5119,7 @@ nethunt.com/api/v1/track/email/$image
 ! Disabled in DNS filter
 ||telemetry.mozilla.org^
 !
+||b.travel-assets.com^
 ||tracking.live.oe24.at^
 ||momowa.momoshop.com.tw^
 ||montelena-rcv.gmarket.co.kr^
@@ -19836,7 +19837,7 @@ charlestownwyllie.oaklawnnonantum.com^
 !
 ! dynaTrace Monitor
 /ruxitagentjs_
-/dynatrace-$domain=~dynatrace.com|~github.com
+/dynatrace-$domain=~dynatrace.com|~github.com|~github.io
 !
 ! YouTube
 /log_event?
@@ -20294,6 +20295,8 @@ _tracking.php?b=
 !
 /analytics.js$domain=bataryapil.com|journey.com.tr|freexcafe.com|rusvideos.tv|nakubani.ru|lun.com|songsara.net|partifabrik.com|newsmax.com|bolgehastanesi.com|ewtc.de
 !
+||expedia.com/api/uisprime/track
+||expedia.com/taps/v1/Impr?
 ||hitfm.ru/*yandex-metrika.js
 ||hitfm.ru/uploads/vk-pixel.js
 ||next.rikunabi.com/rnc/contents/pub/common/js/I2A.js

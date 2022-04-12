@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: jHUyIadgQMEbLXgttr8Pgw
+! Checksum: iFkcWukdkvoSwV7BCl9ARw
 ! Title: My AdFilters Lite
 ! Expires: 1 hours (Sometimes updates are delayed)
-! Version: 202204121731
-! Last Modified: 2022年04月12日 17:31
+! Version: 202204121835
+! Last Modified: 2022年04月12日 18:35
 ! Homepage: https://github.com/hacamer/Adblist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、Adgk、大萌主的规则
 ! 并补充了贴吧过滤规则，感谢各位的分享！
 ! 如有任何疑问、意见或建议，请反馈给：杏梢
 !
-! Total count: 38216
+! Total count: 38236
 ###Ad_windows
 ###ChapterView > .slide-baidu
 ###Layeraa1
@@ -268,6 +268,7 @@
 ###player-advertising
 ###player-bottom-ads
 ###playerAd
+###playerAdvLayer
 ###player_ad
 ###player_banner[style*="fixed;"]
 ###player_pause > .tip + a[target="_blank"]
@@ -563,6 +564,7 @@
 ##.bottomSponsor
 ##.bottom_mengcheng_ad_wrap
 ##.bottomads + .leftd
+##.bottomd + .leftd
 ##.bottomd > .closebox2
 ##.box-ad
 ##.box_con[style="border-radius:10px;background-color:#ff0000;padding:15px;"]
@@ -703,6 +705,7 @@
 ##.jq_mediav_ad_report
 ##.jqrp_infoflow_ad
 ##.js-cui-pt-item[data-qhb]
+##.jsv > .mobile-adv
 ##.kf_qycn_com_cckf_welcomebox
 ##.ksads
 ##.layui-row[style="border-radius:10px;background-color:#ff0000;padding:15px;margin:15px;"]
@@ -782,6 +785,7 @@
 ##.r_ad
 ##.readerListADbox
 ##.readmidad
+##.recommended-grids > .file[style="margin: 5px 2px 5px 2px;"]
 ##.right > .content > .ads
 ##.right-ad
 ##.rightAD
@@ -856,6 +860,7 @@
 ##.video-holder > a[target="_blank"] > img[src*=".360buyimg.com"]
 ##.video-item-ads
 ##.video-player-container > #player_bottom_banner
+##.vodads
 ##.w100b > .m_adv
 ##.w_ad
 ##.wemziguanggao
@@ -908,6 +913,7 @@
 ##A[href="http://t.cn/A6hQCVsv"]
 ##A[href='/xinghuo-20.html']
 ##A[href^="/e/public/ClickAd?adid="]
+##A[onclick^="gtag"] > .add
 ##DIV.sptable_do_not_remove f_one
 ##DIV.tpc_icon
 ##DIV[id*="BAIDU_SSP__wrapper_"]
@@ -1487,6 +1493,8 @@
 ##script[src="/static/base.js"] + #couplet
 ##script[src="/template/kuhei2/skin/base.js"] + #couplet
 ##span[title="neteasefooter"]
+##style + .topd
+##style + .topd + .bottomd
 ##style + .vdgdo
 ##table[style="border:#7D8C8E solid 1px;height: 30px;text-align: center;"]
 ##table[style="border:#e8e8e8 1px solid;"] + div[style="margin-top:5px"] > table[style="width:100%;"][cellspacing="0"][cellpadding="1"][bordercolor="#22222"][border="1"]
@@ -2895,6 +2903,8 @@ $websocket,domain=5nj.com|cechi8.com
 /attachments/ad/*
 /avbebe/ad/*
 /avgle.com/avideos.
+/avple-images/ad.
+/avple-images/ad_
 /avshow_cn1.gif
 /baha/*$subdocument,domain=gamer.com.tw
 /baichuan/*$subdocument
@@ -5477,7 +5487,6 @@ $websocket,domain=5nj.com|cechi8.com
 @@&adurl=http://$domain=360bifen.cc|360bifen.com
 @@-social-bar.$domain=mobi.yahoo.com
 @@.adserver.$domain=litv.tv
-@@.baidu.com/it/u=$domain=baijiahao.baidu.com
 @@.com/ad.aspx|$domain=xdingdiann.com
 @@.com/adv/$domain=my.ctrip.com
 @@.com/js/ad_/ad*.js$domain=cocomanga.com|cocomanhua.com
@@ -5600,6 +5609,8 @@ $websocket,domain=5nj.com|cechi8.com
 @@_adview_$domain=muzlan.top
 @@_cpa_adview_$domain=52xkdy.com
 @@_cpc_cpm_$domain=saraba1st.com|ygo-sem.cn|youranshare.com
+@@f*.baidu.com/it/u=*,*&fm=*JPEG
+@@f*.baidu.com/it/u=*,*&fm=*PNG
 @@u-ads.adap.tv*youku.$domain=youku.com
 @@www.cocomanga.com/js/ad_/ad2.js
 @@|https://media.amazon.map.fastly.net^$script
@@ -7183,6 +7194,8 @@ avlang\d{2}\.info##[height="60"]
 avmimi.com###ArticlesEx_box
 avmimi.com##.TW_UTtoy
 avmimi.com,mm-cg.com##.UT_thread
+avple.tv##.jss13
+avple.tv##.jss20
 avppx.com##.top
 avseesee.com##.ads,.ads-player,iframe[width="585"][height="260"]
 avsuggest.com##.overlay
@@ -7198,6 +7211,10 @@ awaker.cn###bew_10010,.adsbygoogle,div#wp125-2,div#text-31
 awaker.cn###jiji + div[style="padding: 20px"]
 awaker.cn##.good-price
 axiang.cc###photo-sliders + .widget_text
+axios-js.com###lagou-vip
+axios-js.com##.lessonlist
+axios-js.com##.recommand
+axios-js.com##.vultr-desc
 axjbt.com,avcao.cc##+js(abort-on-property-read, myclick)
 azhibo.tv##.fill-content,[width="680"][height="60"],[href^="http://www.00880808.com/go/"],[src="/images/leisu.png"]
 azofreeware.com###HTML7
@@ -34774,6 +34791,7 @@ zznews.cn##.ad:not([style])
 ||unitelogreport.reader.qq.com^
 ||unityads.
 ||unjs.jingyanben.com^
+||unpk41.online^
 ||unta.cn^
 ||untenable.wang^
 ||untitled.dwstatic.com^
@@ -36911,6 +36929,7 @@ zznews.cn##.ad:not([style])
 ||yezilm.com$third-party
 ||yezilm.com/
 ||yezilm.com^$third-party
+||yezkon.com^
 ||yf898.com^
 ||yfi8.com^
 ||yfot.com.cn^
@@ -37141,6 +37160,7 @@ zznews.cn##.ad:not([style])
 ||ynbyutongdianqi.com^
 ||yncfwy.net^
 ||yncjsc.cn^
+||ynd41r.online^
 ||ynet.com/c/js/manto.min.js
 ||ynevxkx.cn^
 ||ynfzxh.com^
