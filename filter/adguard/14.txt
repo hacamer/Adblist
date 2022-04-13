@@ -1,8 +1,8 @@
-! Checksum: NYjAW2eRyf+Tz+4nFDm6gg
+! Checksum: ygSrWQeDnalD1volig+87A
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.15.51
-! TimeUpdated: 2022-04-13T06:30:33+00:00
+! Version: 2.1.15.53
+! TimeUpdated: 2022-04-13T08:30:35+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7313,6 +7313,9 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+sprawdzone.pl##.rodoPopup
+myslenice-itv.pl##.pum-overlay[data-popmake*="polityka-prywatnosci"]
+r.pl##.rodo-alert
 deccanherald.com###dk_gdpr
 world.rugby#$#.tcf-cmp {display: none !important; }
 world.rugby#$#body > div[class^="_"][class*=" _"]:empty {display: none !important; }
@@ -28886,6 +28889,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+time.com##.roadblock
 free-ebooks.net##.register-box
 free-ebooks.net##.lp-popup__iframe-wrapper
 manomano.de#%#(function() { try { if ('undefined' != typeof localStorage) {var date = new Date(); window.localStorage.setItem("newsletter_displayed_timestamp", date.getTime()); } } catch (ex) {} })();
@@ -33453,7 +33457,7 @@ hikarinoakari.com#%#//scriptlet("adjust-setInterval", "count", "", "0.02")
 ! fcc.lc - skip timers
 short.fc-lc.com#%#AG_onLoad(function() { setTimeout(function() { var el = document.querySelector('#submitbtn'); if(el) { el.click(); } }, 300); });
 ! fclcc.com,articlix.com,fcc.lc#%#AG_onLoad(function() { setTimeout(function() { var el = document.querySelector("#invisibleCaptchaShortlink"); if(el) { el.classList.remove("disabled"); el.removeAttribute("disabled"); el.click(); } }, 300); });
-markipli.com,fclcc.com,articlix.com,fcc.lc#%#AG_onLoad(function(){setTimeout(function(){var a=document.querySelector("#surl"),c=function(){var d=jQuery.ajax({url:domain,method:"POST",dataType:"json",data:jQuery("#form12").serialize()});setTimeout(function(){try{var b=d.responseText;b=JSON.parse(b);if(b.url&&b.url.startsWith("http"))a.href=b.url,a.text="Get Link",a.classList.add("btn-success"),a.click();else throw Error();}catch(e){console.log("Failed, try again..."),c()}},1E3)};a&&(a.classList.remove("disabled"),c())},500)});
+bclikeqt.com,markipli.com,fclcc.com,articlix.com,fcc.lc#%#AG_onLoad(function(){setTimeout(function(){var a=document.querySelector("#surl"),c=function(){var d=jQuery.ajax({url:domain,method:"POST",dataType:"json",data:jQuery("#form12").serialize()});setTimeout(function(){try{var b=d.responseText;b=JSON.parse(b);if(b.url&&b.url.startsWith("http"))a.href=b.url,a.text="Get Link",a.classList.add("btn-success"),a.click();else throw Error();}catch(e){console.log("Failed, try again..."),c()}},1E3)};a&&(a.classList.remove("disabled"),c())},500)});
 ! https://github.com/AdguardTeam/AdguardFilters/issues/59717
 anonymous-links.com#%#//scriptlet("set-constant", "waitSeconds", "0")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/70370
