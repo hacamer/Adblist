@@ -1,8 +1,8 @@
-! Checksum: jhUifcdqexDGt5/n53DD5Q
+! Checksum: 7V3Nu1w0uXsPcHwsgT+Ftg
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.0.59.66
-! TimeUpdated: 2022-04-13T09:03:26+00:00
+! Version: 2.0.59.67
+! TimeUpdated: 2022-04-13T10:31:29+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -9354,6 +9354,17 @@ betanews.com##.social-links-wrap
 ! Bad: example.org##.fb_share (should be in specific.txt)
 !
 !
+!
+!+ NOT_OPTIMIZED
+~whatsapp.com##a[href^="whatsapp://send"]
+!+ NOT_OPTIMIZED
+~facebook.com##a[href^="fb-messenger://share"]
+!+ NOT_OPTIMIZED
+~minutouno.com,~forcemajeure.com,~twitter.com##a[href^="https://twitter.com/intent/tweet?"]
+!+ NOT_OPTIMIZED
+~grapee.jp,~mdpr.jp,~howtogeek.com,~twitter.com##a[href^="https://twitter.com/intent/follow?"]
+!+ NOT_OPTIMIZED
+~facebook.com##a[href*="//www.facebook.com/share.php"]
 !+ NOT_OPTIMIZED
 ~animeworld.tv,~reflect.tech,~nrz.de##.share-button
 !+ NOT_OPTIMIZED
@@ -9488,7 +9499,6 @@ jp##.box-sns
 ##.socials-button_webnavoz
 ##.widget_bimber_widget_facebook_page
 ##.bimber-microshare-item-share
-~facebook.com##a[href^="fb-messenger://share"]
 ##.sharify-container
 ##.social-listing
 ##.share-linkedin
@@ -10330,13 +10340,11 @@ designboom.com,livescience.com,pbtech.co.nz,peoplesworld.org,space.com##.fa-face
 ~twitter.com##a[href^="http://twitter.com/intent/tweet?"]
 ~twitter.com##a[href^="http://www.twitter.com/intent/tweet?"]
 ~twitter.com##a[href^="https://twitter.com/intent/tweet/?"]
-~minutouno.com,~forcemajeure.com,~twitter.com##a[href^="https://twitter.com/intent/tweet?"]
 ~twitter.com##a[href^=" https://twitter.com/share"]
 ~twitter.com##a[href^="http://twiter.com/share?"]
 ~vk.com,~vkontakte.ru##a[href^="http://vkontakte.ru/share.php"]
 ~yandex.by,~yandex.com,~yandex.kz,~yandex.ru,~yandex.ua##a[href^="http://wow.ya.ru/posts_share_link.xml"]
 ~digg.com##a[href^="http://www.digg.com/submit?"]
-~facebook.com##a[href*="//www.facebook.com/share.php"]
 ~facebook.com##a[href^="http://www.facebook.com/sharer.php?"]
 ~facebook.com##a[href^="http://www.facebook.com/sharer/sharer.php"]
 ~friendfeed.com##a[href^="http://www.friendfeed.com/share?"]
@@ -10366,7 +10374,6 @@ designboom.com,livescience.com,pbtech.co.nz,peoplesworld.org,space.com##.fa-face
 ~yandex.ru##a[href^="https://share.yandex.net/go.xml?service="]
 ~twitter.com##a[href^="https://twitter.com/home/?"]
 ~twitter.com##a[href^="https://twitter.com/home?"]
-~grapee.jp,~mdpr.jp,~howtogeek.com,~twitter.com##a[href^="https://twitter.com/intent/follow?"]
 ~twitter.com##a[href^="https://twitter.com/intent/retweet?tweet_id"]
 ~minutouno.com,~facebook.com##a[href^="https://www.facebook.com/dialog/feed?"]
 ~facebook.com##a[href*="https://www.facebook.com/sharer.php"]
@@ -10383,7 +10390,6 @@ designboom.com,livescience.com,pbtech.co.nz,peoplesworld.org,space.com##.fa-face
 ~twitter.com##a[href^="https://www.twitter.com/share"]
 ##a[href^="https://www.xing.com/social_plugins/share"]
 ##a[href^="https://www.xing.com/spi/shares/new?url="]
-~whatsapp.com##a[href^="whatsapp://send"]
 ~facebook.com##a[name="fb_share"]
 ##a[onclick^="window.open('https://connect.ok.ru/"][title^="Share"]
 ~facebook.com##a[onclick*="//www.facebook.com/"][onclick*="sharer.php"]
