@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: 7uP05Jg+wR+/QqGSb4sc7w
+! Checksum: qWFTo3WYLQkPTJ8KRt2fGQ
 ! Title: AdFilters Lite
 ! Expires: 1 hours (Sometimes updates are delayed)
-! Version: 202204130730
-! Last Modified: 2022年04月13日 07:30
+! Version: 202204131014
+! Last Modified: 2022年04月13日 10:14
 ! Homepage: https://github.com/hacamer/Adblist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、Adgk、大萌主的规则
 ! 仅合并并去重规则，未做其余任何处理
 ! 如有任何疑问、意见或建议，请反馈给：杏梢
 !
-! Total count: 22298
+! Total count: 22300
 ###ChapterView > .slide-baidu
 ###SOHU_MAIN > .module-cmt-float-bar
 ###TopAdvert
@@ -588,7 +588,6 @@
 ##A[href*=".com/?Agent="]
 ##A[href='/xinghuo-20.html']
 ##A[href^="/e/public/ClickAd?adid="]
-##A[onclick^="gtag"] > .add
 ##DIV.sptable_do_not_remove f_one
 ##DIV.tpc_icon
 ##DIV[id*="BAIDU_SSP__wrapper_"]
@@ -816,6 +815,7 @@
 ##a[onclick^="_czc."] > .add
 ##a[onclick^="_czc."] > .ads
 ##a[onclick^="_czc.push(['_trackEvent', '广告"]
+##a[onclick^="gtag"] > .add
 ##a[target="_bank"] > img[src*=".360buyimg.com"][style="width:100%;height:auto;"]
 ##a[target="_blank"] > img[src*=".bitautoimg.com/"][src$=".gif"]
 ##body .has-ad
@@ -17272,6 +17272,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||lgmi.com^*_gg
 ||lh.lctcw.top^
 ||lh168.net^*/attachment/portal/
+||lhj.asia^
 ||lhy1.xyz^
 ||lianaiyx.com/d/js/cst/
 ||liangao.com$third-party
@@ -22080,6 +22081,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||zgfushi.mobi^
 ||zglecc.com^
 ||zglww.net/jsnew/pfkf.js
+||zgnz020.mobi^
 ||zgrsq.cn^
 ||zgyhw.mobi^
 ||zgzxs.weathercn.com^

@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: 5vmoH3cSQPnphOWWPZLu7w
+! Checksum: L3rChuzk74mqkuVaH/LZDQ
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202204130730
-! Last Modified: 2022年04月13日 07:30
+! Version: 202204131014
+! Last Modified: 2022年04月13日 10:14
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 85472
+! Total count: 85480
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -3240,6 +3240,7 @@
 ##.adscontainer
 ##.adsdiv
 ##.adsection
+##.adsenbox
 ##.adsens
 ##.adsense-336
 ##.adsense-ad
@@ -5974,7 +5975,6 @@
 ##A[href^="http://www.liveadexchanger.com/a/display.php"]
 ##A[href^="http://www.yourfilezone.com/play?lng="]
 ##A[href^="https://action.metaffiliation.com/trk.php?"]
-##A[onclick^="gtag"] > .add
 ##DFP-AD
 ##FBS-AD
 ##LEADERBOARD-AD
@@ -6519,6 +6519,7 @@
 ##a[onclick^="_czc."] > .add
 ##a[onclick^="_czc."] > .ads
 ##a[onclick^="_czc.push(['_trackEvent', '广告"]
+##a[onclick^="gtag"] > .add
 ##a[onclick^="javascript:pc_"] > img[src*=".alicdn.com"]
 ##a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"]
 ##a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"]
@@ -28345,6 +28346,10 @@ everyeye.it#$#.adv-top { margin-top: 4.2rem !important; }
 everyeye.it#@#.adv-top
 everythingrf.com,futbol24.com##.skyscrapper
 evget.com###popelevencenter
+eviemagazine.com##.css-1pm6hh5
+eviemagazine.com##.css-9n98hk
+eviemagazine.com##.css-ipk9pc
+eviemagazine.com##.css-re7z9l
 eviltranslator.xyz##+js(abort-current-script, document.createElement, adsbygoogle.js)
 evoload.io##+js(set-constant, bloaded, true)
 ewatchseries.to,onwatchseries.to##.freeEpisode
@@ -34661,7 +34666,7 @@ news.99k.tw##.entry-content > table[align="left"][style="width:360px"]
 news.99k.tw##iframe[src^="http://news.99k.tw/open/open"][src$=".php"]
 news.am##.banner_click
 news.am,nexter.org,viva.co.nz##.side-banner
-news.artnet.com#@#div[data-ad-targeting]
+news.artnet.com,worldsurfleague.com#@#div[data-ad-targeting]
 news.baidu.com###detail-HotScrollNews-wrapper
 news.baidu.com###favoriteTips
 news.baidu.com###women-picwall
@@ -40630,6 +40635,7 @@ worldtimebuddy.com###toprek
 worldtimebuddy.com##.block2
 worldve.com###fdkDiv
 worldve.com###img
+wormate.io###loa831pibur0w4gv
 wormate.io#?##game-cont > #results-view > div[id][style]:has(> .label:contains(/^Advertisement:$/))
 wormate.io#?#.line-center > .column-right:has(> div[id] > .label:contains(/^Advertisement:$/))
 woshipm.com##.article-bottomAd
@@ -63472,6 +63478,7 @@ zznews.cn##.ad:not([style])
 ||lhesqk.karatov.com^
 ||lhewdj.fnac.pt^
 ||lhhlkj.yoursuperfoods.de^
+||lhj.asia^
 ||lhmmhobckftdcfx.top^
 ||lhs-3844b.com^
 ||lhxwnzht.cn^
@@ -84877,6 +84884,7 @@ zznews.cn##.ad:not([style])
 ||zglww.net/jsnew/pfkf.js
 ||zgncpjyw.cn^
 ||zgnieka.cn^
+||zgnz020.mobi^
 ||zgqgig.skillbox.ru^
 ||zgrsq.cn^
 ||zgsxhx.com^
