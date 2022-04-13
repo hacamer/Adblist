@@ -1,8 +1,8 @@
-! Checksum: I/IBN7B9yjtkE3R0SBkKCw
+! Checksum: bgb6/sEGx+b2DpJS6aPk7g
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.0.52.85
-! TimeUpdated: 2022-04-12T23:30:54+00:00
+! Version: 2.0.52.86
+! TimeUpdated: 2022-04-13T06:30:54+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -417,7 +417,7 @@ linovelib.com#$#body[style] { overflow: auto !important; }
 ! https://github.com/uBlockOrigin/uAssets/issues/11152
 rjno1.com#%#//scriptlet("set-constant", "google_global_correlator", "1")
 rjno1.com#%#//scriptlet("set-constant", "google_image_requests", "emptyArr")
-rjno1.com#%#//scriptlet("abort-current-inline-script", "EventTarget.prototype.addEventListener", "event.target.tagName")
+rjno1.com#%#//scriptlet("prevent-addEventListener", "error", "event.target.tagName")
 !+ NOT_PLATFORM(ios, ext_android_cb)
 ||jspassport.ssl.qhimg.com^$script,redirect=noopjs,domain=rjno1.com
 @@||googletagmanager.com/gtag/js$script,domain=rjno1.com
@@ -19500,6 +19500,7 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 !#Novels ads union
 ||lhj.asia^
 ||zgnz020.mobi^
+||liuyangyang.cn^
 ##a[href$=".120ydrayy.com"]
 ##a[href*=".1956hl.com/"]
 ##a[href*=".233787.com/"]
