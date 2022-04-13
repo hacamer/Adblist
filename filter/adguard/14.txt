@@ -1,8 +1,8 @@
-! Checksum: udSbanbqCk1DE/2ahIwqtA
+! Checksum: qda6bLrMjTy4oNZwQGlFNQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.15.55
-! TimeUpdated: 2022-04-13T10:30:37+00:00
+! Version: 2.1.15.57
+! TimeUpdated: 2022-04-13T12:30:38+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7313,6 +7313,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+||online.gather.network^$domain=faucetofbob.xyz
 sprawdzone.pl##.rodoPopup
 myslenice-itv.pl##.pum-overlay[data-popmake*="polityka-prywatnosci"]
 r.pl##.rodo-alert
@@ -18870,6 +18871,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+r.gnavi.co.jp##div[class^="style_appAdvertise__"]
 dcard.tw##.__portal > button
 pdfdrive.com##img[title="PDF Drive App"]
 weather.yahoo.co.jp##.mdStickyFooter
@@ -21121,7 +21123,6 @@ cosmopolitan.com###recommended-modal
 petri.com#%#//scriptlet('set-cookie-reload', 'hustle-hide-module-10', '10')
 ext.hp.com##.cmnbox01 > div.repo
 web.bridge-net.jp##.fltBnr
-glavred.info##.telegram-new__block
 ucsusa.org###block-actioninterrupter
 pmindiawebcast.nic.in#$#body > nav.navbar + div.container { display: none !important; }
 pmindiawebcast.nic.in#$#.modal-backdrop { display: none !important; }
@@ -25743,6 +25744,8 @@ easy-deutsch.de#%#AG_onLoad(function() { document.querySelector('html').style.cs
 easy-deutsch.de#%#AG_onLoad(function() { setTimeout(function() { var el = document.querySelector('.tve-leads-slide-in.tve-tl-anim'); if (el) {el.remove()} }, 2500); });
 !
 !+ NOT_OPTIMIZED
+glavred.info##.telegram-new__block
+!+ NOT_OPTIMIZED
 iasabhiyan.com##.sfsi_outr_div
 !+ NOT_OPTIMIZED
 iasabhiyan.com###sfsi_floater
@@ -28929,7 +28932,7 @@ sputniknews-uz.com,sputnik-tj.com,sputnik-ossetia.com,sputnik-abkhazia.info,sput
 star.com.tr##.ebulletin
 auto.ru##.ListingPromoSubscription
 augsburger-allgemeine.de##.aa-newsletter
-managertoday.com.tw##.epaper-item2
+managertoday.com.tw##div[class^="epaper-item"]
 eluniversal.com.mx##.contenedor-gral-widget
 anews.com##.rb-subscriber
 anews.com##.btn-readmore
