@@ -1,8 +1,8 @@
-! Checksum: 8ZKMXC443PpbQFD6C1tVag
+! Checksum: aBeCVKVwGm7ASgJZBhZHjg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.15.63
-! TimeUpdated: 2022-04-13T17:30:39+00:00
+! Version: 2.1.15.64
+! TimeUpdated: 2022-04-13T18:30:37+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -14702,7 +14702,7 @@ qastack.it#$##cookies-consent ~ div.modal-backdrop { display: none !important; }
 ! it breaks search function (it's incorrectly displayed when class "_31e" is removed)
 facebookcareers.com#$#body.hasCookieBanner > ._li._31e { position: sticky !important; }
 facebookcareers.com,messenger.com,facebook.com#$#div[data-testid="cookie-policy-dialog"] { display: none !important; }
-facebook.com#$#div[data-testid="cookie-policy-manage-dialog"] { display: none !important; }
+messenger.com,facebook.com#$#div[data-testid="cookie-policy-manage-dialog"] { display: none !important; }
 messenger.com,facebook.com#%#//scriptlet("remove-class", "_31e", "body > ._li")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/75585#issuecomment-811823586
 ! https://github.com/AdguardTeam/AdguardFilters/issues/69173
@@ -15343,8 +15343,8 @@ virginaustralia.com#%#AG_onLoad(function(){if(-1==document.cookie.indexOf("virgi
 amway-estonia.com,amway-latvia.com,amway-lithuania.com,amway.*#%#//scriptlet('set-cookie-reload', 'isCookieConsentAccepted', 'true')
 amway-estonia.com,amway-latvia.com,amway-lithuania.com,amway.*#%#//scriptlet('set-cookie-reload', 'isMarketingCookiesAccepted', 'false')
 amway-estonia.com,amway-latvia.com,amway-lithuania.com,amway.*#%#//scriptlet('set-cookie-reload', 'isAnalyticsCookiesAccepted', 'false')
-swedbank.se#%#//scriptlet("abort-on-property-read", "CookieBanner.init")
-swedbank.se#%#//scriptlet("abort-on-property-read", "CookieBannerV2.init")
+||swedbank.se/etc.clientlibs/wcms/clientlibs/general-cookie.min.
+online.swedbank.se##fdp-widget-cookie-consent
 mackeeper.com#%#//scriptlet('set-session-storage-item', 'gdprBannerClosed', 'true')
 wezine.fr#%#//scriptlet('set-local-storage-item', 'gbcookies', '1')
 superjob.ua,superjob.ru#%#//scriptlet('set-cookie-reload', 'cookies_policy_accept', 'true')
