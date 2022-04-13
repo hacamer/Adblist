@@ -27,7 +27,7 @@ $lists = array(
 	'EasyPrivacyCNAME' => 'https://raw.githubusercontent.com/easylist/easylist/master/easyprivacy/easyprivacy_specific_cname.txt',
 
 	// EasyListChina
-	'EasyListChina' => 'https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt',
+	'EasyListChina' => 'https://easylist-downloads.adblockplus.org/easylistchina.txt',
 
 	// EasyPrivacy 
 	'EasyPrivacy' => 'https://easylist-downloads.adblockplus.org/easyprivacy.txt',
