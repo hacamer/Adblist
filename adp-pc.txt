@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: wND4Qht1amX/QHTviiCQKg
+! Checksum: 6YbDbc69yQhmkxMckVTUSg
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202204132052
-! Last Modified: 2022年04月13日 20:52
+! Version: 202204132137
+! Last Modified: 2022年04月13日 21:37
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 85462
+! Total count: 85464
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -16968,7 +16968,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 4gamers.com.tw##img[alt="ads"]
 4gamers.com.tw##video[src^="https://img.4gamers.com.tw/ads-media/"]
 4gtv.tv,80s.ai,ft.com,ftchinese.com,ftchinese.com.sz-dns.net,kartinfo.me,long7.qq.com,reh.tw,typecho.wiki#@#.adsbox
-4kporn.xxx,cambro.tv,mangovideo.club#$#override-property-read flashvars.popunder_url null
+4kporn.xxx,cambro.tv,mangovideo.club#$#abort-current-inline-script crakPopInParams; abort-on-property-read onload
 4kporn.xxx,fpo.xxx##.footer-margin
 4kpornmovs.com,pornvideos4k.com##+js(abort-on-property-read, __ASG_VAST)
 4kpornvideos.tv,flashtranny.com,gaymovievids.com,gaypornarchive.com,gayporno.fm,igayporn.tv,machogaytube.com,onlydudes.tv,ts-tube.net,verygayboys.com,xgaytube.tv##.ae-player__itv
@@ -17849,7 +17849,6 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@/pubads*theguardian.com
 @@/script/advert.js$domain=sunbtc.space|weatherx.co.in
 @@/sensorsdata.$domain=36kr.com|binance.com|by56.com|canon.com.cn|chuanglan.com|imooc.com|modian.com|saicskoda.com.cn|shanbay.com|tianyancha.com
-@@/sensorsdata.$domain=36kr.com|binance.com|by56.com|canon.com.cn|imooc.com|modian.com|saicskoda.com.cn|shanbay.com|tianyancha.com
 @@/setCookie?$domain=ctrip.com|ctrip.com.hk|pinyin.cn
 @@/share/js/*$domain=yunpanjingling.com
 @@/show_ad_$domain=wb.qq.com
@@ -25883,6 +25882,7 @@ camarchive.tv##+js(set-constant, adsBlocked, falseFunc)
 camarchive.tv##+js(set-constant, canads, true)
 cambabe.me,camgirlbay.net##+js(abort-current-script, onload, onclick)
 cambridge.org##.topslot-container
+cambro.tv###kt_player > a[href][target="_blank"]
 cambro.tv##+js(abort-on-property-read, crakPopInParams)
 cambro.tv##+js(abort-on-property-read, onload)
 cambro.tv##+js(set-constant, Object.prototype.flashvars.popunder_url, '')
@@ -33183,6 +33183,7 @@ lowendtalk.com##iframe[height="70px"][width="258px"]
 lpg-forum.pl##+js(no-setTimeout-if, $('#overlay').fadeIn)
 lqz.cn###ad_index
 lr-club.com##a[href="https://adblockplus.org/ru/faq_basics#disable"]
+lrepacks.net#$#abort-current-inline-script document.createElement 'delete window'
 lrt.lt##.banner-block
 lshunter.net##[id^="player_event"]
 lshunter.net,lshunter-iframe.com##a[href^="/redirect_bet.php"]
@@ -37373,7 +37374,7 @@ shahrsakhtafzar.com##.flexbannergroup
 shaiba.kz#$#abort-current-inline-script $ 1xbet
 shameless.com##+js(abort-current-script, $LAB, /getexoloader/)
 shankejingling.com
-shanson320.ru,lrepacks.net#$#abort-current-inline-script document.createElement atob
+shanson320.ru#$#abort-current-inline-script document.createElement atob
 shanxivideo.net##.ad_panelAR
 shanxivideo.net##.ads-container
 shanxivideo.net##.banner
@@ -40530,6 +40531,7 @@ wikidiff.com##div[style^="width: 100%; min-height: 200px"]
 wikifeet.com##.dashad
 wikifeet.com#?#.dashboard > div[style^="float:"]:has(> div.dashad)
 wikihow.com###contribute_footer
+wikihow.com##.al_method
 win007.com##a[href^="http://www.edewin.com/"]
 win007.com##div[style="padding:6px 0; width:950px; height:45px"]
 win007.com##td[height="18"][bgcolor="#FFFFE8"]
@@ -57876,6 +57878,7 @@ zznews.cn##.ad:not([style])
 ||gjohvhf.cn^
 ||gjqhufkamcoc.com^
 ||gjqhufkamcoc.com^$third-party
+||gjr.ink^
 ||gjwind.com/xxmh.gif
 ||gk.sina.cn^
 ||gk1.582582.com^
@@ -62508,7 +62511,6 @@ zznews.cn##.ad:not([style])
 ||kancloud.cn/ad/
 ||kanfaxing.com^
 ||kangaroobro.com/bn.js
-||kangaroobro.com^
 ||kangaroohiccups.com^
 ||kangerlu.com^
 ||kanglaijd.cn^

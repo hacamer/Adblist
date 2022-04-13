@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: rYRNl9aW1CvnUIProoFWAQ
+! Checksum: 4iH/OiqOTMYbuVx+qu40Iw
 ! Title: edentwCustom
 ! Expires: 12 hours
-! Version: 202204132052
-! Last Modified: 2022年04月13日 20:52
+! Version: 202204132137
+! Last Modified: 2022年04月13日 21:37
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自Adblock Warning Removal List、ABP filters、anti-adblock-killer-filters，感谢各位大大的分享！
 ! 仅合并规则，未做其余任何处理
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 3457
+! Total count: 3459
 ###AdBlockDialog
 ###WarningCodec
 ###aabl-container
@@ -390,7 +390,7 @@
 4chan.org#@#.bottomad
 4chan.org#@#.middlead
 4chan.org#@#.topad
-4kporn.xxx,cambro.tv,mangovideo.club#$#override-property-read flashvars.popunder_url null
+4kporn.xxx,cambro.tv,mangovideo.club#$#abort-current-inline-script crakPopInParams; abort-on-property-read onload
 4tuning.ro#@#.adsbygoogle
 7days.ru,7ogorod.ru,agrognom.ru,alau.kz,argumenti.ru,argumentiru.com,etotprazdnik.ru,fermilon.ru,fishki.net,globuss24.ru,gorodche.ru,kp.ru,mashintop.ru,maxpark.com,news.ru,newsland.com,ogodom.ru,pasmi.ru,politros.com,shtrafsud.ru,svpressa.ru,teleprogramma.pro#$#abort-on-property-write ccJugger
 7sim.net##html > body ~ div
@@ -1486,6 +1486,7 @@ businessinsider.in,bombaytimes.com#?#div:-abp-has(> h2:-abp-contains(Promoted St
 bycard.by,goodfon.ru,old-games.ru,satsis.info,swordmaster.org##.adb
 bytzbiorowy.pl###stickymsg
 byzoo.org,videobug.net##div[style^="position: absolute; width: 300px;"]
+cambro.tv###kt_player > a[href][target="_blank"]
 canhasbitcoin.com###adblock-message
 cast4u.tv###notice
 cast4u.tv###video_ads_overdiv
@@ -2163,6 +2164,7 @@ lolsy.tv##.reklama-sidebar
 londynek.net###abp
 lostfilm.tv##div[class^="alarm"]
 lr-club.com##a[href="https://adblockplus.org/ru/faq_basics#disable"]
+lrepacks.net#$#abort-current-inline-script document.createElement 'delete window'
 lxhentai.com#$#abort-current-inline-script document.cookie
 ma.by###bodysubcont > div[style^="padding"]:not([id]):not([class])
 macos-app.com#@##adsense
@@ -2625,7 +2627,7 @@ seznamzpravy.cz/*ssp.js
 shadbase.com##img[alt="adblock"]
 shahid4u.club#@#.adsBox
 shaiba.kz#$#abort-current-inline-script $ 1xbet
-shanson320.ru,lrepacks.net#$#abort-current-inline-script document.createElement atob
+shanson320.ru#$#abort-current-inline-script document.createElement atob
 sharecast.eu,sharecast.to###table1
 sharecast.to##iframe[src^="http://delitaly.com.br/"]
 sharecast.to##iframe[src^="http://mixturecloud.com.br/"]

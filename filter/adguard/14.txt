@@ -1,8 +1,8 @@
-! Checksum: qda6bLrMjTy4oNZwQGlFNQ
+! Checksum: RACJgiuvrkTS9oLfqucMFw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.15.57
-! TimeUpdated: 2022-04-13T12:30:38+00:00
+! Version: 2.1.15.59
+! TimeUpdated: 2022-04-13T13:30:38+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7313,6 +7313,9 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+jti.co.jp##.p-top_cookie-agreement
+pronews.jp##.cookieGate
+7-eleven.com##section[class^="CCPABanner_ccpa-banner"]
 ||online.gather.network^$domain=faucetofbob.xyz
 sprawdzone.pl##.rodoPopup
 myslenice-itv.pl##.pum-overlay[data-popmake*="polityka-prywatnosci"]
@@ -11259,7 +11262,7 @@ banker.ua,sravnibank.com.ua##.csppp-container
 creditznatok.com.ua###cookierookie
 otelrezervasyon.com##.datapolicy-wrapper
 tatilsepeti.com##.cookie-confirmation
-yarentier.ru,cardsmobile.ru,etorazvesex.ru##div[data-storage-item^="t886cookiename_"]
+russianfield.com,yarentier.ru,cardsmobile.ru,etorazvesex.ru##div[data-storage-item^="t886cookiename_"]
 msn.com###cookiebanner
 pracuj.pl###kansas-header > div[data-test="section-cookies-prompt"]
 kuehne.com.tr##.kue-cookie-notification
@@ -11613,8 +11616,6 @@ fightthenewdrug.org#$#.pum-overlay[data-popmake*="cookies"] { display: none!impo
 kfzteile24.de##.cookiePolicyContainer
 ||sfchronicle.com/file/*-gdpr-min.js
 digitalo.de#$#.is-reveal-open { overflow: visible !important; }
-plex.tv#$#html { overflow: visible !important; }
-plex.tv#$#div[class="remodal-overlay remodal-is-opened"]:empty { display: none !important; }
 papierkannmehr.de##.m-cookies
 giant-bicycles.com#$##cookiePopupModal { display: none !important; }
 giant-bicycles.com#$#.modal-backdrop { display: none !important; }
@@ -12966,7 +12967,7 @@ deluxe-marketing.com###dsgvo-cookie-container
 otosklep24.pl###dymek
 schuh-armbruster.de###egg-cookie-bar
 ephe.fr###elytics
-ensighten.com,surfeasy.com,vw.com.br,vueling.com,easyjet.com,fidelity.de,experianidentityservice.co.uk,nortonlifelock.com,experian.co.uk,norton.com,beerwulf.com,volkswagen.ch,volkswagenplus.ca,bhphotovideo.com,binekarac.vw.com.tr,latimes.com,scotsman.com###ensNotifyBanner
+jrhotelgroup.com,ensighten.com,surfeasy.com,vw.com.br,vueling.com,easyjet.com,fidelity.de,experianidentityservice.co.uk,nortonlifelock.com,experian.co.uk,norton.com,beerwulf.com,volkswagen.ch,volkswagenplus.ca,bhphotovideo.com,binekarac.vw.com.tr,latimes.com,scotsman.com###ensNotifyBanner
 strato.de,strato.nl###eu-cookie-guideline
 yourdigitalrights.org##.react-cookie-law-dialog
 rail.cc###eucookiebox
@@ -20728,6 +20729,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+smartpress.by##.noty_layout
 dcard.tw#?#.__portal > div[class^="sc-"]:has(a[href^="https://www.dcard.tw/service/_auth/"] > button)
 easepdf.com##.files_fixed
 aliexpress.ru#$#div[class^="ali-kit_Dialog__"] { display: none!important; }
@@ -28038,6 +28040,7 @@ experts-exchange.com##.ctaSolutionStickyWrapper
 theguardian.com##.contributions__adblock
 ||contributions.guardianapis.com^
 !
+smartpress.by##body div.top-box
 interviewbit.com##.ribbon-banner
 arynews.tv#?#.td-main-content-wrap div.vc_column > style + div.wpb_wrapper:has(> div.td_block_wrap div.td-custom-image > a[href="https://live.arynews.tv/"])
 so-net.ne.jp##.comp-gate
@@ -29052,7 +29055,6 @@ bloomberg.com###plug-banner-outlet
 reuters.com##div[class^="registration-prompt__container__"]
 news.finance.ua##div[class^="SubscriptionsStyles__EmailContainer-"]
 lodgecastiron.com###block-stickybottompagepromo[aria-label="email sign up promotion"]
-smartpress.by##.top-box
 babel.ua##.c-subs-box
 ottoversand.at###sheet
 polygon.com##.c-toaster[data-cdata*="Polygon Weekly Update Newsletter"]
