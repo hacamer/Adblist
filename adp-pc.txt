@@ -1,9 +1,9 @@
 [Adblock Plus 3.0]
-! Checksum: zw6qV/wbwKCssCQrot3XrQ
+! Checksum: GiIvctSi5PEHxVQ+VXeLfg
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202204140730
-! Last Modified: 2022年04月14日 07:30
+! Version: 202204141015
+! Last Modified: 2022年04月14日 10:15
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -9253,6 +9253,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /adconfig.
 /adcontent.$~image,~object
 /adcontroller.
+/adcore.$domain=~adcore.be|~adcore.ch|~adcore.com.au|~adcore.ua
 /adcore_$domain=~adcore.ch|~adcore.com.au
 /adcount.$domain=~adcount.com|~adcount.fi
 /adcounter.
@@ -16572,7 +16573,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 1movies.life##a[href^="/user/premiummembership"] > img
 1movies.life##div[id] > .close.ico
 1movies.life##div[id] > .close.ico + a[href^="/user/premiummembership"]
-1news.co.nz,boston25news.com,kiro7.com,wftv.com,wpxi.com##.arcad_feature
+1news.co.nz,boston25news.com,kiro7.com,wftv.com,whio.com,wpxi.com##.arcad_feature
 1sale.com,7billionworld.com,9jaflaver.com,achieveronline.co.za,canstarblue.co.nz,chordfrenzy.com,climatechangenews.com,cryptonomist.ch,dallasobserver.com,energyforecastonline.co.za,esports.com,eventcinemas.co.nz,flashx.tv,furaffinity.net,geo.tv,govtrack.us,gramfeed.com,houstonpress.com,idiva.com,indiatimes.com,inspirock.com,knowyourmeme.com,m.economictimes.com,marinetraffic.com,mb.com.ph,mehrnews.com,meta-calculator.com,mini-ielts.com,miningprospectus.co.za,mugshots.com,myfitnesspal.com,nativeplanet.com,nbc.na,news.nom.co,nsfwyoutube.com,roadaheadonline.co.za,roms-download.com,russia-insider.com,russian-faith.com,savevideo.me,sddt.com,servicepublication.co.za,sgcarmart.com,sherdog.com,shipyearonline.co.za,stars-portraits.com,straitstimes.com,strawpoll.me,tcm.com,tech2.com,tehrantimes.com,tellerreport.com,thecatholicuniverse.com,thejakartapost.com,thelakewoodscoop.com,themalaysianinsider.com,thenews.com.pk,theprojectmanager.co.za,thestar.com.my,viamichelin.com,viamichelin.ie,vidstreaming.io,wallpaper.com,y8.com,yummy.ph##.ads
 1shortlink.com,shortenlink.vip##+js(abort-on-property-read, showAlertRequireDisableAdblocker)
 1snau.ru,bychico.net,dyrik.ru,ecosounds.net,in-drive.ru,inforpost.com,musecube.org,obozrevatel.com,oknotivi.ru,pogodnik.com,sandero.ru,turbominer.ru##body > div[style*="z-index"][style*="9999"]
@@ -33386,6 +33387,7 @@ macrumors.com##div[id^="adUnder"]
 macupdate.com##.mu_app_additional_ad
 macwk.com#@#.adBanner
 macworld.co.uk##+js(abort-current-script, navigator.userAgent, Flags.)
+macworld.co.uk,supremacy1914.com,techadvisor.com##img[referrerpolicy]
 made-by.org##+js(no-fetch-if, pagead2.googlesyndication.com)
 madnessporn.com##.cam
 madouqu.com,madouqu.tk#$#abort-current-inline-script document.querySelectorAll popMagic
@@ -34587,19 +34589,9 @@ nbastreams.xyz##+js(window.open-defuser)
 nbaup.live,goalup.live##+js(abort-on-property-read, popup)
 nbc.com##.video-player__overlay.video-player__overlay--mute
 nbc.com##.video-player__overlay.video-player__overlay--pause
-nbcbayarea.com#?#.most-popular__post:-abp-has(.most-popular__presented_by)
-nbcboston.com#?#.most-popular__post:-abp-has(.most-popular__presented_by)
-nbcchicago.com#?#.most-popular__post:-abp-has(.most-popular__presented_by)
-nbcconnecticut.com#?#.most-popular__post:-abp-has(.most-popular__presented_by)
-nbcdfw.com#?#.most-popular__post:-abp-has(.most-popular__presented_by)
-nbclosangeles.com#?#.most-popular__post:-abp-has(.most-popular__presented_by)
-nbcmiami.com#?#.most-popular__post:-abp-has(.most-popular__presented_by)
-nbcnewyork.com#?#.most-popular__post:-abp-has(.most-popular__presented_by)
-nbcphiladelphia.com#?#.most-popular__post:-abp-has(.most-popular__presented_by)
-nbcsandiego.com#?#.most-popular__post:-abp-has(.most-popular__presented_by)
+nbcbayarea.com,nbcboston.com,nbcchicago.com,nbcconnecticut.com,nbcdfw.com,nbclosangeles.com,nbcmiami.com,nbcnewyork.com,nbcphiladelphia.com,nbcsandiego.com,nbcwashington.com#?#.most-popular__post:-abp-has(.most-popular__presented_by)
 nbcsports.com###nbcsports-leaderboard
 nbcsports.com#$#.entry-footer { min-height: 0!important; }
-nbcwashington.com#?#.most-popular__post:-abp-has(.most-popular__presented_by)
 ncaa.com###banner-purse
 ncnews.com.cn##div[id^="ban"]
 ncno1.playno1.com##.eis_box_s > div:first-child
@@ -47608,7 +47600,6 @@ zznews.cn##.ad:not([style])
 ||as.mytoys.de^
 ||as.otto.de^
 ||as.payback.it^
-||as.saechsische.de^
 ||as.yomonda.de^
 ||as1.m.hao123.com^
 ||as1.wenku.baidu.com^
@@ -57626,6 +57617,7 @@ zznews.cn##.ad:not([style])
 ||geethoap.com^
 ||gegeyingshi.com/template/*/images/g_js/
 ||geili.co^
+||geili201911.ink^
 ||geishascoset.com^
 ||geistm.com^$third-party
 ||gekko.spiceworks.com^
@@ -61821,6 +61813,7 @@ zznews.cn##.ad:not([style])
 ||jiaoyu.baidu.com/tieba/
 ||jiasheng-china.cn^
 ||jiasule.com/static/js/http_error.js
+||jiatu.co^
 ||jiawen88.com^$third-party
 ||jiayi2019.top^
 ||jiayiss.com^
@@ -63983,6 +63976,7 @@ zznews.cn##.ad:not([style])
 ||llbapvoave.com^
 ||llesisnxrg.com^
 ||llguandongyan.com^
+||llhhbb.top^
 ||llii.club^
 ||llj22.com/1.gif
 ||llkdiu.chacos.com^
@@ -66687,6 +66681,7 @@ zznews.cn##.ad:not([style])
 ||mrksys.com^
 ||mrpecvqw.com^$third-party
 ||mrpjcd.tensunits.com^
+||mrqls.to/info/
 ||mrqpcy.biggreensmile.nl^
 ||mrtbbnr.com^
 ||mrtpcfegryfgqtbuvksbaebneewer.com^
@@ -75511,6 +75506,8 @@ zznews.cn##.ad:not([style])
 ||sozi.cn/templets/sozi/js/js.js
 ||sp.app.com^
 ||sp.argusleader.com^
+||sp.aviasales.com^
+||sp.aviasales.ru^
 ||sp.azcentral.com^
 ||sp.battlecreekenquirer.com^
 ||sp.baxterbulletin.com^
@@ -81977,6 +81974,7 @@ zznews.cn##.ad:not([style])
 ||weinin99.cn^
 ||weipapa.top^
 ||weiweitop.top^
+||weix.xyz^
 ||weixinhuoyuan.com^
 ||weixisiwang.com^
 ||weiyajz.cn^
@@ -82211,6 +82209,7 @@ zznews.cn##.ad:not([style])
 ||windowsreport.com/rpbAQWv6PQMG.js
 ||windowsxi.com^
 ||windsplay.com^
+||windteam.xyz^
 ||windy.com/sedlina/ga/
 ||windzq.com^
 ||wine-searcher.com/K6S8okp3/init.js
@@ -83363,6 +83362,7 @@ zznews.cn##.ad:not([style])
 ||xiaoshuotxt.*/skin/v3/js/
 ||xiaoshuoyun.cn^
 ||xiaotaowangluo.com^
+||xiaotong.pink^
 ||xiaoxiangmovie.com^
 ||xiaoxiaoyd.cn^
 ||xiaoyaunbao.club^
