@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: 1r/DWV86GWLXL7nD77yOCQ
+! Checksum: Bu9oik5EJudGltWh452bZw
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202204141328
-! Last Modified: 2022年04月14日 13:28
+! Version: 202204141439
+! Last Modified: 2022年04月14日 14:39
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 85390
+! Total count: 85394
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -23050,6 +23050,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||videoadept.com^$generichide
 @@||videoads.kakao.com/adserver/api/v*/vast?data=$domain=kakaotv.daum.net|play-tv.kakao.com|tv.kakao.com|media.daum.net|v.daum.net|entertain.daum.net|gallery.v.daum.net|namu.wiki
 @@||videoads.kakao.com/adserver/api/v*/vmap$domain=daumcdn.net|kakaotv.daum.net|play-tv.kakao.com|tv.kakao.com|media.daum.net|v.daum.net|entertain.daum.net|gallery.v.daum.net|namu.wiki
+@@||videocdn.click/reclama/ads.js$domain=canale.live
 @@||videocdn.click/reclama/ads.js$script,domain=hdsport.biz
 @@||videogamesblogger.com^$csp
 @@||videoo.info/show_ads.js$script,domain=videoo.info
@@ -25903,6 +25904,7 @@ camwhoresbay.com##div[style^="width:300px;"][style*="height:250px"]
 canada411.ca##.c411TopBanner
 canadianbusiness.com,macleans.ca,yardbarker.com###leaderboard_container
 canale.live##+js(no-setInterval-if, adblock)
+canale.live##+js(set-constant, canRunAds, true)
 canale.live##+js(set-constant, google_tag_data, emptyObj)
 canale.live##+js(set-constant, isBlocked, false)
 canarianweekly.com##.banner-in-content
@@ -32723,6 +32725,7 @@ la-cosa.it#@#div[id^="div-gpt-ad"]
 la-faculte.net#@##adsense
 la7.it##+js(set-constant, __iasPET, emptyObj)
 labelotaku.com##+js(abort-current-script, eval, ignielAdBlock)
+ladbible.com##+js(set-constant, pbjs.adUnits, emptyArr)
 ladbible.com##div[data-cypress="sticky-header"]
 ladbible.com#$#body > div[id].margin-Advert { display: block !important; }
 ladbible.com#@#div[class*="margin-Advert"]
@@ -53635,6 +53638,7 @@ zznews.cn##.ad:not([style])
 ||dhdgkj.com^
 ||dhejr.cn^
 ||dhgxl8qk9zgzr.cloudfront.net/js/log.js
+||dhhpm.cn^
 ||dhipc.cn^
 ||dhjrjqgclb.com^
 ||dhl.com/g8Dj6P8TAg/
