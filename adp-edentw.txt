@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: jjD1ZfFVpYro4J6SzKhqCA
+! Checksum: h4rt7HgQ72UnKMjdevn3Ew
 ! Title: edentwCustom
 ! Expires: 12 hours
-! Version: 202204142140
-! Last Modified: 2022年04月14日 21:40
+! Version: 202204142228
+! Last Modified: 2022年04月14日 22:28
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自Adblock Warning Removal List、ABP filters、anti-adblock-killer-filters，感谢各位大大的分享！
 ! 仅合并规则，未做其余任何处理
@@ -1667,7 +1667,7 @@ dziennikwschodni.pl#@#.adholder
 e-sushi.fr#$#abort-on-property-read aEteAffiche
 e-xecutive.ru##.warning
 e15.cz##.mys-wrapper
-ebay.co.uk,ebay.com,ebay.com.au#$#hide-if-contains-visible-text SPONSORED 'li.s-item' 'li.s-item span[role="text"]'
+ebay.co.uk,ebay.com,ebay.com.au#$#hide-if-contains-visible-text /[Sponsored]+(?![\w,])/ 'li.s-item' 'li.s-item span[role="text"]'
 ebay.de##li[class^="s-item s-item__sep-on-bottom"]
 ebay.de#$#hide-if-contains-visible-text /Anzeige|ANZEIGE/ 'li.s-item' 'li.s-item span[role="text"]'
 ebay.de#$#hide-if-matches-xpath './/div[contains(@class,"s-item__")]/following-sibling::span[@class]/span[@role="text"][count(child::span[@class]) >= 28][(contains(text(),""))]/ancestor::li[1][starts-with(@class,"s-item")]'
