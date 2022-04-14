@@ -1,8 +1,8 @@
-! Checksum: ykwzh4PG8A9hhTskxO2pAg
+! Checksum: 4Gk9eok5RIM3Xo0cgoi45Q
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.15.65
-! TimeUpdated: 2022-04-13T19:30:35+00:00
+! Version: 2.1.15.66
+! TimeUpdated: 2022-04-14T03:30:40+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -12382,7 +12382,7 @@ xn--giant-dsseldorf-5vb.de###cookiePopupModal
 subpng.com,allfreeapk.com###cookieScriptId ~ .fot-fixd
 104.ua###cookie__page
 historiapojazdu.gov.pl###cookie_agree
-alpha-bikes.de,fahrrad-riese.de,huebel-bonn.de,gencgazete.net###cookie_information
+bikecenter.de,alpha-bikes.de,fahrrad-riese.de,huebel-bonn.de,gencgazete.net###cookie_information
 michelin.com###cookie_opt_in_top_bar_container
 amigo-spiele.de,book-n-drive.de,drive-carsharing.com,facciabuco.com###cookiedialog
 technogym.com,technogym.ru###cookiepolicy-dropdown
@@ -15947,7 +15947,7 @@ ergo-impulse.de#%#//scriptlet("remove-class", "borlabs-position-fix", "body")
 tataq.com#%#//scriptlet('prevent-setTimeout', '#cookies')
 webradio.de#%#AG_onLoad(function(){var a=new MutationObserver(function(){var b=document.querySelector('#uc-btn-accept-banner');b&&b.click()});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)});
 stabila.com#%#(function(){-1==document.cookie.indexOf("cms_cookies")&&(document.cookie="cms_cookies=6; path=/;",document.cookie="cms_cookies_saved=true; path=/;",location.reload())})();
-dlr.de,clickbaits.de,gesundheitswissen.de#%#//scriptlet("remove-class", "ccm-blocked", "body")
+dlr.de,clickbaits.de,gesundheitswissen.de#%#//scriptlet('remove-class', 'ccm-blocked', 'body,html')
 filmweb.pl#%#//scriptlet('remove-class', 'rodo', 'body.rodo')
 pharmazeutische-zeitung.de#%#document.cookie="erlaubte_cookies=1; path=/;";
 klaviano.com#%#document.cookie="klaviano_police=1; path=/;";
@@ -20583,6 +20583,7 @@ rt.com#$#.layout__header_top-interval_js { height: 50px!important; }
 !
 !--- Directive
 !--- Android && iOS
+afisha.ru#?#div[id="__PAGE__"] > div[class]:has(> a[href^="https://redirect.appmetrica.yandex.com/serve/"])
 pinkoi.com#$##g-app-bar { display: none !important; }
 pinkoi.com#$#.s-app-banner div#m-mainview { padding-top: 51px !important; }
 lihkg.com#?##app > div#splitView ~ div[class]:has(> div[class] div[class]:contains(APP))
@@ -20595,6 +20596,7 @@ newzit.com#$#div[class*="hasSmartBanner_"] { padding-top: 0 !important; }
 !
 ! Unhide for Android CB if top padding cannot be removed
 !
+daily.afisha.ru##.afisha-app
 niusnews.com##div[id^="evtBot"]
 dtf.ru,vc.ru,tjournal.ru##.mobile-app-redirect
 cosme.net##.ContentBanner
