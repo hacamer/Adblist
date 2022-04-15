@@ -1,8 +1,8 @@
-! Checksum: k0i2n7yJSu8iIXtQkE241Q
+! Checksum: iZ5ebPoqPVE+hkgFPjHi+Q
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.15.90
-! TimeUpdated: 2022-04-15T17:02:11+00:00
+! Version: 2.1.15.91
+! TimeUpdated: 2022-04-15T18:30:35+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -93,6 +93,7 @@
 youtube.com#%#AG_onLoad(function() {var a = new MutationObserver(function() {if (document.querySelector('yt-upsell-dialog-renderer')) {var b = document.querySelector('.ytd-popup-container[popup-size="UPSELL_DIALOG_RENDERER_POPUP_SIZE_LARGE"] #dismiss-button:not(.dismissed), .upsell-dialog-lightbox .upsell-dialog-dismiss-button button:not(.dismissed)');setTimeout(function() {b&&b.click()}, 3E2)}});a.observe(document, {childList: !0,subtree: !0});setTimeout(function() {a.disconnect()}, 3E3)});
 !
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115659
+ign.com##.premium-content-block
 ign.com##.infeed-player
 ! https://github.com/AdguardTeam/AdguardFilters/pull/112714
 ! twitch.tv - promoted stream tiles
@@ -18894,6 +18895,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+google.*##body > div[style="min-height: 100%; display: none;"] + div[style="visibility: visible;"] > div[jsowner]
 sofy.jp##.app-dl-fixed
 job.nifty.com##.bnr-area
 erecipe.woman.excite.co.jp##.appdl_container
@@ -19995,7 +19997,7 @@ narodna-pravda.ua##.mobile_apps
 narodna-pravda.ua##.copyright > a[rel="noopener"] > img
 bing.com###hc_opalinst_cta
 bing.com###bnp_ttc_div
-carsensor.net,vesselfinder.com##.applink
+zexy.net,carsensor.net,vesselfinder.com##.applink
 vesselfinder.com###map-sidebar > #sbup
 androidinsider.ru###google-play-app-post
 zdnet.de,neberitrubku.ru##.appPromo
@@ -20763,6 +20765,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+zexy.net##.campain-banner--fixed
 pogoda.interia.pl##.inpl-tout-sticky.body__common-header--fixed .vjs-fixedmonitor-wrapper-fixed
 at-s.com##.bnr_popup01
 fx-rashinban.com##.bmMessageBln
@@ -34597,6 +34600,8 @@ twgreatdaily.com$$script[tag-content="indexOf|css|fn|this|attr|unselectable|cons
 ##.blogroll_wrapper_4
 ##.blogroll_wrapper_honbun
 !
+kisslog2.com##.rss_wrapper
+kisslog2.com##.ranking-wrap
 newsoku.blog##.headrsssp
 newsoku.blog##.headrsspc
 newsoku.blog##.headrsssppc
