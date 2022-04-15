@@ -1,8 +1,8 @@
-! Checksum: gSr8N3pIH/0b9B9QyI2h2A
+! Checksum: evrO7LjDPFC3N8iKZfBnMQ
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.28.65
-! TimeUpdated: 2022-04-15T13:30:24+00:00
+! Version: 2.0.28.67
+! TimeUpdated: 2022-04-15T15:30:21+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1293,11 +1293,7 @@ westseattleblog.com#@#.header-ad
 !
 !
 ! https://github.com/AdguardTeam/AdguardFilters/issues/113316
-m.facebook.com#?#div[data-mcomponent="MContainer"] > div[data-mcomponent="MContainer"]:has(> div[data-mcomponent="MContainer"] > div[data-mcomponent="MContainer"] > div[data-mcomponent="TextArea"] > .native-text > span:contains(/^(Sponsored)/))
-m.facebook.com#?#div[data-mcomponent="MContainer"] > div[data-mcomponent="MContainer"][style*="display: none !important;"] + div[data-mcomponent="MContainer"]
-m.facebook.com#?#div[data-mcomponent="MContainer"] > div[data-mcomponent="MContainer"][style*="display: none !important;"] + div[data-mcomponent="MContainer"] + div[data-mcomponent="MContainer"]
-m.facebook.com#?#div[data-mcomponent="MContainer"] > div[data-mcomponent="MContainer"][style*="display: none !important;"] + div[data-mcomponent="MContainer"] + div[data-mcomponent="MContainer"] + div[data-mcomponent="MContainer"]
-m.facebook.com#?#div[data-mcomponent="MContainer"] > div[data-mcomponent="MContainer"][style*="display: none !important;"] + div[data-mcomponent="MContainer"] + div[data-mcomponent="MContainer"] + div[data-mcomponent="MContainer"] + div[data-mcomponent="MContainer"]
+m.facebook.com#?#div[data-mcomponent="MContainer"] > div[data-mcomponent="MContainer"]:has(> div[data-mcomponent="MContainer"] > div[data-mcomponent="MContainer"] > div[data-mcomponent="TextArea"] .native-text > span:contains(/(Sponsored|Gesponsert|Sponsorlu|Sponsorowane|Ispoonsara godhameera|Geborg|Bersponsor|Ditaja|Disponsori|Giisponsoran|Sponzorováno|Sponsoreret|Publicidad|May Sponsor|Sponsorisée|Oipytyvôva|Ɗaukar Nayin|Sponzorirano|Uterwa inkunga|Sponsorizzato|Imedhaminiwa|Hirdetés|Misy Mpiantoka|Gesponsord|Sponset|Patrocinado|Patrocinado|Sponsorizat|Sponzorované|Sponsoroitu|Sponsrat|Được tài trợ|Χορηγούμενη|Спонсорирано|Спонзорирано|Ивээн тэтгэсэн|Реклама|Спонзорисано|במימון|سپانسرڈ|دارای پشتیبانی مالی|ስፖንሰር የተደረገ|प्रायोजित|ተደረገ|प|प्रायोजित|স্পনসর্ড|ਪ੍ਰਯੋਜਿਤ|પ્રાયોજિત|ପ୍ରାୟୋଜିତ|செய்யப்பட்ட செய்யப்பட்ட|చేయబడినది చేయబడినది|ಪ್ರಾಯೋಜಿಸಲಾಗಿದೆ|ചെയ്‌തത് ചെയ്‌തത്|ලද ලද ලද|สนับสนุน สนับสนุน รับ สนับสนุน สนับสนุน|ကြော်ငြာ ကြော်ငြာ|ឧបត្ថម្ភ ឧបត្ថម្ភ ឧបត្ថម្ភ|광고|贊助|内容 内容|贊助|告 告|広告|സ്‌പോൺസർ ചെയ്‌തത്)/))
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115408
 full-count.jp#?#.erase_space-ad ~ div.c-heading:has(> p[class^="c-heading_"]:contains(RECOMMEND))
 ! https://github.com/AdguardTeam/AdguardFilters/issues/113846
@@ -2662,6 +2658,10 @@ sdamgia.ru##center > div[id*="_"] > div[style*="width: 100%;"]
 !! old interface
 mbasic.facebook.com,d.facebook.com,free.facebook.com,free.facebookcorewwwi.onion,mbasic.facebookcorewwwi.onion,d.facebookcorewwwi.onion,m.facebook.com,m.facebookcorewwwi.onion,b-m.facebook.com,b-m.facebookcorewwwi.onion,mobile.facebook.com,mobile.facebookcorewwwi.onion,0.facebook.com,0.facebookcorewwwi.onion##div[role="article"][data-ft*='"originated_from_recommendation":"1"']
 !! new interface
+m.facebook.com##div[data-mcomponent="MContainer"] > div[data-mcomponent="MContainer"][style*="display: none !important;"] + div[data-mcomponent="MContainer"]
+m.facebook.com##div[data-mcomponent="MContainer"] > div[data-mcomponent="MContainer"][style*="display: none !important;"] + div[data-mcomponent="MContainer"] + div[data-mcomponent="MContainer"]
+m.facebook.com##div[data-mcomponent="MContainer"] > div[data-mcomponent="MContainer"][style*="display: none !important;"] + div[data-mcomponent="MContainer"] + div[data-mcomponent="MContainer"] + div[data-mcomponent="MContainer"]
+m.facebook.com##div[data-mcomponent="MContainer"] > div[data-mcomponent="MContainer"][style*="display: none !important;"] + div[data-mcomponent="MContainer"] + div[data-mcomponent="MContainer"] + div[data-mcomponent="MContainer"] + div[data-mcomponent="MContainer"]
 !!! Ad in menu
 m.facebook.com##div[data-type="vscroller"][data-comp-id] > div[tabindex] + div[style]:not([data-action-id]):not([data-focusable="true"]):not([style*="1px"])
 !

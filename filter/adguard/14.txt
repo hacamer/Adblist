@@ -1,8 +1,8 @@
-! Checksum: YQFex7saEKN+KUH0/mBzXQ
+! Checksum: xtWTSRceZlQul9JZFOu/JA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.15.87
-! TimeUpdated: 2022-04-15T13:02:10+00:00
+! Version: 2.1.15.88
+! TimeUpdated: 2022-04-15T14:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -92,6 +92,11 @@
 ! https://github.com/AdguardTeam/AdguardFilters/issues/76987
 youtube.com#%#AG_onLoad(function() {var a = new MutationObserver(function() {if (document.querySelector('yt-upsell-dialog-renderer')) {var b = document.querySelector('.ytd-popup-container[popup-size="UPSELL_DIALOG_RENDERER_POPUP_SIZE_LARGE"] #dismiss-button:not(.dismissed), .upsell-dialog-lightbox .upsell-dialog-dismiss-button button:not(.dismissed)');setTimeout(function() {b&&b.click()}, 3E2)}});a.observe(document, {childList: !0,subtree: !0});setTimeout(function() {a.disconnect()}, 3E3)});
 !
+! https://github.com/AdguardTeam/AdguardFilters/pull/112714
+! twitch.tv - promoted stream tiles
+twitch.tv##div.tw-tower > div:has(div.promoted-card-stat__promotion)
+! https://github.com/AdguardTeam/AdguardFilters/issues/113750
+turkishairlines.com#?##page_wrapper > section.nopadding:has(> div.middle-wrapper img[title^="Turkish Airlines"])
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115444
 crunchyroll.com##.welcome-featured-media
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115178
@@ -7317,6 +7322,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+fundacja.santander.pl##.awb-show
 m.censor.net###usage-notice-message
 merlion.com###policyBlockForFirstVisit
 gxc.gg##.ReactModal__Overlay--after-open._
@@ -32078,7 +32084,7 @@ tonkosti.ru##.journal-subscribe
 tsf.pt##.js-contentcollapse-root[data-type="box-newsletter-detail"]
 medium.com##.js-directEmailSignup
 travelask.ru##.js-footer-banner
-mytoys.de##.js-newsletter
+transparency.org,mytoys.de##.js-newsletter
 gamebillet.com##.alert-box-flexible
 haaretz.com##.js-newsletter--alerts
 rbc.ru##.js-subscribe-block
@@ -32541,6 +32547,8 @@ magazine.skyeng.ru##.tg-banner
 !######### CSS tweaks #########
 !##############################
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/115570
+news.kstyle.com##div[style*="width:640px;"][style*="height:253px;"] + aside > div.MdMN12Line
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115284
 itigic.com#$#body { padding-bottom: 0!important; }
 ! https://github.com/uBlockOrigin/uAssets/issues/12468

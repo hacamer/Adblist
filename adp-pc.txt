@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: 2OCJ+ROQ7E/xYqvl50mmjg
+! Checksum: LzDWNjh9Gw1k5niMSxjG7g
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202204152228
-! Last Modified: 2022年04月15日 22:28
+! Version: 202204152333
+! Last Modified: 2022年04月15日 23:33
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 85459
+! Total count: 85461
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -30132,6 +30132,8 @@ h5.17k.com#$#body { overflow: visible!important; }
 h5.17k.com#$#html { overflow: visible!important; }
 h5.adshell.net##+js(window.open-defuser)
 haaretz.co.il##+js(addEventListener-defuser, load, hblocked?returnTo)
+haaretz.co.il#$#hide-if-contains-and-matches-style /Labels/ section h2[class]
+haaretz.co.il#$#hide-if-contains-and-matches-style /Labels/ section h3[class]
 haaretz.co.il#@#div[class*="addBlocker"]
 haaretz.com##+js(addEventListener-defuser, load, hblocked?returnTo)
 haaretz.com##div[data-test="topStrip"]
@@ -32994,6 +32996,7 @@ likr.tw###avivid_waterfall_wp_product_area
 limaenvivo.com##IMG[title="close"]
 limetorrents.*#?##content > table.table3:has(> tbody > tr > th:contains(Sponsored))
 limetorrents.*#?##rightbar > div:has(> .head:contains(Advertisement))
+limetorrents.cyou,poscitech.click,mikaraw.com,daddylive.me,iguarras.com,iputitas.net,coinsurl.com,luckydice.net,coinsearns.com,easymp3converter.com,fastconv.com,akwam.*,dogemate.com,promo-visits.site##+js(abort-on-property-read, afScript)
 limetorrents.pro##a[href^="/leet/?"] > img[src^="/static/images/download"]
 limetorrents.pro##a[title*="An‌on‌ymous Download"]
 limetorrents.pro#?#.torrentinfo div + div:-abp-contains(Fast And Direct Download Safely And Anonymously)
@@ -36196,7 +36199,6 @@ portalspozywczy.pl#?#.left > .box-0:has(> .abc:only-child)
 portalspozywczy.pl#?#.post_ax > .one > .pageWidth:has(> .box-0 > .abc)
 portalspozywczy.pl#?#main > .one > .pageWidth:has(> .box-0 > .abc)
 portel.pl##+js(set-constant, blokowanko, false)
-poscitech.click,mikaraw.com,daddylive.me,iguarras.com,iputitas.net,coinsurl.com,luckydice.net,coinsearns.com,easymp3converter.com,fastconv.com,akwam.*,dogemate.com,promo-visits.site##+js(abort-on-property-read, afScript)
 positronx.io##div[class*="ad-cls-block"]
 post-gazette.com###benn-poll-iframe-container
 post-gazette.com##.pg-adwrapper-300x250
