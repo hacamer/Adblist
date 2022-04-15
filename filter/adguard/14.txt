@@ -1,8 +1,8 @@
-! Checksum: xtWTSRceZlQul9JZFOu/JA
+! Checksum: pWGfH66pbSYLxHCrtBNWmw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.15.88
-! TimeUpdated: 2022-04-15T14:30:34+00:00
+! Version: 2.1.15.89
+! TimeUpdated: 2022-04-15T16:30:40+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -35425,6 +35425,8 @@ subbota.ua##aside.sidebar > div[id^="custom_html-"]
 !
 ! Donation widgets (which are really annoying only)
 !
+proagro.com.ua#$#.td-outer-container { background-image: none !important; cursor: default !important; }
+proagro.com.ua#%#//scriptlet("abort-on-property-read", "wpsite_clickable_data")
 focus.ua##.js-cat-required
 tsn.ua##.c-donate
 ||i.lb.ua/static/donate/news.png
