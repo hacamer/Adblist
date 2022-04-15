@@ -1,8 +1,8 @@
-! Checksum: jix+lssMUp/RQeeMn77vjg
+! Checksum: mbArCkjAN+2zZ2GlquPdEg
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.0.53.8
-! TimeUpdated: 2022-04-15T10:31:00+00:00
+! Version: 2.0.53.9
+! TimeUpdated: 2022-04-15T12:31:01+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2311,6 +2311,8 @@ nfmovies.com#@?#div[id]:-abp-has(>img[onclick="openurl()"])
 !--------------- EasyList China rules --------------------------------------!
 !---------------------------------------------------------------------------!
 -*-*-*-*.panda^$script,third-party
+.com/gg/*?x=$script,third-party
+.cn/gg/*?x=$script,third-party
 -1688-wp-media/ads/
 -880-80-4.jpg
 -90mh-gg.
@@ -3979,6 +3981,7 @@ ubmcmm.baidustatic.com
 ##img[onclick*="/ayx700.com/"]
 ##img[onclick*="/c7.net/"]
 .8ox.cn
+||518yi.com^
 ||00-gov.cn^
 ||000123456789.site^
 ||0024aaaa.com^
@@ -19504,6 +19507,7 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 @@||zmtt.net^$script,domain=luoqiuzw.com
 !#Novels ads union
 ||weebly.shop^
+||qiaoxiaomiao.com^
 ||dailynews.wiki^
 ||yxbyd.store^
 ||xiongfengwang.com.cn^
