@@ -1,8 +1,8 @@
-! Checksum: pWGfH66pbSYLxHCrtBNWmw
+! Checksum: k0i2n7yJSu8iIXtQkE241Q
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.15.89
-! TimeUpdated: 2022-04-15T16:30:40+00:00
+! Version: 2.1.15.90
+! TimeUpdated: 2022-04-15T17:02:11+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -92,6 +92,8 @@
 ! https://github.com/AdguardTeam/AdguardFilters/issues/76987
 youtube.com#%#AG_onLoad(function() {var a = new MutationObserver(function() {if (document.querySelector('yt-upsell-dialog-renderer')) {var b = document.querySelector('.ytd-popup-container[popup-size="UPSELL_DIALOG_RENDERER_POPUP_SIZE_LARGE"] #dismiss-button:not(.dismissed), .upsell-dialog-lightbox .upsell-dialog-dismiss-button button:not(.dismissed)');setTimeout(function() {b&&b.click()}, 3E2)}});a.observe(document, {childList: !0,subtree: !0});setTimeout(function() {a.disconnect()}, 3E3)});
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/115659
+ign.com##.infeed-player
 ! https://github.com/AdguardTeam/AdguardFilters/pull/112714
 ! twitch.tv - promoted stream tiles
 twitch.tv##div.tw-tower > div:has(div.promoted-card-stat__promotion)
@@ -102,8 +104,7 @@ crunchyroll.com##.welcome-featured-media
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115178
 eurosport.tvn24.pl#%#//scriptlet('prevent-requestAnimationFrame', 'toggleFloatingClass')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115052
-||img.weblogssl.com/*/js/dailymotion-$domain=xataka.com
-xataka.com##.base-asset-video
+xataka.com,applesfera.com##.base-asset-video
 ! https://github.com/AdguardTeam/AdguardFilters/issues/114333#issuecomment-1093685116
 niusnews.com##div[class^="divLogin"]
 niusnews.com##.divMPop
