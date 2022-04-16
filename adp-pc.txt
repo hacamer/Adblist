@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: cEMDijRfhmvO31MQaltWtg
+! Checksum: zRbKXClx9FU8x35MvO3MHA
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202204170131
-! Last Modified: 2022年04月17日 01:31
+! Version: 202204170236
+! Last Modified: 2022年04月17日 02:36
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 85431
+! Total count: 85448
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -1058,6 +1058,7 @@
 ###content_adblock_message
 ###content_ads
 ###content_ads_footer
+###content_ads_top
 ###content_bottom_ad
 ###contentad-adsense-getfile-1
 ###contentad-adsense-getfile-top-1
@@ -1138,6 +1139,7 @@
 ###divTopAd
 ###div_ad_float
 ###div_advt_right
+###div_the_mgid
 ###dotnAd-988x90-custom
 ###downdiv > .downcode
 ###downloadAd
@@ -3965,6 +3967,7 @@
 ##.container--ad
 ##.container--ads
 ##.container--ads-leaderboard-atf
+##.container-bottom-ad
 ##.container-lower-ad
 ##.container_ad
 ##.container_publicidad
@@ -4174,6 +4177,7 @@
 ##.fjs-ad-hide-empty
 ##.flash_ad
 ##.flex-ad
+##.flex-posts-ads
 ##.flex-row > #propagandaLeft
 ##.flex-row > #propagandaRight
 ##.float-adv-left-bottom
@@ -4876,6 +4880,7 @@
 ##.news-ad
 ##.news-ad-square-a
 ##.news-ad-square-box
+##.news-ads-top
 ##.newsAd
 ##.news_imgad
 ##.newsad
@@ -4894,6 +4899,7 @@
 ##.non-empty-ad
 ##.nordvpn-popup + .sidebar-vpn
 ##.noskim.ad
+##.np-ad-background
 ##.ntv-ad
 ##.o-ad-container
 ##.o-ads
@@ -4982,6 +4988,7 @@
 ##.pg-adtarget
 ##.pgevoke-story-rightrail-ad1
 ##.pgevoke-story-topads
+##.pgevoke-topads
 ##.photo-ad
 ##.photo-two > a[onclick^="_czc."]
 ##.photoAd
@@ -5157,6 +5164,7 @@
 ##.right-column-ad
 ##.right-column-ads
 ##.right-rail-ad
+##.right-rail-ad-container
 ##.right-side-ad
 ##.right-sidebar-ads-container
 ##.right-top-ad
@@ -18445,7 +18453,6 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||ams.cdn.arkadiumhosted.com/assets/*/display-ads-f.js
 @@||ams.cdn.arkadiumhosted.com/assets/arena-4/arena/heap/advertisements.js$script,domain=jeux.lemonde.fr
 @@||amy.gs/intermission/loadTargetUrl$xmlhttprequest
-@@||an.yandex.ru/jstracer?aab_detect=$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua
 @@||an.yandex.ru/system/video-ads-sdk/adsdk.js$domain=5-tv.ru|armdb.org|gisher.org|peers.tv|tele-sport.ru
 @@||analogplanet.com^$elemhide
 @@||analytics-static.ugc.bazaarvoice.com/prod/$script,domain=hisense.co.uk
@@ -20127,6 +20134,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||gruposantander.es^*/scripts/log.js
 @@||gs.statcounter.com/chart.php$script,third-party
 @@||gstatic.com/ads/external/images/logo_google_ads_*px.png$domain=support.google.com
+@@||gstatic.com/ads/external/images/logo_google_ads_64px.png$image,~third-party
 @@||gstatic.com/adsense/$domain=google.ae|google.at|google.be|google.bg|google.by|google.ca|google.ch|google.cl|google.co.id|google.co.il|google.co.in|google.co.jp|google.co.ke|google.co.kr|google.co.nz|google.co.th|google.co.uk|google.co.ve|google.co.za|google.com|google.com.ar|google.com.au|google.com.br|google.com.co|google.com.ec|google.com.eg|google.com.hk|google.com.mx|google.com.my|google.com.pe|google.com.ph|google.com.pk|google.com.py|google.com.sa|google.com.sg|google.com.tr|google.com.tw|google.com.ua|google.com.uy|google.com.vn|google.cz|google.de|google.dk|google.dz|google.ee|google.es|google.fi|google.fr|google.gr|google.hr|google.hu|google.ie|google.it|google.lt|google.lv|google.nl|google.no|google.pl|google.pt|google.ro|google.rs|google.ru|google.se|google.sk
 @@||gstatic.com/awn/displayads/$domain=ads.google.com
 @@||gstatic.com/cast/sdk/libs/sender/*/cast_framework.js$domain=pornhub.com|pornhub.org|pornhub.net|pornhubthbh7ap3u.onion
@@ -30652,6 +30660,8 @@ hog.*##.player__side
 hog.*##.related-view > div.title--sm
 hog.*,sexu.*##.player-block__square
 holavid.com,liivideo.com#$#abort-on-property-read Math.sin
+holiday-weather.com##.resp-leaderboard
+holiday-weather.com,w3schools.com,zerochan.net###skyscraper
 hollywoodmask.com##+js(no-setTimeout-if, adsBlockPopup)
 hollywoodmask.com##body .ezoic-ad:not(#style_important)
 holymanga.net##.svl_ads_right
@@ -33507,6 +33517,8 @@ manhuascan.com##.itemupdate2
 manhwa-manga53.bid,manhwa-manga54.bid,manhwa-manga55.bid,manhwa-manga56.bid,manhwa-manga57.bid,manhwa-manga58.bid,manhwa-manga59.bid,manhwa-manga60.bid,manhwa-manga61.bid,manhwa-manga62.bid,manhwa-manga63.bid,manhwa-manga64.bid,manhwa-manga65.bid,manhwa-manga66.bid,manhwa-manga67.bid,manhwa-manga68.bid,manhwa-manga69.bid,manhwa-manga70.bid,manhwa-manga71.bid,manhwa-manga72.bid,manhwa-manga73.bid,manhwa-manga74.bid,manhwa-manga75.bid,manhwa-manga76.bid,manhwa-manga77.bid,manhwa-manga78.bid#?#div[id^="custom_html-"]:has(div.custom-html-widget > div:empty)
 manhwatop.com#?#.body-wrap > div[class^="c-sidebar c-top-"]:not(:has(div[class*="widget-manga-popular"]))
 manikusa.com##+js(window.open-defuser)
+manitobacooperator.ca##.inline--2
+manitobacooperator.ca##.leaderboard-height
 manmanw.net##.tlads
 manofmany.com,scanwith.com##.middle-banner
 manoramaonline.com###mybot-adcover
@@ -34308,8 +34320,8 @@ musavat.com##.banner
 musescore.com###ad_cs_12219747_728_90
 musescore.com##.js-musescore-hb-728--wrapper
 musescore.com,fap18.net,gamereactor.eu,sportshubtv.com##div[id^="ad_"]
-music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua,music.yandex.uz##body > div[style^="min-height"] > .notify
-music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua,music.yandex.uz##body > div[style^="min-height"] > .notify *
+music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.uz##body > div[style^="min-height"] > .notify
+music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.uz##body > div[style^="min-height"] > .notify *
 musicbusinessworldwide.com##body .mb-advert
 musify.club#$#abort-current-inline-script $ get_ya_browser
 musify.club#$#abort-on-property-read get_ya_browser
@@ -34497,6 +34509,7 @@ nameberry.com##.htlad-InContent_Flex
 nameberry.com##.htlad-Leaderboard_Flex
 namemc.com##+js(abort-current-script, navigator, Object.defineProperties?Object.defineProperty:function)
 namemc.com##div.ad-container
+namepros.com##a[data-tag="backer"]
 namethatporn.com###fab_blacko
 namethatporn.com##.a_br_b
 nana2play.com##+js(set-constant, link_ads, emptyObj)
@@ -36152,7 +36165,9 @@ portel.pl##+js(set-constant, blokowanko, false)
 positronx.io##div[class*="ad-cls-block"]
 post-gazette.com###benn-poll-iframe-container
 post-gazette.com##.pg-adwrapper-300x250
+post-gazette.com##.pgevoke-flexbanner-innerwrapper
 post-gazette.com##.pgevoke-story-topads-banner
+post-gazette.com##.pgevoke-superpromo-innerwrapper
 post-gazette.com##div[data-dfpads-position]
 post.techtutors.site#@##ad_300x250_m_c
 post.techtutors.site#@##hp-store-ad
@@ -36650,7 +36665,7 @@ racingtv.com,twitter.com,wral.com##.promotion
 radarbox.com##.remove-pub
 radio-new-zealand.co.nz,fmradiofree.com,canli-radyo-dinle.com,emisoras-puertorico.com,emisorascolombianas.co,internetradio-horen.de,internetradio-schweiz.ch,mytuner-radio.com,radio-ao-vivo.com,radio-australia.org,radio-belgie.be,radio-canada-online.com,radio-danmark.dk,radio-dominicana.com,radio-ecuador.org,radio-en-ligne.fr,radio-en-vivo.mx,radio-espana.es,radio-hk.com,radio-hrvatska.com,radio-italiane.it,radio-korea.com,radio-maroc.org,radio-nederland.nl,radio-norge.org,radio-osterreich.at,radio-philippines.com,radio-polska.pl,radio-singapore.com,radio-south-africa.co.za,radio-suomi.com,radio-sveriges.se,radio-thai.com,radio-ua.com,radio-uk.co.uk,radioindia.in,radioindonesia.org,radiojapan.org,radiomalaysia.org,radios-argentinas.org,radios-bolivia.com,radios-chilenas.com,radios-guatemala.com,radios-online.pt,radios-uruguay.com,radios-venezuela.com,radiosdelperu.pe,radiotaiwan.tw###team_ad
 radio.net,notebookcheck-hu.com,notebookcheck.com,notebookcheck.net,notebookcheck.org,notebookcheck.biz,notebookcheck.it,notebookcheck.nl,notebookcheck.info,notebookcheck-tr.com,notebookcheck.se,notebookcheck-ru.com##+js(abort-on-property-read, Object.prototype.autoRecov)
-radio.yandex.by,radio.yandex.kz,radio.yandex.ru,radio.yandex.ua##.notify
+radio.yandex.by,radio.yandex.kz,radio.yandex.ru##.notify
 radionatale.com,radionorthpole.com,radiosantaclaus.com,radioamericalatina.com,radioitalianmusic.com,radioitaliacanada.com,miamibeachradio.com,radiosymphony.com,radiocountrylive.com,radioitalylive.com,radiolovelive.com,radionylive.com,radiorockon.com##+js(set-constant, adp, false)
 radioplus.pl,urzadzamy.pl,radiosupernova.pl,voxfm.pl,mjakmama24.pl,eska.pl,se.pl#$#.adsbox.ad { display: block !important; }
 radioreference.com#?#.box.gradient:-abp-has(a[href*="&Click="])
@@ -39267,6 +39282,7 @@ tucao.in##div[class^="c_c"]
 tucao.in##div[style*="height:10"][style*="width:964"]
 tuchkatv.ru##.adb_m
 tuchong.com##.float
+tudaydeals.com##.adb
 tugastream.com###closediv
 tugastream.com##IMG[src="http://i39.tinypic.com/sobxg2.gif"]
 tui18.com##.wp[style^="width:"]
@@ -40128,7 +40144,6 @@ w3schools.com###mainLeaderboard
 w3schools.com##.sidesection > #skyscraper
 w3schools.com##div[id*="contentadcontainer"]
 w3schools.com#$##tryitLeaderboard { display: none!important; }
-w3schools.com,zerochan.net###skyscraper
 w4files.ws##+js(window.open-defuser)
 wa59.com##.marginrl
 wabetainfo.com##.adsTextHeader
@@ -56132,6 +56147,7 @@ zznews.cn##.ad:not([style])
 ||ezprice.com.tw/ezysm/
 ||ezprice.com.tw/js/*_ysm_
 ||ezqmrd9tl9.cn^
+||ezstat.ru^
 ||ezytrack.com^$third-party
 ||f*.baidu.com/it/u=*,*&fm=$third-party,domain=~hao123.com|~haokan.com
 ||f-counter.jp^$third-party
@@ -67077,6 +67093,7 @@ zznews.cn##.ad:not([style])
 ||nalook.com^$third-party
 ||namel.net^
 ||namemek.com^
+||nameproscdn.com/images/backers/
 ||namesakeoscilloscopemarquis.com^
 ||namethatporn.com/assets/imgs/1x1.gif
 ||nametraff.com^$third-party
