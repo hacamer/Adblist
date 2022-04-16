@@ -1,8 +1,8 @@
-! Checksum: iZ5ebPoqPVE+hkgFPjHi+Q
+! Checksum: TWBj0eFEAE461oEHlIF0yQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.15.91
-! TimeUpdated: 2022-04-15T18:30:35+00:00
+! Version: 2.1.15.92
+! TimeUpdated: 2022-04-16T12:30:32+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -18895,6 +18895,9 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+arteryex.biz###footer-widgets
+arteryex.biz##.elementor-popup-modal
+arteryex.biz##a[href="https://arteryex.biz/click-karte/"]
 google.*##body > div[style="min-height: 100%; display: none;"] + div[style="visibility: visible;"] > div[jsowner]
 sofy.jp##.app-dl-fixed
 job.nifty.com##.bnr-area
@@ -20765,6 +20768,12 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+re-lifework.com##.bfb_textTextBtn
+heydouga.com###access-ranking-video
+av-kappa.com###bott0m0verlay
+taikenki.zexybaby.zexy.net##.bnr_btm
+zexybaby.zexy.net###fixed_btn
+hoken.zexy.net##.formbtn.reserve
 zexy.net##.campain-banner--fixed
 pogoda.interia.pl##.inpl-tout-sticky.body__common-header--fixed .vjs-fixedmonitor-wrapper-fixed
 at-s.com##.bnr_popup01
@@ -20988,7 +20997,7 @@ times.abema.tv##.on-air
 salesap.ru##.js-cases-banner
 biz.moneyforward.com##.advads-background
 biz.moneyforward.com##.advads-effect.is-sticky
-5-fifth.com,spravochnick.ru##.m-popup
+jbpress.ismedia.jp,5-fifth.com,spravochnick.ru##.m-popup
 westwingnow.de#$#div[data-testid="shop_to_club_registration_single_step_overlay"] { display: none!important; }
 westwingnow.de#$#body { overflow: visible!important; padding-right: 0!important; }
 poradnikpracownika.pl##.widget-guide-online
@@ -34600,6 +34609,7 @@ twgreatdaily.com$$script[tag-content="indexOf|css|fn|this|attr|unselectable|cons
 ##.blogroll_wrapper_4
 ##.blogroll_wrapper_honbun
 !
+kisslog2.com###custom_html-6
 kisslog2.com##.rss_wrapper
 kisslog2.com##.ranking-wrap
 newsoku.blog##.headrsssp
