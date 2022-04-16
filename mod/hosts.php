@@ -100,9 +100,6 @@ foreach ( $lists as $name => $list ) {
 		if ( false !== strpos( $filter, ',' ) ) {
 			continue;
 		}
-		if ( false !== strpos( $filter, '*' ) ) {
-			continue;
-		}
 
 		// Skip Adguard HTML filtering syntax.
 		if ( false !== strpos( $filter, '$$' ) || false !== strpos( $filter, '$@$' ) ) {
