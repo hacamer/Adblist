@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: SkMWoro+QHMnog5H1YTJRg
+! Checksum: P3J1V3+TvROJM9d5atiDHg
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202204170528
-! Last Modified: 2022年04月17日 05:28
+! Version: 202204170630
+! Last Modified: 2022年04月17日 06:30
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 85474
+! Total count: 85484
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -2341,6 +2341,8 @@
 ##.ad-slot-container
 ##.ad-slot-container-1
 ##.ad-slot-placeholder
+##.ad-slot-replies
+##.ad-slot-replies-header
 ##.ad-slot-sidebar
 ##.ad-slot-top
 ##.ad-slot-wrapper
@@ -5274,6 +5276,7 @@
 ##.side-ads
 ##.side-ads-container
 ##.side-ads_sticky-group
+##.side-adv-block
 ##.side-advert
 ##.side-bar-ad
 ##.sideAd
@@ -9762,6 +9765,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /akam/*/pixel_
 /akam/10/*
 /akam/11/*
+/akam/13/*
 /akamai/pixy.gif
 /akamai_analytics_
 /akame160.html
@@ -26052,6 +26056,11 @@ chaomi.cc,cpnn.com.cn,cs.com.cn,dyhjw.com,kkj.cn,my0538.com,mydrivers.com,ofweek
 chapaofan.com##a[href^="http"]:not([href*=".chapaofan."]) > img[src*=".sinaimg."]
 charbelnemnom.com##+js(set-constant, advanced_ads_check_adblocker, noopFunc)
 charexempire.com##+js(window.open-defuser)
+chaseyoursport.com###popup1
+chaseyoursport.com##.adv-slot
+chaseyoursport.com##.floating-adv
+chaseyoursport.com##.side-adv-block-blog-open
+chaseyoursport.com​##.new-adv
 chat-avenue.com##.adnoyer_log
 chaturbate.com##.ad
 chaturbate.com##.banner
@@ -39261,7 +39270,6 @@ tube8.com##div[class] > input:first-child[type="hidden"][value="false"]+div
 tube8.com#$#abort-on-property-write AdDelivery
 tube8.com#?##flvplayer > div[id]:has(> div[id] > div[id] > ins.adsbytrafficjunky)
 tube8.com,tube8.es,tube8.fr##.col-3-lg.col-4-md.col-4
-tube8.com,tube8.es,tube8.fr,youjizz.com,youporn.com,youporngay.com##[src*="blob:"]
 tube8.es###pb_template[style="display: block;"]
 tube8.net,tube8.es,tube8.com,tube8.fr##.gridList > figure:not([data-videoid]):not([data-esp-node]):not([id])
 tube8.net,tube8.es,tube8.com,tube8.fr##a[href*="/info.html#advertising"]
@@ -41389,6 +41397,7 @@ youjizz.com##[data-i18n^="ads."]
 youjizz.com##[data-i18n^="ads."] + label
 youjizz.com##a[href^="//"][target="_blank"]:not([href*="https://www.youjizz.com"])
 youjizz.com#@#[src*="blob:"]
+youjizz.com,youporn.com,youporngay.com##[src*="blob:"]
 youku.com###bt-banner
 youku.com###lotteryToolbar
 youku.com###lotteryToolbarBig
@@ -77353,6 +77362,7 @@ zznews.cn##.ad:not([style])
 ||szjyfund.com^$third-party
 ||szjywn.cn^
 ||szkbyo.zkai.co.jp^
+||szm.com/reklama
 ||szmjskjx.com^
 ||szmsao.com^
 ||szmxwjm.com^
