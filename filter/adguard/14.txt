@@ -1,8 +1,8 @@
-! Checksum: k0FPMgYXmyay3bdOj1fIsQ
+! Checksum: KVdLy+30FJjNJCQWdJXb1g
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.15.97
-! TimeUpdated: 2022-04-17T03:30:35+00:00
+! Version: 2.1.15.99
+! TimeUpdated: 2022-04-17T08:30:33+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7324,6 +7324,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+imobie.jp##.fixedbot
 fundacja.santander.pl##.awb-show
 m.censor.net###usage-notice-message
 merlion.com###policyBlockForFirstVisit
@@ -20773,6 +20774,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+imobie.jp##.sideadv_wrapmc
 re-lifework.com##.bfb_textTextBtn
 heydouga.com###access-ranking-video
 av-kappa.com###bott0m0verlay
@@ -32928,6 +32930,8 @@ newsweek.com##iframe[src="http://sns.europe.newsweek.com/newsletter?popup=1"]
 !##############################
 !
 !
+! https://github.com/uBlockOrigin/uAssets/issues/12809
+dramaworldhd.co#%#//scriptlet("adjust-setInterval", "timeLeft", "", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115213
 mazen-ve.com#%#//scriptlet("adjust-setInterval", "mdtimer", "", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/113960
