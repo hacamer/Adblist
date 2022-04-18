@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: c9g+i/e4SOIByxLNu5gtcA
+! Checksum: NPPzNXOG1h5tu3oCLiVBlw
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202204181637
-! Last Modified: 2022年04月18日 16:37
+! Version: 202204181731
+! Last Modified: 2022年04月18日 17:31
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 85371
+! Total count: 85372
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -16927,6 +16927,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 4kya.com###player_pause
 4movierulz.red##+js(abort-current-script, String.fromCharCode, decodeURIComponent)
 4qrcode.com,findaphd.com,jokersplayer.xyz,emb.apl14.me,grammaire.reverso.net,9hentai.com,emb.apl4.me,aplayer2.me,sportslogos.net,cyrobo.com,lavamovies.se,aliez.me,aliez.tv,hdcast.org,ip-address.org,lshstreams.com###ads
+4shared.com##+js(no-setInterval-if, .append, 1000)
 4shared.com##.jsReklBlock
 4shared.com##.remove-rekl
 4shared.com##div[class^="rekl"]
@@ -22445,7 +22446,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||starbucks.ca^*/optimizely.$script,~third-party
 @@||starbucks.com^*/optimizely.$script,~third-party
 @@||starbucksassets.com/weblx/static/optimizely.$script,domain=starbucks.ca|starbucks.com
-@@||stat-rock.com/player/$domain=adplayer.pro
+@@||stat-rock.com/player/$domain=4shared.com|adplayer.pro
 @@||stat24.com/crossdomain.xml$domain=ipla.tv
 @@||statcounter.com/css/packed/statcounter-$stylesheet,~third-party
 @@||statcounter.com/js//fusioncharts.charts.js
@@ -36073,7 +36074,7 @@ pornogratisdiario.com,xcafe.com##.bnr
 pornokeep.com##+js(set-constant, bdet, noopFunc)
 pornone.com##.overheaderbanner
 pornone.com##.video-add
-pornone.com##.vjs-paused > .warp
+pornone.com##body .vjs-paused > .warp
 pornone.com,vporn.com##+js(abort-on-property-read, UAParser)
 pornoplay.online##div[class^="happy-"]
 pornorips.com##.widget_desktopgirls
