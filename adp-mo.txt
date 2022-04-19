@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: HySNPi53Z6n1i/EnXQNnrQ
+! Checksum: P53zP4Tyw5nS7l9R3svmYA
 ! Title: My AdFilters（for Mobile）
 ! Expires: 12 hours
-! Version: 202204190726
-! Last Modified: 2022年04月19日 07:26
+! Version: 202204191025
+! Last Modified: 2022年04月19日 10:25
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 64509
+! Total count: 64534
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -1065,6 +1065,7 @@
 ###extraAd
 ###featuread
 ###first-adframe
+###first-ads
 ###fixed-bottom-modal[style^="right:"][style$="px; display: block;"]
 ###fixedAd
 ###fixedAdContainer
@@ -1904,6 +1905,7 @@
 ##.ad-d
 ##.ad-description
 ##.ad-desktop
+##.ad-desktop-in-content
 ##.ad-desktop-only
 ##.ad-detail
 ##.ad-disclaimer
@@ -4489,6 +4491,7 @@
 ##.opt > a[target="_blank"] > img[src*=".360buyimg.com"]
 ##.optidigital-ad-center
 ##.orbui-post
+##.outBrainWrapper
 ##.outbrain-ad-units
 ##.outbrain-widget
 ##.outer-ad-container
@@ -4807,6 +4810,7 @@
 ##.serversidenativead
 ##.sgAd
 ##.sh-section-ad
+##.sharetable
 ##.sheknows-infuse-ad
 ##.show-desk-ad
 ##.showAd
@@ -4998,6 +5002,7 @@
 ##.stickyRailAd
 ##.sticky_ad_desktop_footer_center
 ##.stickyad
+##.stickyads
 ##.stky-ad-footer
 ##.store-ads
 ##.story-ad
@@ -5229,6 +5234,7 @@
 ##.vertbars
 ##.vertical-ad
 ##.vertical-ads
+##.vertical-trending-ads
 ##.verticalAd
 ##.verticalAdText
 ##.vertical_ad
@@ -5916,7 +5922,7 @@ $image,script,subdocument,third-party,xmlhttprequest,domain=flashx.to|flashx.tv
 $image,script,subdocument,third-party,xmlhttprequest,domain=heapfiles.com|vidoza.co|vidoza.net
 $ping,third-party
 $popup,third-party,domain=1337x.buzz|720pstream.tv|9anime.id​|adblockstreamtape.art|adblockstreamtape.fr|adblockstreamtape.site|animeworld.biz|apl100.me|apl102.me|apl96.me|assia2.com|assia4.com​|cloudvideo.tv|databasegdriveplayer.xyz|diampokusy.com|dir-proxy.net|dirproxy.info|dood.ws|dulu.to|embedsb.com|embedsito.com|fembed-hd.com|file-upload.com|freeplayervideo.com|geoip.redirect-ads.com|gogoanime.lol|haes.tech|highstream.tv|hubfiles.ws|hydrax.xyz|katfile.com|kissanime.lol|kokostream.net|livesports4u.xyz|livetv498.me|loader.to|mangovideo.pw|mixdrop.bz|mixdrop.ch|mixdrop.club|mixdrop.co|mixdrop.sx|mixdrop.to|mixdrops.xyz|myflixer.to|mystream.to|oneproxy.org|piracyproxy.biz|piraproxy.info|pixroute.com|play.hydracdn.network|playtube.ws|pouvideo.cc|projectfreetv2.com|proxyer.org|raes.tech|sbfast.com|sbplay2.com|sbplay2.xyz|scloud.online|stape.fun|stape.me|streamas.cloud|streambee.to|streamlare.com|streamon.to|streamta.pe|streamtape.com|streamtapeadblock.art|streamtapse.com|streamz.ws|streamzz.to|strtape.cloud|strtpe.link|supervideo.tv|suzihaza.com|theproxy.ws|trafficdepot.xyz|uploadfiles.pw|uprot.net|uproxy.best|uproxy.co|upstream.to|upvideo.to|userload.co|uwatchfree.fo|vidcloud9.com|videovard.sx|vidlox.me|viewsb.com|vivo.sx|voe.sx|vupload.com|watchsb.com|wiztube.xyz|youtubedownloader.sh|ytmp3.sh
-$popup,third-party,domain=76fengyun.com|88files.net|avsdown.com|downdv.com|downdvs.com|downhhh.com|imedown.info|jandown.com|mnks.jxedt.com|mimima.com|rmdown.com|soyunpan.com|youtubeto.com
+$popup,third-party,domain=76fengyun.com|88files.net|avsdown.com|downdv.com|downdvs.com|downhhh.com|imedown.info|jandown.com|mimima.com|mnks.jxedt.com|rmdown.com|soyunpan.com|youtubeto.com
 $popup,third-party,domain=cloudvideo.tv|highstream.tv|loader.to|mystream.to|play.hydracdn.network|playtube.ws|streamtape.com|strtape.cloud|supervideo.tv|upstream.to|vidcloud9.com|vidlox.me|vivo.sx|voe.sx|vupload.com,badfilter
 $popup,third-party,domain=dood.ws,badfilter
 $popup,third-party,domain=fembed-hd.com,badfilter
@@ -8314,6 +8320,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /assets/img/banner-new/*$domain=doomovie-hd.com
 /assets/jwplayer-*/vast.js$script,~third-party
 /assets/sidebar/*$domain=v2ex.com
+/assets/smarttag-$script
 /assets/t_j/tongji.js
 /assets/tracking-
 /assets/uts/*
@@ -9856,6 +9863,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /geov2.js
 /get-ad/*
 /get-advert-
+/get-pro/*&fingerprint=
 /get-tracking-data
 /get/*?zoneid=$third-party
 /get/*?zoneid=*&jp=$script
@@ -10567,6 +10575,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /lazyad-
 /lazyad.
 /lbi_ga.
+/lc-sentry.
 /ldsimp_wf?
 /lead-tracking.
 /lead-tracking/*
@@ -13047,6 +13056,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /trackjs6.
 /trackjs_
 /trackk-1.
+/tracklib.min.js
 /tracklog.
 /trackmerchant.js
 /trackmvisit?
@@ -13065,6 +13075,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /trackstats?
 /trackstats|
 /tracksubprop.
+/trackui.min.js
 /trackuity.
 /trackv&tmp=
 /trackvisit?
@@ -27069,6 +27080,7 @@ panarmenian.net#@#.ad_body
 pandamovie.eu,pandamovie.net,playpornx.net##.rightdiv1
 pandora.tv##+js(set-constant, isnoad_vod, true)
 pandora.tv##.ad_big
+pao.gr###section--sponsors
 paper-io.com###gameadsbanner
 paperzonevn.com##+js(abort-current-script, $, !document.getElementById(btoa)
 par30games.net##.fixedadv
@@ -27565,6 +27577,7 @@ pornfaia.com##.video-bnrz
 pornflixhd.com##+js(set-constant, dtGonza.playeradstime, -1)
 porngals4.com##.affl
 porngames.club,sexgames.xxx##+js(set-constant, starPop, 1)
+porngames.games##.bnr-side
 porngem.com##.a-d-v
 porngo.com##+js(abort-on-property-read, detectAdb)
 porngo.com##.video-side
@@ -31923,6 +31936,7 @@ zyue.com##div[id^="divad_"]
 ||2020mustang.com^
 ||2021.dxsbb.com^
 ||2022aaa.xyz^
+||2022welcome.com^
 ||204st.us^$third-party
 ||206ads.com^
 ||206solutions.com^$third-party
@@ -36132,6 +36146,7 @@ zyue.com##div[id^="divad_"]
 ||bakbb.com^
 ||bakcgnxikkxw.com^
 ||bakercommunications.actonservice.com^
+||baking.ren^
 ||bakteso.ru^
 ||balancemailbox.com^
 ||baleiambwee.com^
@@ -43929,6 +43944,7 @@ zyue.com##div[id^="divad_"]
 ||govshenzhen.cn^
 ||govxian.cn^
 ||govxinjiang.cn^
+||govxinjing.cn^
 ||govyunfu.cn^
 ||gowatchit.com/analytics.js
 ||gowatchit.com^*/tracking/
@@ -46248,6 +46264,7 @@ zyue.com##div[id^="divad_"]
 ||jfsm5.top^
 ||jg0c.sfr.fr^
 ||jg3i17759nd0nhh9q53zpy.com^
+||jg88.wang^
 ||jggqgavrqkudu.com^
 ||jghcy.com^
 ||jgnxty.revivalrugs.com^
@@ -47006,6 +47023,8 @@ zyue.com##div[id^="divad_"]
 ||la-sync.taboola.com^
 ||la7.it/js-live/nielsen1.js
 ||labeldollars.com^
+||lacentrale.fr/collect
+||lacentrale.fr/static/fragment-layout/tracking-
 ||lacinfo.motorolasolutions.com^
 ||lackadaisicalkite.com^
 ||ladghy.jcb.co.jp^
@@ -52529,7 +52548,9 @@ zyue.com##div[id^="divad_"]
 ||porn300.com^$third-party
 ||porn87.com/static/stream_ads/
 ||porndoe.com/views/footer/banners.html
+||porngames.games/banners/
 ||porngames.games/js/bioep.custom.js
+||porngames.games/sbbi/
 ||porngraph.com^$third-party
 ||pornhat.*/static/js/300x250.
 ||pornhits.com/magic/
@@ -52818,6 +52839,7 @@ zyue.com##div[id^="divad_"]
 ||promocionesweb.com^$third-party
 ||promocsr41.net.zooplus.de^
 ||promokrot.com^$third-party
+||promoneuve.fr/stat/
 ||promoowa.net.zooplus.fr^
 ||promopassage.com^
 ||promos.camsoda.com^
@@ -54438,6 +54460,7 @@ zyue.com##div[id^="divad_"]
 ||s2.everydaygayporn.com^
 ||s2blosh.com^
 ||s2d6.com^
+||s2pro-ncode.com^
 ||s2tu.com/images/*.gif
 ||s3.amazonaws.com/downloads.mailchimp.com/$script,domain=confection.io
 ||s3.amazonaws.com^$domain=oko.sh|itdmusic.site|linkrex.net|youtubemultidownloader.com|suprafiles.org|wizhdsports.is|playstream.club|xmovies.to|300mbfilms.co|fullypcgames.net|adpop.me|hdmovieswatchs.net|itdmusic.com|filescdn.com|katfile.com|nitroflare.com|salefiles.com|uploads.to|vidfile.net|cloudyfiles.co|tugafree.net|bluemediafiles.com|dropgalaxy.com
@@ -60887,6 +60910,7 @@ zyue.com##div[id^="divad_"]
 ||triver.jp^$third-party
 ||trjs.mediafin.be/loader/trmfn-loader.js
 ||trk-consulatu.com^
+||trk-imps.com^
 ||trk.absuite.com.br^
 ||trk.adbutter.net^
 ||trk.advancedmanufacturingminneapolis.com^
@@ -63618,6 +63642,7 @@ zyue.com##div[id^="divad_"]
 ||xstt5.com/template/js/fx
 ||xswvytnxkzkzq.com^
 ||xt.persosa.com^
+||xtb.ink^
 ||xtgreat.com^$third-party
 ||xthizbdwgebzqf.com^
 ||xtits.*/player/html.php?aid=*_html&video_id=*&*&referer
