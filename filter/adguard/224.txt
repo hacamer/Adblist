@@ -1,8 +1,8 @@
-! Checksum: /aadULWmUPqfKLq90HCJig
+! Checksum: E9LHMLS330adz4e1Bo4Xzg
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.0.53.30
-! TimeUpdated: 2022-04-19T10:30:56+00:00
+! Version: 2.0.53.31
+! TimeUpdated: 2022-04-19T12:30:57+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -417,8 +417,8 @@ linovelib.com#$#body[style] { overflow: auto !important; }
 ! https://github.com/uBlockOrigin/uAssets/issues/11152
 rjno1.com#%#//scriptlet('prevent-setTimeout', '/_show\(".+?"\); ?\}/')
 rjno1.com#%#//scriptlet("set-constant", "google_global_correlator", "1")
-rjno1.com#%#//scriptlet("set-constant", "google_image_requests", "emptyArr")
 rjno1.com#%#//scriptlet("prevent-addEventListener", "error", "event.target.tagName")
+rjno1.com#%#(function(){window.addEventListener("load",function(){window.google_image_requests=[];})})();
 !+ NOT_PLATFORM(ios, ext_android_cb)
 ||jspassport.ssl.qhimg.com^$script,redirect=noopjs,domain=rjno1.com
 @@||googletagmanager.com/gtag/js$script,domain=rjno1.com
