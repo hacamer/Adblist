@@ -1,8 +1,8 @@
-! Checksum: 2+lQtyR+rpN7EGwvJuMreA
+! Checksum: qII0j7hEYYx7YvYs5TSgFA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.16.29
-! TimeUpdated: 2022-04-19T13:30:33+00:00
+! Version: 2.1.16.32
+! TimeUpdated: 2022-04-19T16:30:37+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7332,6 +7332,8 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+developer.ing.com#$#body { overflow: auto !important; }
+developer.ing.com#$#.global-overlays { display: none !important; }
 deichmann.com##.cookie-consent-local
 teacheconomy.de#$#body { overflow: auto !important; }
 teacheconomy.de#$#.cookie-banner { display: none !important; }
@@ -18917,8 +18919,10 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+selfmind.ai##.store-bannar-container
 bittorrent.com#?#.prodnews-container div[class^="col-"] > div.row:has(> div[class] a[id^="prodnews-go-adfree-"])
 biquwo.com###content > div[style="padding:15px;"]
+lehren.com##.tds-button > a[href^="https://onelink.to/lehren"]
 benesse.jp##.bnr_flow-under-h2
 arteryex.biz###footer-widgets
 arteryex.biz##.elementor-popup-modal
@@ -20795,6 +20799,8 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 !
 ||widgets.entireweb.com/pixel/
 acpa-main.org##.fixBtn
+shethepeople.tv##.whatsapp_logo_link
+odishatv.in#$#.fixed-article-slide-sec { position: static !important; }
 tubefilter.com##.overlay
 qwertee.com###homepage-popup
 qwertee.com##.modal
@@ -28127,6 +28133,7 @@ experts-exchange.com##.ctaSolutionStickyWrapper
 theguardian.com##.contributions__adblock
 ||contributions.guardianapis.com^
 !
+tvnet.lv##.digipakett-branding-root-container
 cyberpedia.su##center > div.transformer-form
 ryukyushimpo.jp##.topic-ticker_box-topics
 ranak.me##.go-price
@@ -28994,6 +29001,9 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+cpp.libhunt.com##.text-strong-invite
+timeout.ru##.circle-wrapper
+timeout.ru#?#.ads > div.square:has(> a[title="Time Out в Viber"])
 bittorrent.com#?#.prodnews-container div[class^="col-"] > div.row:has(> div[class] > div[id="emailFormContainer"])
 deon.pl##aside .subscription-widget
 accordancebible.com#?#.flex-grow > div.bg-primary:has(> div.container div.newsletter-signup)
@@ -32205,7 +32215,7 @@ today.com##.newsletter-l-wrapper
 sunderlandecho.com##.newsletter-mobile-widget
 eurogamer.de,scientificamerican.com,gamesindustry.biz,usgamer.net,techrepublic.com##.newsletter-promo
 guidingtech.com##.newsletter-push
-pbs.org,tuasaude.com,onlinemarketingrockstars.de,thescore.com##.newsletter-sidebar
+odishatv.in,pbs.org,tuasaude.com,onlinemarketingrockstars.de,thescore.com##.newsletter-sidebar
 techcrunch.com##.newsletter-signup-block
 jpost.com##.newsletter-signup-wrap
 vg247.com##.newsletter-signup-wrapper
@@ -35503,6 +35513,7 @@ subbota.ua##aside.sidebar > div[id^="custom_html-"]
 ! Donation widgets (which are really annoying only)
 !
 unian.net##.support-post
+||paywall.fewcents.co/static/js/paywall.js
 ||aqours.today/img01/MP3/ZL.JPG
 proagro.com.ua#$#.td-outer-container { background-image: none !important; cursor: default !important; }
 proagro.com.ua#%#//scriptlet("abort-on-property-read", "wpsite_clickable_data")
