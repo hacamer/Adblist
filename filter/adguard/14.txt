@@ -1,8 +1,8 @@
-! Checksum: 1T1qDyk8EXej6hcQtIXxQA
+! Checksum: ow9I3rG5/LCCBb7nYKs8RQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.16.33
-! TimeUpdated: 2022-04-19T17:02:08+00:00
+! Version: 2.1.16.35
+! TimeUpdated: 2022-04-19T20:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7334,6 +7334,8 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 developer.ing.com#$#body { overflow: auto !important; }
 developer.ing.com#$#.global-overlays { display: none !important; }
+webtrack.dhlglobalmail.com#$#body { overflow: auto !important; }
+webtrack.dhlglobalmail.com#$#div[role="presentation"] { display: none !important; }
 deichmann.com##.cookie-consent-local
 teacheconomy.de#$#body { overflow: auto !important; }
 teacheconomy.de#$#.cookie-banner { display: none !important; }
@@ -18921,6 +18923,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+chiebukuro.yahoo.co.jp###app_bnr
 budzdorov.ru##.popup-metadata-popup__paranja
 selfmind.ai##.store-bannar-container
 bittorrent.com#?#.prodnews-container div[class^="col-"] > div.row:has(> div[class] a[id^="prodnews-go-adfree-"])
@@ -20800,6 +20803,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+okwave.jp##.following_buttons
 aljazeera.com##.container--red
 livehindustan.com##.stry-slderbtm
 ||widgets.entireweb.com/pixel/
