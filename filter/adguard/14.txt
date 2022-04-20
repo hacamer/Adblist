@@ -1,8 +1,8 @@
-! Checksum: /4loauZ13CVcrZnycVJsuQ
+! Checksum: Pspyr82OHytJfIvg+JjZmA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.16.41
-! TimeUpdated: 2022-04-20T06:30:35+00:00
+! Version: 2.1.16.43
+! TimeUpdated: 2022-04-20T08:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7332,6 +7332,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+rohm.co.jp###showcookiealert
 developer.ing.com#$#body { overflow: auto !important; }
 developer.ing.com#$#.global-overlays { display: none !important; }
 webtrack.dhlglobalmail.com#$#body { overflow: auto !important; }
@@ -20665,6 +20666,7 @@ newzit.com#$#div[class*="hasSmartBanner_"] { padding-top: 0 !important; }
 !
 ! Unhide for Android CB if top padding cannot be removed
 !
+kyivstar.ua##vd-smart-banner
 decathlon.de##.smart-app-banner
 daily.afisha.ru##.afisha-app
 niusnews.com##div[id^="evtBot"]
@@ -33005,6 +33007,8 @@ newsweek.com##iframe[src="http://sns.europe.newsweek.com/newsletter?popup=1"]
 !##############################
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/116036
+pomvideo.cc#%#//scriptlet("adjust-setTimeout", "grecaptcha", "*", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115711
 cheatermad.com#%#//scriptlet("adjust-setInterval", "#upbtn", "", "0.02")
 ! https://github.com/uBlockOrigin/uAssets/issues/12809
