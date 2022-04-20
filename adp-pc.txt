@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: 8n7Pnn4zSGaYxN0p+isuVQ
+! Checksum: 8s+7svuCW81BzJ18PqnB9Q
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202204202145
-! Last Modified: 2022年04月20日 21:45
+! Version: 202204202229
+! Last Modified: 2022年04月20日 22:29
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 85576
+! Total count: 85575
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -27936,13 +27936,13 @@ ebay.co.uk,ebay.com,ebay.de##div[id^="rtm_html_"]
 ebay.co.uk,ebay.com,ebay.de#@#.adv
 ebay.com##.app-rtm-pid-wrapper
 ebay.com##div[title="ADVERTISEMENT"]
+ebay.com#$#hide-if-contains-visible-text /(.*S.*p.*o.*n.*s.*o.*r.*e.*d.*)/ 'li.s-item'
 ebay.com#?#li.s-item:-abp-has(span[role="text"]>span:-abp-contains(助))
 ebay.de##li[class^="s-item s-item__sep-on-bottom"]
 ebay.de#$#hide-if-contains-visible-text /Anzeige|ANZEIGE/ 'li.s-item' 'li.s-item span[role="text"]'
 ebay.de#$#hide-if-matches-xpath './/div[contains(@class,"s-item__")]/following-sibling::span[@class]/span[@role="text"][count(child::span[@class]) >= 28][(contains(text(),""))]/ancestor::li[1][starts-with(@class,"s-item")]'
 ebay.de,ebay.it,ebay.com##div.vi-lb-placeholder[id^="scandal"]
 ebay.es,ebay.fr,ebay.ca,ebay.co.uk,ebay.com,ebay.com.au#$#hide-if-matches-xpath '//div[@class="s-item__title-tag"][text()="SPONSORED" or text()="SPONSORISÉ" or text()="PATROCINADOS"]/ancestor::li[1][starts-with(@class,"s-item")]'
-ebay.es,ebay.fr,ebay.ca,ebay.co.uk,ebay.com,ebay.com.au,ebay.at,ebay.ch,ebay.be,ebay.com.my,ebay.nl,ebay.it,ebay.pl##li[class^="s-item s-item__sep-on-bottom"]
 ebb.io##+js(set-constant, ga, noopFunc)
 ebb.io##+js(set-constant, google_empty_script_included, true)
 ebc.net.tw###lotteryfnc
@@ -28261,9 +28261,8 @@ eto-razvod.ru##.banner_img
 etoland.co.kr###main_bn
 etr.fr##.no_block
 ets2.lt,miloserdov.org###custom_html-2
-etsy.com##a.listing-link[href*="&ref=listing_page_ad_"]
 etsy.com##div[data-behat-search-results-lg] .listing-link.logged:not([data-shop-id])
-etsy.com#?#.js-merch-stash-check-listing:-abp-has(a.listing-link[href*="&ref=sc_gallery-"])
+etsy.com##ul[data-results-grid-container] > li[class] > div:not([class="wt-height-full"]):not([data-is-autosuggest])
 ettoday.net###adsense-matched-content
 ettoday.net###for-ec
 ettoday.net###ticker_3

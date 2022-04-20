@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: C/BctoUD8Zhjy9kkmdzXzQ
+! Checksum: afbJkIT3rPmjwirf9APRWg
 ! Title: edentwCustom
 ! Expires: 12 hours
-! Version: 202204202145
-! Last Modified: 2022年04月20日 21:45
+! Version: 202204202229
+! Last Modified: 2022年04月20日 22:29
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自Adblock Warning Removal List、ABP filters、anti-adblock-killer-filters，感谢各位大大的分享！
 ! 仅合并规则，未做其余任何处理
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 3462
+! Total count: 3461
 ###AdBlockDialog
 ###WarningCodec
 ###aabl-container
@@ -1668,11 +1668,11 @@ e-sushi.fr#$#abort-on-property-read aEteAffiche
 e-xecutive.ru##.warning
 e15.cz##.mys-wrapper
 ebay.co.uk,ebay.com,ebay.com.au#$#hide-if-contains-visible-text /[Sponsored]+(?![\w,])/ 'li.s-item' 'li.s-item span[role="text"]'
+ebay.com#$#hide-if-contains-visible-text /(.*S.*p.*o.*n.*s.*o.*r.*e.*d.*)/ 'li.s-item'
 ebay.de##li[class^="s-item s-item__sep-on-bottom"]
 ebay.de#$#hide-if-contains-visible-text /Anzeige|ANZEIGE/ 'li.s-item' 'li.s-item span[role="text"]'
 ebay.de#$#hide-if-matches-xpath './/div[contains(@class,"s-item__")]/following-sibling::span[@class]/span[@role="text"][count(child::span[@class]) >= 28][(contains(text(),""))]/ancestor::li[1][starts-with(@class,"s-item")]'
 ebay.es,ebay.fr,ebay.ca,ebay.co.uk,ebay.com,ebay.com.au#$#hide-if-matches-xpath '//div[@class="s-item__title-tag"][text()="SPONSORED" or text()="SPONSORISÉ" or text()="PATROCINADOS"]/ancestor::li[1][starts-with(@class,"s-item")]'
-ebay.es,ebay.fr,ebay.ca,ebay.co.uk,ebay.com,ebay.com.au,ebay.at,ebay.ch,ebay.be,ebay.com.my,ebay.nl,ebay.it,ebay.pl##li[class^="s-item s-item__sep-on-bottom"]
 ecchi.animeron.tv###confirmBox
 ecchi.animeron.tv###confirmOverlay
 echirurgia.pl,dobreprogramy.pl,o2.pl,autokult.pl,pudelek.pl,money.pl,wp.pl#$#hide-if-matches-xpath '//div[@id]/a[@id]/img[string-length(@src) < 120][contains(normalize-space()," ")][@class="img-full show"]/ancestor::div[1]'
@@ -1701,8 +1701,7 @@ erofishki.cc,fishki.net#$#abort-on-property-read fishki.adv
 etextlib.ru##.head_bann
 etextlib.ru##.partners
 etr.fr##.no_block
-etsy.com##a.listing-link[href*="&ref=listing_page_ad_"]
-etsy.com#?#.js-merch-stash-check-listing:-abp-has(a.listing-link[href*="&ref=sc_gallery-"])
+etsy.com##ul[data-results-grid-container] > li[class] > div:not([class="wt-height-full"]):not([data-is-autosuggest])
 eurabota.com##.abtop
 euroiphone.eu##.div-download-h
 euroiphone.eu##.div-download-v
