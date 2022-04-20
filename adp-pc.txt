@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: +rbccOV6jUljSmcp6TEKSg
+! Checksum: /83qblqjbfwUesHDLMORsg
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202204210326
-! Last Modified: 2022年04月21日 03:26
+! Version: 202204210432
+! Last Modified: 2022年04月21日 04:32
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 85613
+! Total count: 85618
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -974,6 +974,7 @@
 ###billboard_ad
 ###bl_mobile_float
 ###block-ltadvertising-ltadvertising
+###block-vh-dfp-dfp-ad-r2
 ###blogad-wrapper
 ###blogads
 ###blox-tower-ad
@@ -3757,6 +3758,7 @@
 ##.block--advertising
 ##.block--dfp
 ##.block--vh-dfp
+##.block--vh-dfp-dfp-ad-r1
 ##.block--vh-footer-ads
 ##.block-ad
 ##.block-ad-entity
@@ -5286,6 +5288,7 @@
 ##.sh-section-ad
 ##.sharetable
 ##.sheknows-infuse-ad
+##.short-ad
 ##.show-desk-ad
 ##.showAd
 ##.showads
@@ -28408,6 +28411,8 @@ ezprice.com.tw##.col-md-3
 eztv.io##+js(abort-current-script, document.getElementById, hide_vpn)
 eztv.re,liveonscore.tv##+js(no-setTimeout-if, sadbl)
 eztv.re,pstream.net,biter.tv#$#abort-on-property-write adcashMacros
+eztv.tf,eztv.yt##a > img[alt="Anonymous Download"]
+eztv.tf,eztv.yt#?#tbody:-abp-contains(WARNING! Use a)
 eztv.yt,eztv.io##.forum_header_border_normal > tbody > tr > td[align="center"] > div[id] > div[style*="background-color:"][style*="padding-top:"]
 ezvivi.com###table1[width="336"]
 f1fanklub.pl#@##topad
