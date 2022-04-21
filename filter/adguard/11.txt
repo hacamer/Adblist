@@ -1,8 +1,8 @@
-! Checksum: 79kb4XThNzjiWYIu9hywyQ
+! Checksum: RX4R2u6DxpGXFXFY+5ZqbQ
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.28.85
-! TimeUpdated: 2022-04-21T15:30:23+00:00
+! Version: 2.0.28.86
+! TimeUpdated: 2022-04-21T16:30:22+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2674,7 +2674,7 @@ m.facebook.com##div[data-mcomponent="MContainer"] > div[data-mcomponent="MContai
 m.facebook.com##div[data-mcomponent="MContainer"] > div[data-mcomponent="MContainer"][style*="display: none !important;"] + div[data-mcomponent="MContainer"] + div[data-mcomponent="MContainer"] + div[data-mcomponent="MContainer"]
 m.facebook.com##div[data-mcomponent="MContainer"] > div[data-mcomponent="MContainer"][style*="display: none !important;"] + div[data-mcomponent="MContainer"] + div[data-mcomponent="MContainer"] + div[data-mcomponent="MContainer"] + div[data-mcomponent="MContainer"]
 !!! Ad in menu
-m.facebook.com##div[data-type="vscroller"][data-comp-id] > div[tabindex] + div[style]:not([data-action-id]):not([data-focusable="true"]):not([style*="1px"])
+m.facebook.com##div[data-type="vscroller"][data-comp-id] > div.bg-s3[tabindex][data-focusable="true"] + div[style]:not([data-action-id]):not([data-focusable="true"]):not([style*="1px"])
 !
 ! Common names
 ! ##amp-embed[type="outbrain"]
