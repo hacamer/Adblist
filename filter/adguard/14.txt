@@ -1,8 +1,8 @@
-! Checksum: pwHlrnUaHbzg6TXi9/u8Vw
+! Checksum: +JH2N89B4JcyDAL7cRdwzA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.16.65
-! TimeUpdated: 2022-04-21T17:30:33+00:00
+! Version: 2.1.16.66
+! TimeUpdated: 2022-04-21T18:30:33+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -20830,6 +20830,7 @@ style.potepan.com##.FixedFooterSection
 kildosklinika.lt###footer-bottom
 kildosklinika.lt##.fix-right-menu
 messari.io##.jss2
+ruten.com.tw##div[class^="ruten-event"]
 2kmovie.cc#$#body.modal-open { overflow: auto !important; }
 2kmovie.cc#$##modalshare { display: none !important; }
 2kmovie.cc#$#.modal-backdrop { display: none !important; }
@@ -28188,6 +28189,7 @@ bookwalker.jp##.ad-new-member
 bookwalker.jp##.side-deals
 bookwalker.jp##.o-beginner-banner
 bookwalker.jp##.bnr-list-area
+ruten.com.tw###rt-top-ad
 tvnet.lv##.digipakett-branding-root-container
 ecuabet.com##div[name="asb-banners"]
 ||ecuabet.com/banner-
@@ -33056,7 +33058,8 @@ newsweek.com##iframe[src="http://sns.europe.newsweek.com/newsletter?popup=1"]
 !######### JS tweaks ##########
 !##############################
 !
-!
+! https://github.com/AdguardTeam/AdguardFilters/issues/115679
+uploadrar.com#%#//scriptlet("adjust-setTimeout", "tick", "1000")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116036
 pomvideo.cc#%#//scriptlet("adjust-setTimeout", "grecaptcha", "*", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115711
