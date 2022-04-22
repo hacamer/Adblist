@@ -1,8 +1,8 @@
-! Checksum: KpO4sYnDO8JbV6KTJ8C1cg
+! Checksum: IeW6Tq8HAsk89LtdUMXvWw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.16.73
-! TimeUpdated: 2022-04-22T08:30:34+00:00
+! Version: 2.1.16.74
+! TimeUpdated: 2022-04-22T10:30:33+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -92,6 +92,8 @@
 ! https://github.com/AdguardTeam/AdguardFilters/issues/76987
 youtube.com#%#AG_onLoad(function() {var a = new MutationObserver(function() {if (document.querySelector('yt-upsell-dialog-renderer')) {var b = document.querySelector('.ytd-popup-container[popup-size="UPSELL_DIALOG_RENDERER_POPUP_SIZE_LARGE"] #dismiss-button:not(.dismissed), .upsell-dialog-lightbox .upsell-dialog-dismiss-button button:not(.dismissed)');setTimeout(function() {b&&b.click()}, 3E2)}});a.observe(document, {childList: !0,subtree: !0});setTimeout(function() {a.disconnect()}, 3E3)});
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/116246
+gala.fr###dailymotion-pip-large-viewport
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115659
 ign.com##.premium-content-block
 ign.com##.infeed-player
@@ -2541,6 +2543,7 @@ izlemac75.net##body > div[style*="width:100%;text-align:center"]
 izlemac75.net##body > div#reload
 !
 bessarabiainform.com##.news-bar
+prachatai.com##.adsbypct
 taishu.jp##.youtube-content
 full-count.jp##.erase_space-ad
 full-count.jp#?#.l-sidebar > aside.l-sidebar__block:has(> div.l-sidebar-ranking > h2:contains(SAMURAI JAPAN))
@@ -18952,7 +18955,9 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+getpocket.com##div[data-cy="reader-flyaway-apps"]
 operanewsapp.com##.footer-wrapper
+navitime.co.jp###appli-dl-frame
 ficbook.net##.install-app-container
 chiebukuro.yahoo.co.jp###app_bnr
 translate.google.*##div[class][jsname] > div[class] > c-wiz > div[class][jsname][style^="transform: matrix("]
@@ -20694,6 +20699,9 @@ newzit.com#$#div[class*="hasSmartBanner_"] { padding-top: 0 !important; }
 !
 ! Unhide for Android CB if top padding cannot be removed
 !
+navitime.co.jp##.app-download-introduction-frame
+navitime.co.jp##.invite-app-bottom-frame
+navitime.co.jp###main-page-frame > div#main-content > div.main-frame > h2
 ||point.rakuten.co.jp/img/crossuse/footer-banner/
 kyivstar.ua##vd-smart-banner
 decathlon.de##.smart-app-banner
@@ -20838,9 +20846,11 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 !######### Subscription popups add to subscriptions.txt #########
 !
 koinbox.net###app-widget
+prachatai.com##.support-pay
 imdb.com##.media-viewer > div[data-testid="media-viewer__touch-handler"]
 ||potepan.com/wp-content/themes/potepan-style/js/article-detail/popUpBanner.js
 style.potepan.com##.FixedFooterSection
+voicetv.co.th##.content-bar > nav.navbar
 kildosklinika.lt###footer-bottom
 kildosklinika.lt##.fix-right-menu
 messari.io##.jss2
