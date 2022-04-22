@@ -1,8 +1,8 @@
-! Checksum: RwXfd7RPixj4W6K6YUyL9w
+! Checksum: zcA/whFiOZEMcNpyKmwRkw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.16.70
-! TimeUpdated: 2022-04-22T05:30:34+00:00
+! Version: 2.1.16.71
+! TimeUpdated: 2022-04-22T06:30:37+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -5168,11 +5168,16 @@ filmix.ac,filmix.tech,filmix.zone##.social-counters
 ! aternos.org$$script[tag-content="Function(atob(""Y29uc"][min-length="4000"][max-length="7000"]
 ! aternos.org#%#!function(){window.pbjs={cmd:{push:function(){}},adUnits:function(){}};window.snhb={globalSettings:{},startAuction:function(){}};window.pbjsChunk=()=>{}}();
 ! for apps and ext4.0
-$script,redirect-rule=noopjs,domain=aternos.org
+@@||pagead2.googlesyndication.com/getconfig/sodar?$domain=aternos.org
+@@||securepubads.g.doubleclick.net/gampad/ads?$domain=aternos.org
+@@||snigelweb.com/*/argus.js$domain=aternos.org
 @@/prebid.$domain=aternos.org
 @@||securepubads.g.doubleclick.net/pagead/ppub_config?ippd=aternos.org$domain=aternos.org
-@@||securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1$domain=aternos.org
 !
+aternos.org##.ad-dfp
+aternos.org##.header-link-exaroton
+aternos.org##.sidebar
+aternos.org##div[id^="adngin-Leaderboard_"]
 aternos.org##.ad.responsive-skyscraper
 @@||aternos.org^$generichide
 @@||onetag-sys.com/prebid-request$domain=aternos.org
@@ -5216,7 +5221,6 @@ aternos.org##.ad.responsive-skyscraper
 @@||snigel-d.openx.net/w/1.0/arj?cc=1$domain=aternos.org
 @@||c.amazon-adsystem.com/*/bid?$xmlhttprequest,domain=aternos.org
 @@||bidder.criteo.com/cdb$xmlhttprequest,domain=aternos.org
-@@||staging-cdn.snigelweb.com/*/argus.js$domain=aternos.org
 ! Redirect rules
 ||c.amazon-adsystem.com/bao-csm/aps-comm/aps_csm.js$script,redirect=noopjs,important,domain=aternos.org
 ||snigel-d.openx.net/*/arj|$redirect=nooptext,important,domain=aternos.org
@@ -5224,6 +5228,7 @@ aternos.org##.ad.responsive-skyscraper
 ||as-sec.casalemedia.com/cygnus|$redirect=nooptext,important,domain=aternos.org
 ||fastlane.rubiconproject.com/a/api/fastlane.json|$redirect=nooptext,important,domain=aternos.org
 ||flashtalking.com/lgc|$redirect=nooptext,important,domain=aternos.org
+$script,redirect-rule=noopjs,domain=aternos.org
 $xmlhttprequest,redirect-rule=nooptext,domain=aternos.org
 !
 ! https://github.com/AdguardTeam/AdguardFilters/issues/99916
@@ -7337,6 +7342,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+pantip.com##.pt-snackbar
 koshelek.app##.cm-m_c-w
 szpital.wroc.pl##.cookies-msg-wrapper
 ceair.com##.cookie-tip-container
