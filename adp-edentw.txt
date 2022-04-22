@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: L7zoEjymv2ExUTzhqDC9CQ
+! Checksum: TjazkjMDk3RsdYd8Y2J62A
 ! Title: edentwCustom
 ! Expires: 12 hours
-! Version: 202204222229
-! Last Modified: 2022年04月22日 22:29
+! Version: 202204222334
+! Last Modified: 2022年04月22日 23:34
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自Adblock Warning Removal List、ABP filters、anti-adblock-killer-filters，感谢各位大大的分享！
 ! 仅合并规则，未做其余任何处理
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 3463
+! Total count: 3467
 ###AdBlockDialog
 ###WarningCodec
 ###aabl-container
@@ -302,6 +302,7 @@
 /kill-adblock/js/function.js$script
 /ledo2vnyce=$xmlhttprequest,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 /local_p.js^$domain=bigtitslust.com|freeporn8.com|maturetubehere.com|megatube.xxx
+/magic/*.js^$script,domain=pornhits.com|porntop.com
 /mod_ablockdetector/*
 /mya/lfa.js$domain=thewatchcartoononline.tv|wcostream.com
 /naChotina=$xmlhttprequest,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
@@ -2466,6 +2467,9 @@ plus-belle-la-vie-video.blogspot.com#@##adsense
 plus-belle-la-vie-video.blogspot.com#@##publicite
 plus.gtv.vn#$#abort-current-inline-script $ youtube-modal
 pobtre.wtf##a[target="_blank"] > img[width="728"][height="90"]
+poczta.o2.pl##img[src*="wpimg.pl/"]
+poczta.o2.pl#$#hide-if-matches-xpath './/a[@class][contains(@href,"wp.pl/")]/parent::div[@style]/ancestor-or-self::div[@class][@slot="NATIVE_FEED"]/parent::div[1]'
+poczta.o2.pl#$#hide-if-matches-xpath './/div[@class]/iframe[@sandbox][contains(@src,"wpcdn.pl/tag/poczta.o2.pl/")]/ancestor::div[string-length(@class) >30]'
 pogocheats.net#@#.adsbygoogle
 pogoda.wp.pl#$#abort-on-property-read prebidConfig.config.floorprices
 pokemonizle.net#@##adsense
@@ -2481,6 +2485,7 @@ popeoftheplayers.eu###mask1
 poringapic.com##IMG[src^="http://poringapic.com/image.php?"]
 porn-blog.me###dbx_light
 porn00.org#$#abort-current-inline-script popup_url
+pornhits.com,porntop.com#$#abort-current-inline-script ACtMan
 pornhub.com#$#abort-on-property-read HTMLElement.prototype.attachShadow
 pornhub.com,tube8.fr,tube8.es,tube8.com###abAlert
 pornhub.com,tube8.fr,tube8.es,tube8.com###adBlockAlertWrap
@@ -3347,7 +3352,6 @@ zuuk.org###fl10
 ||pop.billionuploads.com/ppp/$popup
 ||porncomix.info/images/an-temp/$stylesheet,script
 ||pornoshara.tv/template/branding/swf/
-||porntop.com/magic/*.js^$script,domain=porntop.com
 ||potterpetrey.com^$third-party
 ||pronpic.org/52mp/index.php/adhandler/
 ||pwnews.net/des/antiblock.js$script

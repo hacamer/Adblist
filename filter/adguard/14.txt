@@ -1,8 +1,8 @@
-! Checksum: vF+B/um8l3xab0x4VQfcXw
+! Checksum: 1GakijqqkJCGzYLr8HQF7Q
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.16.77
-! TimeUpdated: 2022-04-22T13:30:38+00:00
+! Version: 2.1.16.78
+! TimeUpdated: 2022-04-22T15:30:33+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -19344,7 +19344,6 @@ freeoffice.com##.nav-banner-top
 ada.com#?##page-wrap > main > aside[class]:has(> a[href^="https://app.adjust.com/"])
 homeworklib.com#?#.span4 > div.box:has(> a[href="https://www.homeworklib.com/links/homework-android-app"])
 cookpad.com##img[src^="https://app-assets.cpcdn.com/next-cookpad/_next/static/images/app_sample_"]
-cookpad.com##.app_promotion
 cookpad.com###ru-promotion-banner
 mobile.mi.com##.header-storeapp
 jp.mercari.com##div[class^="Banner__BannerContainer-sc-"]
@@ -20349,6 +20348,8 @@ ebay.*###gh-appBanner
 !
 !
 !+ NOT_OPTIMIZED
+cookpad.com##.app_promotion
+!+ NOT_OPTIMIZED
 rtrp.jp##.btnApp
 !+ NOT_OPTIMIZED
 clubdam.com##.bnr-app
@@ -20846,6 +20847,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+cookpad.com##aside[id$="_modal"][data-key]
 koinbox.net###app-widget
 prachatai.com##.support-pay
 imdb.com##.media-viewer > div[data-testid="media-viewer__touch-handler"]
@@ -20922,7 +20924,6 @@ magazine.tabelog.com##.tm-floating-banner
 managertoday.com.tw##.mtaa
 niusnews.com##.fixed-footer-ad
 cookpad.com##.js_bookmark
-news.cookpad.com##.ext_spring2022_spweb_lead-show_modal
 blog.livedoor.com##body[data-page="top"] > a[href="https://blog.livedoor.com/tag/"]
 xhamster.com##.vpn-geo-picker-container
 feebee.com.tw###event_flybee_float
@@ -21428,7 +21429,6 @@ pikabu.ru##body > button.halloween
 buildupp.net##div[id^="xeory-fixed-banner"]
 fuzhou.baixing.com##.listing-fixed-bottom-notice
 anhangueraferramentas.com.br##.Whats-btn-Float
-cookpad.com###halloween2021_modal
 ||roskvartal-a.akamaihd.net/Web.Common/Scripts/Libs/enjoyhint/enjoyhint.min.js
 ||supersadovnik.ru/Content/scripts/bother.js
 bbc.com#$#.tp-modal { display: none !important; }
@@ -21752,7 +21752,6 @@ jagran.com##.Cube
 navbharattimes.indiatimes.com##.side-overlay
 navbharattimes.indiatimes.com###ntfy
 focusme.com##.nx-notification
-cookpad.com###summer2021_modal
 proapk.org##.sub-overlay
 universalfreecourse.com,downloadfreecourse.com#%#//scriptlet('abort-current-inline-script', '$', 'modal_newsletter')
 pbs.org#$#.modal-backdrop { display: none !important; }

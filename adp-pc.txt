@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: DFBnLieJNqIcEA6Rm2R2Vg
+! Checksum: GIUmuHFKwQ24YN73lt2oXQ
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202204222229
-! Last Modified: 2022年04月22日 22:29
+! Version: 202204222334
+! Last Modified: 2022年04月22日 23:34
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 85545
+! Total count: 85560
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -12894,6 +12894,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /macplus/ads/*
 /madAnalytics.js
 /magento2.js
+/magic/*.js^$script,domain=pornhits.com|porntop.com
 /magiq-
 /magnet/render.
 /mail-tracking/*$image
@@ -18883,6 +18884,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||c.mipcdn.com^$domain=77dushu.com|biqugesc.com|prpcoin.com
 @@||c.paypal.com/da/r/fb.js$script
 @@||c.scdn.to/stream/$domain=faselhd.top
+@@||c0.ifengimg.com/iis/iis_$domain=rjno1.com
 @@||c1.popads.net/pop.js$domain=zdam.xyz
 @@||c4free.win^$generichide
 @@||c5n.com^*/angulartics-google-analytics.min.js
@@ -22013,6 +22015,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||rhtag.com^$image,subdocument,domain=bitzfree.com
 @@||ridediriddim.com^$generichide
 @@||right.com.cn/forum/*300*250$image
+@@||rjno1.com/wp-content/themes/moban/moban-js/show_ads.js$domain=rjno1.com
 @@||rjno1.com^$generichide
 @@||rm.sina.com.cn/minisite/*/css/art_normal.css$domain=client.sina.cn
 @@||rmdan.net^$generichide
@@ -22670,6 +22673,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||technews.tw/www/delivery/$badfilter
 @@||technews.tw^$generichide,badfilter
 @@||technical-service.net^$xmlhttprequest,domain=n-tv.de|vip.de
+@@||techniknews.net/data/ads/doubleserve.js
 @@||technocanvas.xyz^$generichide
 @@||technoslek.com^$generichide
 @@||techposts.org^$generichide
@@ -30609,6 +30613,8 @@ hk.yahoo.com###mntl1
 hk.yahoo.com##.js-stream-content[style="background-color:#fafaff;"]
 hk.yahoo.com##div[id^="my-ads"]
 hk.yahoo.com##li[class="js-stream-content Cf Pos-r RevealNested      "][data-uuid]:not([data-uuid*="-"])
+hk01.com##div[class^="lg\:min-h-[250px] hidden lg:flex lg:items-center"]
+hk01.com##div[data-id="lazyload-placeholder"]
 hkdm688.com##.bb01
 hkepc.com##.headBanner
 hkmovie6.com##.hotmobad
@@ -34104,6 +34110,7 @@ motorsport.com##.ms-ap
 motorsport.com##.ms-apb-dmpu
 movcloud.net##+js(window.open-defuser)
 mover.uz###oframeplayer > [class][style^="display: block"]
+movie-19.com##.leftC > div.filmborder:has(> div > a[rel="nofollow noopener"][target="_blank"] > img)
 movie-censorship.com##a[href*="/out.php?"]
 movie2ufree.com##.adcen > .adb:not(:last-child)
 movie2ufree.com##.sidebar-banner
@@ -34426,6 +34433,7 @@ mydrivers.com##.news_xg + style + div
 mydrivers.com##.taobao_tab
 mydrivers.com##.zcdf ~ div[style]
 mydrivers.com##a[href*=".ashx?to="]
+mydrivers.com##a[href^="http://click.aliyun.com/"]
 mydrivers.com##a[style][href*=".jd.com/"]
 mydrivers.com##div[id$="_tab"] > ul > li:first-child
 mydrivers.com##div[style*="/ad/"]
@@ -35931,6 +35939,9 @@ poczta.interia.pl##section[ui-view="message-adv"].section--message > .ad
 poczta.interia.pl#?##main-container > .mail-frame-aside:has(> .ads-content)
 poczta.o2.pl##dd-holder[slot="DOUBLE_BILLBOARD"]
 poczta.o2.pl##dd-holder[slot^="BOX_LEFT_"]
+poczta.o2.pl##img[src*="wpimg.pl/"]
+poczta.o2.pl#$#hide-if-matches-xpath './/a[@class][contains(@href,"wp.pl/")]/parent::div[@style]/ancestor-or-self::div[@class][@slot="NATIVE_FEED"]/parent::div[1]'
+poczta.o2.pl#$#hide-if-matches-xpath './/div[@class]/iframe[@sandbox][contains(@src,"wpcdn.pl/tag/poczta.o2.pl/")]/ancestor::div[string-length(@class) >30]'
 poczta.o2.pl#@#body > div[class="pub_300x250 text_ads ad_container"][style] + div[class]:not([id])
 poczta.onet.pl##div[class^="styles__SlotRightColumn-"]
 poczta.onet.pl##div[class^="styles__SlotTopContainer-"]
@@ -36085,6 +36096,7 @@ pornhd.com##phd-floating-ad
 pornhd6k.net##+js(abort-current-script, absda, /.*/)
 pornhd6k.net#@#.adsBox
 pornhits.com##+js(abort-current-script, ACtMan)
+pornhits.com,porntop.com#$#abort-current-inline-script ACtMan
 pornhub-com.appspot.com,pornhub.com,pornhub.net,pornhubthbh7ap3u.onion,youporn.com###pb_template
 pornhub.com###hd-rightColVideoPage>none
 pornhub.com##.hd.clear
@@ -49979,6 +49991,7 @@ zznews.cn##.ad:not([style])
 ||c.ypcdn.com^$domain=yellowpages.com
 ||c.ypcdn.com^*&ptid
 ||c.ypcdn.com^*?ptid
+||c0.ifengimg.com/iis/iis_$script,redirect=noop.js,important,domain=rjno1.com
 ||c0012.brsimg.com^
 ||c09.xyz^
 ||c0i.ckoi.com^
@@ -60349,6 +60362,7 @@ zznews.cn##.ad:not([style])
 ||ikcyxcbqmoptk.com^
 ||iklda.cn^
 ||ikmstxasipnuyi.com^
+||iknight.xyz^
 ||ikuailian.com^$third-party
 ||ikunselt.com^
 ||ikxcep.xyz^
@@ -64655,6 +64669,7 @@ zznews.cn##.ad:not([style])
 ||m.m216j.cn^$third-party
 ||m.manhua123.net/js/com1.js
 ||m.media-amazon.com/images/S/sash/PNsNtF7MLhjOEin.js$domain=imdb.com
+||m.mgronline.com/js/views/global-ads.min.js
 ||m.mianbao99.com/js/detail.js
 ||m.nanyangqiaoxiang.cn^$third-party
 ||m.nfydd.com/template/wap1/js/dd.js
@@ -66139,7 +66154,6 @@ zznews.cn##.ad:not([style])
 ||mgid.com^$third-party
 ||mgn.ebis.andbe-official.com^
 ||mgnb.xyz^
-||mgronline.com/js/libs/*-ads.min.js
 ||mgsue.cn^
 ||mgswgl.vitkac.com^
 ||mgt7.madeindesign.it^
@@ -70049,7 +70063,6 @@ zznews.cn##.ad:not([style])
 ||pornpaw.com/never.js
 ||pornrox.com/js/kYX0Yts6UL.js
 ||porntop.com/magic/
-||porntop.com/magic/*.js^$script,domain=porntop.com
 ||porntry.com^$third-party
 ||porntube.com/external/
 ||porntube.com/nativeexternal/
@@ -72040,6 +72053,7 @@ zznews.cn##.ad:not([style])
 ||rjhtrjb.cn^
 ||rjigj.cn^
 ||rjnjjin.cn^
+||rjno1.com/wp-content/themes/moban/moban-js/show_ads.js$script,redirect=noop.js,important,domain=rjno1.com
 ||rjsos.com/channel/laomo_dibu.png
 ||rjtgbjxfyslvdst.com^
 ||rjtpos.cn^
@@ -73256,6 +73270,7 @@ zznews.cn##.ad:not([style])
 ||segs.jp^$third-party
 ||sehd.shop^
 ||sehiwprkyxoos.com^
+||seinse27.com^
 ||seisinhinger.com^
 ||seitwert.de^$third-party
 ||sekindo.com^
