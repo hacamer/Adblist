@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: jKB/+JIVMGaQ1ospYh3MqQ
+! Checksum: WdrbwGwG9xW2tDoXaskJ2A
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202204230432
-! Last Modified: 2022年04月23日 04:32
+! Version: 202204230529
+! Last Modified: 2022年04月23日 05:29
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 85618
+! Total count: 85622
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -27467,6 +27467,9 @@ dood.*##+js(set-constant, googleAd, true)
 dood.*##+js(set-constant, xPoPAdS, false)
 dood.so,dood.to,dood.video,dood.watch,dood.la,dood.ws,doodstream.co,doodstream.com#$#abort-on-property-read DoodPop; abort-on-property-write adb; abort-on-property-write cRAds; abort-on-property-write xRds; abort-on-property-write xPoPAdS
 doodle.com#@#.googleAd
+doofree88.com##.go-content
+doofree88.com##.js-ifram-google > div.text-center
+doofree88.com##.placeholder
 doomovie-hd.com###ekcdnplayer > div[style^="position: absolute; top: 0; left: 0;"]
 doomovie-hd.com##+js(json-prune, adParam)
 doomovie-hd.com##.default-horizontal-banana
@@ -54253,6 +54256,7 @@ zznews.cn##.ad:not([style])
 ||doobyyooby.com^
 ||dood.la/sw.js
 ||dood.so/sw.js
+||doofree88.com/storage/go/
 ||dooloust.net^
 ||dooloust.net^$all
 ||dooloust.net^$popup
