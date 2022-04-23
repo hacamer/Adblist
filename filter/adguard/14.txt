@@ -1,8 +1,8 @@
-! Checksum: l6nUIXma2cRb9peHgu8htg
+! Checksum: NVQMO+7t6KTOYkzHOa1pEA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.16.84
-! TimeUpdated: 2022-04-23T03:30:35+00:00
+! Version: 2.1.16.85
+! TimeUpdated: 2022-04-23T06:30:33+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -20851,6 +20851,9 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+biz.nuro.jp#$#.is-fixed { overflow: auto !important; }
+biz.nuro.jp#$#.m-modal { display: none !important; }
+biz.nuro.jp#$#.m-modal-bg { display: none !important; }
 timesnownews.com##.__player.__dock
 cookpad.com##aside[id$="_modal"][data-key]
 koinbox.net###app-widget
