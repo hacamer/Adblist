@@ -1,8 +1,8 @@
-! Checksum: UN3nnPCjSp007xEbqWUNEA
+! Checksum: H82opcvoQHl/X4vwS3zmeA
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.38.68
-! TimeUpdated: 2022-04-24T17:02:59+00:00
+! Version: 2.0.38.69
+! TimeUpdated: 2022-04-25T06:31:23+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -100,7 +100,7 @@ freecodecamp.org#%#//scriptlet("abort-current-inline-script", "Function", "b9kEB
 ! https://github.com/AdguardTeam/AdguardFilters/issues/108678
 radiotimes.com#%#(function(){window.DD_LOGS={onReady:function(){},logger:{log:function(){}}}})();
 ! https://github.com/AdguardTeam/AdguardFilters/issues/99502
-ntp.msn.com#%#AG_defineProperty("navigator.getBattery",{value:function(){return Promise.resolve()}});
+ntp.msn.com#%#AG_defineProperty("navigator.getBattery",{value:function(){return Promise.resolve({addEventListener:EventTarget.prototype.addEventListener.bind(window),removeEventListener:EventTarget.prototype.removeEventListener.bind(window),dispatchEvent:EventTarget.prototype.dispatchEvent.bind(window),charging:!0})}});
 ! https://github.com/AdguardTeam/AdguardFilters/issues/103991
 ! Fixing video player if DNS filtering is enabled
 n-tv.de#%#AG_onLoad(function(){setTimeout(function(){var a=document.querySelector("#playerwrapper");if(a&&1>=a.childElementCount&&"function"===typeof startNtvVideoplayerNew)try{startNtvVideoplayerNew($("#playerwrapper"))}catch(b){}},1E3)});
