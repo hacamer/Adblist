@@ -1,8 +1,8 @@
-! Checksum: ZANyEP10FcPnvgGPFvEc+w
+! Checksum: pFJ8DQBdh2rGc2GY+m+6uQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.16.95
-! TimeUpdated: 2022-04-25T12:30:32+00:00
+! Version: 2.1.16.97
+! TimeUpdated: 2022-04-25T13:30:33+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1438,6 +1438,7 @@ vc.ru###dpir-startup-generator
 game2day.ru##a[href="https://p2d.ru/"][target="_blank"] > img
 ! https://github.com/AdguardTeam/AdguardFilters/issues/30699
 genius.com##apple-music-player
+genius.com##div[class^="AppleMusicPlayer__"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/29612
 ltn.com.tw#%#AG_onLoad(function() { $('div[class^="photo picbox 1 photoOn"] > a[href="//draw.ltn.com.tw/slot_v8/"]').closest('div.picbox.\\31').remove(); });
 ! https://github.com/AdguardTeam/AdguardFilters/issues/28876
@@ -15952,7 +15953,8 @@ archiveofourown.org#%#//scriptlet("abort-current-inline-script", "$j", "showTOSP
 northantstelegraph.co.uk,consent.newsletter.co.uk,consent.portsmouth.co.uk#%#AG_onLoad(function() { setTimeout(function() { var el = document.querySelector('button[title="I Accept"]'); if(el) { el.click(); } }, 1000); });
 cdn.privacy-mgmt.com#%#AG_onLoad(function() {if (!document.cookie.includes("euconsent-v2")) {var g = new MutationObserver(function() {var b = document.querySelector('button[aria-label="Save"]');b&&b.click();});g.observe(document, {childList: !0,subtree: !0});setTimeout(function() {g.disconnect()}, 1E4)}});
 kokaihop.se#%#//scriptlet('set-cookie', 'cookieUserPolicy', 'true')
-volksfreund.de,rp-online.de#%#AG_onLoad(function(){if(!document.cookie.includes("eupubconsent-v2")){var a=new MutationObserver(function(){var b=document.querySelector(".park-consent-layer__content-wrapper #consentAccept"),c;b&&"object"===typeof Optanon&&"function"===typeof(null==(c=Optanon)?void 0:c.AllowAll)&&(a.disconnect(),b.click())});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)}});
+rp-online.de#%#(function(){if(!document.cookie.includes("eupubconsent-v2")){var c=new MutationObserver(function(){var a=document.querySelector(".park-consent-layer__content-wrapper #consentAccept");a&&"function"==typeof acceptAndContinue&&(c.disconnect(),a.click())});c.observe(document,{childList:!0,subtree:!0}),setTimeout(function(){c.disconnect()},1E4)}})();
+volksfreund.de#%#AG_onLoad(function(){if(!document.cookie.includes("eupubconsent-v2")){var a=new MutationObserver(function(){var b=document.querySelector(".park-consent-layer__content-wrapper #consentAccept"),c;b&&"object"===typeof Optanon&&"function"===typeof(null==(c=Optanon)?void 0:c.AllowAll)&&(a.disconnect(),b.click())});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)}});
 rtlxl.nl#%#AG_onLoad(function(){if(!document.cookie.includes("eupubconsent-v2")){var a=new MutationObserver(function(){var b=document.querySelector("#onetrust-accept-btn-handler");b&&(a.disconnect(),b.click())});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)}});
 trixie.de#%#AG_onLoad(function() {if (!document.cookie.includes("trixieWebshopCookieEinstellungen")) {var g = new MutationObserver(function() {var b = document.querySelector(".cookie_accept_button");b&&b.click();});g.observe(document, {childList: !0,subtree: !0});setTimeout(function() {g.disconnect()}, 1E4)}});
 kmweg.de#%#//scriptlet('set-cookie', 'cookie_consent', '1')
@@ -20867,6 +20869,8 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+whoer.net##.popup-counter-deal__wrapper
+whoer.net##.sticky-action
 biz.nuro.jp#$#.is-fixed { overflow: auto !important; }
 biz.nuro.jp#$#.m-modal { display: none !important; }
 biz.nuro.jp#$#.m-modal-bg { display: none !important; }
