@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: /DS21uq3syu8WTADc2+EaQ
+! Checksum: PNEdpCGkHegG/gRbLoWt0Q
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202204252336
-! Last Modified: 2022年04月25日 23:36
+! Version: 202204260050
+! Last Modified: 2022年04月26日 00:50
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 85618
+! Total count: 85628
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -27926,22 +27926,24 @@ ebaumsworld.com###subheader_atf_wrapper
 ebaumsworld.com##.mediumRect
 ebaumsworld.com#@#.promoAd
 ebaumsworld.com,greedyfinance.com##.divider
+ebay.ca#$#hide-if-contains-visible-text /[Commandité]+(?![\w,])/ 'li.s-item' 'li.s-item span[role="text"]'
+ebay.ca,ebay.co.uk,ebay.com,ebay.com.au#$#hide-if-contains-visible-text /[Sponsored]+(?![\w,])/ 'li.s-item' 'li.s-item span[role="text"]'
 ebay.co.uk##div[title="ADVERTISEMENT"]
 ebay.co.uk,ebay.com,ebay.com.au##.srp-1p__link
-ebay.co.uk,ebay.com,ebay.com.au#$#hide-if-contains-visible-text /[Sponsored]+(?![\w,])/ 'li.s-item' 'li.s-item span[role="text"]'
+ebay.co.uk,ebay.com,ebay.com.au#$#hide-if-contains-visible-text /Sponsored/ 'li.s-item' 'li.s-item span'
+ebay.co.uk,ebay.com,ebay.com.au#$#hide-if-contains-visible-text /[Sponsored]+(?![\w,])/ 'li.s-item' 'li.s-item span[class="s-item__sep--rev"]'
 ebay.co.uk,ebay.com,ebay.com.au#?#.mfe-lex:-abp-has(h2:-abp-contains(sponsored))
 ebay.co.uk,ebay.com,ebay.de##.rtmCss
 ebay.co.uk,ebay.com,ebay.de##div[id^="rtm_html_"]
 ebay.co.uk,ebay.com,ebay.de#@#.adv
 ebay.com##.app-rtm-pid-wrapper
 ebay.com##div[title="ADVERTISEMENT"]
-ebay.com#$#hide-if-contains-visible-text /(.*S.*p.*o.*n.*s.*o.*r.*e.*d.*)/ li.s-item span[role="text"]
 ebay.com#?#li.s-item:-abp-has(span[role="text"]>span:-abp-contains(助))
-ebay.de##li[class^="s-item s-item__sep-on-bottom"]
 ebay.de#$#hide-if-contains-visible-text /Anzeige|ANZEIGE/ 'li.s-item' 'li.s-item span[role="text"]'
-ebay.de#$#hide-if-matches-xpath './/div[contains(@class,"s-item__")]/following-sibling::span[@class]/span[@role="text"][count(child::span[@class]) >= 28][(contains(text(),""))]/ancestor::li[1][starts-with(@class,"s-item")]'
+ebay.de#$#hide-if-contains-visible-text /[Anzeige]+(?![\w,])/ 'li.s-item' 'li.s-item span[role="text"]'
 ebay.de,ebay.it,ebay.com##div.vi-lb-placeholder[id^="scandal"]
-ebay.es,ebay.fr,ebay.ca,ebay.co.uk,ebay.com,ebay.com.au#$#hide-if-matches-xpath '//div[@class="s-item__title-tag"][text()="SPONSORED" or text()="SPONSORISÉ" or text()="PATROCINADOS"]/ancestor::li[1][starts-with(@class,"s-item")]'
+ebay.es#$#hide-if-contains-visible-text /[Patrocinado]+(?![\w,])/ 'li.s-item' 'li.s-item span[role="text"]'
+ebay.fr#$#hide-if-contains-visible-text /(.*S.*p.*o.*n.*s.*o.*r.*i.*s.*é⁣.*)/ 'li.s-item' 'li.s-item span[role="text"]'
 ebb.io##+js(set-constant, ga, noopFunc)
 ebb.io##+js(set-constant, google_empty_script_included, true)
 ebc.net.tw###lotteryfnc
@@ -34896,6 +34898,7 @@ nolfgirl.net#@#.adsbygoogle
 nonameno.com,rusrek.com##.alert
 nonfungerbils.com#@#iframe[width="600"][height="90"]
 nongjitong.com##.ad_sms
+noonaspoiler.online###side_on_post > div[id^="HTML"]
 noonnu.cc##+js(set-constant, noonnuCanRunAds, false)
 noqreport.com##.custom-html-widget [href] > [src]
 noqreport.com##[class^="noqre-"]
@@ -55167,6 +55170,7 @@ zznews.cn##.ad:not([style])
 ||egfjpgijuhr.com^
 ||eggnogsicerya.com^
 ||eggplant.cloud^$third-party
+||egistonemes.com^
 ||egjyqfidcsfw.com^
 ||egmontassets.net/random.js$script,domain=euroman.dk
 ||egmontpublishing.dk/tracking/
@@ -57006,6 +57010,7 @@ zznews.cn##.ad:not([style])
 ||fqtag.com^$third-party
 ||fqtfkf.cn^
 ||fqtra.com^
+||fqxkj.cn^
 ||fr.sharpmarketing.eu^
 ||fragilebiggerbetty.com^
 ||fragment.firefoxchina.cn/html/
@@ -60157,6 +60162,7 @@ zznews.cn##.ad:not([style])
 ||ibpxl.com^$third-party
 ||ibpxl.net^$third-party
 ||ibt.com/front/js/counter.js
+||ibzgcrusher.com^
 ||ic-live.com^$third-party
 ||icache.pandalive.co.kr/code:pandatv/partner/banner/*.gif$domain=avjamak.net
 ||icaile.com/z.php?id=
@@ -67180,6 +67186,7 @@ zznews.cn##.ad:not([style])
 ||nabaza.com^$third-party
 ||nabeghlavi.com.cn^
 ||nablabee.com^$third-party
+||nabobketupa.com^
 ||nachogunj.cam^
 ||naclsnjtojtn.xyz^
 ||nacontent.pro^
@@ -73477,6 +73484,7 @@ zznews.cn##.ad:not([style])
 ||sgforex.americanexpress.com^
 ||sgg.southcn.com^
 ||sgk.xyz/static/js/pc.js
+||sglyd.cn^
 ||sgnxcn.omni7.jp^
 ||sgphctileh-a.akamaihd.net^
 ||sgswuesocfr.com^
@@ -77177,6 +77185,7 @@ zznews.cn##.ad:not([style])
 ||sumologic.com^$third-party,domain=~sumologic.net
 ||sumome.com^$third-party
 ||sums.suning.com^$third-party
+||sun66387567606.online^
 ||sunang37.cn^
 ||sundady.online^
 ||sundayceremonytitanic.com^
@@ -82513,6 +82522,7 @@ zznews.cn##.ad:not([style])
 ||workers.dev/js/script.js
 ||workmanceremony.com^
 ||workoperation.com^
+||workroomsplittingtrashy.com^
 ||worldcup1.com/imgs/*.gif$domain=avcao.cc
 ||worldflagcounter.com^$third-party
 ||worldfreshblog.com^
