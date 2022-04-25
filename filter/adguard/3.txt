@@ -1,8 +1,8 @@
-! Checksum: H82opcvoQHl/X4vwS3zmeA
+! Checksum: DdkrxkDMmciQs4o1DwdV/g
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.38.69
-! TimeUpdated: 2022-04-25T06:31:23+00:00
+! Version: 2.0.38.70
+! TimeUpdated: 2022-04-25T07:31:17+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -20759,7 +20759,7 @@ chinatimes.com##.popin-recommend
 ||search.tmon.co.kr/api/direct/*/searchstatapi/api/search/count/click/
 ||cdn.adrise.tv/*/appboy.min.js
 ||cdn.adrise.tv/*/sentry/
-/^https:\/\/cdn\.jsdelivr\.net\/npm\/([a-z]|-){4,22}@latest\/dist\/script\.min\.js$/$domain=tgd.kr|loawa.com|ygosu.com|inven.co.kr|ppss.kr|dailymagazine.co.kr|dailian.co.kr|socialvalue.kr|usjournal.kr|basketkorea.com|jumpball.co.kr|joynews24.com|inews24.com|hobbyen.co.kr|thespike.co.kr|siminilbo.co.kr|mdtoday.co.kr|clien.net|ujeil.com|starnnews.com|sportsw.kr|enewstoday.co.kr|readersnews.com
+/^https:\/\/cdn\.jsdelivr\.net\/npm\/([a-z]|-){4,22}@latest\/dist\/script\.min\.js$/$domain=tgd.kr|loawa.com|ygosu.com|inven.co.kr|ppss.kr|dailymagazine.co.kr|dailian.co.kr|socialvalue.kr|usjournal.kr|basketkorea.com|jumpball.co.kr|joynews24.com|inews24.com|hobbyen.co.kr|thespike.co.kr|siminilbo.co.kr|mdtoday.co.kr|clien.net|ujeil.com|starnnews.com|sportsw.kr|enewstoday.co.kr|readersnews.com|algumon.com
 ||eiu.com/n/wp-content/plugins/eiu-google-tag-manager/assets/dist/js/eiu-google-tag-manager.min.js
 ||link.tv-asahi.co.jp/tver/cookiesync?
 ||dist.micres.cyberowl.jp/packs/link-tracker.js
@@ -22497,8 +22497,8 @@ dizibey.com##.sidebar > #text-19
 ||klops.ru/ahoy/
 ||a.europaplus.ru/*/event?p2=
 ||morhipo.com/Shared/AnalyticsJS^
-||assia.tv/css/stat.js
-||assia.tv/css/analytics.js
+/css/stat.js$domain=assia.*|assia4.com
+/css/analytics.js$domain=assia.*|assia4.com
 ||svcs.ebay.com/delstats/imp/rtm
 ||ebay.*/beacon/
 ||decathlon.de/content/js/tc_analytics.js
@@ -24030,6 +24030,7 @@ $cookie=bf_visit
 |http*$app=com.adups.fota.sysoper|com.adups.fota
 !
 ! For apps
+||repo.adbc.io:8081/repository/QTracker/
 $app=com.miui.systemAdSolution
 ||bilanx.dtto.com^$app=com.dtto.app
 ||track.*.roku.com^
