@@ -1,8 +1,8 @@
-! Checksum: kkFgpx1xyCtCmu9+WE/OSQ
+! Checksum: MoMoKKtOSn7lea0Bhpp16A
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.38.76
-! TimeUpdated: 2022-04-26T10:31:21+00:00
+! Version: 2.0.38.77
+! TimeUpdated: 2022-04-26T11:31:32+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -19752,7 +19752,7 @@ charlestownwyllie.oaklawnnonantum.com^
 /plugins/aurora-heatmap$stylesheet,script
 /logExecutionStats?
 /busting/*/gtm-
-/wordpress/wp-json/pum/*/analytics/*
+/pum/*/analytics/*
 /gaaddons.js
 /wp-content/plugins/google-analytics-premium/*
 /js/ad_insight/*
@@ -20947,7 +20947,6 @@ the-ans.jp##.side-reccomend
 ||cdn.digitaloceanspaces.com/pixel/lp.js
 ||maillist-manage.com/wa/ActionLogger?
 ||softland.co.kr/exec/front/eclog/
-||virtual-dba.com/wp-json/pum/*/analytics/
 ||softland.co.kr/app/Eclog/js/cid.generate.js
 ||push.soft-com.biz/api/ui/metrics
 ||cdn.megadata.co.kr/dist/prod/enp_tracker_
@@ -21047,7 +21046,6 @@ inside-games.jp##.cx-subhead
 business.nikkei.com##.cbCxense
 koneta.nifty.com###custom_html-2
 ||api.aws.mapquest.com/logger
-||yuzde100yerli.com/wp-json/pum/v*/analytics/?event=
 ||mysexgames.com/statstracker.php
 ||churchtechtoday.com/?wordfence_lh=
 ||playep.pro/pl/vendor/stat.min.js
@@ -24229,6 +24227,8 @@ $app=com.miui.analytics
 ! For platforms which do not support $redirect rules
 !
 !
+! https://github.com/tofukko/filter/issues/66
+@@||googletagmanager.com/gtm.js$domain=rbbtoday.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116471
 ||googletagmanager.com/gtm.js$script,xmlhttprequest,redirect=googletagmanager-gtm,domain=whoer.net
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116246
