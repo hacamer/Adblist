@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: XowapBx2aJDjHDepmHeyGw
+! Checksum: a9CQLJnmhGfQfwAZOazC6Q
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202204270530
-! Last Modified: 2022年04月27日 05:30
+! Version: 202204270632
+! Last Modified: 2022年04月27日 06:32
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 85745
+! Total count: 85746
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -21388,6 +21388,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||pagead2.googlesyndication.com/$script,xmlhttprequest,domain=rjno1.com
 @@||pagead2.googlesyndication.com/*show_ads$script,domain=napisy24.pl
 @@||pagead2.googlesyndication.com/getconfig/sodar?$xmlhttprequest,domain=spiegel.de
+@@||pagead2.googlesyndication.com/pagead$xmlhttprequest,script,domain=freemcserver.net
 @@||pagead2.googlesyndication.com/pagead/$domain=eclypsia.com,script
 @@||pagead2.googlesyndication.com/pagead/$domain=free-scores.com,image
 @@||pagead2.googlesyndication.com/pagead/$domain=nationalpost.com
@@ -22086,6 +22087,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||sankakucomplex.com^$generichide
 @@||sankei.co.jp/js/analytics/skd.Analysis.js$script
 @@||sanspo.com/parts/chartbeat/$xmlhttprequest
+@@||sapo-ams.gscontxt.net/main/channels-json.cgi?url=$xmlhttprequest,domain=freemcserver.net
 @@||sarapbeh.com^$generichide
 @@||sardeath.com^$generichide
 @@||saruch.co/ads/ad.xml$domain=saruch.co
@@ -22208,6 +22210,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=agario-play.com
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=digitaltrends.com
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=epaper.timesgroup.com
+@@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=freemcserver.net
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=games.gamesplaza.com
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=gamespot.com
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=gentside.com|ohmymag.com
@@ -29148,8 +29151,6 @@ freelivesport.eu,cv55.eu,nowwatchtvlive.me,nowwatchtvlive.co,liguendirect.com,be
 freemagazines.top###fixedbanner
 freemagazines.top##+js(set-constant, adsbygoogle.length, undefined)
 freemc.host##+js(no-setInterval-if, adsbygoogle, 1000)
-freemcserver.net##+js(no-fetch-if, /pagead2\.googlesyndication\.com|gscontxt\.net/)
-freemcserver.net##+js(no-setTimeout-if, /window\.location\.replace|testURL|0x/)
 freemulticoins.com#@#.adsbygoogle
 freenet.de#@#.frn_contAdHead
 freenod32key.com,nod32key.xyz##.mobile-ad
