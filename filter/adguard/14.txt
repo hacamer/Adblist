@@ -1,8 +1,8 @@
-! Checksum: GhtCY+hPVmyokrmZILwelA
+! Checksum: Sdv0caxAWJ6wgIZdDnfqRg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.17.17
-! TimeUpdated: 2022-04-26T18:30:37+00:00
+! Version: 2.1.17.19
+! TimeUpdated: 2022-04-26T20:30:39+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -19003,6 +19003,9 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+news.cnyes.com#?#.fixed > section > a[href^="https://play.google.com/store/apps/details?id=com.cnyes.android"]:upward(1)
+cnyes.com##.download-wrapper
+cnyes.com#%#//scriptlet('set-cookie', 'smart-banner-closed', '1')
 news.cgtn.com##.openBtn
 yahoo.co.jp##.sn-modAd
 lazada.co.th#%#//scriptlet('remove-class', 'with-smart-banner', '#lzd-global-header')
@@ -19048,7 +19051,7 @@ wetransfer.com##.AppDownloadDrawer
 wetransfer.com##.downloader__collect-header
 trovo.live##.app-sidebar
 trovo.live#%#//scriptlet('set-session-storage-item', 'download-dialog-closed', '1')
-m.momoshop.com.tw###smartbanner
+momoshop.com.tw###smartbanner
 moneynet.com.tw##.download-container
 moneynet.com.tw##.nav-download-container
 moneynet.com.tw##button[onclick="appclick()"]
@@ -20762,6 +20765,7 @@ navitime.co.jp##.invite-app-bottom-frame
 navitime.co.jp###main-page-frame > div#main-content > div.main-frame > h2
 ||point.rakuten.co.jp/img/crossuse/footer-banner/
 kyivstar.ua##vd-smart-banner
+t.pia.jp##.js_smartbanner
 vesti.ua##div[id$="PWA"]
 decathlon.de##.smart-app-banner
 daily.afisha.ru##.afisha-app
@@ -20905,6 +20909,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+theatlantic.com###paywall
 s.shufoo.net###okiniiri-fuwatto-banner
 lektsii.com###divmyclose
 tsargrad.tv##.air-popup
@@ -30033,7 +30038,7 @@ tolknews.ru##.b-news_aggr
 1prime.ru##.subscription-aside-block
 1prime.ru##.article-aggr
 khaleejtimes.com##.newletter-widget-wrapper
-linearmotiontips.com###text-15
+tefida.com,linearmotiontips.com###text-15
 eepower.com#$##subscriber-newsletter-container { display: none!important; }
 eepower.com#$#body { overflow: visible!important; }
 eepower.com#$#html { overflow: visible!important; }

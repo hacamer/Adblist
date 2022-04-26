@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: DNFFnNFGbM+l2zbLkQQ5ig
+! Checksum: mNAngHbSMfMUSaDsWU9B/A
 ! Title: My AdFilters（for Mobile）
 ! Expires: 12 hours
-! Version: 202204270325
-! Last Modified: 2022年04月27日 03:25
+! Version: 202204270433
+! Last Modified: 2022年04月27日 04:33
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 64635
+! Total count: 64638
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -15249,7 +15249,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||app.clarity.so^$~third-party
 @@||app.khz.se/api/*&ad_type=preroll-channel$domain=ilikeradio.se
 @@||app.sendgrid.com$document
-@@||app.trangchu.news/peel.js
+@@||app.trangchu.news/*.js
 @@||appboycdn.com^*/appboy.min.js$script,domain=bakkt.com
 @@||apple.com^$generichide
 @@||applet.polfan.pl/vendor/fingerprint2.min.js$script,domain=applet.polfan.pl
@@ -22469,8 +22469,11 @@ facebook.com##a[href="/ads/about/?entry_product=ad_preferences"]
 facebook.com##div[data-pagelet^="BrowseFeedUpsell_"] div[class][style^="max-width:"] > span
 facebook.com##div[role="region"] + div[role="main"] div[role="article"] div[style="border-radius: max(0px, min(8px, ((100vw - 4px) - 100%) * 9999)) / 8px;"] > div[class]:not([class*=" "])
 facebook.com##strong > a[href*="facebook.com"][href*="/shop/?ref"]:not([href*="l.php"])
+facebook.com#$#:matches-path(/adsmanager)body > .AdBox.Ad.advert { display: block !important; }
 facebook.com#$#:matches-path(/adsmanager)body > .AdBox.Ad.advert ~ div[class] { display: block !important; }
 facebook.com#$#:matches-path(/adsmanager)body { display: block !important; }
+facebook.com#$#:matches-path(/gaming)body > .AdBox.Ad.advert { display: block !important; }
+facebook.com#$#:matches-path(/gaming)body > .AdBox.Ad.advert ~ div[class] { display: block !important; }
 facebook.com#?#div[role="complementary"] > div[class] > div[class] > div[class] span > div > div:not([aria-label]):not([data-visualcompletion]):has(> div[class] > div[class] div[class] > a[href^="https://l."][href*="facebook.com/l.php?u="][target="_blank"])
 facebook.com#@#a[href^="/ads/"]
 facebook.com,facebookcorewwwi.onion###megamall_rhc_ssfy_pagelet
