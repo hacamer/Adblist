@@ -1,8 +1,8 @@
-! Checksum: CtSDK/ergC67Ioqiq9pmKg
+! Checksum: ZjM8Yz6cmpuaLpA7sfn1Yw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.17.12
-! TimeUpdated: 2022-04-26T13:02:21+00:00
+! Version: 2.1.17.14
+! TimeUpdated: 2022-04-26T15:30:38+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7360,6 +7360,9 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+enesco.co.uk#$##cookie-modal { display: none!important; }
+enesco.co.uk#$#.modal-backdrop { display: none!important; }
+enesco.co.uk#$#body { overflow: auto!important; padding-right: 0!important;}
 rawneix.in###rb-privacy
 pluralsight.com##.cookie-notification-wrapper
 boehringer-ingelheim.de###it-eprivacy-root
@@ -7375,7 +7378,7 @@ parrot.com##div[class^="RgpdDrawer_"]
 set.or.th##.cookies-pdpa
 classic.set.or.th,settrade.com###pdpa-policy
 /scripts/pdpa-script.js$domain=settrade.com|classic.set.or.th
-khaosodenglish.com###pdpa-popup
+khaosod.co.th,khaosodenglish.com###pdpa-popup
 united.com##div[class^="app-components-CookieDisclaimer"]
 czc.cz###ccp-popup
 sberdisk.ru##div[class^="CookieContainer_"]
@@ -16351,6 +16354,8 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/116601
+enesco.co.uk#@##cookie-modal
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116245
 @@||sdk.privacy-center.org^$domain=europe1.fr
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116062
@@ -18992,6 +18997,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+news.cgtn.com##.openBtn
 yahoo.co.jp##.sn-modAd
 getpocket.com##div[data-cy="reader-flyaway-apps"]
 operanewsapp.com##.footer-wrapper
@@ -20289,7 +20295,7 @@ webtekno.com##.android-dropdown.dropdown-container
 mcdart.de##.app-download-wrap
 russian.rt.com##.app-panel
 mywot.com##.app-stripe
-suumo.jp,socratic.org,nordbayern.de##.appBanner
+news.cgtn.com,suumo.jp,socratic.org,nordbayern.de##.appBanner
 music.line.me,miui.com##.app_download
 oilprice.com,m.qidian.com##.app_download_ad
 m.qidian.com##.app_download_blank_show
@@ -20889,6 +20895,8 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+lektsii.com###divmyclose
+tsargrad.tv##.air-popup
 clubdam.com##.newrelease_cv_floatbtn
 dmarket.docomo.ne.jp#$##firstArea.welcome-cover { display: none !important; }
 dmarket.docomo.ne.jp#$##container[style^="position: fixed"] { position: static !important; }
@@ -29135,7 +29143,7 @@ asia.nikkei.com,aeon.co,laptopmag.com,musicradar.com,airmail.news,newsweek.com,z
 ! ##.cta-component-full-width
 bournemouthecho.co.uk,eveningtimes.co.uk,greenocktelegraph.co.uk,heraldscotland.com,swindonadvertiser.co.uk,wiltshiretimes.co.uk##.cta-component-full-width
 ! ##.subscribe
-inforeactor.ru,kp.ua,trendymen.ru,plus-aliance.ru,instyle.ru,slovodel.com,twilio.com,novostivl.ru,exkavator.ru,logincasino.com.ua,newinform.com,riafan.ru,liveposts.ru,320volt.com,versia.ru,neft.by,expert.ru,shopify.com,zoutons.com,myfreesoft.ru,maximonline.ru,woman.ru,parents.ru,vokrugsveta.ru,psychologies.ru,ellegirl.ru,wday.ru,elle.ru,marieclaire.ru,indiatimes.com,shopify.in,vz.ru,searchengineland.com,sport.segodnya.ua,vokrugsveta.ru,censor.net,fizzicseducation.com.au,fparf.ru,revouninstaller.com,logincasino.com,borsagundem.com,officelife.media,kod.ru,masterinvest.info,bessarabia.ua,football.kulichki.net,jeotermalhaberler.com,glavcom.ua,hindustantimes.com,hightech.fm,culture.ru,obozrevatel.com,blog.eva.ua,officiel-online.com,wccftech.com,ideanomics.ru,gazetki.by,goldsilver.com,kp.ru,infobus.eu,atorus.ru,castorama.ru,guzellikbulvari.com,marieclaire.ua,mvs.gov.ua,gadgets.ndtv.com,oneplus.com,tickets.ua,europaplus.ru,krossovki.com,belretail.by,thecollegefix.com,femmie.ru,prostofinovo.ru,mauijim.com,netpeak.net,wday.ru,buhgalteria.ru,ellegirl.ru,gameslog.ru,gizmag.com,healthhacks.ru,klerk.ru,menshealth.com,rbc.ru,snce.ru,turizm.ru,wegame.com.ua##.subscribe
+marieclaire.ru,inforeactor.ru,kp.ua,trendymen.ru,plus-aliance.ru,instyle.ru,slovodel.com,twilio.com,novostivl.ru,exkavator.ru,logincasino.com.ua,newinform.com,riafan.ru,liveposts.ru,320volt.com,versia.ru,neft.by,expert.ru,shopify.com,zoutons.com,myfreesoft.ru,maximonline.ru,woman.ru,parents.ru,vokrugsveta.ru,psychologies.ru,ellegirl.ru,wday.ru,elle.ru,marieclaire.ru,indiatimes.com,shopify.in,vz.ru,searchengineland.com,sport.segodnya.ua,vokrugsveta.ru,censor.net,fizzicseducation.com.au,fparf.ru,revouninstaller.com,logincasino.com,borsagundem.com,officelife.media,kod.ru,masterinvest.info,bessarabia.ua,football.kulichki.net,jeotermalhaberler.com,glavcom.ua,hindustantimes.com,hightech.fm,culture.ru,obozrevatel.com,blog.eva.ua,officiel-online.com,wccftech.com,ideanomics.ru,gazetki.by,goldsilver.com,kp.ru,infobus.eu,atorus.ru,castorama.ru,guzellikbulvari.com,marieclaire.ua,mvs.gov.ua,gadgets.ndtv.com,oneplus.com,tickets.ua,europaplus.ru,krossovki.com,belretail.by,thecollegefix.com,femmie.ru,prostofinovo.ru,mauijim.com,netpeak.net,wday.ru,buhgalteria.ru,ellegirl.ru,gameslog.ru,gizmag.com,healthhacks.ru,klerk.ru,menshealth.com,rbc.ru,snce.ru,turizm.ru,wegame.com.ua##.subscribe
 ! ##.subscription
 ural56.ru,slidstvo.info,cozumpark.com,x-team.com,m.vz.ru,shoppinglive.ru,starhit.ru,gamemag.ru,careeraddict.com,glasswire.com,metaratings.ru,starhit.ru,busfor.ua,brighteon.com,championat.com,goodhouse.ru,ichip.ru,irk.ru,thepostmillennial.com,skidochnik.com.ua##.subscription
 ! ##body > div[id][style*="top: 0px; width: 100%; z-index: 99999999;"]
@@ -29154,9 +29162,13 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+||adebiportal.kz/web/images/tlg*.png
+adebiportal.kz##p + hr
+inform.kz##.soc_art_block2
 poetschke.de#?#.three-widgets > section:has(> div.widget-inner > div.newsletter)
 poetschke.de##.detailsNewsletter
 onmeda.de##.areas-newsletter
+khaosod.co.th##.udfollow
 androidauthority.com##a[href="https://www.androidauthority.com/newsletters/"]
 androidauthority.com##a[href="https://www.androidauthority.com/newsletters/"] + div[class]
 inforeactor.ru##.image-dzen-link
@@ -32806,6 +32818,8 @@ magazine.skyeng.ru##.tg-banner
 !######### CSS tweaks #########
 !##############################
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/116595
+inform.kz#$#.cont_news_t { height: auto!important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116495
 teknoblog.com#$#.wpb_wrapper { min-height: unset!important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115727
@@ -35717,6 +35731,7 @@ subbota.ua##aside.sidebar > div[id^="custom_html-"]
 !
 ! Donation widgets (which are really annoying only)
 !
+tsargrad.tv##.article__content > div.form
 unian.net##.support-post
 ||paywall.fewcents.co/static/js/paywall.js
 ||aqours.today/img01/MP3/ZL.JPG
