@@ -1,8 +1,8 @@
-! Checksum: +ZylVunebmc6Jmj8PW6BIg
+! Checksum: Ur004p93kGWNF5Yz3Hk+Pg
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.38.78
-! TimeUpdated: 2022-04-26T14:31:18+00:00
+! Version: 2.0.38.79
+! TimeUpdated: 2022-04-26T16:31:26+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -330,6 +330,8 @@ journal-plaza.net#?#.rightside div.block.bnavi[-ext-has="h3.dtitle:contains(Сч
 ||sdk.51.la^$third-party
 ||adtriba.com^$third-party
 ||acuityplatform.com^$third-party
+||count.ly^$third-party
+||lightstep.medium.systems^
 ||cyberanalytics.nl^
 ||analytics.test.cheggnet.com^
 ||03c844c9-d265-4006-a39d-400e6cb40bb7.xyz^
@@ -19670,6 +19672,10 @@ charlestownwyllie.oaklawnnonantum.com^
 ! dynaTrace Monitor
 /ruxitagentjs_
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/116388
+/countly.js
+/countly.min.js
+!
 ! YouTube
 /log_event?
 ! Eulerian
@@ -20134,6 +20140,8 @@ _tracking.php?b=
 ||fin.rainbownine.net/js/across_adn_
 ||wct-1.com/wct.js
 ||bpt.webedia-group.com/pixel.png?
+||blog.count.ly/_/batch
+||cdn.jsdelivr.net/countly-sdk-web/
 ||xaas3.jp/tracking/$third-party
 ||virtualcarshop.jp/js/ga.js
 ||info.biz.nuro.jp/analytics?
@@ -26791,7 +26799,6 @@ mozilla-russia.org#@#img[width="88"][height="31"]
 @@||computerworld.com/resources/scripts/lib/demandbase.js$script
 @@||constantcontact.com/js/WebTracking/
 @@||coremetrics.com/eluminate.js
-@@||count.ly^$~third-party
 @@||cqcounter.com^$domain=cqcounter.com
 @@||crowdscience.com/max-$script,domain=everydayhealth.com
 @@||crowdscience.com/start-$script,domain=everydayhealth.com
