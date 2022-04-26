@@ -1,8 +1,8 @@
-! Checksum: dpkw2tgBilM+v8svxhGagg
+! Checksum: yualkWLo/hzxT9H6MssT4w
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.28.93
-! TimeUpdated: 2022-04-25T20:30:17+00:00
+! Version: 2.0.28.94
+! TimeUpdated: 2022-04-26T10:30:20+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1831,6 +1831,7 @@ rambler.ru#?#main > div[class] ~ div[class] > div[class] div[class] > a[href^="h
 ##img[width="320"][height="50"]
 ##iframe[width="320"][height="50"]
 ! AMP websites ad container class
+##amp-iframe[src^="https://html.redtram.com/"]
 ###mgid_iframe1
 ##amp-auto-ads
 ###mgid_iframe
@@ -2985,7 +2986,6 @@ weather.yahoo.co.jp###ad-nm
 /\/uploads\/\d{4}\/\d{2}\/(?!85466|banner)[_0-9a-zA-Z]+\.(?:gif|jpg)$/$image,~third-party,domain=eromoji.com
 eromoji.com##.abanner
 eromoji.com##.fam_sp_rec
-unian.net,tsn.ua,glavred.info,odnaminyta.com,112.ua##amp-iframe[src^="https://html.redtram.com/"]
 m.sport-express.ru##.se-brandedbuttons
 m.ebay-kleinanzeigen.de###srp-sticky
 bakuwaro.com,jiwasoku.com##div[style*="padding: 0px; text-align: center; width: 100%; height: 3"]
