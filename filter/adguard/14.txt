@@ -1,8 +1,8 @@
-! Checksum: /M8gxpNV1liYNRjNBruDHQ
+! Checksum: Y7k1GBdBsqSWcrY0GrCOcg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.17.5
-! TimeUpdated: 2022-04-26T06:30:39+00:00
+! Version: 2.1.17.7
+! TimeUpdated: 2022-04-26T08:30:36+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -3202,6 +3202,7 @@ hgtv.com#@#.showads
 !
 !
 !
+erfahrungen.com#%#//scriptlet("prevent-setTimeout", "adsbygoogle")
 zarplata-es.com##.adb-def
 dhd24.com#@#.adunit
 eu4cn.com###bluedeck_ding > div[onclick]
@@ -7359,6 +7360,8 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+novayagazeta.eu##div[class^="CookiesInformer_box_"]
+inenglishwithlove.com##div[class^="sqs-cookie-banner-"]
 raiffeisen-duengershop.de##.nptbccm
 fascicolo-sanitario.it###cookie_privacy
 guidaservizi.fascicolo-sanitario.it###cookie_guidaservizi
@@ -20878,6 +20881,9 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+mirkrasok.ru##.button_popup_discount_baner
+mirkrasok.ru#?#.fancybox-wrap:has(> div.popup div.jsp_buttons > div#good)
+mirkrasok.ru#$#.fancybox-overlay { display: none !important; }
 fantia.jp#?#.container > div.popup-bar:has(> a[href="/account/signup"])
 aliexpress.ru#$#body[data-spm="home"] div[class*="AuthContextWidget_UserAgreementModal__"] { display: none!important; }
 aliexpress.ru#$#body[data-spm="home"] div[class^="ali-kit_Dialog__background"] { display: none!important; }
@@ -26442,9 +26448,10 @@ abendzeitung-muenchen.de###webpush-app
 ||pushmaster-cdn.xyz^$third-party
 ||pushmaster.xyz^$third-party
 !
-/firebase.js$domain=novayagazeta.ru|comments.ua|kinosimka.net|ilan365.net|cnbcindonesia.com|haberzamani.net|oxy.cloud|allbasketball.org|auslogics.com|kartalyuvasi.com.tr|cnnindonesia.com|fbc.ua|astv.ru|pln-pskov.ru
+/firebase.js$domain=novayagazeta.ru|comments.ua|kinosimka.net|ilan365.net|cnbcindonesia.com|haberzamani.net|oxy.cloud|allbasketball.org|auslogics.com|kartalyuvasi.com.tr|cnnindonesia.com|fbc.ua|astv.ru|pln-pskov.ru|aylink.co
 /firebase-messaging.js$domain=focus.ua|ukranews.com|comments.ua|coub.com|porno90.me|cnnamador.com|giallozafferano.it|wcostream.com|fptplay.vn|jooble.org|mobile01.com|myinstants.com|pdalife.ru|rg.ru|m.iguides.ru|donanimhaber.com|profile.ru|womanhit.ru|news.noteru.com|narodna-pravda.ua|newstm.in|sabah.com.tr|dreamstime.com|popbee.com|avtovzglyad.ru|allbasketball.org|tw.news.yahoo.com|takvim.com.tr|jn.pt|ria.ru|pars.host|calculator-online.net|operanewsapp.com|ahaber.com.tr|tamindir.com|concursosnobrasil.com.br|kompas.com|news.ebc.net.tw|recyclingtoday.com|homedecoratione.com|khersondaily.com|mirtesen.ru|womanhit.ru|belsat.eu|gearbest.com|op.gg|novayagazeta.ru|pocket-lint.com|turunculevye.com|bloomberght.com|stardima.com|aksam.com.tr|portamur.ru|fishki.net|ranking.goo.ne.jp|ohmymag.com|mgronline.com|semnasem.org|bluradio.com|carwale.com
 !
+||aylink.co/*/js/push.latest.min.js
 ficbook.net#$##notificationsSubscribeModal { display: none!important; }
 ficbook.net#$#body { overflow: visible!important; padding-right: 0!important; }
 ficbook.net#$##notificationsSubscribeModal ~ .modal-backdrop { display: none!important; }
