@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: YMRuLqHMamkepGKfXdPdxA
+! Checksum: U2a4FuE1wQgVKkwThLdZdg
 ! Title: AdFilters Lite
 ! Expires: 1 hours (Sometimes updates are delayed)
-! Version: 202204270051
-! Last Modified: 2022年04月27日 00:51
+! Version: 202204270137
+! Last Modified: 2022年04月27日 01:37
 ! Homepage: https://github.com/hacamer/Adblist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、Adgk、大萌主的规则
 ! 仅合并并去重规则，未做其余任何处理
 ! 如有任何疑问、意见或建议，请反馈给：杏梢
 !
-! Total count: 22150
+! Total count: 22159
 ###ChapterView > .slide-baidu
 ###SOHU_MAIN > .module-cmt-float-bar
 ###TopAdvert
@@ -205,6 +205,7 @@
 ###rip[href*=".taobao.com"]
 ###sign-ad
 ###sitefocus.focus
+###slide3 > a[href^="/goto.php?url="]
 ###slide_ad
 ###slider_ad
 ###sponsored_links
@@ -2755,7 +2756,11 @@ $webrtc,domain=avgle.com
 1010jiajiao.com##.xiti_content + .xiti
 1010jiajiao.com##div[style*="position:fixed;"][style*="bottom:1px;"]
 1024li.com##.t[style="margin-top:8px"]
-1024pm.com,2cycomic.com,yemancomic.com##body > a
+1024pl.com###header > center
+1024pl.com##.leftd
+1024pl.com##.t[style="margin-top:8px"]
+1024pl.com,2cycomic.com,yemancomic.com##body > a
+1024pl.com,99syy1.com##div[class^="ps_"]
 104.com.tw##.ad_box,.sider_ad,[class^="ad_"],[class^="right_box ad_"]
 107cine.com##[src^="http://107cine.qiniudn.com/ads/"]
 1090ys8.com##a[href*="yb6277."]
@@ -8157,11 +8162,11 @@ mydrivers.com##.news_info > div[style*="height:"]
 mydrivers.com##.news_left > div[style*="height:"]
 mydrivers.com##.news_n + div[style*="height"]
 mydrivers.com##.zcdf ~ div[style]
-mydrivers.com##a[href*=".jd.com/"]
 mydrivers.com##a[href*="/zt.ashx"]
 mydrivers.com##div#code_lb.code_lb,TABLE[width="998"][height="90"],TABLE[width="1000"][height="90"],DIV.menu + DIV.baidu_box,#hsb_go,#dangbei_down,[id^="a_showhotnews_list"],[style^="width:1100px; height:90px;"],[class^="ad"],[style^="width:468px; height:60px;"],#recommend.news_xg
 mydrivers.com##div[id$="_tab"] > ul > li:first-child
 mydrivers.com##div[style^="width:890px;height:100px;"]
+mydrivers.com,wmzhe.com##a[href*=".jd.com/"]
 myhack58.com##.CMBox>.adv32
 myhack58.com##.adv32
 myhktv.com###sponsorAdDiv
@@ -9973,7 +9978,6 @@ wmxa.cn##.asdft,.adsbygoogle,[class="imageplus-append imageplus-append-bug-fixer
 wmzhe.com##.aibyte_ad
 wmzhe.com##.downloader
 wmzhe.com##[class="overflow"],div[class="mt10"],.downgs
-wmzhe.com##a[href*=".jd.com/"]
 wn789.com##.sidebar > .widget:not(:first-child):not(.widget_ui_posts)
 wn789.com##a[href^="http"]:not([href*="://www.wn789."]) > img
 wnacg.com,wnacg.org##a[href^="http"]:not([href*="wnacg."]) img
@@ -11558,7 +11562,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||360.cn/int/getadurls?
 ||360.cn/popup/popinfo/
 ||360366.net$third-party
-||360buyimg.com^$domain=1024pm.com|chdbits.co|gw54.com|qianggou5.com|xgw5.com
+||360buyimg.com^$domain=1024pl.com|chdbits.co|gw54.com|qianggou5.com|xgw5.com
 ||360che.com/article2014/AjaxAD.ashx?
 ||360doc.com/js/index7/mask_index_yc.js
 ||360doc.com/js/showarticle.js
@@ -12303,6 +12307,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||abcxs.net^
 ||abczxw.com/skin/bbb/pc/js/bd.js
 ||abds.pingpingw.com^
+||aberr.cn^
 ||abieaoa.cn^
 ||abige.luciochen.cn^
 ||above.tw/blog/wp-content/plugins/popups/public/assets/js/public.js
@@ -12713,7 +12718,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||alicdn.com/openad/dsp-front-booth/
 ||alicdn.com/tfs/TB1fwaTDhD1gK0jSZFyXXciOVXa-800-450.jpg
 ||alicdn.com^$domain=1024li.com|11papapa.com|1avlang.com|2334n.com|51dll.com|52kpop.com|5xx44.com|5xx77.com|63ef.com|69t41.com|7mav2.com|99a21.com|acglover.me|aotu101.com|camelliadali.com|ccxx99.com|haicao32.com|jb51.net|jitapu.com|junying.com|lady3.xyz|lookpian.com|ppx116.com|qqtenglong.com|qyl00.com|qyl222.com|runoob.com|sodu.cc|spqi.xyz|supfree.net|thztv.cc|tv4.cc|viidii.info|wenkuxiazai.com|xingzhiyin44.com|yeyemo6.com|yuese46.com|yzz12.com|zhuankezhijia.com
-||alicdn.com^$domain=1024pm.com|11papapa.com|1avlang.com|2334n.com|51dll.com|52kpop.com|5xx44.com|5xx77.com|63ef.com|69t41.com|7mav2.com|99a21.com|acglover.me|aotu101.com|c7cc.cc|ccxx99.com|dytt.com|haicao32.com|hanfan.cc|jb51.net|jitapu.com|junying.com|jvhao.com|lady3.xyz|magnet2048.com|qingmanyong.com|qyl00.com|qyl222.com|spqi.xyz|supfree.net|that2.info|thztv.cc|ttww22.com|viidii.info|wenkuxiazai.com|xiaomingming.org|xingzhiyin44.com|yuese46.com|yzz12.com
+||alicdn.com^$domain=1024pl.com|11papapa.com|1avlang.com|2334n.com|51dll.com|52kpop.com|5xx44.com|5xx77.com|63ef.com|69t41.com|7mav2.com|99a21.com|acglover.me|aotu101.com|c7cc.cc|ccxx99.com|dytt.com|haicao32.com|hanfan.cc|jb51.net|jitapu.com|junying.com|jvhao.com|lady3.xyz|magnet2048.com|qingmanyong.com|qyl00.com|qyl222.com|spqi.xyz|supfree.net|that2.info|thztv.cc|ttww22.com|viidii.info|wenkuxiazai.com|xiaomingming.org|xingzhiyin44.com|yuese46.com|yzz12.com
 ||alicdn.com^$domain=99a25.com|xin99r3.com|xin99r4.com
 ||alicdn.com^$domain=99a67.com|99re.com
 ||alicdn.com^$domain=thzx.cc
@@ -15057,6 +15062,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||faiusr.com/3/ABUIABADGAAgkIXb6gUo-L_AwwcwsAk4Wg.gif
 ||faloo.com/ou/site/
 ||familydoctor.com.cn/c/a/000/ggw_
+||famorlymal.com^
 ||fang99.com^*/advjs/
 ||fangjslc.com^
 ||fangniaowang.net^
@@ -17757,6 +17763,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||meituangov.cn^
 ||meiyouad.com/user/union?t=
 ||meizhou.cn/comm/mygg/
+||memeaisese.com^
 ||meng.360zuowen.com^
 ||mengbli.com^
 ||mengyang.info^
@@ -18834,10 +18841,11 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||qhimg.com/js/iwt.js
 ||qhimg.com/static/5dcd236fc857be9c,5b391c33a0748022.js
 ||qhimg.com^$domain=1024li.com|mir300.com
-||qhimg.com^$domain=1024pm.com|hero3g.com
+||qhimg.com^$domain=1024pl.com|hero3g.com
 ||qhl.bealge.sogou.com^
 ||qhlmb.com^
 ||qhmsg.com^$domain=1024li.com
+||qhmsg.com^$domain=1024pl.com
 ||qhnews.com/tupian/
 ||qhres.com/static/b4f92ac067a4768b/v4/modules/footer.js
 ||qhres2.com^
@@ -20190,6 +20198,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||toutiao.haotui.com/data/js/0.js
 ||toutiao.xn--fiqs8s^
 ||toutiaoimg.com/origin/$image,domain=mgtv1.net|agemys.com|acgndmku.com|subaibaiys.com
+||toutiaoimg.com^$domain=1024pl.com
 ||toutiaoyule.com/n/dspshow.
 ||touxiang.la/js/book.js
 ||tp.nty.tv189.com//bmsimg/*.jpg$domain=h5.nty.tv189.com,app=com.telecom.video
