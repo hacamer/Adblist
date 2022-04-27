@@ -1,8 +1,8 @@
-! Checksum: 71Mu47IlN/gNDmrlHeuztA
+! Checksum: BRrJRfvU0/+vK6DGuIlJJw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.17.26
-! TimeUpdated: 2022-04-27T14:30:58+00:00
+! Version: 2.1.17.28
+! TimeUpdated: 2022-04-27T16:30:38+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -28662,7 +28662,7 @@ vedantu.com#?#div[class^="Main_automatedSideBar"] > div[class^="AutomatedModules
 kaspersky.*##.promo-card
 timesofindia.indiatimes.com##.article_content br ~ a[href^="https://timesofindia.indiatimes.com/most-searched-products/"]
 analytics.twitter.com##.home-columns div[data-type="advertiser"]
-byjus.com#?#.sidebar > div.bgc-white:has(> div.relatedlinks-widget)
+byjus.com#?#.sidebar > div.bgc-white:has(> div.relatedlinks-widget > div.widget-content > a[target="_blank"] > img)
 wikipedia.org##.cn-fundraising
 blog.ipleaders.in##.td-ss-main-sidebar
 xvideos.com###content > div.mobile-hide + div[class]
@@ -28750,7 +28750,9 @@ proshop.dk##.site-background-banner
 proshop.dk##a[data-action="campaignClick"][data-position="bottom-left"]
 proshop.dk##.site-top-banner
 byjus.com###top-banner-register
-byjus.com#?#.sidebar > div.bgc-white:has(> div.relatedlinks-widget > div.widget-content > a[onclick*="sidebar register click"])
+byjus.com#?#.join-byjus-form-widget:upward(1)
+byjus.com#?#.sidebar > div.bgc-white:has(> div.ask-about-widget)
+byjus.com#?#.sidebar > div.bgc-white:has(> div.register-free-widget)
 m.naver.com##.id_cui_commemoration_banner
 minhaoperadora.com.br##.minha-conteudo
 teknolojihabercim.com##div[style^="width: auto; height: auto; padding:10px;"]
@@ -29209,6 +29211,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+kinopoisk.ru##div[data-ui-id="post"] > div[style^="background-color:rgba(247, 247, 247, 1);"][style*="border-radius:10px"]
 guru99.com##.af-form-wrapper
 lamoda.pl##article + a[href="/newsletter"]
 ||adebiportal.kz/web/images/tlg*.png
@@ -35156,6 +35159,7 @@ full-count.jp#?#section > div.c-heading:has(> p.c-heading__en:contains(RECOMMEND
 .ru/proxy_*.php?p___=*&part_url=*.php?callback=*&token=*&iso=
 .net/proxy_*.php?p___=*&part_url=*.php?callback=*&token=*&iso=
 !
+||boldchat.com^$third-party
 rakuten.co.jp###rexSurveyRoot
 ||partner-widget.vse-sdal.com^
 ||easyliao.com^$third-party
