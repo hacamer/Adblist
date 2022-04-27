@@ -1,8 +1,8 @@
-! Checksum: if2z7pLaCqD12oG8Se7rcQ
+! Checksum: LiPgO40KCnESMLVTtC4PHQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.17.20
-! TimeUpdated: 2022-04-26T21:02:24+00:00
+! Version: 2.1.17.21
+! TimeUpdated: 2022-04-27T06:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7365,6 +7365,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+cire.pl#$#body[style*="overflow"] { overflow: auto !important; }
 acf.international##div[class^="CookieConsentModal"]
 monkeytype.com###cookiePopupWrapper
 enesco.co.uk#$##cookie-modal { display: none!important; }
@@ -15519,8 +15520,8 @@ bca.co.id#%#//scriptlet('remove-class', 'popup-disclaimer-show', 'body.popup-dis
 ideal.es,elcorreo.com#%#AG_onLoad(function() {if (!document.cookie.includes("euconsent-v2")) {var g = new MutationObserver(function() {var b = document.querySelector('#didomi-notice-agree-button');b&&b.click();});g.observe(document, {childList: !0,subtree: !0});setTimeout(function() {g.disconnect()}, 1E4)}});
 web.dev#%#(function() { try { if ('undefined' != typeof localStorage) { localStorage.setItem('pagespeed_policy', 'checked') } } catch (ex) {} })();
 wealth.com.tw#%#//scriptlet('set-local-storage-item', 'ALLOWED_ACCESS_COOKIE_POLICY', 'true')
-cire.pl#%#//scriptlet('set-cookie', 'APP_COOKIES_POLICY', 'true')
-cire.pl#%#//scriptlet('set-cookie', 'APP_COOKIES_TERMS_AND_CONDITIONS', 'true')
+cire.pl#%#//scriptlet('set-cookie', 'APP_A_COOKIES_POLICY', 'true')
+cire.pl#%#//scriptlet('set-cookie', 'APP_A_COOKIES_TERMS_AND_CONDITIONS', 'true')
 soluxtec.de#%#//scriptlet('set-cookie', 'bit_userConfirmCookies', 'true')
 drimsim.com#%#//scriptlet('set-local-storage-item', 'DS_POLICY', '1')
 jobijoba.at#%#AG_onLoad(function(){if(-1===document.cookie.indexOf('hw-cc-gtm')){var a=new MutationObserver(function(){var b=document.querySelector('span#btn-accept-cookies');b&&b.click();});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)}});
