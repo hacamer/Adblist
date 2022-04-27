@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: Ysmn0UMFwZcJ5eV9PAlXeg
+! Checksum: 6vGWkaYCYS4LYf2jnMj7kA
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202204280052
-! Last Modified: 2022年04月28日 00:52
+! Version: 202204280140
+! Last Modified: 2022年04月28日 01:40
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 85791
+! Total count: 85795
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -1127,6 +1127,8 @@
 ###divTopAd
 ###div_ad_float
 ###div_advt_right
+###div_bottomad
+###div_bottomad_container
 ###div_the_mgid
 ###dotnAd-988x90-custom
 ###downdiv > .downcode
@@ -25344,7 +25346,7 @@ bing.com##[id$="adsMvCarousel"]
 bing.com##a[href*="/aclick?ld="]:not(.vsp_ads)
 bing.com##li.b_ad,#b_notificationContainer_bop
 bing.com#$#.b_ad { display: block !important; position: absolute !important; top: -9999px !important; }
-bing.com#$?#.b_ad { remove: true; }
+bing.com#$#body .b_adLastChild { display: block !important; position: absolute !important; top: -9999px !important; }
 bing.com#?##b_results > .b_algo:has(> .b_caption > .b_attribution:matches-css-before(content: /url\(data:image/))
 bing.com#?##b_results > li:-abp-has(> h2 + .b_caption > div.b_attribution:not([u]) + p[class])
 bing.com#?##b_results > li:has(> h2 + .b_caption > div.b_attribution:not([u]) + p[class])
@@ -28857,6 +28859,7 @@ firstpost.com##+js(remove-attr, href, p[class^="story_para_"] > a[target="_blank
 firstrowas.co###ad_overlabut
 firstrowfr.eu###adblockplus
 firstrowfr.eu###fanback
+firstsiteguide.com##.gutenberg-info-block
 fitness.wp.pl,vibez.pl##+js(abort-on-property-read, Object.prototype.bodyCode)
 fixolas.net##[href="http://fixolas.net/"] > IMG
 fixya.com###footerBanner
@@ -28891,6 +28894,7 @@ flightradar24.com###bottomRightPanel
 flightradar24.com###responsiveBottomPanel
 flightradar24.com##.noads
 flighty.cn###searchBox + #sidebarBox
+flixtor.gg,tutele.sx,upvid.*,mangas-raw.com,bbb.fm,clipconverter.cc,megafilmeshd20.pro,watchseries.*,animesonline.cz,superflix.biz,fembed.cloud,vizer.vip,kick4ss.com,jpscan-vf.com,rawkuma.com,pobreflix.top,losmovies.*,123movieshub.*,seriesflix.top,gogoanime.fi,intereseducation.com,vizer.re,123movies-official.site,querofilmehd.net,gogoanime.gg,animixplay.to,dood.*,anime4up.*,multicanais.tv,watchmovie.cc,myflixer.*,pahe.li,filmyzilla.autos,megafilmeseseriesonline.com##+js(abort-current-script, document.createElement, break;case)
 flstudiochina.com
 fluxteam.xyz##+js(no-setInterval-if, adblock)
 flv2mp3.by##+js(window.open-defuser, 0, flv2mp3.by)
@@ -39484,7 +39488,6 @@ tut.by#@#.text-ads
 tut.by#@#.textAd
 tut.by#@#.text_ad
 tut.by#@#.text_ads
-tutele.sx,upvid.*,mangas-raw.com,bbb.fm,clipconverter.cc,megafilmeshd20.pro,watchseries.*,animesonline.cz,superflix.biz,fembed.cloud,vizer.vip,kick4ss.com,jpscan-vf.com,rawkuma.com,pobreflix.top,losmovies.*,123movieshub.*,seriesflix.top,gogoanime.fi,intereseducation.com,vizer.re,123movies-official.site,querofilmehd.net,gogoanime.gg,animixplay.to,dood.*,anime4up.*,multicanais.tv,watchmovie.cc,myflixer.*,pahe.li,filmyzilla.autos,megafilmeseseriesonline.com##+js(abort-current-script, document.createElement, break;case)
 tutele.sx,vipboxtv.*,poscitech.click,1337x.to,fbstream.tv,f1stream.me,filmi123.club,darmowa-tv.ws,vipbox.*,wigistream.to,watchseries.*,1stream.top,allinonedownloadzz.site,game3rb.com,lordchannel.com,uwatchfree.*,yts.mx##+js(no-setTimeout-if, /\!window\[[\s\S]*?String\.fromCharCode[\s\S]*?document\.createElement\("script"\)/)
 tutflix.org##+js(no-setTimeout-if, /\$\('.*show/)
 tutiempo.net##.ContBannerTop
@@ -62910,6 +62913,7 @@ zznews.cn##.ad:not([style])
 ||kityamurlika.com^
 ||kityamurlika.com^$popup
 ||kiva.org/r3pNVz1F/init.js
+||kive-intro.web.app^$third-party
 ||kiwari.com^*/impressions.asp?
 ||kiwi.mdldb.net^
 ||kiwi8.top/media/plugins/jquery_confirm/
