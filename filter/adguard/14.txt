@@ -1,8 +1,8 @@
-! Checksum: iD8DcmyFYjb5qJwCsQbIdQ
+! Checksum: 71Mu47IlN/gNDmrlHeuztA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.17.25
-! TimeUpdated: 2022-04-27T12:30:37+00:00
+! Version: 2.1.17.26
+! TimeUpdated: 2022-04-27T14:30:58+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7366,6 +7366,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+zoominfo.com###cookies_note
 truevirtualworld.com##.card-cookie
 cire.pl#$#body[style*="overflow"] { overflow: auto !important; }
 acf.international##div[class^="CookieConsentModal"]
@@ -8319,7 +8320,7 @@ winboard.org#$#html > body[data-template] { overflow: visible !important; }
 winboard.org#$#.p-pageWrapper { filter: none!important; }
 gesund.de##.privacy-settings
 loft.com.br#?##__next > div.MuiGrid-root:has( > div.MuiGrid-root > div.MuiGrid-root > p.MuiTypography-root > a[href="https://loft.vc/politica-de-privacidade"])
-wire.com,qzlyrics.com,codespeedy.com###cookie-law-div
+playlistcalculator.net,wire.com,qzlyrics.com,codespeedy.com###cookie-law-div
 iplogger.org###message
 myresume.ru##.rulesInfo
 galeriadaarquitetura.com.br###divPolitica
@@ -20923,12 +20924,14 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+techgig.com###cubewrapid
 104.com.tw##.popup-container
 getpocket.com##div[data-cy="mylist-flyaway-extensions"]
 theatlantic.com###paywall
 s.shufoo.net###okiniiri-fuwatto-banner
 lektsii.com###divmyclose
 tsargrad.tv##.air-popup
+clubdam.com##.l-page-bottom__cv
 clubdam.com##.newrelease_cv_floatbtn
 dmarket.docomo.ne.jp#$##firstArea.welcome-cover { display: none !important; }
 dmarket.docomo.ne.jp#$##container[style^="position: fixed"] { position: static !important; }
@@ -28322,6 +28325,10 @@ experts-exchange.com##.ctaSolutionStickyWrapper
 theguardian.com##.contributions__adblock
 ||contributions.guardianapis.com^
 !
+content.techgig.com##.topbanner_tg_inner
+content.techgig.com##.tg-clients-banners-rhs
+techgig.com##div[class="container pad16"]
+timesofindia.indiatimes.com#?#p + a[href="/toi-plus/plans"]:upward(1)
 ||livenewsworld.com/wp-content/*/pum/
 blognone.com###above_comments
 javtiful.com##.wrapper > div.container > div.alert-danger
@@ -29202,6 +29209,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+guru99.com##.af-form-wrapper
 lamoda.pl##article + a[href="/newsletter"]
 ||adebiportal.kz/web/images/tlg*.png
 adebiportal.kz##p + hr
