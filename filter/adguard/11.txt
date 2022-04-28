@@ -1,8 +1,8 @@
-! Checksum: IGkDT148pZ0sJgRQW33Cog
+! Checksum: 0Nziyof8UeKzt2VOvNZ58A
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.29.1
-! TimeUpdated: 2022-04-27T16:30:22+00:00
+! Version: 2.0.29.3
+! TimeUpdated: 2022-04-28T08:30:20+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1290,6 +1290,8 @@ westseattleblog.com#@#.header-ad
 ! Bad: example.org##main > div.ad (should be in specific.txt)
 !
 !
+m.mobile.de#?#article[data-testid="srp-regular-ad"] + div[class]:has(> div[id^="m_srp_slot_"][data-label="Anzeige"]:only-child)
+fontanka.ru#?##adv_mob_sticky-mobile-smi:upward(2)
 adme.ru#?#div[data-test-id="article-content"] > div[class*=" "] > div > div:contains(Реклама):upward(2)
 duplichecker.com#?#.data_inbox > div[style]:has(> div > span > ._ap_apex_ad)
 grapee.jp#?#aside > div[class^="mod-ads-area"]:upward(1)
@@ -2468,10 +2470,11 @@ scmp.com,theinventory.com,avclub.com,clickhole.com,deadspin.com,gizmodo.com,jalo
 ! ##.ads
 cartoonpornvideos.com,m.economictimes.com,beethovenmaster.com,m.mistrzowie.org,m.ura.news,siirtpress.com,up.ymgt.xyz,google.de,www-bento-de.cdn.ampproject.org,m-economictimes-com.cdn.ampproject.org,m.winfuture.de##.ads
 !
+mobile.de###mobile-home .home > .brand-placement
 nazoq.com##.spUser
 tsargrad.tv##.article__content + div.article__footer ~ div.article__footer
 m.motorsport-total.com##.anzeige-block
-lifeantenna.com##.highlight-entry
+2ch-n.net,lifeantenna.com##.highlight-entry
 soccer.yahoo.co.jp##.sc-modAd
 sports.yahoo.co.jp###ad-smon
 sports.yahoo.co.jp###ydn-nm

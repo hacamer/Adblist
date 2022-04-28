@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: +rQ8vCoQ9eqV7YJ+p2IwMA
+! Checksum: XzBA4IhL+vvF9b5s1ec3UA
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202204281529
-! Last Modified: 2022年04月28日 15:29
+! Version: 202204281641
+! Last Modified: 2022年04月28日 16:41
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 85765
+! Total count: 85770
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -21644,6 +21644,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||paigeeworld.com^$generichide
 @@||panditfiles.pro^$generichide
 @@||pandora.com/images/public/devicead/$image
+@@||pandora.com/static/ads/
 @@||pandora.com/web-client-assets/ads.*.js
 @@||pandora.com/web-version/*/*.json
 @@||pandora.com^$generichide
@@ -30802,6 +30803,7 @@ hqew.com##.pop-banner
 hqew.com##div[class^="g-ad-"]
 hqporner.com##.ad_video
 hqporner.com##.black_friday
+hqq.tv##+js(set-constant, WebSocket, undefined)
 hqq.tv##+js(set-constant, doSecondPop, noopFunc)
 hsck.org##img[height="60px"]
 hsex.men###container > div:not([class])
@@ -35371,7 +35373,6 @@ outlook.live.com###owaadbar
 outlook.live.com##.N3k7EN5vRGTrONWBPg250
 outlook.live.com##.__Microsoft_Owa_MessageListAds_ListView_templates_cs_x
 outlook.live.com##.customScrollBar > div[class] > div[class]:empty
-outlook.live.com##.customScrollBar:not([tabindex]) > div[class] > div[class]:not([id])
 outlook.live.com#?##app > div[class] > div[class] > div[class] > div[class]:not(.ms-FocusZone):not([class^="screenReaderText"]) div[data-max-width] + div[class]:has(> div[class] > div > div[id^="owaadbar"])
 outlook.live.com#?##app > div[class] > div[class] > div[class] > div[class]:not(.ms-FocusZone):not([class^="screenReaderText"]):has(> div > button[data-is-focusable])
 outlook.live.com._6tqjFb_HmyQup_NPe6dhC
@@ -36355,6 +36356,8 @@ profil.wp.pl,echirurgia.pl,kafeteria.pl,open.fm,snobka.pl##+js(set-constant, Obj
 profil.wp.pl,echirurgia.pl,kafeteria.pl,snobka.pl##+js(set-constant, Object.prototype.advViewability, undefined)
 profil.wp.pl,echirurgia.pl,kafeteria.pl,snobka.pl##+js(set-constant, Object.prototype.rekids, undefined)
 profitlink.info#@#.banner-468x60
+prog.co.il##+js(abort-current-script, $, adsBlocked)
+prog.co.il##+js(no-setTimeout-if, adView)
 progamerage.com##.vc_separator
 progamerage.com##div[id^="proga-"]
 proginn.com##div[style*="width:1000px;height: 250px;"]
@@ -57982,6 +57985,7 @@ zznews.cn##.ad:not([style])
 ||gjqhufkamcoc.com^$third-party
 ||gjr.ink^
 ||gjwind.com/xxmh.gif
+||gjy520.top^
 ||gk.sina.cn^
 ||gk1.582582.com^
 ||gk1.zjbiz.net^
@@ -72716,6 +72720,7 @@ zznews.cn##.ad:not([style])
 ||sageanalyst.net^$third-party
 ||sagetrc.com^$third-party
 ||saggrowledetc.com^
+||sahara.work^
 ||sahibinden.com/sbbi/
 ||sail-horizon.com/horizon/$third-party
 ||sailcovertend.com^
