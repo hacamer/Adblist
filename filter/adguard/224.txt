@@ -1,8 +1,8 @@
-! Checksum: 0823eZFFscIYUpOW7+Myxg
+! Checksum: NXKy4ktFB7z6wytwcMaNMg
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.0.53.98
-! TimeUpdated: 2022-04-28T15:30:56+00:00
+! Version: 2.0.53.99
+! TimeUpdated: 2022-04-28T16:31:04+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -855,6 +855,8 @@ csdn.net#?##feedlist_id > li:has(> div[id^="kp_box_"])
 !------- JS rules ---------------------!
 !--------------------------------------!
 !
+! malicious redirect on first visit
+85tube.com#%#//scriptlet('prevent-addEventListener', 'DOMContentLoaded', 'document.createElement')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/109829 popunder
 520cc.cc#%#//scriptlet("prevent-setTimeout", "location.href", "3000")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/105042
@@ -1080,6 +1082,8 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .r
 !
 !
 !
+yazhouse8.com##.mini-over-top
+||javhd.com/*/300x250.html?
 104.com.tw##.career-clinic-ad
 storm.mg##.storm_magic_placeholder
 storm.mg##div[data-addom="storm_ad_wrapper"]
@@ -19594,6 +19598,7 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=ranwen.com|00ksw
 ||jiu9.shop^
 ||zhangbu.ren^
 ||nhm32.site^
+||d80.xyz^
 ##a[href$=".120ydrayy.com"]
 ##a[href*=".1956hl.com/"]
 ##a[href*=".233787.com/"]
