@@ -1,8 +1,8 @@
-! Checksum: 0Nziyof8UeKzt2VOvNZ58A
+! Checksum: Oh9m4QMeJVhtJw+nqopXRA
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.29.3
-! TimeUpdated: 2022-04-28T08:30:20+00:00
+! Version: 2.0.29.4
+! TimeUpdated: 2022-04-28T19:30:18+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1290,6 +1290,7 @@ westseattleblog.com#@#.header-ad
 ! Bad: example.org##main > div.ad (should be in specific.txt)
 !
 !
+hobbyconsolas.com#?#.main-content > div > div[data-dfp-display]:upward(1)
 m.mobile.de#?#article[data-testid="srp-regular-ad"] + div[class]:has(> div[id^="m_srp_slot_"][data-label="Anzeige"]:only-child)
 fontanka.ru#?##adv_mob_sticky-mobile-smi:upward(2)
 adme.ru#?#div[data-test-id="article-content"] > div[class*=" "] > div > div:contains(Реклама):upward(2)
@@ -2470,6 +2471,11 @@ scmp.com,theinventory.com,avclub.com,clickhole.com,deadspin.com,gizmodo.com,jalo
 ! ##.ads
 cartoonpornvideos.com,m.economictimes.com,beethovenmaster.com,m.mistrzowie.org,m.ura.news,siirtpress.com,up.ymgt.xyz,google.de,www-bento-de.cdn.ampproject.org,m-economictimes-com.cdn.ampproject.org,m.winfuture.de##.ads
 !
+pinkpanfan.com###custom_html-11
+pinkpanfan.com###mobile_text-3
+pinkpanfan.com###mobile_text-5
+smbiz.asahi.com##.ad-sp-side-rect
+||tonxton.com/sp-ad/
 mobile.de###mobile-home .home > .brand-placement
 nazoq.com##.spUser
 tsargrad.tv##.article__content + div.article__footer ~ div.article__footer
