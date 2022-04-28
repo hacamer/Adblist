@@ -1,8 +1,8 @@
-! Checksum: fMpd7PbgEGtuztDP1R1i7A
+! Checksum: laiTmHaSGTz98UB1s2tA0g
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.17.46
-! TimeUpdated: 2022-04-28T19:30:34+00:00
+! Version: 2.1.17.48
+! TimeUpdated: 2022-04-28T21:02:29+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -8688,7 +8688,7 @@ nordicnest.de#?##container > div[class]:has(> div[class] > div[class] > div[clas
 ||stihl.de/etc.clientlibs/stihl-frontend/clientlibs/components/content/cookie/cookielayer/
 petz.com.br##.policy-warning-banner
 kicker.de#$#body { overflow: auto !important; }
-||cdn.consentmanager.net^$domain=hausgarten.net|kundendienst-info.de|baunetz.de|rabe-bike.de|heinze.de|ais-online.de|dasoertliche.de|reno.de|walbusch.de|mathe-lexikon.at|katzen-forum.net|deutsche-apotheker-zeitung.de|brandible.de|my.games|vergleich.org|finanztip.de|baunetzwissen.de|trusted.de|universal-music.de|web2.cylex.de|mey-edlich.de|schuhe.de|qiez.de|benz24.de|hervis.de|avena.de|heimwerker.de|bauemotion.de|nw.de|kicker.de|herold.at|kalledaskabel.de|bussgeldkatalog.org|plantopedia.de|poetschke.de
+||cdn.consentmanager.net^$domain=tausendkind.de|hausgarten.net|kundendienst-info.de|baunetz.de|rabe-bike.de|heinze.de|ais-online.de|dasoertliche.de|reno.de|walbusch.de|mathe-lexikon.at|katzen-forum.net|deutsche-apotheker-zeitung.de|brandible.de|my.games|vergleich.org|finanztip.de|baunetzwissen.de|trusted.de|universal-music.de|web2.cylex.de|mey-edlich.de|schuhe.de|qiez.de|benz24.de|hervis.de|avena.de|heimwerker.de|bauemotion.de|nw.de|kicker.de|herold.at|kalledaskabel.de|bussgeldkatalog.org|plantopedia.de|poetschke.de|weltbild.de
 mod.io###achtung-overlay
 bringmeister.de##div[data-testid="cookiePopup"]
 planetkey.de##.survey.alert-box
@@ -11178,8 +11178,8 @@ remarkable.com##div[class^="CookieBarstyles__Bar-"]
 medipolis-intensivshop.de###cookiesMessageContainer
 sigortam.net##div[class^="hidden-"].opened[ng-class="{'opened':$root.showCookieMsg}"]
 opmar.com.tr##.opmar_cookie
-tausendkind.de,orbisana.de#$#.reveal-overlay { display: none!important; }
-tausendkind.de,orbisana.de#$#html { position: static!important; }
+orbisana.de#$#.reveal-overlay { display: none!important; }
+orbisana.de#$#html { position: static!important; }
 ouh.nhs.uk,wwnorton.com,enbiosis.com##.cookie-consent-banner
 blog.remarkable.com,medium.com,blog.sikayetvar.com##.butterBar--CCPA
 pub.towardsai.net,blog.sikayetvar.com,blog.musixmatch.com##body > div#root ~ div:not([class]):not([id]) > div[class*=" "]
@@ -12019,7 +12019,7 @@ cwtv.com###user_optin_banner
 my-bier.de,harzer-blasenwurst.de###eu_cookiebox
 computeruniverse.net##.c-consentLayer
 nickfinder.com###europe_cookies_siht
-pch.com,sony.com.br,royalmail.com,uber.com##.privacy_prompt
+sony.ru,pch.com,sony.com.br,royalmail.com,uber.com##.privacy_prompt
 vergleich.org##.legal-note
 mynewsdesk.com###accept-page-cookies
 gethatch.com##.consently-bar
@@ -20934,11 +20934,17 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+weltbild.de##sx-page-layer
 bodyarchi.com###topfloatingBnr
 fonepaw.com##.widget + div[class*="promotion"]
+spielemax.de#$#body { overflow: auto !important; }
+spielemax.de#$#.popupbuilder-widget { display: none !important; }
 cnbctv18.com##.overlaypop
 wionews.com###livebtbox
 t.pia.jp###piacard_banner
+estadao.com.br##div[class^="box-urgente"][class$="-fixed"]
+estadao.com.br###house-ad-link
+emais.estadao.com.br##.article-softwall-banner
 pyimagesearch.com###pyis-cta-modal-sticky-bar > div.is-stuck
 bs.benefit-one.co.jp###meerkat-wrap
 ||easy2boot.xyz/wp-content/plugins/boxzilla/assets/js/script.min.js
@@ -29237,12 +29243,17 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+kinderraeume.com#$#html { overflow: auto !important; }
+kinderraeume.com#$#body { overflow: auto !important; }
+kinderraeume.com#$#.newsletterregistration--modal ~ div.js--overlay { display: none !important; }
+kinderraeume.com#$#.newsletterregistration--modal { display: none !important; }
 coder.com#?#div[class^="jss"]:has(> header > div > h2:contains(Join our newsletter))
 zen.yandex.*##.feed-subscription-promo
 mumsnet.com###main-container > div[\:class^="$store.adtech.reskinRenderedDesktop"]
 kinopoisk.ru##div[data-ui-id="post"] > div[style^="background-color:rgba(247, 247, 247, 1);"][style*="border-radius:10px"]
 nsn.fm#?#article div:not([class]) > div[class] > section[class]:has(> div[class] form > input + button:contains(подписаться))
 guru99.com##.af-form-wrapper
+emais.estadao.com.br##.emais-newsletter
 pyimagesearch.com##.gpd-footer-cta
 insights.sei.cmu.edu##.subscribe_small
 analyticsindiamag.com##section[data-id="23d45d60"]
@@ -30018,7 +30029,7 @@ octoparse.com##.flex-row-follow
 korrespondent.net,rbc.ua##.read-in-google
 swarajyamag.com#?#div[style^="position:"] > div[class] > div[class^="_"]:has(> form[name] > input[name="email"])
 liveinternet.ru#?##Bl-Sidebar > div[id^="BlockVar-"]:has(> h3.sorted > strong:contains(Подписка по))
-tausendkind.de##a[href="/service/newsletter"]
+tausendkind.de#?#section[id^="home-test-patricia"] > section.advertising-small:has(> a[href="/service/newsletter"])
 ajc.com##.radt-banner-hp
 camelactive.com#$##sendinblueModal { display: none!important; }
 camelactive.com#$#body { overflow: visible!important; padding-right: 0!important; }
