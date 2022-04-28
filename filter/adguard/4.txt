@@ -1,8 +1,8 @@
-! Checksum: uWCESYMZNdKLuFO3vwl27w
+! Checksum: 0IqVeNZhgQsxY+tHuJl3BA
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.0.60.54
-! TimeUpdated: 2022-04-28T12:31:24+00:00
+! Version: 2.0.60.56
+! TimeUpdated: 2022-04-28T15:31:25+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -357,6 +357,7 @@ lj_bookmarklet
 ! Good: example.org#?#main > div.row:has(> div.ad)
 ! Bad: example.org##main > div.ad (should be in specific.txt)
 !
+uniqlo.com#?#.uq-ec-layout > div.uq-ec-gutter-container:has(> div.uq-ec-content-alignment > ul > li > a[href^="https://twitter.com/share"])
 m.cnyes.com#?#article > footer > div > div.fb-like:upward(1)
 fantia.jp#?#.list-group > div.list-group-item:has(> div.share-btns)
 timesnownews.com#?#div[class^="ArticleShow-tnn__sticky"] > div[class*="ArticleShow-border"]:has(> p:contains(Share This Article))
@@ -1474,6 +1475,7 @@ ilfattoalimentare.it,ukrinform.*,natgeo.nikkeibp.co.jp,life.pravda.com.ua,inuhir
 !
 pub.towardsai.net##body > div#root ~ div:not([class]):not([id]) > div[class*=" "]
 trashexpert.ru##div[id^="easysocialsharebuttons"]
+wionews.com##.content-holder > div.micro-elements
 siamsport.co.th##.social_wide
 siamsport.co.th###social-btn
 timesofindia.indiatimes.com##div[data-articlebody] > div.clearfix > div[class^="_"][style^="top:"]
