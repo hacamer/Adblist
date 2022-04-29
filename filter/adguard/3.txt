@@ -1,8 +1,8 @@
-! Checksum: iRj/bwYLlZviCCD9b9NOhQ
+! Checksum: tcO3vXnNGFbsnsFVIdt5Zg
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.38.94
-! TimeUpdated: 2022-04-28T20:31:18+00:00
+! Version: 2.0.38.95
+! TimeUpdated: 2022-04-29T10:31:28+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -22815,6 +22815,11 @@ dreamprogs.net##td[width="88"][height="31"]
 ||yandex.*/clck/
 !+ NOT_PLATFORM(ios, ext_android_cb)
 ||naver.net/wcslog.js$domain=~kyobobook.co.kr
+!
+! https://github.com/AdguardTeam/AdguardFilters/issues/116832
+! Duck DNS phishing domains
+/^http:\/\/[a-z]{10}\.duckdns/$document,domain=duckdns.org
+!
 ! https://github.com/AdguardTeam/AdguardForAndroid/issues/249
 ||do-not-tracker.org^$third-party
 ||eviltracker.net^$third-party
@@ -24262,6 +24267,7 @@ $app=com.miui.analytics
 ! For platforms which do not support $redirect rules
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/116848
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116798
 ||smetrics.nintendo.com/id?d_visid_ver=$xmlhttprequest,redirect=nooptext
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116712

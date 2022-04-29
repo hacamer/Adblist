@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: wW+rszeqY75/DG8f/J9Agg
+! Checksum: jzFpmxxUeQRZyTnzYdGtxQ
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202204291732
-! Last Modified: 2022年04月29日 17:32
+! Version: 202204291834
+! Last Modified: 2022年04月29日 18:34
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 85810
+! Total count: 85821
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -22429,7 +22429,6 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||ssl.gstatic.com/analytics/$script,domain=analytics.google.com
 @@||ssl.p.jwpcdn.com/player/*/jwpsrv.js$script,domain=bgr.com
 @@||ssl.pstatic.net/adimg*.search/adpost/js/adpost_show_ads_v*.min.js$domain=search.danawa.com
-@@||ssl.pstatic.net/adimg*search/adpost/js/ad.js$domain=m.search.naver.com
 @@||ssl.pstatic.net/adimg3.search/adpost/js/adpost_show_ads_v2.min.js$domain=m.clien.net
 @@||ssl.pstatic.net/sstatic/sdyn.js$script,domain=search.naver.com
 @@||ssl.sdcdn.com/cms/ads/*$domain=stardoll.com
@@ -27052,6 +27051,7 @@ dailymail.co.uk##.puff_pastel
 dailymail.co.uk##.sliding_mpu
 dailymail.co.uk##.watermark
 dailymail.co.uk##[name^="google_ads_iframe_"]
+dailymail.co.uk##div[id^="sky-"][id$="container"]
 dailymail.co.uk#@#.article-advert
 dailymail.co.uk,namesecure.com#@#.adHolder
 dailymotion.com##.dmp_VideoView-ad-slot
@@ -40849,8 +40849,9 @@ www.facebook.com,web.facebook.com##span a[aria-labelledby][role="link"][target="
 www.facebook.com,web.facebook.com#$#hide-if-contains-visible-text /^Sponsorlu|Sponsored|Gesponsert|Patrocinado|Sponsorisé|Publicidad|Commandité|Gesponsord|Sponsorowane|Реклама|Sponsa|Sponset|Sponsorizat|Bersponsor|Ditaja|Sponsorizzato|Sponsoreret|Sponsrad$/ div[aria-labelledby] div[role^="button"]
 www.facebook.com,web.facebook.com#$#hide-if-matches-xpath './/a/span/span/b[contains("Sponsorizzato Sponsored Gesponsert Sponsorisé Commandité Patrocinado Publicidad Bersponsor",concat(./b[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][1],./b[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][2],./b[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][3],./b[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][4],./b[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][5],./b[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][6],./b[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][7],./b[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][8],./b[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][9],./b[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][10],./b[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][11],./b[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][12],./b[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][13],./b[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][14]))][count(./b[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])]) > 6]/ancestor::div[@aria-posinset or @aria-describedby or @aria-labelledby or starts-with(@data-pagelet,"FeedUnit_")]'
 www.facebook.com,web.facebook.com#$#hide-if-matches-xpath './/a/span/span/span[contains("Sponsorizzato Sponsored Gesponsert Sponsorisé Commandité Patrocinado Publicidad Bersponsor",concat(./span[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][1],./span[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][2],./span[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][3],./span[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][4],./span[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][5],./span[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][6],./span[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][7],./span[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][8],./span[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][9],./span[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][10],./span[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][11],./span[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][12],./span[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][13],./span[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])][14]))][count(./span[not(self::node()[contains(@style,"absolute") or contains(@style,"none")])]) > 6]/ancestor::div[@aria-posinset or @aria-describedby or @aria-labelledby or starts-with(@data-pagelet,"FeedUnit_")]'
-www.facebook.com,web.facebook.com#$#hide-if-matches-xpath './/a/span/span[@aria-labelledby]/span[contains(@style,"flex") and contains(text(),"S") or contains(text(),"P") or contains(text(),"G") or contains(text(),"C")]//following-sibling::span[contains(@style,"flex")]/ancestor::div[@aria-posinset or @aria-describedby or @aria-labelledby or starts-with(@data-pagelet,"FeedUnit_")]'
-www.facebook.com,web.facebook.com#$#hide-if-matches-xpath './/a/span/span[@aria-labelledby]/span[contains(@style,"flex")]/span[contains(@style,"flex") and contains(text(),"S") or contains(text(),"P") or contains(text(),"G") or contains(text(),"C")]//following-sibling::span[contains(@style,"flex")]/ancestor::div[@aria-posinset or @aria-describedby or @aria-labelledby or starts-with(@data-pagelet,"FeedUnit_")]'
+www.facebook.com,web.facebook.com#$#hide-if-matches-xpath './/a/span/span[@aria-labelledby]/span[contains(@style,"flex") and contains(text(),"S") or contains(text(),"P") or contains(text(),"G") or contains(text(),"C") or contains(@style,"order: 1")]//following-sibling::span[contains(@style,"flex")]/ancestor::div[@aria-posinset or @aria-describedby or @aria-labelledby or starts-with(@data-pagelet,"FeedUnit_")]'
+www.facebook.com,web.facebook.com#$#hide-if-matches-xpath './/a/span/span[@aria-labelledby]/span[contains(@style,"flex")]//span[contains(text(),"S") or contains(text(),"P") or contains(text(),"G") or contains(text(),"C") and contains(@style,"order: 1") or contains(@style,"flex")]/ancestor::div[@aria-posinset or @aria-describedby or @aria-labelledby or starts-with(@data-pagelet,"FeedUnit_")]'
+www.facebook.com,web.facebook.com#$#hide-if-matches-xpath './/a/span/span[@aria-labelledby]/span[contains(@style,"flex")]/span[contains(@style,"flex") or contains(@style,"order: 1") and contains(text(),"S") or contains(text(),"P") or contains(text(),"G") or contains(text(),"C")]//following-sibling::span[contains(@style,"flex")]/ancestor::div[@aria-posinset or @aria-describedby or @aria-labelledby or starts-with(@data-pagelet,"FeedUnit_")]'
 www.facebook.com,web.facebook.com#$#hide-if-matches-xpath './/div[@data-pagelet="MainFeed"]//span[not(self::node()[contains(@class," ")])]//a[@aria-label="Sponsored"]/ancestor::div[not(@id)][starts-with(@class,"_")]'
 www.facebook.com,web.facebook.com#$#hide-if-matches-xpath './/div[@id="watch_feed"]//div[@data-pagelet="MainFeed"]//a[@aria-label="label"]//ancestor::div[8][not(@id)][starts-with(@class,"_")]'
 www.facebook.com,web.facebook.com#$#hide-if-matches-xpath './/object[@type="nested/pressable"]/a[@role="link"]/span[contains("|Sponsoreret|Sponsrad|Patrocinado|Sponsa|Bersponsor|Commandité|Ditaja|Gesponsert|Gesponsord|Publicidad|Sponset|Sponsored|Sponsorisé|Sponsorizat|Sponsorizzato|Sponsorlu|Sponsorowane|Реклама|ממומן|تمويل شوي|دارای پشتیبانی مالی|سپانسرڈ|مُموَّل|प्रायोजित|সৌজন্যে|ได้รับการสนับสนุน|内容|贊助|Sponsoroitu|May Sponsor|Được tài trợ|", concat("|", text(), "|"))]/ancestor::span[2]'
@@ -49659,6 +49660,7 @@ zznews.cn##.ad:not([style])
 ||bqsm.com.cn^
 ||bqvndd.ifood.com.br^
 ||bqyjrqenfhwc.com^
+||bqzmctxm.com^
 ||br.ac.ebookers.com^
 ||br.ac.ebookers.de^
 ||br.ac.ebookers.fr^
@@ -50725,6 +50727,7 @@ zznews.cn##.ad:not([style])
 ||cgown.com^*/peiyinquan
 ||cgqkhc.trendyol.com^
 ||cgskqg.com^
+||cgznataqg.com^
 ||ch.sharpmarketing.eu^
 ||ch0p.darty.com^
 ||chahua.org/aimg/
@@ -53476,6 +53479,7 @@ zznews.cn##.ad:not([style])
 ||dcraddock.uk/images/b/
 ||dcs.conac.cn/js/
 ||dcs.plussizetech.com^
+||dcvaxrdmdovrsgh.com^
 ||dcxmy.com^$third-party
 ||dd-lightingshow.com^
 ||dd.auspost.com.au^
@@ -53677,6 +53681,7 @@ zznews.cn##.ad:not([style])
 ||deslncsiq.com^
 ||despicablereporthusband.com^
 ||desr.fkapi.net^
+||desticall.com^
 ||destroyedspear.com^
 ||detailedglue.com^
 ||detailedgovernment.com^
@@ -54630,6 +54635,7 @@ zznews.cn##.ad:not([style])
 ||dvigukindal.com^
 ||dvnfo.com^$third-party
 ||dvo.assurandme.fr^
+||dvqepopmvmypgkb.com^
 ||dvr8.com^
 ||dvrxgs.fc-moto.de^
 ||dvs.china.com^
@@ -55799,6 +55805,7 @@ zznews.cn##.ad:not([style])
 ||epm.mailperformance.com^
 ||epmwgmvtr.com^
 ||epnt.ebay.com^
+||eporat.com^
 ||eporner.com/cppb/
 ||eporner.com/dot/
 ||eporner.com/event.php
@@ -60446,6 +60453,7 @@ zznews.cn##.ad:not([style])
 ||ihear123.com^
 ||iheart.com/api/v3/playback/reporting
 ||iheart.com/events
+||ihegwoy.xyz^$all
 ||ihfwer.aboutyou.com^
 ||ihhii.xyz^
 ||ihhmh.com/mg/show
@@ -62461,6 +62469,7 @@ zznews.cn##.ad:not([style])
 ||juno.com/start/javascript.do?message=
 ||junshizhanlue.com^$third-party
 ||junta.net^$third-party
+||juntfemoral.com^
 ||junwjwl.com^
 ||jupi.cc^*.gif
 ||jupied.com^
@@ -64145,6 +64154,7 @@ zznews.cn##.ad:not([style])
 ||ljk.ink^
 ||ljlxy.cn^
 ||ljmei.com^
+||ljwbrgipuqqnpe.com^
 ||ljyaqiggcpkica.com^
 ||lk.4jzl.cn^$third-party
 ||lkcgvcdmc.com^
@@ -66568,6 +66578,7 @@ zznews.cn##.ad:not([style])
 ||mlovem.pw^
 ||mlqq.store^
 ||mlre.com.cn^
+||mlrkqwlcetqwxwl.xyz^
 ||mlstat.com^$third-party
 ||mlt01.com/cmp.htm$third-party
 ||mlt01.com^
