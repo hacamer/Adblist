@@ -1,8 +1,8 @@
-! Checksum: P3BqVTyHNbNJOftD2Su2vQ
+! Checksum: 3lEindUCwqXEyDbYTC5R9g
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.17.57
-! TimeUpdated: 2022-04-29T15:30:36+00:00
+! Version: 2.1.17.58
+! TimeUpdated: 2022-04-29T16:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -20943,6 +20943,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+thirdweb.com#%#//scriptlet('set-local-storage-item', 'hasShownWelcome', 'true')
 ||websiteplanet.com/wp-content/themes/websiteplanet/js/popup-ctrl-d.
 rocketpool.net###bug-bounty
 weltbild.de##sx-page-layer
@@ -29257,6 +29258,9 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+moscowtimes.ru,themoscowtimes.com#$#.contribute-modal { display: none !important; }
+moscowtimes.ru,themoscowtimes.com#$#body { overflow: auto !important; }
+moscowtimes.ru,themoscowtimes.com##.social-follow
 ||api-esp.piano.io/publisher/unattended/
 kxii.com##.subscription-form
 mlyn.by#?#.siteorigin-widget-tinymce > blockquote:has(a[href="https://t.me/mlynby"])
