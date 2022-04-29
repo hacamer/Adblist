@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: SXJVnu1FM41RZSc6Ftu/YA
+! Checksum: iNqIdcX44epA0BnqhLvK+w
 ! Title: My AdFilters（for Mobile）
 ! Expires: 12 hours
-! Version: 202204291332
-! Last Modified: 2022年04月29日 13:32
+! Version: 202204291440
+! Last Modified: 2022年04月29日 14:40
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 64634
+! Total count: 64639
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -20332,15 +20332,20 @@ bing.com##.mapsTextAds
 bing.com##.pa_carousel_mlo
 bing.com##.pa_sb
 bing.com##.ra_car_block
+bing.com##.shop_page .br-poleoffcarousel
 bing.com##a[href*="/aclick?ld="]:not(.vsp_ads)
 bing.com#$#.b_ad { display: block !important; position: absolute !important; top: -9999px !important; }
 bing.com#$#body .b_adLastChild { display: block !important; position: absolute !important; top: -9999px !important; }
+bing.com#$#body .pa_carousel_mlo { display: block !important; position: absolute !important; top: -9999px !important; }
+bing.com#$#body .pa_sb { display: block !important; position: absolute !important; top: -9999px !important; }
 bing.com#?##b_results > .b_algo:has(> .b_caption > .b_attribution:matches-css-before(content: /url\(data:image/))
 bing.com#?##b_results > li:-abp-has(> h2 + .b_caption > div.b_attribution:not([u]) + p[class])
 bing.com#?##b_results > li:has(> h2 + .b_caption > div.b_attribution:not([u]) + p[class])
 bing.com#?#.insights > .insml > li > .ins_exp > div > ul > li > .ta_c > a[href*="/aclick?ld="]:upward(1)
 bing.com#@##b_results > li:not(.b_algo):not(.b_ans):not(.b_pag):not(.aca_algo):not(.aca_algo_count):not(.b_msg)
 bing.com#@#.b_adBottom
+bing.com#@#.pa_carousel_mlo
+bing.com#@#.pa_sb
 bing.com#@#a[h$=",Ads"]
 bing.com#@#a[href*="/aclick?ld="]
 bing.com#@#a[href^="https://www.bing.com/aclick?"]
@@ -24515,6 +24520,7 @@ inporn.com##.video__wrapper > div.wrapper.headline
 inporn.com##.wrapper > article
 inporn.com##section[is-footer-banners]
 inquirer.net###billboard_article
+insideedition.com#@#.adBanner
 insideevs.com##.myevFeedContainer
 insideevs.com##a[href^="https://www.myev.com/cars-for-sale"]
 insidemarketing.it##+js(set-constant, adblock, false)
@@ -44641,7 +44647,6 @@ zyue.com##div[id^="divad_"]
 ||hitmatic.com^$third-party
 ||hitmir.ru^$third-party
 ||hitomi.la/ebJqXsy/
-||hitomi.la/gg.js$badfilter
 ||hitprn.com/c_
 ||hits.antena3.com^
 ||hits.dealer.com^
