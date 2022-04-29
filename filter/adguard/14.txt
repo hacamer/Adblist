@@ -1,8 +1,8 @@
-! Checksum: yE7u99uP+UNvW3yEcWVLqA
+! Checksum: jhf4cnaPvYw27PfnEAS2Kg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.17.49
-! TimeUpdated: 2022-04-29T00:30:35+00:00
+! Version: 2.1.17.51
+! TimeUpdated: 2022-04-29T08:30:33+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7370,6 +7370,8 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+unstoppabledomains.com##.osano-cm-window__dialog
+cobo.com##div[class^="CookieRemind_"]
 kocaeli.bel.tr##.cookiekbb
 flightview.com###eea-confirmation-outer
 tech-america.com##div[x-data^="xCookiePopup"]
@@ -15396,6 +15398,7 @@ consent.faz.net#%#AG_onLoad(function(){if(window.location.href.includes("consent
 ! "Button I Accept"
 consent.falkirkherald.co.uk#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var g=new MutationObserver(function(){var b=document.querySelector('button[title="I Accept"]');b&&b.click();});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
 !
+coinrequest.io#%#//scriptlet('set-local-storage-item', 'BIT_REQUEST_VUE.cookies_enabled', 'true')
 aviasales.ru#%#//scriptlet('set-cookie', 'cookies_policy', 'true')
 cyberport.de#%#AG_onLoad(function(){if(!document.cookie.includes("__cmpcccu")){var g=new MutationObserver(function(){var b=document.querySelector('#cmpwrapper').shadowRoot.querySelector('#cmpbntnotxt');b&&b.click();});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
 nwzonline.de#%#AG_onLoad(function(){if(!document.cookie.includes("__cmpcccu3039")){var g=new MutationObserver(function(){setTimeout(function(){var b=document.querySelector("#cmpwrapper").shadowRoot.querySelectorAll("a.cust-btn[onclick]");b[0]&&b[0].click();},500);});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
@@ -20935,6 +20938,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+rocketpool.net###bug-bounty
 weltbild.de##sx-page-layer
 bodyarchi.com###topfloatingBnr
 fonepaw.com##.widget + div[class*="promotion"]
@@ -29244,6 +29248,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+meduza.io##.EmailSubscription-root
 kinderraeume.com#$#html { overflow: auto !important; }
 kinderraeume.com#$#body { overflow: auto !important; }
 kinderraeume.com#$#.newsletterregistration--modal ~ div.js--overlay { display: none !important; }
