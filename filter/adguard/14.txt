@@ -1,8 +1,8 @@
-! Checksum: D+xOgqVHp7LGTW3LA075oA
+! Checksum: 5V+yL7X84cF9qew96FbUGw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.17.61
-! TimeUpdated: 2022-04-30T15:30:33+00:00
+! Version: 2.1.17.62
+! TimeUpdated: 2022-04-30T16:30:35+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7371,6 +7371,10 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+polizei.brandenburg.de###pbb-cookielaw
+polizei.bayern.de###__BVID__6___BV_modal_outer_
+green.ch##div[data-nezzo-cookie]
+horgen.ch##.optin-stats
 r-m.de##div[data-content="privacy-settings-layer"]
 amplerbikes.com#?#main > div[class]:has(> div[class] > button > span > svg[alt="Cookies akzeptieren"])
 schindelhauerbikes.com###etrpop
@@ -14291,7 +14295,7 @@ jannonce.be###policyMessage
 ign.com###policyNotice
 esprit.de###policy_header
 zara.com###popup-announcements
-bafa.de,bka.de,antyweb.pl,stylevamp.de,venalia.ru###privacy
+polizei.de,bafa.de,bka.de,antyweb.pl,stylevamp.de,venalia.ru###privacy
 beaconstac.com,asics.com###privacy-policy-modal
 shop.nationalgeographic.com###privacy-policy-popup
 tu-dresden.de###privacy-statement
@@ -20946,6 +20950,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+polizei.brandenburg.de##div[style*="width: 750px;"][style^="height: auto;"]
 thirdweb.com#%#//scriptlet('set-local-storage-item', 'hasShownWelcome', 'true')
 ||websiteplanet.com/wp-content/themes/websiteplanet/js/popup-ctrl-d.
 rocketpool.net###bug-bounty
