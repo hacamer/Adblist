@@ -1,8 +1,8 @@
-! Checksum: FM9+T1+5E2Eu77iACMtMqA
+! Checksum: D+xOgqVHp7LGTW3LA075oA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.17.60
-! TimeUpdated: 2022-04-29T18:30:40+00:00
+! Version: 2.1.17.61
+! TimeUpdated: 2022-04-30T15:30:33+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7371,6 +7371,9 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+r-m.de##div[data-content="privacy-settings-layer"]
+amplerbikes.com#?#main > div[class]:has(> div[class] > button > span > svg[alt="Cookies akzeptieren"])
+schindelhauerbikes.com###etrpop
 grueneerde.com#$#.CookieWarningComponent { display: none!important; }
 grueneerde.com#$#html { overflow: visible!important; }
 vanmoof.com##.ost-overlay-container
@@ -8696,7 +8699,7 @@ nordicnest.de#?##container > div[class]:has(> div[class] > div[class] > div[clas
 ||stihl.de/etc.clientlibs/stihl-frontend/clientlibs/components/content/cookie/cookielayer/
 petz.com.br##.policy-warning-banner
 kicker.de#$#body { overflow: auto !important; }
-||consentmanager.net^$domain=tausendkind.de|hausgarten.net|kundendienst-info.de|baunetz.de|rabe-bike.de|heinze.de|ais-online.de|dasoertliche.de|reno.de|walbusch.de|mathe-lexikon.at|katzen-forum.net|deutsche-apotheker-zeitung.de|brandible.de|my.games|vergleich.org|finanztip.de|baunetzwissen.de|trusted.de|universal-music.de|web2.cylex.de|mey-edlich.de|schuhe.de|qiez.de|benz24.de|hervis.de|avena.de|heimwerker.de|bauemotion.de|nw.de|kicker.de|herold.at|kalledaskabel.de|bussgeldkatalog.org|plantopedia.de|poetschke.de|weltbild.de|genialokal.de|jokers.de
+||consentmanager.net^$domain=tausendkind.de|hausgarten.net|kundendienst-info.de|baunetz.de|rabe-bike.de|heinze.de|ais-online.de|dasoertliche.de|reno.de|walbusch.de|mathe-lexikon.at|katzen-forum.net|deutsche-apotheker-zeitung.de|brandible.de|my.games|vergleich.org|finanztip.de|baunetzwissen.de|trusted.de|universal-music.de|web2.cylex.de|mey-edlich.de|schuhe.de|qiez.de|benz24.de|hervis.de|avena.de|heimwerker.de|bauemotion.de|nw.de|kicker.de|herold.at|kalledaskabel.de|bussgeldkatalog.org|plantopedia.de|poetschke.de|weltbild.de|genialokal.de|jokers.de|leoncycle.de
 mod.io###achtung-overlay
 bringmeister.de##div[data-testid="cookiePopup"]
 planetkey.de##.survey.alert-box
@@ -8891,7 +8894,7 @@ elu24.ee#$#body { overflow: auto !important; }
 sm.ms##.accept_to_chat
 partyfiesta.com##div[id^="cookiesplus-"]
 handelsangebote.de,marktjagd.de##.box-cookie-consent
-||infomaniak.com/js/rgpd/ik-rgpd.js
+||web-components.storage.infomaniak.com/current/*/module-rgpd/
 godaddy.com###gtm_privacy
 magnethastanesi.com.tr###pupdata-popup
 sumup.de##div[data-selector="container@cookiebar"]
@@ -29259,6 +29262,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+leoncycle.de##.s360-newsletter-wrapper
 justinbiebermusic.com##div[id^="mailing-list"]
 justinbiebermusic.com##.reveal-modal-bg
 moscowtimes.ru,themoscowtimes.com#$#.contribute-modal { display: none !important; }
