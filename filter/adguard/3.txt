@@ -1,8 +1,8 @@
-! Checksum: 4JW+etYUcEjHArFAEf6NQg
+! Checksum: gdsS4hbFhQHMmkI43yF61A
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.39.2
-! TimeUpdated: 2022-05-01T11:31:19+00:00
+! Version: 2.0.39.3
+! TimeUpdated: 2022-05-01T16:31:17+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -326,6 +326,7 @@ journal-plaza.net#?#.rightside div.block.bnavi[-ext-has="h3.dtitle:contains(Сч
 !||i.snssdk.com/log/*
 !||i.snssdk.com/slardar/sdk.js
 !
+||unseenreport.com^$third-party
 ||ob.cheqzone.com^
 ||pix.hyj.mobi^
 ||libs.aseads.com^$third-party
@@ -19989,9 +19990,9 @@ _analytics.js?
 /openxtargeting.js
 /page_beacon.gif?
 /partner/transparent_pixel-$image
-/piwik-$domain=~piwik.org|~piwik.pro
-/piwik.$image,script,domain=~matomo.org|~piwik.org|~piwik.pro
-/piwik/js/*$domain=~piwik.org
+/piwik-$domain=~github.com|~matomo.org|~piwik.org|~piwik.pro|~piwikpro.de
+/piwik.$image,script,domain=~matomo.org|~piwik.org|~piwik.pro|~piwikpro.de
+/piwik/js/*$domain=~github.com|~matomo.org|~piwik.org|~piwik.pro
 /piwik1.
 /piwik2.js
 /piwik_

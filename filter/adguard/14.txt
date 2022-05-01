@@ -1,8 +1,8 @@
-! Checksum: UfzRrf5ZcmynpWMQjlfZSA
+! Checksum: 3q1ph9zE2jVQQRe11pQiVg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.17.66
-! TimeUpdated: 2022-05-01T11:30:35+00:00
+! Version: 2.1.17.67
+! TimeUpdated: 2022-05-01T16:30:32+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -27116,6 +27116,8 @@ disk.yandex.*##.mail360-banner
 @@||yastatic.net/daas/atom.js$domain=mail.yandex.by|mail.yandex.kz|mail.yandex.ru|mail.yandex.ua|mail.yandex.com|mail.yandex.com.tr
 !-----------------------------------------------
 !
+! ex. https://bbs.punipuni.eu/test/read.cgi/vaporeon/1642591029/
+bbs.punipuni.eu##div[style="margin-top:1em;"] > span[style="float:right;"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/117046
 i-voce.jp##.undefined[class^="listItem_"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116535
@@ -35016,6 +35018,7 @@ twgreatdaily.com$$script[tag-content="indexOf|css|fn|this|attr|unselectable|cons
 !#######################################################
 !
 ! START: Blogroll widgets (sougo RSS)
+||komatech.net^$third-party
 ||fukugan.com^$third-party
 ||3site-rss.s3-ap-northeast-1.amazonaws.com^
 ||blogroll.livedoor.net^
