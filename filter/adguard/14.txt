@@ -1,8 +1,8 @@
-! Checksum: nedNeeZB9m20zik08XdfGA
+! Checksum: tyEdqAeFYv/lzLvFjtw5FA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.17.77
-! TimeUpdated: 2022-05-02T13:30:37+00:00
+! Version: 2.1.17.79
+! TimeUpdated: 2022-05-02T15:30:39+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7376,6 +7376,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+guideautoweb.com##div[data-nots-uid="gdpr-carguide"]
 casetify.com##.ccpa-container
 bnn.de#$#.cookie-consent { display: none !important; }
 bnn.de#$#body.has-cookie-consent { overflow: auto !important; }
@@ -8384,7 +8385,6 @@ hik-connect.com##.ant-message-notice-content
 hik-connect.com##div[class^="src-pages-cookie-___cookieTip__app-cookie-container"]
 pinterest.jp,pinterest.at,pinterest.ch,pinterest.co.uk,pinterest.com,pinterest.com.au,pinterest.com.mx,pinterest.de,pinterest.es,pinterest.fr,pinterest.it,pinterest.pt##div[data-test-id="cookie-consent-banner"]
 mirkrasok.ru##.module_messages_cookies
-m.odds.am###cookies-menu
 whittard.co.uk###cookie-policy-dialog
 celeramotion.com##.privacy_wrapper
 bourns.com###gdprConsent
@@ -14745,6 +14745,8 @@ medicana.com.tr##body div.cookiealert
 !
 !
 !+ NOT_OPTIMIZED
+m.odds.am###cookies-menu
+!+ NOT_OPTIMIZED
 dailytrust.com##main + div[style*="position: fixed; left: 0px; top: 0px; width: 100%; height: 100%;"]
 !+ NOT_OPTIMIZED
 ||cmp.dpgmedia.be^$domain=7sur7.be
@@ -19308,8 +19310,10 @@ autonews.ru##.app-link
 casasbahia.com.br##.newAppHeader
 ||st.work.ua/js/app-banner||st.work.ua/js/app-banner-src_*.js
 turktelekomprime.com##.mobile-smart-app-banner
-kinarino.jp###download-app
-kinarino.jp###js-view-in-app
+kinarino.jp,kinarino-mall.jp##.p-view-in-app
+kinarino.jp,kinarino-mall.jp###download-app
+kinarino.jp,kinarino-mall.jp###js-view-in-app
+kinarino-mall.jp##.p-footer-banner-app__anchor
 kinarino.jp##.c-item__piece--target-app
 kinarino.jp#$#.l-header.have-banner { position: fixed!important;top: 0!important; }
 kinarino.jp#$#.l-header__banner { display: none!important; }
@@ -19859,7 +19863,6 @@ m.guancha.cn##.downloadBtn-box
 aksarayhaber68.com##a[href="https://play.google.com/store/apps/details?id=com.aksarayhaber.altmissekiz"]
 ngoisao.net,vc.ru,tjournal.ru,spark.ru,dtf.ru##.download_app
 eiga.com###app-notice
-eiga.com##.cmnBnrBox
 motorsport.com##.ms-side-widget--promo-app
 motorsport.com##.ms-promo-widget--app
 townwork.net##.jsc-hd-app-bnr
@@ -19903,10 +19906,7 @@ store.shopping.yahoo.co.jp###h_app
 store.shopping.yahoo.co.jp##.elItemEntryLink[data-ylk^="slk:applnk"]
 headlines.yahoo.co.jp###peronArea .dressUp.tracked_mods
 thehindu.com###artmeterwrap
-mdpr.jp##.l-footerAppBanner
-mdpr.jp##.p-articleComment__buttonArea
 mdpr.jp##.pg-articleHeadline__readApp
-mdpr.jp###app-header-banner
 novaposhta.ua##.b_banners
 /googleplay_135x40.png$domain=xn----etbbecbrbp5ahkja1ae7v.xn--p1ai|kingisepp-today.ru
 /appstore_135x40.png$domain=xn----etbbecbrbp5ahkja1ae7v.xn--p1ai|kingisepp-today.ru
@@ -20460,6 +20460,8 @@ ebay.*###gh-appBanner
 !
 !
 !+ NOT_OPTIMIZED
+eiga.com##.cmnBnrBox
+!+ NOT_OPTIMIZED
 aumo.jp#$##js-smartBannerLink { display: none!important; }
 !+ NOT_OPTIMIZED
 aumo.jp#$##wrapper-js[style^="padding-top:"] { padding-top: 48px!important; }
@@ -20746,10 +20748,15 @@ pinterest.*#%#AG_onLoad(function(){var a=new MutationObserver(function(){if(docu
 ~kurer-sreda.ru,~chorki.com,~zattoo.com,~zaycev.net,~xltrax.ee,~hitta.se,~mail.ru,~v7player.wostreaming.net,~facebook.com,~instagram.com,~drive.google.com$$link[rel="manifest"]
 !
 !+ NOT_OPTIMIZED
+mdpr.jp##.l-footerAppBanner
+!+ NOT_OPTIMIZED
+mdpr.jp##.p-articleComment__buttonArea
+!+ NOT_OPTIMIZED
+mdpr.jp###app-header-banner
+!+ NOT_OPTIMIZED
 ~m.thehipstore.co.uk,~teb.com.tr###smartbanner.android
 !+ NOT_PLATFORM(ios, ext_android_cb)
 shazam.com##.shz-frame-apps-banner
-!
 !+ NOT_OPTIMIZED
 togetter.com##a[data-ga="action_moreapp"]
 !+ NOT_OPTIMIZED
@@ -27413,8 +27420,6 @@ w3cschool.cn#$##header[style*="height:"] { height: 55px !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/97676#issuecomment-963027509
 lenta.ru##.js-scroll-to-site
 lenta.ru#%#//scriptlet('set-constant', 'Object.prototype.scrollToSite', '')
-! https://github.com/AdguardTeam/AdguardFilters/issues/99013
-eiga.com###video_ad
 ! self-promo (mobile)
 news.nifty.com##.mod_ad_nifty
 ! self-promo (login needed)
@@ -28396,6 +28401,7 @@ experts-exchange.com##.ctaSolutionStickyWrapper
 theguardian.com##.contributions__adblock
 ||contributions.guardianapis.com^
 !
+dev.classmethod.jp##.footer-banner
 tunelf.com##.article-product-block
 wionews.com##.zee-points-items
 content.techgig.com##.topbanner_tg_inner
@@ -29245,6 +29251,8 @@ tele2.ru##div[data-cartridge-type="PersonalizedTizer"]
 !
 !
 !
+!+ NOT_OPTIMIZED
+eiga.com###video_ad
 !+ NOT_OPTIMIZED
 liga.net##.donation-fixed
 !+ NOT_OPTIMIZED

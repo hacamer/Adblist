@@ -1,8 +1,8 @@
-! Checksum: j21Vhm0PC5xYgjxpKqZmhg
+! Checksum: 13khogK5lyfBz+l39HUWUw
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.29.17
-! TimeUpdated: 2022-05-02T13:30:21+00:00
+! Version: 2.0.29.19
+! TimeUpdated: 2022-05-02T15:30:23+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1293,6 +1293,7 @@ westseattleblog.com#@#.header-ad
 ! Bad: example.org##main > div.ad (should be in specific.txt)
 !
 !
+sp.mbga.jp#?#.iListNitem > li.header:contains(（PR）)
 9gag.com#?#.post-container > div[id^="stream"] > .post-cell:has(> header > .post-top > .post-section > a[href^="https://9gag.com/advertise?"])
 hobbyconsolas.com#?#.main-content > div > div[data-dfp-display]:upward(1)
 app-liv.jp#?##ranking div.c-app-card:not([class^="js-native-ranking-card"]):has(> div > span.app-ranking_label--pr)
@@ -2478,6 +2479,7 @@ scmp.com,theinventory.com,avclub.com,clickhole.com,deadspin.com,gizmodo.com,jalo
 ! ##.ads
 cartoonpornvideos.com,m.economictimes.com,beethovenmaster.com,m.mistrzowie.org,m.ura.news,siirtpress.com,up.ymgt.xyz,google.de,www-bento-de.cdn.ampproject.org,m-economictimes-com.cdn.ampproject.org,m.winfuture.de##.ads
 !
+fashion-press.net##.mobile_only_ad
 yukawanet.com###custom_html-34
 otona-life.com##.ad_minh_sp
 cleverdialer.de##.h5-sticky-ad
@@ -2646,7 +2648,7 @@ amp.vip.de,rtl.de##amp-iframe[src^="https://video-library.showheroes.com/spot/"]
 niji-gazo.com##.partner-rotate-block
 elog-ch.net##.sp_banner
 moeero-library.com,ero-manga-platinum.net##iframe[src^="https://ad-cheers.com/"]
-doujin-night.com##.sp_adwidget
+eromanga-select.com,doujin-night.com##.sp_adwidget
 free-erobooks.*##.abox
 free-erobooks.*##.pbox
 dokuha.jp##.ad-size-rect
@@ -3060,6 +3062,7 @@ m.republicworld.com##div[style^="justify-content: center; margin: 0px; position:
 m.tribuneindia.com###rwadx_adunitstikcy
 m.tribuneindia.com##amp-iframe[src^="https://cdn.intergi.com/"]
 jiji.com##.RectangleAd
+karapaia.com##.article-list-recommend
 karapaia.com##.content > header::after
 amazon.*###recsWidget
 amazon.*##div[cel_widget_id^="tetris-"]
@@ -3929,8 +3932,7 @@ krayot.com###front_trandiv
 game4v.com##div[id^="banner-"]
 hosyusokuhou.jp##.rankbox
 spielen.de##.s4u
-eiga.com###rect_ad_btm
-eiga.com###rect_ad
+eiga.com##div[id^="rect_ad"]
 eiga.com##.adBox-a
 eiga.com##.dvd
 eiga.com###rankingArea
@@ -4515,6 +4517,7 @@ momon-ga.com##.content > div[style="margin-bottom:12px;"]
 momon-ga.com##.container-inner > div[style="margin-bottom:12px;"]
 digit.in##.footerCatfishAdArea
 digit.in##iframe[src^="/blockarticledetailad/"][title="Advertisement"]
+weblio.jp###adSmpSecondDictId
 weblio.jp##.adBanner
 weblio.jp##.adBkOverlayClr
 banglachotikahinii.com###mobile > div.row > div.mt_banner+span
