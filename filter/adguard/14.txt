@@ -1,8 +1,8 @@
-! Checksum: LAHMa0RUpIlmxgjA3w25Dg
+! Checksum: XeRkReclkZfM7zy+/FAa5g
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.17.80
-! TimeUpdated: 2022-05-02T16:30:33+00:00
+! Version: 2.1.17.82
+! TimeUpdated: 2022-05-02T17:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -11106,8 +11106,6 @@ mpprofit.sk,significatocanzoni.it###wpca-box
 flixone.com##.tc-cookie-compliance
 github.com##.js-cookie-consent-banner
 letras.com,ouvirmusica.com.br,letras.mus.br##.modalLGPD
-redbull.com#$#html { overflow: auto !important; }
-redbull.com#$#body { overflow: auto !important; }
 southparkstudios.com##.module-container-bala
 bang-olufsen.com##.cookie-row
 rappler.com##div[class^="GDPRBanner_"]
@@ -11453,7 +11451,7 @@ bnl.it###cookielaw-popup-wrapper
 don24.ru,ronesans.com##.cookie-fixed
 play.pl##.cookies-mine
 red.com##.cookie-warning-banner-view
-discord.com,redbull.com,abus.com###onetrust-banner-sdk
+discord.com,abus.com###onetrust-banner-sdk
 web-stat.com##.swal2-container
 g2.com##.js-cookie-consent-overlay
 disneyworld.eu###cookiesPolicyMessageLayout
@@ -16396,6 +16394,9 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/117208
+@@||cdn.cookielaw.org/scripttemplates/otSDKStub.js$domain=redbull.com
+redbull.com#@##onetrust-consent-sdk
 ! https://github.com/AdguardTeam/AdguardFilters/issues/117064
 bnn.de#@##cookie-consent
 bnn.de#@#.cookie-consent:not(body):not(html)
@@ -19046,6 +19047,9 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+||s.yimg.jp/images/news-app/promo/banner/$domain=news.yahoo.co.jp
+news.yahoo.co.jp##.newsFeed_list > li.newsFeed_item.null
+redbull.com##.web-to-app
 ch.nicovideo.jp###chapplink
 ch.nicovideo.jp##.ads_nicovideo
 sp.seiga.nicovideo.jp##a[href^="https://site.nicovideo.jp/nicomanga/?appstore="]
@@ -28405,6 +28409,7 @@ experts-exchange.com##.ctaSolutionStickyWrapper
 theguardian.com##.contributions__adblock
 ||contributions.guardianapis.com^
 !
+shopping.dmkt-sp.jp##.floating-banner
 dev.classmethod.jp##.footer-banner
 tunelf.com##.article-product-block
 wionews.com##.zee-points-items
