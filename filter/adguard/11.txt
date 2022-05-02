@@ -1,8 +1,8 @@
-! Checksum: 13khogK5lyfBz+l39HUWUw
+! Checksum: NzvQ6O/v45mb621NF9vqsQ
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.29.19
-! TimeUpdated: 2022-05-02T15:30:23+00:00
+! Version: 2.0.29.20
+! TimeUpdated: 2022-05-02T16:30:17+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1293,7 +1293,8 @@ westseattleblog.com#@#.header-ad
 ! Bad: example.org##main > div.ad (should be in specific.txt)
 !
 !
-sp.mbga.jp#?#.iListNitem > li.header:contains(（PR）)
+sp.seiga.nicovideo.jp#?#header + div > div[style^="transform:"] > div > div[data-ads-name]:upward(1)
+sp.mbga.jp#?#.iListNitem > li.header:contains(ピックアップ)
 9gag.com#?#.post-container > div[id^="stream"] > .post-cell:has(> header > .post-top > .post-section > a[href^="https://9gag.com/advertise?"])
 hobbyconsolas.com#?#.main-content > div > div[data-dfp-display]:upward(1)
 app-liv.jp#?##ranking div.c-app-card:not([class^="js-native-ranking-card"]):has(> div > span.app-ranking_label--pr)
