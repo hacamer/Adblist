@@ -1,8 +1,8 @@
-! Checksum: ybl4Rp3xPgMM5wtdQc8jkA
+! Checksum: 3NvkEqu8blYWzBoj3vuWOw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.17.83
-! TimeUpdated: 2022-05-02T18:30:34+00:00
+! Version: 2.1.17.84
+! TimeUpdated: 2022-05-02T19:30:33+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -19048,6 +19048,8 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+m.banggood.com#$#.drainage-pop { display: none !important; }
+m.banggood.com#$#.global-no-scroll { position: static !important; }
 m.banggood.com##.bottom-app-contain
 m.banggood.com#$#.header.show-app-bar { top: 0 !important; }
 m.banggood.com#$##appTopBar { display: none !important; }
