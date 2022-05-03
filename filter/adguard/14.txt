@@ -1,8 +1,8 @@
-! Checksum: kz7v5PUxiONUbCkK2VAojw
+! Checksum: KZchQejTHtpMiobvy0bf/g
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.17.86
-! TimeUpdated: 2022-05-03T06:30:39+00:00
+! Version: 2.1.17.88
+! TimeUpdated: 2022-05-03T08:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7376,6 +7376,11 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+muziker.si#$#body { overflow: auto !important; }
+muziker.si#$#.cookies-backdrop { display: none !important; }
+ujam.com#$#body { overflow: auto !important; padding-right: 0 !important; }
+ujam.com#$##ujam-tracking-cookiebanner { display: none !important; }
+ujam.com#$##ujam-tracking-cookiebanner ~ div.modal-backdrop { display: none !important; }
 m.tomtop.com##div[name="confirm2"]
 guideautoweb.com##div[data-nots-uid="gdpr-carguide"]
 casetify.com##.ccpa-container
@@ -16395,6 +16400,8 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/117027
+muziker.si#@#.cookies-box
 ! https://github.com/AdguardTeam/AdguardFilters/issues/117208
 @@||cdn.cookielaw.org/scripttemplates/otSDKStub.js$domain=redbull.com
 redbull.com#@##onetrust-consent-sdk
@@ -19048,6 +19055,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+brandavenue.rakuten.co.jp##.rf-banner-app
 pinkvilla.com##div[id^="BottomApp"]
 m.wanben.org##.appguide-wrap
 pay.rakuten.co.jp###Smart_App_Banner
@@ -26193,6 +26201,7 @@ abendzeitung-muenchen.de###webpush-app
 .name/?pus=$script,third-party
 .site/?pus=$script,third-party
 !
+||clicktimes.bid^
 ||dolohatum.com^
 ||news-yakaja.cc^$third-party
 ||news-hefoja.cc^$third-party
@@ -32335,7 +32344,7 @@ eaomedia.ru,magadanmedia.ru###soc_invites_block
 zn.ua###social_block_article
 mobil.nwzonline.de###sticky-share
 photo-monster.ru###subSidebar
-acf.international,codastory.com,atbmarket.com,dogeat.ru,oggusto.com,pcsecrets.ru,paradoxplaza.com,beforeitsnews.com,nplus1.ru###subscribe
+biblio.com,acf.international,codastory.com,atbmarket.com,dogeat.ru,oggusto.com,pcsecrets.ru,paradoxplaza.com,beforeitsnews.com,nplus1.ru###subscribe
 problogbooster.com###subscribe-box-sbm
 artikeltekno.com,dreamfancy.org###subscribe-css
 the-village.ru,aljazeera.com,psychologies.ru###subscribe-form
