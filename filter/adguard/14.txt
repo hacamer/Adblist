@@ -1,8 +1,8 @@
-! Checksum: 3NvkEqu8blYWzBoj3vuWOw
+! Checksum: b0JWv+xwoYOIwDe5ei+glw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.17.84
-! TimeUpdated: 2022-05-02T19:30:33+00:00
+! Version: 2.1.17.85
+! TimeUpdated: 2022-05-03T03:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -11639,7 +11639,7 @@ drp.su,driverpack.io##.GdprBanner__bg
 twin.com##.cookiePolicyView
 symbolab.com##.nl-cookiepolicy
 puzzles.msn.com##div[class^="CookieBanner__Banner_"]
-coral.ru##.cookieAgreement
+intermedia.ru,coral.ru##.cookieAgreement
 jugendhilfeportal.de,volksbund.de###ig-cookie-simple
 brillen-sehhilfen.de###datenschutzhinweis
 qdoc.tips###QDOCTIPS_cookie_box
@@ -19048,6 +19048,8 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+m.wanben.org##.appguide-wrap
+pay.rakuten.co.jp###Smart_App_Banner
 m.banggood.com#$#.drainage-pop { display: none !important; }
 m.banggood.com#$#.global-no-scroll { position: static !important; }
 m.banggood.com##.bottom-app-contain
@@ -28419,6 +28421,7 @@ experts-exchange.com##.ctaSolutionStickyWrapper
 theguardian.com##.contributions__adblock
 ||contributions.guardianapis.com^
 !
+pay.rakuten.co.jp###DETAIL-ad-modal-parts
 shopping.dmkt-sp.jp##.floating-banner
 dev.classmethod.jp##.footer-banner
 tunelf.com##.article-product-block
@@ -29316,6 +29319,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+intermedia.ru##.mainpage-subscribe-block
 ren.tv##div[class*=" SubscribeBtm_"]
 textstudio.co##.premium-banner
 vecernji.hr##div[id^="pianoSectionPosA"]
@@ -32163,7 +32167,7 @@ gruzdevclinic.ru##.article-consultation-wrapper
 ||gizmodo.uol.com.br/wp-content/blogs.dir/*/gizmodo-newsletter-
 djmag.de##.cookieinfo
 ||belaruspartisan.by/images/podpiska
-tor.lafa.site,film.lafa.site,hd.lafa.site,videoplenka.info###qs_form_div
+lafa.site,videoplenka.info###qs_form_div
 ohotniki.ru#?#.rb_header:has(> form[action^="https://subscribe.ru/"])
 skin.ru##.subscribe-down
 zalakirovano.ru##.subscribeme
@@ -32799,7 +32803,7 @@ mybroadband.co.za##.whatsapp-button
 mobil.berliner-zeitung.de##.whatsapp-widget-blz
 erdbeerlounge.de##.whatsapp-widget-container
 obozrevatel.com##.widget-instagram
-ef.com,ef.kz,exame.com,vandalism-sounds.com,deadline.com,emag.hu,cyclingnews.com,ef.ru,voxel.com.br##.widget-newsletter
+cinemablend.com,ef.com,ef.kz,exame.com,vandalism-sounds.com,deadline.com,emag.hu,cyclingnews.com,ef.ru,voxel.com.br##.widget-newsletter
 radiotimes.com,bikeradar.com##.widget-newsletter-sign-up
 gamerant.ru,zirochka.ua##.widget-subscribe
 bestvpn.com##.widget-subscribe_widget
@@ -34709,6 +34713,7 @@ imslp.org#%#AG_onLoad(function(){var b=document.getElementById("sm_dl_wait");if(
 ! https://github.com/AdguardTeam/AdguardFilters/issues/85982
 ||belezaedieta.com^$third-party
 !
+||script.gmarket.co.kr/js/itemdweb/ItemBase.js
 ||theaircurrent.com/wp-content/themes/slate/print.css
 ||tv-asahi.co.jp/wp-content/themes/favclip-master/js/front.js
 ||xn--90adear.xn--p1ai/media/gibdd/build/js/nocopy.js
