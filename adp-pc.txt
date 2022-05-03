@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: cJBJF9roZWstUbll24kZaw
+! Checksum: KrzOaFWuEgpVjCb5iN5iVA
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202205031731
-! Last Modified: 2022年05月03日 17:31
+! Version: 202205031838
+! Last Modified: 2022年05月03日 18:38
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 86133
+! Total count: 86136
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -5026,6 +5026,7 @@
 ##.mm-widget--sendtonews
 ##.mmads
 ##.mntl-gpt-adunit
+##.mob_ads
 ##.mobads
 ##.mobile-ad
 ##.mobile-ad-container
@@ -6100,6 +6101,7 @@
 ##.weather-sponsor-ad
 ##.weather_ad
 ##.weatherad
+##.web_ads
 ##.webpart-wrap-advert
 ##.website-ad-space
 ##.well-ad
@@ -14544,6 +14546,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /script/suurl4.php?$third-party
 /script/track?url=
 /script/ut.js?cb=$third-party
+/script/wait.php?q=$xmlhttprequest
 /scriptAnalytics.
 /script_log.
 /scriptonline.js?uin=
@@ -28805,9 +28808,9 @@ ezprice.com.tw##.col-md-3
 eztv.io##+js(abort-current-script, document.getElementById, hide_vpn)
 eztv.re,liveonscore.tv##+js(no-setTimeout-if, sadbl)
 eztv.re,pstream.net,biter.tv#$#abort-on-property-write adcashMacros
+eztv.tf,eztv.unblockit.llc,eztv.yt,ytstv.me,yts.do,yts.mx,yts.movie,yts.rs#$#abort-current-inline-script s2ss52
 eztv.tf,eztv.yt##a > img[alt="Anonymous Download"]
 eztv.tf,eztv.yt#?#tbody:-abp-contains(WARNING! Use a)
-eztv.tf,eztv.yt,yts.mx#$#abort-current-inline-script s2ss52
 eztv.yt,eztv.io##.forum_header_border_normal > tbody > tr > td[align="center"] > div[id] > div[style*="background-color:"][style*="padding-top:"]
 ezvivi.com###table1[width="336"]
 f150forum.com#?#form[method="post"][id="notices"]:has(> div.tbox > div > div.tcell:contains(Topic Sponsor))
