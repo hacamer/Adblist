@@ -1,8 +1,8 @@
-! Checksum: jqdejOjxfabgv4rLxhfQ9g
+! Checksum: OypsIJBmygoNAPICtI1NCg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.17.91
-! TimeUpdated: 2022-05-03T13:30:34+00:00
+! Version: 2.1.17.93
+! TimeUpdated: 2022-05-03T15:30:37+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7377,6 +7377,8 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+perkinelmerinformatics.com#%#//scriptlet("remove-class", "minddnd-wa-announcement-padding-top", "body")
+perkinelmerinformatics.com#$#.minddnd-wa-announcement-wrap { display: none !important; }
 muziker.si#$#body { overflow: auto !important; }
 muziker.si#$#.cookies-backdrop { display: none !important; }
 ujam.com#$#body { overflow: auto !important; padding-right: 0 !important; }
@@ -30216,7 +30218,6 @@ mindtecstore.com,profi.ru,starterstory.com##.modal-backdrop
 starterstory.com##.fixed-toc-right
 starterstory.com##.subscribe-end-article
 vm.ru##.article--subscribes
-brestcity.com###text-167
 vkusvill.ru##.VV21_Subscribe
 blurtitout.org##.postOptin
 guardiansofthegalaxy.square-enix-games.com###newsletter-subscription-2
