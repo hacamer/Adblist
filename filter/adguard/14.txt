@@ -1,8 +1,8 @@
-! Checksum: bRbjhbBgQOzG1ZWSNGWyWQ
+! Checksum: VnDjRZYBbQ3TgV8azw9sDw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.17.99
-! TimeUpdated: 2022-05-04T08:30:34+00:00
+! Version: 2.1.18.1
+! TimeUpdated: 2022-05-04T09:30:38+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -14467,7 +14467,7 @@ ombudsmanpensioenen.nl##.cookiebar-panel
 landkreis-landsberg.de,waldhaus-bier.de,barmer.de##.cookiehint
 flightradar24.com##.cookielaw-msg
 hornbach.cz,hornbach.se,hornbach.sk,schaeffler.de,bmw-motorrad.co.uk,bonus4me.7pass.de,deutschepost.de,hornbach.de,hornbach.nl,telekom.com##.cookielayer
-m.heute.at##.cookiemessage
+hss.de,m.heute.at##.cookiemessage
 fabletics.de,justfab.de##.cookienav
 arcor.de##.cookiepopup
 mitele.es##.cookies-consent
@@ -15685,7 +15685,7 @@ aniforte.de#%#//scriptlet('set-cookie', 'mnd-cookie-accepted-wwwanifortede1', '1
 moviesroom.pl,tech-room.pl#%#//scriptlet('set-cookie-reload', 'privacy', '1')
 polsatboxgo.pl,polsatgo.pl#%#//scriptlet('set-cookie', 'rodo-reminder-displayed', '1')
 polsatboxgo.pl,polsatgo.pl#%#//scriptlet('set-cookie', 'rodo-modal-displayed', '1')
-handwerk-magazin.de,augsburger-allgemeine.de,hornbach.de#%#AG_onLoad(function(){if("undefined"!=typeof localStorage)try{if(!localStorage.getItem("uc_user_interaction")){var b=new MutationObserver(function(){var a,c,d=null==(a=document.querySelector("#usercentrics-root"))?void 0:null==(c=a.shadowRoot)?void 0:c.querySelector('button[data-testid="uc-accept-all-button"]');d&&(b.disconnect(),d.click())});b.observe(document,{childList:!0,subtree:!0,attributeFilter:["style"]});setTimeout(function(){b.disconnect()},1E4)}}catch(a){}});
+einhell.de,handwerk-magazin.de,augsburger-allgemeine.de,hornbach.de#%#AG_onLoad(function(){if("undefined"!=typeof localStorage)try{if(!localStorage.getItem("uc_user_interaction")){var b=new MutationObserver(function(){var a,c,d=null==(a=document.querySelector("#usercentrics-root"))?void 0:null==(c=a.shadowRoot)?void 0:c.querySelector('button[data-testid="uc-accept-all-button"]');d&&(b.disconnect(),d.click())});b.observe(document,{childList:!0,subtree:!0,attributeFilter:["style"]});setTimeout(function(){b.disconnect()},1E4)}}catch(a){}});
 1blu.de#%#//scriptlet("set-cookie", "cookieConfig", "1")
 pandacheck.com#%#AG_onLoad(function(){if(!document.cookie.includes("cc_cookie")){var g=new MutationObserver(function(){var b=document.querySelector('.pc-cookie-modal--footer > a[role="button"]');var c=document.querySelector('.btn-link-cookie-save');b&&b.click();setTimeout(function(){ c&&c.click(); }, 300);});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
 gold.de#%#AG_onLoad(function(){if(!document.cookie.includes("cc_cookie")){var g=new MutationObserver(function(){var b=document.querySelector('#cm_secondary_btn');var c=document.querySelector('#cs_save__btn');b&&b.click();setTimeout(function(){ c&&c.click(); }, 300);});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
@@ -16094,7 +16094,7 @@ gamestar.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent-v2"))
 digitalfoundry.net#%#AG_onLoad(function(){if(-1==document.cookie.indexOf("OptanonAlertBoxClosed")){var a=new MutationObserver(function(){var b=document.querySelector(".optanon-alert-box-wrapper"),c=document.querySelector("button.accept-cookies-button");b&&c&&(a.disconnect(),c.click(),b.style="display: none !important;")});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)}});
 cdn.privacy-mgmt.com#%#AG_onLoad(function(){if(window.self!==window.top&&document.referrer.startsWith("https://www.techbook.de/")){if(!document.cookie.includes("euconsent-v2")){var g=new MutationObserver(function(){setTimeout(function(){var b=document.querySelector('button.no-children[path="\[0,1,0,0\]"]');b&&b.click();},300);setTimeout(function(){var c=document.querySelectorAll('.page-action');c[0]&&c[0].click();},300);setTimeout(function(){var d=document.querySelector('.is-checked'),f=document.querySelector('button[aria-label="Ablehnen wie ausgewählt"]');d&&d.click();f&&f.click()},800)});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}}});
 cmp.focus.de#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var g=new MutationObserver(function(){setTimeout(function(){var b=document.querySelector('button[title*="Einstellungen"]');b&&b.click();},1000);setTimeout(function() {var c = document.querySelectorAll(".is-checked"); c.forEach(function(c){c&&c.click();}); }, 800);});setTimeout(function() { var d = document.querySelector('button[title*="speichern"]'); if(d) { d.click(); } }, 800); g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},5E4)}});
-cmp.autobild.de#%#AG_onLoad(function(){var g=new MutationObserver(function(){setTimeout(function(){var b=document.querySelector('button[title*="Einstellungen"][class^="message-component"]');b&&b.click();},1E3);});setTimeout(function(){ var c=document.querySelectorAll(".page-action"); c[0]&&c[0].click(); },1E3);setTimeout(function(){ var d=document.querySelectorAll(".is-checked"); d.forEach(function(d){d.click(); }); }, 1E3);setTimeout(function(){var e=document.querySelector('button[title*="lehnen"]'); e&&e.click(); },1E3);g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)});
+cmp.bike-bild.de,cmp.autobild.de#%#AG_onLoad(function(){var g=new MutationObserver(function(){setTimeout(function(){var b=document.querySelector('button[title*="Einstellungen"][class^="message-component"]');b&&b.click();},1E3);});setTimeout(function(){ var c=document.querySelectorAll(".page-action"); c[0]&&c[0].click(); },1E3);setTimeout(function(){ var d=document.querySelectorAll(".is-checked"); d.forEach(function(d){d.click(); }); }, 1E3);setTimeout(function(){var e=document.querySelector('button[title*="lehnen"]'); e&&e.click(); },1E3);g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)});
 cmp.chip.de#%#AG_onLoad(function(){var g=new MutationObserver(function(){setTimeout(function(){var b=document.querySelector('button[title*="Einstellungen"][class^="message-component"]');b&&b.click();},1E3);});setTimeout(function(){ var c=document.querySelectorAll(".page-action"); c[0]&&c[0].click(); },1E3);setTimeout(function(){ var d=document.querySelectorAll(".is-checked"); d.forEach(function(d){d.click(); }); }, 1E3);setTimeout(function(){var e=document.querySelector('button[title*="speichern"]'); e&&e.click(); },1E3);g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)});
 wetransfer.com#%#AG_onLoad(function() { var a=new MutationObserver(function() {var e=document.querySelector(".welcome__button--decline");if(e) {e.click();a.disconnect()}});a.observe(document,{childList:!0,subtree:!0});});
 wetransfer.com#%#AG_onLoad(function() { var a=new MutationObserver(function() {var e=document.querySelector(".transfer__button");if(e) {e.click();a.disconnect()}});a.observe(document,{childList:!0,subtree:!0});});
@@ -16408,6 +16408,8 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/117287
+@@||ap*.usercentrics.eu^$domain=einhell.de
 ! https://github.com/AdguardTeam/AdguardFilters/issues/117027
 muziker.si#@#.cookies-box
 ! https://github.com/AdguardTeam/AdguardFilters/issues/117208
@@ -23773,7 +23775,6 @@ banki.ru##.l7e6a58f5
 transport-publiczny.pl,rynekinfrastruktury.pl,rynek-lotniczy.pl##.szerokosc > div[style^="float:"] > .popupModal
 transport-publiczny.pl,rynekinfrastruktury.pl,rynek-lotniczy.pl##.szerokosc > div[style^="float:"] > .popupElement
 subaruturkiyeforum.com###pencere
-dev.by##.mailing-subscription
 inc.com##.newsletterBar
 dns-shop.ru##.quick-opinion
 klikmanga.com##body > .mtsnb-shown
@@ -29348,6 +29349,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+||lightboxcdn.com/vendor/$domain=deadline.com
 novayagazeta.ru##div[class^="SubscriptionInformer_root__"]
 daily.afisha.ru##.news-footer
 finanznachrichten.de##.modal-scrollable
