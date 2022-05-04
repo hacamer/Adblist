@@ -1,8 +1,8 @@
-! Checksum: TeWhUH0hVWbY89UznAMNOg
+! Checksum: BO9SXKjGwD2FhTE7/wZFDA
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.0.60.95
-! TimeUpdated: 2022-05-04T17:31:24+00:00
+! Version: 2.0.60.96
+! TimeUpdated: 2022-05-04T18:31:27+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1153,9 +1153,14 @@ phys-kids.com#?##oframeplayer > pjsdiv[style*="position: absolute"][style*="opac
 hdreactor.club,hdreactor.su,hdreactor.tv,hdreactor.net#?#.sidebar > div.menu-head:contains(Наша Группа ВК)
 hdreactor.club,hdreactor.su,hdreactor.tv,hdreactor.net#?#.sidebar > div.menu-head:contains(Наша Группа ВК) + div.menu-head1
 !
+!
+!+ PLATFORM(android, ios)
+j-cast.com#?##entry-content > div.align-justify:has(> div.align-inner-box > div.entry-share-btns)
+!
 ichip.ru#?#.article-action
 1000.menu#?#.share-box
 jbbs.seesaa.net#?#.bookmark > .sns_box
+!
 !+ PLATFORM(android, ios)
 gurugurulog.com#?#.content > nav.section-box > ul.article-button > li.article-twitter:upward(2)
 !+ PLATFORM(android, ios)
