@@ -1,8 +1,8 @@
-! Checksum: YDs8VupbrIwwcKqLnnz2vA
+! Checksum: Ljh0fC+/6RSwYEgcOwK3gg
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.0.60.89
-! TimeUpdated: 2022-05-04T10:31:30+00:00
+! Version: 2.0.60.90
+! TimeUpdated: 2022-05-04T12:31:26+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -357,7 +357,8 @@ lj_bookmarklet
 ! Good: example.org#?#main > div.row:has(> div.ad)
 ! Bad: example.org##main > div.ad (should be in specific.txt)
 !
-meduza.global.ssl.fastly.net,meduza.io#?#ul[class^="Toolbar-module_list_"] > li[class^="Toolbar-module_item_"]:if-not(> button[data-testid="toolbar-button"] > span[class^="ToolbarButton-module_text"]:contains(/Напишите нам|Add to bookmarks/))
+gu-global.com#?#.wuegps-0 > span:contains(シェアする：)
+meduza.global.ssl.fastly.net,meduza.io#?#div[data-testid] > ul[class^="Toolbar-module_list_"]:has(> li[class^="Toolbar-module_item_"] > button[data-testid="toolbar-button"] > span[class^="ToolbarButton-module_text"]:contains(/Telegram|Телеграм/))
 apexlegends-leaksnews.com#?#.cps-post-main > h2:contains(記事のシェアはこちら)
 sonre.ru#?#.single-content > .single-top:has(> .single-top-social)
 coder.com#?#a[title^="Share on"]:upward(1)
