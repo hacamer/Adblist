@@ -1,8 +1,8 @@
-! Checksum: ogkcwcDHvNNxnmocsuovBA
+! Checksum: bRbjhbBgQOzG1ZWSNGWyWQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.17.97
-! TimeUpdated: 2022-05-04T06:30:35+00:00
+! Version: 2.1.17.99
+! TimeUpdated: 2022-05-04T08:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -8274,7 +8274,6 @@ askona.ru##.cookie-data-warning
 androidsis.com##.machete_cookie_container
 mts.by##.panel-cookie
 e-news.world##div#ecl-notice
-downloadfreecourse.com###consent
 soshace.com##.gdpr-modal
 doremizone.com##.g-cookies
 leouve.com.br###alert-privacy-policy
@@ -13029,7 +13028,7 @@ codemasters.com,dirt4game.com###codemasters_cookies
 nokiantyres.com.tr,kondis.no###coiConsentBanner
 isbank.co.uk,maximiles.com.tr,isbank.com.tr###cokieCover
 stadtfeste-in-deutschland.de###cono
-interhome.de,techonthenet.com,ncalculators.com,editpad.org,katho-nrw.de,fiyatgrafik.com,gartenprofi.net,alibre.info,fisglobal.com,delamar.de,gnosis.io,anyclip.com,manybooks.net,cardzmania.com,netzwelt.de,antarestech.com,nperf.com,notebookinfo.de,telefuel.com,alarabiya.net,dijnet.hu###consent
+diehumanisten.de,downloadfreecourse.com,interhome.de,techonthenet.com,ncalculators.com,editpad.org,katho-nrw.de,fiyatgrafik.com,gartenprofi.net,alibre.info,fisglobal.com,delamar.de,gnosis.io,anyclip.com,manybooks.net,cardzmania.com,netzwelt.de,antarestech.com,nperf.com,notebookinfo.de,telefuel.com,alarabiya.net,dijnet.hu###consent
 youtube.com###consent-bump
 revouninstaller.com###consentAccepted
 ebay-kleinanzeigen.de,mobile.de,nordic.businessinsider.com###consentBanner
@@ -15445,6 +15444,7 @@ privacy.lecker.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent
 privacy.madame.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent-v2")){var g=new MutationObserver(function(){setTimeout(function(){var b=document.querySelector('button.no-children[path="\[0,2,1\]"]');b&&b.click();},300);setTimeout(function(){var c=document.querySelector('div[title="Berechtigte Interessen"]'); c&&c.click();},300);setTimeout(function(){var d=document.querySelectorAll('label[aria-checked="true"] > .off'); d.forEach(function(d){d.click();});},800); var f=document.querySelector('button.no-children[path="\[0,3,0\]"]'); setTimeout(function(){f&&f.click();},1000);});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},3E4)}});
 consent.ladbible.com,consent.gamingbible.co.uk,consent.unilad.co.uk#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var g=new MutationObserver(function(){var b=document.querySelector('button[title*="Accept" i]');b&&(g.disconnect(),b.click())});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
 !
+kayak.de#%#AG_onLoad(function(){if(!window.location.href.includes('consent')){var b=new MutationObserver(function(){var a=document.querySelector('div[class$="-footer"] > span[class$="-decline"] > button');a&&a.click()});b.observe(document,{childList:!0,subtree:!0});setTimeout(function(){b.disconnect()},1E4)}});
 volksfreund.de#%#AG_onLoad(function(){var a=new MutationObserver(function(){var b=document.querySelector('#consentAccept');b&&(a.disconnect(),b.click())});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)});
 derstandard.at,derstandard.de#%#AG_onLoad(function(){var a=new MutationObserver(function(){var b=document.querySelector('button[title="Einverstanden"]');b&&(a.disconnect(),b.click())});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)});
 youmath.it#%#AG_onLoad(function(){var a=new MutationObserver(function(){var b=document.querySelector('#pt-actions > button + button');b&&(a.disconnect(),b.click())});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)});
@@ -19094,6 +19094,7 @@ k-jz.com###app_guide
 m.facebook.com##div[data-type="vscroller"] > div[style="margin-top:5px; height:167px; z-index:0; width:360px;"][data-mcomponent="MContainer"][data-tti-phase]
 storm.mg#%#//scriptlet("set-cookie", "app_download_banner", "true")
 storm.mg###floating_bottom_ad
+fril.jp##.mainVisual
 tw.yahoo.com#$#body { overflow: auto !important; }
 tw.yahoo.com#$#.lastAppPromotionTime { display: none !important; }
 tw.yahoo.com###module-appPromoBanner
@@ -28452,6 +28453,8 @@ shopping.dmkt-sp.jp##.floating-banner
 dev.classmethod.jp##.footer-banner
 tunelf.com##.article-product-block
 wionews.com##.zee-points-items
+fril.jp###mkdiv_header_pitari
+fril.jp##.campaignBanners
 content.techgig.com##.topbanner_tg_inner
 content.techgig.com##.tg-clients-banners-rhs
 ||znetlive.com/*/flash-banner-2.gif
@@ -29345,6 +29348,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+novayagazeta.ru##div[class^="SubscriptionInformer_root__"]
 daily.afisha.ru##.news-footer
 finanznachrichten.de##.modal-scrollable
 finanznachrichten.de##.modal-scrollable + div.modal-backdrop

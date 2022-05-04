@@ -1,8 +1,8 @@
-! Checksum: clMZHjEM5/ImhPm9SumBsw
+! Checksum: RL7QCEOncW82Nh35sFPLCg
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.39.12
-! TimeUpdated: 2022-05-03T18:31:25+00:00
+! Version: 2.0.39.13
+! TimeUpdated: 2022-05-04T08:31:19+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -20295,9 +20295,10 @@ _tracking.php?b=
 !
 /analytics.js$domain=freexcafe.com|rusvideos.tv|nakubani.ru|lun.com|songsara.net|newsmax.com|bolgehastanesi.com|ewtc.de
 !
-||rcontent.services.tvn.pl/gstream.js
-||rcontent.services.tvn.pl/gemiuslib.js
-||rcontent.services.tvn.pl/fpdata.js
+||services.tvn.pl/maertsg.js
+||services.tvn.pl/gstream.js
+||services.tvn.pl/gemiuslib.js
+||services.tvn.pl/fpdata.js
 ||websiteplanet.com/wp-content/themes/websiteplanet/js/header-footer.js
 ||cheaptickets.com/cl/2x2.gif?
 ||portalcms.bm5.pl/Stat/statystyki.aspx
@@ -24319,6 +24320,12 @@ $app=com.miui.analytics
 ||monitor.uu.qq.com/analytics/
 ! Google News
 ||play.google.com/newsstand/api/*/people/me/analytics^
+! SafeGraph tracking URL
+! References:
+! https://github.com/aapiro/openlocate-android
+! https://reports.exodus-privacy.eu.org/en/trackers/44/
+! https://www.vice.com/en/article/m7vzjb/location-data-abortion-clinics-safegraph-planned-parenthood
+||api.safegraph.com^
 !-------------------------------------------------------------------------------!
 !-------------- Mobile analytics exceptions  -----------------------------------!
 !-------------------------------------------------------------------------------!
@@ -24417,6 +24424,8 @@ $app=com.miui.analytics
 ! For platforms which do not support $redirect rules
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/117187
+||p.typekit.net/*.css$stylesheet,redirect-rule=noopcss,domain=burnabyvillagemuseum.ca
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116955
 @@||tm.jsuol.com.br/uoltm.js$domain=hugogloss.uol.com.br
 ! https://github.com/AdguardTeam/AdguardForWindows/issues/4138
