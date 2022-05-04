@@ -1,8 +1,8 @@
-! Checksum: 0Yx0PEq6y9Ii5hIIsPxlyQ
+! Checksum: GJ5Rrv5I90Yx2Sc569rFuw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.18.6
-! TimeUpdated: 2022-05-04T13:30:37+00:00
+! Version: 2.1.18.8
+! TimeUpdated: 2022-05-04T15:30:35+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -14749,6 +14749,7 @@ obi-de.app.baqend.com,obi.de#$#.colorbox-cookiepolicy { position: absolute !impo
 ! https://github.com/AdguardTeam/AdguardFilters/issues/83583
 ! Website is broken if "display: none" is used - ##div[class*="ConsentBannerstyles_"]
 xe.com#$#div[class*="ConsentBannerstyles_"] { position: absolute !important; left: -3000px !important; }
+accounts.xe.com#$#body > div#cookieBannerContainer > * { position: absolute !important; left: -3000px !important; }
 !
 ! https://github.com/AdguardTeam/AdguardFilters/issues/81056
 ||consent.gameforge.com/cookiebanner.js$important
@@ -21024,6 +21025,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+convertio.co##.rate-us
 s.cinemacafe.net###danglingList
 popmech.ru##.app-popups
 item.rakuten.co.jp###floatingCartContainer
@@ -21393,7 +21395,6 @@ aliexpress.com##.drogue-poplayer-modal
 campify.jp##.cv-fixed
 globalknowledge.com##.site-banner-message
 downza.cn##.fixed_btn_box
-cuevana3.io###mdl-ads
 mine.toyokeizai.net#$#.free-modal { display: none!important; }
 mine.toyokeizai.net#$#.is-scroll-disabled { overflow: auto!important; }
 kanaloco.jp###rt_popup
@@ -29363,6 +29364,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+ctnews.ru##.goto_news__block
 i-ua.tv##.tm-article a[href="https://t.me/iuatv"]
 digitalocean.com#?#div[class^="ToastStyles__StyledWrapper"]:has(> div[class^="NewsletterToastStyle__NewsletterText"])
 insider.com##.multi-newsletter-signup
@@ -31395,7 +31397,6 @@ minhaoperadora.com.br##.sidebar > div#custom_html-39
 mywot.com##div[data-automation="floating-add-wot"]
 pnas.org##.signup-for-alerts
 lastpass.com##.marketo-wrap
-cuevana3.io###mdl-help
 lanacion.com.ar##.mod-newsletter
 psyjournal.ru##.block-webform
 minhaoperadora.com.br##.minha-conteudo
