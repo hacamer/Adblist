@@ -1,8 +1,8 @@
-! Checksum: c6jAR/5I3gYKpfFINnNd+Q
+! Checksum: 5qFUW1quWCdsBzeaZcrREw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.18.16
-! TimeUpdated: 2022-05-05T06:30:35+00:00
+! Version: 2.1.18.18
+! TimeUpdated: 2022-05-05T08:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7381,6 +7381,9 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+realt.by##.gdpr-confirmation
+focustaiwan.tw###jsGDPR
+komchadluek.net###accept-cookie-footer
 deutschestheater.de##.dataprotection
 webfleet.com#$##cookieconsent { display: none!important; }
 webfleet.com#$#body { overflow: auto!important; }
@@ -15416,7 +15419,7 @@ news.google.com#?#header[role="banner"] > div:has(> div > div > span[style="colo
 wakacje.pl#?##__next > div[class^="sc-"] > div:not([class]):not([id]) > div[class^="sc-"]:has(> div[class^="sc-"] > div[class^="sc-"] > div[class^="sc-"] > div[class^="sc-"] > p[class^="sc-"] > a[href="https://www.wakacje.pl/politykaprywatnosci.html"])
 bebeautiful.in,cif.com.tr,domestos.com,dove.com,rexona.com#?##_evidon_banner
 decathlon.hu#?##main-content-container > #container-screen:has(> #container-cookie)
-trec.pl,budujmase.pl,wylecz.to#?#body > div[id][class] > div > div > div > a#postpone-targeting-disclaimer-button:upward(4)
+vitashop.pl,trec.pl,budujmase.pl,wylecz.to#?#body > div[id][class] > div > div > div > a#postpone-targeting-disclaimer-button:upward(4)
 ~www.wp.pl,~poczta.wp.pl,wp.pl#?##app > div > table > tbody > tr:nth-child(2) > td > span > div:has(> div[class] > div[class] > a[href="http://onas.wp.pl/poufnosc.html"])
 pugski.com#?#.Panels > .Notice.DismissParent:has(> .noticeContent > .noticeCookiesContent)
 forum.gamer.com.tr#?#.p-body-inner > .notices > .notice:has(> .notice-content > a[href="/help/cookies"])
@@ -19082,6 +19085,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+realt.by#?#.row > div[class^="col-"]:has(> div.media > img[src$="/images/apps/app.png"])
 m.compuzone.co.kr##.visibleAppLyr
 m.dcinside.com#%#//scriptlet("set-constant", "setViewCount", "noopFunc")
 m.dcinside.com###app_down_pop
@@ -19508,7 +19512,6 @@ sber-zvuk.com#?#.reactRoot > div[class]:has(> div[class] > a[href*="?pid=smart_b
 pinterest.*#?#.footerButtons a[href$="dwebandroid"]:upward(.footerButtons)
 livemaster.ru##.smartbannerapp-shadow
 listenradio.jp###fancybox-wrap
-nhk.or.jp###appsbanner
 radio.net#?##__next > div > div:has(> div > div > div > a.app-banner-btn)
 shabdkosh.com#?##ehresults > .row > .col-md-3 > h2.ehr:contains(/^SHABDKOSH Apps$/)
 shabdkosh.com#?##ehresults > .row > .col-md-3 > .align-items-center:has(> div > a[href*="/apps"])
@@ -20882,6 +20885,7 @@ newzit.com#$#div[class*="hasSmartBanner_"] { padding-top: 0 !important; }
 !
 ! Unhide for Android CB if top padding cannot be removed
 !
+rakuten.co.jp##div[class^="etsy-banner-"]
 kasikornbank.com###ex-app
 edh.tw###vip-banner
 lazada.co.th###smartbanner-slot
@@ -20913,6 +20917,8 @@ mega.nz##.download-app
 justwatch.com,flvto.biz##.mobile-banner
 detik.com,cnbcindonesia.com##.smartbanner_new
 temp-mail.org##.smartbanner
+!+ NOT_OPTIMIZED
+nhk.or.jp###appsbanner
 !
 ! This section contains the list of rules that block in-page popups (like banners with special offers) and floating elements.
 ! At the bottom of this file, you can find the allowlist that fixes issues caused by the rules from this file.
@@ -21036,6 +21042,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+rakuten.co.jp##[irc="SdmLogin"]
 m.compuzone.co.kr##.right_btn
 mikle.jp##div[style^="position: absolute;"][style*="z-index: 1000;"]
 hulu.jp##.sp-nav-footer
@@ -24979,7 +24986,7 @@ banki.ru##section[class^="corner-popup-module__root"]
 text.ru##.news-preview__tooltip
 t-online.de###T-ipadbubble
 inforesist.org###push_notificationBlock
-discussions.apple.com,softikbox.com,inforesist.org##.notification
+communities.apple.com,discussionskorea.apple.com,discussionschinese.apple.com,discussionsjapan.apple.com,discussions.apple.com,softikbox.com,inforesist.org##.notification
 vitaminshoppe.com###email-overlay
 vitacost.com###headerEmailSignUp
 countrylifevitamins.com##.subscribe-overlay

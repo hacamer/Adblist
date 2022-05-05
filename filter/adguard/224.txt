@@ -1,8 +1,8 @@
-! Checksum: 6qBcWJCI2nYHQUHsjvHK4Q
+! Checksum: 2BFE1//ed8lrUJU4lMtKRA
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.0.54.54
-! TimeUpdated: 2022-05-05T04:30:54+00:00
+! Version: 2.0.54.55
+! TimeUpdated: 2022-05-05T08:30:54+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -650,9 +650,10 @@ zhenbuka3.com,zhenbuka2.com,bukaivip.com#%#//scriptlet("prevent-setTimeout", "ad
 xiebruce.top#%#//scriptlet("prevent-addEventListener", "", "showRemoveAdBlocker")
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=googlesyndication-adsbygoogle,domain=xiebruce.top
 ! https://github.com/AdguardTeam/AdguardFilters/issues/90881
+ddrk.me#%#//scriptlet("set-constant", "Object.prototype.nopreroll_", "true")
 ddrk.me#@#a[href*="/kst6632.com/"]
 ddrk.me#$#a[href*="/kst6632.com/"] { pointer-events: none !important; }
-ddrk.me#$#a[href*="/kst6632.com/"] > img { width: 1px !important; }
+ddrk.me#$#a[href*="/kst6632.com/"] > img { width: 2px !important; }
 !#safari_cb_affinity(privacy)
 @@||cnzz.com/z_stat.php$domain=ddrk.me
 ||cnzz.com/z_stat.php$xmlhttprequest,script,redirect=noopjs,domain=ddrk.me,important
@@ -19629,6 +19630,8 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 ||5201314.fashion^
 ||ckiller.tech^
 ||dataose.top^
+||2pogg4c.cn^
+||qvqcfau.cn^
 ##a[href$=".120ydrayy.com"]
 ##a[href*=".1956hl.com/"]
 ##a[href*=".233787.com/"]
