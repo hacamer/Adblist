@@ -1,8 +1,8 @@
-! Checksum: t/sg5sU/dS1wlou/KvRzVQ
+! Checksum: nhRJbKlGfxJEhzg2NIknqQ
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.29.26
-! TimeUpdated: 2022-05-04T19:30:19+00:00
+! Version: 2.0.29.27
+! TimeUpdated: 2022-05-05T04:30:18+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1295,6 +1295,10 @@ westseattleblog.com#@#.header-ad
 ! Bad: example.org##main > div.ad (should be in specific.txt)
 !
 !
+t-online.de#?#main[data-testid="PageMain"] > div[class]:has(> div[class] > div[data-commercial-breakpoint])
+t-online.de#?#div[data-testid="ArticleBody.StreamLayout"] > div[class] > div[data-testid="StageLayout.StreamItem"]:has(> div[data-commercial-breakpoint])
+t-online.de#?#main > article[class] > div[class]:has(> div[data-testid^="Nativendo"])
+t-online.de#?#main > article[class] > div[class]:has(> div[data-testid^="TaboolaFeed"])
 sp.seiga.nicovideo.jp#?#header + div > div[style^="transform:"] > div > div[data-ads-name]:upward(1)
 sp.mbga.jp#?#.iListNitem > li.header:contains(ピックアップ)
 9gag.com#?#.post-container > div[id^="stream"] > .post-cell:has(> header > .post-top > .post-section > a[href^="https://9gag.com/advertise?"])
@@ -2481,6 +2485,7 @@ scmp.com,theinventory.com,avclub.com,clickhole.com,deadspin.com,gizmodo.com,jalo
 ! ##.ads
 cartoonpornvideos.com,m.economictimes.com,beethovenmaster.com,m.mistrzowie.org,m.ura.news,siirtpress.com,up.ymgt.xyz,google.de,www-bento-de.cdn.ampproject.org,m-economictimes-com.cdn.ampproject.org,m.winfuture.de##.ads
 !
+t-online.de##section[data-stage-layout^="custom_sdi_banner"]
 ||m.sxnarod.com/newrek/bng_mb_bn.html
 localgymsandfitness.com##center[style="min-height:100px"]
 mapfan.com##.bottom-ad-mobile
