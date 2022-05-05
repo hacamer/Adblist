@@ -1,8 +1,8 @@
-! Checksum: 8o34XOgMXwvHTACZNi2klA
+! Checksum: AAHDZ+ajAnv/vyxz2Hjhqw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.18.14
-! TimeUpdated: 2022-05-04T20:30:34+00:00
+! Version: 2.1.18.15
+! TimeUpdated: 2022-05-05T03:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -10760,7 +10760,6 @@ att.com##.cookie-disclaimer-component
 online.sberbank.ru##footer div + div:contains(Cookies)
 merckgroup.com##.new-cookie__modal
 oyuncubey.com##.noat-cookie__consent
-mobile.facebook.com#@#div[data-sigil$="m-layer-root"][class$="accelerate"]:has(> div[data-sigil$="m-overlay-layer"] a[data-cookiebanner="accept_button"])
 jetbrains.com##.alertContainer_c7b
 jetbrains.com###legal-user-acceptance-plugins
 pluto.tv##body > div[role="presentation"][style^="position: fixed; z-index:"]
@@ -14862,6 +14861,7 @@ qastack.it#$##cookies-consent ~ div.modal-backdrop { display: none !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/103494
 ! On facebookcareers.com remove-class cannot be used, because
 ! it breaks search function (it's incorrectly displayed when class "_31e" is removed)
+facebook.com#%#AG_onLoad(function(){if(-1==document.cookie.indexOf("datr")){var a=new MutationObserver(function(){document.querySelectorAll('div[class]:not([aria-hidden]) > div[aria-label*="cookie" i][role="button"]').forEach(function(b,c,d){0!==c&&null!==b.offsetParent&&(a.disconnect(),b.click())})});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)}});
 facebookcareers.com#$#body.hasCookieBanner > ._li._31e { position: sticky !important; }
 facebookcareers.com,messenger.com,facebook.com#$#div[data-testid="cookie-policy-dialog"] { display: none !important; }
 messenger.com,facebook.com#$#div[data-testid="cookie-policy-manage-dialog"] { display: none !important; }
@@ -16421,6 +16421,8 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! mobile.facebook.com - rule move from specific
+mobile.facebook.com#@#div[data-sigil$="m-layer-root"][class$="accelerate"]:has(> div[data-sigil$="m-overlay-layer"] a[data-cookiebanner="accept_button"])
 ! https://github.com/AdguardTeam/AdguardFilters/issues/117379
 webfleet.com#@##cookieconsent
 ! https://github.com/AdguardTeam/AdguardFilters/issues/117287
