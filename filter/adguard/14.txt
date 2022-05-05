@@ -1,8 +1,8 @@
-! Checksum: AAHDZ+ajAnv/vyxz2Hjhqw
+! Checksum: c6jAR/5I3gYKpfFINnNd+Q
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.18.15
-! TimeUpdated: 2022-05-05T03:30:34+00:00
+! Version: 2.1.18.16
+! TimeUpdated: 2022-05-05T06:30:35+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -19082,6 +19082,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+m.compuzone.co.kr##.visibleAppLyr
 m.dcinside.com#%#//scriptlet("set-constant", "setViewCount", "noopFunc")
 m.dcinside.com###app_down_pop
 1090ys8.com##a[href="http://1090app.com/"]
@@ -21035,6 +21036,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+m.compuzone.co.kr##.right_btn
 mikle.jp##div[style^="position: absolute;"][style*="z-index: 1000;"]
 hulu.jp##.sp-nav-footer
 websiteplanet.com###ctrl-d-popup
@@ -33560,8 +33562,9 @@ za.gl,za.uy#%#//scriptlet("adjust-setInterval", "timeCount", "*", "0.2")
 za.gl,za.uy#%#AG_onLoad(function(){if(document.querySelector(".progress-container")){var a=setInterval(function(){if(window.finalLink&&"string"===typeof finalLink&&finalLink.startsWith("http"))try{clearInterval(a),location.assign(finalLink)}catch(b){}},1E3);setTimeout(function(){clearInterval(a)},1E4)}});
 ! https://github.com/AdguardTeam/AdguardFilters/issues/108189
 egyshare.cc#%#//scriptlet("adjust-setTimeout", "TheLink", "", "0.02")
+! https://github.com/AdguardTeam/AdguardFilters/issues/117565
 ! https://github.com/AdguardTeam/AdguardFilters/issues/78304
-bildirim.eu#%#//scriptlet("set-constant", "Notification", "undefined")
+bildirim.*#%#//scriptlet("set-constant", "Notification", "undefined")
 ! https://github.com/uBlockOrigin/uAssets/issues/11443#issuecomment-1020980034
 apkadmin.com#%#//scriptlet('remove-attr', 'disabled', '#downloadbtn')
 apkadmin.com#$##countdown { display: none !important; }
