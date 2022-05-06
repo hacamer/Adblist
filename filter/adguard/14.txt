@@ -1,8 +1,8 @@
-! Checksum: IDh+Yy3u1o/2M4oWe+CNgg
+! Checksum: 62YL41q7a0u/ascoOEznew
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.18.33
-! TimeUpdated: 2022-05-06T06:30:37+00:00
+! Version: 2.1.18.35
+! TimeUpdated: 2022-05-06T08:30:35+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -15663,7 +15663,7 @@ kvk.nl#%#//scriptlet("set-cookie", "allowTrackingCookiesKvK", "1")
 theartnewspaper.com#%#document.cookie = "USE_COOKIE_CONSENT_STATE={%22session%22:false%2C%22persistent%22:false%2C%22necessary%22:true%2C%22preferences%22:false%2C%22statistics%22:false%2C%22marketing%22:false%2C%22firstParty%22:false%2C%22thirdParty%22:false}; path=/;";
 xd2sketch.com#%#//scriptlet("set-cookie", "xd2sketch_cookies_accepted", "true")
 avocode.com#%#//scriptlet('set-cookie', 'avokie', 'no')
-automoto.it,atlantico.fr,movieplayer.it#%#AG_onLoad(function(){if(-1==document.cookie.indexOf("euconsent-v2")){var a=new MutationObserver(function(){var b=!1,c=document.querySelector("button.iubenda-cs-close-btn");c&&(c.click(),b=!0);null===document.querySelector("button.iubenda-cs-close-btn")&&b&&a.disconnect()});a.observe(document,{childList:!0,subtree:!0,attributes:!0});setTimeout(function(){a.disconnect()},1E4)}});
+moto.it,automoto.it,atlantico.fr,movieplayer.it#%#AG_onLoad(function(){if(-1==document.cookie.indexOf("euconsent-v2")){var a=new MutationObserver(function(){var b=!1,c=document.querySelector("button.iubenda-cs-close-btn");c&&(c.click(),b=!0);null===document.querySelector("button.iubenda-cs-close-btn")&&b&&a.disconnect()});a.observe(document,{childList:!0,subtree:!0,attributes:!0});setTimeout(function(){a.disconnect()},1E4)}});
 veriff.com#%#AG_onLoad(function() {var b=new MutationObserver(function() {var c=document.querySelector('div[class^="CookiePopup__ButtonWrapper-"] > a + a'); c&&(b.disconnect(),c.click()) });b.observe(document, {childList: !0,subtree: !0});setTimeout(function() {b.disconnect()}, 1E4)});
 cdn.privacy-mgmt.com#%#AG_onLoad(function(){if(window.self!==window.top&&document.referrer.startsWith("https://ze.tt/")){var a=new MutationObserver(function(){var b=document.querySelector('button.message-button[title="Allen zustimmen"]');b&&(a.disconnect(),b.click())});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)}});
 canva.com#%#(function(){-1==document.cookie.indexOf("CTC")&&document.location.hostname.includes("canva.com")&&(document.cookie="CTC=eyJBIjowLCJCIjowLCJEIjpmYWxzZSwiRSI6dHJ1ZSwiRiI6ZmFsc2UsIkciOmZhbHNlLCJIIjpmYWxzZX0=; path=/;",location.reload())})();
@@ -16445,6 +16445,9 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/117686
+moto.it#@##iubenda-cs-banner
+@@||iubenda.com^$script,xmlhttprequest,domain=moto.it
 ! mobile.facebook.com - rule move from specific
 mobile.facebook.com#@#div[data-sigil$="m-layer-root"][class$="accelerate"]:has(> div[data-sigil$="m-overlay-layer"] a[data-cookiebanner="accept_button"])
 ! https://github.com/AdguardTeam/AdguardFilters/issues/117379
@@ -29416,6 +29419,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+ukr.media##.push_btn
 valentins.de###modalwrapper
 valentins.de##.modal-backdrop
 peopletalk.ru##.only-mobile
@@ -33500,6 +33504,8 @@ newsweek.com##iframe[src="http://sns.europe.newsweek.com/newsletter?popup=1"]
 !######### JS tweaks ##########
 !##############################
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/117699
+technicalatg.com#%#//scriptlet("adjust-setInterval", "wpsafe-", "*", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/117646
 redirect.dafontvn.com#%#//scriptlet("adjust-setInterval", "#countdown", "", "0.02")
 redirect.dafontvn.com#%#//scriptlet("adjust-setInterval", "progressbar", "30", "0.02")
@@ -33567,8 +33573,8 @@ insurglobal.xyz#%#//scriptlet("adjust-setInterval", "yuidea-", "*", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/111791
 ! https://github.com/AdguardTeam/AdguardFilters/issues/111673
 ! https://github.com/AdguardTeam/AdguardFilters/issues/111471
-gaminplay.com,choiceappstore.xyz,pn.cgchotbox.com,worldappsstore.xyz,gifans.com,iptvjournal.com,kienthucrangmieng.com,coin-free.com,moddingzone.in,insurance-space.xyz,blognews.in,noithatmyphu.vn,dulichkhanhhoa.net,therootdroid.com#%#//scriptlet("adjust-setInterval", "wpsafe-", "*", "0.02")
-gaminplay.com,choiceappstore.xyz,educationat.xyz,pn.cgchotbox.com,worldappsstore.xyz,tudaydeals.com,toolss.net,7apple.net,gifans.com,iptvjournal.com,kienthucrangmieng.com,coin-free.com,moddingzone.in,insurance-space.xyz,games.blog-forall.com,techydino.net,rajsayt.xyz,jaunpurmusic.info,blognews.in,informaxonline.com,gaminplay.com,noithatmyphu.vn,dulichkhanhhoa.net,paidappstore.xyz,therootdroid.com#%#AG_onLoad(function(){try{var a=document.querySelector('form > input[name="newwpsafelink"]');if(a){var b,c=null==(b=JSON.parse(atob(a.value)))?void 0:b.linkr;if(c){var d=JSON.parse(atob(c.split("?safelink_redirect=")[1]));location.assign(decodeURIComponent(null==d?void 0:d.safelink))}}}catch(e){}});
+apkmaven.com,gaminplay.com,choiceappstore.xyz,pn.cgchotbox.com,worldappsstore.xyz,gifans.com,iptvjournal.com,kienthucrangmieng.com,coin-free.com,moddingzone.in,insurance-space.xyz,blognews.in,noithatmyphu.vn,dulichkhanhhoa.net,therootdroid.com#%#//scriptlet("adjust-setInterval", "wpsafe-", "*", "0.02")
+apkmaven.com,gaminplay.com,choiceappstore.xyz,educationat.xyz,pn.cgchotbox.com,worldappsstore.xyz,tudaydeals.com,toolss.net,7apple.net,gifans.com,iptvjournal.com,kienthucrangmieng.com,coin-free.com,moddingzone.in,insurance-space.xyz,games.blog-forall.com,techydino.net,rajsayt.xyz,jaunpurmusic.info,blognews.in,informaxonline.com,gaminplay.com,noithatmyphu.vn,dulichkhanhhoa.net,paidappstore.xyz,therootdroid.com#%#AG_onLoad(function(){try{var a=document.querySelector('form > input[name="newwpsafelink"]');if(a){var b,c=null==(b=JSON.parse(atob(a.value)))?void 0:b.linkr;if(c){var d=JSON.parse(atob(c.split("?safelink_redirect=")[1]));location.assign(decodeURIComponent(null==d?void 0:d.safelink))}}}catch(e){}});
 ! https://github.com/AdguardTeam/AdguardFilters/issues/111705
 technoashwath.com#%#//scriptlet("adjust-setTimeout", "/waiting|\.classList\.remove|gotoo/", "*", "0.02")
 technoashwath.com#%#!function(){if(-1<location.href.indexOf("?data=aHR0c")){var a=(new URL(window.location.href)).searchParams.get("data");if(a)try{window.location.assign(atob(a))}catch(b){}}}();
