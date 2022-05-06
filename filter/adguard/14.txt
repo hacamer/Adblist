@@ -1,8 +1,8 @@
-! Checksum: owISfBTBtNFx55vxCprrCg
+! Checksum: HxMrePzXw+phHv5VnpIGIQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.18.43
-! TimeUpdated: 2022-05-06T14:20:48+00:00
+! Version: 2.1.18.44
+! TimeUpdated: 2022-05-06T15:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -92,6 +92,8 @@
 ! https://github.com/AdguardTeam/AdguardFilters/issues/76987
 youtube.com#%#AG_onLoad(function() {var a = new MutationObserver(function() {if (document.querySelector('yt-upsell-dialog-renderer')) {var b = document.querySelector('.ytd-popup-container[popup-size="UPSELL_DIALOG_RENDERER_POPUP_SIZE_LARGE"] #dismiss-button:not(.dismissed), .upsell-dialog-lightbox .upsell-dialog-dismiss-button button:not(.dismissed)');setTimeout(function() {b&&b.click()}, 3E2)}});a.observe(document, {childList: !0,subtree: !0});setTimeout(function() {a.disconnect()}, 3E3)});
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/117432
+cureco.jp##object[width="640"][height="480"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116423
 ||player.cnevids.com^$domain=wired.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116397
@@ -19116,6 +19118,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+apnews.com##div[class*="appDownload-"]
 aol.com##.m-promo-standard
 theriver.jp##div[class^="app-banner"]
 realt.by#?#.row > div[class^="col-"]:has(> div.media > img[src$="/images/apps/app.png"])
@@ -21075,6 +21078,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+r.gnavi.co.jp##.js-appealPointToast
 musical1.de###so_overlay
 musical1.de##.so_main_div_center
 economist.com##.article-audio-player__center-tooltip
@@ -28530,6 +28534,8 @@ experts-exchange.com##.ctaSolutionStickyWrapper
 theguardian.com##.contributions__adblock
 ||contributions.guardianapis.com^
 !
+goo.ne.jp##.header-blow
+keirin.netkeiba.com##.HeadBnrBox
 online2pdf.com##.side_bar #advertising_outer_vertical + div[style^="line-height: 1.5em; text-align: center;"]
 utaten.com##main > center > div[style^="min-height: 180px;"]
 edureka.co##.blog-content > div.cr-group-tr-cs-carousal
