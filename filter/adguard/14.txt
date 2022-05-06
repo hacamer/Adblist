@@ -1,8 +1,8 @@
-! Checksum: /zY+nxZKLbxYE6cf4rDXZA
+! Checksum: gQxuTOk8KTPxI2lSAaRu8w
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.18.38
-! TimeUpdated: 2022-05-06T10:30:37+00:00
+! Version: 2.1.18.40
+! TimeUpdated: 2022-05-06T12:30:44+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7381,6 +7381,10 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+softwarenetz.de###grayout[onclick="cookieCancel();"]
+aldi-blumen.de#$##cookie_modal_container { display: none !important; }
+aldi-blumen.de#$#body { overflow: auto !important; }
+aromatico.com##.page-wrap--cookie-permission ~ div.js--overlay
 video.corriere.it###_cpmt-iframe
 techsauce.co##.cwc-sdk-container
 thaiza.com##.ck-acpt-container
@@ -10419,7 +10423,7 @@ bbc.co.uk##div[class*="-ConsentBanner"]
 about.wetransfer.com###tos-banner
 kadinlarbilir.com###root > button[class*="_StyledCookieConsentButton-"]
 wirkaufendeinauto.de###cookie-text-banner
-tractive.com,freshbooks.com##.banner-cookie-consent
+funpay.com,tractive.com,freshbooks.com##.banner-cookie-consent
 perthnow.com.au,7news.com.au##.cookie-consent--normal
 stripe.com##.Notification[data-js-id="CookieSettingsNotification"]
 sberdisk.ru##.wrapper > footer + div.modal
@@ -15713,7 +15717,7 @@ infranken.de#%#AG_onLoad(function() {var b=new MutationObserver(function() {var 
 inselradio.com#%#//scriptlet('set-cookie', 'irCookieConsent', '3')
 norwegian.com#%#document.cookie="_nasStorageConsent=all=False&analysis=False&marketing=False&v=1; path=/";
 latam.com#%#//scriptlet("set-cookie", "consentCookies", "true")
-atman.pl,zoonews.pl,drohnen.de#%#//scriptlet('set-cookie', 'viewed_cookie_policy', 'yes')
+uhrig-bau.eu,atman.pl,zoonews.pl,drohnen.de#%#//scriptlet('set-cookie', 'viewed_cookie_policy', 'yes')
 aniforte.de#%#//scriptlet('set-cookie', 'mnd-cookie-accepted-wwwanifortede1', '1')
 moviesroom.pl,tech-room.pl#%#//scriptlet('set-cookie-reload', 'privacy', '1')
 polsatboxgo.pl,polsatgo.pl#%#//scriptlet('set-cookie', 'rodo-reminder-displayed', '1')
@@ -16445,6 +16449,8 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/117658
+aldi-blumen.de#@##cookie-note
 ! https://github.com/AdguardTeam/AdguardFilters/issues/117686
 moto.it#@##iubenda-cs-banner
 @@||iubenda.com^$script,xmlhttprequest,domain=moto.it
@@ -19110,6 +19116,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
 aol.com##.m-promo-standard
+theriver.jp##div[class^="app-banner"]
 realt.by#?#.row > div[class^="col-"]:has(> div.media > img[src$="/images/apps/app.png"])
 m.compuzone.co.kr##.visibleAppLyr
 m.dcinside.com#%#//scriptlet("set-constant", "setViewCount", "noopFunc")
@@ -27249,6 +27256,8 @@ disk.yandex.*##.mail360-banner
 @@||yastatic.net/daas/atom.js$domain=mail.yandex.by|mail.yandex.kz|mail.yandex.ru|mail.yandex.ua|mail.yandex.com|mail.yandex.com.tr
 !-----------------------------------------------
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/117762
+m.jbzd.com.pl##.footer-mobile
 ! promo banners
 nicovideo.jp##.SpecialPickupBannerContainer
 sp.nicovideo.jp##.top-SpecialPickupContainer
@@ -34980,7 +34989,7 @@ m.webtoons.com#%#AG_onLoad(function() {var g = new MutationObserver(function() {
 estadao.com.br,atribuna.com.br,braziljournal.com,revistapesquisa.fapesp.br,migalhas.com.br#%#//scriptlet("prevent-addEventListener", "copy", "event")
 tweaktown.com#%#//scriptlet("prevent-addEventListener", "copy", "bypassEventsInProxies")
 toptoon.com#%#//scriptlet('abort-current-inline-script', 'window.oncontextmenu')
-forbes.com.br,abril.com.br#%#//scriptlet('prevent-addEventListener', 'copy', 'event.clipboardData.setData')
+brasilescola.uol.com.br,forbes.com.br,abril.com.br#%#//scriptlet('prevent-addEventListener', 'copy', 'event.clipboardData.setData')
 novelpia.com#%#//scriptlet('remove-attr', 'oncontextmenu|onselectstart|ondragstart|onkeydown|ondrop', '.no-drag')
 pressian.com#%#//scriptlet('abort-current-inline-script', 'window.addEventListener', 'copy')
 sedaily.com#%#//scriptlet('set-constant', 'NewsSource.addSource', 'noopFunc')
