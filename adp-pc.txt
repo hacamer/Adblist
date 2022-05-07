@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: 2fsAafTtJlFT18ny5UNcLA
+! Checksum: pEiVLWXsg3Okqj9AbbmsuA
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202205071529
-! Last Modified: 2022年05月07日 15:29
+! Version: 202205071637
+! Last Modified: 2022年05月07日 16:37
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 86002
+! Total count: 86016
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -3609,6 +3609,7 @@
 ##.advert_label
 ##.advert_list
 ##.advert_nav
+##.advert_pos
 ##.advert_text
 ##.advert_top
 ##.advert_wrapper
@@ -6994,6 +6995,7 @@
 ##iframe[src*=".xxmh"][src*="?u="]
 ##iframe[src*=".xxmh891.com/"]
 ##iframe[src^="//tempest.services.disqus.com/ads-iframe/"]
+##iframe[src^="http://www.adpeepshosted.com/adpeeps.php?"]
 ##iframe[src^="https://pagead2.googlesyndication.com/"]
 ##iframe[src^="https://tpc.googlesyndication.com/"]
 ##iframe[width="100%"][height="120"]
@@ -9561,7 +9563,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /adcore_$domain=~adcore.ch|~adcore.com.au
 /adcount.$domain=~adcount.com|~adcount.fi
 /adcounter.
-/adcreative.$domain=~adcreative.es
+/adcreative.$domain=~adcreative.es|~hange.jp
 /adcss/*$~image
 /adcycle.
 /addEvent?action=
@@ -22637,6 +22639,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||sinepinoy.net^$generichide
 @@||singingdalong.blogspot.com^$generichide
 @@||sinopac.com/applyweb/OpenAccount/js/oas.
+@@||site-banner.hange.jp/adshow?$domain=animallabo.hange.jp
 @@||siteapps.caa.co.uk/scripts/plugins/analytics/ga.min.js$script,~third-party
 @@||siteapps.com^$script,domain=netcombo.com.br
 @@||sitenable.com/admega.php$script
@@ -25127,7 +25130,7 @@ backpack.tf##.col-md-4 > div.panel-main
 badassdownloader.com##+js(no-setTimeout-if, innerHTML)
 badassdownloader.com##+js(set-constant, bscheck.adblocker, noopFunc)
 badayak.com##+js(abort-current-script, addEventListener, google_ad_client)
-baddiehub.com##+js(addEventListener-defuser, DOMContentLoaded, _get_data_fetch)
+baddiehub.com##+js(no-setTimeout-if, css_class.show)
 badjojo.com,boysfood.com,definebabe.com,efukt.com,fantasti.cc,girlsofdesire.org,imagepix.org,javfor.me,pornxs.com,shemaletubevideos.com,therealpornwikileaks.com,yea.xxx##a[href*=".php"]
 badmintoncn.com###bottomad_big
 badoinkvr.com#@#a[href^="https://badoinkvr.com/"]
@@ -28685,6 +28688,7 @@ exoav.com##+js(abort-on-property-read, exoNoExternalUI38djdkjDDJsio96)
 exoav.com##.place
 exoav.com##.table
 exophase.com##.ad-general
+exportfromnigeria.info###affs
 exportfromnigeria.info##.mytopads
 exportfromnigeria.info##[src^="http://storage2.proboards.com/"]
 exportfromnigeria.info##[src^="https://storage2.proboards.com/"]
@@ -32931,6 +32935,12 @@ kocpc.com.tw#$##header > nav.floated-navbar { top: 0!important; }
 koding.work#?#.sidebar > .widget_text:has(> .textwidget > .adsbygoogle)
 koimoi.com##.ad-wrapper-border
 kolagames.com##.slot
+kollelbudget.com###text-43
+kollelbudget.com###text-70
+kollelbudget.com###text-78
+kollelbudget.com###text-82
+kollelbudget.com###text-83
+kollelbudget.com##a[href^="https://www.oorahauction.org/"][target="_blank"] > img
 komchadluek.net###section-thaileague
 komchadluek.net##.default-sticky-1
 komentare.sme.sk###js-top-info-bar-wrapper
@@ -62847,6 +62857,7 @@ zznews.cn##.ad:not([style])
 ||k.youku.com/player/getFlvPath/sid/*&vl=
 ||k1.dancihu.com^
 ||k1.wanwenwan.cn^
+||k11designstore.club^
 ||k1815.com^
 ||k1nk.co/videos/*/_.*.js
 ||k1rsdhu.xyz^
@@ -83606,6 +83617,7 @@ zznews.cn##.ad:not([style])
 ||wzjs.me^
 ||wzjs1.oss-accelerate.aliyuncs.com^
 ||wzl02.xyz^
+||wzl03.xyz^
 ||wzl05.xyz^
 ||wzpwxe.4lapy.ru^
 ||wzrk.co^$third-party
@@ -84145,6 +84157,7 @@ zznews.cn##.ad:not([style])
 ||xstt5.com/skin/v3/js/dibu.js
 ||xstt5.com/template/js/fx
 ||xsu.cc^$third-party
+||xsvgpjl.cn^
 ||xswvytnxkzkzq.com^
 ||xszysc.com^$third-party
 ||xt.persosa.com^
@@ -84939,6 +84952,7 @@ zznews.cn##.ad:not([style])
 ||ypdzb.cn^
 ||ypgdnrz.cn^
 ||yphmgzkojubwxn.com^
+||ypjmvdfxqw.com^
 ||ypmob.com^
 ||ypojie.com/wp-content/uploads/*.js
 ||ypqgnx.morizon.pl^

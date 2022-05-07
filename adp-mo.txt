@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: zS916BQ478QbLYW5NwkHlQ
+! Checksum: DAGuCzmW4Y5zeJe25ddimg
 ! Title: My AdFilters（for Mobile）
 ! Expires: 12 hours
-! Version: 202205071529
-! Last Modified: 2022年05月07日 15:29
+! Version: 202205071637
+! Last Modified: 2022年05月07日 16:37
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 67369
+! Total count: 67379
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -3296,6 +3296,7 @@
 ##.advert_label
 ##.advert_list
 ##.advert_nav
+##.advert_pos
 ##.advert_text
 ##.advert_top
 ##.advert_wrapper
@@ -6198,6 +6199,7 @@
 ##guj-ad
 ##iframe[id^="google_ads_frame"]
 ##iframe[src^="//tempest.services.disqus.com/ads-iframe/"]
+##iframe[src^="http://www.adpeepshosted.com/adpeeps.php?"]
 ##iframe[src^="https://pagead2.googlesyndication.com/"]
 ##iframe[src^="https://tpc.googlesyndication.com/"]
 ##iframe[width="100%"][height="120"]
@@ -7820,7 +7822,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /adcore_$domain=~adcore.ch|~adcore.com.au
 /adcount.$domain=~adcount.com|~adcount.fi
 /adcounter.
-/adcreative.$domain=~adcreative.es
+/adcreative.$domain=~adcreative.es|~hange.jp
 /adcss/*$~image
 /adcycle.
 /addEvent?action=
@@ -18432,6 +18434,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||sinepinoy.net^$generichide
 @@||singingdalong.blogspot.com^$generichide
 @@||sinopac.com/applyweb/OpenAccount/js/oas.
+@@||site-banner.hange.jp/adshow?$domain=animallabo.hange.jp
 @@||siteapps.caa.co.uk/scripts/plugins/analytics/ga.min.js$script,~third-party
 @@||siteapps.com^$script,domain=netcombo.com.br
 @@||siva-my.jsstatic.com/_ads/_static/$domain=jobstreet.com.my
@@ -20349,7 +20352,7 @@ backpack.tf##.col-md-4 > div.panel-main
 badassdownloader.com##+js(no-setTimeout-if, innerHTML)
 badassdownloader.com##+js(set-constant, bscheck.adblocker, noopFunc)
 badayak.com##+js(abort-current-script, addEventListener, google_ad_client)
-baddiehub.com##+js(addEventListener-defuser, DOMContentLoaded, _get_data_fetch)
+baddiehub.com##+js(no-setTimeout-if, css_class.show)
 badjojo.com,boysfood.com,definebabe.com,efukt.com,fantasti.cc,girlsofdesire.org,imagepix.org,javfor.me,pornxs.com,shemaletubevideos.com,therealpornwikileaks.com,yea.xxx##a[href*=".php"]
 badmintoncn.com###bottomad_big
 badoinkvr.com#@#a[href^="https://badoinkvr.com/"]
@@ -22731,6 +22734,7 @@ exey.io#$#.adsbygoogle { position: absolute !important; left: -4000px !important
 exey.io#@#.adsbygoogle
 exhibporno.com##.syn
 exophase.com##.ad-general
+exportfromnigeria.info###affs
 exportfromnigeria.info##.mytopads
 exportfromnigeria.info##[src^="http://storage2.proboards.com/"]
 exportfromnigeria.info##[src^="https://storage2.proboards.com/"]
@@ -25459,6 +25463,12 @@ kobieta.wp.pl##body > div[class] > div[class*=" "][style^="height:"][style*="tra
 kocpc.com.tw##.single_ads
 koimoi.com##.ad-wrapper-border
 kolagames.com##.slot
+kollelbudget.com###text-43
+kollelbudget.com###text-70
+kollelbudget.com###text-78
+kollelbudget.com###text-82
+kollelbudget.com###text-83
+kollelbudget.com##a[href^="https://www.oorahauction.org/"][target="_blank"] > img
 komchadluek.net###section-thaileague
 komchadluek.net##.default-sticky-1
 komikcast.com##+js(abort-current-script, $, popup)
