@@ -72,7 +72,9 @@ jobs:
           cat adgk.txt dmz.txt xinggsf-mv.txt easylistchina.txt cjxlist.txt cjx-annoyance.txt| grep -v '^!' | sort -ur | uniq -u | awk '!a[$0]++' > ../new/adp2.txt
           cat xinggsf-mv.txt dmz.txt easylistchina.txt cjxlist.txt cjx-annoyance.txt easyprivacy.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/adp3.txt
           cat antiadblockfilters.txt abp-filters-anti-cv.txt anti-adblock-killer-filters.txt| grep -v '^!' | sort -n | uniq | awk '!a[$0]++' > ../new/adp-edentw.txt
-          cat *.txt |grep -E "^[(\@\@)|(\|\|)][^\/\^]+\^$"  |sort -n |uniq > ../dns.txt
+          num=`cat *.txt |grep -E "^[(\@\@)|(\|\|)][^\/\^]+\^$"  |sort -n |uniq |wc -l`
+          echo -e "! Title: AdRules DNS Filter Lite\n! Last update: $(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')（北京时间）\n! Total count: $num \n" >> ../dns.txt
+          cat *.txt |grep -E "^[(\@\@)|(\|\|)][^\/\^]+\^$"  |sort -n |uniq >> ../dns.txt
           for i in $(ls ../new/*.txt); do
             sed -i '/^$/d' $i
           done
