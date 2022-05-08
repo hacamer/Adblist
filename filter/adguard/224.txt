@@ -1,8 +1,8 @@
-! Checksum: 82Peo80FvcJwRm8jh/BicA
+! Checksum: 06rYXE3nOPK/bFPKQZhS3g
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.0.54.83
-! TimeUpdated: 2022-05-08T04:30:57+00:00
+! Version: 2.0.54.85
+! TimeUpdated: 2022-05-08T06:30:55+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -952,9 +952,9 @@ macapp.so#$##m2 { height: 5px!important; }
 mobile01.com#$#body { overflow: visible!important; }
 mobile01.com#$#.modal-backdrop { display: none!important; }
 ! sync with video.fc2.com in Japanese filters
-shanxivideo.net#$#.app-container[aria-expanded="false"] section.with-ad { width: calc(100% - 20px) !important; }
-shanxivideo.net#$#.with-ad[data-layout="list"] .main-header { width: 100% !important; }
-shanxivideo.net#$#.with-ad[data-layout="list"][data-section-type="new-video"] .content-wrap:nth-child(-n+2) { width: 100% !important; }
+shanxivideo.com#$#.app-container[aria-expanded="false"] section.with-ad { width: calc(100% - 20px) !important; }
+shanxivideo.com#$#.with-ad[data-layout="list"] .main-header { width: 100% !important; }
+shanxivideo.com#$#.with-ad[data-layout="list"][data-section-type="new-video"] .content-wrap:nth-child(-n+2) { width: 100% !important; }
 !
 gamer.com.tw#$##flyRightBox { position: absolute!important; left: -3000px!important; }
 !
@@ -2106,13 +2106,13 @@ csdn.net###footerRightAds
 ! yeyemo4.com
 ! frequently changed domain
 yeyemo4.com,yeyemo5.com,yeyemo6.com,yeyemo7.com,yeyemo8.com,yeyemo9.com,yeyemo10.com##center > a[target="_blank"] > img
-! shanxivideo.net - sync video.fc2.com in Japanese filters
-shanxivideo.net##.ad_panelAR
-shanxivideo.net##.list-subCont > li[style$="height: 98px;"]
-shanxivideo.net##.ads-container
-shanxivideo.net##.banner
-shanxivideo.net##div[style^="width: 300px; height: 250px"]
-shanxivideo.net##[class^="c-ad"]
+! shanxivideo.com - sync video.fc2.com in Japanese filters
+shanxivideo.com##.ad_panelAR
+shanxivideo.com##.list-subCont > li[style$="height: 98px;"]
+shanxivideo.com##.ads-container
+shanxivideo.com##.banner
+shanxivideo.com##div[style^="width: 300px; height: 250px"]
+shanxivideo.com##[class^="c-ad"]
 ! jable.tv
 ||jable.tv/assets/images/wejo/$image
 jable.tv##a[href="http://uus52.com/"]
@@ -19552,7 +19552,6 @@ $image,third-party,domain=258zw.com
 /c.js#pid=$script,third-party
 /ce_l.aspx?showid=$third-party
 /hmzn_*_*_*.js?$script,third-party
-/i.asp?yk&df=1|$script,third-party
 /js/easyAD.js
 /js/easyAD2.js
 /js/mangoIndexBanner.js
@@ -19628,6 +19627,10 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 ||beside-u.xyz^
 ||ylty.online^
 ||yangmengqiu.work^
+||mufoa6k.cn^
+||h04.xyz^
+||dcjfoei.cn^
+||ihtqqws.cn^
 ##a[href$=".120ydrayy.com"]
 ##a[href*=".1956hl.com/"]
 ##a[href*=".233787.com/"]
