@@ -1,8 +1,8 @@
-! Checksum: wbV+NlQC/Kp0cdGzJdCuwQ
+! Checksum: 79wjvqCcbw8AN2UCjM4fmA
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.39.42
-! TimeUpdated: 2022-05-08T03:31:20+00:00
+! Version: 2.0.39.43
+! TimeUpdated: 2022-05-09T06:31:18+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -92,8 +92,9 @@ gmarket.co.kr#%#//scriptlet("set-constant", "pvprofiler.sendEvt", "noopFunc")
 popin.cc#%#//scriptlet('set-local-storage-item', '_ss_pp_id', '')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/114227
 valleybreeze.com#%#//scriptlet('remove-attr', 'hidden', '#asset-content[hidden]')
+! https://github.com/AdguardTeam/AdguardFilters/issues/118108
 ! https://github.com/AdguardTeam/AdguardFilters/issues/112998
-ttv.pl#%#//scriptlet("set-constant", "gemiusStream", "noopFunc")
+ttv.pl,tvn24.pl#%#//scriptlet("set-constant", "gemiusStream", "noopFunc")
 ttv.pl,tvn24.pl#%#(function(){window.__pix2={event:function(){},track:function(){}}})();
 ! https://github.com/AdguardTeam/AdguardFilters/issues/109426
 nytimes.com#%#//scriptlet("set-constant", "Navigator.prototype.joinParakeetInterestGroup", "noopFunc")
@@ -24631,6 +24632,7 @@ extrahop.com#%#//scriptlet('prevent-setTimeout', 'ad blocker')
 @@||custojusto.pt/smarttag.js
 !+ NOT_PLATFORM(ext_ublock)
 ||custojusto.pt/smarttag.js$script,redirect=ati-smarttag,important
+! https://github.com/AdguardTeam/AdguardFilters/issues/118108
 ! https://github.com/AdguardTeam/AdguardFilters/issues/112998
 ! https://github.com/AdguardTeam/AdguardFilters/issues/112205
 @@||tm.jsuol.com.br/uoltm.js$domain=oantagonista.uol.com.br
