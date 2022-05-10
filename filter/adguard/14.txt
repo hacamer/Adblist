@@ -1,8 +1,8 @@
-! Checksum: Y3/7af4oOhhXT35+ELUiEg
+! Checksum: vgosnX0vw50TCXs0hHqgmw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.18.66
-! TimeUpdated: 2022-05-09T20:30:34+00:00
+! Version: 2.1.18.68
+! TimeUpdated: 2022-05-10T06:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7384,6 +7384,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+proaurum.de###cookiefirst-root
 ||coal.gamemaker.io/sites/*/theme/javascripts/cookie.umd.min.js
 waterfaucet.online###gath3r-optin-dialog
 narecza.com##.CerezPp
@@ -9471,7 +9472,7 @@ fpv24.com#$##cookieModal ~ div.modal-backdrop { display: none !important; }
 news247.gr##.newsletter-form
 pistenbully.com###cookiemanager-banner
 campingshop-24.de##.eightworks-cookie-consent-plus-toggler
-campingshop-24.de,bw-discount.de,teddytoys.de,topdoors.de,main-moebel.de,shop.pistenbully.com##.eightworks-cookie-consent-plus
+tipronet.net,campingshop-24.de,bw-discount.de,teddytoys.de,topdoors.de,main-moebel.de,shop.pistenbully.com##.eightworks-cookie-consent-plus
 etxt.ru##.mod-cookie
 godbolt.org###simplecook
 gettyimages.*##.euCookieDialog
@@ -16463,6 +16464,8 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/117868
+@@||consent.cookiefirst.com^$domain=proaurum.de
 ! https://www.digitalfoundry.net/2022-05-05-pocky-rocky-reshrined-review-way-beyond-a-typical-remake
 digitalfoundry.net#@##onetrust-consent-sdk
 ! https://github.com/AdguardTeam/AdguardFilters/issues/117658
