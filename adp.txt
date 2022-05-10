@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: H5Okb7THrRiKnfoy/xFZOg
+! Checksum: foZH6qHKC2eNWbtRwosAVg
 ! Title: My AdFilters Lite
 ! Expires: 1 hours (Sometimes updates are delayed)
-! Version: 202205101100
-! Last Modified: 2022年05月10日 11:00
+! Version: 202205101141
+! Last Modified: 2022年05月10日 11:41
 ! Homepage: https://github.com/hacamer/Adblist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、Adgk、大萌主的规则
 ! 并补充了贴吧过滤规则，感谢各位的分享！
 ! 如有任何疑问、意见或建议，请反馈给：杏梢
 !
-! Total count: 38683
+! Total count: 38701
 ###Ad_windows
 ###ChapterView > .slide-baidu
 ###Layeraa1
@@ -1413,6 +1413,9 @@
 ##a[style*=".memexoxo.com/"]
 ##a[style*=".misigl.com/"]
 ##a[target="_bank"] > img[src*=".360buyimg.com"][style="width:100%;height:auto;"]
+##a[target="_blank"] > img[height="60px"][src*=".360buyimg.com"][src$=".gif"]
+##a[target="_blank"] > img[height="60px"][src*=".alicdn.com"][src$=".gif"]
+##a[target="_blank"] > img[height="60px"][src*=".meituan.net"][src$=".gif"]
 ##a[target="_blank"] > img[src*=".bitautoimg.com/"][src$=".gif"]
 ##body .has-ad
 ##body > div[style="display:none;"] + div[style="display:none;"] + div[id][class][style^="background-color:"]
@@ -1458,6 +1461,7 @@
 ##div[onclick*="?i_code="]
 ##div[onclick^="window.location.href"][onclick*=".bcebos."]
 ##div[onclick^="window.location.href"][onclick*=".haoyundm.com"]
+##div[style=" max-width:984px;  margin:0 auto;"] > a > img[height="60px"]
 ##div[style=" max-width:985px;  margin:0 auto;"] > a > img[height="60px"]
 ##div[style="border-radius:8px;background-color:#005737;padding:6px;"]
 ##div[style="box-sizing:border-box;padding:20px 16px;border-radius:8px;width:90%;margin:0 auto;"]
@@ -10035,6 +10039,7 @@ ghoffice.com##.tac > a > img[src*=".gif?"]
 ghoffice.com##[class="tac"],[class="mb5 tac cc"],[id^="ads_"],.textMes
 ghoffice.com,ksbbs.com,kshot.com##[id^="ads_"]
 ghxi.com##.ad_single_11
+ghxi.com##.ad_single_12
 ghxi.com#@#.social-item
 ghxi.com,mcdulll.com,pixnet.net##div[id*="-ad-"]
 gimy.tv##.playadbox
@@ -17849,6 +17854,7 @@ zznews.cn##.ad:not([style])
 ||1909.me/upload/ad/
 ||192.151.218.66^$third-party
 ||19216811.la/net/advert
+||19273817.com^
 ||194007.com/4058.gif
 ||195315.com/storage/tpl/tj.js
 ||19811231.me^
@@ -18090,6 +18096,7 @@ zznews.cn##.ad:not([style])
 ||28kys.com/cpstupian/
 ||28wangmeng.com^
 ||292812.com^
+||29299892.com^
 ||293870.com^
 ||297772.com^
 ||29873398.com^
@@ -20305,6 +20312,7 @@ zznews.cn##.ad:not([style])
 ||aixifan.com/apsdk/apsdk.js
 ||aixifan.com/cms/*/w/1160/h/100
 ||aixifan.com/static/*/appGuide/
+||aixuntupian.oss-cn-hongkong.aliyuncs.com^
 ||aixuyoupin.cn^
 ||aiyalife365.cn^
 ||aiyangedu.com/static/cpt/pubuliu.
@@ -21639,6 +21647,7 @@ zznews.cn##.ad:not([style])
 ||bfjl.ink^
 ||bfniq.theta.sogou.com^
 ||bfpgf.com/wp-content/uploads/2015/08/360dxs.jpg
+||bfrmye5.com^
 ||bg.ctripatm.cn^
 ||bgelvy.cn^
 ||bgtrtv.top^
@@ -28692,6 +28701,7 @@ zznews.cn##.ad:not([style])
 ||kppt.cc/zb_system/script/common.js
 ||kppt.cc/zhifu.jpg
 ||kpshx.douguo.com^
+||kqvkvc3.com^
 ||kr.sdykcloud.cn^
 ||krblog.top^
 ||krpano.org^
@@ -28786,9 +28796,11 @@ zznews.cn##.ad:not([style])
 ||kuwoyy.com^
 ||kuxinqi.com^
 ||kveaa.com^
+||kvecc.com^
 ||kveii.com^
 ||kvemm.com^
 ||kveww.com^
+||kvexx.com^
 ||kvezz.com^
 ||kviso.com/js/top.js
 ||kwflvcdn.000dn.com^*.flv
@@ -30266,6 +30278,7 @@ zznews.cn##.ad:not([style])
 ||mm.zhizhoudianshang.cn^
 ||mm111.net/api.php?mod=ad&
 ||mm28j.com^
+||mm2ah.com^
 ||mm3.mylmad.com^
 ||mm387.com/images/*.gif
 ||mm786.com^$popup,third-party
@@ -30639,6 +30652,7 @@ zznews.cn##.ad:not([style])
 ||n.sapxg.cn^$domain=m.630shu.com
 ||n.sinaimg.cn/tech/zcapp$image
 ||n0233.com^
+||n0277.com^
 ||n0399.com^
 ||n0488.com^
 ||n12xar123.xyz^
@@ -32628,8 +32642,10 @@ zznews.cn##.ad:not([style])
 ||rfidworld.com.cn/js/b.js
 ||rfidworld.com.cn/js/c.html
 ||rfjckj.cn^
+||rfyqtv2.com^
 ||rg.nukebomb.cn^
 ||rgh.tyjnwj.top^
+||rgjeow3.com^
 ||rgt0hv5.cn^
 ||rgyun.com^
 ||rh.qq.com/
@@ -34848,6 +34864,7 @@ zznews.cn##.ad:not([style])
 ||tuinei.com^
 ||tuite8.com^
 ||tuituiyoo999.com^
+||tujzac.com^
 ||tukeai.com^
 ||tukexiu.com^
 ||tukj.net^
@@ -34976,6 +34993,7 @@ zznews.cn##.ad:not([style])
 ||u.xogu.cn^$third-party
 ||u.zuoyesou.com^
 ||u0056.com^
+||u0067.com^
 ||u0r9.cn^
 ||u1.2048sj.com^
 ||u1.20q.cn^
