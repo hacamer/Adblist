@@ -1,8 +1,8 @@
-! Checksum: Sk8MEAjbZDzLZXWjGk7SQQ
+! Checksum: Fe/3/VLNq95EN8KXH6CAeg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.18.91
-! TimeUpdated: 2022-05-11T13:30:35+00:00
+! Version: 2.1.18.93
+! TimeUpdated: 2022-05-11T15:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -92,6 +92,9 @@
 ! https://github.com/AdguardTeam/AdguardFilters/issues/76987
 youtube.com#%#AG_onLoad(function() {var a = new MutationObserver(function() {if (document.querySelector('yt-upsell-dialog-renderer')) {var b = document.querySelector('.ytd-popup-container[popup-size="UPSELL_DIALOG_RENDERER_POPUP_SIZE_LARGE"] #dismiss-button:not(.dismissed), .upsell-dialog-lightbox .upsell-dialog-dismiss-button button:not(.dismissed)');setTimeout(function() {b&&b.click()}, 3E2)}});a.observe(document, {childList: !0,subtree: !0});setTimeout(function() {a.disconnect()}, 3E3)});
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/118308
+! embed tv, used on many sites in floating player
+||embed.dugout.com^$script,third-party
 ! https://github.com/AdguardTeam/AdguardFilters/issues/117432
 cureco.jp##object[width="640"][height="480"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116423
@@ -7387,6 +7390,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+||consent.scm-verlagsgruppe.de^
 poliglot16.ru##.cookie-agree
 ||niceshops.com/disco/build/shop/tracking_consent.*.js
 megatool.pl#$##pum-3970 { display: none !important; }
@@ -10548,7 +10552,7 @@ alumatex.pl#$#html.pum-open-overlay { overflow: auto !important; }
 alumatex.pl#$#.pum-overlay[data-popmake*="rodo"] { display: none !important; }
 kingston.com##.nofication-widget
 heimkino.org,pfannen.org##.orakelAdvice
-mismarsanalmarket.com,temin.com.tr,kocakbaklava.com.tr,kocak.com.tr,aksesuarix.com##.cerez-mesaji
+marjin.com.tr,mismarsanalmarket.com,temin.com.tr,kocakbaklava.com.tr,kocak.com.tr,aksesuarix.com##.cerez-mesaji
 cekkazan.com.tr##.pum-overlay[data-popmake*="cerez-politikasi"]
 today.ua##.politic_confidel
 artigercek.com###myUserConsent
@@ -10710,11 +10714,10 @@ vaticannews.va###cookiePolicyPopupHTML
 coolblue.be#$#.cookie { display: none !important; }
 coolblue.be#$#body[cookienotificationmodalopened] { overflow: visible !important; padding-right: 0 !important; }
 awm-korntal.eu,yourcountdown.to,giant-bicycles.com,neoserver.ro,gazduirejocuri.ro,wearegarcia.com,zamunda.ch,zamunda.net,upjs.sk##.gdprcookie
-ad-doge.com###cookieok_bar
 livejasmin.com##div[data-testid="PersonalizedContentPopup"]
 livejasmin.com#?#div[data-testid="Over18NotificationContainer"] p > a[href$="/cookies-policy"]:upward(1)
 ipevo.com###cookie-law-note
-radionatale.com,radionorthpole.com,radiosantaclaus.com,radioamericalatina.com,radioitalianmusic.com,radioitaliacanada.com,miamibeachradio.com,radiosymphony.com,radiocountrylive.com,radioitalylive.com,radiolovelive.com,radionylive.com,radiorockon.com###cookieLawPro
+koiniom.com,radionatale.com,radionorthpole.com,radiosantaclaus.com,radioamericalatina.com,radioitalianmusic.com,radioitaliacanada.com,miamibeachradio.com,radiosymphony.com,radiocountrylive.com,radioitalylive.com,radiolovelive.com,radionylive.com,radiorockon.com###cookieLawPro
 exagon.de#$#.cc-window[aria-label="cookieconsent"] { display: none!important; }
 exagon.de#$#body { filter: none!important; }
 xalingo.com.br###wrng-agrmnt
@@ -10765,7 +10768,7 @@ chipkartenleser-shop.de,reiner-sct.com###cookie-consent-outer
 readly.com#$##cookie-consent-window { display: none !important; }
 readly.com#$#html > body.cookie-consent { overflow: visible !important; }
 emsa.com##.cookie_wrapper_tool
-litegpt.com###cookieok_bar
+bitclix.io,ad-doge.com,litegpt.com###cookieok_bar
 weightwatchers.com##div[class*="DPRBanner_gdpr__banner"]
 ||vdai.lrv.lt/Project/Modules/Gpdr/assets/ccc-script.js
 edpb.europa.eu,edps.europa.eu###edp-cookies-banner
@@ -21139,9 +21142,13 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+lidea.today##.linksFix__balloon
 cnews.fr##.sticky-player
 mrs.living.jp###ad-floating
 mrs.living.jp###floating-max
+activity.lenovo.com.cn##.sign-in-box
+activity.lenovo.com.cn##.mask-laye-box
+activity.lenovo.com.cn##.cms_fixed_nav
 shop.lenovo.ru###usedesk-messenger
 gazeta.ru###_id_yaflow
 zhihu.com#$#html { overflow: auto !important; padding-right: 0 !important; }
@@ -29527,6 +29534,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+lidea.today##.aa-mailMagazine
 mydeliciousmeals.com##.subscription-module
 crea.bunshun.jp##.mail-magazine
 cepa.org##.tf-sh-a48575d152037e04ccab10c97fedfa66
