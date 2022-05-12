@@ -1,8 +1,8 @@
-! Checksum: 8TSxasFpSRYOcu1QjNUu8Q
+! Checksum: PFUkM2EIYdE/gnt5iTwu9A
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.19.0
-! TimeUpdated: 2022-05-12T06:30:36+00:00
+! Version: 2.1.19.2
+! TimeUpdated: 2022-05-12T08:30:35+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7398,6 +7398,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+||service-public.fr/resources/*/orejime.js
 ||lufthansagroup.com/*/ext/*cookieman/*/cookieman*.min.js
 plarium.com##.gA-DCml
 ||usercentrics.eu^$app=com.ashampoo.droid.optimizer
@@ -9284,8 +9285,8 @@ louie.com.br##.termos-politica
 costanorte.com.br##.hMpjTE
 fanlink.to##.acquisition-terms
 westwing.com.br##.cookiePolicyOverlay
-senec.com#$##klaro { display: none !important; }
-senec.com#$#body { overflow: visible !important; }
+pyroweb.de,senec.com#$##klaro { display: none !important; }
+pyroweb.de,senec.com#$#body { overflow: visible !important; }
 sklep.szprychy.com###footer-section > .config-messages
 batchgeo.com##.batchgeo-cookie-notice
 academy.deutsche-boerse.com##.sxcookie
@@ -10398,7 +10399,7 @@ goldenline.pl#$?#.cookie-modal:upward(div.gl-modal) { display: none !important; 
 kontrast.dk#$##modal-background { display: none !important; }
 kontrast.dk#$#.modal-backdrop { display: none !important; }
 kontrast.dk#$#body { overflow: visible !important; }
-globalfamilydoctor.com,bmeia.gv.at,nichtraucherhelden.de,aldi-sued.de,sued.aldi-liefert.de,enirocentrum.pl,felix1.de,panoramafirm.pl,hofer.at,dizioneri.com,m.n11.com,wuerth.de,deutsches-ausschreibungsblatt.de,sued.aldi-liefert.de,capveriant.com,xn--giant-dsseldorf-5vb.de##.modal-backdrop
+inselflieger.de,globalfamilydoctor.com,bmeia.gv.at,nichtraucherhelden.de,aldi-sued.de,sued.aldi-liefert.de,enirocentrum.pl,felix1.de,panoramafirm.pl,hofer.at,dizioneri.com,m.n11.com,wuerth.de,deutsches-ausschreibungsblatt.de,sued.aldi-liefert.de,capveriant.com,xn--giant-dsseldorf-5vb.de##.modal-backdrop
 hardware.support.playstation.com##.siee-cookies
 wayfair.co.uk##.CookieComplianceContainer-veil
 alibaba.com##.GDPR-cookies-notice-wrap
@@ -16507,6 +16508,8 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/117949
+pyroweb.de#@#.cookie-notice:not(body):not(html)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/118148
 lhsystems.com#@#.gdpr-container
 ! https://github.com/AdguardTeam/AdguardFilters/issues/117956
@@ -29555,6 +29558,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+service-public.fr##.col-home-follow
 lidea.today##.aa-mailMagazine
 opensource.com##.subscribe-float
 mydeliciousmeals.com##.subscription-module
@@ -33661,6 +33665,8 @@ newsweek.com##iframe[src="http://sns.europe.newsweek.com/newsletter?popup=1"]
 !######### JS tweaks ##########
 !##############################
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/118072
+11bit.co.in#%#//scriptlet("adjust-setInterval", "claim_button", "*", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/118173
 teknopaid.xyz#%#//scriptlet("remove-class", "hidden", "#wcGetLink")
 teknopaid.xyz#%#//scriptlet("remove-attr", "disabled", "#wcGetLink")
