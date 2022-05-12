@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: 3NprjvAl1YVW2rEWZDVfhQ
+! Checksum: hxPFc+sffUSTXpZgHxoroQ
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202205122233
-! Last Modified: 2022年05月12日 22:33
+! Version: 202205122336
+! Last Modified: 2022年05月12日 23:36
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 72213
+! Total count: 72218
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -18544,6 +18544,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||ilan.memurlar.net/common/job/advert/images/*/headline.jpg|
 @@||ilpuntotecnico.com^$generichide
 @@||ilsole24ore.com^*/fingerprint2.min.js?
+@@||image.shutterstock.com^$image,domain=icons8.com
 @@||imagefap.com/jscripts/ad_loader.js
 @@||images*.imagebam.com/ad^
 @@||images-*.ssl-images-amazon.com/images/*/advertising^$domain=amazon.de|amazon.com|amazon.fr|amazon.it|amazon.es|amazon.co.jp|amazon.co.uk|amazon.ca
@@ -25292,6 +25293,7 @@ erebor.douban.com
 erofishki.cc,fishki.net#$#abort-on-property-read fishki.adv
 erofus.com##+js(abort-current-script, document.dispatchEvent, addZone)
 erofus.com#?#.row-content > .col-xs-12:has(> .ad.thumbnail)
+erofus.com#?#div:-abp-has(> .ad)
 erotic-beauties.com,hardsex.cc,sex-movies.biz,sikwap.xyz,tube18.sexy##+js(abort-current-script, pop_init)
 eroticasearch.net###grid > .column > div[style]:not([id])
 eroticmv.com##.ads-above-single-player
@@ -34082,6 +34084,7 @@ tistory.com##ins.adsbygoogle
 tistory.com#@#.adsbygoogle
 titantv.com###ctl00_Main_TVL_ctl00_sb
 titantv.com##.gAd
+titantv.com##div[style^="height:265px;"]
 titantv.com#?#.gridTable > tbody > tr:not([class]):has(> td[align="center"] > div[id] > div[data-stn-player])
 titantv.com#?#.gridTable > tbody > tr:not([class]):has(> td[align="center"][style^="vertical-align: top; overflow: hidden;"] > div[id][style]:empty)
 titantv.com#?#.gridTable > tbody > tr:not([class]):has(> td[class][align="center"]:contains(/^sponsored$/))
@@ -42119,6 +42122,7 @@ zznews.cn##.ad:not([style])
 ||boomads.com^$third-party
 ||boomerang.com.au^$third-party
 ||boomerang.dell.com^
+||boomselljamwelunch.com^
 ||boomselljamwelunch.com^$domain=titantv.com
 ||boomtrain.com^$third-party
 ||boost-next.co.jp^
@@ -47467,6 +47471,7 @@ zznews.cn##.ad:not([style])
 ||ero-advertising.com^
 ||eroadvertising.com^$third-party
 ||eroar.lionsclubs.org^
+||erofus.com/*/wat.js
 ||erosyndc.com^
 ||eroterest.net^$third-party
 ||eroticity.net/clientscript/popcode_
