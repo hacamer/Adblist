@@ -1,8 +1,8 @@
-! Checksum: AX1TDhm3QQ0KwsDw/VBfDw
+! Checksum: hrfJsb3L1zEe3p8Qgz6LHA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.19.13
-! TimeUpdated: 2022-05-12T18:30:34+00:00
+! Version: 2.1.19.15
+! TimeUpdated: 2022-05-12T20:30:36+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7401,6 +7401,10 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+||webcdn.asafe.com/assets/js/cookies.bundle.js
+||ugandairlines.com/js/cookie.min.js
+flyblueair.com###divCookies
+capital.com##.stickyBar
 ||xetra-gold.com/*/initCookieRegistry.js
 emf-portal.org###privacy-policy-notification
 radiologie.de###cookie_bar_v2
@@ -8705,7 +8709,7 @@ tynker.com##cookie-settings
 skynet.ru,sknt.ru##.cookies_wrap
 ev-digitalinvest.de,invesdor.de###dsgvo-cookie-configurator
 alpinstore.com###acb-banner
-fairtrade-deutschland.de,esef-manager.eu,ebilanzonline.de,bundesanzeiger-verlag.de,bistumlimburg.de,bistum-essen.de###cc
+volksbund.de,fairtrade-deutschland.de,esef-manager.eu,ebilanzonline.de,bundesanzeiger-verlag.de,bistumlimburg.de,bistum-essen.de###cc
 androidkosmos.de##.bst-panel
 macrocenter.com.tr##fe-product-cookie-indicator
 44.ua,056.ua,032.ua,04868.com.ua,karelia.news,01.kg,0154.by,0472.ua,048.ua,0512.com.ua,0522.ua,0532.ua,0552.ua,056.ua,0564.ua,061.ua,06153.com.ua,0642.ua,62.ua,7152.kz,7232.kz,city04.kz,go152.by,go232.by,inaktau.kz,inalmaty.kz,inastana.kz,inatyrau.kz,inkaragandy.kz,inshymkent.kz,kaskelenec.kz,oshto.kg,qapshagai-city.kz,uralskcity.kz##app-cookie-consent-popup
@@ -19213,6 +19217,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+capital.com##.award-banner-wrap
 antenna.jp###install-link
 antenna.jp##.bottom-install-link
 antenna.jp##.sp-install-link-block
@@ -29607,6 +29612,8 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
 aktualne.cz##.right-column__newsletter
+foodist.de#$#html.no--scroll { overflow: auto !important; }
+foodist.de#$##newsletter-overlay { display: none !important; }
 classicalmusicnews.ru##.entry-footer a[href="https://t.me/classicalmusicnews"]
 meduza.global.ssl.fastly.net,meduza.io##.SignalBlock-root
 nomadicboys.com##.boxzilla-subscribe-bar-mobile
@@ -29950,7 +29957,7 @@ cinemacao.com##.mc--iframe-responsive-wrapper
 cinemacao.com##a[href="https://bit.ly/telegramcinemacao"] > img
 hometogo.de##.email-subscription-banner
 hometogo.de##div[data-test="email-subscription-banner"]
-michalpasterski.pl##.newsletter-popup
+salzburg-airport.com,michalpasterski.pl##.newsletter-popup
 thestreet.com##.bcpContentTemplate
 seatguru.com###TB_overlay
 seatguru.com###TB_window
