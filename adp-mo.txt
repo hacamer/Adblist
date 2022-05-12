@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: PUBqILExrIS8dBro0C4SYg
+! Checksum: bljR4rJYTUDTBFgp8fOmyA
 ! Title: My AdFilters（for Mobile）
 ! Expires: 12 hours
-! Version: 202205122103
-! Last Modified: 2022年05月12日 21:03
+! Version: 202205122155
+! Last Modified: 2022年05月12日 21:55
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 67101
+! Total count: 67120
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -2284,6 +2284,7 @@
 ##.ad.contentboard
 ##.ad.inner
 ##.ad.item
+##.ad.leaderboard
 ##.ad.module
 ##.ad.netboard
 ##.ad.rectangle
@@ -6996,6 +6997,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 .za/ads/$domain=~ananzi.co.za
 .zalando.com/images/probe.png
 .zone/ads/
+/&*^$popup,domain=piracyproxy.app|piraproxy.info|unblocked.club|unblockedstreaming.net
 /(?:buzz|com|icu|net|xyz)\/(?!shrinker).*/$script,~third-party,domain=imgwex.buzz|imgkuiw.xyz|imgveni.xyz|imglina.xyz|imgtrw.buzz|imgjut.buzz|imgweika.buzz|imguiwe.buzz|imgkane.buzz|imgkoka.buzz|imgkia.buzz|imgalor.xyz|imgklx.xyz|imgirx.xyz|imgkaka.xyz|imgyear.icu|federleqa.icu|nemenlake.icu|opalekr.icu|pixsera.net|rtkenale.icu|pikupalate.com|kekolangti.com|cloudgallery.net|imgair.net|imgfrost.net|imgair.net|imgpekele.buzz|imglqw.buzz|imgyng.buzz|imgyvdw.buzz|imglkju.buzz|imgxvd.buzz|imgbbd.buzz|imgqte.buzz|imgwer.buzz|imgkoc.buzz|imgkorle.buzz
 /(?:com|net)\/[0-9a-f]{12}\.js$/$script,~third-party,domain=imgadult.com|imgdrive.net|imgtaxi.com|imgwallet.com
 /(?:com|net)\/[a-z-]{3,10}\.html$/$subdocument,~third-party,domain=imgadult.com|imgdrive.net|imgtaxi.com|imgwallet.com
@@ -10440,6 +10442,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /hitv4.php
 /hjstore/system/banner/*.txt
 /hkStatCms/ViewCount?
+/hkz*^$popup,domain=piracyproxy.app|piraproxy.info|unblocked.club|unblockedstreaming.net
 /hlog.asp
 /hm.pl?p=
 /hmapxy.js
@@ -15320,6 +15323,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||ads.adthrive.com/builds/$script,domain=www.mediaite.com
 @@||ads.adthrive.com/sites/$script,domain=www.mediaite.com
 @@||ads.aiir.net/rf/feed?callback=jQuery
+@@||ads.alafish.cn^$~third-party
 @@||ads.allegro.pl^$domain=ads.allegro.pl
 @@||ads.api.24ur.si/adserver/banner/vast.php$domain=24ur.com
 @@||ads.cdn.tvb.com^*.key
@@ -16209,6 +16213,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||docodoco.jp^*/docodoco?key=$script,domain=nidec-copal-electronics.com
 @@||docs.amplify.aws^*/platform/js/autotrack.json$~third-party
 @@||docs.google.com/*/viewdata$~third-party
+@@||doctorzerenia.com/home/bower_components/angulartics-google-analytics/dist/angulartics-ga.min.js
 @@||dogemate.com/banner/*.gif$~third-party
 @@||dominos.com^*/assets/build/js/modules/dpz.tealium.js$script
 @@||dood.watch/pass_md5/
@@ -19616,6 +19621,7 @@ adminsub.net##div[class$="_ad"]
 adn.com##.arcad-feature
 adnit.xyz##+js(window.open-defuser)
 adpop.me##+js(window.open-defuser)
+adquick.com,buyout.pro,news.com.au,zlinked.com#@#.advertiser
 adrama.to,icdrama.se###closeADV
 adreep.cn,baoliny.com,gasaq.com,hgitv.com,ifooday.cn,nen.com.cn##.guanggao
 ads.nipr.ac.jp,burzahrane.hr#@#.ads-header
@@ -20984,7 +20990,6 @@ businessweekly.com.tw##.mainR_content:nth-child(5)
 bustybloom.com##.sponsorbanner
 buy.ccb.com#@##top_ad
 buyitonline.store##.adsbygoogle
-buyout.pro,news.com.au,zlinked.com#@#.advertiser
 buzz50.com#@#.adsbygoogle
 buzzdrives.com#@#.left_ad
 buzzfeed.com##.Ad--loading
@@ -22295,6 +22300,7 @@ drv5.cn###xzq
 drvsky.com###bz_position
 drvsky.com##.zhongdian
 dt.no##.am-bazaar-ad
+du-link.in##.banner-inner
 duba.com##.taobao_search
 duba.com##a[w="topad"]
 duba.com,iduba.com,newduba.cn###J_sideFooter
@@ -22877,13 +22883,17 @@ fastseduction.com,independent.co.uk###partners
 fatherly.com##.in-article-ad
 faucet.shorterall.com##+js(remove-attr, onclick, .claim-button)
 faucet4news.xyz##+js(no-fetch-if, pagead2.googlesyndication.com)
+faucetclub.net###adCenter
+faucetclub.net##+js(abort-current-script, decodeURIComponent, _0x)
+faucetclub.net##div[id^="fixedban"]
+faucetclub.net,faucetofbob.xyz,bitlinks.pw,faucet.furim.xyz,algorandfaucet.com,you-porn.com,dutchycorp.ovh,coin.mg,payittechnology.com,nobinbarta.com,moviesverse.in,youporngay.com,hdhub4u.cc,katmoviehd.*,janusnotes.com,doctor-groups.com##div[data-zone]
+faucetclub.net,nevcoins.club,11bit.co.in,lbprate.com,drivelinks.in,luckydice.net,coinsearns.com,mixfaucet.com,uploadbaz.me,bitlinks.pw,mcmcryptos.xyz,faucet.furim.xyz,algorandfaucet.com,hinurls.cc,policiesforyou.com,fastcoin.ga,moviesverse.in,hblinks.pro,hdhub4u.cc,coin.mg,doctor-groups.com##+js(abort-current-script, document.createElement, document?document:null)
 faucetcoins.org,dogecrypto.club,getdogecoins.com##+js(set-constant, show_ads, true)
 faucetcrypto.com##iframe[id$="-ad-iframe"]
 faucetcrypto.com#$?#.items-center > iframe[id$="-ad-iframe"]:only-child:upward(1) { min-height: 0 !important; }
 faucetcrypto.com#$?#:not(.grid) > .items-center > svg.animate-spin:only-child:upward(1) { min-height: 0 !important; }
 faucetcrypto.com#?#.grid > .items-center > iframe[id$="-ad-iframe"]:only-child:upward(1)
 faucetcrypto.net##+js(abort-current-script, decodeURIComponent, _0x)
-faucetofbob.xyz,bitlinks.pw,faucet.furim.xyz,algorandfaucet.com,you-porn.com,dutchycorp.ovh,coin.mg,payittechnology.com,nobinbarta.com,moviesverse.in,youporngay.com,hdhub4u.cc,katmoviehd.*,janusnotes.com,doctor-groups.com##div[data-zone]
 faucetpay.io##.sponsored-light
 faucetpay.io##a[href^="https://faucetpay.io/page/view-banner-ad"]
 faupto.com##+js(abort-current-script, $, disable AdBlock)
@@ -26942,7 +26952,6 @@ netflav.com##.ads_video_overlay_mobile
 nettavisen.no##.am-bazaar-ad
 nettavisen.no#?#amedia-frontpage > .optimus-complex-front:has(> header > h2:contains(/Reklame|REKLAME/))
 nettruyen.com##+js(abort-current-script, document.write, Ads.)
-nevcoins.club,11bit.co.in,lbprate.com,drivelinks.in,luckydice.net,coinsearns.com,mixfaucet.com,uploadbaz.me,bitlinks.pw,mcmcryptos.xyz,faucet.furim.xyz,algorandfaucet.com,hinurls.cc,policiesforyou.com,fastcoin.ga,moviesverse.in,hblinks.pro,hdhub4u.cc,coin.mg,doctor-groups.com##+js(abort-current-script, document.createElement, document?document:null)
 new-porn.club##+js(abort-current-script, document.attachEvent, prt)
 new.lewd.ninja##+js(abort-on-property-read, adnPopConfig.popupFallback)
 new.lewd.ninja#@#.stargate
@@ -29469,6 +29478,7 @@ sportslogos.net##.bigBoxHomepage
 sportsseoul.com###article_viewWrap > div[style="height:167px;"]
 sportsv.net##.box.ad
 sporttery.cn###newDiv
+sportzwiki.com,greatmedia.top###myDIV
 spotify.com#@#.m-ad
 spotv24.com##+js(remove-class, topBanner--on, body)
 spox.com##.adfb
@@ -30277,6 +30287,9 @@ trakt.tv#?#div[id]:has(> div[id] > a[href="/vip/ads"])
 trangchu.news##+js(abort-current-script, document.getElementById, ').style.display='none';)
 tranny.one###atop
 tranny.one,tubous.com##.flirt-footer
+trannygem.com##.in_player_video
+trannygem.com##.we_are_sorry
+trannygem.com##a[href^="https://landing.transangelsnetwork.com/"]
 trannytube.tv##.b-secondary-column__banners
 transfermarkt.*##+js(abort-on-property-read, Object.prototype.autoRecov)
 transfermarkt.*##.werbung
@@ -33237,6 +33250,7 @@ zznews.cn##.ad:not([style])
 ||a-ads.com/*?size=$xmlhttprequest,redirect=noop.txt,domain=hitbits.io,important
 ||a-ads.com^$third-party
 ||a-api.skz.dev^
+||a-b-c-d.xyz^
 ||a-calc.com^$third-party
 ||a-calc.de^$third-party
 ||a-cast.jp^$third-party
@@ -37387,6 +37401,7 @@ zznews.cn##.ad:not([style])
 ||bigreal.org^$third-party
 ||bigrourg.net^
 ||bigstats.net^$third-party
+||bigtitslust.com/frd5/ab-f.js
 ||bigtracker.com^$third-party
 ||biguz.net/vast*.php
 ||bihaipack.com^
@@ -41048,6 +41063,7 @@ zznews.cn##.ad:not([style])
 ||derwesten.de/stats/
 ||desa.fkapi.net^
 ||desb.fkapi.net^
+||desekansr.com^
 ||desert.ru/tracking/
 ||desertedbreath.com^
 ||desertedrat.com^
@@ -45669,6 +45685,7 @@ zznews.cn##.ad:not([style])
 ||hfc195b.com^
 ||hfd.bridgetowermedia.com^
 ||hfjuki.com^
+||hflssy.com^
 ||hfrytno.cn^
 ||hfyxdl.com^
 ||hg-bn.com^
@@ -46456,6 +46473,7 @@ zznews.cn##.ad:not([style])
 ||ijaabm.nbcsports.com^
 ||ijinshan.com/images/gk/game
 ||ijsprocode.com^
+||ijsxk.com^
 ||ik123.com/js/dd.js
 ||ikaka.com/globalad/
 ||ikcyxcbqmoptk.com^
@@ -48262,6 +48280,7 @@ zznews.cn##.ad:not([style])
 ||kjxmcn.eset.com^
 ||kk-resources.com/ks.js
 ||kkcaicai.com^
+||kkeji.com/img/*/300250
 ||kkeji.com/img/*/aliyun
 ||kkeji.com/img/*/img300250.
 ||kkeji.com/img/2005/m_info_720.png
@@ -51070,6 +51089,7 @@ zznews.cn##.ad:not([style])
 ||mgz.com.ua/counter.php?
 ||mgzs.cdn.bcebos.com^
 ||mgzupozfeltrv.com^
+||mh3666.com^*.jsonp
 ||mha.fi/simple.gif?
 ||mhdnspro.com^
 ||mhidwg.elgiganten.se^
@@ -52938,6 +52958,7 @@ zznews.cn##.ad:not([style])
 ||oppersianor.com^
 ||opportunity.businessbroker.net^
 ||opportunitysleepyreflex.com^
+||opposedcream.com^
 ||oppositeoperation.com^
 ||opps.taboola.com^
 ||oppuz.com^
@@ -53074,6 +53095,7 @@ zznews.cn##.ad:not([style])
 ||oufteens.com^$all
 ||ouftukoo.net^
 ||oufuqh.kant.ru^
+||ouhastay.net^
 ||oujouniw.com^
 ||oujtbhllnntesk.com^
 ||oumazg.com^
@@ -53432,7 +53454,6 @@ zznews.cn##.ad:not([style])
 ||parcelcreature.com^$third-party
 ||parchedangle.com^
 ||parchedsofa.com^
-||parcle.io^$third-party
 ||pardot.com/pd.js
 ||parentful.club^
 ||parisianmacao.bet^
@@ -53862,8 +53883,6 @@ zznews.cn##.ad:not([style])
 ||piquantprice.com^
 ||piquantstove.com^
 ||piquperkin.com^
-||piraproxy.info/&^$popup
-||piraproxy.info/hkz2^$popup
 ||piratepx.com^$third-party
 ||pirtecho.net^
 ||pisism.com^
@@ -59780,6 +59799,7 @@ zznews.cn##.ad:not([style])
 ||static.selfpuc.com^$third-party
 ||static.showheroes.com/publishertag.js
 ||static.surfe.pro/js/net.js$script,redirect=noop.js,domain=median.uno
+||static.surfe.pro/js/net.js$script,xmlhttprequest,redirect=noop.txt,domain=faucetclub.net
 ||static.surfe.pro/js/net.js$script,xmlhttprequest,redirect=noop.txt,domain=faucetcrypto.net
 ||static.surfe.pro/js/net.js$script,xmlhttprequest,redirect=noop.txt,domain=freebitcoin.top
 ||static.tianyaui.com^*/stat_20080313.js
@@ -62923,6 +62943,7 @@ zznews.cn##.ad:not([style])
 ||trandlife.info^
 ||trangamcoached.com^
 ||tranny.one/bd.php
+||trannygem.com/ai
 ||tranquilside.com^$third-party
 ||transactionale.com^$third-party
 ||translateoatmeal.com^
@@ -63502,9 +63523,6 @@ zznews.cn##.ad:not([style])
 ||unawakegaleus.com^
 ||unbecominghall.com^$third-party
 ||unblestrustic.com^
-||unblocked.club/hkz^$popup
-||unblockedstreaming.net/&^$popup
-||unblockedstreaming.net/hkz^$popup
 ||unblockia.com^$third-party
 ||unblog.fr/cu.js
 ||uncn.jp^$third-party
@@ -64254,6 +64272,7 @@ zznews.cn##.ad:not([style])
 ||vplayer.enthusiastgaming.com^$domain=systemrequirementslab.com
 ||vpmdiq.propertyfinder.qa^
 ||vpn-access.site^$third-party
+||vpn-offers.info^
 ||vpn4-238.net.zooplus.fr^
 ||vpnuyy.carters.com^
 ||vpoweb.com/counter.php?
