@@ -1,8 +1,8 @@
-! Checksum: obu6h2Z+6rZkA9negCGqUA
+! Checksum: vYRzLfZl8+ErBsNLW0MDVg
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.0.61.51
-! TimeUpdated: 2022-05-13T15:31:26+00:00
+! Version: 2.0.61.52
+! TimeUpdated: 2022-05-13T16:31:29+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -357,6 +357,7 @@ lj_bookmarklet
 ! Good: example.org#?#main > div.row:has(> div.ad)
 ! Bad: example.org##main > div.ad (should be in specific.txt)
 !
+alanam.com#?#.entry-content > div.film-content:has(> div.film-share)
 doorblog.jp#?#.content > nav.section-box:has(> ul > li > .line-it-button)
 ai.facebook.com#?#a[href^="https://www.facebook.com/sharer/sharer.php"]:upward(1)
 filmmom.pro#?#.navbar-collapse > div.bloklar:has(> div.icerik > div.d-flex > a[onclick^="share_button("])
@@ -8928,7 +8929,7 @@ zaxid.net##.soc_list_for_news
 wrestling-online.com##.soc_sharing
 alnews.com.ua##.socbtn
 livesport.ru##.socbut_b
-yetiskinfilmizle.net,erotik-film.org,18filmler.net,hdsexfilmizle.com,otukenim.tv##.sociaPayLasim
+erotikfilmizle1.com,yetiskinfilmizle.net,erotik-film.org,18filmler.net,hdsexfilmizle.com,otukenim.tv##.sociaPayLasim
 kibrispostasi.com##.social > li[class]:nth-child(-n+3)
 sobesednik.ru##.social-block-tabs-wrapper
 wday.ru##.social-blocks
@@ -9708,6 +9709,7 @@ jp##.box-sns
 ~hatena.ne.jp##a[href*="//b.hatena.ne.jp/entry/"]
 ##.shareBtn
 ##.redes-sociales
+~github.com,~feedly.com##a[href^="http://feedly.com/i/subscription/"]
 ~github.com,~feedly.com##a[href^="https://feedly.com/i/subscription/"]
 ~vkrugudruzei.ru##a[href^="http://vkrugudruzei.ru/x/button?url="]
 ~hatena.com##.social-hatena
