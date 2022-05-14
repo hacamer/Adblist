@@ -1,8 +1,8 @@
-! Checksum: jpQzsvXg8wLl6ns/jAzwig
+! Checksum: RJ/GQIln4G3uM14oeKc8LA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.19.33
-! TimeUpdated: 2022-05-14T08:30:33+00:00
+! Version: 2.1.19.34
+! TimeUpdated: 2022-05-14T09:02:21+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7329,7 +7329,7 @@ chimica-online.it###cookieChoiceInfo
 strunz.com###v-cookielaw
 !
 !
-/consent.[\s\S]*.de/$domain=berliner-zeitung.de|mopo.de|duda-kinderzeitung.de|dumont.de|dumont-rheinland.de|rheinische-anzeigenblaetter.de|yourjob.de
+/consent.[\s\S]*.de/$domain=mopo.de|duda-kinderzeitung.de|dumont.de|dumont-rheinland.de|rheinische-anzeigenblaetter.de|yourjob.de
 !
 ! common name
 ! ##.cc-overlay
@@ -15558,6 +15558,7 @@ consent.faz.net#%#AG_onLoad(function(){if(window.location.href.includes("consent
 ! "Button I Accept"
 consent.falkirkherald.co.uk#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var g=new MutationObserver(function(){var b=document.querySelector('button[title="I Accept"]');b&&b.click();});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
 !
+cmpv2.berliner-zeitung.de#%#AG_onLoad(function(){if(document.location.href.includes("requestUUID")){var g=new MutationObserver(function(){setTimeout(function() {var b=document.querySelector('button[title="Einstellungen"]');b&&b.click();}, 2000); setTimeout(function() {var c = document.querySelectorAll(".reject-toggle"); c[0]&&c[0].click(); var d = document.querySelector('button[title="Speichern & Schließen"]'); d&&d.click(); },2000); });g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},10E4)}});
 consent.t-online.de#%#AG_onLoad(function(){if(document.location.href.includes("requestUUID")){var g=new MutationObserver(function(){setTimeout(function() {var b=document.querySelector('button[title="AKZEPTIEREN UND WEITER"]');b&&b.click();}, 1000);});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},10E4)}});
 winfuture.de#%#AG_onLoad(function(){if(!document.cookie.includes("cmpconsent") || !document.cookie.includes("__cmpcccu")){var g=new MutationObserver(function(){var b=document.querySelector("#cmpwrapper").shadowRoot.querySelector("#cmpwelcomebtnyes > a");b&&b.click();});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
 cyberport.de#%#AG_onLoad(function(){if(!document.cookie.includes("__cmpcccu")){var g=new MutationObserver(function(){var b=document.querySelector('#cmpwrapper').shadowRoot.querySelector('#cmpbntnotxt');b&&b.click();});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
