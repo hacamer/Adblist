@@ -1,8 +1,8 @@
-! Checksum: RJ/GQIln4G3uM14oeKc8LA
+! Checksum: q25yF740shy6F0nQJWisfw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.19.34
-! TimeUpdated: 2022-05-14T09:02:21+00:00
+! Version: 2.1.19.36
+! TimeUpdated: 2022-05-14T10:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -21234,6 +21234,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+||uicdn.com/mailint/*/assets/_sn_/lod/welcomeback.js$domain=gmx.*
 ||wakasa.jp/common/js/modalCheck.js
 tomtop.com##.freePointWrap
 curet.jp##.l-footer-modal
@@ -33412,7 +33413,8 @@ tudaydeals.com#$##wpsafe-generate { display: block !important; }
 m.facebook.com#$#.ssr #screen-root { pointer-events: auto !important; }
 m.facebook.com#$#.ssr #screen-root img { pointer-events: auto !important; }
 ! m.facebook.com - allows to highlight text
-m.facebook.com#$#html.unselectable * { -webkit-user-select: text !important; }
+m.facebook.com#$#div { -moz-user-select: text !important; -webkit-user-select: text !important; }
+m.facebook.com#$#.touch a[href*="story.php"] { position: relative !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115570
 news.kstyle.com##div[style*="width:640px;"][style*="height:253px;"] + aside > div.MdMN12Line
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115284
