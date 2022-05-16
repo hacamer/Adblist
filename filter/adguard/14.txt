@@ -1,8 +1,8 @@
-! Checksum: WH9oB8F0AG7N0NjW+qpCyw
+! Checksum: dQdmaxZ0XS4+Ml8la0DGZw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.19.47
-! TimeUpdated: 2022-05-16T10:30:39+00:00
+! Version: 2.1.19.49
+! TimeUpdated: 2022-05-16T12:30:35+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -3239,6 +3239,7 @@ hgtv.com#@#.showads
 !
 !
 !
+postimees.ee#%#//scriptlet("prevent-setTimeout", "adblockNotif")
 e-words.jp###forvisitors
 givee.club#%#//scriptlet('abort-current-inline-script', 'document.addEventListener', 'adjs')
 light.gg##.items-right-square
@@ -5005,6 +5006,7 @@ postimees.ee#%#//scriptlet('remove-class', 'cookie-paywall-visible', 'article')
 it-actual.ru#$#.adsbygoogle { transform: scale(0) !important; height: 0 !important; }
 !
 !#safari_cb_affinity(general)
+postimees.ee#@#.adBanner
 textstudio.co#@#.adsbyyahoo
 signupgenius.com#@#.adholder2
 signupgenius.com#@#.ad-placement
@@ -21070,6 +21072,7 @@ newzit.com#$#div[class*="hasSmartBanner_"] { padding-top: 0 !important; }
 !
 ! Unhide for Android CB if top padding cannot be removed
 !
+||100fanwo.com/126.jpg
 rakuten.co.jp##div[class^="etsy-banner-"]
 kasikornbank.com###ex-app
 edh.tw###vip-banner
@@ -21237,6 +21240,7 @@ s.cosme.net##.act-bottom-nav
 ||wakasa.jp/common/js/modalCheck.js
 tomtop.com##.freePointWrap
 curet.jp##.l-footer-modal
+boat-lifestyle.com##div[id^="nmg-incentive"]
 youtube.com##tp-yt-iron-dropdown[class="style-scope ytd-popup-container"][horizontal-align="right"]
 baike.baidu.com##.sl-player__main.window-player
 ||tally.so/popup/$third-party
@@ -29633,6 +29637,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+dantri.com.vn##div[data-module="cognito-form"]
 1istochnik.ru##div[class^="article_"][class$="-share"]
 1istochnik.ru##.news-sidebar-social
 mel.fm##.subscriptionBlock
@@ -35541,6 +35546,7 @@ blog.livedoor.jp,duellinks.doorblog.jp,dragonquestwalk.blog.jp##.rss
 bing.com###ev_talkbox_wrapper
 ||widgets.trustedshops.com^$third-party
 ||sealserver.trustwave.com/seal.js
+||bot-upload.s3.amazonaws.com/*/Icone_SBOT-
 pondesk.com###trustedsite-tm-image
 ||cubikachatuiuat.azurefd.net/cubikbot
 settrade.com##.chatbot-icon
