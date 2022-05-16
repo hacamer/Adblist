@@ -1,8 +1,8 @@
-! Checksum: ZANOiFlTlp/6lYtzwB4Xhg
+! Checksum: IA/H6JI1C3oLJa+BChoJ4Q
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.19.43
-! TimeUpdated: 2022-05-16T06:30:37+00:00
+! Version: 2.1.19.44
+! TimeUpdated: 2022-05-16T07:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -16153,7 +16153,7 @@ nibelungen-kurier.de#%#//scriptlet('set-cookie', 'user_consent', '1')
 eigene-ip.de#%#AG_onLoad(function(){if(!document.cookie.includes("consent")){var a=document.querySelector(".flex > button#accept");a&&a.click()}});
 oriflame.com#%#//scriptlet('remove-class', 'hidden', '.content-overlay + div.w-estimated-total')
 gmx.ch,plus.gmx.at,plus.gmx.net,plus.web.de#%#AG_onLoad(function() {if (!document.cookie.includes("euconsent-v2")) {var g = new MutationObserver(function() {var b = document.querySelector("button.close-layer");b && b.click();});g.observe(document, {childList: !0,subtree: !0});setTimeout(function() {g.disconnect()}, 1E4)}});
-plus.mail.com,plus.gmx.com#%#AG_onLoad(function() {if (!document.cookie.includes("euconsent-v2")) {var g = new MutationObserver(function() {var b = document.querySelector("button#onetrust-pc-btn-handler");b && b.click(); setTimeout(function() { var c = document.querySelector("button.save-preference-btn-handler.onetrust-close-btn-handler"); c&& c.click();}, 300);});g.observe(document, {childList: !0,subtree: !0});setTimeout(function() {g.disconnect()}, 1E4)}});
+gmx.co.uk,plus.mail.com,plus.gmx.com#%#AG_onLoad(function() {if (!document.cookie.includes("euconsent-v2")) {var g = new MutationObserver(function() {var b = document.querySelector("button#onetrust-pc-btn-handler");b && b.click(); setTimeout(function() { var c = document.querySelector("button.save-preference-btn-handler.onetrust-close-btn-handler"); c&& c.click();}, 300);});g.observe(document, {childList: !0,subtree: !0});setTimeout(function() {g.disconnect()}, 1E4)}});
 rp.pl,parkiet.com#%#//scriptlet('set-cookie', '__gm_tcfconsent_v2', '1')
 tutonaut.de#%#//scriptlet('set-cookie', 'wpl_viewed_cookie', 'yes')
 etsy.com#%#AG_onLoad(function(){setTimeout(function(){if(-1==document.cookie.indexOf("OptanonAlertBoxClosed")){var a=document.querySelector("button[data-gdpr-single-choice-accept]");a&&a.click()}},300);});
@@ -16556,6 +16556,8 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/AdguardTeam/AdguardFilters/pull/118617
+gmx.co.uk#@##onetrust-consent-sdk
 ! https://github.com/AdguardTeam/AdguardFilters/issues/118172
 @@||cdn.ampproject.org/v0/amp-consent-*.js$domain=edition.cnn.com
 ! blackout with scroll locked
@@ -19243,6 +19245,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+m.happymoney.co.kr##.recommendAppWrap
 m.tomtop.com##.m_app
 capital.com##.award-banner-wrap
 antenna.jp###install-link
@@ -20000,7 +20003,7 @@ toppr.com##div[class^="question_suggestionsAppBannerWrapper__"]
 dicionarioinformal.com.br,5-fifth.com,news.sky.com,chat.babel.com,getwordly.com,school-turnup.com,naked-science.ru,vod.tvp.pl,tvn24.pl,m.lamoda.ru,lkfl2.nalog.ru##.smartbanner
 profile.ru##div[class="read-yzd mobile-only"]
 biokadar.com#?#.sidebar > div.widget:has(> div.textwidget > center > a[href="https://www.biokadar.com/biokadarcom.apk"])
-teknowebim.com,op.gg,cameralabs.org##a[href^="https://play.google.com/store/apps/details?id="]
+allwish.me,teknowebim.com,op.gg,cameralabs.org##a[href^="https://play.google.com/store/apps/details?id="]
 blocket.se##div[class^="AppLinks__"]
 ||m.pufei8.com/skin/iymbl-app.js
 m2o.it##.player > section.player-wrapper + div.footer_player
@@ -21753,7 +21756,6 @@ udemy.benesse.co.jp###popupCourseWrap
 rajwap.biz##.videojs_theatre_mode
 granadadigital.es#%#//scriptlet("abort-current-inline-script", "$popup", "magnificPopup")
 passfab.ru###banner-seasonal
-tutu.ru##div[data-ti="order-popper-container"]
 tutu.ru##div[data-ti="banner"]
 kolesa.ru##.post-popup
 kolesa.ru##.marked-post
@@ -31934,7 +31936,7 @@ thelocal.ch,itsfoss.com,makeuseof.com,fosspost.org,sergeiyurev.com##.ml-subscrib
 babychakra.com,games.mail.ru,citydog.by,rusplt.ru,skyeng.ru##.email-subscription
 magazine.skyeng.ru#?#div[data-ce-tag="grid-col"] > p[data-ce-tag="paragraph"]:contains(/(^В изучении английского.*оригинале.\s$)|(^Чтобы без проблем общаться.* фразы на английском.$)/)
 clara.es##.content-newsletter
-newsgram.com,paperpaper.press,paperpaper.ru##.subscription-widget
+newsgram.com,paperpaper.*##.subscription-widget
 poder360.com.br##.mod-newsletter
 xda-developers.com###newsletter-sidebar-subscribe
 theregister.com##.newsletter_signup_unit
@@ -36390,7 +36392,7 @@ delo.ua##.c-support
 meduza.global.ssl.fastly.net,meduza.io##.SaveMeduza-root
 texty.org.ua###the-only-donate-banner
 birgun.net##.support-box
-paperpaper.*##.bottom-block  > div.post-info-block
+paperpaper.*##.bottom-block > div.post-info-block
 mediazona.online,fourth-sphere-302420.appspot.com,zona.media##.mz-agent-banner
 mediazona.online,fourth-sphere-302420.appspot.com,zona.media##.tools__support_container
 histmag.org##div[evergreen-portal-container=""]
