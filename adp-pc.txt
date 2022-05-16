@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: Zs1LYTCSlkdCUoiABwTsBg
+! Checksum: dTBJUnffwlWhEZ6kA11Yng
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202205161533
-! Last Modified: 2022年05月16日 15:33
+! Version: 202205161641
+! Last Modified: 2022年05月16日 16:41
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 72430
+! Total count: 72432
 ###ADCENTER
 ###ADSLOT_1
 ###ADTOP
@@ -25678,8 +25678,7 @@ filmisub.com##+js(no-fetch-if, adskeeper)
 filmisub.com##+js(set-constant, adsNotBlocked, true)
 filmisub.com##+js(set-constant, detis, noopFunc)
 filmisub.com##+js(set-constant, noAdBlock, true)
-filmix.ac,filmix.beer,filmix.biz,filmix.buzz,filmix.cc,filmix.click,filmix.co,filmix.email,filmix.gay,filmix.ink,filmix.love,filmix.ltd,filmix.online,filmix.site,filmix.today,filmix.wiki,filmix.zone###oframeplayer > pjsdiv[style^="position: absolute; left:"][style*="display: block; visibility: visible;"] ~ pjsdiv[style^="position: absolute; left:"][style*="pointer-events: none; display: block; visibility:"]
-filmix.ac,filmix.beer,filmix.biz,filmix.buzz,filmix.cc,filmix.click,filmix.co,filmix.email,filmix.gay,filmix.ink,filmix.love,filmix.ltd,filmix.online,filmix.site,filmix.today,filmix.wiki,filmix.zone#?##oframeplayer > pjsdiv[style^="position: absolute; left:"][style*="display: block; visibility: visible;"]:-abp-contains(/adblock/i)
+filmix.ac,filmix.beer,filmix.biz,filmix.buzz,filmix.cc,filmix.click,filmix.co,filmix.email,filmix.gay,filmix.ink,filmix.love,filmix.ltd,filmix.online,filmix.site,filmix.today,filmix.wiki,filmix.zone###oframeplayer > #player_control_play-icon ~ pjsdiv[style^="position: absolute; left:"][style*="pointer-events: none; display: block; visibility:"]
 filmix.love,filmix.ac,filmix.beer,filmix.biz,filmix.buzz,filmix.cc,filmix.click,filmix.co,filmix.email,filmix.gay,filmix.ink,filmix.ltd,filmix.online,filmix.site,filmix.today,filmix.wiki,filmix.zone##.remove-sda-wrap
 filmovitica.com##+js(window.open-defuser)
 filmux.org#@#.myTestAd
@@ -29281,6 +29280,7 @@ makepolo.com,mycar168.com,mysteel.com,pchome.net,qz828.com,rjfcw.cn##div[id^="ad
 maketecheasier.com##.header-widget
 maketecheasier.com##[id^="MTE_in_content_ad"]
 mako.co.il##div.ad
+malaysiakini.com##div[class*="justify-center"][style="height: 250px;"]
 malaysiastock.biz###sideBar > div[class^="RightPanel_Rectangle"]
 malaysiastock.biz##+js(set-constant, canRunAds, true)
 malekal.com##.topad
@@ -30147,6 +30147,7 @@ mypillow.com#@#[href^="https://www.mypillow.com/"] > img
 myplaycity.com##.billborad_snigel
 mypornhere.com##.item[style="text-align:center !important;"]
 mypornhere.com#$#.block-video > div.table { visibility: hidden !important; }
+mypractically.xyz##+js(abort-current-script, document.createElement, _0x)
 myreadingmanga.info##+js(abort-on-property-read, bisqus)
 myreadingmanga.info##center > a[href][target="_blank"][rel="nofollow noopener"] > img
 mysexgamer.com##+js(no-setTimeout-if, window.location.href = "/out.php")
@@ -58296,6 +58297,7 @@ zznews.cn##.ad:not([style])
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=noop.js,domain=htmlsave.com
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=noop.js,domain=itscybertech.com|premiumebooks.*
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=noop.js,domain=linksht.com
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=noop.js,domain=mypractically.xyz
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=noop.js,domain=sammobile.com,important
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=noop.js,domain=unrar.flowsoft7.com
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=noop.js,domain=vrcmods.com
