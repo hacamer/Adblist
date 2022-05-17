@@ -1,8 +1,8 @@
-! Checksum: q6nk2Ufx1A4Et13DqHV90Q
+! Checksum: BYRC86WbZYbXUQPfZ+CpmQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.19.67
-! TimeUpdated: 2022-05-17T16:30:40+00:00
+! Version: 2.1.19.69
+! TimeUpdated: 2022-05-17T17:30:38+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2541,6 +2541,8 @@ hi-tech.mail.ru##.sticky_footer div[class^="block block_padding rb-block-"]
 ##.sosyal:not(body):not(html)
 ##.td_block_social_counter
 !
+! big vk banner
+pepper.ru##div[data-track*="vk_banner"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116495
 teknoblog.com#?#.wpb_wrapper > div.tdm_block:has(> div.td-block-width > div.td-block-row > div.tdm-col > div.tds-button > a[href="https://goo.gl/TKXKuq"])
 ! https://github.com/AdguardTeam/AdguardFilters/issues/106898
@@ -19252,6 +19254,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+pepper.ru##div[data-track*="app_installs_banner"]
 asajikan.jp##.apri_b_pc
 asajikan.jp##.bnrAppGuidance
 asajikan.jp##.appdl1
@@ -19281,7 +19284,6 @@ deepl.com##.lmt_targetToolbar__appPromotion_container
 m.shein.com#$#.journey-contain { display: none !important; }
 m.shein.com#$#body { margin-top: 0px !important; }
 m.youm7.com##.mobileAdvFooter
-newchic.com##.app-download
 ||scdn.line-apps.com/stf/line-news/js/thirdparty/
 apnews.com##div[class*="appDownload-"]
 aol.com##.m-promo-standard
@@ -19296,7 +19298,6 @@ m.dcinside.com###app_down_pop
 2chmatome2.jp##.appli-view-box
 w.grapps.me##.app-intro
 pinkvilla.com##div[id^="BottomApp"]
-m.wanben.org##.appguide-wrap
 m.banggood.com#$#.drainage-pop { display: none !important; }
 m.banggood.com#$#.global-no-scroll { position: static !important; }
 m.banggood.com##.bottom-app-contain
@@ -19361,7 +19362,6 @@ wetransfer.com##.AppDownloadDrawer
 wetransfer.com##.downloader__collect-header
 trovo.live##.app-sidebar
 trovo.live#%#//scriptlet('set-session-storage-item', 'download-dialog-closed', '1')
-momoshop.com.tw###smartbanner
 moneynet.com.tw##.download-container
 moneynet.com.tw##.nav-download-container
 moneynet.com.tw##button[onclick="appclick()"]
@@ -19909,7 +19909,7 @@ hindustantimes.com##.openAppButton
 noin.shop,india.com##.open-app
 commaful.com##.suggested-story-section > div.desktop-only.float-left
 commaful.com##.ios-app-promo
-jingwuhotel.com##.appguide-wrap
+m.wanben.org,jingwuhotel.com##.appguide-wrap
 jingwuhotel.com##.aznav
 flipkart.com#?#div[class*=" "] > div[class]:has(> div > img[src*="flipkart_app_icon-"])
 microsoftedgewelcome.microsoft.com##.mobile-banner__unexpanded
@@ -20527,7 +20527,7 @@ wallstreet-online.de##.app-advertising
 lazada.co.id,milliyet.com.tr,esky.com.tr,allo.ua,home24.de,cbsnews.com,lieferheld.de##.smart-banner
 besplatka.ua##.footer_bottom > div#applications
 onlineradiobox.com##.page__column-right > .playmarket
-m.zaful.com,c.mi.com,m.vseinstrumenti.ru##.app-download
+newchic.com,m.zaful.com,c.mi.com,m.vseinstrumenti.ru##.app-download
 m.avito.ru##.promo-app-inner
 m.17track.net##.yq-panel-download
 ozon.ru##.bMobileAppBanner
@@ -20552,7 +20552,7 @@ gran-turismo.com,m.tv.naver.com,m.comic.naver.com,m.bombaytimes.com##.app_banner
 ||gamer-mods.ru/.s/src/jquery.smartbanner.js
 intellicast.com###promoAd
 intellicast.com###stormLink
-fashion-headline.com,ticketjam.jp,kompas.com,sevenbank.co.jp,booth.pm,reverso.net,bangumi.org,msn.com,m.investing.com,m.spiegel.de,mavcsoport.hu,m.trendyol.com,autobild.de,infranken.de,m.douglas.de,focus.de###smartbanner
+fashion-headline.com,momoshop.com.tw,ticketjam.jp,kompas.com,sevenbank.co.jp,booth.pm,reverso.net,bangumi.org,msn.com,m.investing.com,m.spiegel.de,mavcsoport.hu,m.trendyol.com,autobild.de,infranken.de,m.douglas.de,focus.de###smartbanner
 ipaddressguide.com##img[alt="iptools apple app"]
 ipaddressguide.com##img[alt="iptools android app"]
 extramovies.org##.poster > center > .app
@@ -29671,6 +29671,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+pepper.ru##.js-telegram-widget
 heizung-billiger.de###news_modal
 kp.ru##.page-content__footer-top
 kp.ru##a[href="https://zen.yandex.ru/kpsport"]
@@ -29726,8 +29727,6 @@ opopular.com.br##.container-inner-newsletter
 folhabv.com.br##iframe[src^="https://egoi.page/"]
 nsn.fm###articleBody > div[class] div[itemprop="articleBody"] + div[class] > section[class]
 nsn.fm##div[itemprop="articleBody"] > div[class^="_"] > div[class] >  p
-valentins.de###modalwrapper
-valentins.de##.modal-backdrop
 peopletalk.ru##.only-mobile
 positivr.fr##.positivr-newsletter-cta
 myticket.de##div[id^="c-newsletter"]
@@ -29742,8 +29741,6 @@ miamistandard.news##.__b-popup1__
 ctnews.ru##.goto_news__block
 i-ua.tv##.tm-article a[href="https://t.me/iuatv"]
 digitalocean.com#?#div[class^="ToastStyles__StyledWrapper"]:has(> div[class^="NewsletterToastStyle__NewsletterText"])
-netgear.com###discount-opt-in-overlay
-netgear.com##.modal-backdrop
 ||lightboxcdn.com/vendor/$domain=deadline.com
 novayagazeta.ru##div[class^="SubscriptionInformer_root__"]
 matichonweekly.com,sentangsedtee.com,silpa-mag.com,technologychaoban.com,matichon.co.th##div[class] > div.td_block_text_with_title
@@ -30619,8 +30616,10 @@ aqweeb.com##.email-section
 americanexpress.com##div[data-bti-module-variant="emailsignup"]
 zn.ua##.bottom_block > div.telegram
 blog.reedsy.com#?#p ~ div.panel > div.panel-body > form.captcha-signup:upward(div.panel)
+netgear.com###discount-opt-in-overlay
+valentins.de###modalwrapper
+mindtecstore.com,profi.ru,starterstory.com,valentins.de,netgear.com##.modal-backdrop
 starterstory.com###emailCaptureModal
-mindtecstore.com,profi.ru,starterstory.com##.modal-backdrop
 starterstory.com##.fixed-toc-right
 starterstory.com##.subscribe-end-article
 vm.ru##.article--subscribes
@@ -30704,7 +30703,7 @@ washingtonpost.com##.softwall-overlay
 botanichka.ru###subscribeslide
 leverageedu.com##.navbar-follow-button
 kubnews.ru##.subscribe-channel
-mydealz.de##.js-newsletter-widget
+pepper.ru,mydealz.de##.js-newsletter-widget
 design-homes.ru##.b-zen
 design-homes.ru##a[href="https://zen.yandex.ru/design-homes.ru"]
 decolar.com###subscription-ab
