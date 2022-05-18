@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: xUFZ5cdX5Zd2+DnRqKPO9g
+! Checksum: DlRIfS7Cju32r8ei6D+uXg
 ! Title: My AdFilters（for Mobile）
 ! Expires: 12 hours
-! Version: 202205181638
-! Last Modified: 2022年05月18日 16:38
+! Version: 202205181733
+! Last Modified: 2022年05月18日 17:33
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 67490
+! Total count: 67503
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -6214,6 +6214,7 @@
 ##div[style="box-sizing:border-box;padding:20px 16px;border-radius:8px;width:90%;margin:0 auto;"]
 ##div[style="display: flex;flex-wrap: wrap;margin-right: 5px;margin-left: 5px;"] + style + .container
 ##div[style="display:none;"] + script + #container.container
+##div[style="position: fixed;top: 60px;right:0;z-index:999;width:250px"]
 ##div[style="text-align:center;"] > a[href*="/register/?i_code="]
 ##div[style^="width: 100%;"]:not([id]):not([class]) > iframe[scrolling="no"][src^="http"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"]:not([allowfullscreen])
 ##div[style^="width: 100%;"][style$="overflow: hidden;"] iframe[scrolling="no"][src*="//"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"]
@@ -6269,6 +6270,7 @@
 ##object[width="770"][height="100"]
 ##script + #coupletBox
 ##script + #rbbox
+##script + a[href="/hth.html"][target="_blank"]
 ##script[src="/static/base.js"] + #couplet
 ##script[src="/template/kuhei2/skin/base.js"] + #couplet
 ##span[id^="ezoic-pub-ad-placeholder-"]
@@ -14109,7 +14111,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 100count.net##+js(window.open-defuser)
 100ec.cn##.detail_top_ad
 1010dy.vip##.text-center[style]
-1010dy.vip##a[href^="/goto."]
+1010dy.vip##a[href^="/go"]
 1010jiajiao.com###daan_recommend + .xiti
 1010jiajiao.com###yueyu3
 1010jiajiao.com##.bdgg
@@ -21293,6 +21295,7 @@ chinamedevice.cn##.news_ylqx
 chinamedevice.cn##.news_ylqx3
 chinamedevice.cn,hgitv.com##.gg12
 chinanews.com.cn###ad_right_fc1
+chinanewsx.com##a[href="/about/"]
 chinaqking.com###cnt-ad
 chinaqking.com###newsAD
 chinaqking.com###readerServiceDIV
@@ -22606,6 +22609,9 @@ emb.apl4.me##+js(window.open-defuser)
 embed.indavideo.hu##+js(set-constant, AdHandler.adblocked, 0)
 embed.indavideo.hu##+js(set-constant, videodata.adBlockEnabled, 0)
 embed.watchasian.to##+js(window.open-defuser)
+embedo.co##+js(no-fetch-if, pagead2.googlesyndication.com)
+embedo.co,highload.to##+js(window.open-defuser)
+embedo.co,player.unlimitedfiles.xyz,highload.to,youtube2convert.com##+js(set-constant, BetterJsPop.add, noopFunc)
 embedsito.com##+js(json-prune, player.incomePop)
 emonitoring.poczta-polska.pl###getbaner
 empflix.com##+js(addEventListener-defuser, , /exo)
@@ -24257,7 +24263,6 @@ hifi-forsale.co.uk#@##centerads
 hifidiy.net###part_left2
 hifidiy.net###part_right_gg7
 highload.to##+js(no-fetch-if, /exoclick\.com|popcash\.net|pagead2\.googlesyndication\.com/)
-highload.to##+js(window.open-defuser)
 highload.to##body > div[id][style^="height:"][style*="display:"][style*="opacity:"][style*="z-index:"]
 highload.to##section > div[id][style^="height:"][style*="display:"][style*="opacity:"][style*="z-index:"]
 highporn.net##.banner-a
@@ -27790,7 +27795,6 @@ player.pl##+js(json-prune, movie.advertising.ad_server)
 player.pl##+js(remove-class, async-hide, html)
 player.tubia.com##+js(no-fetch-if, adservice.google.com)
 player.tubia.com#@#.companion-ads
-player.unlimitedfiles.xyz,highload.to,youtube2convert.com##+js(set-constant, BetterJsPop.add, noopFunc)
 playerdrive.me##+js(set-constant, canRunAds, true)
 playerfs.com##+js(window.open-defuser)
 playerlunla.com##+js(abort-current-script, $, check_av)
@@ -29984,6 +29988,7 @@ thepiratesproxy.org,pirateproxy.space,tpbproxypirate.com,pirateproxy-bay.com##.s
 thepointsguy.com##.beam-card-feature
 thepointsguy.com##.favorite-cards
 thepoorcoder.com##+js(set-constant, adblockDetector, noopFunc)
+theporn.cc##.pp > .none + div[id]
 theporn.cc##.pt-70 > div[id]
 theporn.cc##.video_playr_sider
 theporn.cc##div > div[align="center"]
@@ -38852,6 +38857,7 @@ zznews.cn##.ad:not([style])
 ||chinanews.com/ad2019/wujiu_ad.jpg
 ||chinanews.com/fileftp/2016/06/2016-06-13/U194P4T47D35171F967DT20160613093733.jpg
 ||chinanews.com/fileftp/2016/08/2016-08-04/U194P4T47D36220F967DT20160804155100.jpg
+||chinanewsx.com^$csp=script-src 'self' * 'unsafe-eval'
 ||chinaqking.com/images/newPage/JLW.jpg
 ||chinaqking.com/images/qkw/jobApply1.jpg
 ||chinasexq.com/js/tpgg
@@ -41561,6 +41567,7 @@ zznews.cn##.ad:not([style])
 ||dkskbu.demae-can.com^
 ||dkuiefdtuwnfo.com^
 ||dkupaw9ae63a8.cloudfront.net^
+||dkvuey.xyz^
 ||dl-rms.com^
 ||dl-stage.zola.com^
 ||dl.benefits.express-scripts.com^
@@ -41906,6 +41913,7 @@ zznews.cn##.ad:not([style])
 ||dsply.com^$third-party
 ||dspultra.com^
 ||dspultra.com^$popup
+||dspxxy.com^
 ||dsqzk.cn^
 ||dssdr.top^
 ||dstillery.com^$third-party
@@ -44923,6 +44931,7 @@ zznews.cn##.ad:not([style])
 ||gnavi.co.jp/analysis/
 ||gnezdo.ru^$third-party
 ||gng5.cn^
+||gnn01wl.cn^
 ||gnncc.cc^
 ||gnnzuo.ormatek.com^
 ||gnpge.com^$third-party
@@ -45623,6 +45632,7 @@ zznews.cn##.ad:not([style])
 ||happen.spkt.io^
 ||happenhistory.com^
 ||happyhongkong.com/images/client/
+||happyhs.club^
 ||happyyong.com^
 ||haradeiu.rocks^
 ||harborcub.com^
@@ -51358,6 +51368,7 @@ zznews.cn##.ad:not([style])
 ||miaozhen.com^$third-party
 ||mibatech.com/track/
 ||micghiga2n7ahjnnsar0fbor.com^
+||michaelianice.com^
 ||michealmoyite.com^
 ||micodigo.com^$third-party
 ||micpn.com^$third-party
@@ -66357,6 +66368,7 @@ zznews.cn##.ad:not([style])
 ||xujx8.com^
 ||xulizui6.com^
 ||xunhuaji.cn^
+||xunjiu.online^
 ||xunlei.com/api/stat/rt/js?
 ||xunzhuo123.com^
 ||xuro006.com^
@@ -66853,6 +66865,7 @@ zznews.cn##.ad:not([style])
 ||yqqlm.vip^
 ||yqttykxcmap.com^
 ||yqw88.com^
+||yrbfol5.cn^
 ||yrehdfer.com^
 ||yrlnymthma.com^
 ||yrrudp.inven.co.kr^
