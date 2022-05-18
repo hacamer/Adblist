@@ -1,8 +1,8 @@
-! Checksum: Og9KvJ2SMb67iz6mWyITBQ
+! Checksum: yYJMKtpeNHgWteuk6Qphaw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.19.80
-! TimeUpdated: 2022-05-18T13:30:39+00:00
+! Version: 2.1.19.81
+! TimeUpdated: 2022-05-18T14:30:42+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -5434,6 +5434,7 @@ cc-fan.tv,cn-fan.tv,fox-fan.tv,nf-fan.tv#$#.pub_300x250.pub_300x250m.pub_728x90.
 !######### General element hiding rules ################
 !#######################################################
 !
+###cookiehint
 ###cookie-banner-lgpd
 ##.barra_cookie
 ###gdpr-cookie-consent-bar
@@ -7421,6 +7422,9 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+shop.zoo-berlin.de#$#body { overflow: auto !important; padding-right: 0 !important; }
+shop.zoo-berlin.de#$##cookieNotice { display: none !important; }
+shop.zoo-berlin.de#$##cookieNotice ~ div.modal-backdrop { display: none !important; }
 telecine.com.br##div[data-testid="banner"]
 mamastar.jp###personalInfo
 coinlean.com###showcookietxt
@@ -9771,7 +9775,7 @@ hallhuber.com#$#body { overflow-y: visible !important; }
 hallhuber.com#$#.cookie-box-modal { display: none !important; }
 balthasar-ress.de###cookieBackdrop
 dinamalar.com##.quickslide
-keramundo-onlineshop.de##.cookienote
+juwel-aquarium.de,keramundo-onlineshop.de##.cookienote
 geliebtes-zuhause.de,eurotops.de,carlroth.com,hannovermesse.de,loberon.de,appelrath.com,emero.de,sonono.de,reuter.de###econda-pp2-banner
 nanu-nana.de###neusta-cookie-notice-modal
 zvshk.de##.om-cookie-panel
@@ -9988,7 +9992,7 @@ gartenappel.de###cookie_hinweis_wf
 weekli.de##.cookie-privacy-container
 bauzentrum-schmitt.de,beto-holz.de,bauzentrum-struth.de,heidkaemper.de###wt_cookieconsent
 ozdilekteyim.com##.anonymous-consent-banner
-aa.com,americanairlines.com.au##.aa_optoutmulti-cookie-policy
+aa.com,americanairlines.*###aa_optoutmulti-Modal
 lattmann.de#$#body { overflow: visible !important; }
 lattmann.de#$#.widget--cookiebar { display: none !important; }
 wangerooge.de,royschulz.de###iwcc-background
@@ -13880,7 +13884,6 @@ winhelp.us###cookie_consent
 timeshop24.de,wer-weiss-was.de###cookie_hint
 kdb.hu###cookieallowbar
 vodafone.it###cookiefascia
-sixt.jp,neudorff.de,ib-sh.de,gesundheitsstadt-berlin.de,fcn.de,schema.de,hobby-caravan.de,dkb.de,jam-software.com,jam-software.de,gamepro.de,gamestar.de,ncp-e.com###cookiehint
 gelsenkirchen.de,sgs-cqe.de,km-bw.de,heinrich-braun-klinikum.de,kzvn.de,pleissental-klinik.de,bsw.de,contabo.de,avs.de,skybet.de###cookiehinweis
 gyakorikerdesek.hu###cookiekezeles
 telekom.de###cookienotification
@@ -14436,7 +14439,7 @@ digit-photo.com###messcookie
 magnus-spiele.de###mg-usercookie
 telekom.de###mms-cookie-disclaimer
 schnelltest-apotheke.de,gibson.com,bahlsen.com,mymoments.de,atlasformen.de,tui-ferienhaus.de,socradar.ioinselflieger.de,globalfamilydoctor.com,bmeia.gv.at,nichtraucherhelden.de,aldi-sued.de,sued.aldi-liefert.de,enirocentrum.pl,felix1.de,panoramafirm.pl,hofer.at,dizioneri.com,m.n11.com,wuerth.de,deutsches-ausschreibungsblatt.de,sued.aldi-liefert.de,capveriant.com,xn--giant-dsseldorf-5vb.de##.modal-backdrop
-schnelltest-apotheke.de,hexagongeospatial.com,hexagonmi.com,easycredit.de,unieuro.it,leica-geosystems.com###modal-cookie
+oase.com,schnelltest-apotheke.de,hexagongeospatial.com,hexagonmi.com,easycredit.de,unieuro.it,leica-geosystems.com###modal-cookie
 motorradonline.de###mps-cookie-hint
 quoka.de###msgCookie
 nba.com###nba_tos
@@ -16573,6 +16576,8 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/119054
+shop.zoo-berlin.de#@##cookieNotice
 ! https://github.com/AdguardTeam/AdguardFilters/issues/119001
 thansettakij.com#@##acceptCookie
 ! https://github.com/AdguardTeam/AdguardFilters/issues/118919
