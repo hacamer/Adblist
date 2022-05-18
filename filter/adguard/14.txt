@@ -1,8 +1,8 @@
-! Checksum: 6wGWBL3QrbMM/hTznSWd3A
+! Checksum: FRCzB/iHlOJhCOQzRi+2Vg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.19.72
-! TimeUpdated: 2022-05-18T05:30:36+00:00
+! Version: 2.1.19.74
+! TimeUpdated: 2022-05-18T08:30:41+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7421,6 +7421,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+offen.net###CookieBox
 ||webshop.burgerme.de/theme/js/Widgets/cookieWidget.min.js
 bible.com##.cookie-consent-banner-container
 ||consent.cookiebot.eu/uc.js
@@ -8428,7 +8429,7 @@ leouve.com.br###alert-privacy-policy
 rajabacklink.com###idpop_cookie
 regioactive.de###dialogconsent
 karriere-suedwestfalen.de,ratemyprofessors.com,m.marketplace.asos.com,swatch.com,marc-cain.com,regioactive.de,rodoviariaonline.com.br##.reveal-modal-bg
-skrastas.lt##.fc-consent-root
+onlinestreet.de,skrastas.lt##.fc-consent-root
 shop.dyson.ru##.top-pop-message--cookie
 callofduty.com##.atvi-banner-cmp
 skypng.com,wallpaper.to##.showBanner
@@ -16562,6 +16563,8 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/119001
+thansettakij.com#@##acceptCookie
 ! https://github.com/AdguardTeam/AdguardFilters/issues/118919
 usmagazine.com#@##onetrust-consent-sdk
 ! https://github.com/AdguardTeam/AdguardFilters/issues/118945
@@ -21257,6 +21260,8 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+drop.com#%#(function() { try { if ("undefined" != typeof localStorage) { localStorage.setItem("lastTriggeredSignUpType", "triggered_pdp") } } catch (ex) {} })();
+drop.com#%#(function() { try { if ('undefined' != typeof localStorage) {var date = new Date(); window.localStorage.setItem("lastTriggeredSignUpTime", date.getTime()); } } catch (ex) {} })();
 zebrack-comic.shueisha.co.jp#?#div[style="margin-bottom: 70px;"] > div[class^="sc-"] > div[class^="sc-"] > a[href^="https://app.adjust.com"]:upward(2)
 shop.lenovo.com.cn##.mask-laye-box
 shop.lenovo.com.cn##.sign-in-box
@@ -26921,6 +26926,7 @@ abendzeitung-muenchen.de###webpush-app
 /firebase.js$domain=novayagazeta.ru|comments.ua|kinosimka.net|ilan365.net|cnbcindonesia.com|haberzamani.net|oxy.cloud|allbasketball.org|auslogics.com|kartalyuvasi.com.tr|cnnindonesia.com|fbc.ua|astv.ru|pln-pskov.ru|aylink.co
 /firebase-messaging.js$domain=s.akiba-souken.com|bfm.ru|theswagsports.com|focus.ua|ukranews.com|comments.ua|coub.com|porno90.me|cnnamador.com|giallozafferano.it|wcostream.com|fptplay.vn|jooble.org|mobile01.com|myinstants.com|pdalife.ru|rg.ru|m.iguides.ru|donanimhaber.com|profile.ru|womanhit.ru|news.noteru.com|narodna-pravda.ua|newstm.in|sabah.com.tr|dreamstime.com|popbee.com|avtovzglyad.ru|allbasketball.org|tw.news.yahoo.com|takvim.com.tr|jn.pt|ria.ru|pars.host|calculator-online.net|operanewsapp.com|ahaber.com.tr|tamindir.com|concursosnobrasil.com.br|kompas.com|news.ebc.net.tw|recyclingtoday.com|homedecoratione.com|khersondaily.com|mirtesen.ru|womanhit.ru|belsat.eu|gearbest.com|op.gg|novayagazeta.ru|pocket-lint.com|turunculevye.com|bloomberght.com|stardima.com|aksam.com.tr|portamur.ru|fishki.net|ranking.goo.ne.jp|ohmymag.com|mgronline.com|semnasem.org|bluradio.com|carwale.com|finanznachrichten.de
 !
+tproger.ru##.push-modal
 carwale.com#?#div[data-skin="bg-transparent"] > div > div > button:contains(Subscribe Now):upward(2)
 bursahakimiyet.com.tr###notificationPopup
 ||s.akiba-souken.com/firebase/push_notification.js
@@ -28752,6 +28758,7 @@ experts-exchange.com##.ctaSolutionStickyWrapper
 theguardian.com##.contributions__adblock
 ||contributions.guardianapis.com^
 !
+macbooster.net##.pop-midyear
 elementor.com##.sticky-banner
 geeksforgeeks.org##.text > h3[style="text-align:center"] + blockquote
 geeksforgeeks.org##.text > h3[style="text-align:center"]
@@ -31007,7 +31014,7 @@ sklum.com##.c-home-newsletter
 tip-berlin.de##.mc4wp-form[data-name^="Newsletter"]
 baristainstitute.com##.social-media-share-links > a.newsletter
 ftc.gov##.block-business-blog-subscribe
-giessener-allgemeine.de,fnp.de,fr.de,hna.de,kreiszeitung.de,tz.de,merkur.de,extratipp.com,buzzfeed.de##.id-StoryElement-embed--newsletter
+soester-anzeiger.de,giessener-allgemeine.de,fnp.de,fr.de,hna.de,kreiszeitung.de,tz.de,merkur.de,extratipp.com,buzzfeed.de##.id-StoryElement-embed--newsletter
 livehindustan.com##.sgnupbtn
 e-recht24.de##.newsletterbox
 raymond.cc#?#.sidebar div.widget:has(> div.textwidget > section#aa_wpfs_wrap)
@@ -33850,7 +33857,7 @@ imgadult.com,imgdrive.net,imgtaxi.com,imgwallet.com#%#//scriptlet("adjust-setTim
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115679
 uploadrar.com#%#//scriptlet("adjust-setTimeout", "tick", "1000")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116036
-pouvideo.cc,pomvideo.cc#%#//scriptlet("adjust-setTimeout", "grecaptcha", "*", "0.02")
+steampiay.cc,pouvideo.cc,pomvideo.cc#%#//scriptlet("adjust-setTimeout", "grecaptcha", "*", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115711
 cheatermad.com#%#//scriptlet("adjust-setInterval", "#upbtn", "", "0.02")
 ! https://github.com/uBlockOrigin/uAssets/issues/12809

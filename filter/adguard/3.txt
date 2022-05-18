@@ -1,8 +1,8 @@
-! Checksum: s3/6tTYAV6RtCxqzybyCog
+! Checksum: 4+iK1v7rQae+erGABt7u9w
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.39.82
-! TimeUpdated: 2022-05-18T06:31:20+00:00
+! Version: 2.0.39.83
+! TimeUpdated: 2022-05-18T07:31:24+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -5125,6 +5125,7 @@ nethunt.com/api/v1/track/email/$image
 ! Disabled in DNS filter
 ||telemetry.mozilla.org^
 !
+||heap.drop.com^
 ||r.razer.com^
 ||pix.boursorama.com^
 ||wa.mail.com^
@@ -21173,6 +21174,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ! Umami
 /umami.js
 !
+/awstats.js
 /awstats_misc_tracker.js
 /ticimax/analytics.js
 ://wa.*/s?$image
@@ -21613,6 +21615,7 @@ _tracking.php?b=
 !
 /analytics.js$domain=freexcafe.com|rusvideos.tv|nakubani.ru|lun.com|songsara.net|newsmax.com|bolgehastanesi.com|ewtc.de
 !
+||drop.com/statBeacon
 ||outlook-1.cdn.office.net/owamini/*/resources/analytics-ping.js
 ||rocket.ivi.ru/event/
 ||g.ivi.ru/track
@@ -24436,6 +24439,9 @@ $cookie=ev_sid,domain=ideal.es|elcorreo.com
 ||businessinsider.com^$cookie=/traffic_src|^_sp_/
 ||vc.ru^$cookie=/osnova-aid|fingerprint|adblock-state/
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/118022
+||drop.com^$cookie=md.etag
+||drop.com^$cookie=md.visitId
 ! PopIn
 ||popin.cc^$cookie=_ss_pp_id
 ||popin.cc^$cookie=_td

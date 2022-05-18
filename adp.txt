@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: TK14PFNl0aYRa/sysPDV1w
+! Checksum: sdEF8I+B7yPZGP1uz5ovog
 ! Title: My AdFilters Lite
 ! Expires: 1 hours (Sometimes updates are delayed)
-! Version: 202205181530
-! Last Modified: 2022年05月18日 15:30
+! Version: 202205181638
+! Last Modified: 2022年05月18日 16:38
 ! Homepage: https://github.com/hacamer/Adblist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、Adgk、大萌主的规则
 ! 并补充了贴吧过滤规则，感谢各位的分享！
 ! 如有任何疑问、意见或建议，请反馈给：杏梢
 !
-! Total count: 38907
+! Total count: 38921
 ###Ad_windows
 ###ChapterView > .slide-baidu
 ###Layeraa1
@@ -1475,6 +1475,7 @@
 ##div[style="box-sizing:border-box;padding:20px 16px;border-radius:8px;width:90%;margin:0 auto;"]
 ##div[style="display: flex;flex-wrap: wrap;margin-right: 5px;margin-left: 5px;"] + style + .container
 ##div[style="display:none;"] + script + #container.container
+##div[style="position: fixed;top: 60px;right:0;z-index:999;width:250px"]
 ##div[style="text-align:center;"] > a[href*="/register/?i_code="]
 ##div[style="width: 100%;"]:not([id]):not([class]) > iframe[scrolling="no"][src*="//"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"]
 ##div[style^="width: 100%;"]:not([id]):not([class]) > iframe[scrolling="no"][src^="http"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"]:not([allowfullscreen])
@@ -1514,6 +1515,7 @@
 ##oxk
 ##script + #coupletBox
 ##script + #rbbox
+##script + a[href="/hth.html"][target="_blank"]
 ##script[src="/js/sy2.js"] + div[align="center"]
 ##script[src="/static/base.js"] + #couplet
 ##script[src="/template/kuhei2/skin/base.js"] + #couplet
@@ -3954,6 +3956,7 @@ $websocket,domain=5nj.com|cechi8.com
 100shuai.com##.bf_bottom_gg ,.lol_ad
 100yangsheng.com###i728,#i300,#a_title336,#i300-600,.bodybottom
 1010dy.vip##.text-center[style]
+1010dy.vip##a[href^="/go"]
 1010dy.vip##a[href^="/goto."]
 1010jiajiao.com###daan_recommend + .xiti
 1010jiajiao.com###yueyu3
@@ -7200,6 +7203,10 @@ atool.org##.ad_class
 atoolbox.net###ad-coupon-search
 atyun.com###r_banner > ul > li > a[href^="http"]:not([href*="atyun."])
 atyun.com##.coupletbox
+aura.cn##.foot-xcx
+aura.cn##.left-zc
+aura.cn##.suspension
+aura.cn##.tc1
 auto-online.com.tw##.news_content > div[style="width:728px;margin:10px auto"]
 auto-online.com.tw##.text_links_h
 auto-online.com.tw##div[style="width:336px;height:280px;margin:0;background:#000000"]
@@ -8299,6 +8306,7 @@ chinanews.com##a[href*=".jiuxianfeng.com"]
 chinanews.com##div.advert_nav,#news_top_advert,#qizhi_div980,#zhengwenvideo~*
 chinanews.com.cn###ad_right_fc1
 chinanews.com.cn##[id$="_advert"]
+chinanewsx.com##a[href="/about/"]
 chinapdf.com###floatleft
 chinapdf.com###floatright
 chinaqking.com###cnt-ad
@@ -15490,6 +15498,7 @@ vx666.com##.async[href^="http"]
 vzhuan.cn###box
 w3cplus.com###block-block-49
 w3cplus.com###content-ad1,#block-block-33,#block-block-32,.ct-ad-article
+w3cschool.cn##.abox-content
 w3cschool.cn##.abox-item
 w3cschool.cn##.widget-main
 w3p.la##iframe
@@ -22621,6 +22630,7 @@ zznews.cn##.ad:not([style])
 ||chinanews.com/fileftp/2016/06/2016-06-13/U194P4T47D35171F967DT20160613093733.jpg
 ||chinanews.com/fileftp/2016/08/2016-08-04/U194P4T47D36220F967DT20160804155100.jpg
 ||chinanews.com/shipin/sptp.xml
+||chinanewsx.com^$csp=script-src 'self' * 'unsafe-eval'
 ||chinaok168.biz^
 ||chinapress.com.my/public/static_resources/img/*636x105.
 ||chinapress.com.my/public/static_resources/img/600x337
@@ -24195,6 +24205,7 @@ zznews.cn##.ad:not([style])
 ||dsp.com^
 ||dsp.lenovo.com.cn^*&clientType=api|
 ||dspdy.cn^
+||dspxxy.com^
 ||dsqzk.cn^
 ||dss8l0f.cn^
 ||dssdr.top^
@@ -25568,6 +25579,7 @@ zznews.cn##.ad:not([style])
 ||gnfvwfo.cn^
 ||gng5.cn^
 ||gnmbd.top^
+||gnn01wl.cn^
 ||gnncc.cc^
 ||gnqxd.cn^
 ||go-top.xyz^
@@ -26103,6 +26115,7 @@ zznews.cn##.ad:not([style])
 ||happybao.com.cn^
 ||happycastle.me^
 ||happyhongkong.com/images/client/
+||happyhs.club^
 ||happyyong.com^
 ||harahero.top^
 ||hardened.top^
@@ -30277,6 +30290,7 @@ zznews.cn##.ad:not([style])
 ||mic.yun-pdm5000.cn^
 ||micaitu.net/js/dibu.js
 ||michael31lin.com^
+||michaelianice.com^
 ||micreative-china.cn^
 ||microad-cn.com^
 ||microcontrol.cn/HomeImages/AD/

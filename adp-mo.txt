@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: 4vCaT6MrldRDpRUXpXoHZg
+! Checksum: xUFZ5cdX5Zd2+DnRqKPO9g
 ! Title: My AdFilters（for Mobile）
 ! Expires: 12 hours
-! Version: 202205181530
-! Last Modified: 2022年05月18日 15:30
+! Version: 202205181638
+! Last Modified: 2022年05月18日 16:38
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 67478
+! Total count: 67490
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -6382,6 +6382,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 *$subdocument,redirect-rule=noop.html,domain=dropgalaxy.com
 *$xmlhttprequest,redirect-rule=noop.txt,domain=dropgalaxy.com
 *.gif$domain=hanimesubth.com,image
+*.gif^$domain=weimanga.com
 */web/js/th/$domain=cam4.com
 ,adb=*&referer=
 -*-*-*-*.panda^$script,third-party
@@ -8877,7 +8878,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /beacons-external.
 /beacons?data=
 /behavior/web/pv?
-/ben/mgnat.html$domain=powvideo.net|pomvideo.cc|pouvideo.cc
+/ben/mgnat.html$domain=powvideo.net|pomvideo.cc|pouvideo.cc|steampiay.cc
 /benchmarketingsmarttag/*
 /betamax_tracker.gif?
 /betamax_tracker.js
@@ -20245,6 +20246,10 @@ audiotools.pro##+js(abort-current-script, onload, style.display)
 audioz.download###PromoHead
 audioz.download##[src*="/promo/"]
 aumaletv.com##+js(abort-current-script, document.createElement, adblock)
+aura.cn##.foot-xcx
+aura.cn##.left-zc
+aura.cn##.suspension
+aura.cn##.tc1
 aurn.com,borneobulletin.com.bn,businessofapps.com,chicagodefender.com,dailysport.co.uk,dallasvoice.com,gatewaynews.co.za,gayexpress.co.nz,gematsu.com,islandecho.co.uk,mediaplaynews.com,moviemaker.com,nondoc.com,one.com.mt,richmondshiretoday.co.uk,sammobile.com,talkradioeurope.com,thegolfnewsnet.com,womensagenda.com.au##.g
 ausdroid.net##+js(set-constant, td_ad_background_click_link, undefined)
 australianfrequentflyer.com.au##+js(set-constant, adBlockDetected, false)
@@ -26025,6 +26030,8 @@ mac-torrent-download.net#@#.google_ads
 mac-torrent-download.net,theblogcash.in##+js(abort-current-script, String.fromCharCode, decodeURIComponent)
 mac2sell.net##+js(no-fetch-if, doubleclick.net)
 macbidouille.com#@##advertContainer
+macbooster.net##.itop-pop
+macbooster.net##.itop-popout
 macd.cn###hbad
 machogaytube.com,good-gay.tv,shemaleporntube.tv##.b-video-cols > .b-randoms-col
 machotube.tv##.b-main-nav > .row > .b-main-nav__mi
@@ -28117,9 +28124,6 @@ post.techtutors.site#@##systemad_background
 postimees.ee#@#.ad01
 postpop.tistory.com#@#.adbanner
 pouvideo.*,povwideo.*,powv1deo.*##+js(window.open-defuser)
-pouvideo.cc,pomvideo.cc##+js(window.open-defuser)
-pouvideo.cc,pomvideo.cc,powvideo.net,powv1deo.cc##iframe[src^="/ben/mgnat.html"]
-pouvideo.cc,pomvideo.cc,powvldeo.net###oly
 power.baidu.com,www.baidu.com,zhidao.baidu.com##style[id*="s-m"] + div[id^="m"]
 power.baidu.com,zhidao.baidu.com##.wgt-clew[data-type="goods"]
 powv1deo.cc##+js(abort-on-property-read, BJS)
@@ -29141,6 +29145,7 @@ slate.com#@#.ad
 slate.com#@#.ad01
 slazag.pl##.rotatorTop
 slazag.pl#?#.similar__articles__single:has(> div[id^="render-ad-"])
+sleazyneasy.com###pre-spots
 sledujserialy.io##.w-episode-source > div[id][style^="position: absolute; top: 0"]:not([class])
 sledujserialy.to##+js(abort-current-script, $, (document.getElementById(')
 slickdeals.net###crt-adblock-a
@@ -29522,6 +29527,9 @@ stc.gov.cn###mov
 steachs.com##.sidebar:first-child
 stealthoptional.com##div[data-advadstrackbid]
 steamcrackedgames.com##+js(set-constant, scgpo, true)
+steampiay.cc,pouvideo.cc,pomvideo.cc##+js(window.open-defuser)
+steampiay.cc,pouvideo.cc,pomvideo.cc,powvideo.net,powv1deo.cc##iframe[src^="/ben/mgnat.html"]
+steampiay.cc,pouvideo.cc,pomvideo.cc,powvldeo.net###oly
 steamstats.cn##.card-link
 steamstats.cn##.v-window
 steamworkshopdownloader.io##.alert-secondary
@@ -29886,6 +29894,7 @@ tgju.org##.advertise
 thairath.co.th##footer ~ div[style="text-align: center; opacity: 1;"]
 thairath.co.th#?##headerWraper ~ div:matches-css(height: 280px)
 thanhnien.vn###headerTopBanner
+thansettakij.com##.default-sticky-1
 thatnovelcorner.com#@#[href^="http://raboninco.com/"]
 thatviralfeed.com##section[style="margin-top: 5px; margin-bottom: 5px;"]
 the-sun.on.cc#@##ContentAd1
@@ -30964,6 +30973,7 @@ w2g.tv##+js(set-constant, W2gDFP.loadAcceptableAds, noopFunc)
 w2g.tv##.w2g-doit
 w3big.com,w3schools.com###mainLeaderboard
 w3cplus.com###block-block-49
+w3cschool.cn##.abox-content
 w3cschool.cn##.abox-item
 w3cschool.cn##.widget-main
 w3resource.com###sidebar_right
@@ -31131,6 +31141,7 @@ weibo.com#?#.vue-recycle-scroller__item-view:-abp-has(div[class^="head-info_auth
 weibo.com#?#.wbpro-side-panel:-abp-has(span[class^="wbpro-icon-search"]:-abp-contains(商))
 weightlossgroove.com#@#div[id^="advads-"]
 weimanga.com###wbnn
+weimanga.com##.kln
 weimob.com###active-entrance
 weishangshijie.cn###wad_left
 weishangshijie.cn###wad_right
@@ -37871,7 +37882,6 @@ zznews.cn##.ad:not([style])
 ||boyughaye.com^
 ||bozhixiang.top^
 ||bp.blogspot.com/*.gif$domain=nung2hdd.com|nanamovies.me
-||bp.blogspot.com/*.gif$domain=weimanga.com
 ||bp.blogspot.com^$image,domain=dodonung.com
 ||bp.blogspot.com^*/s1600/dealer
 ||bp01.net^$third-party
@@ -38600,6 +38610,7 @@ zznews.cn##.ad:not([style])
 ||cdn.rekkerd.org/img/a/rkkrdprm/
 ||cdn.sanjagh.com^$third-party
 ||cdn.spylees.com/vast3?
+||cdn.statically.io/gh/Kaka4i-os/js/main/adblock.js$domain=peshdpatch.com
 ||cdn.sunporno.com/sunstatic/v*/common/sunporno/compiled/script.v*.min.js
 ||cdn.tapioni.com/asg_embed.js
 ||cdn.trafficexchangelist.com^$third-party
@@ -53479,7 +53490,7 @@ zznews.cn##.ad:not([style])
 ||p.junshi881.com^
 ||p.junshifuxin.com^
 ||p.jwpcdn.com/*/vast.js$domain=lnk.lt,important
-||p.jwpcdn.com/*/vast.js$important,domain=fvsvideo.com|gomovies.bid|popuplayer.com|solarmovie.fun|fmovies.gallery|vidmoly.to|movies123.pro|gdriveplayer.co|vidmoly.me|01fmovies.com|gomovies.tube|123movies.domains|fmovies.cab|tornadomovies.co|1movies.is|tornadomovies.to|animeland.tv|timesnownews.com|film21.online|opjav.com
+||p.jwpcdn.com/*/vast.js$important,domain=fvsvideo.com|gomovies.bid|popuplayer.com|solarmovie.fun|fmovies.gallery|vidmoly.to|movies123.pro|gdriveplayer.co|vidmoly.me|01fmovies.com|gomovies.tube|123movies.domains|fmovies.cab|tornadomovies.co|1movies.is|tornadomovies.to|animeland.tv|timesnownews.com|film21.online|opjav.com|saruch.co
 ||p.jwpcdn.com/player/plugins/vast/
 ||p.kolplay.com^
 ||p.milliyet.com.tr^
@@ -55442,7 +55453,7 @@ zznews.cn##.ad:not([style])
 ||qucaigg.com^
 ||qudao.com/common/minisite.js
 ||qudaoweiwang.com^
-||quebecormedia.com/*/lib/cheezwhiz/v*/index.js
+||quebecormedia.com/*/lib/cheezwhiz/*index.js
 ||queersodadults.com^
 ||quehq.com^
 ||quenchskirmishcohere.com^
@@ -55956,6 +55967,7 @@ zznews.cn##.ad:not([style])
 ||requestmetrics.com^$third-party
 ||rereddit.com^
 ||res-x.com^$third-party
+||res.cloudinary.com/*/raw/upload/*/*-vast*.xml$domain=saruch.co
 ||res.cngoldres.com/web/index/img/*_ad_
 ||res.elle.fr^
 ||res.femina.fr^
