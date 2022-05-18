@@ -1,8 +1,8 @@
-! Checksum: FRCzB/iHlOJhCOQzRi+2Vg
+! Checksum: pe6pg432SDZCR4bc+XurlA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.19.74
-! TimeUpdated: 2022-05-18T08:30:41+00:00
+! Version: 2.1.19.76
+! TimeUpdated: 2022-05-18T10:30:40+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7421,6 +7421,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+solopornoitaliani.xxx###first-visit
 offen.net###CookieBox
 ||webshop.burgerme.de/theme/js/Widgets/cookieWidget.min.js
 bible.com##.cookie-consent-banner-container
@@ -14007,7 +14008,7 @@ wd-x.ru##.cookieBarWrapper
 dymo.com##.cookieHandler
 losteria.de##.cookieQuery
 nccgroup.trust##.cookie__consent
-joiebaby.com,opy.com,mwave.me,toptal.com,ikea.com,mydays.at,mydays.de##.cookie_banner
+eurovisionworld.com,joiebaby.com,opy.com,mwave.me,toptal.com,ikea.com,mydays.at,mydays.de##.cookie_banner
 pcloud.link,pcloud.com##.cookie_consent_holder
 snipes.com##.cookie_info_container
 karnaval.com##.cookie_message_container
@@ -19258,6 +19259,8 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+timesnownews.com###openin-app
+timesnownews.com$$div[id="openin-app"]
 pepper.ru##div[data-track*="app_installs_banner"]
 asajikan.jp##.apri_b_pc
 asajikan.jp##.bnrAppGuidance
@@ -27479,6 +27482,9 @@ disk.yandex.*##.mail360-banner
 @@||yastatic.net/daas/atom.js$domain=mail.yandex.by|mail.yandex.kz|mail.yandex.ru|mail.yandex.ua|mail.yandex.com|mail.yandex.com.tr
 !-----------------------------------------------
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/118719
+journal.tinkoff.ru##div[class^="horizontalWideBannerLayoutFixWrapper"]
+journal.tinkoff.ru##div[data-tracking-level-label="spec-kak-vy-tratite-banner"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/118203
 agrinews.co.jp###ad
 ! https://github.com/AdguardTeam/AdguardFilters/issues/118543

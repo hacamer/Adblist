@@ -1,8 +1,8 @@
-! Checksum: pAFg4IIjYFh15vUa2Ra9DA
+! Checksum: Qy7/6gLhqumAfs1QlKRADg
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.39.84
-! TimeUpdated: 2022-05-18T09:03:19+00:00
+! Version: 2.0.39.85
+! TimeUpdated: 2022-05-18T10:31:26+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -335,6 +335,8 @@ journal-plaza.net#?#.rightside div.block.bnavi[-ext-has="h3.dtitle:contains(Сч
 !||i.snssdk.com/log/*
 !||i.snssdk.com/slardar/sdk.js
 !
+||predataclient.b-cdn.net^
+||ad-plus.com.tr^
 ||t.cotsta.ru^
 ||0.code.cotsta.ru^
 ||poqup.com^$third-party
@@ -21616,6 +21618,7 @@ _tracking.php?b=
 !
 /analytics.js$domain=freexcafe.com|rusvideos.tv|nakubani.ru|lun.com|songsara.net|newsmax.com|bolgehastanesi.com|ewtc.de
 !
+||google.com/gsi/log?
 ||drop.com/statBeacon
 ||outlook-1.cdn.office.net/owamini/*/resources/analytics-ping.js
 ||rocket.ivi.ru/event/
@@ -22033,7 +22036,7 @@ komachi.yomiuri.co.jp##._popIn_recommend_tieup
 ||megatyumen.ru/api/v*/metrika
 ||multporn.net/modules/statistics/statistics.php
 ||cdn.shopify.com/shopifycloud/consent-tracking-api/*/consent-tracking-api.js
-/\.com\/[-_0-9a-zA-Z]{4,}\/[-\/_0-9a-zA-Z]{30,}$/$script,~third-party,domain=gu-global.com|uniqlo.com
+/\.com\/[-_0-9a-zA-Z]{4,}\/[-\/_0-9a-zA-Z]{25,}$/$script,~third-party,domain=gu-global.com|uniqlo.com
 ||tm-awx.com/pageview
 textologia.ru##.bot_right
 ||manychat.com/js/visitor.js

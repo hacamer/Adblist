@@ -1,8 +1,8 @@
-! Checksum: yCyjDfVGD5kgXF50Bh/L+w
+! Checksum: DfTvHoDmndBkjz2QucrqlA
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.29.68
-! TimeUpdated: 2022-05-18T07:30:22+00:00
+! Version: 2.0.29.69
+! TimeUpdated: 2022-05-18T10:30:24+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1639,6 +1639,8 @@ rambler.ru#?#main > div[class] ~ div[class] > div[class] div[class] > a[href^="h
 pornhub.com,pornhubthbh7ap3u.onion#%#AG_onLoad(function() { if (typeof redirect !== 'function') return; var str = redirect.toString(); var m = str.match(/\'(\/view.*)\'/); if (m.length != 2) return; var link = m[1]; window.location.href = m[1]; });
 !#################
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/118753
+timesnownews.com#%#//scriptlet('hide-in-shadow-dom', 'div[class^="Layout-mastHeadAd-"], div[class^="Layout-atfAd-"]')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/118856
 delfi.lt#%#//scriptlet("set-constant", "adformtag", "emptyArr")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/118880
@@ -1943,7 +1945,9 @@ deviantart.com#$#div[class*="dp-ad-"] {height: 0!important; width: 0!important; 
 ! AMP ads in ShadowRoot
 businessinsider.in$$div[class="fc_clmb_ad"]
 $$amp-ad
-zoomtventertainment.com$$div[class="adv-blocker"]
+timesnownews.com$$div[id="flyCarpet"]
+timesnownews.com$$div[id="taboolaAds"]
+timesnownews.com,zoomtventertainment.com$$div[class="adv-blocker"]
 zoomtventertainment.com$$div[class="Layout-atfAd-VBh-h"]
 kp.ru$$amp-fx-flying-carpet
 amp.scmp.com$$div[class="inline-advert"]
@@ -2472,6 +2476,8 @@ scmp.com,theinventory.com,avclub.com,clickhole.com,deadspin.com,gizmodo.com,jalo
 ! ##.ads
 cartoonpornvideos.com,m.economictimes.com,beethovenmaster.com,m.mistrzowie.org,m.ura.news,siirtpress.com,up.ymgt.xyz,google.de,www-bento-de.cdn.ampproject.org,m-economictimes-com.cdn.ampproject.org,m.winfuture.de##.ads
 !
+timesnownews.com##div[class^="Layout-mastHeadAd-"]
+timesnownews.com##div[class^="bottomStickyAd-"]
 cyzo.com##body > div[style="min-height: 100px;"]
 m.delfi.lt##.sevenbet-juosta
 m.delfi.lt##.ab-frame
@@ -2870,7 +2876,7 @@ augsburger-allgemeine.de##main[role="main"] > div[style="min-height:20338px;"]
 bella.tw##.hide-pc[style]
 tw.appledaily.com##.THISISANADHERE
 zoomtventertainment.com##amp-img[alt="taboola"]
-zoomtventertainment.com##.adv-blocker
+timesnownews.com,zoomtventertainment.com##.adv-blocker
 zoomtventertainment.com##div[class^="Layout-atfAd-"]
 heidelberg24.de,extratipp.com,fr.de,kreiszeitung.de,hna.de,tz.de,merkur.de##.wv_story_el_insertedAd
 porndoe.com##.-up-mobile
