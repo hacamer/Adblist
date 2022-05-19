@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: VH7RBCowZIK+7AJWHdeKcg
+! Checksum: MVfPCwfDcP0IouON7PZ1jA
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202205191732
-! Last Modified: 2022年05月19日 17:32
+! Version: 202205191837
+! Last Modified: 2022年05月19日 18:37
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 73005
+! Total count: 73007
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -5643,6 +5643,7 @@
 ##.top-sidebar-ad
 ##.top-topics__ad
 ##.top.ad
+##.top250Ad
 ##.topAD
 ##.topAd
 ##.topAdBanner
@@ -30308,9 +30309,6 @@ naughtyblog.org##div[class^="promo-"]
 naughtymachinima.com##+js(set-constant, presrc, '')
 naughtymachinima.com##iframe[src^="https://chaturbate.com/"]
 navbharattimes.indiatimes.com##.atf-wrapper
-navbharattimes.indiatimes.com##.hp-rhs-ads-container
-navbharattimes.indiatimes.com##.rhs-mrec-wrapper
-navbharattimes.indiatimes.com##.wdt_amz
 navbharattimes.indiatimes.com,88files.net,gadgetsnow.com##.ad1
 naver.com##a[onclick^="callWebAdBannerClick"]
 naver.com##div[id^="veta_"]
@@ -30950,6 +30948,7 @@ outlook.live.com##.N3k7EN5vRGTrONWBPg250
 outlook.live.com##._BAY1XlyQSIe6kyKPlYP
 outlook.live.com##.customScrollBar > div[class] > div[class]:empty
 outlook.live.com#?##app > div[class] > div[class] > div[class] > div[class]:not(.ms-FocusZone):not([class^="screenReaderText"]) div[data-max-width] + div[class]:has(> div[class] > div > div[id^="owaadbar"])
+outlook.live.com#?##app > div[class] > div[class] > div[class] > div[class]:not(.ms-FocusZone):not([class^="screenReaderText"]) div[data-max-width][data-skip-link-name] > div[style^="padding-right:"] + div[tabindex] div.customScrollBar > div[class] > div[class]:not([id]):not([data-convid]):has(> div:not([class]) div[class] > div[style] + div.fbAdLink)
 outlook.live.com#?##app > div[class] > div[class] > div[class] > div[class]:not(.ms-FocusZone):not([class^="screenReaderText"]):has(> div > button[data-is-focusable])
 outlook.live.com._6tqjFb_HmyQup_NPe6dhC
 ouyaoxiazai.com##.ad_show_1
@@ -32478,6 +32477,9 @@ salon24.pl##.idsl--bg
 saltwire.com##.sw-banner
 sama-share.com##div[class*="banner"]
 samayam.com,indiatimes.com##a[onclick][rel="nofollow,noindex"]
+samayam.com,navbharattimes.indiatimes.com##.hp-rhs-ads-container
+samayam.com,navbharattimes.indiatimes.com##.rhs-mrec-wrapper
+samayam.com,navbharattimes.indiatimes.com##.wdt_amz
 samehadaku.net#@##adsense
 sammobile.com###closeAd
 samsclub.com#?#li[class="sc-carousel-slide sc-carousel-horizontal"]:-abp-has(div.sc-pc-sponsored)

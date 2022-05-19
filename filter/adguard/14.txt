@@ -1,8 +1,8 @@
-! Checksum: dA1jVsKoRmsJ2QQhM36+Ew
+! Checksum: 3KhxzDpniQrPuayehMvNoQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.19.88
-! TimeUpdated: 2022-05-19T08:30:35+00:00
+! Version: 2.1.19.89
+! TimeUpdated: 2022-05-19T10:30:41+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -5435,6 +5435,7 @@ cc-fan.tv,cn-fan.tv,fox-fan.tv,nf-fan.tv#$#.pub_300x250.pub_300x250m.pub_728x90.
 !######### General element hiding rules ################
 !#######################################################
 !
+###machete_cookie_container
 ###cookiehint
 ###cookie-banner-lgpd
 ##.barra_cookie
@@ -9673,7 +9674,6 @@ yubico.com##.bottom-pop-up-container
 pkobp.pl##body > .js-ajax-overlay
 tonsturm.com,silhouette.de##body > div.gatewayContainer:first-child
 live.feet9.com,pinflix.lsl.com,pornhdlive.com,xfantasy.com##.notifier-wrapper
-maharashtratimes.com##.top-header-gdpr
 snipes.com##.s-cookie-hint
 ||cmp.acronymfinder.com^
 bauen-und-heimwerken.de#$#.cc-window[aria-label="cookieconsent"] { display: none !important; }
@@ -10133,7 +10133,7 @@ wieland-electric.com##wieland-cookie-banner
 bmel.de#$#html { overflow: visible !important; }
 bmel.de#$#body > div[class^="mfp-"] { display: none !important; }
 studentbeans.com##._k28pg
-navbharattimes.indiatimes.com##.top-header-gdpr
+maharashtratimes.com,samayam.com,navbharattimes.indiatimes.com##.top-header-gdpr
 greblon.com##.lus-cookie-pre
 marksandspencer.com,tippmixpro.hu,szerencsejatek.hu,daemmen-und-sanieren.de,solaranlagen-portal.com##.cookie-consent-modal
 newworld.com,amazongames.com###ags-CookieDisclaimer
@@ -10401,7 +10401,6 @@ integrada.minhabiblioteca.com.br#$#body { overflow: visible!important; }
 importantia.eu###react_element__cookiebar
 ukrainianwall.com##.privacy-policy
 retrosix.co.uk,margreiter-shop.de##.ec-notices__wrap
-blog.desdelinux.net,ubunlog.com,soydemac.com###machete_cookie_container
 sentinelone.com###cookie-message-panel
 cafeyn.co###cookiesStrip
 perlego.com##div[aria-label="cookie banner"]
@@ -16057,7 +16056,7 @@ rejestracja.pwik.gliwice.pl#%#AG_onLoad(function(){var a=document.querySelector(
 login.e-dowod.gov.pl#%#document.cookie="acceptRodoSie=hide; path=/;";
 patienten.kvno.de#%#(function() { try { if ("undefined" != typeof localStorage) { localStorage.setItem("cookies-confirmed", "true") } } catch (ex) {} })();
 creditkarma.co.uk#%#document.cookie = "cc_cookie_accept=cc_cookie_accept";
-wetter.com#%#AG_onLoad(function() {var g = new MutationObserver(function() {setTimeout(function() {var b = document.querySelector("a.cmp-lnk-accept-close");b && b.click();},200)});g.observe(document, {childList: !0,subtree: !0});setTimeout(function() {g.disconnect()}, 1E4)});
+wetter.com#%#AG_onLoad(function(){var a=new MutationObserver(function(){var a=document.querySelector("button#cmp-btn-accept"),b=document.querySelector("#cmp-wetter.cmp-hide");a&&!b&&a.click()});a.observe(document,{childList:!0,subtree:!0,attributeFilter:["style"]}),setTimeout(function(){a.disconnect()},1E4)});
 express.co.uk,space.com#%#AG_onLoad(function() {var b=new MutationObserver(function() {var c=document.querySelector('button[mode="primary"]'); c&&(b.disconnect(),c.click()) });b.observe(document, {childList: !0,subtree: !0});setTimeout(function() {b.disconnect()}, 1E4)});
 daenischesbettenlager.de#%#//scriptlet('remove-class', 'noScroll', 'html')
 mail.com#%#//scriptlet('set-cookie', 'euconsent-bypass', '1')
@@ -21285,6 +21284,8 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+samayam.com##.topStorieswrap
+samayam.com##.top-stories-modal
 drop.com#%#(function() { try { if ("undefined" != typeof localStorage) { localStorage.setItem("lastTriggeredSignUpType", "triggered_pdp") } } catch (ex) {} })();
 drop.com#%#(function() { try { if ('undefined' != typeof localStorage) {var date = new Date(); window.localStorage.setItem("lastTriggeredSignUpTime", date.getTime()); } } catch (ex) {} })();
 zebrack-comic.shueisha.co.jp#?#div[style="margin-bottom: 70px;"] > div[class^="sc-"] > div[class^="sc-"] > a[href^="https://app.adjust.com"]:upward(2)
@@ -26963,7 +26964,7 @@ insider.com##.notification-prompt-wrapper
 ficbook.net#$##notificationsSubscribeModal { display: none!important; }
 ficbook.net#$#body { overflow: visible!important; padding-right: 0!important; }
 ficbook.net#$##notificationsSubscribeModal ~ .modal-backdrop { display: none!important; }
-indiatimes.com##.notification_popup
+samayam.com,indiatimes.com##.notification_popup
 ||149.56.24.226/service-worker.js
 ||vz.ru/static/js/push.js
 ||fahrradmagazin.net/p/app.js
@@ -29708,6 +29709,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+androidayuda.com##.widget_newsletterwidget
 edimdoma.ru##.sticky_subscribe_block
 booking.com##.hide-newsletter-menu-tab
 booking.com##.emk_footer_update
