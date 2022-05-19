@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: I3w48pQxddlD6p151g2i8A
+! Checksum: 3D273Z32hfNhehFiXoBcWQ
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202205191335
-! Last Modified: 2022年05月19日 13:35
+! Version: 202205191442
+! Last Modified: 2022年05月19日 14:42
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 72989
+! Total count: 72994
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -24737,12 +24737,16 @@ doofree88.com##.js-ifram-google > div.text-center
 doofree88.com##.placeholder
 doomovie-hd.com###ekcdnplayer > div[style^="position: absolute; top: 0; left: 0;"]
 doomovie-hd.com##+js(json-prune, adParam)
+doomovie-hd.com##+js(set-constant, adSettings, emptyArr)
 doomovie-hd.com##.default-horizontal-banana
 doomovie-hd.com##.floating_ads_bt-mid_container
 doomovie-hd.com##.header-banana_container
 doomovie-hd.com##.horizontal-ad-bar
+doomovie-hd.com##.horizontal-ad-bar100 > a[target="_blank"] > img
+doomovie-hd.com##.schedule-head-banana
 doomovie-hd.com##.side_floating_ad
 doomovie-hd.com##.topad_container
+doomovie-hd.com##.tv-player-banana
 doomovie-hd.com##div[class$="floating-banana-container"]
 doordash.com#?#[data-testid="card.store"] > div:-abp-has(div[data-anchor-id="SponsoredBadge"])
 dooseries.org##center > a[target="_blank"] > img
@@ -69648,6 +69652,7 @@ zznews.cn##.ad:not([style])
 ||vi-serve.com^
 ||vi-serve.com^$domain=spiegel.de
 ||vi-serve.com^$third-party
+||via.placeholder.com^$domain=doomovie-hd.com
 ||viadata.store^$third-party
 ||vianoivernom.com^
 ||viapush.com^$third-party
