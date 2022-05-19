@@ -1,8 +1,8 @@
-! Checksum: PDu4KpVTrJ2RxxC9VP/s/A
+! Checksum: JZ0syewsAA4dyINXuwU1Ag
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.39.89
-! TimeUpdated: 2022-05-19T06:31:31+00:00
+! Version: 2.0.39.91
+! TimeUpdated: 2022-05-19T12:31:21+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -21619,6 +21619,7 @@ _tracking.php?b=
 !
 /analytics.js$domain=freexcafe.com|rusvideos.tv|nakubani.ru|lun.com|songsara.net|newsmax.com|bolgehastanesi.com|ewtc.de
 !
+nikkansports.com##div[id^="cx_"]
 ||google.com/gsi/log?
 ||drop.com/statBeacon
 ||outlook-1.cdn.office.net/owamini/*/resources/analytics-ping.js
@@ -25794,6 +25795,7 @@ $app=com.miui.analytics
 ! For platforms which do not support $redirect rules
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/118826
 ! https://github.com/AdguardTeam/AdguardFilters/issues/119178
 ||cdn.segmentify.com/*/segmentify.js$script,important,redirect=noopjs,domain=gratis.com
 @@||cdn.segmentify.com/*/segmentify.js$domain=gratis.com
