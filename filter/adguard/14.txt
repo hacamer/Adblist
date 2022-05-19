@@ -1,8 +1,8 @@
-! Checksum: jFE29O4mX0CBAYsiMaBe2Q
+! Checksum: nzwr8Q3KnGOJ/mSO1ElSEQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.19.94
-! TimeUpdated: 2022-05-19T14:30:36+00:00
+! Version: 2.1.19.96
+! TimeUpdated: 2022-05-19T17:04:06+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -8901,7 +8901,7 @@ nordicnest.de#?##container > div[class]:has(> div[class] > div[class] > div[clas
 ||stihl.de/etc.clientlibs/stihl-frontend/clientlibs/components/content/cookie/cookielayer/
 petz.com.br##.policy-warning-banner
 kicker.de#$#body { overflow: auto !important; }
-||consentmanager.net^$domain=tausendkind.de|hausgarten.net|kundendienst-info.de|baunetz.de|rabe-bike.de|heinze.de|ais-online.de|dasoertliche.de|reno.de|walbusch.de|mathe-lexikon.at|katzen-forum.net|deutsche-apotheker-zeitung.de|brandible.de|my.games|vergleich.org|finanztip.de|baunetzwissen.de|trusted.de|universal-music.de|web2.cylex.de|mey-edlich.de|schuhe.de|qiez.de|benz24.de|hervis.de|avena.de|heimwerker.de|bauemotion.de|nw.de|kicker.de|herold.at|kalledaskabel.de|bussgeldkatalog.org|plantopedia.de|poetschke.de|weltbild.de|genialokal.de|jokers.de|leoncycle.de|abendblatt.de|wolfsburger-nachrichten.de|braunschweiger-zeitung.de|mediengestalter.info|sugafari.com|gdv.de
+||consentmanager.net^$domain=tausendkind.de|hausgarten.net|kundendienst-info.de|baunetz.de|rabe-bike.de|heinze.de|ais-online.de|dasoertliche.de|reno.de|walbusch.de|mathe-lexikon.at|katzen-forum.net|deutsche-apotheker-zeitung.de|brandible.de|my.games|vergleich.org|finanztip.de|baunetzwissen.de|trusted.de|universal-music.de|web2.cylex.de|mey-edlich.de|schuhe.de|qiez.de|benz24.de|hervis.de|avena.de|heimwerker.de|bauemotion.de|nw.de|kicker.de|herold.at|kalledaskabel.de|bussgeldkatalog.org|plantopedia.de|poetschke.de|weltbild.de|genialokal.de|jokers.de|leoncycle.de|abendblatt.de|wolfsburger-nachrichten.de|braunschweiger-zeitung.de|mediengestalter.info|sugafari.com|gdv.de|uk-essen.de
 mod.io###achtung-overlay
 bringmeister.de##div[data-testid="cookiePopup"]
 planetkey.de##.survey.alert-box
@@ -14909,6 +14909,8 @@ francetvinfo.fr#$?#body { overflow: auto !important; }
 francetvinfo.fr#$?##didomi-host { display: none !important; }
 ! for apps
 medicana.com.tr##body div.cookiealert
+! hearst.com sites
+-gdpr-min.js$domain=beaumontenterprise.com|chron.com|ctinsider.com|ctpost.com|darientimes.com|expressnews.com|fairfieldcitizenonline.com|fuelfix.com|greenwichtime.com|hearstmediact.com|hearstmediatx.com|houstonchronicle.com|lmtonline.com|middletownpress.com|milfordmirror.com|mrt.com|myplainview.com|mysanantonio.com|ncadvertiser.com|newmilfordspectrum.com|newstimes.com|nhregister.com|ourmidland.com|registercitizen.com|seattlepi.com|sfchronicle.com|sfgate.com|sheltonherald.com|stamfordadvocate.com|thehour.com|theintelligencer.com|theridgefieldpress.com|timesunion.com|trumbulltimes.com|westport-news.com|wiltonbulletin.com|yourconroenews.com
 !
 !
 !
@@ -25184,7 +25186,7 @@ docs.microsoft.com##.rating-helpful-active
 denverpost.com,theoaklandpress.com,twincities.com,macombdaily.com,delcotimes.com,chicoer.com,pe.com##.info-box.Mg2-connext > .info-box-body
 kinokadr.ru###floatleft
 androidauthority.com##.gcap-shown
-amerikaninsesi.com,d19jioddu7q9d3.cloudfront.net,d1e6t2g7k08m8d.cloudfront.net,svoboda.azureedge.net,svoboda.org##.slide-in-wg[data-cookie-id]
+currenttime.tv,radiosvoboda.org,amerikaninsesi.com,d19jioddu7q9d3.cloudfront.net,d1e6t2g7k08m8d.cloudfront.net,svoboda.azureedge.net,svoboda.org##body .slide-in-wg
 sunfood.com###pdv4overlay
 wixsite.com,wix.com,boxabl.com,sage.exchange,d4rkexecutor.com,strive-magazine.de,note4tech.com,stone-stream.com,twinlab.com###POPUPS_ROOT
 anti-malware.ru###parent_popup_ank
@@ -25414,7 +25416,6 @@ gearbest.com###email_subscribe
 gearbest.com###email_subscribe + #mask
 ports.com.ua###facebook-modal
 100percentfedup.com##div[class^="modaal-"]
-radiosvoboda.org##.slide-in-wg
 gazeta.zp.ua##div#colorbox[style*="width: 987px; height: 120px; top: 230px;"]
 burgerking.hu,batshort.com##div[class^="modal"]
 webcheats.com.br###bg_trasp
@@ -29732,11 +29733,14 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+currenttime.tv##.wsw
 news.mynavi.jp###piano_mailform
 cnet.com##.newsletterWrap
 7days.ru##a[class$="_button-social_telegramm"]
 medium.com#?#div[role="dialog"] ~ div > div > div > div > div > h2:contains(Sign up for Analytics Vidhya News Bytes):upward(2)
 latest-ufo-sightings.net###text-3
+silicon.de###nl-overlay
+silicon.de##.wrap-contenus
 androidayuda.com##.widget_newsletterwidget
 edimdoma.ru##.sticky_subscribe_block
 booking.com##.hide-newsletter-menu-tab
