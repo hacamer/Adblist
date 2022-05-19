@@ -1,8 +1,8 @@
-! Checksum: BOJ3+6z746TmrlzaiE0B2w
+! Checksum: +fUyzmbJX2VS/s0aUVVBWA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.19.97
-! TimeUpdated: 2022-05-19T18:30:40+00:00
+! Version: 2.1.19.98
+! TimeUpdated: 2022-05-19T21:02:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2059,7 +2059,7 @@ facebook.com###ssrb_stories_end ~ div[class] > div[class] > div[class*=" "] > di
 m.facebook.com##span[data-top-of-feed-unit-type="megaphone_story"] > div[data-sigil="m-megaphone"]
 ! corona information in profile timeline
 facebook.com##div[data-pagelet="ProfileTimeline"] a[href^="https://www.facebook.com/coronavirus_info"]
-m.facebook.com#?#div[data-mcomponent="MContainer"] > div[data-mcomponent="MContainer"]:has(> div[data-mcomponent="MContainer"] > div[data-mcomponent="MTransactional"] > div[data-type="container"] > div[data-type="container"] .native-text:contains(COVID-19 Information Center))
+! m.facebook.com#?#div[data-mcomponent="MContainer"] > div[data-mcomponent="MContainer"]:has(> div[data-mcomponent="MContainer"] > div[data-mcomponent="MTransactional"] > div[data-type="container"] > div[data-type="container"] .native-text:contains(COVID-19 Information Center))
 ! Suggested post from a public group when viewing groups feed
 m.facebook.com#?#div[data-type="vscroller"] > div[data-mcomponent="MContainer"]:has(> div[data-actual-height] > div[data-actual-height] > div[data-mcomponent*="TextArea"] > .native-text:contains(Suggested post from a public group))
 m.facebook.com##div[data-type="vscroller"] > div[data-mcomponent="MContainer"][style*="display: none !important;"] + div[style*="height:1px;"]
@@ -7953,7 +7953,7 @@ thesettlersonline.fr,thesettlersonline.ru,thesettlersonline.es,thesettlersonline
 apteka24.ua##.cookie-agreement
 swisstransfer.com#$#module-rgpd-component { display: none!important; }
 swisstransfer.com#$#body { overflow: visible!important; }
-americanas.com.br##div[class^="lgpd-message-box__"]
+shoptime.com.br,submarino.com.br,americanas.com.br##div[class^="lgpd-message-box__"]
 serpro.gov.br##.br-cookiebar
 rapidonline.com#$#.cookie-policy-wrap { display: none !important; }
 rapidonline.com#$#body { overflow: auto !important; }
