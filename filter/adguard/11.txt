@@ -1,8 +1,8 @@
-! Checksum: /MX5G2Pka5TYcYKcWvrw7Q
+! Checksum: DeML2GnhpXUdtvxAP5UxrQ
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.29.73
-! TimeUpdated: 2022-05-19T13:30:19+00:00
+! Version: 2.0.29.75
+! TimeUpdated: 2022-05-19T15:30:29+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1275,6 +1275,9 @@ westseattleblog.com#@#.header-ad
 ! Bad: example.org##main > div.ad (should be in specific.txt)
 !
 !
+phileweb.com#$##sp_article_header { height: auto !important; }
+phileweb.com#$#body { padding-top: 100px !important; }
+phileweb.com#$#header.has-topbanner .header-in { height: auto !important; }
 outlook.live.com#?#main[aria-hidden] > div[class] > div[style] > div[class][style="position: absolute; left: 0px; top: 0px; height: 80px; width: 100%;"]:has(> div[class] > div[role="group"] > #OwaContainer)
 m.ceneo.pl#?#.page-content .js_recommendations-container:has(> div > header > span:contains(/^Reklama$/))
 m.ceneo.pl#?#.page-content .js_recommendations-container:has(> div > header > span:contains(/^Reklama$/)) + .js_analytics-promotedItems[data-event-category="adbox"]
@@ -2477,6 +2480,7 @@ scmp.com,theinventory.com,avclub.com,clickhole.com,deadspin.com,gizmodo.com,jalo
 ! ##.ads
 cartoonpornvideos.com,m.economictimes.com,beethovenmaster.com,m.mistrzowie.org,m.ura.news,siirtpress.com,up.ymgt.xyz,google.de,www-bento-de.cdn.ampproject.org,m-economictimes-com.cdn.ampproject.org,m.winfuture.de##.ads
 !
+360life.shinyusha.co.jp##.top-page__middle-banner
 dasinvestment.com##.billboard-ad-mobile_switcher
 ||nyaasokuvip.net/wp-content/uploads/*/ad_manga_
 nyaasokuvip.net##.ad:not(center + div)
