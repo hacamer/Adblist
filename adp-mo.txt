@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: 88NLTs9KkCV0dWFSz1ZmUA
+! Checksum: Q7cskV3wCHiwp7IePxTPzA
 ! Title: My AdFilters（for Mobile）
 ! Expires: 12 hours
-! Version: 202205191639
-! Last Modified: 2022年05月19日 16:39
+! Version: 202205191732
+! Last Modified: 2022年05月19日 17:32
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 67892
+! Total count: 67905
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -6102,6 +6102,7 @@
 ##a[onclick^="gtag"] > .add
 ##a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"]
 ##a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"]
+##a[target="_blank"] > img[height="120px"][src*="qlogo.cn"][src$=".png"]
 ##a[target="_blank"] > img[height="60px"][src*=".126.net"][src$=".gif"]
 ##a[target="_blank"] > img[height="60px"][src*=".360buyimg.com"][src$=".gif"]
 ##a[target="_blank"] > img[height="60px"][src*=".alicdn.com"][src$=".gif"]
@@ -6209,7 +6210,7 @@
 ##div[onclick*="?i_code="]
 ##div[onclick^="window.location.href"][onclick*=".bcebos."]
 ##div[style=" max-width:965px;  margin:0 auto;"] > a > img[height="120px"]
-##div[style=" max-width:965px;  margin:0 auto;"] > a > img[height="60px"]
+##div[style=" max-width:970px;  margin:0 auto;"] > a > img[height="60px"]
 ##div[style="border-radius:8px;background-color:#005737;padding:6px;"]
 ##div[style="box-sizing:border-box;padding:20px 16px;border-radius:8px;width:90%;margin:0 auto;"]
 ##div[style="display: flex;flex-wrap: wrap;margin-right: 5px;margin-left: 5px;"] + style + .container
@@ -7384,6 +7385,8 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /Runtime/Js/90_m.js
 /Runtime/Js/960_90.js
 /Runtime/Js/footer-m.js
+/Runtime/Js/guding_top.js
+/Runtime/Js/pc_top.js
 /Runtime/js/fumeiti.
 /Runtime/js/mad.js
 /Runtime/js/play960.js
@@ -15298,6 +15301,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||addon.dismall.com/resource/*/ad
 @@||addoncloud.org^$generichide
 @@||addthisedge.com/live/$xmlhttprequest,domain=serialomaniak.pl
+@@||adengine.snigelweb.com/paraphraser.io/*/adngin.js$domain=paraphraser.io
 @@||adf.acrosspf.com/js/acrossadx.js$domain=ytn.co.kr
 @@||adf.ly/static/image/ad_top_bg2.png?
 @@||adgaterewards.com/assets/js/vc/advertisement.js|$~third-party
@@ -15952,6 +15956,10 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||cdn.segment.com/analytics.js/$script,domain=app.cryptotrader.tax|fender.com|finerdesk.com|givingassistant.org|inxeption.io|my.foxnews.com
 @@||cdn.segment.com/next-integrations/integrations/
 @@||cdn.segment.com/v1/projects/
+@@||cdn.snigelweb.com/adconsent/*/adconsent__tcfapi.js$domain=paraphraser.io
+@@||cdn.snigelweb.com/adconsent/*/views/adconsent__tcfapi_en.js$domain=paraphraser.io
+@@||cdn.snigelweb.com/adengine/paraphraser.io/loader.js$domain=paraphraser.io
+@@||cdn.snigelweb.com/gvl/vendor-list.json$domain=paraphraser.io
 @@||cdn.stat-rock.com/player/*player.js$domain=4shared.com
 @@||cdn.staticfile.org^$script,domain=00ksw.com|147xsw.com|31xiaoshuo.com|biququ.info|feisucn.net|tsxsw.la|yushubo.com|ziyouge.top
 @@||cdn.taboola.com/libtrc/*/loader.js$domain=cnet.com
@@ -18352,6 +18360,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$domain=irctc.co.in
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$domain=musixmatch.com
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$domain=navbharattimes.indiatimes.com
+@@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$domain=paraphraser.io
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$domain=purepeople.com
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$domain=sahibinden.com
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$domain=segodnya.ua
@@ -18377,6 +18386,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=gq-magazine.co.uk
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=line.me
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=navbharattimes.indiatimes.com
+@@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=paraphraser.io
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=purepeople.com
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=softonic.com
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=today.line.me
@@ -32432,6 +32442,7 @@ zznews.cn##.ad:not([style])
 ||1909.me/upload/ad/
 ||19273817.com^
 ||193.197.158.209^$third-party,domain=~statistik.lubw.baden-wuerttemberg.de.ip
+||19719197.com^
 ||199.116.177.156^$domain=~fc2.jp.ip
 ||1999019.com^
 ||199zw.com^
@@ -49176,6 +49187,7 @@ zznews.cn##.ad:not([style])
 ||learn.wow.wowforbusiness.com^
 ||learnedmarket.com^
 ||learning.hmhco.com^
+||learningc.website^
 ||lebtpm.co-medical.com^
 ||lecho.be/fb2?
 ||lecho.be/tag/tag-
@@ -49274,6 +49286,7 @@ zznews.cn##.ad:not([style])
 ||lg.tr.pandora.tv^
 ||lgiufpmd.com^
 ||lgjygg.com^
+||lgl.ink^
 ||lglady.cn^
 ||lgm.averydennison.com^
 ||lgmi.com/ggimg/
