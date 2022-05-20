@@ -1,8 +1,8 @@
-! Checksum: OuRspTq0eL8kXr/emeYIhA
+! Checksum: 7IA0nz1GpVi6mRDIYInEZA
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.0.62.5
-! TimeUpdated: 2022-05-20T09:31:31+00:00
+! Version: 2.0.62.6
+! TimeUpdated: 2022-05-20T10:31:45+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -358,7 +358,9 @@ lj_bookmarklet
 ! Good: example.org#?#main > div.row:has(> div.ad)
 ! Bad: example.org##main > div.ad (should be in specific.txt)
 !
+ucrazy.ru#?##crazy-content > div.box > div#ya_share:upward(1)
 rai77.com#?##oframeplayer > pjsdiv[style]:has(> pjsdiv[style] > pjsdiv[style] > noindex:contains(Поделиться))
+chugai-contents.jp#?#.itemSection > ul.snsBtn:upward(1)
 alanam.com#?#.entry-content > div.film-content:has(> div.film-share)
 tecstaff.jp#?#.module-text > h3:contains(Instagram):upward(2)
 caretobeauty.com#?#.product-view > .box-additional > h4:contains(Share)
@@ -5161,7 +5163,7 @@ directg.net##.product-share-container
 breitbart.com##.bnn-social-share
 github.blog##.post__social-share
 nn.by,nashaniva.com,screencrush.com##.social-subscriptions
-20minut.ua##.share_group
+vsim.ua,20minut.ua##.share_group
 gameswelt.de##div[class^="share__"]
 player.vgtrk.com##.pl-vid__share
 knowyourmeme.com##.fb-page-like

@@ -1,8 +1,8 @@
-! Checksum: Q3Da/p8KW2TPlLW5sD9c2A
+! Checksum: ts+aCb9TlBE2KN3fa9u5gQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.20.6
-! TimeUpdated: 2022-05-20T09:30:39+00:00
+! Version: 2.1.20.7
+! TimeUpdated: 2022-05-20T10:30:52+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7427,6 +7427,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+sbermarket.ru##div[class^="CookiesConcent_"]
 thaiticketmajor.com##.privacy-policy-bar
 flixclassic.pl#$#.app-gdpr-notice { display: none !important; }
 flixclassic.pl#$#.overflow-hidden { overflow: visible !important; }
@@ -12685,7 +12686,7 @@ ottplayer.es###cookieAgreeBar
 51015kids.eu,streetstyle24.pl###cookieBan
 mediaexpert.pl###cookieBoxContainer
 wize.life###cookieChoiceBar
-kofteciyusuf.com,trtkurdi.com.tr,trtturk.com.tr,trtmuzik.net.tr,radyo.trt.net.tr,prefix.com.tr,drnilgunturhan.com,c4ddownload.com,pastebr.xyz,textbin.net,shwoghk14.blogspot.com,ustreamy.co,premier-odessa.com.ua,dr.com.tr,idefix.com###cookieConsentContainer
+service.osnabrueck.de,kofteciyusuf.com,trtkurdi.com.tr,trtturk.com.tr,trtmuzik.net.tr,radyo.trt.net.tr,prefix.com.tr,drnilgunturhan.com,c4ddownload.com,pastebr.xyz,textbin.net,shwoghk14.blogspot.com,ustreamy.co,premier-odessa.com.ua,dr.com.tr,idefix.com###cookieConsentContainer
 clever-fit.com###cookieDataProtection
 tani6torico.com,servicebund.com,negocio.site,car2go.com,business.site###cookieDialog
 gamevicio.com###cookieMSGbx
@@ -21319,6 +21320,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+serverguy.com##.elementor-popup-modal
 microsoftstore.com.cn##.modals-overlay
 samayam.com##.topStorieswrap
 samayam.com##.top-stories-modal
@@ -29753,11 +29755,13 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+||hindishouter.com/wp-content/uploads/2022/01/download.jpg
 dieversicherer.de##.newsletter__container
 biteki.com##.sideblock_social
 currenttime.tv##.wsw
 news.mynavi.jp###piano_mailform
 cnet.com##.newsletterWrap
+vsim.ua##.title-clear > .btn
 7days.ru##a[class$="_button-social_telegramm"]
 medium.com#?#div[role="dialog"] ~ div > div > div > div > div > h2:contains(Sign up for Analytics Vidhya News Bytes):upward(2)
 latest-ufo-sightings.net###text-3
@@ -29767,6 +29771,9 @@ androidayuda.com##.widget_newsletterwidget
 edimdoma.ru##.sticky_subscribe_block
 booking.com##.hide-newsletter-menu-tab
 booking.com##.emk_footer_update
+vsim.ua#$##modal_mail { display: none !important; }
+vsim.ua#$#.modal-backdrop { display: none !important; }
+vsim.ua#$#.modal-open { overflow: auto !important; }
 gqjapan.jp##.ticker-view
 gqjapan.jp##div[class^="LinkBannerMarquee-"]
 bezprovodoff.com##div[id^="mc4wp_form_widget-"]
@@ -30139,7 +30146,7 @@ cinemacao.com##.mc--iframe-responsive-wrapper
 cinemacao.com##a[href="https://bit.ly/telegramcinemacao"] > img
 hometogo.de##.email-subscription-banner
 hometogo.de##div[data-test="email-subscription-banner"]
-salzburg-airport.com,michalpasterski.pl##.newsletter-popup
+infosperber.ch,salzburg-airport.com,michalpasterski.pl##.newsletter-popup
 thestreet.com##.bcpContentTemplate
 seatguru.com###TB_overlay
 seatguru.com###TB_window
