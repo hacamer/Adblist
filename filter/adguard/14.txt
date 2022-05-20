@@ -1,8 +1,8 @@
-! Checksum: 4HSTfMfIAj0R5AZ9ac3LtQ
+! Checksum: 6nhdP7OMdKaYfz0xBod4cg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.20.11
-! TimeUpdated: 2022-05-20T13:30:39+00:00
+! Version: 2.1.20.12
+! TimeUpdated: 2022-05-20T14:30:36+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2035,13 +2035,13 @@ facebook.com,facebookcorewwwi.onion#%#new MutationObserver(function(){document.q
 mobile.facebook.com,alpha.facebook.com,m.facebook.com##article[data-xt*="originated_from_recommendation"]
 x.facebook.com##article[data-store*="originated_from_recommendation"]
 !! mobile
-m.facebook.com#?#div[data-mcomponent="MContainer"] > div[data-mcomponent="MContainer"]:has(> div[data-mcomponent="MContainer"] > div[data-mcomponent="TextArea"] > .native-text > span:contains(Suggested for you))
-m.facebook.com#?#div[data-mcomponent="MContainer"] > div[data-mcomponent="MContainer"]:has(> div[data-mcomponent="MContainer"] > div[data-mcomponent="TextArea"] > .native-text > span:contains(Suggested for you)) + div[data-tti-phase]
-m.facebook.com#?#div[data-mcomponent="MContainer"] > div[data-mcomponent="MContainer"]:has(> div[data-mcomponent="MContainer"] > div[data-mcomponent="TextArea"] > .native-text > span:contains(Suggested for you)) + div[data-tti-phase] + div[data-tti-phase]
-m.facebook.com#?#div[data-mcomponent="MContainer"] > div[data-mcomponent="MContainer"]:has(> div[data-mcomponent="MContainer"] > div[data-mcomponent="TextArea"] > .native-text > span:contains(Suggested for you)) + div[data-tti-phase] + div[data-tti-phase] + div[data-tti-phase]
-m.facebook.com#?#div[data-mcomponent="MContainer"] > div[data-mcomponent="MContainer"]:has(> div[data-mcomponent="MContainer"] > div[data-mcomponent="TextArea"] > .native-text > span:contains(Suggested for you)) + div[data-tti-phase] + div[data-tti-phase] + div[data-tti-phase] + div[data-tti-phase]
-m.facebook.com#?#div[data-mcomponent="MContainer"] > div[data-mcomponent="MContainer"]:has(> div[data-mcomponent="MContainer"] > div[data-mcomponent="TextArea"] > .native-text > span:contains(Suggested for you)) + div[data-tti-phase] + div[data-tti-phase] + div[data-tti-phase] + div[data-tti-phase] + div[data-tti-phase][data-actual-height="26"]
-m.facebook.com#?#div[data-mcomponent="MContainer"] > div[data-mcomponent="MContainer"]:has(> div[data-mcomponent="MContainer"] > div[data-mcomponent="TextArea"] > .native-text > span:contains(Suggested for you)) + div[data-tti-phase] + div[data-tti-phase] + div[data-tti-phase] + div[data-tti-phase] + div[data-tti-phase][data-actual-height="26"] + div[data-tti-phase][data-actual-height="43"]:has(> div[data-action-id] > div[class] > button)
+m.facebook.com#?#div[data-status-bar-color] > div[data-mcomponent="MContainer"] > div[data-mcomponent="MContainer"]:has(> div[data-mcomponent="MContainer"] > div[data-mcomponent="TextArea"] > .native-text > span:contains(Suggested for you))
+m.facebook.com#?#div[data-status-bar-color] > div[data-mcomponent="MContainer"] > div[data-mcomponent="MContainer"]:has(> div[data-mcomponent="MContainer"] > div[data-mcomponent="TextArea"] > .native-text > span:contains(Suggested for you)) + div[data-tti-phase]
+m.facebook.com#?#div[data-status-bar-color] > div[data-mcomponent="MContainer"] > div[data-mcomponent="MContainer"]:has(> div[data-mcomponent="MContainer"] > div[data-mcomponent="TextArea"] > .native-text > span:contains(Suggested for you)) + div[data-tti-phase] + div[data-tti-phase]
+m.facebook.com#?#div[data-status-bar-color] > div[data-mcomponent="MContainer"] > div[data-mcomponent="MContainer"]:has(> div[data-mcomponent="MContainer"] > div[data-mcomponent="TextArea"] > .native-text > span:contains(Suggested for you)) + div[data-tti-phase] + div[data-tti-phase] + div[data-tti-phase]
+m.facebook.com#?#div[data-status-bar-color] > div[data-mcomponent="MContainer"] > div[data-mcomponent="MContainer"]:has(> div[data-mcomponent="MContainer"] > div[data-mcomponent="TextArea"] > .native-text > span:contains(Suggested for you)) + div[data-tti-phase] + div[data-tti-phase] + div[data-tti-phase] + div[data-tti-phase]
+m.facebook.com#?#div[data-status-bar-color] > div[data-mcomponent="MContainer"] > div[data-mcomponent="MContainer"]:has(> div[data-mcomponent="MContainer"] > div[data-mcomponent="TextArea"] > .native-text > span:contains(Suggested for you)) + div[data-tti-phase] + div[data-tti-phase] + div[data-tti-phase] + div[data-tti-phase] + div[data-tti-phase][data-actual-height="26"]
+m.facebook.com#?#div[data-status-bar-color] > div[data-mcomponent="MContainer"] > div[data-mcomponent="MContainer"]:has(> div[data-mcomponent="MContainer"] > div[data-mcomponent="TextArea"] > .native-text > span:contains(Suggested for you)) + div[data-tti-phase] + div[data-tti-phase] + div[data-tti-phase] + div[data-tti-phase] + div[data-tti-phase][data-actual-height="26"] + div[data-tti-phase][data-actual-height="43"]:has(> div[data-action-id] > div[class] > button)
 ! Message from facebook, e. g. about Elections or Corona
 facebook.com##div[aria-label="Message from Facebook"]
 ! Create room in newsfeed
@@ -19302,6 +19302,8 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+jalan.net##.dwldiv
+benesse.jp###inter
 ozmall.co.jp##.AppBannerFooter
 m.aliexpress.ru##a[class^="PseudoSmartBanner_"]
 trovo.live##.mobile-header > button.open-btn
@@ -19487,7 +19489,6 @@ travel.rakuten.co.jp###footerBannerAppDL
 travel.rakuten.co.jp##.downloads-in
 webstatic-sea.hoyolab.com##.bbs-qr
 prostovasya.ru##.t-popup_show
-jumpbookstore.com###header_app_banner
 jumpbookstore.com###flipdesk
 tenor.com##.UpsellPill
 lulucos.jp##.p-home__top
@@ -21067,6 +21068,8 @@ pinterest.*#%#AG_onLoad(function(){var a=new MutationObserver(function(){if(docu
 !+ PLATFORM(android, ios)
 ~kurer-sreda.ru,~chorki.com,~zattoo.com,~zaycev.net,~xltrax.ee,~hitta.se,~mail.ru,~v7player.wostreaming.net,~facebook.com,~instagram.com,~drive.google.com$$link[rel="manifest"]
 !
+!+ NOT_OPTIMIZED
+jumpbookstore.com###header_app_banner
 !+ NOT_OPTIMIZED
 stylehaus.jp##.smart-app-bnr
 !+ NOT_OPTIMIZED
