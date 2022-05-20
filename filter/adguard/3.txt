@@ -1,8 +1,8 @@
-! Checksum: kZghdPfETsEflOzZ5JsUGg
+! Checksum: oa8bIE4b8r+yXLqW+e4LeA
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.39.98
-! TimeUpdated: 2022-05-20T12:31:21+00:00
+! Version: 2.0.40.0
+! TimeUpdated: 2022-05-20T13:31:26+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -335,6 +335,7 @@ journal-plaza.net#?#.rightside div.block.bnavi[-ext-has="h3.dtitle:contains(Сч
 !||i.snssdk.com/log/*
 !||i.snssdk.com/slardar/sdk.js
 !
+||selphiu.com^
 ||tr.vitals.co^
 ||predataclient.b-cdn.net^
 ||ad-plus.com.tr^$third-party
@@ -25844,6 +25845,7 @@ $app=com.miui.analytics
 ! For platforms which do not support $redirect rules
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/119018
 ! https://github.com/AdguardTeam/AdguardFilters/issues/118826
 ! https://github.com/AdguardTeam/AdguardFilters/issues/119178
 ||cdn.segmentify.com/*/segmentify.js$script,important,redirect=noopjs,domain=gratis.com

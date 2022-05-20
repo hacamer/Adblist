@@ -1,8 +1,8 @@
-! Checksum: 2Uwt76tVBhn5Xn2ERWZePw
+! Checksum: 4HSTfMfIAj0R5AZ9ac3LtQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.20.9
-! TimeUpdated: 2022-05-20T12:30:35+00:00
+! Version: 2.1.20.11
+! TimeUpdated: 2022-05-20T13:30:39+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -9863,7 +9863,7 @@ otoagent.pl###gdpr-popup-container-id
 fxpro.pl#$#body { overflow: visible !important; }
 fxpro.pl#$#body::after { display: none !important; }
 fxpro.pl#$#.holder-popups--cookies { display: none !important; }
-kadewe.de,my-toyota-im.com,ihk-nuernberg.de,nanu-nana.de,manomano.de,xn--gnstiger-reisen-zvb.de,helpsetup.ru###overlay
+diebayerische.de,kadewe.de,my-toyota-im.com,ihk-nuernberg.de,nanu-nana.de,manomano.de,xn--gnstiger-reisen-zvb.de,helpsetup.ru###overlay
 s-pankki.fi##.browser-consent
 gonis.de,seereisedienst.de###dsgvo
 limango-travel.de#$#body { overflow: auto !important; padding-right: 0 !important; }
@@ -27557,9 +27557,10 @@ journal.tinkoff.ru##div[data-tracking-level-label="spec-kak-vy-tratite-banner"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/118203
 agrinews.co.jp###ad
 ! https://github.com/AdguardTeam/AdguardFilters/issues/118543
-outlook.live.com#?#div[data-focuszone-id] + div > button > div > img[class][src$="/leftNavUpsellIcons/premium-diamond-01.svg"]:upward(3)
+outlook.live.com#?#div[data-focuszone-id] + div > button > div > img[class][src$="/leftNavUpsellIcons/premium-diamond-01.svg"]:upward(2)
 outlook.live.com#?#.customScrollBar > div > div[class^="_"] > div > div.full:not([aria-label]):not([data-convid]):not([role="option"]):upward(2)
 outlook.live.com##.customScrollBar > div div.full:not([aria-label]):not([data-convid]):not([role="option"])
+outlook.live.com##div[id^="docking_InitVisiblePart_"] div[id^="virtualEditScroller"] + div[class] button[aria-label]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/102342
 bunshun.jp#?#.block-header:contains(SPECIAL)
 bunshun.jp##a[href$="?ref=special"]
@@ -29759,6 +29760,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+zaochnik.ru##.vuedals
 sundaypost.com###dct-cta--signup-signup-generic
 lawenforcementtoday.com###custom_html-3
 ||hindishouter.com/wp-content/uploads/2022/01/download.jpg
