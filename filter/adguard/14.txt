@@ -1,8 +1,8 @@
-! Checksum: vBoQjvMiKrNboFZA+/g2Lw
+! Checksum: R7lgXRjmgIh6nY2CBjvL0w
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.19.99
-! TimeUpdated: 2022-05-19T21:30:35+00:00
+! Version: 2.1.20.1
+! TimeUpdated: 2022-05-20T00:30:33+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -19288,6 +19288,8 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+m.aliexpress.ru##a[class^="PseudoSmartBanner_"]
+trovo.live##.mobile-header > button.open-btn
 bbc.com##main > div > section[aria-label="Информация"]
 scamadviser.com###bylp-popup-overlay
 scamadviser.com##a[href="https://tmcheck.us/g8Uan4xV"]
