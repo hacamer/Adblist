@@ -1,8 +1,8 @@
-! Checksum: ts+aCb9TlBE2KN3fa9u5gQ
+! Checksum: 2Uwt76tVBhn5Xn2ERWZePw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.20.7
-! TimeUpdated: 2022-05-20T10:30:52+00:00
+! Version: 2.1.20.9
+! TimeUpdated: 2022-05-20T12:30:35+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7427,6 +7427,8 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+erzgebirgskreis.de##.fnn-cookiemanager
+||erzgebirgskreis.de/*/fnn_cookiemanager/*/fnn-cookiemanager.js
 sbermarket.ru##div[class^="CookiesConcent_"]
 thaiticketmajor.com##.privacy-policy-bar
 flixclassic.pl#$#.app-gdpr-notice { display: none !important; }
@@ -8956,7 +8958,7 @@ oxfordlearning.com##.js-sticky-side-block
 r7.com##.toolkit-privacy-box
 careersinmusic.com###cookies_accept_container
 bestvalue.eu##.igrowl-cookie
-bonn.de,paderborn.de##.SP-ConsentBanner__spacer
+salzgitter.de,bonn.de,paderborn.de##.SP-ConsentBanner__spacer
 heatitup.tw##.personal_statement
 evomag.ro###cookie_info_bar
 esteto.ro###norificare_cookie
@@ -10983,8 +10985,8 @@ zeenews-india-com.cdn.ampproject.org##.co-container#warning-message
 webmotors.com.br##.bjRMar
 ||cdn.engelbert-strauss.de/assets/cookiebar/scripts.js
 eska.pl#$#body { overflow: auto !important; }
-elmundo.es,vecernji.hr,zive.cz,gamepro.de#$##didomi-host { display: none !important; }
-elmundo.es,vecernji.hr,zive.cz,gamepro.de#$#html > body.didomi-popup-open { overflow: auto !important; position: unset !important; }
+m.rtl.be,elmundo.es,vecernji.hr,zive.cz,gamepro.de#$##didomi-host { display: none !important; }
+m.rtl.be,elmundo.es,vecernji.hr,zive.cz,gamepro.de#$#html > body.didomi-popup-open { overflow: auto !important; position: unset !important; }
 wuerth.de###consent-container
 computerbild.de#$#body { overflow: visible !important; padding-right: 0 !important; }
 games.mail.ru##.b-header-agreement
@@ -27555,6 +27557,8 @@ journal.tinkoff.ru##div[data-tracking-level-label="spec-kak-vy-tratite-banner"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/118203
 agrinews.co.jp###ad
 ! https://github.com/AdguardTeam/AdguardFilters/issues/118543
+outlook.live.com#?#div[data-focuszone-id] + div > button > div > img[class][src$="/leftNavUpsellIcons/premium-diamond-01.svg"]:upward(3)
+outlook.live.com#?#.customScrollBar > div > div[class^="_"] > div > div.full:not([aria-label]):not([data-convid]):not([role="option"]):upward(2)
 outlook.live.com##.customScrollBar > div div.full:not([aria-label]):not([data-convid]):not([role="option"])
 ! https://github.com/AdguardTeam/AdguardFilters/issues/102342
 bunshun.jp#?#.block-header:contains(SPECIAL)
@@ -29755,8 +29759,11 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+sundaypost.com###dct-cta--signup-signup-generic
+lawenforcementtoday.com###custom_html-3
 ||hindishouter.com/wp-content/uploads/2022/01/download.jpg
 dieversicherer.de##.newsletter__container
+sportingnews.com##.social-media-sidebar
 biteki.com##.sideblock_social
 currenttime.tv##.wsw
 news.mynavi.jp###piano_mailform
@@ -31931,7 +31938,7 @@ shop.philips.ru##.footer-top-block__subscribe
 jakubmarian.com##.subscribe-article
 ej.by##.share
 ej.by##.article-footer + span.tags-title
-wcpo.com##.newsletter-opt
+thedenverchannel.com,wcpo.com##.newsletter-opt
 tlz.de##.piano-newsletter-inline
 pga.com##div[data-cy="gdpr-banner"]
 elespanol.com##.md-suscription
@@ -35369,7 +35376,7 @@ panda-novel.com,legionscans.com,moviesrush.in,toonvideos.net.in,fmoviez.org#$#ht
 nubng.com,melodelaa.link,invado.pl,blisseyhusband.in,9docu.org,template.city,teepr.com,unisinav.com,amigurumi.today,thememazing.com,chiaseapk.com,dzelectronic.com#$#body { -webkit-touch-callout: default!important; -moz-user-select: text!important; -webkit-user-select: text!important; -ms-user-select: text!important; -o-user-select: text!important; user-select: text!important; -khtml-user-select: text!important; }
 rawneix.in,mangacrab.com,metalnaveia66.com,bollywoodhindi.in,kdramasurdu.net,flinsetyadi.com,theturtleislandnews.com,audiotools.in,animeactua.com,audiobookcup.com,7misr4day.com,michaelemad.com,lazytranslations.com,samuraiscan.com,activationkeys.co,world4.eu,elektrikmen.com,wartaterkini.news,iptv4best.com,sysnettechsolutions.com,aihristdreamtranslations.com,audioreview.m1001.coreserver.jp,hulkpop.com#$#body.unselectable { -webkit-touch-callout: default!important; -moz-user-select: text!important; -webkit-user-select: text!important; -ms-user-select: text!important; -o-user-select: text!important; user-select: text!important; -khtml-user-select: text!important; }
 droidtk.com#$#body[data-protect="true"] { -webkit-touch-callout: default!important; -moz-user-select: text!important; -webkit-user-select: text!important; -ms-user-select: text!important; -o-user-select: text!important; user-select: text!important; -khtml-user-select: text!important; }
-procrackerz.org,chapterupdates.com,babelnovel.com,katzen-fieber.de,xn--80aaxitdbjk.xn--p1ai,toptech360.com,devicespecifications.com,apkinstaller.com,androidmtk.com,serial-key.com,sjcrack.com,themeslide.com,openssource.biz,kinogo-net-2017.ru,kinogo-online.online,kino-zal.net,lavka-invaitov.ru#$#body * { -webkit-touch-callout: default!important; -moz-user-select: text!important; -webkit-user-select: text!important; -ms-user-select: text!important; -o-user-select: text!important; user-select: text!important; -khtml-user-select: text!important; }
+m.rtl.be,procrackerz.org,chapterupdates.com,babelnovel.com,katzen-fieber.de,xn--80aaxitdbjk.xn--p1ai,toptech360.com,devicespecifications.com,apkinstaller.com,androidmtk.com,serial-key.com,sjcrack.com,themeslide.com,openssource.biz,kinogo-net-2017.ru,kinogo-online.online,kino-zal.net,lavka-invaitov.ru#$#body * { -webkit-touch-callout: default!important; -moz-user-select: text!important; -webkit-user-select: text!important; -ms-user-select: text!important; -o-user-select: text!important; user-select: text!important; -khtml-user-select: text!important; }
 !
 !--- JS ----
 !
@@ -36532,6 +36539,7 @@ subbota.ua##aside.sidebar > div[id^="custom_html-"]
 !
 ! Donation widgets (which are really annoying only)
 !
+discours.io##.donate-container
 kill-the-hero.com##.kofi-button
 paperpaper.*##.post-info-block
 paperpaper.*#?#.stk-grid > div[class^="stk-theme"] > a[href^="http://paperpaper.site"]:upward(2)
