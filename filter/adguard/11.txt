@@ -1,8 +1,8 @@
-! Checksum: DeML2GnhpXUdtvxAP5UxrQ
+! Checksum: NvGnXUpdymHoXijbDezfEQ
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.29.75
-! TimeUpdated: 2022-05-19T15:30:29+00:00
+! Version: 2.0.29.76
+! TimeUpdated: 2022-05-20T06:30:21+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1275,9 +1275,7 @@ westseattleblog.com#@#.header-ad
 ! Bad: example.org##main > div.ad (should be in specific.txt)
 !
 !
-phileweb.com#$##sp_article_header { height: auto !important; }
-phileweb.com#$#body { padding-top: 100px !important; }
-phileweb.com#$#header.has-topbanner .header-in { height: auto !important; }
+s.akiba-souken.com#?#ul > li > div[id^="div-gpt-"]:upward(1)
 outlook.live.com#?#main[aria-hidden] > div[class] > div[style] > div[class][style="position: absolute; left: 0px; top: 0px; height: 80px; width: 100%;"]:has(> div[class] > div[role="group"] > #OwaContainer)
 m.ceneo.pl#?#.page-content .js_recommendations-container:has(> div > header > span:contains(/^Reklama$/))
 m.ceneo.pl#?#.page-content .js_recommendations-container:has(> div > header > span:contains(/^Reklama$/)) + .js_analytics-promotedItems[data-event-category="adbox"]
@@ -1760,6 +1758,10 @@ sasisa.ru#%#AG_onLoad(function() { window.Umobi = function() {}; });
 !-------CSS---------
 !-------------------
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/119240
+phileweb.com#$##sp_article_header { height: auto !important; }
+phileweb.com#$#body { padding-top: 100px !important; }
+phileweb.com#$#header.has-topbanner .header-in { height: auto !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/114941
 s.kakaku.com#$#body div.subCtsArea { display: none!important; }
 ! https://github.com/uBlockOrigin/uAssets/issues/12688

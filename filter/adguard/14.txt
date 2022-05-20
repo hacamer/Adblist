@@ -1,8 +1,8 @@
-! Checksum: R7lgXRjmgIh6nY2CBjvL0w
+! Checksum: 2yaKBwk9l2GLFtZL60Ng2Q
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.20.1
-! TimeUpdated: 2022-05-20T00:30:33+00:00
+! Version: 2.1.20.3
+! TimeUpdated: 2022-05-20T06:30:37+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7427,6 +7427,14 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+flixclassic.pl#$#.app-gdpr-notice { display: none !important; }
+flixclassic.pl#$#.overflow-hidden { overflow: visible !important; }
+coches.net##.mt-SharedCmp
+liveindex.org###terms-bar
+clasohlson.com#$#body { overflow: auto !important; }
+clasohlson.com#$#.cookie-bar { display: none !important; }
+clasohlson.com#$#.cookie-bar-overlay { display: none !important; }
+weber-products.de##body [id^="viucom-cookie-"]
 theblueprint.ru###accept-use-cookie
 dasinvestment.com#$#html { overflow: visible !important; }
 dasinvestment.com#$#body { overflow: visible !important; }
@@ -16589,6 +16597,8 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/119290
+clasohlson.com#@#.cookie-bar:not(body)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/119119
 @@||consent.cookiebot.com/uc.js$domain=dasinvestment.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/119054
