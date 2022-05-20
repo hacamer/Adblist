@@ -1,8 +1,8 @@
-! Checksum: NvGnXUpdymHoXijbDezfEQ
+! Checksum: 0Ge3iKtVmg7m3h2Y/ZDRIA
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.29.76
-! TimeUpdated: 2022-05-20T06:30:21+00:00
+! Version: 2.0.29.77
+! TimeUpdated: 2022-05-20T07:30:20+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1758,6 +1758,8 @@ sasisa.ru#%#AG_onLoad(function() { window.Umobi = function() {}; });
 !-------CSS---------
 !-------------------
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/119295
+quoka.de#$#.headroom--banner-top { top: 0 !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/119240
 phileweb.com#$##sp_article_header { height: auto !important; }
 phileweb.com#$#body { padding-top: 100px !important; }
@@ -2749,7 +2751,7 @@ cumlouder.com##.sticky-banner
 fyptt.to##.bottom-post-ad-space
 fyptt.to##.top-post-ad
 hindustantimes.com##.FirstAd
-yabancidizitv.net##body #mobilBanner
+yabancidizitv.*##body #mobilBanner
 joinfo.com##.amp-ad-holder
 m.olx.*##div[class^="baxter-placeholder--ads--"]
 realestate.yahoo.co.jp##.YadsBanner
