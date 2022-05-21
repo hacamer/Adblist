@@ -1,8 +1,8 @@
-! Checksum: cVgTx6hwE/ugQvg0bOB6IQ
+! Checksum: g31GV0QMfjKHivyU1oGGwg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.20.16
-! TimeUpdated: 2022-05-20T19:30:34+00:00
+! Version: 2.1.20.17
+! TimeUpdated: 2022-05-21T04:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -25967,6 +25967,7 @@ com-magazin.de##w-div[role$="dialog"]
 lena-miro.ru#?#body > div:not([class]):has(> div[style] button.js-install-prompt__close-btn)
 ! Twitter login popup
 ! https://github.com/AdguardTeam/AdguardFilters/issues/112718#issuecomment-1069965416
+twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion,twitter.com#$?#div[data-testid="sheetDialog"] > :not(div[data-testid="IntentLoginSheet_Login_Sheet"]) div[aria-label=""] > img[class^="css-"][src$="/privacy_cover.png"]:upward(div[role="group"]) { display: none !important; }
 twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion,twitter.com#$?#div[data-testid="sheetDialog"] > :not(div[data-testid="IntentLoginSheet_Login_Sheet"]) div[role="button"]:not([data-testid]) + div[role="button"]:not([data-testid]):upward(div[role="group"]) { display: none !important; }
 twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion,twitter.com#$?#html { overflow: auto !important; padding-right: 0 !important; }
 ! Yandex
