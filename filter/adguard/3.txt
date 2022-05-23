@@ -1,8 +1,8 @@
-! Checksum: BVziJag0r8xKDFjf5BjThw
+! Checksum: ocAK+nNVpdaqyE4DUuBSNQ
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.40.11
-! TimeUpdated: 2022-05-23T12:31:30+00:00
+! Version: 2.0.40.12
+! TimeUpdated: 2022-05-23T16:31:28+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -5118,6 +5118,7 @@ nethunt.com/api/v1/track/email/$image
 ! Disabled in DNS filter
 ||telemetry.mozilla.org^
 !
+||pzd.rakuten.co.jp^
 ||d3plfjw9uod7ab.cloudfront.net^
 ||za.zingnews.vn^
 ||treg.hearstnp.com^
@@ -24851,6 +24852,8 @@ $app=com.miui.analytics
 ! For platforms which do not support $redirect rules
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/119240 bottom images
+@@||googletagservices.com/tag/js/gpt.js$domain=phileweb.com
 ! google.* clicking on "Watch" button after searching for a show is broken
 ! https://github.com/uBlockOrigin/uAssets/issues/13284
 ||googletagmanager.com/gtm.js$script,redirect=googletagmanager-gtm,domain=harveynorman.co.nz|harveynorman.com.au
