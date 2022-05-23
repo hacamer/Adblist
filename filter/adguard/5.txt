@@ -1,8 +1,8 @@
-! Checksum: doOFdaX6N5jFDH5rDR3UPQ
+! Checksum: csi1LxxqMxhrwBgZb5RMRA
 ! Title: AdGuard Experimental filter
 ! Description: Filter designed to test certain hazardous filtering rules before they are added to the basic filters.
-! Version: 2.0.0.98
-! TimeUpdated: 2022-04-28T09:31:40+00:00
+! Version: 2.0.0.99
+! TimeUpdated: 2022-05-23T08:31:35+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -146,6 +146,8 @@
 ! Rules that are restricted to one or more domains.
 ! This section contain any type of rule grouped by domain.
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/119048#issuecomment-1134293035
+||video.twimg.com/ext_tw_video/*/pu/$xmlhttprequest,third-party
 ! main youtube page - changing view for the first row of elements
 www.youtube.com#$?##contents ytd-rich-grid-row:has(> div[id="contents"] > ytd-rich-item-renderer[style="display: none !important;"]) > #contents:first-child { max-width: unset !important; }
 www.youtube.com#$?##contents ytd-rich-grid-row:has(> div[id="contents"] > ytd-rich-item-renderer[style="display: none !important;"]) ytd-rich-grid-media { max-width: unset !important; }

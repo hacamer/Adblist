@@ -1,8 +1,8 @@
-! Checksum: N8EBOTVfRqKeUaOydOY4QA
+! Checksum: GUmjmhBgkFRc+8tBqIXDLQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.20.23
-! TimeUpdated: 2022-05-22T21:02:29+00:00
+! Version: 2.1.20.25
+! TimeUpdated: 2022-05-23T08:30:38+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7427,6 +7427,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+||cdn.braintrust.at/libs/bt-cookieconsent/
 nextrp.ru##.modalAcceptCookies
 open.ru##div[data-react-class="CookiesAgreement"]
 nahodka-magazin.ru##.cookies_message_container
@@ -9626,7 +9627,7 @@ gartenbaumschule-fuhs.de#$#body { overflow: visible !important; }
 icarros.com.br##.pagecontent > div#isView
 toyota.astra.co.id#$##cookieSection { display: none !important; }
 toyota.astra.co.id#$#body { overflow: visible !important; }
-fashionunited.*,ahaan.co.uk,afteracademy.com,shoppingcidademaringa.com.br##.MuiSnackbar-anchorOriginBottomCenter
+globenewswire.com,fashionunited.*,ahaan.co.uk,afteracademy.com,shoppingcidademaringa.com.br##.MuiSnackbar-anchorOriginBottomCenter
 adrenalinecyber.ru##.wrapper > main ~ div > div[class^="_"]
 gamefuelmasters.ru##.wrapper > div.content ~ div > div[class^="_"]
 thairath.co.th##.cookiewrap
@@ -24435,7 +24436,7 @@ feedough.com#$#body { overflow: visible!important; }
 m.lenta.ru##.social-subscribe__wrap
 sadanduseless.com###conversions-box
 kemalisthaber.com##.bakmadangecme
-travelbook.de###notifications-dialog
+fitbook.de,travelbook.de###notifications-dialog
 digitaldiy.jp,mugglenet.com,4kfilme.de##div[class^="boxzilla-"]
 discoverskills.com##.et_bloom_popup
 lamoda.ru##.unipop__container
@@ -27558,6 +27559,12 @@ disk.yandex.*##.mail360-banner
 @@||yastatic.net/daas/atom.js$domain=mail.yandex.by|mail.yandex.kz|mail.yandex.ru|mail.yandex.ua|mail.yandex.com|mail.yandex.com.tr
 !-----------------------------------------------
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/119582
+apkmirror.com###bottom-slider
+! golem.de - Golem Karriere self-promo
+golem.de#?#.list-articles > li:has(> p > em:contains(Sponsored Post von Golem))
+!+ PLATFORM(android, ios)
+golem.de#?#.media__teaser-list > li:has(> div > p > em:contains(Sponsored Post von Golem))
 ! https://github.com/AdguardTeam/AdguardFilters/issues/118409
 stylehaus.jp##.pickup
 ! https://github.com/AdguardTeam/AdguardFilters/issues/118920
@@ -29776,6 +29783,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 !
 ciatr.jp#?#.article-footer-unit > h2.head-main:contains(ニュースレター)
 ciatr.jp##.news-letter-item
+hindian.net##.buttonizer
 zaochnik.ru##.vuedals
 vegasslotsonline.com##.subscribe-to-newsletter
 sundaypost.com###dct-cta--signup-signup-generic
