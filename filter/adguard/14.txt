@@ -1,8 +1,8 @@
-! Checksum: CdKqlwX28sEbL2dZwGEIMQ
+! Checksum: zlOOsTjKrigdfzQT/ccXQA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.20.35
-! TimeUpdated: 2022-05-23T18:30:37+00:00
+! Version: 2.1.20.36
+! TimeUpdated: 2022-05-23T19:30:35+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -19315,6 +19315,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+news.yahoo.co.jp##img[src^="https://s.yimg.jp/images/news-app/promo/banner/"]
 tutu.ru##div[data-ti="mobile_app_banner"]
 comicsvalley.com##.sgpb-popup-dialog-main-div-wrapper
 wifiman.com#%#//scriptlet('set-cookie', 'sb-closed', '1')
