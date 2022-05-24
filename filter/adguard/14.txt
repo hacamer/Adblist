@@ -1,8 +1,8 @@
-! Checksum: cvAsDKD1d+fVQIJv3i4NWQ
+! Checksum: aP2MCt1e+7VZLqADevIs8A
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.20.44
-! TimeUpdated: 2022-05-24T13:30:36+00:00
+! Version: 2.1.20.46
+! TimeUpdated: 2022-05-24T15:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7589,8 +7589,8 @@ hytec-hydraulik.de,dolmar.de###cookie-hinweis
 starbucks.co.th##.mpp-container
 getkeepsafe.com##body .cookie-consent-banner-wrapper
 intermedia.ru##.сookieAgreement
-answear.com#?#body > div.modal:has(> div.container--basic > div.row > div[class*="CookiesConsentPopUp"])
-answear.com#$#body.modal--open { overflow: auto !important;}
+answear.*#?#body > div.modal:has(> div.container--basic > div.row > div[class*="CookiesConsentPopUp"])
+answear.*#$#body.modal--open { overflow: auto !important;}
 luisaviaroma.com#?#body > div:not([class]):not([id]):has(> div[class^="_"] div[class] > a[href^="/myarea/CookiePolicy.aspx"])
 perkinelmerinformatics.com#%#//scriptlet("remove-class", "minddnd-wa-announcement-padding-top", "body")
 perkinelmerinformatics.com#$#.minddnd-wa-announcement-wrap { display: none !important; }
@@ -19327,6 +19327,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+pointcard.rakuten.co.jp###optionalAppDownload
 lepoint.fr#$##Ad4screen { display: none !important; }
 news.yahoo.co.jp##img[src^="https://s.yimg.jp/images/news-app/promo/banner/"]
 tutu.ru##div[data-ti="mobile_app_banner"]
@@ -21355,6 +21356,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+mail.yahoo.co.jp#?#.main > div[class] > svg + div[class] > a[title=""][font-size="14"]:upward(2)
 video.dmkt-sp.jp##.lp_cta_fixed
 serverguy.com##.elementor-popup-modal
 kobe-np.co.jp##.fixed-footer
@@ -27033,6 +27035,9 @@ abendzeitung-muenchen.de###webpush-app
 /firebase.js$domain=novayagazeta.ru|comments.ua|kinosimka.net|ilan365.net|cnbcindonesia.com|haberzamani.net|oxy.cloud|allbasketball.org|auslogics.com|kartalyuvasi.com.tr|cnnindonesia.com|fbc.ua|astv.ru|pln-pskov.ru|aylink.co
 /firebase-messaging.js$domain=s.akiba-souken.com|bfm.ru|theswagsports.com|focus.ua|ukranews.com|comments.ua|coub.com|porno90.me|cnnamador.com|giallozafferano.it|wcostream.com|fptplay.vn|jooble.org|mobile01.com|myinstants.com|pdalife.ru|rg.ru|m.iguides.ru|donanimhaber.com|profile.ru|womanhit.ru|news.noteru.com|narodna-pravda.ua|newstm.in|sabah.com.tr|dreamstime.com|popbee.com|avtovzglyad.ru|allbasketball.org|tw.news.yahoo.com|takvim.com.tr|jn.pt|ria.ru|pars.host|calculator-online.net|operanewsapp.com|ahaber.com.tr|tamindir.com|concursosnobrasil.com.br|kompas.com|news.ebc.net.tw|recyclingtoday.com|homedecoratione.com|khersondaily.com|mirtesen.ru|womanhit.ru|belsat.eu|gearbest.com|op.gg|novayagazeta.ru|pocket-lint.com|turunculevye.com|bloomberght.com|stardima.com|aksam.com.tr|portamur.ru|fishki.net|ranking.goo.ne.jp|ohmymag.com|mgronline.com|semnasem.org|bluradio.com|carwale.com|finanznachrichten.de
 !
+kojikisokuhou.com##.notification
+||nicoblomaga.jp/material/31/tatefication.png$domain=kojikisokuhou.com
+||thetennisdaily.jp/assets/js/push-modal.js
 ||ozmall.co.jp/scripts/js/user-notification.js
 /notification.js$domain=jauns.lv|a2zapk.com|rt.com
 tproger.ru##.push-modal
@@ -29809,6 +29814,9 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+rskrf.ru##.subscr_form
+rskrf.ru##.subscribeBlockFixed
+kdnuggets.com##.box-form
 souspark.ru##.widget_wpshop_widget_subscribe
 capital.fr##.pmcInsert[data-signupservice^="CAP_NEWSLETTERS_ENCART-NL-SITE-CAP_NL-ECO_"]
 techcult.ru##.facebook
@@ -30154,7 +30162,7 @@ tympanus.net##.ct-sharing
 gomibo.de##section[class^="SubscribeNewsletterstyle"]
 ubr.ua##body div.subscription_form_block
 dnl.dn.ua##.facebook-area
-intex-press.by#?##article > blockquote:has(> p > strong > a[href^="https://zen.yandex.ru"])
+intex-press.by#?##article > div blockquote:has(> p > strong > a[href^="https://zen.yandex.ru"])
 baltnews.*##.article-content__banner
 gazetaby.com,gazetaby.info,gazetaby.media##.tabs-wrap-two
 9gag.com##.post-signup-list-banner
@@ -30674,7 +30682,7 @@ techcracked.com###Image1
 washingtoninformer.com###boxzilla-93937
 washingtoninformer.com###boxzilla-overlay-93937
 glavred.info##.popup-vb
-abcgundem.com,yeniakit.com.tr,yenicaggazetesi.com,turkuazgazetesi.net,seskocaeli.com,kocaelibarisgazetesi.com,kocaelikoz.com,enkocaeli.com,bfm.ru,evrensel.net,parkiet.com##a[href^="https://news.google.com/"][target="_blank"]
+milligazete.com.tr,abcgundem.com,yeniakit.com.tr,yenicaggazetesi.com,turkuazgazetesi.net,seskocaeli.com,kocaelibarisgazetesi.com,kocaelikoz.com,enkocaeli.com,bfm.ru,evrensel.net,parkiet.com##a[href^="https://news.google.com/"][target="_blank"]
 mediasat.info##footer > div[class="a-single a-81"]
 reason.com##.single-post-signup-box
 sputnik.by##.article__google-news
@@ -30867,8 +30875,8 @@ dedicatedbrand.com##.modal--newsletter
 reason.com##.puprf-signup-widget
 naukatehnika.com#?#.block > ul > li.onlypk:has( > img[onclick^="window.open"][onclick*="zen.yandex.ru"])
 ||naukatehnika.com/assets/cache_image/files/journal/bannera_glavnaya/*/zen_
-edtimes.in,rossiniartsite.com,tip-berlin.de,stoodnt.com,zimamagazine.com##.boxzilla-container
-edtimes.in,rossiniartsite.com,tip-berlin.de,stoodnt.com,zimamagazine.com##.boxzilla-overlay
+kdnuggets.com,edtimes.in,rossiniartsite.com,tip-berlin.de,stoodnt.com,zimamagazine.com##.boxzilla-container
+kdnuggets.com,edtimes.in,rossiniartsite.com,tip-berlin.de,stoodnt.com,zimamagazine.com##.boxzilla-overlay
 try-it.jp#%#//scriptlet('prevent-addEventListener', 'load', 'event.dispatch.apply')
 vokrug.tv#?#.articlesdiv > center:has(> a[href="https://zen.yandex.ru/vokrug.tv"])
 komus.ru##.new-subscribe
