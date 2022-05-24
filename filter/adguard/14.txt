@@ -1,8 +1,8 @@
-! Checksum: Q61A4EHpSEdcXRGyjf7Lng
+! Checksum: cvAsDKD1d+fVQIJv3i4NWQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.20.42
-! TimeUpdated: 2022-05-24T11:30:36+00:00
+! Version: 2.1.20.44
+! TimeUpdated: 2022-05-24T13:30:36+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7430,6 +7430,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+game-news.tokyo###cookie_note_ex1
 well.pl#$##rodoPopup { display: none !important; }
 well.pl#$#body.windowOpen { overflow: auto !important; padding-right: 0 !important; }
 dek-d.com###cookiePolicyDialog
@@ -20245,7 +20246,7 @@ weather.yahoo.co.jp##.doubleImage_cardBetween > div[data-doubleimage="short"]
 shopping.yahoo.co.jp,103.by##.AppBanner
 search.yahoo.co.jp###contentsInner > article[class^="W2ALink_W2ALink__"]
 sports.yahoo.co.jp###header > #RSAB
-store.shopping.yahoo.co.jp###h_app
+shopping.yahoo.co.jp###h_app
 store.shopping.yahoo.co.jp##.elItemEntryLink[data-ylk^="slk:applnk"]
 thehindu.com###artmeterwrap
 mdpr.jp##.pg-articleHeadline__readApp
@@ -21354,8 +21355,12 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+video.dmkt-sp.jp##.lp_cta_fixed
 serverguy.com##.elementor-popup-modal
 kobe-np.co.jp##.fixed-footer
+letemps.ch#$#html > body.tp-modal-open { overflow: auto !important; }
+letemps.ch#$#.tp-modal { display: none !important; }
+letemps.ch#$#.tp-backdrop { display: none !important; }
 blog.paperspace.com###userpilotIframeContainer
 microsoftstore.com.cn##.modals-overlay
 samayam.com##.topStorieswrap
@@ -27692,8 +27697,8 @@ admin.blog.fc2.com##.adimn_pr_txt
 jorudan.co.jp##.com_pr_rmads_bottom
 ! https://github.com/AdguardTeam/AdguardFilters/issues/109549
 transit.yahoo.co.jp##.mdSidePromo
-! https://github.com/AdguardTeam/AdguardFilters/issues/109244
-yahoo.co.jp##.MtoCTool
+! https://github.com/AdguardTeam/AdguardFilters/issues/118693
+yahoo.co.jp##.MtoCLink
 ! https://github.com/AdguardTeam/AdguardFilters/issues/109122
 pc-koubou.jp##.banner-side
 ! https://github.com/easylist/easylist/pull/10675
