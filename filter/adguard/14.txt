@@ -1,8 +1,8 @@
-! Checksum: Yx0lVINLQnb86dQdg1c7cA
+! Checksum: a027Wd6/a0Hj5iKhsuBDJg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.20.37
-! TimeUpdated: 2022-05-24T06:30:38+00:00
+! Version: 2.1.20.39
+! TimeUpdated: 2022-05-24T08:30:39+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -92,6 +92,8 @@
 ! https://github.com/AdguardTeam/AdguardFilters/issues/76987
 youtube.com#%#AG_onLoad(function() {var a = new MutationObserver(function() {if (document.querySelector('yt-upsell-dialog-renderer')) {var b = document.querySelector('.ytd-popup-container[popup-size="UPSELL_DIALOG_RENDERER_POPUP_SIZE_LARGE"] #dismiss-button:not(.dismissed), .upsell-dialog-lightbox .upsell-dialog-dismiss-button button:not(.dismissed)');setTimeout(function() {b&&b.click()}, 3E2)}});a.observe(document, {childList: !0,subtree: !0});setTimeout(function() {a.disconnect()}, 3E3)});
 !
+! https://github.com/AdguardTeam/AdguardFilters/pull/119657
+tarnkappe.info##.sidebar-sticky
 ! https://github.com/AdguardTeam/AdguardFilters/issues/119411
 capital.fr###dailymotion-pip-large-viewport
 ! https://github.com/AdguardTeam/AdguardFilters/issues/118395
@@ -7426,6 +7428,10 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+dek-d.com###cookiePolicyDialog
+bualuang.co.th###gdpr-message
+haineshop.ro#$#body.overflow-hidden { overflow: auto !important; }
+haineshop.ro#$#.gdprModal { display: none !important; }
 hoklartherm.de###Cookie_content
 rehadat-hilfsmittel.de###cookieDialogWrapper
 megaport.de##.amgdprcookie-bar-container
@@ -15631,6 +15637,7 @@ privacy.lecker.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent
 privacy.madame.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent-v2")){var g=new MutationObserver(function(){setTimeout(function(){var b=document.querySelector('button.no-children[path="\[0,2,1\]"]');b&&b.click();},300);setTimeout(function(){var c=document.querySelector('div[title="Berechtigte Interessen"]'); c&&c.click();},300);setTimeout(function(){var d=document.querySelectorAll('label[aria-checked="true"] > .off'); d.forEach(function(d){d.click();});},800); var f=document.querySelector('button.no-children[path="\[0,3,0\]"]'); setTimeout(function(){f&&f.click();},1000);});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},3E4)}});
 consent.ladbible.com,consent.gamingbible.co.uk,consent.unilad.co.uk#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var g=new MutationObserver(function(){var b=document.querySelector('button[title*="Accept" i]');b&&(g.disconnect(),b.click())});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
 !
+jobthai.com#%#//scriptlet('set-local-storage-item', 'website-visit-date', '1')
 mazda.com.tr#%#document.cookie = "subDomainCookie=accepted";
 festo.com#%#//scriptlet('set-cookie-reload', 'ckns_policy', '1')
 wifiman.com#%#//scriptlet('set-local-storage-item', 'hide-legal', '1')
@@ -27573,6 +27580,7 @@ disk.yandex.*##.mail360-banner
 apkmirror.com###bottom-slider
 ! golem.de - Golem Karriere self-promo
 golem.de#?#.list-articles > li:has(> p > em:contains(Sponsored Post von Golem))
+golem.de##.career-widget
 !+ PLATFORM(android, ios)
 golem.de#?#.media__teaser-list > li:has(> div > p > em:contains(Sponsored Post von Golem))
 ! https://github.com/AdguardTeam/AdguardFilters/issues/118409
@@ -33971,6 +33979,8 @@ newsweek.com##iframe[src="http://sns.europe.newsweek.com/newsletter?popup=1"]
 !######### JS tweaks ##########
 !##############################
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/119656
+ontools.net#%#//scriptlet("adjust-setInterval", "gotolink", "*", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/118968
 asdfiles.com#%#//scriptlet("adjust-setInterval", "seconds--", "*", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/118072
@@ -35177,7 +35187,7 @@ mtbcut.net#%#AG_onLoad(function() { var el = document.querySelector('a[href].wp-
 ! https://github.com/AdguardTeam/AdguardFilters/issues/41369
 m.appsmodz.com#%#AG_onLoad(function(){setTimeout(function(){if("undefined"!==typeof aesCrypto&&"function"===typeof aesCrypto.decrypt&&-1<window.location.href.indexOf("#?o="))try{window.location=aesCrypto.decrypt(window.location.href.split("#?o=")[1].replace(/^\s+/,"").replace(/\s+$/,""),"root".replace(/^\s+/,"").replace(/\s+$/,""))}catch(a){}},300)});
 link.baixedetudo.net.br,getlink.animesanka.club#%#AG_onLoad(function(){setTimeout(function(){if("undefined"!==typeof aesCrypto&&"function"===typeof aesCrypto.decrypt&&-1<window.location.href.indexOf("html#?o="))try{window.location=aesCrypto.decrypt(window.location.href.split("html#?o=")[1].replace(/^\s+/,"").replace(/\s+$/,""),"root".replace(/^\s+/,"").replace(/\s+$/,""))}catch(a){}},300)});
-teknopaid.xyz,redirect.dafontvn.com,5ggyan.com,hindisena.com,majidzhacker.com,links.iembra2or.com,ph.apps2app.com#%#AG_onLoad(function(){setTimeout(function(){if("undefined"!==typeof aesCrypto&&"function"===typeof aesCrypto.decrypt&&-1<window.location.href.indexOf("#?o="))try{window.location=aesCrypto.decrypt($.urlParam("o").replace(/^\s+/,"").replace(/\s+$/,""),"root".replace(/^\s+/,"").replace(/\s+$/,""))}catch(a){}},300)});
+ontools.net,teknopaid.xyz,redirect.dafontvn.com,5ggyan.com,hindisena.com,majidzhacker.com,links.iembra2or.com,ph.apps2app.com#%#AG_onLoad(function(){setTimeout(function(){if("undefined"!==typeof aesCrypto&&"function"===typeof aesCrypto.decrypt&&-1<window.location.href.indexOf("#?o="))try{window.location=aesCrypto.decrypt($.urlParam("o").replace(/^\s+/,"").replace(/\s+$/,""),"root".replace(/^\s+/,"").replace(/\s+$/,""))}catch(a){}},300)});
 filedownload.atozmodapk.com,linkagratis.tk,getlink.animesanka.club,moddedguru.com,game-kentang.blogspot.com,moviesdaweb.blogspot.com#%#AG_onLoad(function(){setTimeout(function(){if("function"===typeof convertstr&&"function"===typeof aesCrypto.decrypt&&-1<window.location.href.indexOf("#?o="))try{window.location=aesCrypto.decrypt(convertstr($.urlParam("o")),convertstr("root"))}catch(a){}},300)});
 windows10mexico.blogspot.com,bestopbook.info,omgmusik.com,ph.samapkstore.com,andronews18.blogspot.com,safe.kangkimin.com,ntsafelink.blogspot.com,ph.tpaste.net,wwwfotografgotlin.blogspot.com,go.myviptuto.com,sdetectives.id,apps2app.com,hulblog.com,pro-bangla.com,citgratis.com,blog.omgmusik.com,blog.omglyrics.com,punasfc.blogspot.com,sflinkmu.blogspot.com,seputarandroid05.blogspot.com,media-blue.blogspot.com,eleventhlevelinteractive.com,apkmaghrab.tk,aice-coffee.blogspot.com#%#AG_onLoad(function(){setTimeout(function(){if("function"===typeof convertstr&&"function"===typeof aesCrypto.decrypt&&-1<window.location.href.indexOf("html#?o="))try{window.location=aesCrypto.decrypt(convertstr($.urlParam("o")),convertstr("root"))}catch(a){}},300)});
 ! https://github.com/AdguardTeam/AdguardFilters/issues/41346
@@ -35375,7 +35385,7 @@ m.novel.naver.com#$#._not_select { -webkit-touch-callout: default!important; -mo
 page.kakao.com#$#.disableImageSave { pointer-events: auto!important; }
 novelmt.com#$#.chapter-content { user-select: auto !important; }
 tistory.com#$#img { pointer-events: auto!important; }
-ab-in-den-urlaub.de,ladyblog.me,plantaomaringa.com,tistory.com#$#html * { -webkit-touch-callout: default!important; -moz-user-select: auto!important; -webkit-user-select: auto!important; -ms-user-select: auto!important; -o-user-select: auto!important; user-select: auto!important; -khtml-user-select: auto!important; }
+mathbang.net,ab-in-den-urlaub.de,ladyblog.me,plantaomaringa.com,tistory.com#$#html * { -webkit-touch-callout: default!important; -moz-user-select: auto!important; -webkit-user-select: auto!important; -ms-user-select: auto!important; -o-user-select: auto!important; user-select: auto!important; -khtml-user-select: auto!important; }
 ab-in-den-urlaub.de,ladyblog.me,plantaomaringa.com,tistory.com#$#html { -webkit-touch-callout: default!important; -moz-user-select: auto!important; -webkit-user-select: auto!important; -ms-user-select: auto!important; -o-user-select: auto!important; user-select: auto!important; -khtml-user-select: auto!important; }
 moviesrush.one#$?#body style:contains(/-webkit-tap-highlight-color:|::selection/) { remove: true; }
 lapandilladelarejilla.es#$?#head > style:contains(.unselectable) { remove: true; }
@@ -35422,7 +35432,7 @@ m.rtl.be,procrackerz.org,chapterupdates.com,babelnovel.com,katzen-fieber.de,xn--
 !--- JS ----
 !
 ! #%#//scriptlet('abort-current-inline-script', 'document.oncontextmenu')
-seriesgratis.biz,mangacrab.com,metalnaveia66.com,bollywoodhindi.in,legionscans.com,footy.to,kdramasurdu.net,osomatsusan.hatenablog.com,flinsetyadi.com,bingotingo.com,carfixer.co.kr,urbanbrush.net,now.rememberapp.co.kr,untitle.org,tecnoprogramas.com,blog.daum.net,animeactua.com,creativestudio.kr,onna.kr,info-beihilfe.de,audiobookcup.com,funfunhan.com,blofinder.com,bookpost.kr,ex-nihil0.com,donghun.kr,zoommastory.com,deutschaj.com,kokone.co.kr,stevenh.net,ideas0419.com,raycat.net,zoominlife.com,hosii.info,janndk.com,blahblah.pe.kr,geniusjw.com,blog.esherloon.com,centrair.kr,softwarebits.net,tunovelaligera.com,krtopic.com,healthfeed.co.kr,my-expert.ru,bimiacg.net,solidfile.net,promocode99.in,downloadtutorials.net,nawalakarsa.id,tecnomusic-evolution.com,jpopsingles.eu,wartaterkini.news,pcprogramasymas.net,tistory.com,hunter-xhunter.com,ghostspectre.the-ninja.jp,slothjuns.net,eduardo-monica.com,apkspurefile.com,foxaholic.com,koreanaddict.net,omgkpop.top,gamegame.kr,eoreuni.com,jstranslations1.com,animeuniverse.it,baltasar5010purohentai.com,securitypcsoluciones.blogspot.com,unisinav.com,aihristdreamtranslations.com,tipslab.info,indcit.com,semi168.net,semi168.club,audio-sound-premium.com,filmboxoffice.web.id,kakpishem.ru,manhwa-manga41.bid,manhwa-manga42.bid,manhwa-manga43.bid,manhwa-manga44.bid,manhwa-manga45.bid,manhwa-manga46.bid,manhwa-manga47.bid,manhwa-manga.bid,teepr.com,texte.work,sysnettechsolutions.com,reinodekovel.com,elektrikmen.com,world4.eu,activationkeys.co,secondlifetranslations.com,samuraiscan.com,globaledu.jp,lazytranslations.com#%#//scriptlet('abort-current-inline-script', 'document.oncontextmenu')
+mathbang.net,seriesgratis.biz,mangacrab.com,metalnaveia66.com,bollywoodhindi.in,legionscans.com,footy.to,kdramasurdu.net,osomatsusan.hatenablog.com,flinsetyadi.com,bingotingo.com,carfixer.co.kr,urbanbrush.net,now.rememberapp.co.kr,untitle.org,tecnoprogramas.com,blog.daum.net,animeactua.com,creativestudio.kr,onna.kr,info-beihilfe.de,audiobookcup.com,funfunhan.com,blofinder.com,bookpost.kr,ex-nihil0.com,donghun.kr,zoommastory.com,deutschaj.com,kokone.co.kr,stevenh.net,ideas0419.com,raycat.net,zoominlife.com,hosii.info,janndk.com,blahblah.pe.kr,geniusjw.com,blog.esherloon.com,centrair.kr,softwarebits.net,tunovelaligera.com,krtopic.com,healthfeed.co.kr,my-expert.ru,bimiacg.net,solidfile.net,promocode99.in,downloadtutorials.net,nawalakarsa.id,tecnomusic-evolution.com,jpopsingles.eu,wartaterkini.news,pcprogramasymas.net,tistory.com,hunter-xhunter.com,ghostspectre.the-ninja.jp,slothjuns.net,eduardo-monica.com,apkspurefile.com,foxaholic.com,koreanaddict.net,omgkpop.top,gamegame.kr,eoreuni.com,jstranslations1.com,animeuniverse.it,baltasar5010purohentai.com,securitypcsoluciones.blogspot.com,unisinav.com,aihristdreamtranslations.com,tipslab.info,indcit.com,semi168.net,semi168.club,audio-sound-premium.com,filmboxoffice.web.id,kakpishem.ru,manhwa-manga41.bid,manhwa-manga42.bid,manhwa-manga43.bid,manhwa-manga44.bid,manhwa-manga45.bid,manhwa-manga46.bid,manhwa-manga47.bid,manhwa-manga.bid,teepr.com,texte.work,sysnettechsolutions.com,reinodekovel.com,elektrikmen.com,world4.eu,activationkeys.co,secondlifetranslations.com,samuraiscan.com,globaledu.jp,lazytranslations.com#%#//scriptlet('abort-current-inline-script', 'document.oncontextmenu')
 ! #%#//scriptlet('prevent-addEventListener', 'contextmenu')
 lover91.net,leouve.com.br,novelpia.com,comico.jp,tappytoon.com,toonnbook.nate.com,tapas.io,kakaowebtoon.com,lapandilladelarejilla.es,lezhinus.com,lezhin.com,grafolio.naver.com,webtoon.kakao.com,page.kakao.com#%#//scriptlet('prevent-addEventListener', 'contextmenu')
 ! #%#//scriptlet('set-constant', 'document.oncontextmenu', 'null')
@@ -35436,7 +35446,7 @@ rawneix.in,theturtleislandnews.com,audiotools.in,moviesrush.one,lapandilladelare
 ! #%#//scriptlet('prevent-addEventListener', 'dragstart')
 kakaowebtoon.com,page.kakao.com#%#//scriptlet('prevent-addEventListener', 'dragstart')
 ! #%#//scriptlet('abort-current-inline-script', 'tjQuery', 'body')
-teus.me,untitle.org,gaesae.com,onna.kr,archwin.net,funfunhan.com,onpc.kr,bookpost.kr,donghun.kr,zoommastory.com,kokone.co.kr,blog.hangyeong.com,stevenh.net,ideas0419.com,raycat.net,zoominlife.com,hosii.info,janndk.com,blahblah.pe.kr,tokyodomin.com,modoobrisbane.com,geniusjw.com,gamegame.kr,centrair.kr,blog.esherloon.com,tistory.com#%#//scriptlet('abort-current-inline-script', 'tjQuery', 'body')
+mathbang.net,teus.me,untitle.org,gaesae.com,onna.kr,archwin.net,funfunhan.com,onpc.kr,bookpost.kr,donghun.kr,zoommastory.com,kokone.co.kr,blog.hangyeong.com,stevenh.net,ideas0419.com,raycat.net,zoominlife.com,hosii.info,janndk.com,blahblah.pe.kr,tokyodomin.com,modoobrisbane.com,geniusjw.com,gamegame.kr,centrair.kr,blog.esherloon.com,tistory.com#%#//scriptlet('abort-current-inline-script', 'tjQuery', 'body')
 ! #%#//scriptlet('abort-on-property-read', 'disable_copy')
 rawneix.in,mangacrab.com,metalnaveia66.com,bollywoodhindi.in,kdramasurdu.net,theturtleislandnews.com,audiotools.in,audiobookcup.com,lapandilladelarejilla.es,7misr4day.com,michaelemad.com,lazytranslations.com,wartaterkini.news,hunter-xhunter.com,foxaholic.com,koreanaddict.net,jstranslations1.com,baltasar5010purohentai.com,tokubatch.com,clockks.com,iptv4best.com,reinodekovel.com,elektrikmen.com,world4.eu,activationkeys.co,samuraiscan.com#%#//scriptlet('abort-on-property-read', 'disable_copy')
 ! #%#//scriptlet('abort-on-property-read', 'getSelection')
