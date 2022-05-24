@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: dDya5hBW4taL+gf3uXAJNg
+! Checksum: 0fJSX2ckLyjLGym/FX4YrA
 ! Title: My AdFilters（for Mobile）
 ! Expires: 12 hours
-! Version: 202205240732
-! Last Modified: 2022年05月24日 07:32
+! Version: 202205241030
+! Last Modified: 2022年05月24日 10:30
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 67662
+! Total count: 67676
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -6071,7 +6071,9 @@
 ##a[onclick^="gtag"] > .add
 ##a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"]
 ##a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"]
+##a[target="_blank"] > img[height="120px"][src*=".c-ctrip.com"][src$=".gif"]
 ##a[target="_blank"] > img[height="120px"][src*=".meituan.net"][src$=".gif"]
+##a[target="_blank"] > img[height="120px"][src*=".tripcdn.com"][src$=".gif"]
 ##a[target="_blank"] > img[height="120px"][src*="qlogo.cn"][src$=".png"]
 ##a[target="_blank"] > img[height="60px"][src*=".126.net"][src$=".gif"]
 ##a[target="_blank"] > img[height="60px"][src*=".360buyimg.com"][src$=".gif"]
@@ -6179,8 +6181,8 @@
 ##div[id^="zergnet-widget"]
 ##div[onclick*="?i_code="]
 ##div[onclick^="window.location.href"][onclick*=".bcebos."]
-##div[style=" max-width:966px;  margin:0 auto;"] > a > img[height="120px"]
-##div[style=" max-width:966px;  margin:0 auto;"] > a > img[height="60px"]
+##div[style=" max-width:977px;  margin:0 auto;"] > a > img[height="120px"]
+##div[style=" max-width:977px;  margin:0 auto;"] > a > img[height="60px"]
 ##div[style="border-radius:8px;background-color:#005737;padding:6px;"]
 ##div[style="box-sizing:border-box;padding:20px 16px;border-radius:8px;width:90%;margin:0 auto;"]
 ##div[style="display: flex;flex-wrap: wrap;margin-right: 5px;margin-left: 5px;"] + style + .container
@@ -14068,6 +14070,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 1001tracklists.com##a[target="_blank"][onclick*="Banner"] > img
 1001tracklists.com##div[id*="left" i] + div[style] a[href][target="_blank"]:not([href*="1001tracklists.com"]) > img
 1001tracklists.com#$?#div[class*="adngin"].exNet { remove: true; }
+1001tracklists.com#?#a[onclick^='gaLnkTr']
 1001tracklists.com#@##adframe:not(frameset)
 1001tracklists.com#@#[id][width]
 10086.cn##.advertisingOther_img
@@ -30583,6 +30586,7 @@ unogs.com##[href^="/ad/"]
 unrar.flowsoft7.com##+js(set-constant, gadb, false)
 unsplash.com##a[rel^="sponsored"][target="_blank"]
 unsplash.com##div[data-ad="true"]
+unsplash.com#?#.MbNnd:-abp-has(a:-abp-contains(Sponsored))
 unsplash.com#?#div[data-affiliates-grid-container]:upward(1)
 unsplash.com#?#div[data-test="masonry-grid-count-three"] > div[class^="ripi"] > div > footer:upward(1)
 uol.com.br#@#div[data-adunit]
@@ -32361,6 +32365,7 @@ zznews.cn##.ad:not([style])
 ||187cn.cn^
 ||188soft.com/js/PCsoftDetailAD.js
 ||188xiaoba.net^
+||18ap945.cn^
 ||18avday.*/aa/
 ||18comic.*/static/resources/files/*0x
 ||18comic.*/static/resources/images/300
@@ -38033,6 +38038,7 @@ zznews.cn##.ad:not([style])
 ||btloader.com^$third-party
 ||btmp4.net^
 ||btncdn.com^$third-party
+||btnldivewzzfso.com^
 ||btrace.qq.com^
 ||btstatic.com^$third-party
 ||btstats.devtribu.fr^
@@ -46702,6 +46708,7 @@ zznews.cn##.ad:not([style])
 ||ihfwer.aboutyou.com^
 ||ihhmh.com/mg/show
 ||ihhscjskwht.com^
+||ihqcndm.cn^
 ||ihtqqws.cn^
 ||ii1.chajiaotong.com^
 ||iiajtl.zeit.de^
@@ -47569,6 +47576,7 @@ zznews.cn##.ad:not([style])
 ||iqm.com^$third-party
 ||iqshw.com/d/js/m/thea
 ||iqu-operation.com^
+||iqzt3ec.cn^
 ||ir.ebaystatic.com/rs/c/9527tracking/configuration.js$script,domain=ebay.com
 ||iraiser.eu/analytics.js
 ||iratelyveinlet.com^
@@ -47818,6 +47826,7 @@ zznews.cn##.ad:not([style])
 ||jcelyj.com^
 ||jciiix.dogeat.ru^
 ||jcm.jd.com^$script,third-party
+||jcqwzssqks.com^
 ||jcr3.onlyyouhotels.com^
 ||jcrb.com/ZYW$subdocument
 ||jcwuzktevijp.com^
@@ -48499,6 +48508,7 @@ zznews.cn##.ad:not([style])
 ||kfrmomspnrlr.com^
 ||kfweo2.com^
 ||kfzhph.bonprix.pl^
+||kgagck6.com^
 ||kgdvs9ov3l2aasw4nuts.com^
 ||kgftlnvgql.com^
 ||kgimg.com/public/root//images/hardware.jpg
@@ -55300,6 +55310,7 @@ zznews.cn##.ad:not([style])
 ||pyxjwks.com^
 ||pyzkk.com^
 ||pyzwwzzooq.com^
+||pzd.rakuten.co.jp^
 ||pzpevk.newbalance.ru^
 ||pzrj6.top^
 ||pzz.events^$third-party
@@ -55322,6 +55333,7 @@ zznews.cn##.ad:not([style])
 ||qaz3.wethenew.com^
 ||qbaka.net^$third-party
 ||qbj8.com^
+||qbkybab.cn^
 ||qblkeu.vamvelosiped.ru^
 ||qbop.com^$third-party
 ||qbox.me/vds.js
@@ -65459,6 +65471,7 @@ zznews.cn##.ad:not([style])
 ||wj.jiancai365.cn^
 ||wjdfv.com^
 ||wjguc.com^
+||wjjhzs.cn^
 ||wjq.ma.tarnkappe.info^
 ||wjyljl.cn^
 ||wka8.com^
@@ -67047,6 +67060,7 @@ zznews.cn##.ad:not([style])
 ||ytmp3.*/ad/$subdocument
 ||ytmp3.cc/js/inner.js
 ||ytmp3.plus/ba
+||ytmp4converter.com/wp-content/uploads$popup
 ||ytn.co.kr/_comm/ylog.php?
 ||ytop8.com^
 ||yttz113.com^
