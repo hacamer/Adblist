@@ -1,8 +1,8 @@
-! Checksum: zlOOsTjKrigdfzQT/ccXQA
+! Checksum: Yx0lVINLQnb86dQdg1c7cA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.20.36
-! TimeUpdated: 2022-05-23T19:30:35+00:00
+! Version: 2.1.20.37
+! TimeUpdated: 2022-05-24T06:30:38+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -92,6 +92,8 @@
 ! https://github.com/AdguardTeam/AdguardFilters/issues/76987
 youtube.com#%#AG_onLoad(function() {var a = new MutationObserver(function() {if (document.querySelector('yt-upsell-dialog-renderer')) {var b = document.querySelector('.ytd-popup-container[popup-size="UPSELL_DIALOG_RENDERER_POPUP_SIZE_LARGE"] #dismiss-button:not(.dismissed), .upsell-dialog-lightbox .upsell-dialog-dismiss-button button:not(.dismissed)');setTimeout(function() {b&&b.click()}, 3E2)}});a.observe(document, {childList: !0,subtree: !0});setTimeout(function() {a.disconnect()}, 3E3)});
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/119411
+capital.fr###dailymotion-pip-large-viewport
 ! https://github.com/AdguardTeam/AdguardFilters/issues/118395
 news.obozrevatel.com##.videoOfDay
 ! https://github.com/AdguardTeam/AdguardFilters/issues/118551
@@ -124,8 +126,6 @@ ign.com##.infeed-player
 twitch.tv##div.tw-tower > div:has(div.promoted-card-stat__promotion)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/113750
 turkishairlines.com#?##page_wrapper > section.nopadding:has(> div.middle-wrapper img[title^="Turkish Airlines"])
-! https://github.com/AdguardTeam/AdguardFilters/issues/115444
-crunchyroll.com##.welcome-featured-media
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115178
 eurosport.tvn24.pl#%#//scriptlet('prevent-requestAnimationFrame', 'toggleFloatingClass')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115052
@@ -7432,7 +7432,7 @@ megaport.de##.amgdprcookie-bar-container
 pcspecialist.*##div[class^="cc-policy"]
 dancovershop.com##.gdpr_overlay
 sweatco.in##div[class^="Root__CookieBanner"]
-||cdn.braintrust.at/libs/bt-cookieconsent/
+||cdn.braintrust.at/libs/bt-cookieconsent/$domain=berufslexikon.at
 nextrp.ru##.modalAcceptCookies
 open.ru##div[data-react-class="CookiesAgreement"]
 nahodka-magazin.ru##.cookies_message_container
@@ -29791,6 +29791,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+capital.fr##.pmcInsert[data-signupservice^="CAP_NEWSLETTERS_ENCART-NL-SITE-CAP_NL-ECO_"]
 techcult.ru##.facebook
 kp.ru#?#div[class]:has(> div[class] > div[class] > input[type="email"])
 ciatr.jp#?#.article-footer-unit > h2.head-main:contains(ニュースレター)
