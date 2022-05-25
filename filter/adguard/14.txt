@@ -1,8 +1,8 @@
-! Checksum: IHaOV3EcZutRoLe5GcRGGQ
+! Checksum: eqd3iNw/0mlvQNVogWviqg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.20.54
-! TimeUpdated: 2022-05-25T10:30:34+00:00
+! Version: 2.1.20.56
+! TimeUpdated: 2022-05-25T12:30:37+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7432,6 +7432,10 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+deineapotheke.at#$#.cookie-banner { display: none !important; }
+deineapotheke.at#$#.blurred { filter: none !important; }
+ihf.info###block-cookiesblock
+opovo.com.br##.notificacao-estatica
 trendmicro.com##c-dcx-cookie
 bq.ru##.footer-cookies-alert
 game-news.tokyo###cookie_note_ex1
@@ -7443,6 +7447,7 @@ haineshop.ro#$#body.overflow-hidden { overflow: auto !important; }
 haineshop.ro#$#.gdprModal { display: none !important; }
 hoklartherm.de###Cookie_content
 rehadat-hilfsmittel.de###cookieDialogWrapper
+kku.ac.th##.dpdpa--popup
 megaport.de##.amgdprcookie-bar-container
 pcspecialist.*##div[class^="cc-policy"]
 dancovershop.com##.gdpr_overlay
@@ -15646,6 +15651,7 @@ privacy.lecker.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent
 privacy.madame.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent-v2")){var g=new MutationObserver(function(){setTimeout(function(){var b=document.querySelector('button.no-children[path="\[0,2,1\]"]');b&&b.click();},300);setTimeout(function(){var c=document.querySelector('div[title="Berechtigte Interessen"]'); c&&c.click();},300);setTimeout(function(){var d=document.querySelectorAll('label[aria-checked="true"] > .off'); d.forEach(function(d){d.click();});},800); var f=document.querySelector('button.no-children[path="\[0,3,0\]"]'); setTimeout(function(){f&&f.click();},1000);});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},3E4)}});
 consent.ladbible.com,consent.gamingbible.co.uk,consent.unilad.co.uk#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var g=new MutationObserver(function(){var b=document.querySelector('button[title*="Accept" i]');b&&(g.disconnect(),b.click())});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
 !
+developer.confluent.io#%#AG_onLoad(function(){window.OnetrustActiveGroups=",C0002,C0004,";const a=function(a){var b=a.parentNode,c=document.createElement(a.tagName);c.textContent=a.textContent;var d=a.attributes;if(0<d.length)for(var e=0;e<d.length;e++)"type"===d[e].name?c.setAttribute("type","text/javascript",!0):c.setAttribute(d[e].name,d[e].value,!0);b.appendChild(c),b.removeChild(a)},b=document.head,c=new MutationObserver(function(){var b=document.querySelectorAll("head > script[class^=\"optanon-category-\"][type=\"text/plain\"]");b.forEach(b=>a(b))});c.observe(b,{attributes:!0,childList:!0,subtree:!0})});
 jobthai.com#%#//scriptlet('set-local-storage-item', 'website-visit-date', '1')
 mazda.com.tr#%#document.cookie = "subDomainCookie=accepted";
 festo.com#%#//scriptlet('set-cookie-reload', 'ckns_policy', '1')
@@ -16629,6 +16635,9 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/119755
+deineapotheke.at#@#.cookie-banner:not(body):not(html)
+! https://github.com/AdguardTeam/AdguardFilters/issues/119739
 ! https://github.com/AdguardTeam/AdguardFilters/issues/118226
 ! https://github.com/AdguardTeam/AdguardFilters/issues/119290
 clasohlson.com#@#.cookie-bar:not(body)
@@ -19339,6 +19348,7 @@ comicsvalley.com##.sgpb-popup-dialog-main-div-wrapper
 wifiman.com#%#//scriptlet('set-cookie', 'sb-closed', '1')
 jalan.net##.dwldiv
 benesse.jp###inter
+dtac.co.th###banner_dtacapp
 ozmall.co.jp##.AppBannerFooter
 m.aliexpress.ru##a[class^="PseudoSmartBanner_"]
 trovo.live##.mobile-header > button.open-btn
@@ -21369,6 +21379,10 @@ letemps.ch#$#html > body.tp-modal-open { overflow: auto !important; }
 letemps.ch#$#.tp-modal { display: none !important; }
 letemps.ch#$#.tp-backdrop { display: none !important; }
 blog.paperspace.com###userpilotIframeContainer
+dtac.co.th#$##gridSystemModal { display: none !important; }
+dtac.co.th#$#.modal-backdrop { display: none !important; }
+dtac.co.th#$#body.modal-open { overflow: auto !important; padding-right: 0 !important; }
+dtac.co.th###iz-cr
 microsoftstore.com.cn##.modals-overlay
 samayam.com##.topStorieswrap
 samayam.com##.top-stories-modal
@@ -29831,6 +29845,7 @@ kdnuggets.com##.box-form
 souspark.ru##.widget_wpshop_widget_subscribe
 capital.fr##.pmcInsert[data-signupservice^="CAP_NEWSLETTERS_ENCART-NL-SITE-CAP_NL-ECO_"]
 techcult.ru##.facebook
+analyticsindiamag.com##div[class^="code-block code-block-"][style]
 kp.ru#?#div[class]:has(> div[class] > div[class] > input[type="email"])
 ciatr.jp#?#.article-footer-unit > h2.head-main:contains(ニュースレター)
 ciatr.jp##.news-letter-item
@@ -35508,7 +35523,7 @@ m.webtoons.com#%#AG_onLoad(function() {var g = new MutationObserver(function() {
 estadao.com.br,atribuna.com.br,braziljournal.com,revistapesquisa.fapesp.br,migalhas.com.br#%#//scriptlet("prevent-addEventListener", "copy", "event")
 tweaktown.com#%#//scriptlet("prevent-addEventListener", "copy", "bypassEventsInProxies")
 toptoon.com#%#//scriptlet('abort-current-inline-script', 'window.oncontextmenu')
-brasilescola.uol.com.br,forbes.com.br,abril.com.br#%#//scriptlet('prevent-addEventListener', 'copy', 'event.clipboardData.setData')
+opovo.com.br,brasilescola.uol.com.br,forbes.com.br,abril.com.br#%#//scriptlet('prevent-addEventListener', 'copy', 'event.clipboardData.setData')
 novelpia.com#%#//scriptlet('remove-attr', 'oncontextmenu|onselectstart|ondragstart|onkeydown|ondrop', '.no-drag')
 pressian.com#%#//scriptlet('abort-current-inline-script', 'window.addEventListener', 'copy')
 sedaily.com#%#//scriptlet('set-constant', 'NewsSource.addSource', 'noopFunc')
