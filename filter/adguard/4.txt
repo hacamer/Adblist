@@ -1,8 +1,8 @@
-! Checksum: d80FotAjtJx90s6toayvuA
+! Checksum: OFO7qBYIRWeNASYElyJA0g
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.0.62.36
-! TimeUpdated: 2022-05-24T21:03:22+00:00
+! Version: 2.0.62.37
+! TimeUpdated: 2022-05-25T10:31:25+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1203,6 +1203,8 @@ buzzhand.com#$?#body[-ext-has="div"] { overflow: visible!important; }
 !-------JS----------
 !-------------------
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/119421
+brestcity.com#%#AG_onLoad(function() { document.body.innerHTML = document.body.innerHTML.replace(/\sПонравилась новость\?\sПоделитесь\sс\sдрузьями:/g, ""); });
 ! https://github.com/AdguardTeam/AdguardFilters/issues/111965
 archive.org#%#AG_onLoad(function() { var el = document.querySelector('.js-playset-items'); if(el) { el.innerHTML = el.innerHTML.replace(/ Share/g,''); } });
 ! https://github.com/AdguardTeam/AdguardFilters/issues/111239

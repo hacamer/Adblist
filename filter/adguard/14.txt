@@ -1,8 +1,8 @@
-! Checksum: D0i+dTg9X205cIvuYbxurg
+! Checksum: IHaOV3EcZutRoLe5GcRGGQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.20.53
-! TimeUpdated: 2022-05-25T09:03:09+00:00
+! Version: 2.1.20.54
+! TimeUpdated: 2022-05-25T10:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7432,6 +7432,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+trendmicro.com##c-dcx-cookie
 bq.ru##.footer-cookies-alert
 game-news.tokyo###cookie_note_ex1
 well.pl#$##rodoPopup { display: none !important; }
@@ -21379,7 +21380,8 @@ shop.lenovo.com.cn##.sign-in-box
 haertle.de#%#//scriptlet("set-constant", "showCampaignLayer", "noopFunc")
 timeanddate.com#%#//scriptlet("prevent-addEventListener", "scroll", "_onscroll")
 discours.io##.main-banner
-imovelguide.com.br##.background-modall
+imovelguide.com.br#%#//scriptlet('prevent-addEventListener', 'mouseout', '#modalSair')
+imovelguide.com.br#%#//scriptlet('set-local-storage-item', 'IsModalShown', 'true')
 game8.jp##.l-fixedFunctionLinkContainer
 s.cosme.net##.act-bottom-nav
 ||uicdn.com/mailint/*/assets/_sn_/lod/welcomeback.js$domain=gmx.*
@@ -28899,6 +28901,7 @@ youxi.youth.cn##.youth_gw
 community.netgear.com##.lia-quilt-column-main-content > div.lia-quilt-column-alley > a > img[style="max-height:150px;"]
 macbooster.net##.pop-midyear
 elementor.com##.sticky-banner
+neowin.net##.trending-item-title
 geeksforgeeks.org##.text > h3[style="text-align:center"] + blockquote
 geeksforgeeks.org##.text > h3[style="text-align:center"]
 outlook.live.com##div[data-focuszone-id="FocusZone12"] + div > button
@@ -29819,6 +29822,8 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+brestcity.com#%#AG_onLoad(function(){var el = document.querySelector('.pageviews-placeholder + br');if(el&&el.nextSibling&&el.nextSibling.textContent.includes('Подпишитесь на')){el.nextSibling.remove();}});
+brestcity.com#?#.entry > p[style="text-align: right;"] > strong:contains(Присоединяйтесь!)
 coingape.com##.ads-up
 rskrf.ru##.subscr_form
 rskrf.ru##.subscribeBlockFixed
@@ -30024,7 +30029,7 @@ newsindiatimes.com##.spu-box
 thetimes.co.uk###paywall-portal-sale-modal
 ||edugram.com/partnersforms/widget/?component=popupEmailForm
 polaroid.com##body .privy
-aykiri.com.tr,yenicaggazetesi.com.tr##a[href^="https://news.google.com/publications/"]
+brestcity.com,aykiri.com.tr,yenicaggazetesi.com.tr##a[href^="https://news.google.com/publications/"]
 pravda.com.ua##.block_post > div[style="margin-top: 25px;"]
 ukrinform.pl,ukrinform.jp,ukrinform.fr,ukrinform.de,ukrinform.es,ukrinform.net##div[data-name="int_hidden"]
 vnnews.ru##div[class^="telega_sub"]
