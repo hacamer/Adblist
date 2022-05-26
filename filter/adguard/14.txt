@@ -1,8 +1,8 @@
-! Checksum: ASrJKlNgGnDHX3HZuFr8rw
+! Checksum: uwr+obbQD8P7EE3Qt6O7pA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.20.80
-! TimeUpdated: 2022-05-26T17:02:16+00:00
+! Version: 2.1.20.81
+! TimeUpdated: 2022-05-26T20:30:36+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -3109,7 +3109,7 @@ fosspost.org,portalvirtualreality.ru,pingvin.pro,bonobono.com,curbsideclassic.co
 fosspost.org,portalvirtualreality.ru,pingvin.pro,bonobono.com,curbsideclassic.com,wpgutenberg.top,3dmodelshare.org,turkishfoodchef.com,itechua.com,blowxtube.com,orhanbhr.com,testosterontr.com,criptomonedaseico.com,downloadsachmienphi.com,fimico.de,manhuaplus.com,canyoublockit.com,48idol.tv,freeallcourse.com,congressoemfoco.uol.com.br,dogalvadi.com,kompukter.ru,paragezegeni.com,gatevidyalay.com,corgit.xyz,freefincal.com,dsogaming.com,bordoklavyeli.net,newonce.net,gpcoder.com,androidexplained.com,borodavsem.ru,czechavfree.com,karaokes.com.ar,kulturalnemedia.pl,magazeta.com,mur.tv,o365info.com,proswift.ru,sovetolog.com,tehnobzor.ru,thelongdark.ru,thewindowsclub.thewindowsclubco.netdna-cdn.com,windowstechblog.nl,xiaomitech.net#@#.an-sponsored
 !#safari_cb_affinity
 !
-! Glomex player adblock detection (so far only visible in filter log - 23.11.2018)
+! Glomex player adblock detection (so far only visible in filter log - 23.11.2018, same for 26.05.2022)
 ! @@||ad.doubleclick.net/ddm/pfadx^$domain=player.glomex.com
 ! @@||pubads.g.doubleclick.net/gampad/adx^$domain=player.glomex.com
 ! @@||track.adform.net/serving/videoad^$domain=player.glomex.com
@@ -3118,14 +3118,14 @@ fosspost.org,portalvirtualreality.ru,pingvin.pro,bonobono.com,curbsideclassic.co
 ! @@||ad.71i.de/images^$domain=player.glomex.com
 ! @@||servedby.flashtalking.com/imp^$domain=player.glomex.com
 ! @@||cdn.flashtalking.com^$domain=player.glomex.com
-! infranken.de,merkur.de#@##ad-213
-! infranken.de,merkur.de#@##ad-250x300
-! infranken.de,merkur.de#@##ad-250
-! infranken.de,merkur.de#@##ad-197
-! infranken.de,merkur.de#@##ad-2-160x600
-! infranken.de,merkur.de#@##ad-19
-! infranken.de,merkur.de#@##ad-2
-! infranken.de,merkur.de#@##ad-21
+! volksfreund.de,infranken.de,merkur.de#@##ad-213
+! volksfreund.de,infranken.de,merkur.de#@##ad-250x300
+! volksfreund.de,infranken.de,merkur.de#@##ad-250
+! volksfreund.de,infranken.de,merkur.de#@##ad-197
+! volksfreund.de,infranken.de,merkur.de#@##ad-2-160x600
+! volksfreund.de,infranken.de,merkur.de#@##ad-19
+! volksfreund.de,infranken.de,merkur.de#@##ad-2
+! volksfreund.de,infranken.de,merkur.de#@##ad-21
 !
 ! adregain.ru script
 unixhow.com,vsthouse.ru,primpogoda.ru,gitjournal.tech#%#//scriptlet("abort-on-property-write", "adregain_wall")
@@ -26064,6 +26064,8 @@ yandex.ru#$?#body.body-modal-active > div[class] > div#popup-wrapper:upward(1) {
 ! Chrome banner in MS Edge
 google.*##iframe[role="presentation"][src*="ogs.google."][src*="widget/callout"]
 google.*##iframe[role="presentation"][src*="ogs.google."][src*="widget/callout"]:upward(div[style^="overflow: hidden; position: absolute; top: 0px; width: 370px;"])
+! Help us to improve Google
+google.*##div[aria-modal="true"] > div[aria-labelledby="task-text"]
 !
 ! https://github.com/AdguardTeam/AdguardFilters/issues/100436
 json.cn#%#AG_onLoad(function(){var g=new MutationObserver(function(){var b=document.querySelector('#shuangshi1Modal1 button.close');b&&b.click();});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)});
@@ -27954,7 +27956,7 @@ w3cschool.cn###rfbanner
 w3cschool.cn#$##topbanner { display: none !important; }
 w3cschool.cn#$##header[style*="height:"] { height: 55px !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/97676#issuecomment-963027509
-lenta.ru##.js-scroll-to-site
+lenta.ru##.js-scroll-to-site img
 lenta.ru#%#//scriptlet('set-constant', 'Object.prototype.scrollToSite', '')
 ! self-promo (mobile)
 !+ NOT_OPTIMIZED
