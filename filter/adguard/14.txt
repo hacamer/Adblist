@@ -1,8 +1,8 @@
-! Checksum: 3eZYqLVfyvsJu98HtKVeEQ
+! Checksum: LFjiktErIjhM5u6hUM7OhQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.20.77
-! TimeUpdated: 2022-05-26T13:30:35+00:00
+! Version: 2.1.20.78
+! TimeUpdated: 2022-05-26T15:30:43+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7440,9 +7440,12 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+international-friends.net###noty_bottom_layout_container
+invenglobal.com###ige-cookie-policy
 pelando.com.br##main + * + div[class] > div[role="dialog"]
 guetsel.de###dark
 guetsel.de###footer-cookie
+medicoconsult.de##div[id^="cntnt"]
 misumi-ec.com##.l-cookieWrapper
 supermagnete.de###klaro-overlay
 vigo.de##.wx_consentbanner
@@ -21385,6 +21388,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+flaschenpost.de#%#//scriptlet('set-local-storage-item', 'uc_user_interaction', 'true')
 sougiya.biz##.sideBanner
 sougiya.biz##.sw-Footbn
 mail.yahoo.co.jp#?#.main > div[class] > svg + div[class] > a[title=""][font-size="14"]:upward(2)
