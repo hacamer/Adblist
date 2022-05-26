@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: tUsjAYrv/D/lnnwI/dI1dw
+! Checksum: 7kXqOnfem9KvHxjds8vdDw
 ! Title: My AdFilters（for Mobile）
 ! Expires: 12 hours
-! Version: 202205270434
-! Last Modified: 2022年05月27日 04:34
+! Version: 202205270531
+! Last Modified: 2022年05月27日 05:31
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 67761
+! Total count: 67765
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -29953,6 +29953,7 @@ thefunpost.com##.ad-spacing
 thegay.com##+js(abort-on-property-read, GameLacker)
 thegay.com##+js(abort-on-property-read, adver.popunder.neverblock)
 thegay.com##.wrapper + section
+thegay.com#?#.underplayer__info > div:has( > div#und_ban)
 theglobeandmail.com##.container-with-ad
 theguardian.com##.fc-slice__item--mpu-candidate
 theguardian.com##.js-top-banner
@@ -31497,6 +31498,7 @@ xgroovy.com##.headP
 xgroovy.com,xxxshake.com,jizzberry.com##.in.is_desktop
 xgw5.com,gw54.com#?#li:-abp-has(>.ads)
 xhaiwai.com##.baoru
+xhamster.com##+js(set-constant, history.replaceState, noopFunc)
 xhamster.com##.player-container > div[class*="-"]:not([class*="player"])
 xhamster.com##.sponsorBottom
 xhamster.com##div[data-object^='{"widgetName']
@@ -32157,6 +32159,7 @@ zzbaike.com###topnav
 |https://undefined/|$script,redirect=noop.js
 |ws*://$websocket,domain=fullmatchesandshows.com|1337x.to|allkpop.com|auroravid.to|boards2go.com|celebdirtylaundry.com|celebritymozo.com|collectivelyconscious.net|dailycaller.com|destructoid.com|dumpaday.com|firstrowau.eu|firstrowus1.eu|flash-x.tv|flashsx.tv|flashx.me|flashx.run|flashx.tv|flashx1.tv|fmovies.to|free-torrent.org|free-torrents.org|gamenguide.com|gofirstrow.eu|gorillavid.in|gsmarena.com|health-weekly.net|i4u.com|ifirstrow.eu|ifirstrowit.eu|img24.org|instanonymous.com|itechpost.com|izismile.com|jpost.com|lifehacklane.com|livescience.com|mobilenapps.com|mobipicker.com|natureworldnews.com|navbug.com|ncscooper.com|newsarama.com|noslocker.com|nowfeed2all.eu|nowvideo.ag|nowvideo.co|nowvideo.li|nowvideo.to|okceleb.com|omgwhut.com|opensubtitles.org|parentherald.com|pornhub.com|pornhubthbh7ap3u.onion|prnt.sc|putlocker9.com|pwinsider.com|snoopfeed.com|sportsmole.co.uk|stream-tv-series.net|stream-tv2.to|stream2watch.cc|streamgaroo.com|technobuffalo.com|the-watch-series.to|thevideo.me|thinkinghumanity.com|todayshealth.buzz|tomsguide.com|tomshardware.co.uk|tomshardware.com|toptenz.net|torrentino.me|tribune.com.pk|uberhavoc.com|universityherald.com|vidmax.com|vidzi.tv|viewmixed.com|viralands.com|wccftech.com|webfirstrow.eu|whydontyoutrythis.com|wrestlinginc.com|wrestlingnews.co|xilfy.com|yourtango.com
 ||*.$image,redirect=1x1.gif,third-party,domain=rmdown.com
+||*.doppiocdn.com/hls/*/master/*.m3u8$domain=xhamster.com
 ||*^sdtfrom=^$media,redirect=noop-0.1s.mp3,domain=qq.com
 ||0.0.0.1^
 ||00-gov.cn^
@@ -45117,6 +45120,7 @@ zzbaike.com###topnav
 ||go.unitusccu.com^
 ||go.visma.com^
 ||go.wtcmachinery.com^
+||go.xhamster.com/api/models/vast
 ||go.xhamster.com/api/models?$domain=xhamster.com
 ||go.xxxiijmp.com^
 ||go.zendesk.com^

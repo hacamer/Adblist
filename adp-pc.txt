@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: Uzzp7QVrtoByo2aWey+PTQ
+! Checksum: CFqkq21mZ9sy44Eh6tUnsA
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202205270434
-! Last Modified: 2022年05月27日 04:34
+! Version: 202205270531
+! Last Modified: 2022年05月27日 05:31
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 72857
+! Total count: 72861
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -33845,6 +33845,7 @@ thegatewaypundit.com#$#abort-on-property-read adtoniq; abort-on-property-write a
 thegay.com##+js(abort-on-property-read, GameLacker)
 thegay.com##+js(abort-on-property-read, adver.popunder.neverblock)
 thegay.com##.wrapper + section
+thegay.com#?#.underplayer__info > div:has( > div#und_ban)
 theglobeandmail.com##.container-with-ad
 theguardian.com##.fc-slice__item--mpu-candidate
 theguardian.com##.js-adblock-sticky
@@ -35695,6 +35696,7 @@ xgroovy.com##.headP
 xgroovy.com,xxxshake.com,jizzberry.com##.in.is_desktop
 xgw5.com,gw54.com#?#li:-abp-has(>.ads)
 xhaiwai.com##.baoru
+xhamster.com##+js(set-constant, history.replaceState, noopFunc)
 xhamster.com##.player-container > div[class*="-"]:not([class*="player"])
 xhamster.com##.sponsorBottom
 xhamster.com##.wit-sponsor-banner
@@ -36441,6 +36443,7 @@ zzbaike.com###topnav
 ||*.amazonaws.com/js/adblock.min.js$script,domain=motorsport-total.com
 ||*.cloudfront.net^$script,domain=solidfiles.com|userscloud.com|uplod.it|hulkload.com
 ||*.com/*b8121.js^$script,domain=mult34.com
+||*.doppiocdn.com/hls/*/master/*.m3u8$domain=xhamster.com
 ||*.kameleoon.eu^$domain=20minutes.fr|20min.fr
 ||*^sdtfrom=^$media,redirect=noop-0.1s.mp3,domain=qq.com
 ||0.0.0.1^
@@ -49758,6 +49761,7 @@ zzbaike.com###topnav
 ||go.unitusccu.com^
 ||go.visma.com^
 ||go.wtcmachinery.com^
+||go.xhamster.com/api/models/vast
 ||go.xhamster.com/api/models?$domain=xhamster.com
 ||go.xxxiijmp.com^
 ||go.zendesk.com^
