@@ -1,8 +1,8 @@
-! Checksum: Qvz3WTNNCcvcn9R2jnq1Ew
+! Checksum: kMDuyFp0KXSH4pAAPVDvWw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.20.86
-! TimeUpdated: 2022-05-27T10:30:35+00:00
+! Version: 2.1.20.88
+! TimeUpdated: 2022-05-27T12:30:54+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2893,8 +2893,8 @@ liveinternet.ru##.leftcolumn > script[type] + div[style="clear:both;"]
 liveinternet.ru##.rightcolumn > div.news
 liveinternet.ru#%#//scriptlet('abort-on-property-read', 'Object.prototype.storage')
 liveinternet.ru#%#//scriptlet('abort-on-property-read', 'Object.prototype.DataLoaded')
-! https://github.com/AdguardTeam/AdguardFilters/issues/42969
-drive2.ru#%#//scriptlet("abort-on-property-read", "Object.prototype.renderBanner")
+! drive2.ru
+drive2.ru#%#//scriptlet('abort-on-property-read', 'Object.prototype.AdfoxJsonpRequestPrepared')
 ! gismeteo domains: gismeteo.ru,gismeteo.by,gismeteo.pl,gismeteo.lt,gismeteo.md,gismeteo.kz
 gismeteo.ru,gismeteo.by,gismeteo.md,gismeteo.kz#%#//scriptlet("abort-on-property-read", "Object.prototype.getAdditionalBanners")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/81066
@@ -7441,6 +7441,9 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+boohoo.jp##.CookieMessage__cookieMessage
+vh-polska.pl###cookies__new
+smow.*##.s-cookie-info
 beleuchtung.de##.cookie-setting
 owasp.org###disclaimer-container
 detector.media###msg_cooky_blk
@@ -15660,7 +15663,7 @@ cmp.heise.de#%#AG_onLoad(function(){if(document.cookie.includes("consentUUID")){
 cmp-sp.lvz.de,cmp-sp.maz-online.de#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var b=new MutationObserver(function(){var c=document.querySelector('button[title^="Einstellungen"]');setTimeout(function(){var a=document.querySelectorAll(".page-action");a[0]&&a[0].click()},300);setTimeout(function(){var a=document.querySelector(".is-checked");a&&(a.click(),(a=document.querySelector('button[title^="Speichern"]'))&&a.click())},300);c&&(b.disconnect(),c.click())});b.observe(document,{childList:!0,subtree:!0});setTimeout(function(){b.disconnect()},1E4)}});
 cmp-sp.sportbuzzer.de#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var g=new MutationObserver(function(){var b=document.querySelector('button[title^="Alle akzeptieren"]');b&&(g.disconnect(),b.click())});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
 3sat.de,zdf.de,oe24.at#%#AG_onLoad(function(){if(!document.cookie.includes("eupubconsent-v2")){var g=new MutationObserver(function(){var b=document.querySelectorAll('button.cookie-setting-link');b[0]&&b[0].click();setTimeout(function(){var c=document.querySelectorAll('input[aria-checked="true"]');if(c[0]){c.forEach(function(c){c.click();});}},300);setTimeout(function(){var d = document.querySelectorAll(".save-preference-btn-handler");d[0]&&(g.disconnect(),d[0].click())},500);});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
-womenshealth.de,express.de#%#AG_onLoad(function(){if(window.location.href.includes("consent")){var g=new MutationObserver(function(){var b=document.querySelector('button[title^="Accept and continue"]');if(!b){var b=document.querySelector('button[title^="Akzeptieren und weiter"]');};b&&(g.disconnect(),b.click())});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
+privacy.runnersworld.de,womenshealth.de,express.de#%#AG_onLoad(function(){if(window.location.href.includes("consent")){var g=new MutationObserver(function(){var b=document.querySelector('button[title^="Accept and continue"]');if(!b){var b=document.querySelector('button[title^="Akzeptieren und weiter"]');};b&&(g.disconnect(),b.click())});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
 sp-spiegel-de.spiegel.de#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var g=new MutationObserver(function(){var b=document.querySelector('button[title^="Accept and continue"]');if(!b){var b=document.querySelector('button[title^="Akzeptieren und weiter"]');};b&&(g.disconnect(),b.click())});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
 consent2.ksta.de#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var g=new MutationObserver(function(){var b=document.querySelector('button[title^="Akzeptieren"]');b&&(g.disconnect(),b.click())});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
 privacy.lecker.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent-v2")){var g=new MutationObserver(function(){setTimeout(function(){var b=document.querySelector('button.no-children[path="\[0,2,1\]"]');b&&b.click();},300);setTimeout(function(){var c=document.querySelector('div[title="Berechtigte Interessen"]'); c&&c.click();},300);setTimeout(function(){var d=document.querySelectorAll('label[aria-checked="true"] > .off'); d.forEach(function(d){d.click();});},800); var f=document.querySelector('button.no-children[path="\[0,3,0\]"]'); setTimeout(function(){f&&f.click();},1000);});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},3E4)}});
@@ -21393,6 +21396,8 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+boohoo.jp#$?##modal:has(div[data-testid="email-signup-splash-prompt"]) { display: none !important; }
+boohoo.jp#$#body { overflow: auto !important; }
 bing.com###bepfo.popup[style^="visibility: visible"]
 sougiya.biz##.sideBanner
 sougiya.biz##.sw-Footbn
@@ -27957,9 +27962,9 @@ cnyfertility.com##.post__banner--inside
 w3cschool.cn###rfbanner
 w3cschool.cn#$##topbanner { display: none !important; }
 w3cschool.cn#$##header[style*="height:"] { height: 55px !important; }
-! https://github.com/AdguardTeam/AdguardFilters/issues/97676#issuecomment-963027509
-lenta.ru##.js-scroll-to-site img
-lenta.ru#%#//scriptlet('set-constant', 'Object.prototype.scrollToSite', '')
+! https://github.com/AdguardTeam/AdguardFilters/issues/116020#issuecomment-1137526324
+lenta.ru#$#.scroll-to-site { display: none !important; }
+lenta.ru#%#//scriptlet('prevent-addEventListener', 'scroll', 'window.history.pushState')
 ! self-promo (mobile)
 !+ NOT_OPTIMIZED
 news.nifty.com##.mod_ad_nifty
@@ -29870,6 +29875,8 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+rbc.ua#?#.nano-content > .item > a[href="https://t.me/RBC_ua_news"]:upward(1)
+rbc.ua##a[href="https://t.me/RBC_ua_news"]
 inpower.com.br##.home-popup
 avantree.com##.subscibe
 sputnik.by#?#.floor > div.floor__cell:has(> div.floor__cell-size > div.floor__cell-shape > div.cell > a[href="https://t.me/sputnikby"])
@@ -33691,6 +33698,8 @@ magazine.skyeng.ru##.tg-banner
 !######### CSS tweaks #########
 !##############################
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/119883
+o-pro.online,eda-ah.com,ta2deem7arbya.com#$##makingdifferenttimer { display: block !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/118968
 asdfiles.com#$##page-content { display: block !important; }
 asdfiles.com#$#.ttconaiwent { display: none !important; }
@@ -34069,6 +34078,9 @@ newsweek.com##iframe[src="http://sns.europe.newsweek.com/newsletter?popup=1"]
 !######### JS tweaks ##########
 !##############################
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/119883
+o-pro.online,eda-ah.com,ta2deem7arbya.com#%#//scriptlet("adjust-setInterval", "mdtimer", "", "0.02")
+edummm.xyz#%#//scriptlet("adjust-setInterval", "timeLeft ", "*", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/119656
 ontools.net#%#//scriptlet("adjust-setInterval", "gotolink", "*", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/118968
@@ -34158,8 +34170,8 @@ insurglobal.xyz#%#//scriptlet("adjust-setInterval", "yuidea-", "*", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/111791
 ! https://github.com/AdguardTeam/AdguardFilters/issues/111673
 ! https://github.com/AdguardTeam/AdguardFilters/issues/111471
-veganab.co,apkmaven.com,gaminplay.com,choiceappstore.xyz,pn.cgchotbox.com,worldappsstore.xyz,gifans.com,iptvjournal.com,kienthucrangmieng.com,coin-free.com,moddingzone.in,insurance-space.xyz,blognews.in,noithatmyphu.vn,dulichkhanhhoa.net,therootdroid.com#%#//scriptlet("adjust-setInterval", "wpsafe-", "*", "0.02")
-apkmaven.com,gaminplay.com,choiceappstore.xyz,educationat.xyz,pn.cgchotbox.com,worldappsstore.xyz,tudaydeals.com,toolss.net,7apple.net,gifans.com,iptvjournal.com,kienthucrangmieng.com,coin-free.com,moddingzone.in,insurance-space.xyz,games.blog-forall.com,techydino.net,rajsayt.xyz,jaunpurmusic.info,blognews.in,informaxonline.com,gaminplay.com,noithatmyphu.vn,dulichkhanhhoa.net,paidappstore.xyz,therootdroid.com#%#AG_onLoad(function(){try{var a=document.querySelector('form > input[name="newwpsafelink"]');if(a){var b,c=null==(b=JSON.parse(atob(a.value)))?void 0:b.linkr;if(c){var d=JSON.parse(atob(c.split("?safelink_redirect=")[1]));location.assign(decodeURIComponent(null==d?void 0:d.safelink))}}}catch(e){}});
+mad.goiety.com,veganab.co,apkmaven.com,gaminplay.com,choiceappstore.xyz,pn.cgchotbox.com,worldappsstore.xyz,gifans.com,iptvjournal.com,kienthucrangmieng.com,coin-free.com,moddingzone.in,insurance-space.xyz,blognews.in,noithatmyphu.vn,dulichkhanhhoa.net,therootdroid.com#%#//scriptlet("adjust-setInterval", "wpsafe-", "*", "0.02")
+mad.goiety.com,apkmaven.com,gaminplay.com,choiceappstore.xyz,educationat.xyz,pn.cgchotbox.com,worldappsstore.xyz,tudaydeals.com,toolss.net,7apple.net,gifans.com,iptvjournal.com,kienthucrangmieng.com,coin-free.com,moddingzone.in,insurance-space.xyz,games.blog-forall.com,techydino.net,rajsayt.xyz,jaunpurmusic.info,blognews.in,informaxonline.com,gaminplay.com,noithatmyphu.vn,dulichkhanhhoa.net,paidappstore.xyz,therootdroid.com#%#AG_onLoad(function(){try{var a=document.querySelector('form > input[name="newwpsafelink"]');if(a){var b,c=null==(b=JSON.parse(atob(a.value)))?void 0:b.linkr;if(c){var d=JSON.parse(atob(c.split("?safelink_redirect=")[1]));location.assign(decodeURIComponent(null==d?void 0:d.safelink))}}}catch(e){}});
 veganab.co#%#AG_onLoad(function(){try{var a=document.querySelector('form#wpsafelink-landing > input[name="newwpsafelink"]');if(a){var b,c=null==(b=JSON.parse(atob(a.value)))?void 0:b.linkr;if(c){var d=JSON.parse(atob(c.split("?safelink_redirect=")[1]));location.assign(decodeURIComponent(null==d?void 0:d.safelink))}}}catch(e){}});
 ! https://github.com/AdguardTeam/AdguardFilters/issues/111705
 technoashwath.com#%#//scriptlet("adjust-setTimeout", "/waiting|\.classList\.remove|gotoo/", "*", "0.02")
