@@ -1,8 +1,8 @@
-! Checksum: hrZOanEAcfpVM/tyE5W7KQ
+! Checksum: mVJHz/7aiayDCl4hYNjtIQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.20.92
-! TimeUpdated: 2022-05-27T15:30:34+00:00
+! Version: 2.1.20.93
+! TimeUpdated: 2022-05-27T16:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2548,6 +2548,8 @@ hi-tech.mail.ru##.sticky_footer div[class^="block block_padding rb-block-"]
 ##.sosyal:not(body):not(html)
 ##.td_block_social_counter
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/119815
+m.finance.yahoo.co.jp###w2aBnr
 ! https://github.com/AdguardTeam/AdguardFilters/issues/119835
 advice.co.th##.bt-top
 ! big vk banner
@@ -19365,6 +19367,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+m.finance.yahoo.co.jp##.appNotice
 uniqlo.com##.uq-ec-cms-smart-banner
 m.kariyer.net##.download-app-wrapper
 pointcard.rakuten.co.jp###optionalAppDownload
@@ -29441,6 +29444,7 @@ sibnet.ru##.wink_notification__root
 codepile.net##.cp-ad
 new-gomovies.online##a[href="/user/profile/premium-membership"][target="_blank"]
 rsload.net###dle-content a[href="/tutvce.html"]
+rsload.net##a[href^="https://go.webredir.net/r/"] + center
 britannica.com##.marketing-INLINE_SUBSCRIPTION
 ||rolo.nocdnrlly.xyz/images/nflbanner.png
 buscape.com.br##div[class^="card Hits_sponsoredContainer"]
