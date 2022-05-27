@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: jRSqW8GDJLIjwSj2cgC49Q
+! Checksum: WQniPddzEIzp/EpaeJkeIg
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202205271639
-! Last Modified: 2022年05月27日 16:39
+! Version: 202205271733
+! Last Modified: 2022年05月27日 17:33
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 72877
+! Total count: 72890
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -3606,6 +3606,7 @@
 ##.am-adslot
 ##.am-bazaar-ad
 ##.amazon_ad
+##.amis-advert
 ##.amp-ad
 ##.amp-ad-container
 ##.amp-ad-wrapper
@@ -4771,6 +4772,7 @@
 ##.mg_box_ads
 ##.mgid_3x2
 ##.mgline
+##.mh-advert
 ##.mid-post-ad
 ##.midAd
 ##.midAdv-cont
@@ -4793,6 +4795,7 @@
 ##.mm-widget--sendtonews
 ##.mmads
 ##.mntl-gpt-adunit
+##.mo-advert
 ##.mob_ads
 ##.mobads
 ##.mobile-ad
@@ -5223,6 +5226,7 @@
 ##.rt-ad
 ##.rt_ad
 ##.rtcenter_game
+##.rw-advert
 ##.rwSideAd
 ##.rwdArticleOuterAdBlock
 ##.s-ad
@@ -5805,6 +5809,7 @@
 ##.well-ad
 ##.wfb-ad
 ##.wgAd-loaded
+##.wh-advert
 ##.wh_ad
 ##.wh_ad_inner
 ##.wide-ad
@@ -15962,6 +15967,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 85tube.com#@#.ads-iframe
 8684.cn,8684.com##div[id*="adid"]
 8684.cn,8684.com,kugou.com,solarzoom.com,yesky.com##div[class^="adv"]
+888scoreonline.com##tr[id^="tr_ad"]
 8field.net,deployhappiness.com,dmitrysotnikov.wordpress.com,faravirusi.com,freedom-shift.net,kotan.link,lovepanky.com,markekaizen.jp,netafull.net,photopoint.com.ua#@#.category-ad:not(html):not(body)
 8muses.com#$#a.t-hover iframe { position: absolute!important; left: -3000px!important; }
 8muses.com#?#.gallery > a.t-hover:has(> div.image > iframe[src^="/banner/"])
@@ -24414,6 +24420,7 @@ danc.uk##+js(window.open-defuser)
 danceclassonline.in,smashingmagazine.com,hanime.tv,linuxmint.com##.sponsors
 dandanzan10.top,nnyy6.top#$#.gm-fp-body video { max-height:100%!important }
 dandanzan10.top,nnyy6.top#%#//scriptlet('ubo-set.js', 'RTCPeerConnection', 'null')
+dandanzan10.top,nnyy6.top#%#//scriptlet('ubo-set.js', 'mozRTCPeerConnection', 'null')
 dandanzan10.top,nnyy6.top#%#//scriptlet('ubo-set.js', 'webkitRTCPeerConnection', 'null')
 dandanzan10.top,nnyy6.top#@%#//scriptlet('ubo-nowebrtc.js')
 daniao.org,geekpark.net,speedtest.cn##.sponsor
@@ -32561,6 +32568,7 @@ search.yahoo.com##.grad
 search.yahoo.com##.searchCenterTopAds
 search.yahoo.com##.searchRightBottomAds
 search.yahoo.com##.searchRightMiddleAds
+searchenginejournal.com###sej-popup-wrapper
 searchenginejournal.com###summita-wrap
 searchenginejournal.com##.avert-text
 searchenginejournal.com##.img-mmax-100
@@ -37265,6 +37273,7 @@ zzbaike.com###topnav
 ||52jimi.top^
 ||52kmk.com^
 ||52kp2.com^
+||52ling.wang^
 ||52pipaxing.com^
 ||52pk.com/$object
 ||52rd.com/Pic/Click/
@@ -43047,6 +43056,7 @@ zzbaike.com###topnav
 ||cdn-sitegainer.com^$third-party
 ||cdn-static.egybest.*/packed/$badfilter
 ||cdn.234doo.com^$third-party
+||cdn.888asian.com/*.gif$domain=888scoreonline.com
 ||cdn.adf.ly/js/display.js$script,third-party
 ||cdn.adf.ly/js/entry.js$script,third-party
 ||cdn.adf.ly/js/link-converter.js$script,third-party
@@ -55844,6 +55854,7 @@ zzbaike.com###topnav
 ||meetrics.net^$domain=spiegel.de|stern.de
 ||meetrics.net^$third-party
 ||meetrics.netbb-
+||meetsocialmeta.com^
 ||meezauch.net^
 ||mega-stats.com^$third-party
 ||megadata.co.kr^
@@ -57798,6 +57809,7 @@ zzbaike.com###topnav
 ||nxakpj4ac8gkd53.info^
 ||nxhh.net/gw/gw.js
 ||nxkycx.com^
+||nxl791.com^
 ||nxnszu.ettoday.net^
 ||nxqdqtvirwj.com^
 ||nxrhs.com^
@@ -62854,7 +62866,7 @@ zzbaike.com###topnav
 ||sinaalicdn.com^
 ||sinabuy.cn^
 ||sinaimg.cn/cj/finance/forex/res/searchCallup.js
-||sinaimg.cn/crop.$domain=~video.sina.com.cn|~weibo.com
+||sinaimg.cn/crop.$domain=~video.sina.com.cn|~weibo.com|~mydrivers.com
 ||sinaimg.cn/finance/*/hqMainTopBanner.js
 ||sinaimg.cn/finance/*/sideQR
 ||sinaimg.cn/finance/app2018/js/appbar.js
@@ -72797,6 +72809,7 @@ zzbaike.com###topnav
 ||zvqbbj.cn^
 ||zvsuhljiha-a.akamaihd.net^
 ||zwaar.org^$third-party
+||zwmkfoo.cn^
 ||zwrj999.cn^
 ||zwychain.cn^
 ||zwyzintwp.com^
