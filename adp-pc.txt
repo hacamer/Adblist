@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: sXAdMTOfaH3N0S1bHzmtUg
+! Checksum: 7ydxgaFGmJZXLvbRyBDmEQ
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202205280632
-! Last Modified: 2022年05月28日 06:32
+! Version: 202205280732
+! Last Modified: 2022年05月28日 07:32
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 74092
+! Total count: 74097
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -17073,6 +17073,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||api.solvemedia.com/papi/
 @@||api.splice.com/www/advertisement/community-explore$domain=splice.com
 @@||apibay.org^$script,xmlhttprequest,domain=thepiratebay.org
+@@||apikey.wrld3d.com/generate_204/$xmlhttprequest,domain=maps.wrld3d.com
 @@||apis.google.com/js/plusone.js$domain=pornhub.com
 @@||apis.google.com^$domain=openload.co|oload.tv|javno.me|imagebam.com|imagevenue.com|playvid.com|4horlover.com|linkshrink.net
 @@||apk.tw/source/plugin/mydefplugin/advertise.js$script,~third-party
@@ -27659,6 +27660,7 @@ geeksforgeeks.org,weekender.com.sg###text-17
 geekzone.co.nz##.adsbygoogle
 geekzone.co.nz##div.cornered.box > center
 gekkou.com.br#$#abort-current-inline-script document.querySelectorAll popMagic
+gekso.xyz#?#.content > div.grid > div.item:has(> div.oi > iframe[src^="//a.realsrv.com/"])
 gelbooru.com##.footerAd2
 gelbooru.com##.headerAd
 gelbooru.com##.noticeError
@@ -28699,6 +28701,9 @@ iceporn.*##.maintenance >div.watch+div.furtherance
 iceporn.com##+js(abort-on-property-write, mobileAdvPop)
 iceporn.com##.drt-video-player > div.drt-spot-box
 iceporn.com##.puffery
+iceporn.net###spot_video_partner_banner
+iceporn.net###spot_video_partner_banner + span[style]
+iceporn.net,drtuber.com##.partner_text_link
 ichacha.net###breadcrumb + div[style^="width:"]
 ichunqiu.com###cnzz168_Login
 iciba.com##.ad-sign
@@ -37000,7 +37005,7 @@ xuongphim18z.com,phimdinhcao.com,phimtopz.com,truyensieuhay.com#$#abort-on-prope
 xup.in###xupab
 xup.in##+js(no-setTimeout-if, wrapfabtest)
 xup.in##+js(set-constant, showab, noopFunc)
-xvideos.*###video-ad + div[class]
+xv-videos1.com,xvideos.*###video-ad + div[class]
 xvideos.com##+js(remove-class, has-banner, #page > #main > #profile-title)
 xvideos.com##div[class^="foot"]
 xvideos.com#@#[src*="blob:"]
