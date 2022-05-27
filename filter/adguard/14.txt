@@ -1,8 +1,8 @@
-! Checksum: aqncOo7vrQzX34qytk1waQ
+! Checksum: hrZOanEAcfpVM/tyE5W7KQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.20.90
-! TimeUpdated: 2022-05-27T13:30:38+00:00
+! Version: 2.1.20.92
+! TimeUpdated: 2022-05-27T15:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7444,6 +7444,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 boohoo.jp##.CookieMessage__cookieMessage
 vh-polska.pl###cookies__new
 smow.*##.s-cookie-info
+oase-teichbau.de##div[x-data^="$app.components.cookieConsent"]
 beleuchtung.de##.cookie-setting
 owasp.org###disclaimer-container
 detector.media###msg_cooky_blk
@@ -7452,6 +7453,7 @@ invenglobal.com###ige-cookie-policy
 pelando.com.br##main + * + div[class] > div[role="dialog"]
 guetsel.de###dark
 guetsel.de###footer-cookie
+||fileinfo.de/js/iCookie.js
 medicoconsult.de##div[id^="cntnt"]
 misumi-ec.com##.l-cookieWrapper
 supermagnete.de###klaro-overlay
@@ -7464,8 +7466,8 @@ opovo.com.br##.notificacao-estatica
 trendmicro.com##c-dcx-cookie
 bq.ru##.footer-cookies-alert
 game-news.tokyo###cookie_note_ex1
-well.pl#$##rodoPopup { display: none !important; }
-well.pl#$#body.windowOpen { overflow: auto !important; padding-right: 0 !important; }
+farmer.pl,well.pl#$##rodoPopup { display: none !important; }
+farmer.pl,well.pl#$#body.windowOpen { overflow: auto !important; padding-right: 0 !important; }
 dek-d.com###cookiePolicyDialog
 bualuang.co.th###gdpr-message
 haineshop.ro#$#body.overflow-hidden { overflow: auto !important; }
@@ -19363,6 +19365,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+uniqlo.com##.uq-ec-cms-smart-banner
 m.kariyer.net##.download-app-wrapper
 pointcard.rakuten.co.jp###optionalAppDownload
 lepoint.fr#$##Ad4screen { display: none !important; }
@@ -21236,6 +21239,7 @@ newzit.com#$#div[class*="hasSmartBanner_"] { padding-top: 0 !important; }
 ||100fanwo.com/126.jpg
 rakuten.co.jp##div[class^="etsy-banner-"]
 kasikornbank.com###ex-app
+wiwo.de#$#body.c-app-install--hidden { padding-top: 0px !important; }
 edh.tw###vip-banner
 lazada.co.th###smartbanner-slot
 oshiete.goo.ne.jp##.readMore > p.readMore-btn
@@ -21399,6 +21403,8 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 boohoo.jp#$?##modal:has(div[data-testid="email-signup-splash-prompt"]) { display: none !important; }
 boohoo.jp#$#body { overflow: auto !important; }
 bing.com###bepfo.popup[style^="visibility: visible"]
+ledkia.com###modalPromotionschedule
+ledkia.com##.modal-backdrop
 sougiya.biz##.sideBanner
 sougiya.biz##.sw-Footbn
 mail.yahoo.co.jp#?#.main > div[class] > svg + div[class] > a[title=""][font-size="14"]:upward(2)
@@ -28946,6 +28952,7 @@ experts-exchange.com##.ctaSolutionStickyWrapper
 theguardian.com##.contributions__adblock
 ||contributions.guardianapis.com^
 !
+beauty.rakuten.co.jp##.SideColumn__banner
 msn.com##div[class^="newsContainer-"]
 deezer.com#?#.alert-wrapper > div > div > div > a[href$="/offers"]:upward(4)
 youxi.youth.cn##.youth_gw
@@ -29875,10 +29882,12 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+developerinsider.co##.witget-subscribe
 rbc.ua#?#.nano-content > .item > a[href="https://t.me/RBC_ua_news"]:upward(1)
 rbc.ua##a[href="https://t.me/RBC_ua_news"]
 inpower.com.br##.home-popup
 avantree.com##.subscibe
+thesun.co.uk###sim-module
 sputnik.by#?#.floor > div.floor__cell:has(> div.floor__cell-size > div.floor__cell-shape > div.cell > a[href="https://t.me/sputnikby"])
 detector.media##.submailchimp
 bihus.info##.bi-horizontal-ad__link
