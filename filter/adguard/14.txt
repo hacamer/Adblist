@@ -1,8 +1,8 @@
-! Checksum: LkeKBgVV3q7/mJYvZnHitg
+! Checksum: nQBKyufQlGCsDOiaAnrZcg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.21.1
-! TimeUpdated: 2022-05-28T17:30:33+00:00
+! Version: 2.1.21.3
+! TimeUpdated: 2022-05-28T20:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -19370,6 +19370,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+matchtv.ru##div[data-promo-desktop-url^="https://apps.rustore.ru/"]
 home.kingsoft.jp#?#.popup:has(button#open-app)
 m.finance.yahoo.co.jp##.appNotice
 uniqlo.com##.uq-ec-cms-smart-banner
@@ -29891,6 +29892,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+timesofisrael.com##.nlsignup
 oeko.de##.frame-type-form_formframework
 thebarentsobserver.com##.pane-simplenews-19
 thebarentsobserver.com###article-newsletter
