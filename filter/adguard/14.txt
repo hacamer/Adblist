@@ -1,8 +1,8 @@
-! Checksum: VxLO4z1Zk+Quf5YgeorqPA
+! Checksum: hCAEw2zVGC3xLQYcYdrk/A
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.20.99
-! TimeUpdated: 2022-05-28T15:30:33+00:00
+! Version: 2.1.21.0
+! TimeUpdated: 2022-05-28T16:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -21407,6 +21407,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+fmovies2.cx##div[style^="display:block;z-index:9999;position:fixed;bottom:0;text-align:center;width:100%"]
 boohoo.jp#$?##modal:has(div[data-testid="email-signup-splash-prompt"]) { display: none !important; }
 boohoo.jp#$#body { overflow: auto !important; }
 bing.com###bepfo.popup[style^="visibility: visible"]
