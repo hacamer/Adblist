@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: 88kR8x02XmgERh8EYSF8nA
+! Checksum: d+2BHXUYHgGvVdj4Q/mhjQ
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202205290732
-! Last Modified: 2022年05月29日 07:32
+! Version: 202205291036
+! Last Modified: 2022年05月29日 10:36
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 74104
+! Total count: 74113
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -2176,6 +2176,7 @@
 ##.ad-identifier
 ##.ad-iframe
 ##.ad-img
+##.ad-in-artilce
 ##.ad-in-content
 ##.ad-in-post
 ##.ad-in-read
@@ -18299,6 +18300,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||evanescentedge.com^$script,xmlhttprequest
 @@||eveningtimes.co.uk^$generichide
 @@||events-collector.spot.im/api/$xmlhttprequest
+@@||events.raceresult.com^$~third-party,xmlhttprequest
 @@||everydayporn.co/player/player_ads.html
 @@||eveselibaspunkts.lv/js/global/fingerprint2.min.js?
 @@||eveskunk.com/ad/300x250/ads/$xmlhttprequest,domain=eveskunk.com
@@ -18468,6 +18470,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||forecast.lemonde.fr/p/event/pageview?$image,~third-party
 @@||forecasttiger.com^$script,xmlhttprequest
 @@||foregoingfowl.com^$script,xmlhttprequest
+@@||forexprostools.com^$subdocument,domain=fx-rashinban.com
 @@||forgeofempires.com/game/json
 @@||forgetfulflowers.com^$script,xmlhttprequest
 @@||forrest.adverticum.net/inapp/user^$domain=embed.indavideo.hu
@@ -22891,7 +22894,6 @@ abczdrowie.pl,parenting.pl,nerwica.com,twojeip.wp.pl,echirurgia.pl#$#abort-curre
 abczdrowie.pl,so-magazyn.pl,o2.pl,pudelek.pl,film.wp.pl,finanse.wp.pl,gwiazdy.wp.pl,kobieta.wp.pl,ksiazki.wp.pl,magazyn.wp.pl,moto.wp.pl,opinie.wp.pl,sportowefakty.wp.pl,tech.wp.pl,teleshow.wp.pl,wiadomosci.wp.pl#$?#body > [class]:not(.settings--user):not(.article__textbox) { filter: none!important; }
 abczdrowie.pl,so-magazyn.pl,o2.pl,pudelek.pl,film.wp.pl,finanse.wp.pl,gwiazdy.wp.pl,kobieta.wp.pl,ksiazki.wp.pl,magazyn.wp.pl,moto.wp.pl,opinie.wp.pl,sportowefakty.wp.pl,tech.wp.pl,teleshow.wp.pl,wiadomosci.wp.pl#$?#body { overflow-y: visible!important; position: unset!important; }
 abczdrowie.pl,so-magazyn.pl,o2.pl,pudelek.pl,film.wp.pl,finanse.wp.pl,gwiazdy.wp.pl,kobieta.wp.pl,ksiazki.wp.pl,magazyn.wp.pl,moto.wp.pl,opinie.wp.pl,sportowefakty.wp.pl,tech.wp.pl,teleshow.wp.pl,wiadomosci.wp.pl#$?#html { overflow: visible!important; position: unset!important; }
-abetterrouteplanner.com##.r-145dblm.r-nc4a30
 about.com#@##adcontainer1
 abovetopsecret.com,thelibertydaily.com,uncanceled.news##[href^="https://mypatriotsupply.com/"]
 abplive.com##.a-ecom-wrap
@@ -30628,9 +30630,9 @@ mangareader.net##+js(abort-on-property-read, parts)
 mangareader.net,kiss-anime.ws,animeland.us#$#abort-on-property-read bbHideDiv
 mangareddit.com##+js(no-setTimeout-if, advert)
 mangareddit.com#@#.ad_box
-mangarockteam.com##.c-top-second-sidebar
 mangarockteam.com##.demand-supply
 mangarockteam.com#?#.body-wrap > .c-top-second-sidebar:not(:has(.widget-manga-popular-slider))
+mangarockteam.com,nitroscans.com##.c-top-second-sidebar
 mangasail.co##+js(abort-on-property-read, adb_checker)
 mangashiro.co##+js(window.open-defuser)
 mangatigre.com##div[id^="i-d-cr-page"]
@@ -42800,6 +42802,7 @@ zzbaike.com###topnav
 ||bdmjs.xywy.com^
 ||bdp.cn^$third-party
 ||bdpuaw.com^
+||bdsmstreak.com/vast
 ||bdsmx.tube/ps/37pg3s.js
 ||bdstatic.com/5bVYsj_p_tVS5dKfpU_Y_D3/data/5e4103a342883a925a81aea7fe356bef
 ||bdstatic.com/r/www/*cache/baidu_search/
@@ -46480,6 +46483,7 @@ zzbaike.com###topnav
 ||d3bbyfw7v2aifi.cloudfront.net^
 ||d3beefy8kd1pr7.cloudfront.net^
 ||d3bj8nkfly20uo.cloudfront.net^
+||d3bo67muzbfgtl.cloudfront.net^
 ||d3c3uihon9kmp.cloudfront.net^
 ||d3cgm8py10hi0z.cloudfront.net^
 ||d3cod80thn7qnd.cloudfront.net^
@@ -48379,6 +48383,7 @@ zzbaike.com###topnav
 ||ejunshi.com^
 ||ejyymghi.com^$third-party
 ||ek8.voyage-prive.com^
+||ekareqif.xyz^
 ||ekfottltamc.com^
 ||ekg.riotgames.com^
 ||ekmpinpoint.co.uk^$third-party
@@ -49303,6 +49308,7 @@ zzbaike.com###topnav
 ||ezexfzek.com^
 ||ezfashion.com.cn^
 ||ezhefg9gbhgh10.com^
+||ezijyfiq.xyz^
 ||ezmob.com^$third-party
 ||ezodn.com^
 ||ezojs.com^
@@ -49901,7 +49907,7 @@ zzbaike.com###topnav
 ||forever-k.com.cn^
 ||forex.com.cn/index.php/Invoking/tanchukuang
 ||forex.com.cn/statics/images/ewm.jpg
-||forexprostools.com^
+||forexprostools.com^$third-party
 ||forflygonom.com^
 ||forfrogadiertor.com^
 ||forgetfulflowers.com^
@@ -55091,6 +55097,7 @@ zzbaike.com###topnav
 ||legacy.com/globalscripts/tracking/
 ||legacy.com/obituaries/affiliateartwork.axd^
 ||legacy.com^*/unicaclicktracking.js?
+||legcgjldeka.com^
 ||legenhit.com^$third-party
 ||leggo.it/index.php?$image
 ||legitscript.com/seals/
@@ -59888,6 +59895,7 @@ zzbaike.com###topnav
 ||pagoda56.com^$third-party
 ||paht.tech^
 ||pahtag.tech^$third-party
+||pahthf.tech^
 ||pahtwt.tech^
 ||pahtzh.tech^
 ||paid.outbrain.com^
@@ -72881,6 +72889,7 @@ zzbaike.com###topnav
 ||xswvytnxkzkzq.com^
 ||xt.persosa.com^
 ||xt2d.cn^
+||xtb.com^$third-party,domain=cool-etv.net
 ||xtfycjyzoqit.com^
 ||xtgreat.com^$third-party
 ||xthizbdwgebzqf.com^
