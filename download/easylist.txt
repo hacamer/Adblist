@@ -4247,6 +4247,8 @@ wolframclient.net#@#.adsbygoogle
 @@||ad.admitad.com/3rd-party/advert.js
 @@||ad.admitad.com/3rd-party/*/cookie/?f=CookieChecker.remoteTest
 bigbrothercanada.ca##+js(set-constant, video_player_config.players.0.adblock, false)
+radio.*#?##headerTopBar ~ div[class]:not([id]):has(> div[class] > div[class] > div[id^="RAD_NET"])
+radio.*#?##content-wrapper #home-top-stations ~ div[class] div[id^="RAD_NET_D_"]:upward(3)
 down.fast-down.com##.download-option-btn:has(> button > a[href^="https://down.fast-down.com/download"][href*=".html"])
 filmaffinity.com#?#.movie-card-container > .moviecard-section-wrapper > .right-panel:has(> .adv-300x250-generic:only-child)
 tubepornclassic.com#?#.left > div[class] > div[class] > div[class] > a[href^="http://www.theclassicporn.com/"]:upward(1)
@@ -5364,6 +5366,9 @@ mako.co.il##div.ad
 hometheater.co.il##td[width="900"][align="center"][valign="top"]
 ||cloudfront.net^$third-party,domain=ynet.co.il
 fxp.co.il#@#iframe[width="300"][height="250"]
+ilmeteo.it#$##banner-mnz-topleft { height: 100px !important; }
+ilmeteo.it#$#body { overflow: visible !important; }
+ilmeteo.it#$#body div.fc-ab-root:not(#style_important) { display: none !important; }
 @@||feed.4strokemedia.com^$domain=video.corriere.it
 @@||cdnb.4strokemedia.com^$domain=video.corriere.it
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=video.corriere.it
@@ -11787,6 +11792,7 @@ msn.com#@#[src*="data:"]
 @@||read.amazon.com^$elemhide
 @@||reports.adguard.com/*.json
 !#########################################
+google.*#@#a[href^="https://go.xxxjmp.com"]
 tamin.ir#@#.ads2
 @@||tamin.ir/content/ads/
 @@||zoomit.ir/assets/img/advertise-$image,~third-party

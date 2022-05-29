@@ -1,8 +1,8 @@
-! Checksum: PWjg4IKZ3S4L1U3Uw0W/EA
+! Checksum: LZc5PX6wpBnRrxMpoY6PGg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.21.5
-! TimeUpdated: 2022-05-28T22:30:33+00:00
+! Version: 2.1.21.6
+! TimeUpdated: 2022-05-29T16:30:33+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2059,6 +2059,11 @@ facebook.com##div[role="main"] div[style="height: 0px;"] + div[class] > div[clas
 ! Suggested pages
 facebook.com##div[role="feed"] div[style="border-radius: max(0px, min(8px, ((100vw - 4px) - 100%) * 9999)) / 8px;"] div[style="border-radius: max(0px, min(8px, ((100vw - 4px) - 100%) * 9999)) / 8px;"]
 m.facebook.com##div[data-type="vscroller"] > div[style^="margin-top:6px; height:35px; z-index:0; width:"]
+m.facebook.com##div[data-type="vscroller"] > div[style^="margin-top:6px; height:35px; z-index:0; width:"] + div[data-tti-phase]
+m.facebook.com##div[data-type="vscroller"] > div[style^="margin-top:6px; height:35px; z-index:0; width:"] + div[data-tti-phase] + div[data-tti-phase][data-actual-height="2"]
+m.facebook.com##div[data-type="vscroller"] > div[style^="margin-top:6px; height:35px; z-index:0; width:"] + div[data-tti-phase] + div[data-tti-phase][data-actual-height="2"] + div[data-tti-phase]
+m.facebook.com##div[data-type="vscroller"] > div[style^="margin-top:6px; height:35px; z-index:0; width:"] + div[data-tti-phase] + div[data-tti-phase][data-actual-height="2"] + div[data-tti-phase] + div[data-tti-phase]:not([data-actual-height="2"]):not([data-actual-height="64"])
+m.facebook.com##div[data-type="vscroller"] > div[style^="margin-top:6px; height:35px; z-index:0; width:"] + div[data-tti-phase] + div[data-tti-phase][data-actual-height="2"] + div[data-tti-phase] + div[data-tti-phase]:not([data-actual-height="2"]):not([data-actual-height="64"]) + div[class*="otf-"]
 ! Climate info below articles
 iphone.facebook.com,m.facebook.com##article > .story_body_container + div[class]
 ! Covid survey
@@ -8530,7 +8535,7 @@ leouve.com.br###alert-privacy-policy
 rajabacklink.com###idpop_cookie
 regioactive.de###dialogconsent
 karriere-suedwestfalen.de,ratemyprofessors.com,m.marketplace.asos.com,swatch.com,marc-cain.com,regioactive.de,rodoviariaonline.com.br##.reveal-modal-bg
-onlinestreet.de,skrastas.lt##.fc-consent-root
+ilmeteo.it,onlinestreet.de,skrastas.lt##.fc-consent-root
 shop.dyson.ru##.top-pop-message--cookie
 callofduty.com##.atvi-banner-cmp
 skypng.com,wallpaper.to##.showBanner
@@ -24966,7 +24971,7 @@ minds.com##.m-modal-bg
 minds.com##.m-modal-container
 oleole.pl,euro.com.pl#%#document.cookie = "exitIntent=session; path=/;";
 nzz.ch###c1notification
-delandis.co.kr,anti-malware.ru,rgmechanics.com,boxerdergisi.com.tr,85.114.138.56,enzahome.com.tr,isralove.org,liniakino.com###popup
+yanmaga.jp,delandis.co.kr,anti-malware.ru,rgmechanics.com,boxerdergisi.com.tr,85.114.138.56,enzahome.com.tr,isralove.org,liniakino.com###popup
 partnerkin.com##.twidget
 dasding.de###modal-whatsapp
 dasding.de###modal-whatsapp + .modal-backdrop
@@ -27661,6 +27666,9 @@ disk.yandex.*##.mail360-banner
 @@||yastatic.net/daas/atom.js$domain=mail.yandex.by|mail.yandex.kz|mail.yandex.ru|mail.yandex.ua|mail.yandex.com|mail.yandex.com.tr
 !-----------------------------------------------
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/120219
+||yanmaga.jp/api/customers/viewer_banners/
+yanmaga.jp###xCVTopPr
 ! account required
 live.fc2.com##.m-lbxLst-bnr
 ! at the end of comic viewer
