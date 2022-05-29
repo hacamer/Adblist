@@ -1,8 +1,8 @@
-! Checksum: 55riIlTSgHjaR42sfdQoEA
+! Checksum: vtN/SKqkTXoTS6AedST/2A
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.21.10
-! TimeUpdated: 2022-05-29T21:30:39+00:00
+! Version: 2.1.21.11
+! TimeUpdated: 2022-05-29T22:30:33+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7447,6 +7447,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+fila.com##.tracking-consent-cta
 underarmour.*##.l-consent_banner
 ma-shops.de###gdprInfo
 institutfrancais.de##.cookie-fn
@@ -29903,6 +29904,9 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+fila.com#$#.signup-modal { display: none!important; }
+fila.com#$#.ui-widget-overlay { display: none!important; }
+fila.com#$#body { position: static!important; }
 gatdaily.com###custom_html-22
 timesofisrael.com##.nlsignup
 oeko.de##.frame-type-form_formframework
