@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: vLEH9dK7HNOgN65dGyyJbw
+! Checksum: kgRnED3RLFwvUBstUC60wQ
 ! Title: My AdFilters（for Mobile）
 ! Expires: 12 hours
-! Version: 202205301257
-! Last Modified: 2022年05月30日 12:57
+! Version: 202205301338
+! Last Modified: 2022年05月30日 13:38
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 67760
+! Total count: 67779
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -1101,6 +1101,7 @@
 ###download_ads
 ###doyoo_mon_mask
 ###doyoo_monitor
+###dragads
 ###dsk-banner-ad-a
 ###dsk-banner-ad-b
 ###dsk-box-ad-c
@@ -2264,6 +2265,7 @@
 ##.ad-top-leaderboard
 ##.ad-top-mpu
 ##.ad-top-right-container
+##.ad-top-spacing
 ##.ad-top-wrap-inner
 ##.ad-topbanner
 ##.ad-tower-container
@@ -2726,6 +2728,7 @@
 ##.adbtn
 ##.adbttm_right_300
 ##.adbttm_right_label
+##.adbutler-inline-ad
 ##.adbutton
 ##.adcard
 ##.adcenter
@@ -3499,6 +3502,7 @@
 ##.article-footer-ad
 ##.article-inline-ad
 ##.article-sponsor
+##.article-sponsorship-header
 ##.article-top-ad
 ##.articleADbox
 ##.articleAd
@@ -3633,8 +3637,10 @@
 ##.block--dfp
 ##.block--vh-dfp
 ##.block-ad
+##.block-ad-blocktop
 ##.block-ad-entity
 ##.block-ads
+##.block-ads-system
 ##.block-ads-yahoo
 ##.block-adsense
 ##.block-adv
@@ -4045,6 +4051,7 @@
 ##.firstpost_advert_container
 ##.fist-advertise-box
 ##.fix-ad
+##.fixed-sidebar-ad
 ##.fixedRightAd
 ##.fixed_ad
 ##.fjs-ad-hide-empty
@@ -4494,6 +4501,7 @@
 ##.leaderboard-ad-placeholder
 ##.leaderboard-ad-wrapper
 ##.leaderboard-ads
+##.leaderboard-top-ad
 ##.leaderboard.ad
 ##.leaderboard.advert
 ##.leaderboardAd
@@ -5283,6 +5291,7 @@
 ##.sponsors-box
 ##.sponsors-footer
 ##.sponsors-widget
+##.sponsorship-banner-bottom
 ##.sponsorship_ad
 ##.spotlight-ad
 ##.spt-footer-ad
@@ -19957,6 +19966,7 @@ androidoreos.info#@#div[id^="div-gpt-ad"]
 androidpolice.com##+js(abort-on-property-write, ai_adb)
 androidpolice.com##.homepage-sponsor
 androidpolice.com#?#body:not(.author-sponsored-post) #ap-body > .primary > .post.list-view[-ext-has='a[href^="https://www.androidpolice.com/author/sponsored-post"]']
+androidpolice.com,constructionreviewonline.com,cryptobriefing.com,dereeze.com,tyretradenews.co.uk##.ai-track
 androidrepublic.org,anonymousemail.me,apkmirror.com,demos.krajee.com,kadinlarkulubu.com,pixiz.com,spoilertv.com#@#.adsbygoogle
 androidsage.com,cryptoreporter.info,ets2.lt,geekdashboard.com,geekspin.co,getdroidtips.com,kanonitv.net,techpp.com,whats-on-netflix.com##.code-block-1
 androidsage.com,patriotfetch.com,welovetrump.com##.code-block-5
@@ -20235,7 +20245,7 @@ atptour.com##.iab-wrapper
 au.tv.yahoo.com#@#.y7-advertisement
 auction.co.kr##.hp_side_banner
 auctionzip.com##.az-header-ads-container
-audiobacon.net,bhamnow.com,mondoweiss.net,ottverse.com,sundayworld.co.za,tampabayparenting.com,theaudiophileman.com##.adv-link
+audiobacon.net,bhamnow.com,coinquora.com,mondoweiss.net,ottverse.com,sundayworld.co.za,tampabayparenting.com,theaudiophileman.com##.adv-link
 audiobookbay.*##a[href^="/ddl-now?"]
 audiobookbay.*#?##rsidebar > ul > li > h2:contains(/^AD$/)
 audiobookbay.*#?#.torrent_info tr:has(a[rel=nofollow]:not([href^="/download?"]))
@@ -21536,6 +21546,7 @@ coin360.com##.TopLeaderboard
 coincodex.com,yourbittorrent.com##iframe[src]
 coingape.com##.dragads
 coingape.com##.midadsafter
+coingape.com##.quads-location
 coingape.com,moviesverse.in,sonyalpharumors.com,investmentwatchblog.com,jav.guru,onlinecourses24x7.com,darkcapture.app###custom_html-15
 coingecko.com##.selected
 coinhub.pw##+js(abort-current-script, adBlockNotDetected, /FuckAdBlock/)
@@ -21723,6 +21734,7 @@ crunchyroll.com##.contents > p[style="text-align: center;"] > a[href][target="_b
 crx4.com,galacg.me,moneyweekly.com.tw###carousel-example-generic
 crxextractor.com#@#.adsense-wrapper
 cryptoads.space##+js(window.open-defuser)
+cryptobriefing.com##.na-item.item
 cryptobriefing.com,cryptoreporter.info,gatewaynews.co.za,geekspin.co,journeybytes.com,kanonitv.net,mikeprg.com##.code-block-2
 cryptodaily.co.uk##.post-ad-title
 cryptodirectories.com##+js(window.open-defuser)
@@ -21737,6 +21749,8 @@ cryptofuns.ru##+js(set-constant, pop, undefined)
 cryptohog.net##+js(set-constant, show_ads_gr8_lite, true)
 cryptomininggame.com#?#.col-lg-3 > .panel:has(>.panel-heading > h2:contains(Advertisements))
 cryptonews.com##[href^="https://rapi.cryptonews.com/"]
+cryptopolitan.com##.wordp-leaderboard
+cryptopolitan.com##.wordp-siderbar-new-theme
 cryptorank.io##.dPbBGP
 cryptorank.io##.hofjwZ
 cryptorank.io##.hspOLW
@@ -23209,6 +23223,7 @@ forex-gold.net##.header-mnm
 forex-gold.net,forexmab.com,newforex.online##.demand-supply
 forexlap.com###close-fixedban
 forexlap.com##+js(no-fetch-if, pagead2.googlesyndication.com)
+forexlive.com##.top-forex-brokers__wrapper
 formula1.com##.f1-dfp-banner-wrapper
 formula1.com##.js-promo-item
 forobasketcatala.com##+js(abort-on-property-read, mMCheckAgainBlock)
@@ -25333,6 +25348,7 @@ jpradio.jp,onlineradios.in,radio.com.lk,radio.net.bd,radio.net.pk,radio.org.nz,r
 jpsub.com##.floatbar_div
 jpwind.com###asideNav
 jq22.com##.fdad
+jquery.com##.sponsor-line
 jrj.com.cn##.bd.pa10.bgn
 jrj.com.cn##.jrj-ad
 jrj.com.cn##.wbyy
@@ -26577,6 +26593,7 @@ money.pl,pudelek.pl,parenting.pl,abczdrowie.pl,o2.pl,wp.pl##.wp-player > .npp-co
 money.yahoo.com###sda-MON
 money18.on.cc#@#.ads-bg
 moneycontrol.com##+js(set-constant, redirect_interstitial, false)
+moneycontrol.com##.add-spot
 moneycontrol.com##.hide-mobile
 moneycontrol.com##.mf_radarad
 moneycontrol.com##.sponser_in_gallery
@@ -30550,6 +30567,8 @@ typingclub.com##div[id^="adslot_"]
 typingtestnow.com##+js(no-setTimeout-if, replace_blank_adsense_ads)
 u-car.com.tw##.contad
 u-s-news.com##+js(set-constant, ulp_noadb, true)
+u.today##.card--something-md
+u.today##.something
 u17.com##.auto_ad
 u17.com##div[id^="u17-advert"]
 u18chan.com##div[class^="ad_banner"]
