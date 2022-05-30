@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: qsw8lLhAmvmfmHsz+sUyGw
+! Checksum: aEQSgGFhTJinbOOnpZNLpw
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202205300731
-! Last Modified: 2022年05月30日 07:31
+! Version: 202205301035
+! Last Modified: 2022年05月30日 10:35
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 74085
+! Total count: 74101
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -3560,6 +3560,7 @@
 ##.advertising-container
 ##.advertising-container-top
 ##.advertising-content
+##.advertising-disclaimer
 ##.advertising-notice
 ##.advertising-right
 ##.advertising-top
@@ -5007,6 +5008,7 @@
 ##.pgevoke-story-topads
 ##.pgevoke-topads
 ##.photo-ad
+##.photo-ad-pad
 ##.photo-two > a[onclick^="_czc."]
 ##.photoAd
 ##.phpads_container
@@ -5071,6 +5073,7 @@
 ##.pr_adslot_0
 ##.pr_adslot_1
 ##.pre-article-ad
+##.preheader_advert
 ##.premium-ad
 ##.premium-mpu-container
 ##.primary-ad
@@ -9854,6 +9857,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /beacon/page?
 /beacon/perf
 /beacon/portal-lite?
+/beacon/receive
 /beacon/stats
 /beacon/timing?
 /beacon/track/*
@@ -16023,6 +16027,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 9anime.*##+js(abort-current-script, document.createElement, ppu_)
 9anime.*##+js(window.open-defuser)
 9anime.*##.sda
+9anime.to,tennisuptodate.com##.sda
 9gag.com##.featured-video
 9gag.com##.salt-container
 9gag.com##[style^="width: 640px; min-height: 360px;"]
@@ -22863,6 +22868,7 @@ a9droid.com#@#div[id^="div-gpt-ad"]
 aa.com.tr#?#.container > style ~ div.ad:has(> span > a:not([href^="https://www.aa.com.tr/"]))
 aae3.com,qq.com###coo_qqBrowser
 aagag.com#?#ins.adsbygoogle:upward(1)
+aagnet.so###AD
 aajtak.in##.event_home_banner
 aajtak.in##.right-side-tabola
 aajtak.in##.stoybday-ad
@@ -24610,6 +24616,7 @@ buzz50.com#@#.adsbygoogle
 buzzdrives.com#@#.left_ad
 buzzfeed.com##.Ad--loading
 buzzfeed.com##.js-bfa-impression
+buzzfeednews.com##.pgs-dpg-flex
 bycard.by,goodfon.ru,old-games.ru,satsis.info,swordmaster.org##.adb
 byrdie.com#$#.mntl-leaderboard-spacer { min-height: 0 !important; }
 byrdie.com#@#.mntl-leaderboard-spacer
@@ -24986,6 +24993,7 @@ city.ogo.ua#$#abort-on-property-read myatu_bgm
 cityam.com##.notice-header
 cityam.com#@#.sponsored-post
 citymagazine.si#@#iframe[width="300"][height="250"]
+citynews.ca###Bigbox_300x250
 citynow.it##+js(set-constant, advanced_ads_check_adblocker, noopFunc)
 cjjjs.com,cnblogs.com,fastadmin.net##a[href^="https://promotion.aliyun.com/"]
 cjn.cn##.sidebar
@@ -26546,6 +26554,7 @@ ettoday.net##.top-sky
 ettoday.net##div[id^="abp"]
 ettvcentral.com##+js(json-prune, 0.cu)
 ettvproxies.com,prostylex.org,nsw2u.com,ettvcentral.com,btdb.nl,switch-xci.com,skytorrents.to,btdb.eu###vpnvpn
+euobserver.com,medicinehatnews.com##.top
 eurabota.com##.abtop
 euractiv.com##.ea-gat-slot-wrapper
 eurogamer.*##.desktop_mpu
@@ -27186,7 +27195,7 @@ fox.com.tr#@#.text-ads
 fox.com.tr#@#.textAd
 fox.com.tr#@#.text_ad
 fox.com.tr#@#.text_ads
-fox10phoenix.com,foxla.com##.vendor-unit
+fox10phoenix.com,fox26houston.com,fox4news.com,fox7austin.com,foxla.com##.vendor-unit
 foxaholic.com##div[class*="foxaholic-publift-"][class*="_sticky"]
 foxaholic.com,manhwatop.com,webtoon.xyz,manhuas.net,mangarocky.com##.body-wrap > .c-bottom-sidebar
 foxbaltimore.com,foxchattanooga.com,foxillinois.com,foxlexington.com,foxnebraska.com,foxreno.com,foxrochester.com,foxsanantonio.com,nbcmontana.com,okcfox.com,siouxlandnews.com,wach.com,wchstv.com,wcyb.com,wfxl.com,wgxa.tv,wlos.com,wsbt.com,wsmh.com,wvah.com,cbs2iowa.com,fox4beaumont.com,mycbs4.com,mynews4.com,news4sanantonio.com,abc6onyourside.com,wtov9.com,turnto10.com,fox11online.com,mynbc15.com,nbc16.com,abc22now.com,fox23maine.com,nbc24.com,fox28media.com,myfox28columbus.com,fox42kptm.com,fox45now.com,fox56.com##div[id^="interstory_first_ddb_"]
@@ -29087,6 +29096,7 @@ inporn.com##.video-page__content > div.right
 inporn.com,bdsmx.tube###in_v
 inporn.com,bdsmx.tube##.btn-close
 inquirer.net###billboard_article
+insauga.com##.proper-content-dynamic
 insideedition.com#@#.adBanner
 insideevs.com##.myevFeedContainer
 insideevs.com##a[href^="https://www.myev.com/cars-for-sale"]
@@ -29978,6 +29988,8 @@ kvraudio.com###kvr300600
 kwejk.pl#$#.pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links.adsbygoogle { display: block!important; }
 kwik.cx#@#.adSense
 kxii.com,kwtx.com,alaskasnewssource.com,ky3.com##body .arc-ad
+kyivpost.com##.b-title
+kyivpost.com##.widget-300-250
 kzstock.blogspot.com#@##ad-target
 l-a-w.ru,mhelp.kz##.swal2-container
 l2s.io#@#.myTestAd
@@ -30784,6 +30796,7 @@ medicalnewstoday.com##[style*="line-height: 0;"]
 medicalnewstoday.com#$#ins[data-ad-client] { position: absolute!important; left: -4000px!important; }
 medicalnewstoday.com#?#span ~ div[class]:has(> aside[class] div[data-empty="true"])
 medicalxpress.com,techxplore.com##.embed-responsive-trendmd
+medicinehatnews.com###stickyleaderboard
 medindia.net,addictivetips.com##.adslabel
 medsci.cn##.adv1201
 meetdownload.com,gobankingrates.com,thestudentroom.co.uk,advertiserandtimes.co.uk,stylecraze.com,mulheresafoder.com,mapcarta.com,thetrendspotter.net,examtiger.com,gaana.com,etf.com,northern-scot.co.uk,pornwatchers.com,ftopx.com,dazeddigital.com,agame.com,beeg.com,blogto.com,clkmein.com,destyy.com,eurogamer.net,eurogamer.pt,festyy.com,fijivillage.com,flashgames.ru,games.co.id,games.co.uk,gamesgames.com,giochi.it,gioco.it,girlsgogames.co.id,girlsgogames.co.uk,girlsgogames.com,girlsgogames.de,girlsgogames.fr,girlsgogames.it,girlsgogames.ru,globalrph.com,gry.pl,jetzspielen.de,jeu.fr,jeux.fr,juegos.com,juegosdechicas.com,moonbit.co.in,mousebreaker,mousebreaker.com,newsweek.com,ojogos.com.br,ourgames.ru,oyunskor.com,permainan.co.id,pornwatchers.com,sh.st,spel.nl,spela.se,spelletjes.nl,spielen.com,stileproject.com,unogs.com,velonews.com,videogameschronicle.com##.advert
@@ -33267,6 +33280,7 @@ r3sub.com##div[class] > a[href^="show.php?id="]
 rabbitsfun.com##.gallery-banner
 rabbitsfun.com##.picture-banner
 rabbitstream.net,rapid-cloud.ru,streamrapid.ru###overlay-container
+rabble.ca##.grey-cta-block
 racedepartment.com##+js(abort-current-script, $, adsBlocked)
 racedepartment.com,resetera.com##.samCodeUnit
 racefans.net##.text-above-ad
@@ -35215,6 +35229,7 @@ timeout.com##div[class^="_sponsoredContainer_"]
 timeout.com##div[data-component="outbrain"]
 timeout.com##div[id^="ad-promo-"]
 timeout.com##div[id^="ad-side-"]
+timescolonist.com,vancouverisawesome.com###leaderboard-container
 timesnownews.com##+js(json-prune, ads breaks)
 timesnownews.com##+js(set-constant, SlikePlayer.prototype.playAd, noopFunc)
 timesnownews.com##+js(set-constant, player.adm.destroy, noopFunc)
@@ -36501,7 +36516,6 @@ wenmi114.com###xiezuo
 wenxuecity.com###marquee
 wenxuecity.com##.topbannerw
 wenxuecity.com##a[href^="http://oascentral.wenxuecity.com/"]
-wereldreizigers.nl#@#.gridlove-ad
 westernjournal.com##.persistent-footer
 westernjournal.com##div:not(.after-article) > div[id$="-ad"].sponsor
 weszlo.com##+js(abort-current-script, jQuery, window.open(getUrl)
@@ -42917,6 +42931,7 @@ zzbaike.com###topnav
 ||beforeitsnews.com/img/banner
 ||befuglago.live^
 ||beginnerdole.com^
+||beginnerpancake.com^
 ||begintrain.com^
 ||begun.ru^$third-party
 ||behalfplead.com^
@@ -67130,6 +67145,7 @@ zzbaike.com###topnav
 ||sttdsrewciiqq.com^
 ||stubhub.com/bfx/api/logging
 ||studiocustomers.com^$popup
+||studiostack.com^$third-party
 ||studocu.com/27m703Hm/init.js
 ||stulip.org/static/js/header.js
 ||stunninglover.com/*/$third-party
