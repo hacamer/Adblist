@@ -1,8 +1,8 @@
-! Checksum: lc3Q95SHJutQ53rrpweTAQ
+! Checksum: POPLT02YWO6SbrFYb29K9g
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.21.34
-! TimeUpdated: 2022-05-31T15:30:40+00:00
+! Version: 2.1.21.35
+! TimeUpdated: 2022-05-31T17:30:38+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -19395,6 +19395,9 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+domonet.jp##.banner_contents > a[href="/app/domo/"]
+baitoru.com##.common-appBanner
+baitoru.com#?#div[style="padding:40px 10px 0px;"] > a[href^="https://app.adjust.com"]:upward(1)
 rakuten-card.co.jp##.footerNav__item--app
 handyticket.de###app-alert
 1track.ru##.offer_app
@@ -21440,6 +21443,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+auslogics.com###b-instruction-2__shadow
 borek.de##.mdm-sticky
 fmovies2.cx##div[style^="display:block;z-index:9999;position:fixed;bottom:0;text-align:center;width:100%"]
 boohoo.jp#$?##modal:has(div[data-testid="email-signup-splash-prompt"]) { display: none !important; }
@@ -29931,6 +29935,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+domonet.jp##.banner_contents > a[href="/users/entry"]
 muenzeoesterreich.at#$#.js-newsletter-modal { display: none!important; }
 muenzeoesterreich.at#$#.modal-backdrop { display: none!important; }
 muenzeoesterreich.at#$#body { overflow: auto!important; padding-right: 0!important; }
