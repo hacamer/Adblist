@@ -1,8 +1,8 @@
-! Checksum: MZYx5eVcvSrTireYk5gUeQ
+! Checksum: lc3Q95SHJutQ53rrpweTAQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.21.32
-! TimeUpdated: 2022-05-31T12:30:37+00:00
+! Version: 2.1.21.34
+! TimeUpdated: 2022-05-31T15:30:40+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7420,7 +7420,7 @@ jofogas.hu,m.rtl.be,elmundo.es,vecernji.hr,zive.cz,gamepro.de#$##didomi-host { d
 jofogas.hu,m.rtl.be,elmundo.es,vecernji.hr,zive.cz,gamepro.de#$#html > body.didomi-popup-open { overflow: auto !important; position: unset !important; }
 !
 ! cmpbox cookies
-azubi.de,denk-keramik.de,aquarienpflanzen-shop.de,deutschesee.de,bluray-disc.de,medpex.de,eventim.de,teekanne.de,mdm.de,traunsteiner-tagblatt.de,westlotto.de,kalledaskabel.de,dastelefonbuch.de,swm.de,ptaheute.de,nivea.*,nw.de,absolventa.de,porzellanhandel24.de,blastbrigade.com,blic.rs,queer.de,inqa.de,bmas.de,mail.ru###cmpbox
+borek.de,azubi.de,denk-keramik.de,aquarienpflanzen-shop.de,deutschesee.de,bluray-disc.de,medpex.de,eventim.de,teekanne.de,mdm.de,traunsteiner-tagblatt.de,westlotto.de,kalledaskabel.de,dastelefonbuch.de,swm.de,ptaheute.de,nivea.*,nw.de,absolventa.de,porzellanhandel24.de,blastbrigade.com,blic.rs,queer.de,inqa.de,bmas.de,mail.ru###cmpbox
 gelbeseiten.de,gasag.de##div[class^="cmpbox"]
 blastbrigade.com,tonspion.de,bier.by,test.de,kicker.de##div[id^="cmpbox"]
 ! For the case if the scroll page is blocked and the functionality of the site works correctly. Otherwise, make the JS rule
@@ -7459,6 +7459,9 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+trauer.gn-online.de###gncookiebanner
+geiger-edelmetalle.de##div[class^="gei-cookie-consent-"]
+||shop.degussa-goldhandel.de/*/Wamoco_CookieConsentUi/
 trustpid.com#$#.v-bottom-sheet { display: none !important; }
 trustpid.com#$#.v-overlay { display: none !important; }
 trustpid.com#%#//scriptlet("prevent-addEventListener", "wheel", "[native code]")
@@ -8997,7 +9000,7 @@ nordicnest.de#?##container > div[class]:has(> div[class] > div[class] > div[clas
 ||stihl.de/etc.clientlibs/stihl-frontend/clientlibs/components/content/cookie/cookielayer/
 petz.com.br##.policy-warning-banner
 kicker.de#$#body { overflow: auto !important; }
-||consentmanager.net^$domain=tausendkind.de|hausgarten.net|kundendienst-info.de|baunetz.de|rabe-bike.de|heinze.de|ais-online.de|dasoertliche.de|reno.de|walbusch.de|mathe-lexikon.at|katzen-forum.net|deutsche-apotheker-zeitung.de|brandible.de|my.games|vergleich.org|finanztip.de|baunetzwissen.de|trusted.de|universal-music.de|web2.cylex.de|mey-edlich.de|schuhe.de|qiez.de|benz24.de|hervis.de|avena.de|heimwerker.de|bauemotion.de|nw.de|kicker.de|herold.at|kalledaskabel.de|bussgeldkatalog.org|plantopedia.de|poetschke.de|weltbild.de|genialokal.de|jokers.de|leoncycle.de|abendblatt.de|wolfsburger-nachrichten.de|braunschweiger-zeitung.de|mediengestalter.info|sugafari.com|gdv.de|uk-essen.de|dieversicherer.de|tomaten.de|aquarienpflanzen-shop.de|jobs.shz.de|nrz.de|leichtathletik.de
+||consentmanager.net^$domain=tausendkind.de|hausgarten.net|kundendienst-info.de|baunetz.de|rabe-bike.de|heinze.de|ais-online.de|dasoertliche.de|reno.de|walbusch.de|mathe-lexikon.at|katzen-forum.net|deutsche-apotheker-zeitung.de|brandible.de|my.games|vergleich.org|finanztip.de|baunetzwissen.de|trusted.de|universal-music.de|web2.cylex.de|mey-edlich.de|schuhe.de|qiez.de|benz24.de|hervis.de|avena.de|heimwerker.de|bauemotion.de|nw.de|kicker.de|herold.at|kalledaskabel.de|bussgeldkatalog.org|plantopedia.de|poetschke.de|weltbild.de|genialokal.de|jokers.de|leoncycle.de|abendblatt.de|wolfsburger-nachrichten.de|braunschweiger-zeitung.de|mediengestalter.info|sugafari.com|gdv.de|uk-essen.de|dieversicherer.de|tomaten.de|aquarienpflanzen-shop.de|jobs.shz.de|nrz.de|leichtathletik.de|ikz-online.de
 mod.io###achtung-overlay
 bringmeister.de##div[data-testid="cookiePopup"]
 planetkey.de##.survey.alert-box
@@ -9226,7 +9229,7 @@ naukri.com##.privacyPolicy
 ufz.de#$##cookie-banner { display: none!important; }
 ufz.de#$#body { overflow: visible!important; padding-right: 0!important;}
 ncsc.gov.uk##.pcf-cookie
-mcm-systeme.de,gartendialog.de,wunschliste.de,mediabiz.de,gamesmarkt.de,musikwoche.de,blickpunktfilm.de,fansale.de,ticketonline.de,14-tage-wettervorhersage.de,playit-online.de,concordia.de,academiccourses.com,opti-wohnwelt.de,my-fantasyroom.de,bmas.de,fernsehserien.de###cmpwrapper
+traueranzeigen.nwzonline.de,meedia.de,mcm-systeme.de,gartendialog.de,wunschliste.de,mediabiz.de,gamesmarkt.de,musikwoche.de,blickpunktfilm.de,fansale.de,ticketonline.de,14-tage-wettervorhersage.de,playit-online.de,concordia.de,academiccourses.com,opti-wohnwelt.de,my-fantasyroom.de,bmas.de,fernsehserien.de###cmpwrapper
 altabadia.org##div[class^="mw-dsgvo-"]
 bibb.de##.fr-cookie-bar
 mycs.com##.CookieBanner__container
@@ -21437,6 +21440,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+borek.de##.mdm-sticky
 fmovies2.cx##div[style^="display:block;z-index:9999;position:fixed;bottom:0;text-align:center;width:100%"]
 boohoo.jp#$?##modal:has(div[data-testid="email-signup-splash-prompt"]) { display: none !important; }
 boohoo.jp#$#body { overflow: auto !important; }
@@ -29927,6 +29931,9 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+muenzeoesterreich.at#$#.js-newsletter-modal { display: none!important; }
+muenzeoesterreich.at#$#.modal-backdrop { display: none!important; }
+muenzeoesterreich.at#$#body { overflow: auto!important; padding-right: 0!important; }
 goal.com##section[data-type="NewsletterComponent"]
 fila.com#$#.signup-modal { display: none!important; }
 fila.com#$#.ui-widget-overlay { display: none!important; }
@@ -31224,7 +31231,7 @@ innovationaus.com##.fade-bg
 bdnews24.com##iframe[src="https://newsletter.bdnews24.com/bangla/embedded"]
 waz.de,nrz.de##.inline-block--wide[data-widget*="Content Wetter (hier: Newsletter)"]
 waz.de,otz.de,nrz.de,braunschweiger-zeitung.de,abendblatt.de,nrz.de,morgenpost.de,wolfsburger-nachrichten.de,wolfenbuetteler-zeitung.de,thueringer-allgemeine.de###piano-newsletter-inline
-waz.de,otz.de,nrz.de,braunschweiger-zeitung.de,abendblatt.de,wolfsburger-nachrichten.de,wolfenbuetteler-zeitung.de,morgenpost.de##.newsletter-cleverreach
+ikz-online.de,waz.de,otz.de,nrz.de,braunschweiger-zeitung.de,abendblatt.de,wolfsburger-nachrichten.de,wolfenbuetteler-zeitung.de,morgenpost.de##.newsletter-cleverreach
 nordbayern.de,thelocal.ch,morgenpost.de,waz.de,nrz.de,braunschweiger-zeitung.de,abendblatt.de,wolfsburger-nachrichten.de,wolfenbuetteler-zeitung.de,ynet.co.il#$#html > body.tp-modal-open { overflow: auto !important; }
 nordbayern.de,thelocal.ch,morgenpost.de,waz.de,nrz.de,braunschweiger-zeitung.de,abendblatt.de,wolfsburger-nachrichten.de,wolfenbuetteler-zeitung.de,ynet.co.il#$#div[class="tp-modal"][style="z-index: 300050; display: block;"] { display: none !important; }
 nordbayern.de,thelocal.ch,morgenpost.de,waz.de,nrz.de,braunschweiger-zeitung.de,abendblatt.de,wolfsburger-nachrichten.de,wolfenbuetteler-zeitung.de,ynet.co.il#$#div[class="tp-modal"][style="z-index: 300050; display: block;"] ~ div.tp-backdrop { display: none !important; }
