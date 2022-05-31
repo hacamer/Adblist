@@ -1,8 +1,8 @@
-! Checksum: Mw8shYkrFgL3Tqnl/tWuyQ
+! Checksum: buNR/doPJvrlarOCM6L1PQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.21.28
-! TimeUpdated: 2022-05-31T09:02:45+00:00
+! Version: 2.1.21.30
+! TimeUpdated: 2022-05-31T10:30:36+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7395,8 +7395,6 @@ tripadvisor.be,tripadvisor.ca,tripadvisor.co,tripadvisor.co.id,tripadvisor.co.uk
 dziennikbaltycki.pl,dzienniklodzki.pl,dziennikpolski24.pl,dziennikzachodni.pl,echodnia.eu,expressbydgoski.pl,expressilustrowany.pl,gazetakrakowska.pl,gazetalubuska.pl,gazetawroclawska.pl,gk24.pl,gloswielkopolski.pl,gol24.pl,gp24.pl,gratka.pl,gs24.pl,katowice.naszemiasto.pl,kurierlubelski.pl,motofakty.pl,naszemiasto.pl,nowiny24.pl,nowosci.com.pl,nto.pl,polskatimes.pl,pomorska.pl,poranny.pl,sportowy24.pl,strefaagro.pl,strefabiznesu.pl,stronakobiet.pl,telemagazyn.pl,to.com.pl,wspolczesna.pl###cross-dialog
 ! ##.cookieinfo
 digitaldruck-fabrik.de,informationsverige.se,gartenbau-in-thueringen.de,greenpeace.ru,vilmexkursion.de,veridyen.com,noblelife.com.tr,cenuta.com,nomoreransom.org,artistcamp.com,sbp.nspk.ru,parfumo.net,vqtube.com,engelsiztemizlik.com,expressfaucet.com,seirsanduk.online,oettinger.de,tegut.com,my.viewranger.com,starfaucet.net,entwicklerheld.de,seirsanduk.us,cezeta.com,getpaidtoshare.money,gsc-game.com,gta-gorevleri.com,hometurkey.com,indiansexvideos.porn,kinonet.pl,mtled-novels.com,pitwalk.de,praxis-jugendarbeit.de,rambox.pro,reversinglabs.com,sacheats.com,shadersmod.com,uploadcloud.pro##.cookieinfo
-! ###didomi-host
-rtl.be,dziennikzachodni.pl,standaard.be,closermag.fr,elnortedecastilla.es,elpais.com,ibtimes.co.uk,letelegramme.fr,mallorcamagazin.com,mitele.es,newsweek.com,nicematin.com,periodicodeibiza.es###didomi-host
 ! ###optanon
 allianz.de,easybib.com,st.com,mauijim.com,citationmachine.net,idevice.ro,tagheuer.com,adevarul.ro,arris.com,beinsports.com,cnn.com,globalscape.com,hotnews.ro,lorealparis.rs,oxouk.com,salesforce.com###optanon
 ! ##div[aria-label="cookieconsent"]
@@ -7415,6 +7413,11 @@ prodirectbasketball.com,safe-animal.eu,bangkokbiznews.com,thansettakij.com,komch
 serien.de,blumen-objekte.de,soldat-und-technik.de,timschropp.com,gfc-gruppe.de,literaturcafe.de,dashdot.de,appoid.de,rafalabrador.com###cc-banner-wrap
 ! ###eu-cookie-bar-notification
 citygross.com.tr,asicstr.com,eastmarine.com.tr,mjmultimedia.se,24hmeal.se,sindal.com.tr,tshop.com.tr,jobbogfritid.no,shop.ltbjeans.com,thomas-philipps.de###eu-cookie-bar-notification
+! ###didomi-host
+rtl.be,dziennikzachodni.pl,standaard.be,closermag.fr,elnortedecastilla.es,elpais.com,ibtimes.co.uk,letelegramme.fr,mallorcamagazin.com,mitele.es,newsweek.com,nicematin.com,periodicodeibiza.es###didomi-host
+! For the case if the scroll page is blocked
+jofogas.hu,m.rtl.be,elmundo.es,vecernji.hr,zive.cz,gamepro.de#$##didomi-host { display: none !important; }
+jofogas.hu,m.rtl.be,elmundo.es,vecernji.hr,zive.cz,gamepro.de#$#html > body.didomi-popup-open { overflow: auto !important; position: unset !important; }
 !
 ! #$##cookie-law-info-bar/#$#.cli-modal-backdrop
 autohaus-pauli.de,technik-hauptstadt.de,terminaloil.ee,johner-institut.de,hoyenapple.com,west-games.com,boerse-aktuell.de,orion.fm,widerspruch.org,pruefungsratgeber.de,marmaray.gov.tr,atnews.gr,teslawissen.ch,yashodahospitals.com,kinetikwellbeing.com,pctipps.de,citrinsolar.de,lewento.de,bauplan-bauanleitung.de#$##cookie-law-info-bar { display: none !important; }
@@ -11060,8 +11063,6 @@ zeenews-india-com.cdn.ampproject.org##.co-container#warning-message
 webmotors.com.br##.bjRMar
 ||cdn.engelbert-strauss.de/assets/cookiebar/scripts.js
 eska.pl#$#body { overflow: auto !important; }
-m.rtl.be,elmundo.es,vecernji.hr,zive.cz,gamepro.de#$##didomi-host { display: none !important; }
-m.rtl.be,elmundo.es,vecernji.hr,zive.cz,gamepro.de#$#html > body.didomi-popup-open { overflow: auto !important; position: unset !important; }
 wuerth.de###consent-container
 computerbild.de#$#body { overflow: visible !important; padding-right: 0 !important; }
 games.mail.ru##.b-header-agreement
@@ -16678,6 +16679,8 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/120450
+@@||sdk.privacy-center.org^$domain=jofogas.hu
 ! https://github.com/AdguardTeam/AdguardFilters/issues/120111
 milwaukeetool.eu#@##onetrust-consent-sdk
 ! https://github.com/AdguardTeam/AdguardFilters/issues/119643
@@ -34137,6 +34140,8 @@ newsweek.com##iframe[src="http://sns.europe.newsweek.com/newsletter?popup=1"]
 !######### JS tweaks ##########
 !##############################
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/120351
+thizissam.in#%#//scriptlet("adjust-setInterval", "Please wait", "", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/119883
 o-pro.online,eda-ah.com,ta2deem7arbya.com#%#//scriptlet("adjust-setInterval", "mdtimer", "", "0.02")
 edummm.xyz#%#//scriptlet("adjust-setInterval", "timeLeft ", "*", "0.02")
