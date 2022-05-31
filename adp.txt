@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: cf01Zc6uBZXErTp8PRDqFQ
+! Checksum: hgGsEaELlCQEIeJg0xPmPw
 ! Title: My AdFilters Lite
 ! Expires: 1 hours (Sometimes updates are delayed)
-! Version: 202205311929
-! Last Modified: 2022年05月31日 19:29
+! Version: 202205312101
+! Last Modified: 2022年05月31日 21:01
 ! Homepage: https://github.com/hacamer/Adblist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、Adgk、大萌主的规则
 ! 并补充了贴吧过滤规则，感谢各位的分享！
 ! 如有任何疑问、意见或建议，请反馈给：杏梢
 !
-! Total count: 38929
+! Total count: 38940
 ###Ad_windows
 ###ChapterView > .slide-baidu
 ###Layeraa1
@@ -1483,6 +1483,8 @@
 ##div[onclick^="window.location.href"][onclick*=".haoyundm.com"]
 ##div[style=" max-width:972px;  margin:0 auto;"] > a > img[height="120px"]
 ##div[style=" max-width:972px;  margin:0 auto;"] > a > img[height="60px"]
+##div[style=" max-width:973px;  margin:0 auto;"] > a > img[height="120px"]
+##div[style=" max-width:973px;  margin:0 auto;"] > a > img[height="60px"]
 ##div[style="border-radius:8px;background-color:#005737;padding:6px;"]
 ##div[style="box-sizing:border-box;padding:20px 16px;border-radius:8px;width:90%;margin:0 auto;"]
 ##div[style="display: flex;flex-wrap: wrap;margin-right: 5px;margin-left: 5px;"] + style + .container
@@ -4428,6 +4430,7 @@ $websocket,domain=5nj.com|cechi8.com
 18comic.vip#?#.thumb-overlay-albums > div[class][data-group^="photo_center_games_"]:has(> a[target="_blank"] > img)
 18h.avmimi.com##body > p[align="center"]:first-child
 18h.avmimi.com##body > table[width="100%"]:nth-child(2)
+18moe.org##.alignnone[alt="恰饭广告"]
 18moe.vip##a[href^="http"]:not([href*="18moe.vip"]) > img[src*="tc.18moe.net"]
 18p2p.com##[href*="/?Intr="],[href*="/?Extend="],[href*="/?intr="],[src^="http://diopic.net/images"],[href^="http://www.yin6666.net/"],[href^="http://pj555716.net"],[height="60"][width="340"]
 18qiang.com##.imgbanner,.bottom_khdxz
@@ -4560,6 +4563,8 @@ $websocket,domain=5nj.com|cechi8.com
 2345.com##.cmoe-nxh-dx
 2345.com##.cnxh_box
 2345.com##.coem-dzhcn
+2345.com##.comp-logo-wall
+2345.com##.comp-normal-navigate
 2345.com##.dzc-hn-cmoe
 2345.com##.event1-hasList
 2345.com##.mainbg
@@ -4581,6 +4586,7 @@ $websocket,domain=5nj.com|cechi8.com
 2345.com##.top_news
 2345.com##.v_picConBox.height214
 2345.com##.vipTopBanner
+2345.com##.wawaji
 2345.com##div#ivy-taobao,div.baiduHotWordsR.mt10.clearfix,div.ivyBaidu,div.ivy240.mt10,div.ivy940.mt10,div.ivy940_82.mt10,div#corner_div,div#J_cj,div#J_tip_stopXP,div#tools-gameTmp,div.tip_stopXP,div.J_topicBanner,div.mod.event1.event1-hasList,div#globalTopbannerContent,div.headIvy230,div#J_acts12_bfix,div#BAIDU_DSPUI_FLOWBAR,#topHf,#secondFlashAds,.ad_countdown,.baiduSearchIvy,.rowIvy,.adMainBg_1440,.s11-logowall,.activity-skin-trig,.item-lvy,.adMainBg
 2345.com##div[class*="act-navspec"]
 2345.com##div[class*="act-open"] > :not(.close):not([class*="mask"])
@@ -5653,6 +5659,7 @@ $websocket,domain=5nj.com|cechi8.com
 @@/pic/ad/*$domain=ybjk.com
 @@/pub/ad/*$domain=ruten.com.tw
 @@/pub1/??$domain=banggo.com
+@@/sensorsdata-$domain=zkh.com
 @@/sensorsdata.$domain=36kr.com|binance.com|by56.com|canon.com.cn|chuanglan.com|imooc.com|modian.com|saicskoda.com.cn|shanbay.com|tianyancha.com
 @@/setCookie?$domain=ctrip.com|ctrip.com.hk|pinyin.cn
 @@/share/js/*$domain=yunpanjingling.com
@@ -22424,6 +22431,7 @@ zznews.cn##.ad:not([style])
 ||ccjxwlkj.com^
 ||ccjxybj.cn^
 ||cckke.com/fanhao/v/ad
+||cclnuzn.cn^
 ||ccmdgg.com^
 ||ccmeng.com^$third-party
 ||ccoo.cn/mystat.asp
@@ -27536,6 +27544,7 @@ zznews.cn##.ad:not([style])
 ||iqiyi.com/track$popup
 ||iqiyipic.com/image/20*_100000$image
 ||iqn.world^
+||iqnew.com/d/js/m/thea
 ||iqshw.com/d/js/m/thea
 ||iqtfy.com/upload/vod/620.gif
 ||iqu-operation.com^
@@ -28889,6 +28898,8 @@ zznews.cn##.ad:not([style])
 ||kppt.cc/zb_system/script/common.js
 ||kppt.cc/zhifu.jpg
 ||kpshx.douguo.com^
+||kq7it3c6.xyz^
+||kqiekmsq.world^
 ||kqirf.xyz^
 ||kqvkvc3.com^
 ||kr.sdykcloud.cn^
