@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: f1xdE3xiQAgKaBGE2EACCA
+! Checksum: xb1O1hLrKKyEfo7cLgtb/g
 ! Title: My AdFilters Lite
 ! Expires: 1 hours (Sometimes updates are delayed)
-! Version: 202206011645
-! Last Modified: 2022年06月01日 16:45
+! Version: 202206011735
+! Last Modified: 2022年06月01日 17:35
 ! Homepage: https://github.com/hacamer/Adblist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、Adgk、大萌主的规则
 ! 并补充了贴吧过滤规则，感谢各位的分享！
 ! 如有任何疑问、意见或建议，请反馈给：杏梢
 !
-! Total count: 38956
+! Total count: 38963
 ###Ad_windows
 ###ChapterView > .slide-baidu
 ###Layeraa1
@@ -715,8 +715,7 @@
 ##.leftadv
 ##.leftd + .rightd
 ##.leftd1 + .rightd1
-##.leo-container > .ssr1
-##.leo-mod > .ssr1
+##.leo-container .ssr1
 ##.listok > a > img[src*=".alicdn.com"][width="980"][height="80"]
 ##.listok > a > img[style^="width:980px;height:"]
 ##.loc-home-top-adv-new
@@ -757,6 +756,7 @@
 ##.myui-vodlist__thumb[data-original*=".pstatp.com/"]
 ##.nQIAj
 ##.nQIAj1
+##.nav-area + .wrapper .tuiguang
 ##.newstyle > .container > a[target="_blank"]
 ##.newstyle > a > img[src*="img.com/i/"]
 ##.nordvpn-popup + .sidebar-vpn
@@ -5233,7 +5233,7 @@ $websocket,domain=5nj.com|cechi8.com
 7.n90.xyz##div.container-fluid.mb-3.p-0
 7.n90.xyz##div.mobile-adv.mobile-adv-bottom
 703804.com##.hotad
-7060.la,bimiacg4.net,bimiacg5.net,dodoge.me##.tuiguang
+7060.la##.tuiguang
 70bt.cn###ShowAD
 717dyw.com##.qptp + *,.vdgd + *,.qpgd + *,a > video
 720v8.com##.hidden-xs,[height="60"]
@@ -5493,6 +5493,7 @@ $websocket,domain=5nj.com|cechi8.com
 ://www.*.js|$script,third-party,domain=159i.com|r3sub.com|thisav.com
 ://www.*.js|$script,third-party,domain=159i.com|thisav.com
 :1010/openV5.js
+:10443/$script,subdocument,third-party
 :10443/*/*!$third-party
 :10443/*/*-*-*.html$subdocument,third-party
 :10443/*/*-*-*.js$third-party
@@ -6371,6 +6372,7 @@ $websocket,domain=5nj.com|cechi8.com
 @@||killcovid2021.com/*/*.mp4
 @@||kissjav.com^$generichide
 @@||kk665403.pixnet.net^$generichide
+@@||koyi.pub/wp-content/plugins/fuzqing-ad-plus/assets/js/*.js
 @@||kukuplay.com/upload/*.*.swf
 @@||l.qq.com/lview?$domain=888.sports.qq.com
 @@||lager.com.tw/images/layer6_adbanner/
@@ -11954,6 +11956,8 @@ koolearn.com##.news_pf
 koolearn.com##.show_ad
 koolearn.com##.zx_banner,.on_mtab,.news_pf,.ktit_sw,.ad
 kostool.cn#?#div:-abp-has(> h1:-abp-contains(推广))
+koyi.pub##+js(set-constant, fuzqingAdPlus, emptyObj)
+koyi.pub#@#.main_ad
 kpd122.com,ssp28.pw##.index-owl-carousel
 kpl037.com##center > a[target="_blank"] > img
 kpw6.com###daojs
@@ -15383,6 +15387,7 @@ upmedia.mg###divider_ad
 upxin.net##ins.adsbygoogle,div[id^="ad_"]
 urbanlifehk.com##.desktop-sidebar__block--ad
 urbanlifehk.com##.pl-main-article__ad-block
+url56.ctfile.com#?##main-content > .container > .card > .card-body:has(> div[id="760ad"])
 uschinapress.com##.baner_pictur
 uschinapress.com##img[width="290"]
 usefultools.icu##.Advertising_all
@@ -37478,6 +37483,7 @@ zznews.cn##.ad:not([style])
 ||yantuchina.com/Upload/Ad/
 ||yanu.qiniudn.com/*x60.
 ||yanu.qiniudn.com/270300.jpg
+||yanuvv.cn^
 ||yanyanbiji.com^
 ||yanzunyang.top^
 ||yaobao.cc^
@@ -38110,6 +38116,7 @@ zznews.cn##.ad:not([style])
 ||yuquad.com^
 ||yushengyuancaishui.com^
 ||yushuha.com^
+||yusnw.cc^
 ||yuu360.com^$third-party
 ||yuunion.com^
 ||yuuuxi.top^

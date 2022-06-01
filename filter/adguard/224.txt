@@ -1,8 +1,8 @@
-! Checksum: t09AtuZZqY1uFIlt2Lhr7A
+! Checksum: zfNsrXb3eCLG9Hfovd4Nlw
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.0.57.13
-! TimeUpdated: 2022-06-01T08:30:57+00:00
+! Version: 2.0.57.15
+! TimeUpdated: 2022-06-01T09:31:02+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -368,6 +368,10 @@
 ! Bad: ||ad.doubleclick.net^ (should be in adservers.txt)
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/120433
+koyi.pub#@#.main_ad
+@@||koyi.pub/wp-content/plugins/fuzqing-ad-plus/assets/js/*.js
+koyi.pub#%#//scriptlet("set-constant", "fuzqingAdPlus", "emptyObj")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/120000
 pincong.rocks#%#//scriptlet("prevent-setInterval", "Ad Block")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/117369
@@ -772,6 +776,7 @@ nfmovies.com#$?#body > .hidden-xs > div[id]:has(> img[src^="/static/"][onclick*=
 nfmovies.com#$?#div[id^="aaaDiv"] { remove: true; }
 !
 !
+url56.ctfile.com#?##main-content > .container > .card > .card-body:has(> div[id="760ad"])
 cw.com.tw#?#.adActive > div[class^="leaflet"]:has(> div[id^="div-gpt-ad"])
 cw.com.tw#?#.adActive > .list-link:has(> ul > li > div[id^="div-gpt-ad"])
 breathofthewild-link.com#?#div[id^="cc-matrix-"] > div.j-htmlCode:has(> ins.adsbygoogle)
@@ -3021,11 +3026,8 @@ nfmovies.com#@?#div[id]:-abp-has(>img[onclick="openurl()"])
 ://*:*/oklist/vars.js
 ://*:*/s.php?id=$script,third-party
 ://btt*/Runtime/js/psData.
-://ssh.*:10443/$third-party
 :1010/openV5.js
-:10443/*/*!$third-party
-:10443/*/*-*-*.html$subdocument,third-party
-:10443/*/*-*-*.js$third-party
+:10443/$script,subdocument,third-party
 :12443/*/*-*-*.$script,third-party
 :18443/*/*-*-*.html$subdocument,third-party
 :18443/*/*-*-*.js$third-party
@@ -3662,8 +3664,8 @@ ubmcmm.baidustatic.com
 ##.yd_ad3
 ##.yd_ad5
 ##.yd_ad6
-##.leo-container > .ssr1
-##.leo-mod > .ssr1
+##.leo-container .ssr1
+##.nav-area + .wrapper .tuiguang
 ##.zhanzhang_tuijian_btn
 ##.zhedangceng_ggg
 ##.zone_wap_banner2
@@ -4032,6 +4034,7 @@ ubmcmm.baidustatic.com
 ||000123456789.site^
 ||kq7it3c6.club^
 ||whcajsb.com^
+||yanuvv.cn^
 ||0024aaaa.com^
 ||008844.cc^
 ||00xvppy.cn^
@@ -16161,7 +16164,7 @@ hao123.com##.treasure-item
 megatime.com.tw,pchome.com.tw##.tripplead
 ts.cn##.tsggding
 huya.com##.tt[style*="1200px"]
-7060.la,bimiacg4.net,bimiacg5.net,dodoge.me##.tuiguang
+7060.la##.tuiguang
 m.hao123.com##.tuizhan
 meizhou.cn##.tuwengg
 qq.com##.txp_ad_link

@@ -258,6 +258,9 @@
 ||1002.men^
 ||ad.juksy.com^
 ||ads.tvb.com^
+koyi.pub#@#.main_ad
+@@||koyi.pub/wp-content/plugins/fuzqing-ad-plus/assets/js/*.js
+koyi.pub##+js(set-constant, fuzqingAdPlus, emptyObj)
 pincong.rocks##+js(no-setInterval-if, Ad Block)
 1090ys8.com##+js(abort-on-property-read, adBlockDetected)
 @@||cdn.bootcss.com/fuckadblock/3.2.1/fuckadblock.min.js$domain=1090ys8.com
@@ -516,6 +519,7 @@ ants.tw#?##sidebar > section.widget_text > div.textwidget > script[src^="//pagea
 microsoftnews.msn.cn#?#.riverSections-DS-EntryPoint1-1 > div[style^="display: grid;"] > div[style^="grid-area:"]:last-child > .card-DS-card1-1 > div[class^="nativeAd-DS-card"]:upward(2)
 nfmovies.com#$?#body > .hidden-xs > div[id]:has(> img[src^="/static/"][onclick*="open"]) { position: absolute!important; top: -9999px!important; left: -9999px!important; bottom: unset!important; }
 nfmovies.com#$?#div[id^="aaaDiv"] { remove: true; }
+url56.ctfile.com#?##main-content > .container > .card > .card-body:has(> div[id="760ad"])
 cw.com.tw#?#.adActive > div[class^="leaflet"]:has(> div[id^="div-gpt-ad"])
 cw.com.tw#?#.adActive > .list-link:has(> ul > li > div[id^="div-gpt-ad"])
 breathofthewild-link.com#?#div[id^="cc-matrix-"] > div.j-htmlCode:has(> ins.adsbygoogle)
@@ -2482,11 +2486,8 @@ nfmovies.com#@?#div[id]:-abp-has(>img[onclick="openurl()"])
 ://*:*/oklist/vars.js
 ://*:*/s.php?id=$script,third-party
 ://btt*/Runtime/js/psData.
-://ssh.*:10443/$third-party
 :1010/openV5.js
-:10443/*/*!$third-party
-:10443/*/*-*-*.html$subdocument,third-party
-:10443/*/*-*-*.js$third-party
+:10443/$script,subdocument,third-party
 :12443/*/*-*-*.$script,third-party
 :18443/*/*-*-*.html$subdocument,third-party
 :18443/*/*-*-*.js$third-party
@@ -3123,8 +3124,8 @@ ubmcmm.baidustatic.com
 ##.yd_ad3
 ##.yd_ad5
 ##.yd_ad6
-##.leo-container > .ssr1
-##.leo-mod > .ssr1
+##.leo-container .ssr1
+##.nav-area + .wrapper .tuiguang
 ##.zhanzhang_tuijian_btn
 ##.zhedangceng_ggg
 ##.zone_wap_banner2
@@ -3493,6 +3494,7 @@ ubmcmm.baidustatic.com
 ||000123456789.site^
 ||kq7it3c6.club^
 ||whcajsb.com^
+||yanuvv.cn^
 ||0024aaaa.com^
 ||008844.cc^
 ||00xvppy.cn^
@@ -15622,7 +15624,7 @@ hao123.com##.treasure-item
 megatime.com.tw,pchome.com.tw##.tripplead
 ts.cn##.tsggding
 huya.com##.tt[style*="1200px"]
-7060.la,bimiacg4.net,bimiacg5.net,dodoge.me##.tuiguang
+7060.la##.tuiguang
 m.hao123.com##.tuizhan
 meizhou.cn##.tuwengg
 qq.com##.txp_ad_link
