@@ -1,8 +1,8 @@
-! Checksum: awE1aBS0mgwrBsKBqFv+SQ
+! Checksum: YvBAuWDq3FE8HtKBHT2UYQ
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.0.57.17
-! TimeUpdated: 2022-06-01T14:30:55+00:00
+! Version: 2.0.57.18
+! TimeUpdated: 2022-06-01T15:30:57+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1084,8 +1084,6 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .r
 !
 !
 !
-viu.com##div[onclick^="infolinePopup"]
-viu.com###infoline_dialog
 viu.com##div[data-marker-title="undefined"]
 i8k.cc##.module-adslist
 haiwai.com##.container + .fixed-bottom[style^="box-shadow:"]
@@ -11869,6 +11867,8 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
 szxx.com.cn###A0
+douyu.com#?#.wm-general:-abp-has(.link[href*=".tmall.com"])
+viu.com##div[id^="info"]
 szxx.com.cn###A1
 szxx.com.cn###A2
 gpcxw.com###AA2
@@ -19834,6 +19834,7 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 @@||zmtt.net^$script,domain=luoqiuzw.com
 !#Novels ads union
 ||supernff.com^
+||dlhyfl.cn^
 ||nxhkkm.xyz^
 ||zptxjlh.cn^
 ||zdtvfpu.cn^

@@ -1,8 +1,8 @@
-! Checksum: hOQiGCljzbGj6TA/9hsvJw
+! Checksum: qz/1d+N5ubw//DCCU6WPsQ
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.30.11
-! TimeUpdated: 2022-05-31T22:30:23+00:00
+! Version: 2.0.30.12
+! TimeUpdated: 2022-06-01T15:30:20+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1650,6 +1650,9 @@ rambler.ru#?#main > div[class] ~ div[class] > div[class] div[class] > a[href^="h
 pornhub.com,pornhubthbh7ap3u.onion#%#AG_onLoad(function() { if (typeof redirect !== 'function') return; var str = redirect.toString(); var m = str.match(/\'(\/view.*)\'/); if (m.length != 2) return; var link = m[1]; window.location.href = m[1]; });
 !#################
 !
+! erobanach.com ad popup
+erobanach.com#%#//scriptlet('prevent-addEventListener', '', 'returnAd')
+erobanach.com#%#//scriptlet("abort-on-property-write", "hidden")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/119596
 lepoint.fr#%#//scriptlet('remove-class', 'hasStickyHead', 'body.hasStickyHead')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/118753
@@ -2502,6 +2505,9 @@ cartoonpornvideos.com,m.economictimes.com,beethovenmaster.com,m.mistrzowie.org,m
 ! ##.ad
 dailynewsonline.jp,yakuji.co.jp,asahi.com,m.winporn.com,slate.com,sankei.com,gameranbu.jp,seiga.nicovideo.jp,m.arukikata.co.jp,setn.com,hateblo.jp,hatenablog.com,hatenablog.jp,hatenadiary.com,hatenadiary.jp,hatenadiary.org,syosetu.org##.ad
 !
+h-taikendan.net##div[style="height:250px;"]
+erobanach.com##.apad
+erobanach.com##.shiny-btn1
 domonet.jp##main > section.banner_block + section.bnr_block
 radio.*###content-wrapper #stations-in-family + div[class]:not([data-testid])
 curazy.com##.ad_before_h2

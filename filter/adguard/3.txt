@@ -1,8 +1,8 @@
-! Checksum: 3g4EF07g9bsGN38cENnPiA
+! Checksum: 1CzwRNbV8gXVsSmJIHWrNQ
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.40.51
-! TimeUpdated: 2022-06-01T13:03:25+00:00
+! Version: 2.0.40.52
+! TimeUpdated: 2022-06-01T15:31:22+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -344,6 +344,12 @@ journal-plaza.net#?#.rightside div.block.bnavi[-ext-has="h3.dtitle:contains(Сч
 !||i.snssdk.com/log/*
 !||i.snssdk.com/slardar/sdk.js
 !
+||d10lpsik1i8c69.cloudfront.net^
+||acclog001.shop-pro.jp^
+||acclog002.shop-pro.jp^
+||canem-auris.com^$third-party
+||tr.slvrbullet.com^
+||d2c.ne.jp^$third-party
 ||allvideometrika.com^
 ||tags.clickagy.com^
 ||tapestry.tapad.com^
@@ -5135,6 +5141,8 @@ nethunt.com/api/v1/track/email/$image
 ! Disabled in DNS filter
 ||telemetry.mozilla.org^
 !
+||stats.tipser.com^
+||dynatrace.att.com^
 ||analytics.regex101.com^
 ||analytics.adoffice.11st.co.kr^
 ||stats.zone-telechargement.click^
@@ -21321,6 +21329,7 @@ _tracking.php?b=
 !
 /analytics.js$domain=freexcafe.com|rusvideos.tv|nakubani.ru|lun.com|songsara.net|newsmax.com|bolgehastanesi.com|ewtc.de|newsdig.tbs.co.jp
 !
+||karelcapek.co.jp/Scripts/tracker.js
 ||academia.edu/record_hit
 ||academia.edu/v0/pv?
 ||coocha.co.kr/static/js/common/tracker.js
