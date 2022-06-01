@@ -1,8 +1,8 @@
-! Checksum: DnPdF9UE2NKio6/EFwcXhw
+! Checksum: hh8pJkQD0YhM5NWbnlM/Mg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.21.43
-! TimeUpdated: 2022-06-01T10:30:42+00:00
+! Version: 2.1.21.46
+! TimeUpdated: 2022-06-01T13:02:36+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -92,6 +92,8 @@
 ! https://github.com/AdguardTeam/AdguardFilters/issues/76987
 youtube.com#%#AG_onLoad(function() {var a = new MutationObserver(function() {if (document.querySelector('yt-upsell-dialog-renderer')) {var b = document.querySelector('.ytd-popup-container[popup-size="UPSELL_DIALOG_RENDERER_POPUP_SIZE_LARGE"] #dismiss-button:not(.dismissed), .upsell-dialog-lightbox .upsell-dialog-dismiss-button button:not(.dismissed)');setTimeout(function() {b&&b.click()}, 3E2)}});a.observe(document, {childList: !0,subtree: !0});setTimeout(function() {a.disconnect()}, 3E3)});
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/120074
+eurasianet.org##.featured-news .top > .callout
 ! https://github.com/AdguardTeam/AdguardFilters/issues/120426
 hpplus.jp#%#//scriptlet("set-constant", "$.cookie", "trueFunc")
 ! https://github.com/List-KR/List-KR/pull/357
@@ -7467,6 +7469,7 @@ companyofheroes.com##div[id^="privacy-policy-"]
 orange.pl##div[id^="CookiesPopup_"]
 hermle-reichenbach.de##.cookie-permission-container
 herne.de###cookie_hinweis_box
+||cdn.consentmanager.net^$domain=wr.de|harzkurier.de
 trauer.gn-online.de###gncookiebanner
 geiger-edelmetalle.de##div[class^="gei-cookie-consent-"]
 ||shop.degussa-goldhandel.de/*/Wamoco_CookieConsentUi/
@@ -15702,6 +15705,7 @@ privacy.lecker.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent
 privacy.madame.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent-v2")){var g=new MutationObserver(function(){setTimeout(function(){var b=document.querySelector('button.no-children[path="\[0,2,1\]"]');b&&b.click();},300);setTimeout(function(){var c=document.querySelector('div[title="Berechtigte Interessen"]'); c&&c.click();},300);setTimeout(function(){var d=document.querySelectorAll('label[aria-checked="true"] > .off'); d.forEach(function(d){d.click();});},800); var f=document.querySelector('button.no-children[path="\[0,3,0\]"]'); setTimeout(function(){f&&f.click();},1000);});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},3E4)}});
 consent.ladbible.com,consent.gamingbible.co.uk,consent.unilad.co.uk#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var g=new MutationObserver(function(){var b=document.querySelector('button[title*="Accept" i]');b&&(g.disconnect(),b.click())});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
 !
+abo24.de#%#//scriptlet('set-cookie-reload', 'cmp', '0')
 idowa.de#%#//scriptlet("set-constant", "__tcfapi", "noopFunc")
 thomann.de#%#AG_onLoad(function(){if(-1===document.cookie.indexOf('thomann_settings')){var b=new MutationObserver(function(){var a=document.querySelector('button.consent-bar-cta-accept');a&&a.click()});b.observe(document,{childList:!0,subtree:!0});setTimeout(function(){b.disconnect()},1E4)}});
 ilmeteo.it#%#AG_onLoad(function(){if(-1===document.cookie.indexOf('trc_cookie_storage')){var b=new MutationObserver(function(){var a=document.querySelector('.fc-cta-consent');a&&a.click()});b.observe(document,{childList:!0,subtree:!0});setTimeout(function(){b.disconnect()},1E4)}});
@@ -16691,6 +16695,9 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/120168
+abo24.de#@##cookie-consent
+abo24.de#@##cookie-consent-wrapper
 ! https://github.com/AdguardTeam/AdguardFilters/issues/120375
 ! https://github.com/AdguardTeam/AdguardFilters/issues/120450
 @@||sdk.privacy-center.org^$domain=jofogas.hu
@@ -19408,6 +19415,7 @@ baitoru.com##.common-appBanner
 baitoru.com#?#div[style="padding:40px 10px 0px;"] > a[href^="https://app.adjust.com"]:upward(1)
 rakuten-card.co.jp##.footerNav__item--app
 handyticket.de###app-alert
+locotoku.jp##.get_app
 1track.ru##.offer_app
 matchtv.ru##div[data-promo-desktop-url^="https://apps.rustore.ru/"]
 home.kingsoft.jp#?#.popup:has(button#open-app)
@@ -19491,7 +19499,7 @@ m.banggood.com#$#.global-no-scroll { position: static !important; }
 m.banggood.com##.bottom-app-contain
 m.banggood.com#$#.header.show-app-bar { top: 0 !important; }
 m.banggood.com#$##appTopBar { display: none !important; }
-redbull.com##.web-to-app
+retty.me,redbull.com##.web-to-app
 dev.to###runtime-banner-container
 ||kangaroobro.com/bn.js
 ||kangaroobro.com/bnpc.js
@@ -19707,7 +19715,6 @@ nhac.vn#$#header.header-setup[style^="height:"] { height: 87px !important; }
 mhealth.ru##.pwa-nameplate
 academia.edu#$?#body > div:has(> div.ds-Modal button:contains(/^Get the app$/)) { display: none!important; }
 academia.edu#$#body { overflow: auto!important; }
-retty.me##.app-store-banner-wrap
 retty.me##.js-app-store-banner
 hatalike.jp##.hdr_app_wrap
 gu-global.com###smbn_app
@@ -21193,6 +21200,8 @@ pinterest.*#%#AG_onLoad(function(){var a=new MutationObserver(function(){if(docu
 !+ PLATFORM(android, ios)
 ~kurer-sreda.ru,~chorki.com,~zattoo.com,~zaycev.net,~xltrax.ee,~hitta.se,~mail.ru,~v7player.wostreaming.net,~facebook.com,~instagram.com,~drive.google.com$$link[rel="manifest"]
 !
+!+ NOT_OPTIMIZED
+retty.me##.app-store-banner-wrap
 !+ NOT_OPTIMIZED
 jumpbookstore.com###header_app_banner
 !+ NOT_OPTIMIZED
@@ -27863,7 +27872,7 @@ jibunbank.co.jp##.c-prDefault-01
 ! https://github.com/AdguardTeam/AdguardFilters/issues/107677
 ||rakuten-sonpo.co.jp/Portals/0/images/common/group/bnr_pr_life_partner_
 hoken.rakuten.co.jp,rakuten-insurance.co.jp,rakuten-sonpo.co.jp,rakuten-ssi.co.jp##.topBankArea
-hoken.rakuten.co.jp,rakuten-insurance.co.jp##.mnoBnrArea
+kidona.rakuten.co.jp,hoken.rakuten.co.jp,rakuten-insurance.co.jp##.mnoBnrArea
 hoken.rakuten.co.jp###inc-header-inner > div.pcOnly[style="width:100%; background: #ff0088; text-align: center;"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/107372
 rakuten.co.jp###mno-header
@@ -29948,6 +29957,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+medyafaresi.com##.google-news
 domonet.jp##.banner_contents > a[href="/users/entry"]
 muenzeoesterreich.at#$#.js-newsletter-modal { display: none!important; }
 muenzeoesterreich.at#$#.modal-backdrop { display: none!important; }
@@ -31249,7 +31259,7 @@ innovationaus.com##.fade-bg
 bdnews24.com##iframe[src="https://newsletter.bdnews24.com/bangla/embedded"]
 waz.de,nrz.de##.inline-block--wide[data-widget*="Content Wetter (hier: Newsletter)"]
 waz.de,otz.de,nrz.de,braunschweiger-zeitung.de,abendblatt.de,nrz.de,morgenpost.de,wolfsburger-nachrichten.de,wolfenbuetteler-zeitung.de,thueringer-allgemeine.de###piano-newsletter-inline
-ikz-online.de,waz.de,otz.de,nrz.de,braunschweiger-zeitung.de,abendblatt.de,wolfsburger-nachrichten.de,wolfenbuetteler-zeitung.de,morgenpost.de##.newsletter-cleverreach
+wr.de,ikz-online.de,waz.de,otz.de,nrz.de,braunschweiger-zeitung.de,abendblatt.de,wolfsburger-nachrichten.de,wolfenbuetteler-zeitung.de,morgenpost.de##.newsletter-cleverreach
 nordbayern.de,thelocal.ch,morgenpost.de,waz.de,nrz.de,braunschweiger-zeitung.de,abendblatt.de,wolfsburger-nachrichten.de,wolfenbuetteler-zeitung.de,ynet.co.il#$#html > body.tp-modal-open { overflow: auto !important; }
 nordbayern.de,thelocal.ch,morgenpost.de,waz.de,nrz.de,braunschweiger-zeitung.de,abendblatt.de,wolfsburger-nachrichten.de,wolfenbuetteler-zeitung.de,ynet.co.il#$#div[class="tp-modal"][style="z-index: 300050; display: block;"] { display: none !important; }
 nordbayern.de,thelocal.ch,morgenpost.de,waz.de,nrz.de,braunschweiger-zeitung.de,abendblatt.de,wolfsburger-nachrichten.de,wolfenbuetteler-zeitung.de,ynet.co.il#$#div[class="tp-modal"][style="z-index: 300050; display: block;"] ~ div.tp-backdrop { display: none !important; }
@@ -34168,6 +34178,8 @@ newsweek.com##iframe[src="http://sns.europe.newsweek.com/newsletter?popup=1"]
 !######### JS tweaks ##########
 !##############################
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/120148
+mcrypto.club#%#//scriptlet("adjust-setTimeout", "wpsafe", "*", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/120125
 techboyz.xyz#%#//scriptlet("adjust-setInterval", "_0x", "*", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/120433
@@ -34268,8 +34280,8 @@ insurglobal.xyz#%#//scriptlet("adjust-setInterval", "yuidea-", "*", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/111791
 ! https://github.com/AdguardTeam/AdguardFilters/issues/111673
 ! https://github.com/AdguardTeam/AdguardFilters/issues/111471
-jaatmods.gamepure.in,mad.goiety.com,veganab.co,apkmaven.com,gaminplay.com,choiceappstore.xyz,pn.cgchotbox.com,worldappsstore.xyz,gifans.com,iptvjournal.com,kienthucrangmieng.com,coin-free.com,moddingzone.in,insurance-space.xyz,blognews.in,noithatmyphu.vn,dulichkhanhhoa.net,therootdroid.com#%#//scriptlet("adjust-setInterval", "wpsafe-", "*", "0.02")
-jaatmods.gamepure.in,mad.goiety.com,apkmaven.com,gaminplay.com,choiceappstore.xyz,educationat.xyz,pn.cgchotbox.com,worldappsstore.xyz,tudaydeals.com,toolss.net,7apple.net,gifans.com,iptvjournal.com,kienthucrangmieng.com,coin-free.com,moddingzone.in,insurance-space.xyz,games.blog-forall.com,techydino.net,rajsayt.xyz,jaunpurmusic.info,blognews.in,informaxonline.com,gaminplay.com,noithatmyphu.vn,dulichkhanhhoa.net,paidappstore.xyz,therootdroid.com#%#AG_onLoad(function(){try{var a=document.querySelector('form > input[name="newwpsafelink"]');if(a){var b,c=null==(b=JSON.parse(atob(a.value)))?void 0:b.linkr;if(c){var d=JSON.parse(atob(c.split("?safelink_redirect=")[1]));location.assign(decodeURIComponent(null==d?void 0:d.safelink))}}}catch(e){}});
+mcrypto.club,jaatmods.gamepure.in,mad.goiety.com,veganab.co,apkmaven.com,gaminplay.com,choiceappstore.xyz,pn.cgchotbox.com,worldappsstore.xyz,gifans.com,iptvjournal.com,kienthucrangmieng.com,coin-free.com,moddingzone.in,insurance-space.xyz,blognews.in,noithatmyphu.vn,dulichkhanhhoa.net,therootdroid.com#%#//scriptlet("adjust-setInterval", "wpsafe-", "*", "0.02")
+mcrypto.club,jaatmods.gamepure.in,mad.goiety.com,apkmaven.com,gaminplay.com,choiceappstore.xyz,educationat.xyz,pn.cgchotbox.com,worldappsstore.xyz,tudaydeals.com,toolss.net,7apple.net,gifans.com,iptvjournal.com,kienthucrangmieng.com,coin-free.com,moddingzone.in,insurance-space.xyz,games.blog-forall.com,techydino.net,rajsayt.xyz,jaunpurmusic.info,blognews.in,informaxonline.com,gaminplay.com,noithatmyphu.vn,dulichkhanhhoa.net,paidappstore.xyz,therootdroid.com#%#AG_onLoad(function(){try{var a=document.querySelector('form > input[name="newwpsafelink"]');if(a){var b,c=null==(b=JSON.parse(atob(a.value)))?void 0:b.linkr;if(c){var d=JSON.parse(atob(c.split("?safelink_redirect=")[1]));location.assign(decodeURIComponent(null==d?void 0:d.safelink))}}}catch(e){}});
 veganab.co#%#AG_onLoad(function(){try{var a=document.querySelector('form#wpsafelink-landing > input[name="newwpsafelink"]');if(a){var b,c=null==(b=JSON.parse(atob(a.value)))?void 0:b.linkr;if(c){var d=JSON.parse(atob(c.split("?safelink_redirect=")[1]));location.assign(decodeURIComponent(null==d?void 0:d.safelink))}}}catch(e){}});
 ! https://github.com/AdguardTeam/AdguardFilters/issues/111705
 technoashwath.com#%#//scriptlet("adjust-setTimeout", "/waiting|\.classList\.remove|gotoo/", "*", "0.02")
