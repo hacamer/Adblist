@@ -1,8 +1,8 @@
-! Checksum: tU519bX5wO4nO4MWjN9mwg
+! Checksum: QTgJYFz0oPJ5715/0Tg9WQ
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.0.57.24
-! TimeUpdated: 2022-06-02T06:30:57+00:00
+! Version: 2.0.57.26
+! TimeUpdated: 2022-06-02T09:31:04+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -464,6 +464,7 @@ ruanyifeng.com#%#//scriptlet('prevent-setTimeout', 'checker')
 pansci.asia#@#.ad-container
 ! https://github.com/AdguardTeam/AdguardFilters/issues/120356
 ! https://github.com/AdguardTeam/AdguardFilters/issues/26883
+linetv.tw##.aspect-ratio > img.object-cover + .aspect-ratio-content + div[class^="absolute inset-"][class*="bg-brand"]
 ||itad.linetv.tw/api/v2/vmap?ad_id=$xmlhttprequest,redirect=nooptext
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima3,important,domain=linetv.tw
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=linetv.tw
@@ -6810,7 +6811,6 @@ $popup,third-party,domain=76fengyun.com|88files.net|avsdown.com|downdv.com|downd
 /tanchuan.htm$popup,third-party
 :701/gd_xueersi/$popup
 ||slipdashedundermine.com^$popup
-||taobao.com^$popup,domain=ifenpaidy.com
 ||1024mzs.pw^$popup,third-party
 ||1024wanzhai.$popup,third-party
 ||133gp.com^$popup
@@ -6845,7 +6845,6 @@ $popup,third-party,domain=76fengyun.com|88files.net|avsdown.com|downdv.com|downd
 ||gd.ct10000.com^*/push/$popup,third-party
 ||gotourl.xyz^$popup
 ||greenet.cn^*_popu_$popup
-||haogo.cc^$popup,third-party
 ||hinet.net/product/promotion/$popup
 ||huancaicp.com/?pid=$popup
 ||ieeod0.com^$popup
@@ -11870,6 +11869,8 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
 szxx.com.cn###A0
+ifenpaidy.com##.post > .div
+ifenpaidy.com##.btn-copy + .btn
 szxx.com.cn###A1
 szxx.com.cn###A2
 gpcxw.com###AA2
@@ -12860,7 +12861,6 @@ cnpingpang.com###new-flash
 hc360.com###newAppBox
 hc360.com###newAppBox1
 cam4.tw###newTippingViewer + div[data-ab]
-ifenpaidy.com###new_a
 yaolan.com###newfix-dsp
 kaolashuwu.com###newmodule
 pigai.org###newnotice
@@ -19836,6 +19836,8 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 @@||pstatp.com/cdn/*/jquery/$script,domain=bxwx11.com
 @@||zmtt.net^$script,domain=luoqiuzw.com
 !#Novels ads union
+||bhj691.com^
+||h56trh.site^
 ||gsyc.icu^
 ||csygxdym.com^
 ||daixishuai.pw^

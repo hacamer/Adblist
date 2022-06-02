@@ -1,8 +1,8 @@
-! Checksum: o9TD2+7K2imEp98uQNBHPA
+! Checksum: KzfCLomktuYTkiMV57TzwQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.21.56
-! TimeUpdated: 2022-06-02T08:30:35+00:00
+! Version: 2.1.21.58
+! TimeUpdated: 2022-06-02T09:30:42+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -19418,6 +19418,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
 domonet.jp##.banner_contents > a[href="/app/domo/"]
+ozmall.co.jp##.cmp__banner-item > a[href^="/app/"]
 baitoru.com##.common-appBanner
 baitoru.com#?#div[style="padding:40px 10px 0px;"] > a[href^="https://app.adjust.com"]:upward(1)
 rakuten-card.co.jp##.footerNav__item--app
@@ -21307,6 +21308,8 @@ j-sen.jp##.js-app-banner
 ||j-sen.jp/assets/images/sp/common/go_to_app2.png
 j-sen.jp##.content-top + div.u-mb-7 > div.card > p
 kasikornbank.com###ex-app
+ozmall.co.jp##.oz__headApp
+ozmall.co.jp###pagetop > div.clearfix[style^="display:table;"]
 wiwo.de#$#body.c-app-install--hidden { padding-top: 0px !important; }
 edh.tw###vip-banner
 lazada.co.th###smartbanner-slot
@@ -23251,7 +23254,7 @@ careerkarma.com###fast-track-modal-window
 tv.golfnetwork.co.jp##.code-mc-container-panel
 tv.golfnetwork.co.jp#%#//scriptlet('prevent-addEventListener', 'load', 'setVideoTop')
 chaturbate.com##body > div.tooltip.modern
-gogoanime.mom,discord.com##div[class^="notice-"]
+gogoanime.mom##div[class^="notice-"]
 theoryandpractice.ru##div[class*="popup__popoverWrapper-"]
 waterpikrussia.ru##.popup-banner
 honeygain.com###root > button + div[class^="CardView-"]
@@ -29046,6 +29049,8 @@ theguardian.com##.contributions__adblock
 !
 m.crank-in.net#?#.latest_news > li > article:has(> a[href] > .ci_list_all > .ci_list_all_discription-area > p > .insert_pr)
 crank-in.net##.headline_edit_recommend
+pravda.com.ua##.unit_level_banner
+pravda.com.ua##div[class^="club_banner"]
 beauty.rakuten.co.jp##.SideColumn__banner
 msn.com##div[class^="newsContainer-"]
 deezer.com#?#.alert-wrapper > div > div > div > a[href$="/offers"]:upward(4)
@@ -29977,9 +29982,11 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+tecnoandroid.it##.td-ss-main-sidebar > aside#text-145
 nypost.com##.nyp-zephr-flyout--left
 klymenko-time.com##.single_sources
 medyafaresi.com##.google-news
+ozmall.co.jp##.cmp__banner-item > a[href^="/members/"]
 r.gnavi.co.jp##.topMailRegLink
 domonet.jp##.banner_contents > a[href="/users/entry"]
 townwork.net##.panel-parts-regist-mail
