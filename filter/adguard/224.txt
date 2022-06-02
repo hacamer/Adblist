@@ -1,8 +1,8 @@
-! Checksum: JicXTOdAdmu02dXELyzTKw
+! Checksum: tU519bX5wO4nO4MWjN9mwg
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.0.57.23
-! TimeUpdated: 2022-06-02T05:02:35+00:00
+! Version: 2.0.57.24
+! TimeUpdated: 2022-06-02T06:30:57+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -415,9 +415,8 @@ linovelib.com#$#body[style] { overflow: auto !important; }
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=noopjs,domain=linovelib.com
 ! https://github.com/uBlockOrigin/uAssets/issues/11152
 rjno1.com#%#//scriptlet('prevent-setTimeout', '/_show\(".+?"\); ?\}/')
-rjno1.com#%#//scriptlet("set-constant", "google_global_correlator", "1")
 rjno1.com#%#//scriptlet("prevent-addEventListener", "error", "event.target.tagName")
-rjno1.com#%#(function(){window.addEventListener("load",function(){window.google_image_requests=[];})})();
+rjno1.com#%#(function(){const a=function(a){const b=Math.pow(10,a-1),c=Math.pow(10,a);return Math.floor(Math.random()*(c-b)+b)}(12);window.addEventListener("load",function(){window.google_image_requests=[],window.google_global_correlator=a})})();
 ||c0.ifengimg.com/iis/iis_$script,redirect=noopjs,important,domain=rjno1.com
 @@||c0.ifengimg.com/iis/iis_$domain=rjno1.com
 ||rjno1.com/wp-content/themes/moban/moban-js/show_ads.js$script,redirect=noopjs,important,domain=rjno1.com
@@ -425,7 +424,6 @@ rjno1.com#%#(function(){window.addEventListener("load",function(){window.google_
 !+ NOT_PLATFORM(ios, ext_android_cb)
 ||jspassport.ssl.qhimg.com^$script,redirect=noopjs,domain=rjno1.com
 @@||googletagmanager.com/gtag/js$script,domain=rjno1.com
-rjno1.com#$#div[class^="aqn"] { position: absolute !important; left: -4000px !important; }
 @@||pos.baidu.com^$script,domain=rjno1.com
 ||pos.baidu.com^$script,redirect=noopjs,domain=rjno1.com,important
 @@||cpro.baidu.com/cpro/ui/rt.js$domain=rjno1.com
