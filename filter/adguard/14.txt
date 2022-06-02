@@ -1,8 +1,8 @@
-! Checksum: eNTYOLagbXoUWiTDhbAdvg
+! Checksum: 4i2cF7NEyoK74jdVrdJ3XQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.21.61
-! TimeUpdated: 2022-06-02T13:02:29+00:00
+! Version: 2.1.21.62
+! TimeUpdated: 2022-06-02T13:30:35+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7464,6 +7464,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+truongblogger.top###truongblogger-cookie-ify
 /resources/cookie/onetrust/scripttemplates/*/otBannerSdk.js$domain=myspreadshop.fr|spreadshirt.fr
 petalsearch.com##div[data-track-cid="cookienote"]
 klymenko-time.com##.kt_cookie
@@ -29054,6 +29055,7 @@ theguardian.com##.contributions__adblock
 !
 m.crank-in.net#?#.latest_news > li > article:has(> a[href] > .ci_list_all > .ci_list_all_discription-area > p > .insert_pr)
 crank-in.net##.headline_edit_recommend
+kurkul.com##.text_news > div.widget_image-vertical
 pravda.com.ua##.unit_level_banner
 pravda.com.ua##div[class^="club_banner"]
 beauty.rakuten.co.jp##.SideColumn__banner
@@ -33579,7 +33581,7 @@ biztorg.ru##.subscribeWrap
 it-tehnik.ru##.subscribe__big
 u.today##.subscribe__content
 taker.im##.subscribe__form
-slk.kh.ua,atbmarket.com,giveawayoftheday.com##.subscribe_block
+kurkul.com,slk.kh.ua,atbmarket.com,giveawayoftheday.com##.subscribe_block
 korrespondent.net##.subscribe_button
 aif.ru##.subscribe_content_wid
 beautyhack.ru##.subscribe_fix
@@ -34216,6 +34218,8 @@ newsweek.com##iframe[src="http://sns.europe.newsweek.com/newsletter?popup=1"]
 !######### JS tweaks ##########
 !##############################
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/120530
+truongblogger.top#%#//scriptlet("adjust-setInterval", "/base-timer-label|waktu--/", "", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/120148
 mcrypto.club#%#//scriptlet("adjust-setTimeout", "wpsafe", "*", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/120125
