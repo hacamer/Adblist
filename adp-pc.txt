@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: ojFWmu4T7h0RpQfy5qxLtQ
+! Checksum: 2SDZB1LbfgTChKTg0XRQOw
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202206030142
-! Last Modified: 2022年06月03日 01:42
+! Version: 202206030239
+! Last Modified: 2022年06月03日 02:39
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 74319
+! Total count: 74325
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -1303,6 +1303,7 @@
 ###im_popupFixed
 ###img-txt-wrapper > #title_desc_div
 ###in_ad_col_a
+###incontentAd3
 ###index-ad
 ###index_ad
 ###influads_block
@@ -5067,6 +5068,7 @@
 ##.popupAd
 ##.popup_ad
 ##.post-ad
+##.post-ad-title
 ##.post-ad-type
 ##.post-ads
 ##.post-advertisement
@@ -24635,6 +24637,7 @@ btcbunch.com##+js(abort-on-property-write, TestAd)
 btcmining.best##+js(set-constant, window.ADSController, true)
 btcmovies.xyz,vidsrc.me,123movies-hd.online,dramacool.*,123movies.*,ask4movie.cc,ahwaktv.tv,jujmanga.com,french-stream.lol,otakufr.co,srsone.top,otakudesu.moe,btcads24.com,phimgiz.net,himovies.to,hhdstreams.club,uhdstreams.club,holymanga.net,strims.world,kissanime.*,xmovies8.pw,sektekomik.com,moviesjoy.*,1337x.*,0gomovies.*,vipbox.lc,dlsharefile.com,watch-serieshd.cc,semawur.com,tamilblasters.unblockit.dev,kimcartoon.to,shingekinokyojinepisodes.com,bigg-boss14.su,tinyzonetv.to,ekinomaniak.net,rexdlfile.com,downloadhub.ink,cuturl.in,123movie.date,oploverz.in,manganelo.link,janusnotes.com,hblinks.pro,akwams.*,1337x.is,desiupload.co,leechall.com,allcalidad.la,kissmanga.link,disasterscans.com,masteranime.es,savesubs.com,gdtot.*,mkvcinemas.*,mangakik.com,akwam.*,goo-2o.com,torrentdownloads.me,solarmovie.cr,mirrored.to,europixhd.io##+js(json-prune, *, rot_url)
 btcmovies.xyz,vidsrc.me,123movies-hd.online,dramacool.*,123movies.*,ask4movie.cc,ahwaktv.tv,jujmanga.com,french-stream.lol,srsone.top,otakudesu.moe,btcads24.com,phimgiz.net,himovies.to,hhdstreams.club,uhdstreams.club,holymanga.net,strims.world,kissanime.*,xmovies8.pw,sektekomik.com,moviesjoy.*,1337x.*,0gomovies.*,vipbox.lc,dlsharefile.com,watch-serieshd.cc,semawur.com,tamilblasters.unblockit.dev,kimcartoon.to,shingekinokyojinepisodes.com,bigg-boss14.su,tinyzonetv.to,ekinomaniak.net,rexdlfile.com,downloadhub.ink,cuturl.in,123movie.date,oploverz.in,manganelo.link,janusnotes.com,hblinks.pro,akwams.*,1337x.is,desiupload.co,leechall.com,allcalidad.la,kissmanga.link,disasterscans.com,masteranime.es,savesubs.com,gdtot.*,mkvcinemas.*,mangakik.com,akwam.*,goo-2o.com,torrentdownloads.me,solarmovie.cr,mirrored.to,desustream.me,europixhd.io,news.techrfour.com,streamwire.net,brbushare.com,9kmovies.fit##+js(json-prune, *, pop_type)
+btcwin.online,free-ethereum.ltd,moremoney.io##.mx-auto
 btdb.*##+js(abort-on-property-write, zoneSett)
 btime.com###download
 btime.com##.shop-guid
@@ -27064,6 +27067,7 @@ finance.sina.com.cn##.downLink
 finance.sina.com.cn##.m-s-tab + div
 finance.sina.com.cn##div[class^="side-btns-"]
 finance.sina.com.cn##div[id^="st01_cont0"]
+financemagnates.com##.banner__outer-wrapper
 financemonk.net,rtxkeeda.com,techssting.com,techyneed.com,dropgalaxy.com#@#.adsBox
 financemonk.net,rtxkeeda.com,techssting.com,techyneed.com,dropgalaxy.com#@#.showads
 financemonk.net,techssting.com,techyneed.com,dropgalaxy.com#?##modalpop
@@ -30993,6 +30997,8 @@ mercedesclub.cz#@#.reklama
 mercurynews.com##.header-banners
 merriam-webster.com##.abl
 mesddl.cc###cboxContent
+metabattle.com##div[style="display: flex; justify-content: center; align-items: center; margin-top: 60px; min-height: 250px;"]
+metabattle.com##div[style="min-width: 300px; max-width: 300px; min-height: 250px; max-height: 250px; background: #1d1d1d; overflow: hidden;"]
 metacritic.com##.ad_unit
 metacritic.com#$#.title_bump > .ad_unit + .browse_list_wrapper + div[style="padding-bottom: 30px; display: none !important;"] + .browse_list_wrapper { border-top: none !important; padding-top: 0 !important; }
 metacritic.com#$#.title_bump > .ad_unit + .browse_list_wrapper { border-top: none !important; padding-top: 0 !important; }
@@ -36577,6 +36583,7 @@ web-shpargalka.ru#$#abort-on-property-read Date.prototype.toUTCString
 web.humoruniv.com###wrap_cnts a[href*="/ad_read_"][onmouseover^="ad_choo_"]
 web.yokugames.com,cimavids.live,cimanow.*,2shrt.com,cnvids.com,iogames.army,classic-retro-games.com,ytmp3.cc,fxsolves.com,kodi-addons.club,lastpass.com,jsoneditoronline.org,mgnet.me,laliga-live.to,animeseed.com,robinwidget.com,ascoltareradio.com,bg-radio.org,ceskaradiaonline.cz,ecouterradioenligne.com,emisora.cl,emisora.org.es,emisoras.com.gt,emisoras.com.mx,emisoras.com.py,nederlandseradio.nl,nettiradiot.org,nettradionorge.com,onlineradio.pl,radio.cd,radio.co.ci,radio.co.cm,radio.co.dk,radio.co.ma,radio.co.si,radio.ht,radio.mg,radio.org.ro,radio.org.se,radio.pp.ru,radio.sn,radioalgerie.eu,radioarg.com,radiohallgatas.hu,radioonline.com.pt,radios.co.at,radios.co.cr,radios.co.ni,radios.co.ve,radios.com.bo,radios.com.co,radios.com.do,radios.com.ec,radios.com.pa,radios.com.pe,radios.com.sv,radios.com.uy,radios.hn,radios.hr,radios.org.il,radiosaovivo.net,radiosdecuba.com,radiosdepuertorico.com,radiosonline.be,radiosonline.ch,radiotunisienne.org,radioua.net,radyodinle.fm,surinaamseradio.com###ad
 web2.0calc.com##+js(set-constant, doads, true)
+web3wire.news##.banner-one
 webbrowsertools.com#?#body > .card.description:has(> div[style^="text-align:center;"] > .adsbygoogle)
 webbrowsertools.com#?#div[class^="card shadow"]:contains(Advertisement)
 webcamera.pl#$#.adsbygoogle { position: absolute!important; left: -3000px!important; }
@@ -51490,7 +51497,6 @@ zzbaike.com###topnav
 ||gsspcln.jp^$third-party
 ||gssprt.jp^$third-party
 ||gssxb.com^
-||gstatic.com/firebasejs/*/firebase-app.js$domain=smallseotools.com
 ||gstatic.com/firebasejs/*/firebase-messaging.js$domain=smallseotools.com
 ||gstatic.com/gadf/ga_dyn.js
 ||gstatic.com/gen_204?
