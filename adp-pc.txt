@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: hodEPwZ1zQE7gkMo5QYvyA
+! Checksum: n07mQal7mLal3K741iL7fw
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202206031635
-! Last Modified: 2022年06月03日 16:35
+! Version: 202206031731
+! Last Modified: 2022年06月03日 17:31
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 74314
+! Total count: 74317
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -36902,6 +36902,7 @@ www.facebook.com,web.facebook.com#$#hide-if-matches-xpath './/a/span/span/span[c
 www.facebook.com,web.facebook.com#$#hide-if-matches-xpath './/div[@aria-describedby][@aria-labelledby][@role="article"]//a[@aria-labelledby][@role="link"]//object[@type="nested/pressable"]/a[@aria-label][@role="link"]/ancestor::div[@aria-describedby][@aria-labelledby][@role="article"]'
 www.facebook.com,web.facebook.com#$#hide-if-matches-xpath './/div[@aria-describedby][@aria-labelledby][@role="article"]//a[starts-with(@href,"https://l.facebook")]//object[@type="nested/pressable"]//a[@aria-label][@role="link"]/ancestor::div[@aria-describedby][@aria-labelledby][@role="article"]'
 www.facebook.com,web.facebook.com#$#hide-if-matches-xpath './/div[@aria-describedby][@aria-labelledby][@role="article"]//div[@role="button"]//div[@aria-label][@role="button"]/ancestor::div[@aria-describedby][@aria-labelledby][@role="article"]'
+www.facebook.com,web.facebook.com#$#hide-if-matches-xpath './/div[@aria-describedby][@aria-labelledby][@role="article"]//div[starts-with(@aria-label,"[FB-Employee-Only]")]/ancestor::div[@aria-describedby][@aria-labelledby][@role="article"]'
 www.facebook.com,web.facebook.com#$#hide-if-matches-xpath './/div[@data-pagelet="MainFeed"]//span[not(self::node()[contains(@class," ")])]//a[@aria-label="Sponsored"]/ancestor::div[not(@id)][starts-with(@class,"_")]'
 www.facebook.com,web.facebook.com#$#hide-if-matches-xpath './/div[@id="watch_feed"]//div[@data-pagelet="MainFeed"]//a[@aria-label="label"]//ancestor::div[8][not(@id)][starts-with(@class,"_")]'
 www.facebook.com,web.facebook.com#$#hide-if-matches-xpath './/object[@type="nested/pressable"]/a[@role="link"]/span[contains("|Sponsoreret|Sponsrad|Patrocinado|Sponsa|Bersponsor|Commandité|Ditaja|Gesponsert|Gesponsord|Publicidad|Sponset|Sponsored|Sponsorisé|Sponsorizat|Sponsorizzato|Sponsorlu|Sponsorowane|Реклама|ממומן|تمويل شوي|دارای پشتیبانی مالی|سپانسرڈ|مُموَّل|प्रायोजित|সৌজন্যে|ได้รับการสนับสนุน|内容|贊助|Sponsoroitu|May Sponsor|Được tài trợ|", concat("|", text(), "|"))]/ancestor::span[2]'
@@ -52267,6 +52268,7 @@ zzbaike.com###topnav
 ||home.usg.com^
 ||homedepot-static.com/data-collection/
 ||homedepot.com/YJvc1C/M4Hw/
+||homeieped.cn^
 ||homelycrown.com^$third-party
 ||homesickheron.com^
 ||homestore.com/srv/
@@ -73759,6 +73761,7 @@ zzbaike.com###topnav
 ||ywrcqa.ksdk.com^
 ||ywrcqa.wgrz.com^
 ||ywrcqa.wthr.com^
+||ywsywh.cn^
 ||ywxi.net^
 ||ywxi.net^$third-party,domain=~trustedsite.com
 ||ywxigvzbkqg.com^
