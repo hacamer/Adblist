@@ -1,8 +1,8 @@
-! Checksum: hI6pwmU8uV+Vu1aPXY7R3A
+! Checksum: e9Mrct+jjF/ezx+LaG+/qw
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.0.57.36
-! TimeUpdated: 2022-06-03T04:30:56+00:00
+! Version: 2.0.57.37
+! TimeUpdated: 2022-06-03T07:30:58+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -368,6 +368,8 @@
 ! Bad: ||ad.doubleclick.net^ (should be in adservers.txt)
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/120635
+moeci.com#%#//scriptlet('prevent-setTimeout', '_0x')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/120433
 koyi.pub#@#.main_ad
 @@||koyi.pub/wp-content/plugins/fuzqing-ad-plus/assets/js/*.js
@@ -19855,6 +19857,8 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 ||xfdqxfpm.cn^
 ||qgfwets.cn^
 ||blingbling.wiki^
+||homeieped.cn^
+||ywsywh.cn^
 ##a[href$=".120ydrayy.com"]
 ##a[href*=".1956hl.com/"]
 ##a[href*=".233787.com/"]
