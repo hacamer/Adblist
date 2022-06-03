@@ -1,8 +1,8 @@
-! Checksum: BMu5R3XFLArRO+cZbXuO2g
+! Checksum: yRlL9dGMcw3yAnOP2NyilA
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.30.17
-! TimeUpdated: 2022-06-03T15:30:24+00:00
+! Version: 2.0.30.18
+! TimeUpdated: 2022-06-03T16:30:18+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1276,6 +1276,7 @@ westseattleblog.com#@#.header-ad
 ! Bad: example.org##main > div.ad (should be in specific.txt)
 !
 !
+ladytopi.jp#?#.uk-text-center.uk-margin-bottom > div[id^="div-gpt-"]:upward(1)
 wetter.com#?#div[class*="app-layout"]:has(> div.ad-label)
 radio.*#?##stationpage-holder > div[class]:has(> div[class] > div[id^="RAD_NET"])
 rakuten-card.co.jp#?#.contentWrapper > p.cp-ttl--tag.mb20:contains(PR)
@@ -2505,6 +2506,7 @@ cartoonpornvideos.com,m.economictimes.com,beethovenmaster.com,m.mistrzowie.org,m
 ! ##.ad
 dailynewsonline.jp,yakuji.co.jp,asahi.com,m.winporn.com,slate.com,sankei.com,gameranbu.jp,seiga.nicovideo.jp,m.arukikata.co.jp,setn.com,hateblo.jp,hatenablog.com,hatenablog.jp,hatenadiary.com,hatenadiary.jp,hatenadiary.org,syosetu.org##.ad
 !
+crea.bunshun.jp###wrapper > div[style^="text-align:center ; min-height: 260px"]
 ||openloadpro.com/wp-content/themes/opro/ad/
 openloadpro.com##div[style^="width: 300px; height: 250px"]
 wetter.com##.ad-container
@@ -2559,6 +2561,7 @@ s.cosme.net###cmn-ad-hdr
 mashingup.jp##.p-FloatPost
 irasutoya.com##.mobileadsml
 illust-pocket.com##.adAuto
+bg-mania.jp##.wrapper > div.narrowView-only[style^="text-align:center; min-height"]
 bg-mania.jp###sp_bg-mania_billboard
 city.living.jp##.ad-area-l
 enfant.living.jp##.ad-inread
