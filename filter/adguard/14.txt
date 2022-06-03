@@ -1,8 +1,8 @@
-! Checksum: 79z+tnsrtrBsp8AUkLwUYQ
+! Checksum: E6lj3jz9sr0iCcD6SATT5Q
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.21.72
-! TimeUpdated: 2022-06-03T09:02:30+00:00
+! Version: 2.1.21.74
+! TimeUpdated: 2022-06-03T10:30:38+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2606,6 +2606,7 @@ windowstechblog.nl#$#.onp-sl-blur-area[style="filter: blur(5px);"] { filter: non
 windowstechblog.nl#%#AG_onLoad(function() { window.bizpanda = {}; });
 !
 doomovie-hd.com##.super-sidebar
+delovoymir.biz##.dmpr_bl_mini
 mag.103.by,mag.103.ua##.b-journal-cat-banner
 mag.103.by,mag.103.ua##.b-social-buttons__facebook-like
 news-postseven.com##.w-Share
@@ -7465,6 +7466,9 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+ibispaint.com###agreementPane
+favi.pl#$##cookie-wall { display: none !important; }
+favi.pl#$#body.cookie-wall-visible { overflow: auto !important; }
 teufel.de#$#.privacy-layer { display: none !important; }
 teufel.de#$#.data-privacy-layer-visible { overflow: auto !important; }
 teufel.de#$#.data-privacy-layer-visible body { scrollbar-gutter: auto !important; }
@@ -8079,8 +8083,8 @@ myfitnesspal.com###__next > div.css-1crurom > div.css-1hror0l
 madrugaosuplementos.com.br##.policy-terms
 sescsp.org.br##.container-policy
 sescsp.org.br##.container-policy ~ div.overlay
-thesettlersonline.fr,thesettlersonline.ru,thesettlersonline.es,thesettlersonline.nl,thesettlersonline.cz,thesettlersonline.it,thesettlersonline.com.br,thesettlersonline.pl,diesiedleronline.de,thesettlersonline.com#$##consentNotification { display: none!important; }
-thesettlersonline.fr,thesettlersonline.ru,thesettlersonline.es,thesettlersonline.nl,thesettlersonline.cz,thesettlersonline.it,thesettlersonline.com.br,thesettlersonline.pl,diesiedleronline.de,thesettlersonline.com#$#body { overflow: visible!important; margin-right: 0!important; }
+www.thesettlersonline.*,www.diesiedleronline.de#$##consentNotification { display: none !important; }
+www.thesettlersonline.*,www.diesiedleronline.de#$#body { overflow: auto !important; }
 psc-inc.co.jp,apteka24.ua##.cookie-agreement
 swisstransfer.com#$#module-rgpd-component { display: none!important; }
 swisstransfer.com#$#body { overflow: visible!important; }
@@ -15720,6 +15724,7 @@ privacy.lecker.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent
 privacy.madame.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent-v2")){var g=new MutationObserver(function(){setTimeout(function(){var b=document.querySelector('button.no-children[path="\[0,2,1\]"]');b&&b.click();},300);setTimeout(function(){var c=document.querySelector('div[title="Berechtigte Interessen"]'); c&&c.click();},300);setTimeout(function(){var d=document.querySelectorAll('label[aria-checked="true"] > .off'); d.forEach(function(d){d.click();});},800); var f=document.querySelector('button.no-children[path="\[0,3,0\]"]'); setTimeout(function(){f&&f.click();},1000);});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},3E4)}});
 consent.ladbible.com,consent.gamingbible.co.uk,consent.unilad.co.uk#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var g=new MutationObserver(function(){var b=document.querySelector('button[title*="Accept" i]');b&&(g.disconnect(),b.click())});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
 !
+paypo.pl#%#//scriptlet('set-cookie', 'pp_cookie_information', 'true')
 abo24.de#%#//scriptlet('set-cookie-reload', 'cmp', '0')
 idowa.de#%#//scriptlet("set-constant", "__tcfapi", "noopFunc")
 thomann.de#%#AG_onLoad(function(){if(-1===document.cookie.indexOf('thomann_settings')){var b=new MutationObserver(function(){var a=document.querySelector('button.consent-bar-cta-accept');a&&a.click()});b.observe(document,{childList:!0,subtree:!0});setTimeout(function(){b.disconnect()},1E4)}});
@@ -21497,6 +21502,8 @@ nordbayern.de#$?#.frozen-mobile-body { overflow: visible !important; position: a
 nordbayern.de#$#body > .template-container { display: none !important; }
 nordbayern.de#$#.tp-active { display: none !important; }
 nordbayern.de##.piano_bottom_ribbon
+cryptotabbrowser.com###downloadPopup
+cryptotabbrowser.com##.top-notification-black
 affiliatefix.com##.u-bottomFixer
 bmw-yanase.com##.kotei_column_bnr
 search.brave.com##.callout.svelte-10n95qb
