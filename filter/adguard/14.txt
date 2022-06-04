@@ -1,8 +1,8 @@
-! Checksum: /M47C4f/6D0D3BzWWKAPyQ
+! Checksum: 2OlaL2B9SgSrHzN7GWTcUw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.21.80
-! TimeUpdated: 2022-06-04T16:30:35+00:00
+! Version: 2.1.21.81
+! TimeUpdated: 2022-06-04T17:02:19+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -19441,6 +19441,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+teriyaki.me#?##overlay > div.appeal-modal:upward(1)
 domonet.jp##.banner_contents > a[href="/app/domo/"]
 ozmall.co.jp##.cmp__banner-item > a[href^="/app/"]
 baitoru.com##.common-appBanner
