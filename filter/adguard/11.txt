@@ -1,8 +1,8 @@
-! Checksum: OMaso2jvWmoedmq1JzUgIA
+! Checksum: gEGwnoSZ/sLuVY+H9g+7Pw
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.30.31
-! TimeUpdated: 2022-06-06T11:30:22+00:00
+! Version: 2.0.30.33
+! TimeUpdated: 2022-06-06T18:30:19+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1276,6 +1276,7 @@ westseattleblog.com#@#.header-ad
 ! Bad: example.org##main > div.ad (should be in specific.txt)
 !
 !
+limo.media#?#.article > section.l-block > h3.c-sub-headline:contains(PR)
 beautynation.jp#?#.m-aside-headline:has(> b.title:contains(AD))
 ladytopi.jp#?#.uk-text-center.uk-margin-bottom > div[id^="div-gpt-"]:upward(1)
 wetter.com#?#div[class*="app-layout"]:has(> div.ad-label)
@@ -2507,9 +2508,11 @@ cartoonpornvideos.com,m.economictimes.com,beethovenmaster.com,m.mistrzowie.org,m
 ! ##.ad
 sugoren.com,dailynewsonline.jp,yakuji.co.jp,asahi.com,m.winporn.com,slate.com,sankei.com,gameranbu.jp,seiga.nicovideo.jp,m.arukikata.co.jp,setn.com,hateblo.jp,hatenablog.com,hatenablog.jp,hatenadiary.com,hatenadiary.jp,hatenadiary.org,syosetu.org##.ad
 !
+jj-jj.net##.page-content > div[style="text-align:center;margin-bottom:20px;"]
 tass.ru##adhesion
 joshitsuku.com##.gunosy-ads-spot
 kurashiru.com###footer_banner_app
+limo.media##.m-ad-rectangle
 moguravr.com##.mg-ads-mobile
 app.handelsblatt.com##div[class^="vhb-cls-"]
 app.handelsblatt.com##.vhb-ad-article-fullsize
@@ -2520,6 +2523,7 @@ crea.bunshun.jp###wrapper > div[style^="text-align:center ; min-height: 260px"]
 ||openloadpro.com/wp-content/themes/opro/ad/
 openloadpro.com##div[style^="width: 300px; height: 250px"]
 wetter.com##body div.ad-container
+jj-jj.net##div[style="text-align:center;margin-bottom:20px;"]
 sumaho-susume.com###sp-tokusetsu-bottom
 gressive.jp##.sp-footer-banners
 h-taikendan.net##div[style="height:250px;"]
@@ -5933,6 +5937,8 @@ fplgameweek.com##mobile-sticky-ads
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/121019
+||yandex.ru^$app=ru.swc.yaplakalcom
 ! https://github.com/AdguardTeam/AdguardFilters/issues/119448
 ||m.mradx.net^$app=com.allgoritm.youla
 ! https://github.com/AdguardTeam/AdguardFilters/issues/119419

@@ -1,8 +1,8 @@
-! Checksum: QVYPys0dJb31uj9SrgwbHA
+! Checksum: myXp6sH09rcRcbsVS/itFw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.21.98
-! TimeUpdated: 2022-06-06T17:30:36+00:00
+! Version: 2.1.21.99
+! TimeUpdated: 2022-06-06T18:30:36+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -189,8 +189,10 @@ event.rakuten.co.jp##.Permission
 oxu.az##article.news + h2.news-share-title
 oxu.az##article.news ~ div.news-share-container
 ! Video recommendations
+||fireworkapi1.com/embed/v2/playlists/5m1wZ5/feeds?page_size=10
 ||fireworkapi1.com/embed/v2/channels/whats_trending
 ||fireworkapi.com/embed/v2/publisher_clients/
+||fireworkapi1.com^$domain=jj-jj.net
 ! https://github.com/AdguardTeam/AdguardFilters/issues/109710
 sunnylife.tw##.bottom-side-menu > li > a:not([title="GOTOP"])
 ! https://github.com/AdguardTeam/AdguardFilters/issues/109332
@@ -7478,6 +7480,8 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+roms-download.com#$##kuk { display: none !important; }
+roms-download.com#$#.modal-open { overflow: auto !important; }
 lfu.bayern.de##div[id^="cbanner_"]
 money-viva.jp##.floating_cookie
 getmidas.com##.cookie-contain
