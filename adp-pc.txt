@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: nW3MW1k1zB6BmId8kluK/A
+! Checksum: J08jNUzIQ22rjVCrSjACUg
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202206061247
-! Last Modified: 2022年06月06日 12:47
+! Version: 202206061330
+! Last Modified: 2022年06月06日 13:30
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 74232
+! Total count: 74231
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -1347,6 +1347,7 @@
 ###iqd_mainAd
 ###iqd_rightAd
 ###iqd_topAd
+###js-ad-map
 ###js-image-ad-mpu
 ###js-popup-blocker
 ###js-ysjpp
@@ -6166,6 +6167,7 @@
 ##a[href*="/tg.602.com/"]
 ##a[href*="/v9038.com:"]
 ##a[href*="/winbox.plus"]
+##a[href*="/xapps5.xyz"]
 ##a[href*="/xchina.fun/redirect/ad"]
 ##a[href*="/yb6277.vip"]
 ##a[href*="://mgzs.cdn.bcebos.com/"]
@@ -6602,7 +6604,6 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 $script,subdocument,third-party,websocket,xmlhttprequest,domain=bhshu.net|louzhong8.com|miwens.com
 $script,subdocument,~third-party,websocket,xmlhttprequest,domain=m.666wx.cc|m.ajnnan.com|m.biqugee.com|m.biqusa.com|m.bqg99.cc|m.bswtan.com|m.jmshuwu.net|m.wx-book.com|wodexiaoshuoh.com
 $script,third-party,domain=52movieba.com|66s.cc|ab126.com|audio699.com|dm530.net|kan-tv.com|m.supfree.net|wltmv.com|xiepp.com
-$script,third-party,domain=cilimao.co|cilimao.one
 $script,third-party,domain=dybee.tv
 $script,third-party,domain=faselhd.top,badfilter
 $script,third-party,domain=imgbox.com
@@ -8411,6 +8412,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /Universal-Federated-Analytics.
 /UserTraceCookie?
 /UserTrackingRecord?
+/V.aspx?Bln=$script,third-party
 /VideoAdContent?
 /VideoTracking.
 /View/img/b72890.jpg
@@ -9099,7 +9101,6 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /adscbg/*
 /adsco.$domain=~adsco.com|~adsco.nl
 /adscontroller.
-/adscpc/*
 /adscpv/*
 /adscript.
 /adscripts/*
@@ -10343,8 +10344,6 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /cnwk.1d/*/apex.js
 /coAnalytics.
 /code/native.js?h=
-/code/pop_cpf.
-/code/popjs.
 /cognativex/cn.js
 /cognitive_match/*
 /coherentpath.link/o/*$image
@@ -10847,7 +10846,6 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /ehcorp.tracking.
 /eheat.js
 /eht.js?site_id=
-/eis/diy/ad/*
 /elLOeonora=$xmlhttprequest,script,domain=auto.cz|autorevue.cz|maminka.cz|reflex.cz|ahaonline.cz|blesk.cz|dama.cz|e15.cz|info.cz|mojezdravi.cz|onetv.cz|zeny.cz|zive.cz
 /electrode/api/logger
 /elex.track.
@@ -14799,6 +14797,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /v1/page-hit
 /v1/pixel.js
 /v1/pixel?
+/v1/stats/track
 /v1/tracker.js
 /v2/ads.
 /v2/ads/*
@@ -15240,6 +15239,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /ystat.do
 /ystat.js
 /yt-track-streamer
+/yunfile/offline_banner/*
 /yy_transv/js/cmp.js
 /z.gif?
 /z.inc.php?
@@ -16417,7 +16417,6 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@/hitCount_$xmlhttprequest,domain=on.cc
 @@/home/ads/*$domain=esunbank.com.tw
 @@/html/images/blank.png$image,domain=mocospace.com
-@@/image/ad/*$domain=gashpoint.com
 @@/image/share_$domain=pan.baidu.com
 @@/images/*_share.png$domain=service.weibo.com
 @@/images/ad/*$domain=9588.com|casio.com.cn|dod-tec.com|ourgame.com|pro-partner.com.tw|snh48.com|tingbook.com
@@ -16426,7 +16425,6 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@/img_ad/*$domain=tkec.com.tw
 @@/iplookup.$domain=cankaoxiaoxi.com|dongfeng-nissan.com.cn|huomao.com|loldk.com|sina.com.cn
 @@/jannah/*js/advertisement.js|$~third-party
-@@/jquery/*$domain=dm530.net|sobooks.cc
 @@/js/adblock-advertisement.js$script,domain=imged.pl
 @@/js/adblock.js$script,domain=20minutes.fr|20min.fr
 @@/js/ads.$domain=shrinklink.co
@@ -16538,6 +16536,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||1trackapp.com//static/tracking/$script,domain=1track.ru
 @@||1trackapp.com/static/tracking/$domain=1track.ru
 @@||1trackapp.com/static/tracking/$script,stylesheet,~third-party
+@@||230book.com/images/bqg.js$domain=230book.net
 @@||2doc.nl^*/vpro-analytics/Analytics.js$xmlhttprequest
 @@||2mdn.net/instream/
 @@||2mdn.net/instream/html5/ima3.js$script,domain=cadenadial.com|cbssports.com|earthtv.com|techrepublic.com|zdnet.com
@@ -16611,7 +16610,6 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||9anime.to/assets^
 @@||9anime.vip/ajax/
 @@||9cdn.net^*/js/tracking/$script,domain=nine.com.au
-@@||9zvip.net^$elemhide
 @@||a.f1g.fr/*/adsense.js$script,domain=lefigaro.fr
 @@||a.ligatus.com/?ids=*&t=js$script,domain=lachainemeteo.com
 @@||a.poki.com/prebid/$script,domain=poki-gdn.com|repuls.io
@@ -24048,7 +24046,6 @@ baidu.com##.text-link-ads
 baidu.com##.ts-qrcode
 baidu.com##.under-tips
 baidu.com##.w-question-list[data-sign]
-baidu.com##.wgt-ad-bmc
 baidu.com##.wgt-ad-exp-pic
 baidu.com##.wgt-ads
 baidu.com##.wgt-bottom-union
@@ -24473,6 +24470,7 @@ blog.csdn.net##SCRIPT[src^="https://csdnimg.cn/release/phoenix/vendor/linkCatche
 blog.csdn.net#$##content_views pre, #content_views pre code { user-select:auto!important }
 blog.naver.com###ssp-adpost
 blog.notebooksbilliger.de#@#.category-advertorial
+blog.sina.cn###pl-blog-tbyy
 blog.sina.cn##div.item_hide+div,#pl-blog-artad
 blogfa.com##+js(set-constant, showbanner, noopFunc)
 bloggingguidance.com##+js(window.open-defuser)
@@ -24841,6 +24839,7 @@ ccm.net##.ccm_pugoo__sponso
 ccoo.cn##.n_adbox
 ccoo.cn,gw54.com,hackhome.com,vipcn.com,xgw5.com##.adn
 cctv.com###bgAd_div
+cctv.com##.anime_ewm
 cd1025.com,domainincite.com,europages.co.uk,gamingcloud.com,kpbs.org,phillyvoice.com,speedcafe.com,thegatewaypundit.com,ufile.io,westernjournal.com,wnd.com##.sponsor
 cd1025.com,myfigurecollection.net,prolificnotion.co.uk##.partner
 cdf.cl#@#.textads
@@ -24941,7 +24940,6 @@ chengdu.cn,oeeee.com,ofweek.com##div[class^="ad-"]
 cheshi.com##div[id^="ad_pos_"]
 chess.com##div[class*="-sidebar-ad-"]
 chess24.com##.ad3rdParty
-chexun.com##.ad1100
 chexun.com##.ad794
 chiasecongnghe.com##+js(set-constant, adBlockEnabled, false)
 chiasecongnghe.com#@#.adsBox
@@ -25702,6 +25700,7 @@ dandanzan10.top,nunuyy1.org#@%#//scriptlet('ubo-nowebrtc.js')
 daniao.org,geekpark.net,speedtest.cn##.sponsor
 danishfamilysearch.com#@#iframe[width="300"][height="250"]
 daniweb.com##.dw-inject-bsa
+danlan.org##.ad98090
 dansmovies.com##+js(abort-on-property-read, popunder)
 danzhaowang.com##.qxzx_scho
 daohang.qq.com##.guess
@@ -27510,8 +27509,6 @@ fux.com##+js(set-constant, adbDetectorLoaded, false)
 fux.com##iframe[src^="/nativeexternal/"]
 fux.com##nav > ul > li > a[target="_blank"]:not([href="http://www.fuxhd.com"])
 fux.com,pornerbros.com,porntube.com#?#.shelve > .row-grid > div[class^="col-"]:has(> iframe[src*="external"])
-fuyang.net##.eis_fbox_260:nth-child(n+3)
-fuyang.net##.eis_fbox_980
 fwarycash.moviestar.fun##+js(window.open-defuser)
 fwxgx.com###jPpo_sc
 fwxgx.com##.baibaoxiang
@@ -29116,6 +29113,7 @@ implbits.com#@#.banner_container
 imsdb.pw##+js(window.open-defuser)
 imx.to##.btnimxtoad
 imx.to##div[style^="text-align:center;width:1000px"]
+imydl.com##.banner
 in-page-push.com
 in-trend.biz##body > [id][style^="z-index"]
 in.fo#@#.ads-banner
@@ -33129,6 +33127,7 @@ proporn.com##.refill[style="width:100%;padding-top: 15px;"]
 proporn.com##.trailerspots
 proporn.com,vivatube.com##.livecams
 proprofs.com##.new_ad_wrapper_all
+proptiger.com##div[style^="position:relative;"][style*="height:100px;"]
 prostream.to,pandamovies.me##+js(abort-on-property-read, popunder)
 prothomalo.com##div[class*="_ad-slot-"]
 prothomalo.com##div[class*="_ad_"] > a
@@ -34596,6 +34595,7 @@ sportowefakty.wp.pl#@?#body > [class]:not([id]):matches-css(position: fixed):mat
 sportplus.live##.container__branding-img
 sportplus.live##div[class^="card-banner"]
 sports.qq.com##.ad-wrapper,#focus_jordon,.ad_r_85,div[class|=gg],div.layout.mt35,div[adconfig_charset]
+sports.qq.com##.focus_con > .item > a[href^="http"]:not([href*=".qq."])
 sports.ru,tribuna.com#$#override-property-read Object.prototype.getRandomArrayElement noopFunc
 sports.yahoo.com##div[id*="-AbPromo"]
 sports4u.tv,sports4u.live#@##adblock
@@ -34701,7 +34701,6 @@ stirileprotv.ro##div[id^="topBranding"]
 stjornartidindi.is#@#.adverttext
 stock87.com##a[href^="http"]:not([href*="stock87."]) > img[src*="uploadfiles/image/"]
 stock87.com##div[id^="Javascript"]
-stock87.com##div[style^="position:relative;width:1000px;height:90px;"]
 stockstar.com##.much_ad
 stockstar.com##.siteAd_l
 stockstracker.com#@##googleAds
@@ -36114,7 +36113,6 @@ v.baidu.com,v.duba.com##div[id*="categoryPageColumn"]
 v.ifeng.com##.vAdbox,div.vAdImg,div.newAdImg,div.ad300,div.ad1000,div.vPlayerAdbox,div.main+.scrollcol
 v.qq.com##.nav_link[href^="http"]:not([href*=".qq."])
 v.qq.com##a[href*=".vip.com"]
-v.qq.com##a[href*="amway.com.cn"]
 v.youku.com##.control-phonewatch,#right-title-ad-banner, .kui-watermark-0
 v.youku.com##.laifeng
 v2ex.com##.box:has(.sidebar_compliance)
@@ -36345,8 +36343,6 @@ vjav.*##.hv-block
 vjav.com##+js(set-constant, adver, noopFunc)
 vjav.com,hotmovs.com##.afs_ads + span[class] > div[style=""]:only-child > div:only-child
 vjav.tube,tubepornclassic.com,privatehomeclips.com##.jwplayer > div.afs_ads + span[class]
-vjmedia.com.hk###author-spotlight + .clear + div
-vjmedia.com.hk###text-33
 vjmedia.com.hk##.code-block
 vk.barkov.net##.alert-danger
 vk.com###system_msg
@@ -37076,6 +37072,7 @@ xiushuang.com##.fix_app
 xixiqiu.com
 xmegadrive.com##+js(abort-current-script, document.createElement, ppu_main)
 xmfish.com###marry_laping
+xmfish.com###pw_content > .forum_panel:nth-child(4)
 xmfish.com##.adv-760
 xmfish.com##.advert-entry-list
 xmfish.com##.readCon_right
@@ -37768,7 +37765,6 @@ zzbaike.com###topnav
 ||0351dvd.cn^
 ||03ed9035a0801f.com^
 ||0451106.com^
-||0460.com/js/txtrec.js
 ||04zl.cn^
 ||0512s.com^$third-party
 ||0516bm.com^
@@ -38368,9 +38364,6 @@ zzbaike.com###topnav
 ||3987.com/all_site/
 ||39jz.com^
 ||3a1be44ca9.com^
-||3boys2girls.com/templates/default/2013/life/160b5.js
-||3boys2girls.com/templates/default/2013/randlinks.js
-||3boys2girls.com^$subdocument
 ||3c3c3.com^
 ||3dlivestats.com^$third-party
 ||3dmax8.com/atu4/
@@ -38621,7 +38614,6 @@ zzbaike.com###topnav
 ||5vpbnbkiey24.com^
 ||5y9nfpes.52pk.com^
 ||5ydj.com/images/banner/
-||6.cn/coop/pub/getRand.php?
 ||6064cb4b81.com^
 ||606w.cn^
 ||6080.tv/public/js/m/uaredirectformobile.js
@@ -38893,7 +38885,6 @@ zzbaike.com###topnav
 ||99dqw.com^
 ||99e83e3024.com^
 ||99js.rxys.com^
-||99kubo.tv/static/img/adsfree.png
 ||99l.co^$third-party
 ||99lolo.com^
 ||99mst.com/upfiles/adv/main02.jpg
@@ -39323,7 +39314,6 @@ zzbaike.com###topnav
 ||a39744.actonservice.com^
 ||a39780.actonservice.com^
 ||a39804.actonservice.com^
-||a3p4.com^$third-party
 ||a3p4.net^
 ||a40452.actonservice.com^
 ||a40554.actonservice.com^
@@ -39973,7 +39963,6 @@ zzbaike.com###topnav
 ||acertb.com^
 ||acetrk.com^$third-party
 ||acexedge.com^$third-party
-||acg.tv^$image,object,domain=bilibili.com
 ||achcdn.com^
 ||achievablecpmrevenue.com^
 ||achievehardboiledheap.com^
@@ -42755,7 +42744,6 @@ zzbaike.com###topnav
 ||banners.myads.ge^
 ||bannersnack.com^$third-party,domain=~bannersnack.dev
 ||banstat.nadavi.net^
-||bantf.com^
 ||bantgoau.com^
 ||banxc.com^
 ||banzdw.cn^
@@ -44325,6 +44313,7 @@ zzbaike.com###topnav
 ||cctg.cc^
 ||cctime.com/UpLoadFile/201*.gif
 ||cctv.com/Library/a2.js
+||cctv5.name/images/js/indextop.js
 ||cctvgb.com.cn^$third-party
 ||cctvpic.com/photoAlbum/templet/common/*/game_
 ||ccuyuna.cn^
@@ -46986,6 +46975,7 @@ zzbaike.com###topnav
 ||ddrk.me/vjs-plugins/videojs.das.min.js
 ||ddrsemxv.com^
 ||ddrvjrfwnij7n.cloudfront.net^
+||ddshu.net/a_d_code/
 ||ddwant.cn^
 ||de-mi-nis-ner.info^
 ||de-mi-nis-ner2.info^
@@ -47695,6 +47685,7 @@ zzbaike.com###topnav
 ||doneeinvict.com^
 ||dongchedi.com/motor/ad/
 ||dongesion.carte-gr.total.fr^
+||dongzhixia1688.com^
 ||donkeyleaf.com^
 ||donort.com^
 ||donreach.com^$third-party
@@ -48085,7 +48076,6 @@ zzbaike.com###topnav
 ||e05.xyz^
 ||e0575.com/attachment/image/
 ||e0575.com/index.php
-||e07.xyz^
 ||e1c.curtisswrightds.com^
 ||e1e.io^
 ||e21b1642db801b2a.com^
@@ -48095,7 +48085,6 @@ zzbaike.com###topnav
 ||e377.thestar.com^
 ||e3ol.com/inc/
 ||e40.xyz^
-||e41.xyz^
 ||e48.xyz^
 ||e49.xyz^
 ||e5af61b2d8c19c16.online^
@@ -48380,7 +48369,6 @@ zzbaike.com###topnav
 ||ed.large.nl^
 ||edajin.com^
 ||edchargina.pro^
-||edenhermosa.com^
 ||edgar2al2larngpoer.com^
 ||edge.bredg.com^$third-party
 ||edgeadx.net^$third-party
@@ -48482,7 +48470,6 @@ zzbaike.com###topnav
 ||egmontpublishing.dk/tracking/
 ||egreephu.com^
 ||egscnq.erlich-textil.de^
-||eguo.info^
 ||eharmony.ca/fd/
 ||eharmony.co.uk/bd/
 ||ehbbeikveqgmtj.com^
@@ -49011,6 +48998,7 @@ zzbaike.com###topnav
 ||eqfgc.com^
 ||eqiiqxpl.com^
 ||eqlidke.cn^
+||eqpcc.cn^
 ||eqs.intuit.com^
 ||eqsstvfotd.com^
 ||eqtrack.americashomeplace.com^
@@ -51590,6 +51578,7 @@ zzbaike.com###topnav
 ||gz-bz.cn^
 ||gz-chengkao.com/js/duo.js
 ||gzbwdbipemilou.com^
+||gzckdg.cn^
 ||gzimdi.soloautos.mx^
 ||gzktpf.com^
 ||gzlxvg.papy.co.jp^
@@ -51708,6 +51697,7 @@ zzbaike.com###topnav
 ||haomaojin.com^
 ||haopp02.com/haose/
 ||haopp02.com/js/
+||haoqu99.com/d/haoqu/haoqu
 ||haosesaozi.com^
 ||haosf.com^$third-party
 ||haostat.qihoo.com^
@@ -51769,7 +51759,6 @@ zzbaike.com###topnav
 ||hbbww.com^
 ||hbcygs518.com^
 ||hbears.com^
-||hbfie.org/mb/meng/
 ||hbguzhenyuan.com^
 ||hbgwmkydpjmv.com^
 ||hbhnwy.com^
@@ -51805,6 +51794,7 @@ zzbaike.com###topnav
 ||hd100546c.com^
 ||hd21.*/templates/base_master/js/jquery.shows.min.js
 ||hdacode.com^
+||hdapp1003-a.akamaihd.net^
 ||hdapp1008-a.akamaihd.net^
 ||hdbcode.com^
 ||hdc.maxli.cn^
@@ -51876,6 +51866,7 @@ zzbaike.com###topnav
 ||heibaizhibo.com/_nuxt/87a5efd04908651591f7.js
 ||heiguang.com/_r/2015/js/hrBottomBar.
 ||heiguang.com/f/uad/
+||heimen.xyz^
 ||heirchurchill.com^
 ||heiressplane.com^
 ||heise.de/ivw-bin/ivw/cp/
@@ -52123,6 +52114,7 @@ zzbaike.com###topnav
 ||hjfile.cn/lib/uzhi/uzt.
 ||hjfile.cn/site/hj-lzs/
 ||hjfile.cn/site/js/pop_gift_plugin.js
+||hjgd.ltd^
 ||hjhbhddren.com^
 ||hjjnpx.com^
 ||hjqkwjyu.com^
@@ -52813,7 +52805,7 @@ zzbaike.com###topnav
 ||ikunselt.com^
 ||ilaohuyou.xyz^
 ||ilcdn.fi^*/Bootstrap.js
-||ilczz.cn^
+||ilex.asia^
 ||ilinks.petalcard.com^
 ||ilinouck.net^
 ||ilinxi.cc^
@@ -52942,7 +52934,6 @@ zzbaike.com###topnav
 ||imim.me^
 ||imlidc.cn^
 ||immanalytics.com^$third-party
-||immaohao.cn^
 ||immenseflakespyramid.com^
 ||immensehoney.com^$third-party
 ||immf.me^
@@ -53000,6 +52991,7 @@ zzbaike.com###topnav
 ||imrworldwide.com^$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de
 ||imrworldwide.com^$domain=prosieben.at|prosieben.ch|prosieben.de
 ||imtwjwoasak.com^$third-party
+||imview.cn^
 ||imzahrwl.xyz^
 ||in-appadvertising.com^
 ||in-page-push.com^
@@ -53737,6 +53729,7 @@ zzbaike.com###topnav
 ||italianadirectory.com^$third-party
 ||italiaonline.it/script/ga.
 ||italiaonline.it/script/iol-body.js
+||itc.cn/?prod=rtb&
 ||itc.cn/base/core/gg_
 ||itc.cn/cache/lib/v2/odvmonitor/
 ||itc.cn/hdpv.js
@@ -54522,7 +54515,6 @@ zzbaike.com###topnav
 ||kampanja.bhtelecom.ba^
 ||kampyle.com^$third-party
 ||kan.cc/statics/abs/scripts/abs.
-||kan98.com/statics/js/k2017/kan98.js
 ||kanbook.net/static/js_union/
 ||kancloud.cn/ad/
 ||kangaroobro.com/bn.js
@@ -54635,6 +54627,7 @@ zzbaike.com###topnav
 ||kgftlnvgql.com^
 ||kgimg.com/public/root//images/hardware.jpg
 ||kgpabtukhwrp.com^
+||kgq.ink^
 ||kgthputeelbyp.com^
 ||kgua0o66bcw8.com^
 ||kguke.com^
@@ -54719,7 +54712,6 @@ zzbaike.com###topnav
 ||kkjiaofei.com^
 ||kkmacsqsbf.info^
 ||kkpgv2.xunlei.com^
-||kkpqhqu.cn^
 ||kl-toys.com^
 ||kl0ru78.xyz^
 ||klamm-counter.de^$third-party
@@ -55636,7 +55628,8 @@ zzbaike.com###topnav
 ||liujiaqi.top^
 ||liulianshangmao.top^
 ||liunxgroup.top^
-||liuwangmin.top^
+||liupan.asia^
+||liushuaib.xyz^
 ||liuxue86.com/js/ideng/liuxue-show
 ||live-partner.com/tags?
 ||live.alljobs.co.il^
@@ -55723,6 +55716,7 @@ zzbaike.com###topnav
 ||lkluoz.saraceniwines.com^
 ||lknqfn.furla.com^
 ||lkqd.net^
+||lksw3.top^
 ||lkvkgk.levis.com.tr^
 ||ll.gxsky.com^
 ||ll.hudong.com^
@@ -55776,6 +55770,7 @@ zzbaike.com###topnav
 ||lntvby.banggood.com^
 ||lnvguu.lifood.jp^
 ||lnxfgm.party-calendar.net^
+||lo83cs.space^
 ||lo8ve6ygour3pea4cee.com^
 ||loader.zeroform.com^
 ||loajawun.com^
@@ -55943,6 +55938,7 @@ zzbaike.com###topnav
 ||lolhentai.net/tceb29242cf7.js
 ||loli.io^$domain=kisssub.org
 ||loli.net^$domain=1090ys8.com|520film.net|9kanqq.com|acglover.me|beiwodi.com|hdsky.me|magnet2048.com|nulltm.com|xydai.cn
+||lolmp4.com^$third-party
 ||loloclicks.biz^
 ||lologhfd.com^
 ||lolsefti.com^
@@ -55955,6 +55951,7 @@ zzbaike.com###topnav
 ||longdidi.top^*.js
 ||longinglettuce.com^
 ||longtailvideo.com^*/yourlytics-
+||longxia-designer.top^
 ||longzhu.com/i/api/videos/dailyRecommend?
 ||lonpoyf.cn^
 ||lonreddone.com^
@@ -58263,6 +58260,7 @@ zzbaike.com###topnav
 ||mxcdn.net^$domain=spiegel.de|stern.de
 ||mxcdn.net^$third-party
 ||mxeinvwitjitk.com^
+||mxhbkj.cn^
 ||mxmfb.com/rsps/img/
 ||mxmrt.com^
 ||mxmwqo.biosante.com.br^
@@ -58792,6 +58790,7 @@ zzbaike.com###topnav
 ||nickeeha.net^
 ||nickles.de/ivw/
 ||nicksstevmark.com^
+||nidelove.club^
 ||niematego.tk^$third-party
 ||nificincreasi.club^
 ||niforniadistollie.info^
@@ -59224,7 +59223,6 @@ zzbaike.com###topnav
 ||obeysatman.com^
 ||obfrok.partyking.no^
 ||obhxvb.tmktools.ru^
-||obj9.cn^
 ||objectdressed.com^
 ||oblivionwatcherrebellious.com^
 ||obnarium.com^
@@ -61822,6 +61820,7 @@ zzbaike.com###topnav
 ||qq.com/stats?
 ||qq.com/stdlog
 ||qq.com/tbs/tbsAd/
+||qq0017.xyz^
 ||qqc.co/Webservices/jsParseLinks.aspx$script,third-party
 ||qqc.co/visitScript/$script,third-party
 ||qqddc.com/homeSite/news/js/newsad.js
@@ -62658,6 +62657,7 @@ zzbaike.com###topnav
 ||rlets.com^$third-party
 ||rlinks.one.in^
 ||rlog.popin.cc^
+||rlog.top^
 ||rltd.io/tags/
 ||rm.sina.com.cn/$script,subdocument
 ||rma.homedepot.com^
@@ -62726,7 +62726,6 @@ zzbaike.com###topnav
 ||rongdingwl.cn^
 ||rongedui.com^
 ||rongnews.com^
-||rongnuo.pw^
 ||rontent.pomvideo.cc^
 ||roofprison.com^
 ||roofrelation.com^$third-party
@@ -62821,6 +62820,7 @@ zzbaike.com###topnav
 ||rtbtracking.com^
 ||rtclx.com^
 ||rtk.io^
+||rtkyvd.xyz^
 ||rtl.hu/_stat/
 ||rtl.nl/system/track/
 ||rtmark.net^
@@ -65792,7 +65792,6 @@ zzbaike.com###topnav
 ||sonar6.xy.fbcdn.net.iberostar.com^
 ||songcx.fun^
 ||songrfid.com^
-||songshijiazu.cn^
 ||songsongyun.com/ads/
 ||songssmoke.com^
 ||sonichits.com/tf.php
@@ -65848,6 +65847,7 @@ zzbaike.com###topnav
 ||southmoney.com/page/top
 ||southmoney.com^*/Inc/
 ||souvlatraffic.com^$third-party
+||souyou.org^
 ||sowa.carhartt.com^
 ||sowlettuce.com^
 ||soxnwz.lg.com^
@@ -68521,7 +68521,6 @@ zzbaike.com###topnav
 ||tkd777.cn^
 ||tkelq.genesys.com^
 ||tkgiqyqyyxku.com^
-||tkkdoc.com^
 ||tklaxrrzzo.com^
 ||tklyfe.esthetic-nails.ru^
 ||tkonyrkc.com^
@@ -70099,6 +70098,7 @@ zzbaike.com###topnav
 ||ttxs8.xyz^
 ||ttylmex.cn^
 ||ttyvdilxsuorg.com^
+||ttz.com^$third-party
 ||ttzhongbao.com^
 ||tu.zx110.org^
 ||tuadong.com^
@@ -71027,11 +71027,9 @@ zzbaike.com###topnav
 ||vinuxhome.com^
 ||viously.com^*/mt?
 ||vip.gophersport.com^
-||vip.luanren.com/data/*.gif
 ||vip.panggugu.com^
 ||vip1221.com^$third-party
 ||vipcn.com/hezuo/
-||vipcn.com/js/indexfoot.js
 ||vipdage.com/wp-content/uploads/ad/
 ||vipergirls.to/clientscript/poptrigger_
 ||vipersengoue.com^
@@ -72158,7 +72156,6 @@ zzbaike.com###topnav
 ||wubocheng.top^
 ||wudejia.com^
 ||wuliao.chzsport.cn^
-||wuliao.epro.sogou.com^
 ||wuliao.juqingba.cn^
 ||wumii.cn/ext/relatedItemsWidget
 ||wumii.com/images/pixel.png
@@ -72169,7 +72166,6 @@ zzbaike.com###topnav
 ||wuwaii.com^
 ||wuxiann.top^
 ||wuxibus.com/Image/title
-||wuxie419.xyz^
 ||wuxiqiangheng.com^
 ||wuyicom.top^
 ||wuzitao.xyz^
@@ -73089,6 +73085,7 @@ zzbaike.com###topnav
 ||xxxshake.com/static/js/script.js
 ||xxxvogue.net/_ad
 ||xxyxmdq.cn^
+||xxzj.pro^
 ||xxzzsj.xyz^
 ||xy.nullrefexcep.com^$third-party
 ||xy33.smallable.com^
@@ -73424,6 +73421,7 @@ zzbaike.com###topnav
 ||ymlykj.com/nuxt/static/liveBanner.jpg
 ||ymprove.gmx.net^
 ||ymprove.web.de^
+||ymtrqt.cn^
 ||ymxlm.cc^
 ||ynagqs.vidaxl.pl^
 ||ynbojie.com^
@@ -73578,6 +73576,7 @@ zzbaike.com###topnav
 ||yrqr-ping.com^
 ||yrrsckr.cn^
 ||yrrudp.inven.co.kr^
+||ys.muhoujiemi.com^
 ||ys2000.cdn.bcebos.com^
 ||ys9mw1u.cn^
 ||ysczggasfx.com^
@@ -73740,7 +73739,6 @@ zzbaike.com###topnav
 ||z.nowscore.com^
 ||z.opmnstr.com^$xmlhttprequest
 ||z0uolej1qnxzub1.info^
-||z1.cwbaike.com^
 ||z1.o8h7d.cn^
 ||z1.pclady.com.cn^
 ||z1hihu.xmcimg.com^
@@ -73845,6 +73843,7 @@ zzbaike.com###topnav
 ||zepazupi.com^
 ||zergnet.com^$script,third-party
 ||zero.kz^$third-party
+||zeroao.cn^
 ||zerohedge.com/statistics-ajax?
 ||zeroidtech.com^
 ||zeronaught.com^$third-party
@@ -73906,7 +73905,6 @@ zzbaike.com###topnav
 ||zhev.com.cn/file/weixin/
 ||zhibo8.cc/js/adv-slide-toggle.js
 ||zhiboiot.cn^
-||zhibok8.com/images/*.gif
 ||zhichi08.com^
 ||zhide-edu.cn^
 ||zhifouzhifou.cn^
@@ -74043,6 +74041,7 @@ zzbaike.com###topnav
 ||zmlled.cn^
 ||zmnkduay.com^
 ||zmyuer.com^
+||zn46.com/images/*0x
 ||znctrack.net^$third-party
 ||zndsssp.dangbei.net^
 ||znq9.destinia.mx^
@@ -74159,7 +74158,6 @@ zzbaike.com###topnav
 ||zx123.cn/templates/zx123cs/theme-2015/js/right_xh.js
 ||zxcdn.com^
 ||zxclan.com^
-||zxdb123caducn.xyz^
 ||zxeotdjlzvcsa.com^
 ||zxglpj.cn^
 ||zxhrq.cn^
@@ -74187,6 +74185,7 @@ zzbaike.com###topnav
 ||zyyz.pro^
 ||zyzjpx.cn^
 ||zz.bdstatic.com^
+||zz123.com^$third-party
 ||zzbaowen.com^
 ||zzchuy.cn^
 ||zzcyy.cn^
