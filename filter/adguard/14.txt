@@ -1,8 +1,8 @@
-! Checksum: dqqin9jJ4uOJQA9a7FkF1A
+! Checksum: Ge/1643ROVHqijoZp3BtQw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.21.92
-! TimeUpdated: 2022-06-06T10:30:36+00:00
+! Version: 2.1.21.94
+! TimeUpdated: 2022-06-06T12:30:37+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -198,7 +198,9 @@ planetf1.com#$#.ciam-article-pf1 > div[id^="pp-"] { display: none !important; }
 planetf1.com#$#.ciam-article-pf1 > [style^="display: none;"] { display: block !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/110331
 rlsnet.ru##.attention-modal
+! https://github.com/AdguardTeam/AdguardFilters/issues/120703
 ! https://github.com/AdguardTeam/AdguardFilters/issues/109969
+leparisien.fr###dailymotion-pip-large-viewport
 leparisien.fr###right_rail .dailymotion-cpe
 ! https://github.com/AdguardTeam/AdguardFilters/issues/109576
 seiko-boutique.de#$#body._has-modal { overflow: auto !important; }
@@ -7474,6 +7476,8 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+getmidas.com##.cookie-contain
+suncomfort.com##.cookieHinweis
 munichmag.de##div[x-data="cookieConsent()"]
 soundcloud.com#$#.ot-no-scroll { overflow: visible !important; }
 sportbox.ru##body .gpm-cookie-accepted
@@ -13265,7 +13269,7 @@ track-trace.com#$#.tingle-modal[style="z-index: 1100;"] { display: none!importan
 track-trace.com#$#body { position: absolute!important; }
 voyageforum.com#$#body { overflow: visible!important; }
 voyageforum.com#$#div[id^="overlay"] { display: none!important; }
-wylecz.to#$#body { overflow: visible!important; }
+mamazone.pl,wylecz.to#$#body { overflow: visible !important; }
 ||assets.casualportals.com/gdpr/wall/kz/index.html
 ||consent.dk/consent-test/bootstrap.js
 ||consent.prismamedia.com^
@@ -15705,7 +15709,7 @@ news.google.com#?#header[role="banner"] > div:has(> div > div > span[style="colo
 wakacje.pl#?##__next > div[class^="sc-"] > div:not([class]):not([id]) > div[class^="sc-"]:has(> div[class^="sc-"] > div[class^="sc-"] > div[class^="sc-"] > div[class^="sc-"] > p[class^="sc-"] > a[href="https://www.wakacje.pl/politykaprywatnosci.html"])
 bebeautiful.in,cif.com.tr,domestos.com,dove.com,rexona.com#?##_evidon_banner
 decathlon.hu#?##main-content-container > #container-screen:has(> #container-cookie)
-vitashop.pl,trec.pl,budujmase.pl,wylecz.to#?#body > div[id][class] > div > div > div > a#postpone-targeting-disclaimer-button:upward(4)
+mamazone.pl,vitashop.pl,trec.pl,budujmase.pl,wylecz.to#?#body > div[id][class] > div > div > div > a#postpone-targeting-disclaimer-button:upward(4)
 ~www.wp.pl,~poczta.wp.pl,wp.pl#?##app > div > table > tbody > tr:nth-child(2) > td > span > div:has(> div[class] > div[class] > a[href="http://onas.wp.pl/poufnosc.html"])
 pugski.com#?#.Panels > .Notice.DismissParent:has(> .noticeContent > .noticeCookiesContent)
 forum.gamer.com.tr#?#.p-body-inner > .notices > .notice:has(> .notice-content > a[href="/help/cookies"])
@@ -21352,6 +21356,7 @@ newzit.com#$#div[class*="hasSmartBanner_"] { padding-top: 0 !important; }
 !
 ! Unhide for Android CB if top padding cannot be removed
 !
+lulucos-bys.jp##.m-banner-article-download-app
 josei-bigaku.jp##.app
 7eleven.co.th##div[class^="tab-install__MContainer"]
 kurashiru.com##div[class="SpApp"][id="footer_app"]
@@ -21536,6 +21541,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+thaiticketmajor.com###popup-recommend
 wiwo.de#$#.u-no-scroll { overflow-y: visible !important; }
 wiwo.de#$#div[id^="vhb-reload-popup"] { display: none !important; }
 dailymail.co.uk##div[popupposition="BOTTOM_RIGHT"]
@@ -28134,7 +28140,7 @@ w3cschool.cn#$##header[style*="height:"] { height: 55px !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116020#issuecomment-1137526324
 lenta.ru#$#.scroll-to-site { display: none !important; }
 m.lenta.ru#%#//scriptlet('prevent-addEventListener', 'scroll', 'getBoundingClientRect')
-www.lenta.ru#%#//scriptlet('prevent-addEventListener', 'scroll', 'window.history.pushState')
+lenta.ru#%#//scriptlet('prevent-addEventListener', 'scroll', 'window.history.pushState')
 ! self-promo (mobile)
 !+ NOT_OPTIMIZED
 news.nifty.com##.mod_ad_nifty
@@ -30061,6 +30067,7 @@ proptiger.com##.fixed-sub-bx
 proptiger.com###popupStart
 proptiger.com##.getupdateBox
 proptiger.com##.subscribe_bx
+farmer.pl###axnBodyContainer
 zif-berlin.org##.block-bundle-newsletter
 croissant-online.jp##.mod-subscribemailmagazine
 rud.ua##.subscription-module--popup
