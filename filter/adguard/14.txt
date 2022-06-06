@@ -1,8 +1,8 @@
-! Checksum: 9nLvq7eMIObV6AiHIX6prw
+! Checksum: R/FhlnYIw0JcEmcf0+os5Q
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.21.96
-! TimeUpdated: 2022-06-06T15:30:42+00:00
+! Version: 2.1.21.97
+! TimeUpdated: 2022-06-06T16:30:37+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -5475,6 +5475,7 @@ cc-fan.tv,cn-fan.tv,fox-fan.tv,nf-fan.tv#$#.pub_300x250.pub_300x250m.pub_728x90.
 !######### General element hiding rules ################
 !#######################################################
 !
+##.amgdprcookie-bar-container
 ###machete_cookie_container
 ###cookiehint
 ###cookie-banner-lgpd
@@ -7477,6 +7478,7 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+lfu.bayern.de##div[id^="cbanner_"]
 money-viva.jp##.floating_cookie
 getmidas.com##.cookie-contain
 suncomfort.com##.cookieHinweis
@@ -7573,7 +7575,6 @@ haineshop.ro#$#.gdprModal { display: none !important; }
 hoklartherm.de###Cookie_content
 rehadat-hilfsmittel.de###cookieDialogWrapper
 kku.ac.th##.dpdpa--popup
-heckenpflanzendirekt.de,megaport.de##.amgdprcookie-bar-container
 pcspecialist.*##div[class^="cc-policy"]
 dancovershop.com##.gdpr_overlay
 sweatco.in##div[class^="Root__CookieBanner"]
@@ -23780,7 +23781,7 @@ interia.pl##.survey-popup-container
 ||interia.pl/j/*-surveyPopup-*.js
 troypoint.com#$#html { overflow: visible !important; }
 troypoint.com#$#.cp-popup-container { display: none !important; }
-schieb.de,my-stuwe.de,udemydownload.com##.cp-popup-container
+iptvwire.com,schieb.de,my-stuwe.de,udemydownload.com##.cp-popup-container
 medicaldaily.com,catalea.de,player.one##.grwf2_backdrop
 medicaldaily.com,catalea.de,player.one##.grwf2-wrapper
 hoihoi.whotwi.com#$##cheetah_modal { display: none !important; }
@@ -30065,6 +30066,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+guns.com##.marketing-container
 anura.io##.subscribeSection
 [$domain=mail.ru,path=/^\/$/]#?#div[data-testid="pulse-row"] > div[data-testid="pulse-card"] div[class*="_"] > input[name="email"]:upward(div[data-testid="pulse-card"])
 proptiger.com##.fixed-sub-bx
