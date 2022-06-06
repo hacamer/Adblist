@@ -1,8 +1,8 @@
-! Checksum: HgqozJLZamVZUR1s5kWbjA
+! Checksum: 8c/pamOnAqRYjjPZjJoQPw
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.0.63.21
-! TimeUpdated: 2022-06-06T16:31:29+00:00
+! Version: 2.0.63.22
+! TimeUpdated: 2022-06-06T17:31:28+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -360,6 +360,7 @@ lj_bookmarklet
 !
 eda.ru#?#div[class^="emotion-"]:has(> span:contains(/Понравилась статья?|Расскажи о ней друзьям!/))
 kp.ru#?#div[class^="sc-"]:has(> div[data-share="share_top"])
+zenodo.org#?#.well > h4:contains(Share)
 patreon.com#?#div[offset="[object Object]"] div[class^="sc-"]:has(> div[class^="sc-"] > button[type="button"] > div[class]:not([tabindex]):contains(/Share|Поделиться|Del|Teilen|Compartir|Partager|Condividi|Delen|Udostępnij|Compartilhar|Dela|Поділитися|シェア|分享|공유/))
 ucrazy.ru#?##crazy-content > div.box > div#ya_share:upward(1)
 rai77.com#?##oframeplayer > pjsdiv[style]:has(> pjsdiv[style] > pjsdiv[style] > noindex:contains(Поделиться))
@@ -1517,6 +1518,7 @@ leon.jp##.ar-FooterBox
 finance.yahoo.com##.share-menu-wrapper
 brutus.jp##.o-wrapper > div[class^="u-ml"]
 mart-magazine.com##div[class^="c-article"][class$="Share"]
+getnavi.jp##.relative-links ~ div.meta-wrap
 imgflip.com##.shr-btns
 intex-press.by##.wq-share
 beauty-men.jp###contents > div.container  > section.mb20 > [class^="mod"]
@@ -3811,7 +3813,7 @@ sonperiyot.com##.sgpb-popup-overlay
 merkur.de##.id-Actionbox-items > .id-Actionbox-items-el:not(.id-Actionbox-items-el--comments)
 pons.com##.ce_sharebuttons
 flytothesky.ru##div.textwidget > a[href="https://www.tiktok.com/@andynurrov"]
-citrus-net.jp,jbpress.ismedia.jp,salgoonews.com,ampmedia.jp,blog.nicovideo.jp,blog.benesse.ne.jp,joongboo.com,monews.co.kr,bosa.co.kr,sisafocus.co.kr,afpbb.com##.article-sns
+limo.media,citrus-net.jp,jbpress.ismedia.jp,salgoonews.com,ampmedia.jp,blog.nicovideo.jp,blog.benesse.ne.jp,joongboo.com,monews.co.kr,bosa.co.kr,sisafocus.co.kr,afpbb.com##.article-sns
 av.ru##.b-recipe-detail__sharing
 m.news1.kr##.btn_a_share
 actu-environnement.com##.module_social_pictos
@@ -4772,7 +4774,7 @@ abczdrowie.pl,parenting.pl##.fb-container
 aksam.com.tr##.share-title ~ li
 aksam.com.tr##.gallery-social
 istories.media##.article-soc
-depo.ua,yle.fi##.header-share
+itoen.co.jp,depo.ua,yle.fi##.header-share
 scmp.com##.global-menu-features__share-icon
 scmp.com##.global-menu-features__share-count
 fontanka.ru##ul > li[data-rg-name]
