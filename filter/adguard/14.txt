@@ -1,8 +1,8 @@
-! Checksum: 4yFFwX/OW3mwiddyxZ5BFg
+! Checksum: Sc4BNyzM3xSnpH4Z/VLA7g
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.21.85
-! TimeUpdated: 2022-06-06T03:30:36+00:00
+! Version: 2.1.21.86
+! TimeUpdated: 2022-06-06T04:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7466,6 +7466,8 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+klassik-stiftung.de#$#.cookiebanner { display: none!important; }
+klassik-stiftung.de#$#body { overflow: auto!important; }
 zbfs.bayern.de##.wrap-cookie-dialogue
 zif-berlin.org##div[id="overlay"][class="cookie-consent-show"]
 ingelheim.de###banny-banner-outer
@@ -15735,6 +15737,7 @@ privacy.lecker.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent
 privacy.madame.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent-v2")){var g=new MutationObserver(function(){setTimeout(function(){var b=document.querySelector('button.no-children[path="\[0,2,1\]"]');b&&b.click();},300);setTimeout(function(){var c=document.querySelector('div[title="Berechtigte Interessen"]'); c&&c.click();},300);setTimeout(function(){var d=document.querySelectorAll('label[aria-checked="true"] > .off'); d.forEach(function(d){d.click();});},800); var f=document.querySelector('button.no-children[path="\[0,3,0\]"]'); setTimeout(function(){f&&f.click();},1000);});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},3E4)}});
 consent.ladbible.com,consent.gamingbible.co.uk,consent.unilad.co.uk#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var g=new MutationObserver(function(){var b=document.querySelector('button[title*="Accept" i]');b&&(g.disconnect(),b.click())});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
 !
+avell.com.br#%#//scriptlet('set-cookie', 'cookiesConsent', 'true')
 paypo.pl#%#//scriptlet('set-cookie', 'pp_cookie_information', 'true')
 abo24.de#%#//scriptlet('set-cookie-reload', 'cmp', '0')
 idowa.de#%#//scriptlet("set-constant", "__tcfapi", "noopFunc")
@@ -16728,6 +16731,8 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/120927
+klassik-stiftung.de#@#.cookiebanner:not(body)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/120329
 @@||assets.jimstatic.com/cookieControl.js$domain=quijote-kaffee.de
 ! https://github.com/AdguardTeam/AdguardFilters/issues/120168
@@ -19510,6 +19515,7 @@ m.guancha.cn##.g_sea
 ||static.curazy.com/image/banner_curazy_app.png
 curazy.com,ebay.*,locari.jp##.app-download-banner
 locari.jp##.in-app
+locari.jp##.app-install-banner
 liggatelecom.com.br##.bl_app
 travel.navitime.com##.l-footer-app
 travel.navitime.com##.app-presents-frame
