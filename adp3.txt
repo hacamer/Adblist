@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: 0gtTE0+njY3Xjd+n4ZEtCg
+! Checksum: WlBfSO+9szfzEFRpwzrhLg
 ! Title: AdFilters 
 ! Expires: 12 hours
-! Version: 202206071245
-! Last Modified: 2022年06月07日 12:45
+! Version: 202206071328
+! Last Modified: 2022年06月07日 13:28
 ! Homepage: https://github.com/hacamer/Adblist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、EasyPrivacy、大萌主
 ! 仅合并规则，未做其余任何处理
 ! 如有任何疑问、意见或建议，请反馈至：杏梢
 !
-! Total count: 42850
+! Total count: 42819
 ###ChapterView > .slide-baidu
 ###SOHU_MAIN > .module-cmt-float-bar
 ###TopAdvert
@@ -520,6 +520,7 @@
 ##.svg-icon + #player_pause
 ##.swiper-wrapper.leo-source-cho
 ##.tab-content + .col-pd
+##.table_ad
 ##.text-ad
 ##.textAd
 ##.textad
@@ -801,7 +802,6 @@
 ##a[href*="/entry/register/?i_code="]
 ##a[href*="/hth107.com/"]
 ##a[href*="/kanxiuren.com?"]
-##a[href*="/kst6632.com/"]
 ##a[href*="/leyu001.ee"]
 ##a[href*="/shishangta.cn"]
 ##a[href*="/tg.602.com/"]
@@ -845,7 +845,6 @@
 ##a[target="_blank"] > img[height="60px"][src*="qlogo.cn"][src$=".png"]
 ##body .has-ad
 ##body > div[style="display:none;"] + div[style="display:none;"] + div[id][class][style^="background-color:"]
-##button[onclick*=".xacg.info/"]
 ##center > a[target="_blank"] > img[style="padding- bottom:5px;width:960px;height:120px;"]
 ##center > a[target="_blank"] > img[style="padding- bottom:5px;width:960px;height:60px;"]
 ##center > p > a[target="_blank"] > img[width="728px"][height="90px"]
@@ -8013,6 +8012,8 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 163.com##.gg200,.gg300,.gg200x300,[class$="_ad"],div.mod_ad_text,#bobo,#layout-bobo,.txt-bobo,#js_a_bobo,.bobo-area,.imglist-bobo-app,#layout-love,#layout-shop,.top-banner,div.post_adtop_main,div.post_adtop_side,a.tie-ad-bar,#fixed_foot_ad,#js-epTabDS,#js-epBobo
 163.com##.gkk_bj_yw
 163.com##.gkk_default_yw
+163.com##.idx_textlink_ad
+163.com##.idx_tonglan_ad
 163.com##.idx_top_ad
 163.com##.imglist-bobo-app
 163.com##.kaola-ad
@@ -8583,6 +8584,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@/adsbygoogle.$domain=moa.tw
 @@/adsense/*$domain=piseneasy.com|taobao.com
 @@/adslider/*$domain=firstbank.com.tw
+@@/adsshow/*$domain=veryeast.cn
 @@/advert_$domain=pisen.com.cn|wb.qq.com
 @@/advertise/*$domain=ceair.com|sfbuy.com
 @@/advertisement.js$domain=gimhoy.com
@@ -9033,6 +9035,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||connect.facebook.net^*/fbevents.js$domain=elinoi.com
 @@||console.statsig.com/_next/static/chunks/pages/$script,~third-party
 @@||content.adunity.com/aulib.js$script,domain=b1tv.ro
+@@||coolinet.com^$generichide
 @@||coremetrics.com*/eluminate.js
 @@||coronavirus-monitor.ru/scripts/statistics/statistics.$script,~third-party
 @@||count.taobao.com/counter$script
@@ -10738,11 +10741,6 @@ chinacsbs.com##a[href^="/plus/view.php?aid="]
 chinafix.com##div[id^="diy_vk_ad_"]
 chinairn.com##.bizrpt
 chinakaoyan.com##.side-wx
-chinamedevice.cn##.ads_img
-chinamedevice.cn##.logo_ads
-chinamedevice.cn##.news_ylqx
-chinamedevice.cn##.news_ylqx3
-chinamedevice.cn,hgitv.com##.gg12
 chinanews.com##div.advert_nav,#news_top_advert,#qizhi_div980,#zhengwenvideo~*
 chinanews.com.cn###ad_right_fc1
 chinanewsx.com##a[href="/about/"]
@@ -11479,8 +11477,6 @@ gushiwen.cn###threeWeixin2
 gw54.com,jojf.cn,xgw5.com##.index-ad
 gw54.com,xbyuan.com,xgw5.com##.dad
 gxeea.cn##.m-wrap-school
-gzmama.com###zone_banner_1_new
-gzmama.com###zone_index_fullcolumn_2
 gzmama.com###zone_left_couplet
 gzmama.com###zone_right_couplet
 gzmama.com###zone_top_fullcolumn
@@ -11512,6 +11508,7 @@ hao123.com###bottom-be
 hao123.com###guesslikesite
 hao123.com###lefttip
 hao123.com###mingzhanresource
+hao123.com###puzzleBox
 hao123.com###slidetoolbarContainer
 hao123.com###topbeWrapper
 hao123.com##.bar-text
@@ -11523,7 +11520,6 @@ hao123.com##.pagetop > .popup
 hao123.com##.recommend-link
 hao123.com##.siye
 hao123.com##.title-wrap + .right-img
-hao123.com##.top-test
 hao123.com##.tvtip
 hao123.com##.wm
 hao123.com,jiegeng.com###siye
@@ -11889,7 +11885,6 @@ jb51.net##.gsdw
 jb51.net##.idc3
 jb51.net,makaidong.com###txtlink
 jbtalks.cc##.threadad
-jbtalks.cc,jbtalks.com##.jbt-ad-region
 jc001.cn##.ADS
 jd.com###m_common_tip
 jd.com###toolbar-qrcode
@@ -11957,8 +11952,6 @@ jjmmw.com,qq.com##.fixed-ad
 jjwxc.net##[id^="adp_"]
 jlmhk.com##.bn
 jlpcn.net##.vodAd
-jmbbs.com###xjj_jmbbs2015_01
-jmbbs.com##.middle_guanggao
 jmbbs.com##img[width="1100"]
 jmw.com.cn##.coupon
 jmw.com.cn##.leftCouplet
@@ -12071,6 +12064,7 @@ leiling.org##.ad__single-double-rectangle-wrap
 leiphone.com,sina.com.cn##.top-banner
 lenniu.com##.caClass
 lenovo.com.cn##.AdSite
+lenovo.com.cn##.ad-calender
 lenovo.com.cn##.coffee-top
 lenovo.com.cn##.game-bd
 lenovo.com.cn##.video
@@ -12518,8 +12512,8 @@ pcauto.com.cn##div[id^="middle_ad_"]
 pcbaby.com.cn###jpopWinBottom
 pcbeta.com###sitefocus
 pcccp.cn##DIV[id^="xydl"]
+pcdown.net##.sort_list > .clearfix:first-child
 pcgames.com.cn##.aFollowb
-pchome.com.tw##div[style*="982"][style*="85"]
 pchome.net###pchome_970_90_a
 pchome.net###rightbar
 pclady.com.cn##.mdxyAppEnter
@@ -13135,7 +13129,6 @@ tie.163.com###top-banner
 tieba.baidu.com##.j_feed_li[fid="3665221"]
 tiebac.baidu.com,tieba.baidu.com,jump.bdimg.com,jump2.bdimg.com##.tbui_aside_float_bar~*, div[ad-dom-img],#thread_list>li:not(.j_thread_list):not(.thread_top_list_folder),div[data-rank],a.j_click_stats
 tiexue.net##a[href*=".junp"]
-tiexue.net##a[href*="game.tiexue."]
 tiexue.net##div[id^="Baidu_"]
 ting56.com##.h1000
 tingroom.com###ifram_563
@@ -13319,8 +13312,6 @@ wasu.cn##div[class^="play_ads"]
 waust.at
 wbiao.cn###popupImgCorner
 wbiao.cn##.wb-panel
-wcjbb.com###frame37boCx
-wcjbb.com###frameo834m9
 weather.com.cn###adtop_r
 weather.com.cn##.tong
 weather.com.cn##.tuiguang
@@ -13594,8 +13585,6 @@ yes-news.com##.new-sidebar-today-300ad
 yes-news.com##.notification
 yesky.com###flayer
 yesky.com###gfapp1
-yesky.com##.down_referer
-yesky.com##.down_referer + .bottom
 yesky.com##.down_referrer
 yesky.com##div[class^="ad1"]
 yesky.com##div[class^="ad2"]
@@ -13971,7 +13960,6 @@ zzbaike.com###topnav
 ||1337x.to/ip3.php
 ||137.175.69.92^
 ||138lm.com^
-||138vps.com/fa/
 ||139site.com^$third-party
 ||13hangpifa.com^
 ||13wn.com^
@@ -14131,7 +14119,6 @@ zzbaike.com###topnav
 ||233.com/js/side.htm
 ||2345.com/cnxh/
 ||2345.com/duoteimg/duotehtml/$script
-||2345.com/images/m/global/new-hongbao/
 ||2345.com/js/index/activity/
 ||2345.com/js/m/bottom.float.adver.js
 ||2345.com/js/m/common/top_information.js
@@ -14254,7 +14241,6 @@ zzbaike.com###topnav
 ||3332219.com^
 ||3332332.com^
 ||3332655.com^
-||3332855.com^
 ||3336637.com^
 ||3336639.com^
 ||3336653.com^
@@ -14457,6 +14443,7 @@ zzbaike.com###topnav
 ||51showmy.com^
 ||51sm.vip^
 ||51sxzz.com^
+||51test.net/js_new/a/right_wx.js
 ||51testing.com/templates/default/images/jx2_a.jpg
 ||51toubu.com^
 ||51xuediannao.com/uploads/un/
@@ -14553,7 +14540,6 @@ zzbaike.com###topnav
 ||5mn.net^$third-party
 ||5p0utbv2mjq1.www.earthclassmail.com^
 ||5pub.com^
-||5s98.com/img/
 ||5y9nfpes.52pk.com^
 ||5ydj.com/images/banner/
 ||60198956.jcpecb.com^
@@ -17596,7 +17582,6 @@ zzbaike.com###topnav
 ||b1.51yangsheng.com^
 ||b1.b2b168.com^
 ||b1.b2b168.net^
-||b1.baomihua.com^
 ||b1.cdn.mh3666.com/html/
 ||b1.puxuewang.cn^
 ||b1.qqjay.com^
@@ -17956,7 +17941,6 @@ zzbaike.com###topnav
 ||beareyes.com.cn/2/cat/js/*_right
 ||bearsg.cn^
 ||beastbeef.com^
-||beatbase.live^
 ||beautifulhobbies.com^
 ||bebelait.com^
 ||bebj.com^$third-party
@@ -19045,7 +19029,6 @@ zzbaike.com###topnav
 ||china.com.cn/2016ads/$subdocument
 ||china.com.cn/statics/js/js_vag/
 ||china.com/images/milapp
-||china.com/zh_cn/etc/gghead
 ||china.gzxxty168.com^
 ||chinaacc.com/lamu/*dl-
 ||chinaacc.com/lamu/*piao
@@ -19065,6 +19048,7 @@ zzbaike.com###topnav
 ||chinanews.com/fileftp/2016/08/2016-08-04/U194P4T47D36220F967DT20160804155100.jpg
 ||chinanewsx.com^$csp=script-src 'self' * 'unsafe-eval'
 ||chinaok168.biz^
+||chinapress.com.my/public/static_resources/img/*636x105.
 ||chinaqking.com/images/newPage/JLW.jpg
 ||chinaqking.com/images/qkw/jobApply1.jpg
 ||chinasexq.com/js/tpgg
@@ -20190,6 +20174,7 @@ zzbaike.com###topnav
 ||cquotient.com^$third-party
 ||cqut.ltd^
 ||cqvip.com/viewserver/ViewAD
+||cqwzjx.cn^
 ||cqyhd.com^
 ||cqyijiu.cn^
 ||cr-nielsen.com^$third-party
@@ -20638,6 +20623,7 @@ zzbaike.com###topnav
 ||dai18.shangc.net^
 ||daifez.thebay.com^
 ||daikuanfanli.com^
+||dail01.wanmeilr.com^
 ||dailiq.cn^
 ||dailiqing.net^
 ||dailycaller-alerts.com^$third-party
@@ -21481,7 +21467,6 @@ zzbaike.com###topnav
 ||drugs.com/img/pixel.gif
 ||drupal.org/VnPBBfwe/init.js
 ||drvive.lamoda.ru^
-||drvsky.com/js/jolimark.gif
 ||drydrum.com^$third-party
 ||ds-aksb-a.akamaihd.net^
 ||ds-aksb-a.akamaihd.net^$domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de
@@ -21652,7 +21637,6 @@ zzbaike.com###topnav
 ||e.used.ca/event
 ||e.viously.com^
 ||e.zg-api.com/event$domain=zillow.com
-||e05.xyz^
 ||e0575.com/attachment/image/
 ||e0575.com/index.php
 ||e1c.curtisswrightds.com^
@@ -24108,7 +24092,6 @@ zzbaike.com###topnav
 ||gotourls.bid^
 ||gotrk.net^$third-party
 ||gou1zhe.com^
-||goukan.xyz^
 ||goutee.top^$third-party
 ||goutong.baidu.com^
 ||gouwupianyi.cn^
@@ -24621,7 +24604,6 @@ zzbaike.com###topnav
 ||hentaicounter.com^$third-party
 ||hepburn.net.cn^
 ||heraldandtimeslabs.com/sugar.js
-||herman.ink^
 ||heroesdom.com^$third-party
 ||heroku.com/?callback=getip$third-party
 ||hesconet.actonservice.com^
@@ -24956,7 +24938,6 @@ zzbaike.com###topnav
 ||hsbianma.com/Ad/
 ||hsbianma.com/content/images/*-ad-
 ||hsbkr.com^
-||hsc.ink^
 ||hscta.net^$third-party
 ||hsdn.org^$third-party
 ||hsforms.com^*/counters.gif
@@ -25064,7 +25045,6 @@ zzbaike.com###topnav
 ||hwpub.com^$third-party
 ||hwx.xazbts.com^
 ||hwyytk.verabradley.com^
-||hx9.ink^
 ||hxadt.com^
 ||hxbt.alading123.com^
 ||hxiak.com^
@@ -25231,6 +25211,7 @@ zzbaike.com###topnav
 ||idqwqm.kkday.com^
 ||idtargeting.com^$third-party
 ||idubwz.cn^
+||idv.st/dns/bar.htm
 ||idx.lat^
 ||iedc.fitbit.com^
 ||ieeod0.com^$popup
@@ -27040,6 +27021,7 @@ zzbaike.com###topnav
 ||kuaiyunbd.com^
 ||kuakao.com/index.php?m=content&c=index&a=show_ad
 ||kuakao.com:6053/floatcard?
+||kuamei.cloud^
 ||kuk8.com^$third-party
 ||kukanlm-lubu1.com^
 ||kukanlm-my1.com^
@@ -27146,7 +27128,6 @@ zzbaike.com###topnav
 ||lalaziosiamonoi.it/pixel
 ||lameletters.com^$third-party
 ||lamoda.ru/z?
-||lampholder.tw^
 ||lamplow.com^$third-party
 ||lancdn.com/tmp3/GG_Notice.png
 ||lancenet.com.br/pw.js
@@ -27388,7 +27369,6 @@ zzbaike.com###topnav
 ||lianaiyx.com/d/js/cst/
 ||liangpinge.com^$third-party
 ||liangziweixg.com^
-||lianmen1.joyyang.com^
 ||lianmeng.360.cn^$domain=~lianmeng.360.cn
 ||lianmeng.la/abc/
 ||lianmeng.xgxhy.com^
@@ -27968,7 +27948,6 @@ zzbaike.com###topnav
 ||lovelydrum.com^$third-party
 ||loveshang.com/api.php?mod=ad&adid=custom_
 ||lovexia.top^
-||loveyour.name^
 ||lowermybills.actonsoftware.com^
 ||lowgxl.yokumoku.jp^
 ||lowlocket.com^$third-party
@@ -29882,7 +29861,6 @@ zzbaike.com###topnav
 ||mwaldd.laudius.nl^
 ||mwfpyr.santistadecora.com.br^
 ||mwor.gq^
-||mwrf.net/images/mrf/
 ||mwstats.net^$third-party
 ||mwxema.galerieslafayette.com^
 ||mwzbp.iask.com.cn^
@@ -30002,7 +29980,6 @@ zzbaike.com###topnav
 ||myzk1.com^
 ||mzbcdn.net/mngr/mtm.js
 ||mzjruy.yocoyoco.com^
-||mzya5718.xyz^
 ||mzyfz.*/modules/46/
 ||n-analytics.io^$third-party
 ||n.35kds.com^
@@ -30043,7 +30020,6 @@ zzbaike.com###topnav
 ||nanopress.it/lab.js
 ||nanostats.nanopress.it^
 ||nanovisor.io^$third-party
-||nantongle.com^
 ||nappyattack.com^
 ||narutom.com/stat.js
 ||nashlin.top^
@@ -30100,7 +30076,6 @@ zzbaike.com###topnav
 ||ndg.io^$third-party
 ||ndtzx.com^
 ||nduad811.com^
-||ndusa.cn^
 ||neatorama.com/story/view/
 ||neatstats.com^$third-party
 ||necessarywax.com^
@@ -30482,7 +30457,6 @@ zzbaike.com###topnav
 ||ntpnmx.zlato.ua^
 ||ntt.postserviceuk.com^
 ||nturnm.unisport.dk^
-||ntwaafv.cn^
 ||ntxiru.com^
 ||ntzfly.cn^
 ||nuconomy.com^$third-party
@@ -32308,7 +32282,6 @@ zzbaike.com###topnav
 ||qiguoguo.net^
 ||qihucdn.com/11.0.1.js$script
 ||qiji1.jdwx.info^
-||qijiuwangluo.ltd^
 ||qilanxiaozhu.*/data/attachment/portal/
 ||qilashou.com^
 ||qilungroup.cn^
@@ -32482,7 +32455,6 @@ zzbaike.com###topnav
 ||qwant.com/v2/api/ux/surveys?
 ||qwblog.cn/localfile/20200612230036.gif
 ||qwe0231141.bj.bcebos.com^
-||qweewq2021.site^
 ||qwsad.com^
 ||qwxcs.com^$third-party
 ||qwzpslp.cn^
@@ -33321,7 +33293,6 @@ zzbaike.com###topnav
 ||samantharegina.com^
 ||sambaads.com^$third-party
 ||samc.frankly.ch^
-||same*.stockstar.com^
 ||same.chinadaily.com.cn^
 ||same.eastmoney.com^
 ||samestretch.com^
@@ -34119,6 +34090,7 @@ zzbaike.com###topnav
 ||shucaihangjia.com^
 ||shui5.cn^*/ima/gg
 ||shuihulu.com^$third-party
+||shujuwu.com^$third-party
 ||shumanwu.info^
 ||shunlidl.online^
 ||shunlige.com^
@@ -35660,6 +35632,7 @@ zzbaike.com###topnav
 ||sonar6.xy.fbcdn.net.iberostar.com^
 ||songcx.fun^
 ||songrfid.com^
+||songshijiazu.cn^
 ||songsongyun.com/ads/
 ||songssmoke.com^
 ||sonsang.cn^
@@ -39809,6 +39782,7 @@ zzbaike.com###topnav
 ||uzzf.com/skin/know/
 ||v-h.tv/pixel/
 ||v-links.net^$third-party
+||v-vlog.cn^
 ||v.2pogg4c.cn^
 ||v.acgshenshicha.cn^
 ||v.baidu.com/staticapi/videoAd.json?
@@ -40594,6 +40568,7 @@ zzbaike.com###topnav
 ||welt-der-links.de^$third-party
 ||wemdsm.com^
 ||wemfbox.ch^$third-party
+||wendangku.net/js/common.js
 ||wendellyu.com/banner/
 ||wenhua.jiaoshou.com^
 ||wenku.baidu.com/browse/interface/getrec?
@@ -40661,7 +40636,6 @@ zzbaike.com###topnav
 ||why3.inseec.education^
 ||whycywhivu.pro^
 ||whytoss.com^
-||whzz.shop^
 ||wickedreports.com^$third-party
 ||widerplanet.com^$third-party
 ||widgeo.net/compteur.php?
@@ -41595,7 +41569,6 @@ zzbaike.com###topnav
 ||xe-2-1-3--bbr2-dfw.net.zooplus.de^
 ||xeeptq.dyatkovo.ru^
 ||xenaly.sozcu.com.tr^
-||xerhibx.cn^
 ||xfast.host^$third-party
 ||xfdqxfpm.cn^
 ||xfei.top^
@@ -41670,7 +41643,6 @@ zzbaike.com###topnav
 ||xiaopi.com/statics/skin_js/jquery.posrj.js
 ||xiaopinwo.com^
 ||xiaoshuoyun.cn^
-||xiaoxiangmovie.com^
 ||xiaoyida.com^$third-party
 ||xiaoz.top/assets/imgurl.js
 ||xiarikui08.com^
@@ -42061,7 +42033,6 @@ zzbaike.com###topnav
 ||yhvewh.aboutyou.ro^
 ||yhyped.stolplit.ru^
 ||yi.ximizi.com^
-||yiangds.com^
 ||yibaosenlin.top^
 ||yichunrz.com^
 ||yidcd.cn^
@@ -42528,7 +42499,6 @@ zzbaike.com###topnav
 ||zgystsd.com^
 ||zgzxs.weathercn.com^
 ||zhaibei112.top^
-||zhaiiker.com^*_ads&
 ||zhan.com^*/middle_ad_modal.js
 ||zhangdujia.com^
 ||zhangfeiyijuepifa.com^
@@ -42812,7 +42782,6 @@ zzbaike.com###topnav
 ||zz.bdstatic.com^
 ||zz.bdustatic.com^
 ||zz.imiqian.com^
-||zz123.com^$third-party
 ||zzbaowen.com^
 ||zzchuy.cn^
 ||zzcyy.cn^
