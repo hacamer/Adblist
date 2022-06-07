@@ -1,8 +1,8 @@
-! Checksum: QWO6RECoiV6LfTLIbRxCfg
+! Checksum: fbmbLGlpHIiQC2UXZ5iNyg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.22.1
-! TimeUpdated: 2022-06-07T06:30:34+00:00
+! Version: 2.1.22.3
+! TimeUpdated: 2022-06-07T08:30:38+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -16757,6 +16757,8 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/121065
+@@||cdn.iubenda.com/cs/tcf/safe-tcf-v2.js$domain=ansa.it
 ! https://github.com/AdguardTeam/AdguardFilters/issues/120927
 klassik-stiftung.de#@#.cookiebanner:not(body)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/120329
@@ -21551,6 +21553,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+latimes.com##body > metering-bottompanel
 thaiticketmajor.com###popup-recommend
 wiwo.de#$#.u-no-scroll { overflow-y: visible !important; }
 wiwo.de#$#div[id^="vhb-reload-popup"] { display: none !important; }
@@ -31505,7 +31508,7 @@ sklum.com##.c-home-newsletter
 tip-berlin.de##.mc4wp-form[data-name^="Newsletter"]
 baristainstitute.com##.social-media-share-links > a.newsletter
 ftc.gov##.block-business-blog-subscribe
-soester-anzeiger.de,giessener-allgemeine.de,fnp.de,fr.de,hna.de,kreiszeitung.de,tz.de,merkur.de,extratipp.com,buzzfeed.de##.id-StoryElement-embed--newsletter
+24garten.de,soester-anzeiger.de,giessener-allgemeine.de,fnp.de,fr.de,hna.de,kreiszeitung.de,tz.de,merkur.de,extratipp.com,buzzfeed.de##.id-StoryElement-embed--newsletter
 livehindustan.com##.sgnupbtn
 e-recht24.de##.newsletterbox
 raymond.cc#?#.sidebar div.widget:has(> div.textwidget > section#aa_wpfs_wrap)
