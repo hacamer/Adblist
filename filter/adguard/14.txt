@@ -1,8 +1,8 @@
-! Checksum: P+fSsuFLcdleRmisSPoMdw
+! Checksum: G294F13tcp0RQM6LHXtZdA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.22.4
-! TimeUpdated: 2022-06-07T09:02:33+00:00
+! Version: 2.1.22.6
+! TimeUpdated: 2022-06-07T10:30:37+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -92,6 +92,8 @@
 ! https://github.com/AdguardTeam/AdguardFilters/issues/76987
 youtube.com#%#AG_onLoad(function() {var a = new MutationObserver(function() {if (document.querySelector('yt-upsell-dialog-renderer')) {var b = document.querySelector('.ytd-popup-container[popup-size="UPSELL_DIALOG_RENDERER_POPUP_SIZE_LARGE"] #dismiss-button:not(.dismissed), .upsell-dialog-lightbox .upsell-dialog-dismiss-button button:not(.dismissed)');setTimeout(function() {b&&b.click()}, 3E2)}});a.observe(document, {childList: !0,subtree: !0});setTimeout(function() {a.disconnect()}, 3E3)});
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/121070
+indianexpress.com#?#.ev-meter-content:has(> p.appstext)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/120501
 programme-tv.net##.mediaSelectionSidebar > .mediaSelectionSidebar-stickyWrapper .pushCard-item > a[href^="https://www.programme-tv.net/espace-dedie/"] > .pictureTagGenerator
 programme-tv.net###dailymotion-pip-large-viewport
@@ -7480,6 +7482,11 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+garten-und-freizeit.de#$#.cook-consent { display: none !important; }
+garten-und-freizeit.de#$#body { overflow: auto !important; padding-right: 0 !important; }
+landshut.de#$#body { overflow: auto !important; }
+landshut.de#$#.main_self_overlay_cookie { display: none !important; }
+||dydo-ghd.co.jp/check-cookie/$xmlhttprequest
 ospsbhp.pl###sc-cookies-info
 roms-download.com#$##kuk { display: none !important; }
 roms-download.com#$#.modal-open { overflow: auto !important; }
@@ -16757,6 +16764,8 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/121045
+landshut.de#@##cookiesjsr
 ! https://github.com/AdguardTeam/AdguardFilters/issues/121065
 @@||cdn.iubenda.com/cs/tcf/safe-tcf-v2.js$domain=ansa.it
 ! https://github.com/AdguardTeam/AdguardFilters/issues/120927
@@ -21558,7 +21567,6 @@ thaiticketmajor.com###popup-recommend
 wiwo.de#$#.u-no-scroll { overflow-y: visible !important; }
 wiwo.de#$#div[id^="vhb-reload-popup"] { display: none !important; }
 dailymail.co.uk##div[popupposition="BOTTOM_RIGHT"]
-mail.ru##.toolbar
 pixta.jp###js-modal--recognized-subscription
 pixta.jp##.__b-popup1__.b-modal
 coolors.co#$##generator-tutorial-intro { display: none !important; }
@@ -29135,6 +29143,8 @@ experts-exchange.com##.ctaSolutionStickyWrapper
 theguardian.com##.contributions__adblock
 ||contributions.guardianapis.com^
 !
+indianexpress.com##.premium-story
+belretail.by##.advertising-opportunities
 anura.io##.blogContentOffer
 pulse.mail.ru##div[data-sid="fulltext_wiget_promo"]
 cloud.mail.ru#?#div[class^="ReactViewer__contentWrapper"] > div[class^="ReactViewer__bottominfoWrapper"]:has(> a[class^="DisableButton_"])
