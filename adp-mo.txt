@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: C0G1OpFCoCwd+o63Is9VCQ
+! Checksum: DrdTky6XJgjAEV8QtzCwAg
 ! Title: My AdFilters（for Mobile）
 ! Expires: 12 hours
-! Version: 202206071928
-! Last Modified: 2022年06月07日 19:28
+! Version: 202206072059
+! Last Modified: 2022年06月07日 20:59
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 68018
+! Total count: 68024
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -18744,6 +18744,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||stereophile.com^$elemhide
 @@||stfly.io^$generichide
 @@||sto*.igstatic.com/js/seo-ads.js$domain=igraal.com
+@@||sto-caas-api.e-spirit.cloud/*/content/$domain=sto.de
 @@||stock.skoda.be/assets/scripts/analytics/$script,~third-party
 @@||storage.googleapis.com/loadermain.appspot.com/main.js$domain=watchfreenet.org
 @@||store.usps.com/media/js/metrics/metrics.js
@@ -21043,7 +21044,9 @@ bootdey.com##+js(no-setTimeout-if, adCheck)
 bootdey.com#@##ads-banner
 bosa.co.kr,econovill.com,sisafocus.co.kr,newsian.co.kr,idsn.co.kr,ggilbo.com,andongdaily.com,tiptipnews.co.kr,fntoday.co.kr,newstown.co.kr,womennews.co.kr,sisajournal.com,zum.com,safetynews.co.kr,koreabiomed.com,mindpost.or.kr,energydaily.co.kr,docdocdoc.co.kr,edaily.co.kr##div[class^="banner_"]
 bospedia.com##+js(abort-current-script, document.createElement, AdBlock)
-bossip.com###video-expanded
+bossip.com##.fsb-desktop
+bossip.com##.fsb-toggle
+bossip.com##.player-wrapper-inner
 boston.com##.m-content-advert
 boston.com##.o-site-header__advert
 bostonglobe.com###arcad_recirc
@@ -23192,8 +23195,10 @@ filmisub.com##+js(set-constant, detis, noopFunc)
 filmisub.com##+js(set-constant, noAdBlock, true)
 filmovitica.com##+js(window.open-defuser)
 filmux.org#@#.myTestAd
+filmvilag.me###adv_kereses
 filmvilag.me,liderendeportes.com,serieskao.tv,freefilm.to,ac24.cz,downloads-anymovies.com,jpblow.info,hesgoal.com,igg-games.com,ibb.co#$?#body > iframe[name]:not([class]):not([id]):not([src])[style*="none"] { remove: true; }
 filmvilag.me,liderendeportes.com,serieskao.tv,freefilm.to,ac24.cz,downloads-anymovies.com,nsfwyoutube.com,jpblow.info,hesgoal.com,filmisub.com,igg-games.com,ruwhite.info,slones.info,ukhello.info,uaclips.com,thodkyaat.com,kzclip.com,onlymen.cz,ultimasnoticias.com.ve,freeserial.to,ibb.co##pp
+filmvilag.me,voiranime.stream,putlockers.*,gdplayer.*,fileguru.net,1movieshd.com,cool-etv.net,fmovies2.cx,modsfire.com,atomohd.*,ouo.press,yugen.to,pelisplus2.io,movies7.to,buffstreams.*,apkmody.io,mycima.cloud,couchtuner.show,kimoitv.com,gdtot.*,cuevanahd.net,anavidz.com,2embed.ru,armagedomfilmes.top,movieskafanda.xyz,seriesgratis.biz,streamingcommunity.*,askflix.org,s.to,atomixhq.*,anitube.*,ymovies.to,manhuascan.*,dembed1.com,file4go.net,file4go.com,hothit.me,daddylive.eu,sflix.to,animesanka.*,cima4u.*,shrink.*,divicast.com,manhwa68.com,filma24.*,mp3yeni.org,upload-4ever.com,futebolplayhd.com,witanime.com,filmeseries.top,futemax.gratis,thetodaypost.com,hentaizm.fun,hitmovies4u.com,embedflix.net,moviesjoy.*,animespank.com,hhdmovies.*,short.katflys.com,hindilinks4u.*,topflix.*,flixtor.gg,tutele.sx,upvid.*,mangas-raw.com,bbb.fm,clipconverter.cc,megafilmeshd20.pro,watchseries.*,animesonline.cz,superflix.*,fembed.cloud,vizer.vip,kick4ss.com,jpscan-vf.com,rawkuma.com,pobreflix.top,losmovies.*,123movieshub.*,seriesflix.top,gogoanime.fi,intereseducation.com,vizer.re,123movies-official.site,querofilmehd.*,gogoanime.gg,animixplay.to,dood.*,anime4up.*,multicanais.tv,watchmovie.*,myflixer.*,pahe.li,filmyzilla.autos,megafilmeseseriesonline.com##+js(abort-current-script, document.createElement, break;case)
 filmweb.pl##+js(abort-current-script, IRI, Adblock)
 filmweb.pl##+js(abort-current-script, addEventListener, /faBar[\s\S]*?insertAdjacentElement/)
 filmweb.pl##+js(no-setInterval-if, .offsetHeight&&0!==)
@@ -29891,7 +29896,7 @@ tampermonkey.net##[src^="data:image"]
 tampermonkey.net##a[rel="external noopener nofollow"] > img[src^="data:image/"]
 tamrieltradecentre.com##+js(abort-current-script, document.createElement, adservice.google.com)
 tamrieltradecentre.com##+js(set-constant, adsbygoogle.loaded, true)
-tamrieltradecentre.com##a[href^="https://atlasvpn.sjv.io"]
+tamrieltradecentre.com##a[href*=".sjv.io"] > img
 tamrieltradecentre.com#@#.adsbygoogle
 tangdoucdn.com#@#.video-ad
 taobao.com###J_ActivityOut
@@ -29974,8 +29979,6 @@ techradar.com##div[class^="slot-single-height-"][style^="position: relative; box
 techradar.com#@#[href^="https://www.hostg.xyz/aff_c"]
 techrepublic.com###leader-bottom
 techrepublic.com###leader-plus-top
-techrepublic.com##.jotform-top-story-of-the-day
-techrepublic.com##.jotform-twenty-pro-tips
 techrepublic.com##.medusa-list
 techsighter.com##+js(abort-current-script, $, !document.getElementById(btoa)
 techsolveprac.com##+js(no-setTimeout-if, ()=>this.display())
@@ -31073,6 +31076,7 @@ viu.com##div[id^="info"]
 viva.pl##.placement
 vivads.net##+js(abort-on-property-read, SmartPopunder)
 vivads.net##+js(window.open-defuser)
+vivaldi.com#?#.blocks > div.row > div.column:has(> div.color-soft form#signupform)
 vivatube.*##+js(window.open-defuser, 1, about:blank)
 vivatube.*##.clear + .mt15.container[style="margin-top:15px; border-bottom:0;"]
 vivatube.*##.livecams
@@ -31106,7 +31110,6 @@ voeunbl0ck.com,voeunblock3.com,hdfilme.top,voeunblock2.com,kissasian.li,voeunblo
 voeunbl0ck.com,voeunblock3.com,voeunblock2.com,voeunblock1.com,voeunblock.com,voe-unblock.*,voe.bar,voe.sx##+js(abort-current-script, $, /\.fadeIn|\.show\(.?\)/)
 voeunbl0ck.com,voeunblock3.com,voeunblock2.com,voeunblock1.com,voeunblock.com,voe-unblock.*,voe.bar,voe.sx##+js(abort-current-script, document.createElement, _blank)
 voipsipclient.blogspot.com##.adsbygoogle
-voiranime.stream,putlockers.*,gdplayer.*,fileguru.net,1movieshd.com,cool-etv.net,fmovies2.cx,modsfire.com,atomohd.*,ouo.press,yugen.to,pelisplus2.io,movies7.to,buffstreams.*,apkmody.io,mycima.cloud,couchtuner.show,kimoitv.com,gdtot.*,cuevanahd.net,anavidz.com,2embed.ru,armagedomfilmes.top,movieskafanda.xyz,seriesgratis.biz,streamingcommunity.*,askflix.org,s.to,atomixhq.*,anitube.*,ymovies.to,manhuascan.*,dembed1.com,file4go.net,file4go.com,hothit.me,daddylive.eu,sflix.to,animesanka.*,cima4u.*,shrink.*,divicast.com,manhwa68.com,filma24.*,mp3yeni.org,upload-4ever.com,futebolplayhd.com,witanime.com,filmeseries.top,futemax.gratis,thetodaypost.com,hentaizm.fun,hitmovies4u.com,embedflix.net,moviesjoy.*,animespank.com,hhdmovies.*,short.katflys.com,hindilinks4u.*,topflix.*,flixtor.gg,tutele.sx,upvid.*,mangas-raw.com,bbb.fm,clipconverter.cc,megafilmeshd20.pro,watchseries.*,animesonline.cz,superflix.*,fembed.cloud,vizer.vip,kick4ss.com,jpscan-vf.com,rawkuma.com,pobreflix.top,losmovies.*,123movieshub.*,seriesflix.top,gogoanime.fi,intereseducation.com,vizer.re,123movies-official.site,querofilmehd.*,gogoanime.gg,animixplay.to,dood.*,anime4up.*,multicanais.tv,watchmovie.*,myflixer.*,pahe.li,filmyzilla.autos,megafilmeseseriesonline.com##+js(abort-current-script, document.createElement, break;case)
 volcore.xyz##.avd1
 volcore.xyz##.avd2
 volvo-club.cz##+js(abort-on-property-read, gaFailedToLoad)
@@ -38877,7 +38880,7 @@ zzbaike.com###topnav
 ||ceciliabeverly.com^
 ||ced-ns.sascdn.com/diff/js/smart.js
 ||cedexis.com^$third-party
-||cedexis.net^$third-party
+||cedexis.net^$script,third-party
 ||cee1.iteye.com^
 ||ceileangsts.com^
 ||ceisip.com/static/js/plugin.js
@@ -40619,6 +40622,7 @@ zzbaike.com###topnav
 ||customerconversio.com^$third-party
 ||customerlabs.co^$third-party
 ||customerlobby.com/ctrack-
+||customfingerprints.bablosoft.com^
 ||cutecalculator.com^
 ||cutechin.com^$third-party
 ||cutecushion.com^
@@ -61824,6 +61828,8 @@ zzbaike.com###topnav
 ||tallcy.com^
 ||tamedia.com.tw^$third-party
 ||tamgrt.com^$third-party
+||tamrieltradecentre.com/Content/images/atlasvpn/
+||tamrieltradecentre.com/Content/images/nordvpn/
 ||tan1dian.com^
 ||tangibleteam.com^$third-party
 ||tangiblewhereuponprestige.com^
