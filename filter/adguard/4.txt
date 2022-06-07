@@ -1,8 +1,8 @@
-! Checksum: wm7Gtuaa7QyHUBjmgM+TSw
+! Checksum: grMJYIcO6GNTKCaYWHwrUA
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.0.63.34
-! TimeUpdated: 2022-06-07T15:31:28+00:00
+! Version: 2.0.63.35
+! TimeUpdated: 2022-06-07T20:31:30+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -361,6 +361,7 @@ lj_bookmarklet
 withonline.jp#?#.pattern_other > div.other-box:has(> ul[class^="share-"])
 eda.ru#?#div[class^="emotion-"]:has(> span:contains(/Понравилась статья?|Расскажи о ней друзьям!/))
 kp.ru#?#div[class^="sc-"]:has(> div[data-share="share_top"])
+kp.ru#?#a[data-subscribe-zen]:upward(1)
 zenodo.org#?#.well > h4:contains(Share)
 patreon.com#?#div[offset="[object Object]"] div[class^="sc-"]:has(> div[class^="sc-"] > button[type="button"] > div[class]:not([tabindex]):contains(/Share|Поделиться|Del|Teilen|Compartir|Partager|Condividi|Delen|Udostępnij|Compartilhar|Dela|Поділитися|シェア|分享|공유/))
 ucrazy.ru#?##crazy-content > div.box > div#ya_share:upward(1)
