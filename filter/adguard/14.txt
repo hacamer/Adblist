@@ -1,8 +1,8 @@
-! Checksum: 5ySaiq/U+XhRmLQVlkTjig
+! Checksum: BkqaUBwAcJBViykbl9E7ow
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.22.23
-! TimeUpdated: 2022-06-08T14:30:41+00:00
+! Version: 2.1.22.25
+! TimeUpdated: 2022-06-08T16:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2573,6 +2573,8 @@ hi-tech.mail.ru##.sticky_footer div[class^="block block_padding rb-block-"]
 ##.sosyal:not(body):not(html)
 ##.td_block_social_counter
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/120849
+fakty.com.ua##.sp-read-social
 ! https://github.com/AdguardTeam/AdguardFilters/issues/119815
 m.finance.yahoo.co.jp###w2aBnr
 ! https://github.com/AdguardTeam/AdguardFilters/issues/119835
@@ -16780,7 +16782,7 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !
 !
 ! @@||cdn.cookielaw.org/scripttemplates/otSDKStub.js
-@@||cdn.cookielaw.org/scripttemplates/otSDKStub.js$domain=cc.com|3sat.de|zdf.de|costco.com|giantbomb.com|glovoapp.com|rte.ie|digitaltrends.com|spiele.bild.de|spiele.stern.de|vanityfair.com|saarbruecker-zeitung.de|olympics.com|dziendobry.tvn.pl|bergfreunde.de|oe24.at|epicgames.com|toteraz.pl|natgeotv.com|midomi.com|volksfreund.de|kawasaki.com|foxchannels.com.tr|ga.de|shop.mango.com|kralmuzik.com.tr|westernunion.com|roastmarket.de|new.cappex.com|vimeo.com|heute.at|ntv.com.tr|wargaming.net|metacritic.com|gq-magazine.co.uk|viafree.dk|viafree.fi|viafree.no|viafree.se|glamour.de|cbsnews.com|worldoftanks.ru|vg247.com|newyorker.com|games.miamiherald.com|eurogamer.es|eurogamer.de|bet.com|ikonpass.com|mcdelivery.de|id.trimble.com|skateboarding.transworld.net|newegg.com|docs.vmware.com|udemy.com|olx.pl|usmagazine.com|uefa.com|milwaukeetool.eu|muscleandfitness.com
+@@||cdn.cookielaw.org/scripttemplates/otSDKStub.js$domain=cc.com|3sat.de|zdf.de|costco.com|giantbomb.com|glovoapp.com|rte.ie|digitaltrends.com|spiele.bild.de|spiele.stern.de|vanityfair.com|saarbruecker-zeitung.de|olympics.com|dziendobry.tvn.pl|bergfreunde.de|oe24.at|epicgames.com|toteraz.pl|natgeotv.com|midomi.com|volksfreund.de|kawasaki.com|foxchannels.com.tr|ga.de|shop.mango.com|kralmuzik.com.tr|westernunion.com|roastmarket.de|new.cappex.com|vimeo.com|heute.at|ntv.com.tr|wargaming.net|metacritic.com|gq-magazine.co.uk|viafree.dk|viafree.fi|viafree.no|viafree.se|glamour.de|cbsnews.com|worldoftanks.ru|vg247.com|newyorker.com|games.miamiherald.com|eurogamer.es|eurogamer.de|bet.com|ikonpass.com|mcdelivery.de|id.trimble.com|skateboarding.transworld.net|newegg.com|docs.vmware.com|udemy.com|olx.pl|usmagazine.com|uefa.com|milwaukeetool.eu|muscleandfitness.com|20min.ch
 !
 ! Required for apps only
 ! When request is blocked then there is an error "Unexpected token / in JSON at position 0"
@@ -19705,10 +19707,6 @@ evroopt.by##.top-bar-app
 iq.com##.multiport-show
 wondershare.com##.d-lg-none
 biletall.com###mobile-applications
-gunosy.com##div[class*="_app_d"]
-gunosy.com##.download_link
-gunosy.com##.airplain
-gunosy.com##.store_fixed_footer
 dospara.co.jp##.p-footer-app
 kurashiru.com##.SpApp-floatButton
 kurashiru.com##.SearchSuggestModal-toAppBannerWrap
@@ -21315,6 +21313,14 @@ pinterest.*#%#AG_onLoad(function(){var a=new MutationObserver(function(){if(docu
 ~kurer-sreda.ru,~chorki.com,~zattoo.com,~zaycev.net,~xltrax.ee,~hitta.se,~mail.ru,~v7player.wostreaming.net,~facebook.com,~instagram.com,~drive.google.com$$link[rel="manifest"]
 !
 !+ NOT_OPTIMIZED
+gunosy.com##div[class*="_app_d"]
+!+ NOT_OPTIMIZED
+gunosy.com##.download_link
+!+ NOT_OPTIMIZED
+gunosy.com##.airplain
+!+ NOT_OPTIMIZED
+gunosy.com##.store_fixed_footer
+!+ NOT_OPTIMIZED
 retty.me##.app-store-banner-wrap
 !+ NOT_OPTIMIZED
 jumpbookstore.com###header_app_banner
@@ -21587,6 +21593,8 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+amp.scmp.com###piano-module-template > div[id^="default-meter-page-views-"]
+xhamster.com##.dyltv-container
 programiz.com#$#.main--backdrop { display: none !important; }
 programiz.com#$#.pop-up-block { display: none !important; }
 programiz.com#$#body.no-scroll { overflow: auto !important; }
@@ -23062,6 +23070,7 @@ sks-auto.ru##.jllikeproSharesContayner
 developer.chrome.com##announcement-banner
 elie.net##.signup-right
 glasswire.com###subscription-modal
+b.hatena.ne.jp#$#.entry-notfound-modal { display: none!important; }
 b.hatena.ne.jp#$#.bookmark-guest-guide-modal { display: none!important; }
 b.hatena.ne.jp#$#.modal-overlay { display: none!important; }
 b.hatena.ne.jp#$#body.is-overlay { overflow: auto!important; }
@@ -31618,7 +31627,6 @@ topuniversities.com##.qsjoinus
 cars.com#?#.sds-page-container > div[class] > section:has(> div[data-phx-view="EmailCaptureLive"])
 cars.com##.email-capture-live-section
 dailywire.com#?#main ~ div[class^="css-"] > div[class^="css-"]:has(form.email)
-amp.scmp.com###newsletter-register-widget
 amp.scmp.com$$div[id="newsletter-register-widget"]
 kbb.com##.td_block_kbb_bestcardeals_subscription_form
 usnews.com##div[class*="KioskEconomy__Container-"]
@@ -33967,6 +33975,9 @@ tvrain.ru##.menu3__foreign-agent-wrapper
 /e2ma.js
 ||static-cdn.e2ma.net/signups/$third-party
 !
+!
+!+ NOT_OPTIMIZED
+amp.scmp.com###newsletter-register-widget
 !+ NOT_OPTIMIZED
 mail.ru###subscriptionFormWeekMainBlockId
 !+ NOT_OPTIMIZED
