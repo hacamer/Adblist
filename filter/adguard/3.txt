@@ -1,8 +1,8 @@
-! Checksum: xt2iYGFlabrRTk48LeP0Pw
+! Checksum: 8qGYzuDNB0RiaZ+P0iyUFA
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.40.76
-! TimeUpdated: 2022-06-07T16:31:21+00:00
+! Version: 2.0.40.77
+! TimeUpdated: 2022-06-08T06:31:20+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -3963,6 +3963,7 @@ journal-plaza.net#?#.rightside div.block.bnavi[-ext-has="h3.dtitle:contains(Сч
 ! These domains are used for tracking purposes according to the data that is being sent there.
 ! More info: https://getadmiral.com/products/measure
 !
+||terrifictooth.com^$third-party
 ||parchedsofa.com^$third-party
 ||pleasantpump.com^$third-party
 ||automaticairplane.com^$third-party
@@ -24763,6 +24764,8 @@ $app=com.miui.analytics
 ! For platforms which do not support $redirect rules
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/121116
+||googletagmanager.com/gtm.js$script,redirect=googletagmanager-gtm,domain=repubblica.it
 ! https://github.com/AdguardTeam/AdguardFilters/issues/120883
 ! https://github.com/AdguardTeam/AdguardFilters/issues/120776
 @@||js.monitor.azure.com/scripts/*/ms.analytics-web-*.min.js$domain=remoteassistance.support.services.microsoft.com
