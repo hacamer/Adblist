@@ -1,8 +1,8 @@
-! Checksum: 4cJprqasitIk7AV7PvUmbg
+! Checksum: 0jRr/XyjbWvQT8EZqj9xzw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.22.18
-! TimeUpdated: 2022-06-08T10:30:37+00:00
+! Version: 2.1.22.20
+! TimeUpdated: 2022-06-08T12:30:37+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7490,6 +7490,11 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+tarisio.com#$#.modal-gdpr { display: none !important; }
+tarisio.com#$#body.is-gdpr-active { overflow: auto !important; position: static !important; }
+/cookies-policy.js$domain=orderofmalta.int
+schnelle-online.info###container-banner-over
+bayern.de##.modCookieBar
 ||scanner.baycloud.com/ConsentPanel/$domain=cleanipedia.com
 cleanipedia.com##div[id="_cqConsentPanel"]
 aia.co.th##.alertFooterContent
@@ -7523,7 +7528,6 @@ klassik-stiftung.de#$#body { overflow: auto!important; }
 zbfs.bayern.de##.wrap-cookie-dialogue
 zif-berlin.org##div[id="overlay"][class="cookie-consent-show"]
 ingelheim.de###banny-banner-outer
-stmb.bayern.de##.modCookieBar
 ftsafe.com##.home_cookie_box
 ||pitcom-webanalyse.de/*/consent-banner/
 ||static.comdirect.de/*/modules/js/consent-initial.module.js$~third-party
@@ -16776,7 +16780,7 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !
 !
 ! @@||cdn.cookielaw.org/scripttemplates/otSDKStub.js
-@@||cdn.cookielaw.org/scripttemplates/otSDKStub.js$domain=cc.com|3sat.de|zdf.de|costco.com|giantbomb.com|glovoapp.com|rte.ie|digitaltrends.com|spiele.bild.de|spiele.stern.de|vanityfair.com|saarbruecker-zeitung.de|olympics.com|dziendobry.tvn.pl|bergfreunde.de|oe24.at|epicgames.com|toteraz.pl|natgeotv.com|midomi.com|volksfreund.de|kawasaki.com|foxchannels.com.tr|ga.de|shop.mango.com|kralmuzik.com.tr|westernunion.com|roastmarket.de|new.cappex.com|vimeo.com|heute.at|ntv.com.tr|wargaming.net|metacritic.com|gq-magazine.co.uk|viafree.dk|viafree.fi|viafree.no|viafree.se|glamour.de|cbsnews.com|worldoftanks.ru|vg247.com|newyorker.com|games.miamiherald.com|eurogamer.es|eurogamer.de|bet.com|ikonpass.com|mcdelivery.de|id.trimble.com|skateboarding.transworld.net|newegg.com|docs.vmware.com|udemy.com|olx.pl|usmagazine.com|uefa.com|milwaukeetool.eu
+@@||cdn.cookielaw.org/scripttemplates/otSDKStub.js$domain=cc.com|3sat.de|zdf.de|costco.com|giantbomb.com|glovoapp.com|rte.ie|digitaltrends.com|spiele.bild.de|spiele.stern.de|vanityfair.com|saarbruecker-zeitung.de|olympics.com|dziendobry.tvn.pl|bergfreunde.de|oe24.at|epicgames.com|toteraz.pl|natgeotv.com|midomi.com|volksfreund.de|kawasaki.com|foxchannels.com.tr|ga.de|shop.mango.com|kralmuzik.com.tr|westernunion.com|roastmarket.de|new.cappex.com|vimeo.com|heute.at|ntv.com.tr|wargaming.net|metacritic.com|gq-magazine.co.uk|viafree.dk|viafree.fi|viafree.no|viafree.se|glamour.de|cbsnews.com|worldoftanks.ru|vg247.com|newyorker.com|games.miamiherald.com|eurogamer.es|eurogamer.de|bet.com|ikonpass.com|mcdelivery.de|id.trimble.com|skateboarding.transworld.net|newegg.com|docs.vmware.com|udemy.com|olx.pl|usmagazine.com|uefa.com|milwaukeetool.eu|muscleandfitness.com
 !
 ! Required for apps only
 ! When request is blocked then there is an error "Unexpected token / in JSON at position 0"
@@ -21582,6 +21586,12 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+programiz.com#$#.main--backdrop { display: none !important; }
+programiz.com#$#.pop-up-block { display: none !important; }
+programiz.com#$#body.no-scroll { overflow: auto !important; }
+ifenpaidy.com#$#body { overflow: auto !important; padding-right: 0 !important; }
+ifenpaidy.com#$##myModal { display: none !important; }
+ifenpaidy.com#$##myModal ~ div.modal-backdrop { display: none !important; }
 tell.ng,hepkredi.com##.rvNotification
 tengrinews.kz##.tn-tape-single-container
 latimes.com##body > metering-bottompanel
