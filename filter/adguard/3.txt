@@ -1,8 +1,8 @@
-! Checksum: cULpKeKYw0HMoT2YngHokA
+! Checksum: b5tWrABbFAIVXs/ihYPYJA
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.40.80
-! TimeUpdated: 2022-06-08T11:31:33+00:00
+! Version: 2.0.40.81
+! TimeUpdated: 2022-06-08T13:03:11+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -24765,6 +24765,9 @@ $app=com.miui.analytics
 ! For platforms which do not support $redirect rules
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/119730
+@@||googletagmanager.com/gtm.js$domain=evernote.com
+||googletagmanager.com/gtm.js$script,xmlhttprequest,redirect=googletagmanager-gtm,domain=evernote.com,important
 ! https://github.com/AdguardTeam/AdguardFilters/issues/120435
 @@||googletagmanager.com/gtm.js$domain=muscleandfitness.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/121116
