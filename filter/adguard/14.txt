@@ -1,8 +1,8 @@
-! Checksum: I6k6Qwu04s/xcpUNMTuFyg
+! Checksum: lED12eqw8KFQt4ADT5Xwbw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.22.30
-! TimeUpdated: 2022-06-09T06:30:35+00:00
+! Version: 2.1.22.32
+! TimeUpdated: 2022-06-09T08:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -19531,6 +19531,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+suzuri.jp##.footer-app-banner
 hair.cm##.AppLink
 aliexpress.com###header-float-banner
 aliexpress.com##.smartbanner-placeholder::before
@@ -21608,6 +21609,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+[$domain=mail.ru,path=/^\/$/]#?#.toolbar:has(> div.toolbar__inner > div.toolbar__aside > span.toolbar__close)
 amp.scmp.com###piano-module-template > div[id^="default-meter-page-views-"]
 xhamster.com##.dyltv-container
 localmemphis.com##.video__docker.video__docker_state_docked
@@ -30949,7 +30951,7 @@ marianne.net#%#//scriptlet('set-cookie', 'mrn_nl_abo', '1')
 moses-verlag.de#%#//scriptlet('set-local-storage-item', 'newsletter-flyout', '1')
 m.vz.ru##main > div.signature
 f5.com##div[class*="-newsletter-signup-"]
-footbar.info,obserwatorgospodarczy.pl###fm-pu-container
+obserwatorlogistyczny.pl,footbar.info,obserwatorgospodarczy.pl###fm-pu-container
 ajansspor.com##.detail__item-sub
 bradford.de###mageplaza-betterpopup-block
 bradford.de###bio_ep_bg
@@ -34415,6 +34417,8 @@ newsweek.com##iframe[src="http://sns.europe.newsweek.com/newsletter?popup=1"]
 !######### JS tweaks ##########
 !##############################
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/121236
+discordbotlist.com#%#//scriptlet("adjust-setInterval", "countdown", "*", "0.02")
 ! romsget.io/romsgames.net timer on DL - not always work
 romsget.io,romsgames.net#%#//scriptlet("adjust-setTimeout", "submit", "5000", "0.02")
 ! consoleroms.com,romspedia.com timer on DL
