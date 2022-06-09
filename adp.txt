@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: xXroEWZax+GKLYX/TnZ0PA
+! Checksum: DmWOEvKDGw096Q9jtYHxIA
 ! Title: My AdFilters Lite
 ! Expires: 1 hours (Sometimes updates are delayed)
-! Version: 202206091025
-! Last Modified: 2022年06月09日 10:25
+! Version: 202206091159
+! Last Modified: 2022年06月09日 11:59
 ! Homepage: https://github.com/hacamer/Adblist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、Adgk、大萌主的规则
 ! 并补充了贴吧过滤规则，感谢各位的分享！
 ! 如有任何疑问、意见或建议，请反馈给：杏梢
 !
-! Total count: 39119
+! Total count: 39120
 ###Ad_windows
 ###ChapterView > .slide-baidu
 ###Layeraa1
@@ -304,6 +304,7 @@
 ###right_up_float_ad
 ###rightad2
 ###rip[href*=".taobao.com"]
+###rm-float + .popup
 ###rm-float3
 ###sOIcquIT
 ###search > a[href="/top1.html"]
@@ -780,6 +781,7 @@
 ##.player-rm-float
 ##.playtop.col-pd
 ##.pop[style="right: 10px;"]
+##.popup + .shortcuts-mobile-overlay
 ##.privilege-promote
 ##.propa_bottom
 ##.pull-right > #video_playr_sider
@@ -1496,6 +1498,8 @@
 ##div[style=" max-width:979px;  margin:0 auto;"] > a > img[height="60px"]
 ##div[style=" max-width:982px;  margin:0 auto;"] > a > img[height="120px"]
 ##div[style=" max-width:982px;  margin:0 auto;"] > a > img[height="60px"]
+##div[style=" max-width:983px;  margin:0 auto;"] > a > img[height="120px"]
+##div[style=" max-width:983px;  margin:0 auto;"] > a > img[height="60px"]
 ##div[style="border-radius:8px;background-color:#005737;padding:6px;"]
 ##div[style="box-sizing:border-box;padding:20px 16px;border-radius:8px;width:90%;margin:0 auto;"]
 ##div[style="display: flex;flex-wrap: wrap;margin-right: 5px;margin-left: 5px;"] + style + .container
@@ -6740,7 +6744,6 @@ $websocket,domain=5nj.com|cechi8.com
 @@||tt1069.com/dfp.
 @@||ttkdex.com^$generichide
 @@||ttkdex.com^*ad$~third-party
-@@||ttrar.com/statics/pos_js/jquery.gotop.js
 @@||tuhu.cn^
 @@||tui.click/js/ads.js
 @@||tui.click^$generichide
@@ -7969,6 +7972,7 @@ boke112.com##a[href*="url.cn"]
 boke112.com##a[href^="https://dwz.cn/"]
 boke112.com##div.abc-pc.abc-site
 boke112.com,dzbhdm.net,mzh.ren,techweb.com.cn,whsir.com##a[href*=".aliyun.com"]
+boke112.com,dzbhdm.net,mzh.ren,whsir.com##a[href*=".aliyun.com"]
 boke112.com,techweb.com.cn##a[href*=".aliyun.com"]
 bokon.net##.DivMainLeft{width: 990px;}
 bokon.net##div[style="height:252px;text-align:center;"],iframe[src^="/SiteFiles/"],.DivMainRight,#float_l,#float_r
@@ -9327,7 +9331,6 @@ dytt5.net##body > div[style="overflow: hidden;"]:nth-child(3)
 dyttw.com.cn##td[align="center"][valign="middle"][bgcolor="#FFFFFF"] > table[width="1210"] > tbody > tr > td[height="55"]
 dyxia.com##[id^="qj960"],#xinxi
 dyxs11.com###play-pause
-dyxs15.com,dianying.im##.popup,.shortcuts-mobile-overlay
 dyz99.com##.place > a[target="_blank"]:not([href="/xjlist.php"])
 dyz99.com#?#.content > table.main > tbody > tr > td[width]:has(> a[target="_blank"]:not([href="/ad.html"]):not([href="/xjlist.php"]))
 dyzd1.com##.all960
@@ -12088,7 +12091,7 @@ lbldy.com##.ad-wap,.ad-pc,.listad
 lbx777.com,lbx777.net##table[width="325"][height="280"]
 lc123.net##.gg970,.adsbygoogle
 lcxw.cn###tc_zq,[class^="nav05_ggw"],.nva_logo_a,[class^="gg"],.mg-t10
-lcxw.cn,ts.cn##.gg4
+lcxw.cn##.gg4
 ld0766.com###diy4
 ld0766.com###portal_ad3
 ld0766.com##.rsf_pull_screen_adv
@@ -14829,7 +14832,7 @@ swoole.com##.wiki-resource
 sx.xinhuanet.com##.sx_advTab,.sx_moreAdv
 sxl.cn##A[class='logo-link logo-link-sxl']
 sxl.cn##DIV.s-mobile-footer-bar sticky
-sxqjdy.com,ts.cn,xinhuanet.com,yuanliled.com##.gg2
+sxqjdy.com,xinhuanet.com,yuanliled.com##.gg2
 sxrb.com##.top_ad,.m_t_l_r_ad_740x100,.m_t_r_ad_240x180,[class^="hangyepindao_right_ad_"],#pic_wu
 sxrom.com##.tmk
 sydneytoday.com##.mygad
@@ -15208,7 +15211,6 @@ tropica.cn##.bm.a_c1
 tropica.cn##.wp1.a_t
 trustedgatetocontent.com
 ts.cn##.gg1,.gg2,.gg3,.gg4,#topgg
-ts.cn##.tsggding
 tsdm.live###ts_sidebar_base
 tsdm.tv##[id^="content_box_"],div[style*="width:960px;height:90px"]
 tsubasa.im##+js(remove-class, d-none, body)
@@ -15219,7 +15221,6 @@ ttkyy.net##.video-ad,#tlad,[class^="ui-playad"],.ui-sponsor300-250
 ttmeiju.com##A[href^="http://lnk8.cn/"],#bottomad,div.super_notice,ul.headad,div.leftad,a[href^="http://www.ttmeiju.com/adclick.php?"],div#ad_couplet,[width="960px"][height="110px"],#new-user,#dialog-overlay,[width="960px"][height="120px"],img[src^="http://pic.yupoo.com/ttmeiju/"][height],.duilian,.float_layer,[height="90"],[width="990px"],[src^="http://i.imgur.com/"],[title$=".jpg"],[alt^="ttmeiju - "]
 ttmeiju.me##DIV[style="float:left;margin-bottom:27px;margin-top:27px;"]
 ttmeiju.vip##.duilian,#miaov_float_layer,[title$=".jpg"]
-ttrar.com##.new_xzq
 ttshow.tw##div[id^="ad_article_"]
 ttshow.tw##div[id^="ad_index_"]
 ttshuba.com##.con_ad,.ad250left,.adsbygoogle
@@ -19061,6 +19062,7 @@ zznews.cn##.ad:not([style])
 ||661291.com^
 ||6613167.cn^
 ||6665432.com^*.gif
+||666574.xyz^
 ||6665kkk.com/ggvip^
 ||66666119.com^
 ||666666666666.site^
@@ -19169,7 +19171,6 @@ zznews.cn##.ad:not([style])
 ||717dyw.com/js/head.js
 ||717dyw.com/js/zb
 ||71sem.com^
-||71xe.com/image/zguancun/
 ||71xe.com/one/
 ||71xe.com/prevent/
 ||71xe.com/script/
@@ -24511,6 +24512,7 @@ zznews.cn##.ad:not([style])
 ||dyx0878.cn^
 ||dyxs11.com/statics/recommend/$image
 ||dyxsmj.net^
+||dyzx6688.top^
 ||dyzyhj.com/Jk/
 ||dz19.net/addimg/
 ||dzais.com^
@@ -26091,6 +26093,7 @@ zznews.cn##.ad:not([style])
 ||gzsanxiaomingshi.cn^
 ||gzts188.com^
 ||gzwl.xyz^
+||gzww.site^
 ||gzwxdq.cn^
 ||gzx8670vhome.xyz^
 ||gzxxty168.com^
@@ -26158,6 +26161,7 @@ zznews.cn##.ad:not([style])
 ||hainei.org/union/
 ||haireig.com^
 ||haishengwh123.cn^
+||haitaochen.xyz^
 ||haite.xyz^
 ||haituie.com^*.gif
 ||haitv.top^
@@ -34689,7 +34693,6 @@ zznews.cn##.ad:not([style])
 ||techritual.com/wp-content/uploads/*/HDcource_
 ||techsolutions.com.tw^$third-party
 ||techug.com/mug/
-||techweb.com.cn^*aliyun
 ||ted-club.com^
 ||tel.shbdyx.com^
 ||tellvi.cn^$third-party
@@ -34806,6 +34809,7 @@ zznews.cn##.ad:not([style])
 ||tianshu.gtimg.cn^
 ||tianshui.com.cn/Scripts/AC_
 ||tianshui.com.cn/datugg/
+||tianshui.com.cn/gg/
 ||tianshui.com.cn/newbg
 ||tianshui.com.cn/yb.html
 ||tiantai.ink^
@@ -35157,8 +35161,6 @@ zznews.cn##.ad:not([style])
 ||ttlm.cc^
 ||ttmaim.com^
 ||ttpp.xsbooktxt.com^
-||ttrar.com/live/
-||ttrar.com/statics/pos_js/
 ||ttshort.xyz^
 ||tttppp.oss-cn-guangzhou.aliyuncs.com^
 ||tttxx.cn^$third-party
@@ -35775,7 +35777,6 @@ zznews.cn##.ad:not([style])
 ||vipytyl.ltd^
 ||visadd.com^$third-party
 ||visit-japan.jp/parts/visitjapan_f35_170_170.jpg
-||vista.tgbus.com/s.js
 ||vista.tgbusdata.cn/s.js
 ||vista.tuwan.com/s.js
 ||visvn.cn^
