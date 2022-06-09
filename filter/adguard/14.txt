@@ -1,8 +1,8 @@
-! Checksum: huFxHrsjblcoF5ooXIiPoA
+! Checksum: KumuVDdmnMK96pem3eNAzA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.22.44
-! TimeUpdated: 2022-06-09T18:30:35+00:00
+! Version: 2.1.22.45
+! TimeUpdated: 2022-06-09T20:30:35+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -6995,6 +6995,7 @@ cc-fan.tv,cn-fan.tv,fox-fan.tv,nf-fan.tv#$#.pub_300x250.pub_300x250m.pub_728x90.
 !#######################################################
 !
 /plugins/ws5_eucookie/*
+/cookie-law-generator/*
 /cookie-consent-tool/*
 ###acceptCookiesBar
 /wp_content/plugins/gdpr_patron/*
@@ -7509,6 +7510,7 @@ suslusozluk.com#$##lightsout { display: none!important; }
 kan-therm.com#$#html { overflow: auto !important; position: unset !important; }
 kan-therm.com#$#.reveal-overlay { display: none !important; }
 tadmar.pl##.cookies-accept-info
+jush.pl##.t972__banner
 totalizator.pl##.privacy-popup
 totalizator.pl##.cookie-wall
 interacty.me##div[class^="CookiesBanner_"]
@@ -19556,6 +19558,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+saiyasune.com#?#div[class]:has(> div[id]:contains(アプリ版なら))
 mcdonalds.co.jp###freestyle-apps-sns
 m.hungryapp.co.kr##.Mibox_down
 suzuri.jp##.footer-app-banner
@@ -21637,6 +21640,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+saiyasune.com##div[style^="position: absolute;"][style*="z-index: 1000;"][style*="width: 100%;"]
 smartnator.com#%#//scriptlet('set-local-storage-item', 'announcement', '1')
 nordot.app##.page__curatedBy
 lifescience.pl##.hwp-bottomleft
