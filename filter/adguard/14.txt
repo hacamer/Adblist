@@ -1,8 +1,8 @@
-! Checksum: mQdum8Uu21JOlunXUdP2Uw
+! Checksum: I6k6Qwu04s/xcpUNMTuFyg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.22.29
-! TimeUpdated: 2022-06-08T20:30:34+00:00
+! Version: 2.1.22.30
+! TimeUpdated: 2022-06-09T06:30:35+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7935,7 +7935,8 @@ tiktok.com##tiktok-cookie-banner
 lookandlearn.com##div[aria-describedby="cookies"]
 lookandlearn.com##.ui-widget-overlay
 funnelcockpit.com##.gdpr-cookie-notice-center-loaded::before
-automoto.it,atlantico.fr#$#html { overflow: auto !important; }
+tomshw.it##a.iubenda-tp-btn
+tomshw.it,automoto.it,atlantico.fr#$#html { overflow: auto !important; }
 pranarom.fr#$#.cookiesplus-modal { display: none !important; }
 pranarom.fr#$#.cookiesplus-modal ~ div.modal-backdrop { display: none !important; }
 pranarom.fr#$#body { overflow: auto !important; padding-right: 0 !important; }
@@ -16016,6 +16017,7 @@ kvk.nl#%#//scriptlet("set-cookie", "allowTrackingCookiesKvK", "1")
 theartnewspaper.com#%#document.cookie = "USE_COOKIE_CONSENT_STATE={%22session%22:false%2C%22persistent%22:false%2C%22necessary%22:true%2C%22preferences%22:false%2C%22statistics%22:false%2C%22marketing%22:false%2C%22firstParty%22:false%2C%22thirdParty%22:false}; path=/;";
 xd2sketch.com#%#//scriptlet("set-cookie", "xd2sketch_cookies_accepted", "true")
 avocode.com#%#//scriptlet('set-cookie', 'avokie', 'no')
+tomshw.it#%#AG_onLoad(function(){if(-1==document.cookie.indexOf("euconsent-v2")){var d=new MutationObserver(function(){var a=!1,e=document.querySelector("button.iubenda-cs-accept-btn");e&&(e.click(),a=!0),null===document.querySelector("button.iubenda-cs-accept-btn")&&a&&d.disconnect()});d.observe(document,{childList:!0,subtree:!0,attributes:!0}),setTimeout(function(){d.disconnect()},1E4)}});
 moto.it,automoto.it,atlantico.fr,movieplayer.it#%#AG_onLoad(function(){if(-1==document.cookie.indexOf("euconsent-v2")){var a=new MutationObserver(function(){var b=!1,c=document.querySelector("button.iubenda-cs-close-btn");c&&(c.click(),b=!0);null===document.querySelector("button.iubenda-cs-close-btn")&&b&&a.disconnect()});a.observe(document,{childList:!0,subtree:!0,attributes:!0});setTimeout(function(){a.disconnect()},1E4)}});
 veriff.com#%#AG_onLoad(function() {var b=new MutationObserver(function() {var c=document.querySelector('div[class^="CookiePopup__ButtonWrapper-"] > a + a'); c&&(b.disconnect(),c.click()) });b.observe(document, {childList: !0,subtree: !0});setTimeout(function() {b.disconnect()}, 1E4)});
 cdn.privacy-mgmt.com#%#AG_onLoad(function(){if(window.self!==window.top&&document.referrer.startsWith("https://ze.tt/")){var a=new MutationObserver(function(){var b=document.querySelector('button.message-button[title="Allen zustimmen"]');b&&(a.disconnect(),b.click())});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)}});
@@ -16800,6 +16802,9 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/121221
+tomshw.it#@##iubenda-cs-banner
+@@||iubenda.com^$script,xmlhttprequest,domain=tomshw.it
 ! https://github.com/AdguardTeam/AdguardFilters/issues/121045
 landshut.de#@##cookiesjsr
 ! https://github.com/AdguardTeam/AdguardFilters/issues/121065
