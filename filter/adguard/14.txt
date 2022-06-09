@@ -1,8 +1,8 @@
-! Checksum: Gczh7OhjmfbCo+93fVn+qA
+! Checksum: GS0CH0FKG8Af5MKLBx6D/Q
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.22.40
-! TimeUpdated: 2022-06-09T14:30:35+00:00
+! Version: 2.1.22.41
+! TimeUpdated: 2022-06-09T15:30:36+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -29241,6 +29241,7 @@ experts-exchange.com##.ctaSolutionStickyWrapper
 theguardian.com##.contributions__adblock
 ||contributions.guardianapis.com^
 !
+||imagel.sekainavi.com/images/banner/
 valuewalk.com##.stagi-valuewalkpremium
 loads.ati.su##div[class^="Search_banner__"]
 triumph-cpn.com##.campaignBnr
@@ -34075,6 +34076,8 @@ magazine.skyeng.ru##.tg-banner
 !######### CSS tweaks #########
 !##############################
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/120973
+gs.statcounter.com#$##main-el { padding-bottom: 0 !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/119883
 o-pro.online,eda-ah.com,ta2deem7arbya.com#$##makingdifferenttimer { display: block !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/118968

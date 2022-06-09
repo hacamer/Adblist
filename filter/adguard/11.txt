@@ -1,8 +1,8 @@
-! Checksum: rMRgES1AGEgOqSumuW3u0Q
+! Checksum: E7OUv8axnhUSQAddioafEQ
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.30.45
-! TimeUpdated: 2022-06-09T14:30:19+00:00
+! Version: 2.0.30.46
+! TimeUpdated: 2022-06-09T16:30:22+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1778,6 +1778,9 @@ sasisa.ru#%#AG_onLoad(function() { window.Umobi = function() {}; });
 !-------CSS---------
 !-------------------
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/120990
+openers.jp#$##interstitial { display: none!important; }
+openers.jp#$#body { overflow: auto !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/120139
 m.crank-in.net#$#.ad-area_pr_top { height: 0 !important; min-height: 0 !important; padding: 0 !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/119596
