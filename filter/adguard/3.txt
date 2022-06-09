@@ -1,8 +1,8 @@
-! Checksum: 0NFoTyxhoJOeZ5Sy2qNeWw
+! Checksum: 1e/XYySONsq5+nUO6XfxCg
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.40.87
-! TimeUpdated: 2022-06-09T12:31:23+00:00
+! Version: 2.0.40.88
+! TimeUpdated: 2022-06-09T14:31:21+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -89,6 +89,9 @@
 ! https://developer.chrome.com/docs/privacy-sandbox/topics/
 ! TODO: replace with a scriptlet later: https://github.com/AdguardTeam/Scriptlets/issues/214
 #%#//scriptlet('set-constant', 'Document.prototype.browsingTopics', 'undefined')
+! https://github.com/AdguardTeam/AdguardFilters/issues/118441
+! Related to removeparam rules
+qiita.com#%#//scriptlet("prevent-addEventListener", "load", "navigator")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/120883
 nettiauto.com#%#//scriptlet("set-constant", "listingGoogleEETracking", "noopFunc")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/120143
@@ -3963,6 +3966,7 @@ journal-plaza.net#?#.rightside div.block.bnavi[-ext-has="h3.dtitle:contains(Сч
 ! These domains are used for tracking purposes according to the data that is being sent there.
 ! More info: https://getadmiral.com/products/measure
 !
+||fearlessfaucet.com^$third-party
 ||terrifictooth.com^$third-party
 ||parchedsofa.com^$third-party
 ||pleasantpump.com^$third-party
