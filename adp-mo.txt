@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: cz5cYIfzoKzvJY0WHVmCrQ
+! Checksum: qknTJBy/cqwqaLvWjxNUjg
 ! Title: My AdFilters（for Mobile）
 ! Expires: 12 hours
-! Version: 202206091927
-! Last Modified: 2022年06月09日 19:27
+! Version: 202206092101
+! Last Modified: 2022年06月09日 21:01
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 68072
+! Total count: 68085
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -7654,7 +7654,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /^(?!.*(doodcdn.com|cloudflare.com|google.com)).*$/$third-party,script,domain=dood.so
 /^https:\/\/[0-9a-f]{10}\.[0-9a-f]{10}\.com\/[0-9a-f]{32}\.js$/$script,third-party
 /^https:\/\/ltn\.hitomi\.la\/[A-Za-z]{4,}\/(?=[a-z]{0,19}[A-Z])[A-Za-z]{4,20}\.js$/$script,~third-party,match-case,domain=hitomi.la
-/^https:\/\/x?1337x\.(?:eu|g3g\.sbs|gd|to|se)\/images\/[0-9a-z]+\.jpg/$image,~third-party,domain=1337x.g3g.sbs|1337x.gd|1337x.to|x1337x.eu|x1337x.se
+/^https:\/\/x?1337x\.(?:eu|g3g\.sbs|gd|to|se|unblockit\.name)\/images\/[0-9a-z]+\.jpg/$image,~third-party,domain=1337x.g3g.sbs|1337x.gd|1337x.to|x1337x.eu|x1337x.se|1337x.unblockit.name
 /^https?:\/\/(.+?\.)?hardware\.info\/js\/[a-z]{1,}\/[0-9]{4,}\.js/$domain=hardware.info
 /^https?:\/\/(.+?\.)?videogamesblogger\.com\/wp-content\/uploads\/.*[a-zA-Z0-9]{8,}\.*/$badfilter
 /^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.(?:com|website)\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/(?:[1-5]\d{4}|[3-9]\d{3})\??(?:_=\d+|v=\d)?$/$popup,third-party,match-case
@@ -14400,6 +14400,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 131458.com##.divGuanggao
 131458.com##.ulfooter_top
 1337x.*,x1337x.*#?#.page-content a[id][href]:contains(/A.*n.*o.*Download|VPN/)
+1337x.proxyninja.org##a[href^="/vpnd-"]
 1337x.to#@#.box-info-detail > .torrent-category-detail + div[class]
 1337x.to,mexa.sh##+js(abort-current-script, openedWindows, adfpoint)
 139.99.120.222##+js(nano-setInterval-booster, timeLeft, , 0.02)
@@ -14939,7 +14940,6 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 90oo.com##a[href^="http"]:not([href*=".90oo."]) > img[src*="/tp/"]
 90oo.com,p9.com.tw,price.com.hk,ttww22.com,vipbuluo.com,xinhuanet.com,ylnet.com.cn###ad1
 90xz.com#@#.share-btn
-91.208.197.24,mikaraw.com,edummm.xyz,adslink.pw,pornohubonline.com,movieskafanda.xyz,mangamovil.net,tatli.biz,naijauncut.com,teenager365.com,10convert.com,moviesjoy.*,besthdgayporn.com,gogoanime.*,javenspanish.com,jav-asia.top,komiklokal.xyz,leermanga.net,kmansin03.com,sxyprn.*,leechall.com,kantotflix.com,watchfreenet.com,javxxx.me,yifysubtitles.vip,536sdms.com,justcastingporn.com,justfamilyporn.com,simply-hentai.com,onlyfoot.net,javpornstreaming.com##+js(abort-current-script, document.createElement, __htas)
 91.com,beihaiting.com,guitarchina.com,hao123.com,site.baidu.com,sojson.com,wbzol.com##.banner2
 91.com,hao123.com##.cn_banner
 911cha.com##.adbox
@@ -24728,6 +24728,10 @@ hulu.com##+js(set-constant, Object.prototype.createAdBlocker, noopFunc)
 hulu.com#@#.ad-root
 humano.com#@#img[width="728"][height="90"]
 hung-ya.com##.AdBottom
+hungryapp.co.kr##a[onclick^="banner_open"]
+hungryapp.co.kr##a[onclick^="javascript:skin_banner"]
+hungryapp.co.kr##div[id^="banner_"]
+hungryapp.co.kr##iframe[src^="/banner/"]
 hunterfansub.com##+js(abort-on-property-read, adBlockDetected)
 hupu.com###game-center-entrance-container
 hupu.com###topPub
@@ -26064,6 +26068,7 @@ linksly.co##+js(window.open-defuser)
 linksly.co,shrinkme.io###imgAddDirectLink
 linksmee.com##+js(set-constant, jQuery.adblock, false)
 linksvip.net##div[class^="banner-style-"]
+linkszia.co,urbharat.xyz,91.208.197.24,mikaraw.com,edummm.xyz,adslink.pw,pornohubonline.com,movieskafanda.xyz,mangamovil.net,tatli.biz,naijauncut.com,teenager365.com,10convert.com,moviesjoy.*,besthdgayporn.com,gogoanime.*,javenspanish.com,jav-asia.top,komiklokal.xyz,leermanga.net,kmansin03.com,sxyprn.*,leechall.com,kantotflix.com,watchfreenet.com,javxxx.me,yifysubtitles.vip,536sdms.com,justcastingporn.com,justfamilyporn.com,simply-hentai.com,onlyfoot.net,javpornstreaming.com##+js(abort-current-script, document.createElement, __htas)
 linkvertise.com###advertise-block
 linkvertise.download#@##headerTopAd
 linkvertise.download,linkvertise.com###headerTopAd .ad-dp1-wrapper
@@ -28945,6 +28950,7 @@ sadeempc.com##+js(remove-attr, style, body[style="visibility: hidden !important;
 sadeempc.com#$##babasbmsgx { display: none !important; }
 sadeempc.com#$?#body[style*="visibility"] { visibility: visible!important; }
 sadistic.pl###spAd
+sadyogrody.pl##.advB
 safe.elektroupdate.com#@#.adsbygoogle
 safeku.com##+js(window.open-defuser, 1, passeura)
 safelinku.net##.adsbygoogle
@@ -30591,6 +30597,7 @@ travelermaster.com##.__trm__adspot-title-container
 travelermaster.com##.__trm__adv-block
 travelermaster.com##div[class^="__trm__ad-med-rec-"]
 trend-chaser.com##.primary-ad-widget
+trendexposed.com##.nya-slot
 trendfaq.com##+js(window.open-defuser)
 trendingpolitics.com##.code-block-12
 triblive.com###shopsWidget
@@ -36541,6 +36548,7 @@ zzbaike.com###topnav
 ||apparatuslip.com^
 ||appboycdn.com^$third-party
 ||appcast.io^$third-party
+||appdata.hungryapp.co.kr/banner/
 ||appdynamics.com/geo/$third-party
 ||appealsfini.com^
 ||appendixwarmingauthors.com^
@@ -48319,6 +48327,7 @@ zzbaike.com###topnav
 ||jinxiuzhilv.com^
 ||jinyici.com/qq.js
 ||jipfvqusm.com^
+||jiphihizi.com^
 ||jipo.io^
 ||jirafe.com^$third-party
 ||jishulink.com/images/activity/invite_
@@ -56014,6 +56023,7 @@ zzbaike.com###topnav
 ||qvylkvlpjwz.com^
 ||qwant.com/action/
 ||qwant.com/impression/
+||qwant.com/maps/events
 ||qwant.com/v2/api/ux/surveys?
 ||qwblog.cn/localfile/20200612230036.gif
 ||qwerfdx.com^
@@ -58069,6 +58079,7 @@ zzbaike.com###topnav
 ||shippinginsights.com^$third-party
 ||shipsmarter.idrivelogistics.com^
 ||shirleyyean.com^
+||shiryharu.pro^
 ||shitao.xyz^
 ||shitcustody.com^
 ||shiyaokejishanghai.com^
@@ -64859,6 +64870,7 @@ zzbaike.com###topnav
 ||vidazoo.com/report/?
 ||vidcdn.name^
 ||vidcpm.com^
+||vidcrunch.com^$domain=downfile.site
 ||videa.hu/flvplayer_setcookie.php?
 ||videjere.com^
 ||video-ad-stats.googlesyndication.com^
@@ -65476,6 +65488,7 @@ zzbaike.com###topnav
 ||web0513.com^
 ||web1.51.la^
 ||web1s.com^$third-party
+||web3ads.net^$third-party
 ||webads.eu^$third-party
 ||webapi.dantri.com.vn/bn/list-pos
 ||webassembly.stream^$third-party
