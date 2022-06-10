@@ -1,8 +1,8 @@
-! Checksum: UQ6bsHckTIyZmsjvXh/EAQ
+! Checksum: ftD7SRHn4jTAYcdlwPYlsg
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.0.63.55
-! TimeUpdated: 2022-06-09T20:31:26+00:00
+! Version: 2.0.63.56
+! TimeUpdated: 2022-06-10T08:31:26+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -358,6 +358,7 @@ lj_bookmarklet
 ! Good: example.org#?#main > div.row:has(> div.ad)
 ! Bad: example.org##main > div.ad (should be in specific.txt)
 !
+74.ru#?#button + div:has(> div > div > ul > li > button[data-test="btn-share-vk"])
 saiyasune.com#?#div[id]:has(> a.modal-syncer:contains(当サイトはリンクフリーです))
 saiyasune.com##span[data-clipboard-text^="最安値.com - ネット通販の価格比較サイト"]
 saiyasune.com#?#div[id]:contains(/^▼ このページをシェアする ▼$/)
