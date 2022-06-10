@@ -1,8 +1,8 @@
-! Checksum: rtW1LRtK3PS+YCT23LWKCQ
+! Checksum: 2oJ9sKSKirJqNtCZpvYo1g
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.22.57
-! TimeUpdated: 2022-06-10T17:30:34+00:00
+! Version: 2.1.22.58
+! TimeUpdated: 2022-06-10T18:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -19569,6 +19569,10 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+piacenza24.eu##.custom-html-widget > a[href^="https://itunes.apple.com/"]
+piacenza24.eu##.custom-html-widget > a[href^="https://play.google.com/"]
+piacenza24.eu##.custom-html-widget > a[href^="https://appgallery.huawei.com/"]
+piacenza24.eu##.custom-html-widget > a[href^="https://www.microsoft.com/"]
 saiyasune.com#?#div[class]:has(> div[id]:contains(アプリ版なら))
 mcdonalds.co.jp###freestyle-apps-sns
 m.hungryapp.co.kr##.Mibox_down
@@ -30212,6 +30216,9 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+globo.com###newsletterMCWrapper
+piacenza24.eu###simplemodal-overlay
+piacenza24.eu###simplemodal-container
 ||opera.com/en/downloadassets/sticky-bar-auto
 blogs.opera.com##.widget_text
 xsport.ua#$#.social-sharer__item--google-news { visibility: hidden !important; }
@@ -30330,7 +30337,7 @@ medium.com#?#div[role="dialog"] ~ div > div > div > div > div > h2:contains(Sign
 latest-ufo-sightings.net###text-3
 silicon.de###nl-overlay
 silicon.de##.wrap-contenus
-evolutionofbodybuilding.net,androidayuda.com##.widget_newsletterwidget
+piacenza24.eu,evolutionofbodybuilding.net,androidayuda.com##.widget_newsletterwidget
 edimdoma.ru##.sticky_subscribe_block
 booking.com##.hide-newsletter-menu-tab
 booking.com##.emk_footer_update
