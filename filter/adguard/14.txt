@@ -1,8 +1,8 @@
-! Checksum: jeP8a9z0uniVeiZZpZ5Azw
+! Checksum: oiT5BabNGkRFR7kXpFmw4A
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.22.51
-! TimeUpdated: 2022-06-10T10:30:35+00:00
+! Version: 2.1.22.53
+! TimeUpdated: 2022-06-10T12:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -3297,6 +3297,7 @@ hgtv.com#@#.showads
 !
 !
 !
+nesoacademy.org#?#div[class^="jss"]:has(> ins.adsbygoogle)
 tweakers.net##.whitelistMessage
 uwaterloo.ca##div[aria-label="Ad Blocker Detected"]
 mainpost.de#%#//scriptlet('prevent-setTimeout', '"none"===window.getComputedStyle')
@@ -16201,7 +16202,7 @@ freixenet-onlineshop.de#%#//scriptlet('set-cookie-reload', 'cookie_basic', '1')
 ticket.io#%#//scriptlet('set-cookie-reload', 'privacyCookie', '1')
 picmonkey.com#%#//scriptlet('set-cookie', 'pm_cookie_consent', '1')
 architekturvideo.de#%#AG_onLoad(function(){if(-1==document.cookie.indexOf("borlabs-cookie")){var a=new MutationObserver(function(){var b=document.querySelector('._brlbs-btn-accept-all');b&&(a.disconnect(),b.click())});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)}});
-express.co.uk#%#AG_onLoad(function(){var a=new MutationObserver(function(){var b=document.querySelector('button[aria-label="I accept"]');b&&(a.disconnect(),b.click())});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)});
+express.co.uk#%#AG_onLoad(function(){if(-1==document.cookie.indexOf("euconsent-v2")){var a=new MutationObserver(function(){var b=document.querySelector('.qc-cmp2-container button + button[mode="secondary"]');b&&(a.disconnect(),b.click())});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)}});
 aubi-plus.com,aubi-plus.de#%#//scriptlet("set-cookie", "cm-accepted", "true")
 guetersloh.de#%#//scriptlet("set-cookie", "allowLoadExternRessources", "1")
 suslusozluk.com#%#//scriptlet("set-cookie-reload", "cookie_consent", "true")
@@ -21643,6 +21644,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+express.co.uk##.jw-flag-floating .jw-wrapper
 qwant.com#$#div[data-testid="Ribbon"] { display: none !important; }
 qwant.com#$#body.is-scrolled { --header-offset: auto !important; }
 cj.sina.com.cn###ad[class^="m-money"]
@@ -30202,6 +30204,9 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+||shefinds.com/iframe-modal-homepage/
+shefinds.com##.subscribe-footer-wrap
+express.co.uk##.sh__banner
 vidooly.com###elementor-popup-modal-21364
 renderforest.com##.footer-subscription
 edimdoma.ru##.zen_block

@@ -1,8 +1,8 @@
-! Checksum: /HfxiY266t2MPsJLQvISVA
+! Checksum: D/oUwgP04HPZMkE1zXy9pA
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.0.57.91
-! TimeUpdated: 2022-06-10T08:30:57+00:00
+! Version: 2.0.57.93
+! TimeUpdated: 2022-06-10T12:30:55+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -892,12 +892,15 @@ msn.cn#%#//scriptlet('hide-in-shadow-dom', 'msft-article[id^="native_ad_nativead
 ucptt.com#%#(function() { window.open_ = window.open; var w_open = window.open, regex = /tw\.jav321\.com/; window.open = function(a, b) { if (typeof a !== 'string' || !regex.test(a)) { w_open(a, b); } }; })();
 ! https://github.com/AdguardTeam/AdguardFilters/issues/34910
 goodav17.com#%#//scriptlet("abort-on-property-read", "popunder")
+! https://github.com/AdguardTeam/AdguardFilters/issues/121307
 ! https://github.com/AdguardTeam/AdguardFilters/issues/87176
 ! https://github.com/AdguardTeam/AdguardFilters/issues/54359
 ! https://github.com/AdguardTeam/AdguardFilters/issues/26318
 ! https://forum.adguard.com/index.php?threads/youku-com-v-qq-com.30749/
+! TODO: use scriptlet when this issue - https://github.com/AdguardTeam/Scriptlets/issues/221 will be fixed
+! youku.com#%#//scriptlet("adjust-setTimeout", "r--", "", "0.02")
+youku.com#%#(function(){window.setTimeout=new Proxy(window.setTimeout,{apply:(a,b,c)=>(c&&c[0]&&/r--/.test(c[0].toString())&&c[1]&&1e3===c[1]&&(c[1]*=.01),Reflect.apply(a,b,c))})})();
 m.youku.com,v.youku.com#%#//scriptlet('set-constant', 'Object.prototype._adData', 'emptyObj')
-youku.com#%#//scriptlet("adjust-setTimeout", "r--", "", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/109897
 iyf.tv#%#//scriptlet('set-constant', 'Object.prototype.ShouldPlayAds', '0')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/87232
@@ -18487,7 +18490,6 @@ gamer.com.tw,papalah.com,pili.com.tw#@#.text_ad
 gamer.com.tw,papalah.com,pili.com.tw#@#.text_ads
 !#Avgle.com
 $domain=ads.adxadserv.com|adserver.juicyads.com|cs.adxpansion.com|olmsoneenh.info|static.javhd.com|syndication.exosrv.com
-$webrtc,domain=avgle.com
 @@||avgle.com/embed/$genericblock,generichide
 ||adxxx.info^$domain=avgle.com
 ||avgle.topgirlsdating.com^$domain=avgle.com
@@ -19871,6 +19873,7 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=tianyashuku.com|
 @@||pstatp.com/cdn/*/jquery/$script,domain=bxwx11.com
 @@||zmtt.net^$script,domain=luoqiuzw.com
 !#Novels ads union
+||jianjianjiao.top^
 ##a[href*="/jianjianjiao.top"]
 ||lwxqaq.club^
 ||haitaochen.xyz^
@@ -19881,7 +19884,9 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=tianyashuku.com|
 ||guoyu.link^
 ||princesses.asia^
 ||uniworldgroup.asia^
+||merrrrrry.top^
 ||yping.online^
+||myuosid.cn^
 ||tianyao.site^
 ||edetlmb.cn^
 ||gzww.site^
@@ -24943,8 +24948,6 @@ webkaka.com#?#:-abp-has(>[href*="100/"])
 ||webkaka.com/script/cp.js
 ||webkaka.com/sim/
 ||webkaka.com^*x50.
-!#webrtc-ads
-$webrtc,domain=195.43.95.234|50.7.31.226|50.7.31.227|50.7.31.228|50.7.31.229|50.7.31.230|cntvboxnow.com|tvboxnow.com
 !#wnacg.com
 hentaicomic.org,wnacg.com,wnacg.org,wnacg4.com,wnacgs.com#@##adsbox
 hentaicomic.org,wnacg.com,wnacg.org,wnacg4.com,wnacgs.com#@#.google-ads
