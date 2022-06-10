@@ -1,8 +1,8 @@
-! Checksum: lSRrPWqTtlgDEqClorMPtQ
+! Checksum: Tv0M4uacx9Cz4buSk3Jnjg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.22.54
-! TimeUpdated: 2022-06-10T13:03:36+00:00
+! Version: 2.1.22.55
+! TimeUpdated: 2022-06-10T14:30:39+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -3058,6 +3058,7 @@ digitaltrends.com#@#.text_ads_2
 ! editorial.rottentomatoes.com#@#.text-ad
 ! @@||ad.doubleclick.net/ddm/adj^$domain=editorial.rottentomatoes.com
 !
+||floweryflavor.com^$third-party
 ||fearlessfaucet.com^$third-party
 ||terrifictooth.com^$third-party
 ||parchedsofa.com^$third-party
@@ -7507,6 +7508,9 @@ techadvisor.co.uk,forum.notebookreview.com,computerworld.com,skysports.com#$#bod
 !
 !
 !
+fups.com#$#body[style*="overflow:"] { overflow: auto !important; }
+fups.com#$#.cookie-bar:not(body) { display: none !important; }
+fups.com#$#.overlay { display: none !important; }
 wolt.com##div[class^="GdprConsentsModal_"]
 franquiciasmalvon.com,malvon.es###data-cookie + .bg_popup
 suslusozluk.com#$?##container > div#modal:has(div[data-op="accept-cookies"]) { display: none!important; }
@@ -16825,6 +16829,8 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/121418
+fups.com#@#.cookie-bar:not(body)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/121290
 @@||tweakers.net/x/build/cookieBar.*.js
 @@||tweakers.net/x/styles/components/cookiebar/cookie_bar.css
