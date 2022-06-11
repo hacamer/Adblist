@@ -1,8 +1,8 @@
-! Checksum: PE4E+LpxKXSryoNZ2BAOVA
+! Checksum: tdBUyMOfLaMQHQV5RrLoxw
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.0.58.4
-! TimeUpdated: 2022-06-11T18:30:59+00:00
+! Version: 2.0.58.5
+! TimeUpdated: 2022-06-11T19:30:55+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -860,6 +860,10 @@ csdn.net#?##feedlist_id > li:has(> div[id^="kp_box_"])
 !------- JS rules ---------------------!
 !--------------------------------------!
 !
+! https://forum.adguard.com/index.php?threads/resolved-69t79-com.48734
+! Scriptlet set-constant gets overwritten and ad pictures are still requested then
+69t79.com#%#Object.defineProperty(window, 'picARRAY4', { get: function() { return; } });
+69t79.com#%#Object.defineProperty(window, 'picARRAY5', { get: function() { return; } });
 ! https://github.com/AdguardTeam/AdguardFilters/issues/119195
 baiyangzuo.xkyn.com#%#//scriptlet("set-constant", "conone_lmg", "noopFunc")
 ! malicious redirect on first visit
