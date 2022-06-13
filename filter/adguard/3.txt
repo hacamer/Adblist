@@ -1,8 +1,8 @@
-! Checksum: lppDkQmGXZY3ElxrxKQYLA
+! Checksum: h3FNIOWBsBkV61+WcflNxw
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.41.3
-! TimeUpdated: 2022-06-12T14:31:19+00:00
+! Version: 2.0.41.5
+! TimeUpdated: 2022-06-13T10:31:22+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -89,6 +89,8 @@
 ! https://developer.chrome.com/docs/privacy-sandbox/topics/
 ! TODO: replace with a scriptlet later: https://github.com/AdguardTeam/Scriptlets/issues/214
 #%#//scriptlet('set-constant', 'Document.prototype.browsingTopics', 'undefined')
+! https://github.com/AdguardTeam/AdguardFilters/issues/121558
+forfun.ist#%#//scriptlet('prevent-fetch', 'ssl.geoplugin.net/javascript.gp')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/118441
 ! Related to removeparam rules
 qiita.com#%#//scriptlet("prevent-addEventListener", "load", "navigator")
@@ -5152,6 +5154,7 @@ nethunt.com/api/v1/track/email/$image
 ! Disabled in DNS filter
 ||telemetry.mozilla.org^
 !
+||adat.freemail.hu^
 ||ia.51.la^
 ||d.sondakika.com^
 ||tracking.channelsight.com^
@@ -20515,6 +20518,8 @@ _tracking.php?b=
 !
 /analytics.js$domain=freexcafe.com|rusvideos.tv|nakubani.ru|lun.com|songsara.net|newsmax.com|bolgehastanesi.com|ewtc.de|newsdig.tbs.co.jp
 !
+||nuk-widgets.fanhubmedia.com/api/ping
+||the-sun.com/assets/client/analyticsListeners*.js
 ||cdn.fast.beintoo.net/static/tags/beintoo-tag.js
 ||69t79.com/static/js/51la
 ||twivideo.net/templates/ajax_link_click.php
@@ -24794,6 +24799,7 @@ $app=com.miui.analytics
 ! For platforms which do not support $redirect rules
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/121558
 ! https://github.com/AdguardTeam/AdguardFilters/issues/120461
 @@||googletagmanager.com/gtm.js$domain=bigc.co.th
 ! https://github.com/AdguardTeam/AdguardFilters/issues/119730
