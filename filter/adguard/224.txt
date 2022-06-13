@@ -1,8 +1,8 @@
-! Checksum: i558IcI/vYzFKHejjXmajw
+! Checksum: O2oWhyCgJfIyturQfMr1yQ
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.0.58.18
-! TimeUpdated: 2022-06-13T05:30:56+00:00
+! Version: 2.0.58.19
+! TimeUpdated: 2022-06-13T06:30:56+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -368,6 +368,9 @@
 ! Bad: ||ad.doubleclick.net^ (should be in adservers.txt)
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/121515
+bigpixel.cn#$?##PAGE_AD_1 { remove: true; }
+bigpixel.cn#%#//scriptlet("set-constant", "killads", "true")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/120635
 moeci.com#%#//scriptlet('prevent-setTimeout', '_0x')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/120433
