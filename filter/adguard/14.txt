@@ -1,8 +1,8 @@
-! Checksum: 4BCCEM+JR/L/PjwWhfrqWA
+! Checksum: GDcgdCxmZeVHbQlxO9ECeA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.22.76
-! TimeUpdated: 2022-06-13T15:30:35+00:00
+! Version: 2.1.22.78
+! TimeUpdated: 2022-06-13T17:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7509,6 +7509,12 @@ mein-schoener-garten.de#$?#.sp-message-open { overflow: auto !important; positio
 !
 !
 !
+joom.com###content > div[aria-label*="cookie"]
+joom.com###content > div[aria-label^="Cookie"]
+joom.com###content > div[aria-label^="Küpsiste"]
+joom.com###content > div[aria-label^="Sütik"]
+joom.com###content > div[aria-label^="Sīkdatņu"]
+joom.com###content > div[aria-label^="Çerez"]
 era.be#$#body { overflow: auto !important; }
 era.be#$#.sliding-popup-bottom { display: none !important; }
 work.weixin.qq.com##.layoutCookiesBanner
@@ -8721,7 +8727,6 @@ petalmaps.com##.cookie-setting
 demokrata.hu##body .gdprBoxContainer:not(#style_important)
 courseunity.com###growls-br
 spiegelburg-shop.de##div[data-cookie-permission="true"]
-joom.com#?#div[class^="parent___"] > div[class^="container___"]:has(> div[class^="content___"] > div[class^="title__"]:contains(Cookie))
 eddiehub.org##.gdpr_cookie_banner
 monterail.com##.topbar-v1
 edealinfo.com###showFTCMessage-back
@@ -12280,7 +12285,6 @@ rgs.ru##.rgs-main-context-bar > div.container-rgs-context-bar:last-child
 akeebabackup.com###akeeba-dccc-banner-container
 mous.co###cookies-banner-container
 icedrive.net###prompt-cookies
-joom.com##div[class^="disclaimer"]
 schemecolor.com###sc-gdpr-box
 myfitnesspal.com###app > div[class^="MFPApp-"] > div > footer + div[class]
 novosti.dn.ua##.cookies_accept
@@ -20525,7 +20529,6 @@ news.yahoo.co.jp##a[data-ylk^="rsec:webtoapp;slk:bnr_"]
 news.yahoo.co.jp###wrapper > #peron
 partner.yahoo.co.jp##.Rsab
 paypayfleamarket.yahoo.co.jp###appadbnr
-paypaymall.yahoo.co.jp###SAB
 weather.yahoo.co.jp##.linkAndroid
 weather.yahoo.co.jp###content > #doubleImage.tracked_mods.doubleImage-skew
 weather.yahoo.co.jp###doubleImage
@@ -21503,6 +21506,7 @@ newzit.com#$#div[class*="hasSmartBanner_"] { padding-top: 0 !important; }
 ! Unhide for Android CB if top padding cannot be removed
 !
 fpcafe.jp###bnrBott
+paypaymall.yahoo.co.jp###SAB
 travel.rakuten.co.jp###footerBannerAppDL
 lulucos-bys.jp##.m-banner-article-download-app
 josei-bigaku.jp##.app

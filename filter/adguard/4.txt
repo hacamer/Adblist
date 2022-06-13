@@ -1,8 +1,8 @@
-! Checksum: LwrqFb5tWdxeckZDIwYgAg
+! Checksum: +j0rljMvcXrqxwaGhQ7fWA
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.0.63.71
-! TimeUpdated: 2022-06-13T16:31:26+00:00
+! Version: 2.0.63.73
+! TimeUpdated: 2022-06-13T17:31:25+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1526,7 +1526,10 @@ sporx.com,dive-anime.com,jpost.com,otonari-anime.com,mecicolle.gnavi.co.jp,intel
 github.com##.readme-sharing
 nsp.ru##app-share
 doujinhibiki.net##.sharBox
+voi.0101.co.jp##.snssharearea
 saiyasune.com###s_bs18
+felissimo.co.jp##.sns_container_fsp
+felissimo.co.jp##.social_fca > ul
 renderforest.com##.rf-blog-social-share-wrap
 edimdoma.ru##.rating ~ div.title_small
 familyeducation.com##.fe-share-buttons
@@ -2008,7 +2011,6 @@ style.nikkei.com##.sc-17icl5v-0
 music.line.me##ul[class^="_spi_release_"] > li:not([class^="_spi_cnt_"])
 community.atlassian.com##.atl-thread-social
 rayon.in.ua##.social-publicationbody
-store.ponparemall.com##.jsSocialButton
 store.ponparemall.com##.btnSns
 onsen.nifty.com##.detailShareBox
 onsen.nifty.com##.shareToFriends
@@ -2267,6 +2269,7 @@ news.tbs.co.jp##.cp-sns
 post.japanpost.jp##.share_
 muzikindir.vip##.social-icons > li > center > *:not(center)
 cecile.co.jp##.sharearea
+7net.omni7.jp##.sharelist_dd
 omni7.jp##.listShare
 sunnylife.tw###blogimoveSLIDE
 thenationalpulse.com##.widget-area > div.widget_facebook
@@ -2721,7 +2724,7 @@ anadf.com##.product-sns
 askanews.it##.condividi_su
 townnews.co.jp##div[class^="snsFlex"]
 otohaber.com.tr##.pageTools > ul > li:not(.resizer):not(.print)
-taftcoffee.com##.ProductMeta__ShareButtons
+dreamvs.jp,taftcoffee.com##.ProductMeta__ShareButtons
 imagecompressor.com,mobi2epub.com,epub2kindle.com,pdf2kindle.com,epubtopdf.com,pubtopdf.com,svgoptimizer.com,epstopng.com,epstosvg.com,svgtopdf.com,pdftosvg.com,jpg2svg.com,svgtojpg.com,svgtopng.com,png2svg.com,pngtogif.com,giftopng.com,gifcompressor.com,giftomp4.com,pdf2tiff.com,tiff2pdf.com,jpg2tiff.com,tiff2jpg.com,png2tiff.com,tiff2png.com,pdf2doc.com,doctopdf.com,pdftoimage.com,jpg2pdf.com,pdf2docx.com,pdf2png.com,png2pdf.com,pdfcompressor.com,combinepdf.com,rotatepdf.com,unlockpdf.com,croppdf.com,toepub.com,xpstopdf.com,djvu2pdf.com,pdftotext.com,shrinkpdf.com,compressgif.com,compresspng.com,compressjpeg.com##.footer__title
 yakumo-project.com,fireforce-anime.jp###twidget
 f5.com##.addthis_share
@@ -5118,11 +5121,12 @@ indiaglitz.com##.socialnetwork_counts
 car.ru##.share__title-v2
 finecooking.com##.article__actions__social
 thebell.io##app-share-buttons
-onecall2ch.com,chaos2ch.com,himasoku.com,akb48matomemory.com,blog.livedoor.jp,gehasoku.com##.content > nav.section-box > ul.plugin-box
-blog.livedoor.jp,chaos2ch.com,michaelsan.livedoor.biz###article_bottom_v2 + nav.section-box
+livedoor.biz,onecall2ch.com,chaos2ch.com,himasoku.com,akb48matomemory.com,blog.livedoor.jp,gehasoku.com##.content > nav.section-box > ul.plugin-box
+blog.livedoor.jp,chaos2ch.com,livedoor.biz###article_bottom_v2 + nav.section-box
 girlsvip-matome.com##.sns_btn2
 sleipnirstart.com###sbm
 beefandfish.com##.maxmag_facebook_widget
+oumaga-times.com##.container-inner > nav.section-box > ul.plugin-box
 weekly.ascii.jp,utaten.com,store.united-arrows.co.jp,dmm.co.jp,localplace.jp,news.yahoo.co.jp##.snsShare
 dmm.co.jp##.d-sns-button
 gazeta.arche.by##.single-social-list
@@ -9707,6 +9711,8 @@ yandex.ru##.response__share > div.share-icons
 rambler.ru##div[data-blocks="content_info"] + div[class^="container-"]
 rambler.ru#%#//scriptlet('remove-in-shadow-dom','div[data-blocks="content_info"] + div[class^="container-"]')
 !
+!+ NOT_OPTIMIZED
+store.ponparemall.com##.jsSocialButton
 !+ PLATFORM(ios, ext_android_cb, android)
 waranote.livedoor.biz##.section-box > ul.article-button
 !+ NOT_OPTIMIZED

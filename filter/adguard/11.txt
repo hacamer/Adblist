@@ -1,8 +1,8 @@
-! Checksum: eyVmu2wA4RgVXLprU7dfag
+! Checksum: UA841NwzxZhnh0T113g5cg
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.30.51
-! TimeUpdated: 2022-06-13T10:30:19+00:00
+! Version: 2.0.30.53
+! TimeUpdated: 2022-06-13T17:30:18+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1616,6 +1616,7 @@ rambler.ru#?#main > div[class] ~ div[class] > div[class] div[class] > a[href^="h
 ! Good: ##.adv
 ! Bad: example.org##.adv (should be in specific.txt)
 !
+###ad_inview_area
 !--- popular banner sizes ---
 ##img[width="320"][height="50"]
 ##iframe[width="320"][height="50"]
@@ -2600,6 +2601,7 @@ enfant.living.jp##.ad-inread
 arine.jp##.Entry-top-ad
 news.yahoo.co.jp##a[data-cl-params$="cl_link:bnr_b;"]
 m.malaysiakini.com##.items-center[style="height:300px"]
+oniyomech.livedoor.biz##div[id$="_head_v2"]
 kabumatome.doorblog.jp##.plugin-free_area
 mrs.living.jp##.banner-area
 ovo.kyodo.co.jp##div[style$="bottom: 0; width: 100%; display: block; text-align: center; background-color: #000000;"]
@@ -2715,7 +2717,7 @@ eromanga-kishin.com###spwrapper
 eromanga-kishin.com##.picad2row
 yomiuri.co.jp##.home-2021-ad-head-sp
 yomiuri.co.jp##.sp_ad_banner
-nukerumannga.com,ero-mangasokuhou.com,ero-mangalife.com,eromanga-cafe.com,doujincafe.com##.archive > div[style="margin:0 auto;"]:not([class])
+ero-comic-hunter.net,eromanga-castle.com,nukerumannga.com,ero-mangasokuhou.com,ero-mangalife.com,eromanga-cafe.com,doujincafe.com##.archive > div[style="margin:0 auto;"]:not([class])
 missav.com##div[style="width: 300px; height: 100px;"]
 augsburger-allgemeine.de##.aa-ad-frame
 mobile.baidu.com##.detail-banner
@@ -2945,7 +2947,6 @@ m.sport-express.ru##div[style*="width:325px;"][style*="height: 250px;"]
 softportal.com##.cardPageDescMain > div[style*="float:left;"][style*="max-width:100%;"]
 rg.ru###articleContainer + div.b-contacts__wrap
 heise.de##.article-body > .visible-xs > .visible-xs[style*="min-height:"]
-ddd-smart.net,ero-cluster.com,chinshiko-outfit.com,eromanga-pon.com###ad_inview_area
 eromanga-pon.com##.ad_big
 ||eromanga-castle.com/famsiro1.html
 dojin-pandemic.com,dojinwatch.com,eromanga-castle.com,eromanga-cafe.com,doujincafe.com,nukerumannga.com,ero-mangalife.com,ero-mangasokuhou.com,ero-manga-platinum.net,erodoujinjohoukan.com,erodoujinshi-world.com,ero-comic-hunter.net,eromanga-cafe.com,eromanga-sevendays.net,moeero-library.com##.cntiframe
