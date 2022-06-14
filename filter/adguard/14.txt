@@ -1,8 +1,8 @@
-! Checksum: 9aA4Elpz5gcVdV8lTVfU9Q
+! Checksum: T8t7KA559xqE4pmpaViWzQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.22.85
-! TimeUpdated: 2022-06-14T09:30:38+00:00
+! Version: 2.1.22.86
+! TimeUpdated: 2022-06-14T10:30:44+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -8302,7 +8302,7 @@ renewal.ru##div[data-cookie-banner]
 craft-cv.com###rodo_notice
 ||xsuite.com/typo3conf/ext/cu_cookies/
 itau.com.br##app-marco-civil
-spielregeln-spielanleitungen.de,trakt.tv,boardgamegeek.com###cc--main
+zeno.fm,spielregeln-spielanleitungen.de,trakt.tv,boardgamegeek.com###cc--main
 realme.com##.r-cookie-footer ~ div.mask-untouch
 checkpoint.com###notification
 shaw.ca##notification-block[data-notice*="cookies"]
@@ -19604,6 +19604,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+sankakucomplex.com###news-ticker
 check24.de#%#//scriptlet('set-cookie', 'c24FlugSplashApp', '1')
 etsy.com###web2app-shophome
 piacenza24.eu##.custom-html-widget > a[href^="https://itunes.apple.com/"]
@@ -21513,6 +21514,7 @@ newzit.com#$#div[class*="hasSmartBanner_"] { padding-top: 0 !important; }
 !
 ! Unhide for Android CB if top padding cannot be removed
 !
+belluna.jp###applidl_bn
 video.fc2.com##a[href="https://fc2.to/BRpeHA"]
 fpcafe.jp###bnrBott
 paypaymall.yahoo.co.jp###SAB
@@ -21707,6 +21709,7 @@ lifescience.pl##.hwp-bottomleft
 [$domain=mail.ru,path=/^\/$/]#?#.toolbar:has(> div.toolbar__inner > div.toolbar__aside > span.toolbar__close)
 amp.scmp.com###piano-module-template > div[id^="default-meter-page-views-"]
 xhamster.com##.dyltv-container
+career.levtech.jp##.js-fixedGuideCta
 localmemphis.com##.video__docker.video__docker_state_docked
 programiz.com#$#.main--backdrop { display: none !important; }
 programiz.com#$#.pop-up-block { display: none !important; }
@@ -29554,7 +29557,7 @@ lemonde.fr##.message--register
 edureka.co##div[class^="myMock-interview-banner-"]
 ozon.ru##div[data-widget="skuAdvSearchShelf"]
 roskvartal.ru##.ads
-telegraph.co.uk##.subscribe-banner
+qobuz.com,telegraph.co.uk##.subscribe-banner
 m.lenta.ru###okko-top-mobile
 reverb.com#?#.sortable-tiles > li.sortable-tile:has(> div.grid-card div.bump-tag)
 superprof.es##.cta-online
@@ -32834,7 +32837,7 @@ i-m-i.ru#?#div[type="article"] ~ div[class]:has(> div > div > form:contains(По
 pult.ru##div[id^="subscription"]
 pult.ru##.s-main-news-subscribe
 readovka.news##.block-community-zen
-supermagnete.de,lampenwelt.de,oxfordlearning.com,caseking.de,lidyana.com,officedepot.co.cr##.footer-newsletter
+dinos.co.jp,supermagnete.de,lampenwelt.de,oxfordlearning.com,caseking.de,lidyana.com,officedepot.co.cr##.footer-newsletter
 ouest-france.fr##.bloc-newsletter
 trendus.com###SideBar-Newsletter
 portal.lviv.ua##.subscribe_social
