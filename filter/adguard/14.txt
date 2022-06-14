@@ -1,8 +1,8 @@
-! Checksum: lsPMH/oW4ArrgVxSOZbpAQ
+! Checksum: aXPJ2KOwHJHLSWxLbDMN5g
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.22.90
-! TimeUpdated: 2022-06-14T13:30:41+00:00
+! Version: 2.1.22.92
+! TimeUpdated: 2022-06-14T15:30:42+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -3297,6 +3297,7 @@ hgtv.com#@#.showads
 !
 !
 !
+lingust.ru##p[style="border-top: 2px solid #FEABAB; border-bottom: 2px solid #FEABAB; background: #FFDFDF; padding: 0.8em;"]
 nesoacademy.org#?#div[class^="jss"]:has(> ins.adsbygoogle)
 tweakers.net##.whitelistMessage
 uwaterloo.ca##div[aria-label="Ad Blocker Detected"]
@@ -20291,6 +20292,7 @@ hoerzu.de##.hz-android-banner
 finanswebde.com##.prouser.fcbluebg
 ||tver.jp/img/sd_to_app_banner.png
 admin.blog.fc2.com##.gtm-h_bnr
+cart.fc2.com##.app_notice_overlay
 reverso.net###mobileAppZone
 booking.com##div[data-item-id="gta_smart_banner"]
 news.nifty.com##.mod_ad_app
@@ -21713,6 +21715,7 @@ vc.ru##.floating_screen_film--fixed
 express.co.uk##.jw-flag-floating .jw-wrapper
 qwant.com#$#div[data-testid="Ribbon"] { display: none !important; }
 qwant.com#$#body.is-scrolled { --header-offset: auto !important; }
+ktmmobile.com#%#//scriptlet('set-constant', 'mainBottomBanner', 'noopFunc')
 cj.sina.com.cn###ad[class^="m-money"]
 saiyasune.com##div[style^="position: absolute;"][style*="z-index: 1000;"][style*="width: 100%;"]
 smartnator.com#%#//scriptlet('set-local-storage-item', 'announcement', '1')
@@ -29331,6 +29334,7 @@ theync.com##.top-aff
 valuewalk.com##.stagi-valuewalkpremium
 loads.ati.su##div[class^="Search_banner__"]
 triumph-cpn.com##.campaignBnr
+ktmmobile.com##.top-event
 mein-gartenexperte.de##div[id^="flowin-exit"]
 indianexpress.com##.premium-story
 belretail.by##.advertising-opportunities
@@ -30277,6 +30281,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 sergiorossi.com##.newsletterOptinModal
 torontovka.com##div[data-type="subscription"]
 torontovka.com##tor-subscribe-btn
+parfois.com#%#//scriptlet("set-cookie", "newsletter_shown", "false")
 lavatools.co##.nsio-edp-overlay
 ayntec.com##section[data-section-type="newsletter-popup"]
 github.com##.js-newsletter-signup-form
@@ -36567,6 +36572,7 @@ techxplore.com,phys.org##.embed-responsive-trendmd
 naobzorah.ru###shopBlock
 ! popIn recommendations
 ||api.popin.cc^$third-party
+media.moneyforward.com##.home-ranking
 bike-news.jp#$?#.swiper-slide[data-history^=photo_extra] { remove: true; }
 otonanswer.jp#$?#.swiper-slide[data-history^="photo_extra"] { remove: true; }
 bike-news.jp,otonanswer.jp$$div[data-history="photo_extra"]
