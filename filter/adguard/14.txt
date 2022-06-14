@@ -1,8 +1,8 @@
-! Checksum: rMWImpL/fWJ/EmBkCJYEJg
+! Checksum: 7Al+l9/Ud6SngGIYw02+vg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.22.80
-! TimeUpdated: 2022-06-13T20:30:35+00:00
+! Version: 2.1.22.81
+! TimeUpdated: 2022-06-14T06:30:35+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2908,6 +2908,7 @@ yandex.*##body[data-bem*="Яндекс.Картинки"] div[data-bem*="R-I-"]:
 www.kinopoisk.ru##div[class^="toaster-container"]
 www.kinopoisk.ru##div[class^="styles_adBlockWarningRoot"]
 ! otzovik
+otzovik.com##td[colspan] > div[style^="background-color: #ffd2ca;"]
 otzovik.com#%#//scriptlet('prevent-eval-if', 'xored')
 otzovik.com#%#//scriptlet("abort-on-property-read", "Object.prototype.RtbLoadDone")
 otzovik.com#%#//scriptlet("abort-on-property-read", "Object.prototype.RtbBlockRenderStart")
