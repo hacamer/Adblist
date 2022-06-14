@@ -1,8 +1,8 @@
-! Checksum: zVFAIGvZRypcYgyx8xfOKg
+! Checksum: OKLOWBb/dGdBrwhoh9X5PA
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.41.10
-! TimeUpdated: 2022-06-14T10:31:34+00:00
+! Version: 2.0.41.12
+! TimeUpdated: 2022-06-14T12:31:26+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -353,6 +353,7 @@ journal-plaza.net#?#.rightside div.block.bnavi[-ext-has="h3.dtitle:contains(Сч
 !||i.snssdk.com/log/*
 !||i.snssdk.com/slardar/sdk.js
 !
+||p.data.cctv.com^
 ||unibots.in^$third-party
 ||yottlyscript.com^
 ||wpfc.ml^
@@ -5160,6 +5161,7 @@ nethunt.com/api/v1/track/email/$image
 ! Disabled in DNS filter
 ||telemetry.mozilla.org^
 !
+||ubt-sin.tripcdn.com^
 ||tr.ds.kakao.com^
 ||web-vitals.booking.com^
 ||adat.freemail.hu^
@@ -5871,6 +5873,7 @@ nethunt.com/api/v1/track/email/$image
 ||beacon.tws.toyota.jp^
 ||tr.marsflag.com^
 ||p.gazeta.pl^
+||st-*.dynamicyield.com^
 ||st.dynamicyield.com^
 ||log.outbrainimg.com^
 ||analytics-udg.netdna-ssl.com^
@@ -20137,6 +20140,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ! Umami
 /umami.js
 !
+/?local_ga_js=
 /wp-power-stats.js
 /akam/13/*
 /clientele/reports/*
@@ -20582,6 +20586,8 @@ _tracking.php?b=
 !
 /analytics.js$domain=freexcafe.com|rusvideos.tv|nakubani.ru|lun.com|songsara.net|newsmax.com|bolgehastanesi.com|ewtc.de|newsdig.tbs.co.jp
 !
+||unileversolutions.com/*/js/trackUser.
+||eapi.pcloud.com/loganalyticsevent
 ||cdn.jsdelivr.net/gh/unib0ts/
 ||secure.booking.com/email_opened_tracking_pixel
 ||booking.com/*/track^
@@ -26520,8 +26526,6 @@ nnmclub.ro,nnm-club.t0r.xyz,nnm-club-me.appspot.com,nnm-club.lib,nnm-club.me,nnm
 @@||googletagmanager.com/gtm.js$domain=imgur.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/25373
 @@||googletagmanager.com/gtm.js$domain=fooda.com
-! https://github.com/AdguardTeam/AdguardFilters/issues/27402
-@@||google-analytics.com/cx/api.js$domain=pcloud.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/27312
 @@||googletagmanager.com/gtm.js$domain=cinemaximum.com.tr
 ! https://github.com/AdguardTeam/AdguardFilters/issues/26787
