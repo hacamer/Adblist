@@ -1,8 +1,8 @@
-! Checksum: Y2jV9LXc4IOsSaxw8QSsGw
+! Checksum: gA9exW1Fc3CS6BkR46pJsw
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.41.15
-! TimeUpdated: 2022-06-14T16:31:24+00:00
+! Version: 2.0.41.17
+! TimeUpdated: 2022-06-14T17:31:25+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -353,6 +353,9 @@ journal-plaza.net#?#.rightside div.block.bnavi[-ext-has="h3.dtitle:contains(Сч
 !||i.snssdk.com/log/*
 !||i.snssdk.com/slardar/sdk.js
 !
+||b.sli-spark.com^
+||tracker-rec.smart-bdash.com^
+||log.r-oo.jp^
 ||ec-concier.com^$third-party
 ||tracker.xgen.dev^
 ||p.data.cctv.com^
@@ -962,7 +965,6 @@ journal-plaza.net#?#.rightside div.block.bnavi[-ext-has="h3.dtitle:contains(Сч
 ||logbor.com^$third-party
 ||click-plus.net^
 ||stats.vliplatform.com^$third-party
-||smart-bdash.com^$third-party
 ||analytics.contents.by-fw.jp^
 ||appier.net^$third-party
 ||depart.trinitymedia.ai^
@@ -5660,7 +5662,6 @@ nethunt.com/api/v1/track/email/$image
 ||pv.hd.sohu.com^
 ||pv.sohu.com^
 ||adv-sv-stat.focus.cn^
-||tracker.jawcloud.co^
 ||analytics.callbell.eu^
 ||analytics.zeekit.co^
 ||track.lexico.com^
@@ -6416,7 +6417,6 @@ nethunt.com/api/v1/track/email/$image
 ||mpc.nicequest.com^$third-party
 ||collector-analytics.efigence.com^
 ||stat.kununu.cz^
-||log.hira-meki.jp^
 ||sync.1dmp.io^$third-party
 ||ya.domain-vip.net^$third-party
 ||webanalyzer.bussion.com^$third-party
@@ -6776,7 +6776,6 @@ nethunt.com/api/v1/track/email/$image
 ||apm.crittercism.com^
 ||api.flocktory.com^$third-party
 ||yieldmo-builds.s3.amazonaws.com^
-||xslt.alexa.com^$third-party
 ||widget.perfectmarket.com^
 ||whos.amung.us^$third-party
 ||vra.outbrain.com^
@@ -20588,6 +20587,8 @@ _tracking.php?b=
 !
 /analytics.js$domain=freexcafe.com|rusvideos.tv|nakubani.ru|lun.com|songsara.net|newsmax.com|bolgehastanesi.com|ewtc.de|newsdig.tbs.co.jp
 !
+||resultspage.com/js/sli-spark.js
+||smart-bdash.com/tracking-script/
 ||tgrthaber.com.tr/item/hit?item_id=
 ||api.livestory.io/*/collect
 ||unileversolutions.com/*/js/trackUser.
