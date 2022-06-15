@@ -1,8 +1,8 @@
-! Checksum: SBiKpARMJHJotISFOkMn3g
+! Checksum: SNvvwakiaZ/U4UMPvE749g
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.23.1
-! TimeUpdated: 2022-06-15T13:30:42+00:00
+! Version: 2.1.23.3
+! TimeUpdated: 2022-06-15T15:30:42+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -19617,6 +19617,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+macaro-ni.jp##.globalFooter__appWrapper
 trtworld.com#$#body #smartbanner.android { display: none!important; }
 trtworld.com#$#body > #smartbanner ~ header.navbar { margin-top: 0 !important; }
 mbok.jp##.GotoApp
@@ -36841,7 +36842,8 @@ networkguru.ru##.tbForm_CallMe
 ||widget.whatsbroadcast.com^$third-party
 ||widgets.livetex.ru^$third-party
 ||livetex.ru/js/client.js$third-party,domain=~tele2.ru|~linline-clinic.ru|~lg.com
-||zopim.com^$third-party,domain=~help.ubnt.com|~nordvpn.com|~egb.com|~amaysim.com.au|~endclothing.com|~customercare.pizzahut.co.uk|~starlingbank.com|~nvidia.com|~wevpn.com
+! make it domain specific, block if the widget is really annoying
+!||zopim.com^$third-party,domain=
 ! gubagoo
 ||gubagootracking.com^$third-party
 ||cdn.gubagoo.io^$third-party
@@ -36928,7 +36930,6 @@ indoxxi.show##.tawkto-btn
 @@||static.apester.com/js/sdk/*/apester-javascript-sdk.min.js$domain=sport24.ru
 @@||display.apester.com/interactions/$xmlhttprequest,domain=sport24.ru
 @@||renderer.apester.com^$domain=sport24.ru
-! https://github.com/AdguardTeam/AdguardFilters/issues/15384
 ! https://github.com/AdguardTeam/AdguardFilters/issues/6473
 @@||code.jivosite.com^$domain=help.letyshops.ru
 !
