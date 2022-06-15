@@ -1,8 +1,8 @@
-! Checksum: Ihn8EB+uWtMb7XToxWf7rg
+! Checksum: m99g4z87K0P4Sx2QFfUtEw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.22.97
-! TimeUpdated: 2022-06-15T06:30:36+00:00
+! Version: 2.1.22.98
+! TimeUpdated: 2022-06-15T10:30:53+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -5501,6 +5501,7 @@ cc-fan.tv,cn-fan.tv,fox-fan.tv,nf-fan.tv#$#.pub_300x250.pub_300x250m.pub_728x90.
 !######### General element hiding rules ################
 !#######################################################
 !
+###cookie-bg
 ##.cookiealert.show
 ###cm-cookie-window
 ##.amgdprcookie-bar-container
@@ -8924,7 +8925,6 @@ gitpod.io##.bottom.justify-between
 columbia.edu###cu-privacy-notice
 indeed.com##.gnav-CookiePrivacyNotice
 whatsapp.com##._wauiCookiesBanner__cookiesBannerDialog
-sorglos-guenstig-fahren.com###cookie-bg
 polarstern-energie.de#$#body { overflow: visible !important; }
 polarstern-energie.de#$#.cookie-consent-backdrop { display: none !important; }
 enlisted.net##.gj-cookie-prompt
@@ -29337,6 +29337,7 @@ experts-exchange.com##.ctaSolutionStickyWrapper
 theguardian.com##.contributions__adblock
 ||contributions.guardianapis.com^
 !
+live.fc2.com##.ad-list
 blogs.opera.com##.widget_magical_download_ad
 theync.com##.top-aff
 ||imagel.sekainavi.com/images/banner/
@@ -30287,6 +30288,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+remontka.pro##div[style^="margin:auto; width:300px;margin-bottom:15px;"]
 sergiorossi.com##.newsletterOptinModal
 torontovka.com##div[data-type="subscription"]
 torontovka.com##tor-subscribe-btn

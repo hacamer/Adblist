@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: JyITeIw+tFvBAz9AIpRqDA
+! Checksum: AOYt+37Ug4U7v80wGVS5Ng
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202206151731
-! Last Modified: 2022年06月15日 17:31
+! Version: 202206151835
+! Last Modified: 2022年06月15日 18:35
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 74390
+! Total count: 74394
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -23968,6 +23968,8 @@ av01.tv##+js(remove-attr, onclick, a[href^="/video/"][onclick^="setTimeout"])
 av01.tv##+js(remove-class, vjs-hidden, .vjs-control-bar)
 av01.tv##+js(window.open-defuser)
 av01.tv#?#.row > div > div#tile-ad:upward(1)
+avanti24.pl##.fullWidthBanner
+avanti24.pl,gazeta.pl#$#.adviewDFPBanner { position: absolute !important; left: -3000px !important; }
 avaxhome.cc##.adblock-warning
 avbil.net#@#.ad_img
 avcanada.ca##.postbody > div[id^="post"] > center:not([class]):not([id]):not([style])
@@ -27850,9 +27852,9 @@ gaystream.pw##.a-block
 gaytail.com##+js(abort-current-script, onload, onclick)
 gayvegas.com,looktothestars.org,nintandbox.net,plurk.com,thebarentsobserver.com,tolonews.com,webtor.io##.adsense
 gayzerhd.club,hdporn-movies.com,pornpapa.com,gettubetv.com,crownimg.com##+js(addEventListener-defuser, load, popMagic)
+gazeta.pl###c2c-widget-hp:empty
 gazeta.pl##+js(remove-class, c-section--lifestyle--apart, .l-main > .c-section--lifestyle.c-section--lifestyle--apart)
 gazeta.pl##.o-section__adform
-gazeta.pl#$#.adviewDFPBanner { position: absolute !important; left: -3000px !important; }
 gazetadopovo.com.br#@#.ad-content
 gazetaonline.com.br#@#.ad-top
 gazettetimes.com,missoulian.com,kenoshanews.com,cumberlink.com,trib.com,dailyprogress.com,stltoday.com,journalstar.com##.ad-col
@@ -36707,6 +36709,8 @@ wcofun.com###reklam_kapat
 wcofun.com##+js(abort-current-script, document.createElement, cpmstarAPI)
 wcofun.com##+js(no-setTimeout-if, AdBlock)
 wcofun.com##+js(set-constant, isAdBlockActive, false)
+wcofun.com#$##wrapfabtest { height: 1px !important; }
+wcofun.com#@#.adBanner
 wcofun.com,wcoforever.net,wcoforever.com,thewatchcartoononline.tv###sidebar_r1
 wcostream.com##.reklam_pve
 wcostream.com##div[style="width: 420px; height: 300px;"]

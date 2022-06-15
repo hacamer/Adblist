@@ -1,8 +1,8 @@
-! Checksum: 48go4N/6aQsfe9vb3WE7NA
+! Checksum: zUucYoxBDScZQfoofdq4jg
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.41.19
-! TimeUpdated: 2022-06-15T07:31:21+00:00
+! Version: 2.0.41.21
+! TimeUpdated: 2022-06-15T10:31:45+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -20080,6 +20080,10 @@ charlestownwyllie.oaklawnnonantum.com^
 ! https://github.com/AdguardTeam/AdguardFilters/issues/60875
 /facebookproductad/views/js/pixel.js
 !
+! Facebook
+/js/fb_tracking.js
+/fbpix-events-
+!
 ! Cloudflare
 /\/(public|resources|static|assets)\/([a-f0-9]){28,31}$/$script,xmlhttprequest,~third-party
 /cdn-cgi/bm/cv/*$script
@@ -20124,6 +20128,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ! Umami
 /umami.js
 !
+/facebook_fbevents.
 /?local_ga_js=
 /wp-power-stats.js
 /akam/13/*
@@ -20584,6 +20589,8 @@ _tracking.php?b=
 ||api.livestory.io/*/collect
 ||unileversolutions.com/*/js/trackUser.
 ||eapi.pcloud.com/loganalyticsevent
+/facebook_fbevents.js$domain=femistories.com|chrum.com|deezee.eu
+/facebook_sdk_$domain=femistories.com|chrum.com|deezee.eu
 ||cdn.jsdelivr.net/gh/unib0ts/
 ||secure.booking.com/email_opened_tracking_pixel
 ||booking.com/*/track^
