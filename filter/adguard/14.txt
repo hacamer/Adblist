@@ -1,8 +1,8 @@
-! Checksum: m99g4z87K0P4Sx2QFfUtEw
+! Checksum: 8ErCl0B5996MMeWtEYZAKA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.22.98
-! TimeUpdated: 2022-06-15T10:30:53+00:00
+! Version: 2.1.23.0
+! TimeUpdated: 2022-06-15T12:30:35+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2575,6 +2575,8 @@ hi-tech.mail.ru##.sticky_footer div[class^="block block_padding rb-block-"]
 ##.sosyal:not(body):not(html)
 ##.td_block_social_counter
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/121873
+xakep.ru##.bdaia-block-wrap.bd-course
 ! https://github.com/AdguardTeam/AdguardFilters/issues/121153
 arabic.rt.com##.rtonline-index-main-banner
 ! https://github.com/AdguardTeam/AdguardFilters/issues/120849
@@ -7511,6 +7513,7 @@ mein-schoener-garten.de#$?#.sp-message-open { overflow: auto !important; positio
 !
 !
 !
+mindray.com##.cookieFooterNotice
 store.wacoal.jp##.spm-toast[style="display: block; animation-duration: 250ms; left: 0px; right: 0px; margin-left: auto; margin-right: auto;"]
 honeys-onlineshop.com###policy_modal
 petcity.lt#%#//scriptlet('remove-class', 'overlayopen', 'html')
@@ -19614,6 +19617,8 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+trtworld.com#$#body #smartbanner.android { display: none!important; }
+trtworld.com#$#body > #smartbanner ~ header.navbar { margin-top: 0 !important; }
 mbok.jp##.GotoApp
 brandeli.com###appbuner
 store.wacoal.jp##.spm-toast[style="display: block; animation-duration: 1000ms; animation-timing-function: ease-in; left: 0px; right: 0px; margin-left: auto; margin-right: auto;"]
@@ -21469,7 +21474,7 @@ mdpr.jp##.p-articleComment__buttonArea
 !+ NOT_OPTIMIZED
 mdpr.jp###app-header-banner
 !+ NOT_OPTIMIZED
-~m.thehipstore.co.uk,~teb.com.tr###smartbanner.android
+~trtworld.com,~m.thehipstore.co.uk,~teb.com.tr###smartbanner.android
 !+ NOT_PLATFORM(ios, ext_android_cb)
 shazam.com##.shz-frame-apps-banner
 !+ NOT_OPTIMIZED
@@ -21717,6 +21722,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+quora.com##.qu-alignItems--center.qu-zIndex--blocking_wall
 visaplace.com###elementor-popup-modal-45553
 vc.ru##.floating_screen_film--fixed
 you.com#%#//scriptlet('set-local-storage-item', 'hasSeenAddToChromeNudge', '1')
@@ -30288,6 +30294,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+xakep.ru###custom_html-7
 remontka.pro##div[style^="margin:auto; width:300px;margin-bottom:15px;"]
 sergiorossi.com##.newsletterOptinModal
 torontovka.com##div[data-type="subscription"]
@@ -33914,7 +33921,7 @@ ndtv.com##.sub_newsletter
 igate.com.ua,harpersbazaar.com.ua,incrussia.ru##.subs
 gastronom.ru,marketplace.magazineluiza.com.br,supersadovnik.ru,tripoli.land,rockstargame.su##.subs-form
 buyon.ru##.subscribe-b
-positronica.ru,eurasia.expert,hockey.by,kleo.ru,focusme.com,charbelnemnom.com,iphonegeek.me,afanasy.biz,media.nenaprasno.ru,vogue.ru,hyperhost.ua,pravda.ru,reverso.net,vokrug.tv##.subscribe-block
+newsweek.com,positronica.ru,eurasia.expert,hockey.by,kleo.ru,focusme.com,charbelnemnom.com,iphonegeek.me,afanasy.biz,media.nenaprasno.ru,vogue.ru,hyperhost.ua,pravda.ru,reverso.net,vokrug.tv##.subscribe-block
 rabota.ru##.subscribe-block__inner
 newegg.com,bracontece.com.br,livemint.com##.subscribe-box
 ppt.ru##.subscribe-card-wide
