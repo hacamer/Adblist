@@ -1,8 +1,8 @@
-! Checksum: sXHWe39nXeRM2gdgSIgWVg
+! Checksum: BasMUqmIqR/BQa9B0apGdA
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.0.58.43
-! TimeUpdated: 2022-06-15T08:31:00+00:00
+! Version: 2.0.58.44
+! TimeUpdated: 2022-06-15T09:03:06+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -17875,6 +17875,9 @@ brandsales.58.com#@#div[id^="ad_"]
 gohome.com.hk#@#div[id^="div-gpt-ad"]
 @@&adurl=http://$domain=360bifen.cc|360bifen.com
 @@.adserver.$domain=litv.tv
+@@||pos.baidu.com^$subdocument,domain=bigpixel.cn
+@@||pos.baidu.com^*?di=u3160754&$domain=bigpixel.cn
+@@||cpro.baidustatic.com/cpro/ui/cm.js$domain=bigpixel.cn
 @@.com/adv/$domain=my.ctrip.com
 @@.com/js/a_d/$domain=cocomanga.com|cocomanhua.com
 @@.gif#$domain=b168.net|cnprint.org|huhupan.com|tgfcer.com|wgun.net
@@ -17917,7 +17920,7 @@ gohome.com.hk#@#div[id^="div-gpt-ad"]
 @@/advertisement/*$domain=ininin.com|midea.com|muyingzhijia.com|nmkjxy.com
 @@/advertising/*$domain=315.sh.cn
 @@/adverts/*$domain=onlychild.cn
-@@/adview_pic_$domain=1090ys8.com|2hanju.com|fydy8.com|laimanhua.com|lfqie.com|lingjike.com|mahua.com|mati.hk|meiyouad.com|mh160.com|myqqjd.com|reh.tw|silisili.in|sssam.com|xiaoz.me|ykit.cn|zgpingshu.com|zyshow.net
+@@/adview_pic_$domain=bigpixel.cn|1090ys8.com|2hanju.com|fydy8.com|laimanhua.com|lfqie.com|lingjike.com|mahua.com|mati.hk|meiyouad.com|mh160.com|myqqjd.com|reh.tw|silisili.in|sssam.com|xiaoz.me|ykit.cn|zgpingshu.com|zyshow.net
 @@/advs/*$domain=ciros.com.cn|gotobuy.com.tw|sj-touch.com
 @@/adx.$domain=tanx.com
 @@/api/ad/*$domain=pinduoduo.com
