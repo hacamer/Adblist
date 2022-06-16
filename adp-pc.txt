@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: ovmlvo793t+zDalqjJSqNw
+! Checksum: MhLwcIxZ1G4yx5WQPazm9g
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202206162228
-! Last Modified: 2022年06月16日 22:28
+! Version: 202206162335
+! Last Modified: 2022年06月16日 23:35
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 74989
+! Total count: 75004
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -268,7 +268,9 @@
 ###ad-slot-1
 ###ad-slot-1501
 ###ad-slot-2
+###ad-slot-3
 ###ad-slot-4
+###ad-slot-5
 ###ad-slot-502
 ###ad-slot-lb
 ###ad-slot-right
@@ -3805,6 +3807,7 @@
 ##.bg_ad
 ##.bgcolor_ad
 ##.bgr-ad-leaderboard
+##.bi-advertorial
 ##.bidbarrel-ad
 ##.big-ad
 ##.bigAd
@@ -13974,6 +13977,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /static/adv/*
 /static/advertising/*
 /static/analytics.js
+/static/exnb/froloa.js$domain=hd-easyporn.com|hdpornos.net
 /static/js/amvn.js
 /static/js/headad.js
 /static/tracking/*
@@ -15503,7 +15507,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 123-hd.com###banner_right
 123-hd.com###banner_top
 123-movies.city,actvid.com,cineb.net,moviesjoy.to,solarmovie.pe,vidbem.com,upload4earn.org,uploadbyte.com,zoechip.com#$#abort-on-property-read localStorage
-123-movies.gs,apkmody.io,atomohd.org,atomohd.com,atomohd.xyz,atomtt.com,f2movies.to,gogoanime.day,gogoanime.re,gogoanime.run,goyabu.com,hentai20.com,kimcartoon.li,lalamanga.com,mangadna.com,mangahere.onl,manhuascan.io,manhuascan.me,manhwax.com,movies123.sbs,prmovies.re,readcomiconline.li,tinyzonetv.to,watchseries.ma,wiflix.bet,yomovies1.live#$#abort-on-property-read localStorage; abort-on-property-write JSON.parse
+123-movies.gs,123movies-official.net,apkmody.io,atomohd.org,atomohd.com,atomohd.xyz,atomtt.com,f2movies.to,filmlinks4u.cam,gogoanime.day,gogoanime.re,gogoanime.run,goyabu.com,hentai20.com,kimcartoon.li,lalamanga.com,mangadna.com,mangahere.onl,manhuascan.io,manhuascan.me,manhwax.com,movies123.sbs,prmovies.re,readcomiconline.li,tinyzonetv.to,watchseries.ma,wiflix.bet,yomovies1.live#$#abort-on-property-read localStorage; abort-on-property-write JSON.parse
 123-movies.ninja,123movies.net,2umovies.me,4anime.biz,4anime.gg,9anime.tube,animebee.to,animefreak.site,animefreak.ws,animefrenzy.net,animeheaven.pro,animekisa.in,animekisa.tv,animepahe.cc,apkmody.io,batotoo.com,bravoporn.com,coloredmanga.com,dramacool.pk,dulu.to,filmlinks4u.cam,filmyzilla.autos,filmyzilla.makeup,gogoanime.be,gogoanime.co.in,gogoanime.lol,gogoanime.run,gogoplay1.com,goload.pro,herogayab.net,hhdmovies.cam,hindilinks4u.cam,hothit.me,iflixmovies.com,jujutsukaisen-manga.online,jujutsukaisenonline.net,linksly.co,mangadna.com,mangahere.today,manganatos.com,mangas-raw.com,mangceh.cc,membed.net,messitv.net,miraculous.to,movierulz.cam,movies-watch.com.pk,mp3fromyou.tube,ngomik.net,nkiri.com,playlist-youtu.be,pomvideo.cc,prmovies.bz,prmovies.cam,prmovies.li,prmovies.org,prmovies.re,putlocker.vc,putlockers.fm,putlockers.li,rawkuma.com,sockshare.ac,ssoap2day.to,tamilyogi.best,vanime.co,wat32.tv,watchofree.com,watchomovies.cam,watchseries.ninja,webtoonshare.com,yomovies.bz,yomovies.pl,yomovies.pm,yomovies.ws,ytmp3.cc,yts-subs.com##iframe[style*="z-index: 2147483647"]
 123.com.cn##.bottom-ylink
 123.com.cn##.fixed-top
@@ -26427,12 +26431,10 @@ ebaumsworld.com##.mediumRect
 ebaumsworld.com#@#.promoAd
 ebaumsworld.com,greedyfinance.com##.divider
 ebay.ca#$#hide-if-contains-visible-text /[Commandité]+(?![\w,])/ 'li.s-item' 'li.s-item span[role="text"]'
-ebay.ca,ebay.co.uk,ebay.com,ebay.com.au#$#hide-if-matches-xpath './/div[starts-with(@class,"s-item")]/a[contains(@href,"trkparms=ispr")]/parent::div[contains(@class,"clearfix")]/ancestor-or-self::li[1][starts-with(@class,"s-item")]'
-ebay.ca,ebay.co.uk,ebay.com,ebay.com.au#$#hide-if-matches-xpath './/span[contains(@class,"s-item__sep--multi-line") and contains(text(),"S") and contains(text(),"p") and contains(text(),"o") and contains(text(),"n") and contains(text(),"s") and contains(text(),"o") and contains(text(),"r") and contains(text(),"e") and contains(text(),"d")]/parent::span/ancestor::li[1][starts-with(@class,"s-item")]'
+ebay.ca,ebay.co.uk,ebay.com,ebay.com.au#$#hide-if-matches-xpath '//a[contains(@data-track,"UnifiedRankingScenario")]/div[@class]//img[@src]/ancestor-or-self::li[starts-with(@class,"s-item")]'
 ebay.co.uk##.srp-1p__link[href*="sponsored"]
 ebay.co.uk##div[title="ADVERTISEMENT"]
 ebay.co.uk,ebay.com,ebay.com.au##.srp-1p__link
-ebay.co.uk,ebay.com,ebay.com.au#$#hide-if-contains-visible-text /Sponsored/ 'li.s-item' 'li.s-item span'
 ebay.co.uk,ebay.com,ebay.com.au#?#.mfe-lex:-abp-has(h2:-abp-contains(sponsored))
 ebay.co.uk,ebay.com,ebay.de##.rtmCss
 ebay.co.uk,ebay.com,ebay.de##div[id^="rtm_html_"]
@@ -28447,6 +28449,7 @@ hclips.com,hdzog.com,sss.xxx#@#.advertisements
 hclips.com,hotmovs.tube##.partners-wrap
 hclips.com,privatehomeclips.com##.underplayer > div[class]:not([class*="_"]) > div[class]
 hclips.com,thegay.com,tporn.xxx,tubepornclassic.com##.footer-banners
+hd-easyporn.com,pornblade.com,pornfelix.com##.vjs-overlayed
 hd21.*##+js(window.open-defuser, 1, about:blank)
 hd21.*##.aside_video > .wrap > .title
 hd44.com##+js(window.open-defuser)
@@ -36135,7 +36138,6 @@ uploadbank.com##+js(abort-current-script, f)
 uploadbank.com##+js(abort-on-property-write, document.onreadystatechange)
 uploadbank.com##+js(window.open-defuser)
 uploadboy.com#?#.row > .col-sm-4.text-center > div[style*="width:"][style*="height:"]:has(> div[id^="mediaad-"])
-uploadcloud.pro#@#.adsbygoogle
 uploaded.net##+js(window.open-defuser)
 uploadev.org##+js(abort-on-property-read, openInNewTab)
 uploadever.in##+js(abort-current-script, eval, String.fromCharCode)
@@ -40905,7 +40907,9 @@ zyue.com##div[id^="divad_"]
 ||advast.sibnet.ru^
 ||advconversion.com^$third-party
 ||adventori.com^$third-party
+||adventurouscomprehendhold.com^
 ||adverserve.net^
+||adversesuffering.com^
 ||advertclicks.ru^$domain=pronpic.org
 ||advertica-cdn.com^
 ||adverticum.net^$third-party
@@ -45676,6 +45680,7 @@ zyue.com##div[id^="divad_"]
 ||coefficy.com^$third-party
 ||coenr.com^
 ||coenuriauge.com^
+||coetusnappers.com^
 ||cogmatch.net^$third-party
 ||cognativex.com^$third-party
 ||cognitivematch.com^$third-party
@@ -46959,6 +46964,7 @@ zyue.com##div[id^="divad_"]
 ||d3fkv551xkjrmm.cloudfront.net^
 ||d3g5ovfngjw9bw.cloudfront.net^
 ||d3hb14vkzrxvla.cloudfront.net/health-check
+||d3hyjqptbt9dpx.cloudfront.net^
 ||d3iih5w7xp5hdg.cloudfront.net^
 ||d3iouejux1os58.cloudfront.net^
 ||d3ithbwcmjcxl7.cloudfront.net^
@@ -47676,6 +47682,7 @@ zyue.com##div[id^="divad_"]
 ||diena.lv/statistics/
 ||dienesasides.com^
 ||dietfd.com^
+||differfundamental.com^
 ||difficultfog.com^
 ||difficultydilapidationsodium.com^
 ||diffusion-tracker.com^$third-party
@@ -50241,6 +50248,7 @@ zyue.com##div[id^="divad_"]
 ||fiwinet.firmenwissen.de^
 ||fixchidie.com^
 ||fixcounter.com^$third-party
+||fixiondenied.com^
 ||fizzesilicic.com^
 ||fj.sina.com.cn/iframe/63/
 ||fj95560.com^
@@ -55860,6 +55868,7 @@ zyue.com##div[id^="divad_"]
 ||ligatus.com^
 ||lightboxcdn.com/static/identity.html
 ||lightcushion.com^
+||lightlyrelinquish.com^
 ||lightminer.co^$third-party
 ||lightning.ncaa.com/launch/$script
 ||lightningbarrelwretch.com^
@@ -56296,6 +56305,7 @@ zyue.com##div[id^="divad_"]
 ||localau.vip/plugin/ad_
 ||localau.vip/tccenter/ad/
 ||localbeige.club^
+||localesaftaba.com^
 ||localsnaughty.com^
 ||localytics.com^$third-party
 ||location3.com/analytics/
@@ -56527,6 +56537,7 @@ zyue.com##div[id^="divad_"]
 ||lowermybills.actonsoftware.com^
 ||lowes.com/gauge/
 ||lowgxl.yokumoku.jp^
+||lowlilyamex.com^
 ||lowlocket.com^$third-party
 ||lowrance.top^
 ||lowtyruntor.com^
@@ -60822,6 +60833,7 @@ zyue.com##div[id^="divad_"]
 ||pdvacde.com^
 ||pdxgfnnoan.com^
 ||pdzutf.sftworks.jp^
+||peaceablefitsfamily.com^
 ||peakcounter.dk^$third-party
 ||pear.ca-eko-globetrotter.fr^
 ||pear.youzful-by-ca.fr^
@@ -66189,6 +66201,7 @@ zyue.com##div[id^="divad_"]
 ||snodlycaccias.com^
 ||snonoz.com^
 ||snoobi.com^$third-party
+||snopmisgive.com^
 ||snoresmile.com^
 ||snowdayonline.xyz^
 ||snowplow.swm.digital^
@@ -68997,6 +69010,7 @@ zyue.com##div[id^="divad_"]
 ||thriftbooks.com/scripts/sp.js
 ||throattrees.com^
 ||thron.com/shared/plugins/tracking/
+||throngsarseno.com^
 ||throun.com^
 ||throwerdeaner.com^
 ||thrtle.com^$third-party
@@ -71220,6 +71234,7 @@ zyue.com##div[id^="divad_"]
 ||uplift-platform.com^$third-party
 ||upload.cc^$domain=141jj.com|mizhiav.com
 ||uploadboy.com/banner/
+||uploadcloud.pro/js/Aab-js-
 ||uploaded.net/img/public/$third-party
 ||uploadgig.com/static/
 ||uplynk.com/session/ping/

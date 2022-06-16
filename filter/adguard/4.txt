@@ -1,8 +1,8 @@
-! Checksum: apKIf65yBITo5xN0EVGHow
+! Checksum: +ew4GiwzIFlOA4BTUAqVJw
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.0.63.98
-! TimeUpdated: 2022-06-16T13:03:34+00:00
+! Version: 2.0.63.99
+! TimeUpdated: 2022-06-16T14:31:27+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -9956,6 +9956,7 @@ jp##.box-sns
 ##.ss-inline-share-wrapper
 ##.js_socialMedia
 ~getpocket.com##a[href*="//getpocket.com/edit?"]
+~getpocket.com##a[onclick^="window.open('http://getpocket.com/edit?"]
 ~getpocket.com##a[onclick^="window.open('//getpocket.com/edit?url="]
 ~facebook.com##a[onclick^="window.open('https://www.facebook.com/sharer/sharer.php"]
 ~linkedin.com##a[onclick^="window.open('https://www.linkedin.com/shareArticle?"]
@@ -9993,6 +9994,7 @@ jp##.box-sns
 ##.w-sharing
 ##.mrf-shareOptions
 ##a[href^="viber://forward?text="]
+~hatena.ne.jp##a[onclick^="window.open('http://b.hatena.ne.jp/add?"]
 ~hatena.ne.jp##a[href*="//b.hatena.ne.jp/add?"]
 ~hatena.ne.jp##a[href*="//b.hatena.ne.jp/append?"]
 ~hatena.ne.jp##a[href*="//b.hatena.ne.jp/entry/"]

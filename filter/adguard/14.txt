@@ -1,8 +1,8 @@
-! Checksum: gw86xSdw8jgnE9cphvYmUQ
+! Checksum: sVaO9lE1uNe1jBfTVoMHkQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.23.16
-! TimeUpdated: 2022-06-16T13:30:35+00:00
+! Version: 2.1.23.17
+! TimeUpdated: 2022-06-16T14:30:35+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7992,9 +7992,6 @@ mystudylife.com##.pix-cookie-banner
 fahrrad-xxl.de#%#//scriptlet('set-cookie', 'fxxl_erforderliche_cookies', 'true')
 kitapyurdu.com##.popupContainer
 supermicro.com###alert-container
-tommy.com#$##cookiesMessage { display: none !important; }
-tommy.com#$#.cookies-message { display: none !important; }
-tommy.com#$#html { overflow: auto !important; }
 tiktok.com##tiktok-cookie-banner
 lookandlearn.com##div[aria-describedby="cookies"]
 lookandlearn.com##.ui-widget-overlay
@@ -15167,6 +15164,12 @@ medicana.com.tr##body div.cookiealert
 !
 !
 !+ NOT_OPTIMIZED
+tommy.com#$##cookiesMessage { display: none !important; }
+!+ NOT_OPTIMIZED
+tommy.com#$#.cookies-message { display: none !important; }
+!+ NOT_OPTIMIZED
+tommy.com#$#html { overflow: auto !important; }
+!+ NOT_OPTIMIZED
 m.odds.am###cookies-menu
 !+ NOT_OPTIMIZED
 dailytrust.com##main + div[style*="position: fixed; left: 0px; top: 0px; width: 100%; height: 100%;"]
@@ -21729,6 +21732,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+wired.com##.consumer-marketing-unit
 mixed.de###wrapper ~ .slbContentEl
 aomeitech.com#?#.am-promotion-entry
 aomeitech.com###__aomei-sidebar
@@ -31678,9 +31682,9 @@ bdnews24.com##iframe[src="https://newsletter.bdnews24.com/bangla/embedded"]
 waz.de,nrz.de##.inline-block--wide[data-widget*="Content Wetter (hier: Newsletter)"]
 waz.de,otz.de,nrz.de,braunschweiger-zeitung.de,abendblatt.de,nrz.de,morgenpost.de,wolfsburger-nachrichten.de,wolfenbuetteler-zeitung.de,thueringer-allgemeine.de###piano-newsletter-inline
 wr.de,ikz-online.de,waz.de,otz.de,nrz.de,braunschweiger-zeitung.de,abendblatt.de,wolfsburger-nachrichten.de,wolfenbuetteler-zeitung.de,morgenpost.de##.newsletter-cleverreach
-nordbayern.de,thelocal.ch,morgenpost.de,waz.de,nrz.de,braunschweiger-zeitung.de,abendblatt.de,wolfsburger-nachrichten.de,wolfenbuetteler-zeitung.de,ynet.co.il#$#html > body.tp-modal-open { overflow: auto !important; }
-nordbayern.de,thelocal.ch,morgenpost.de,waz.de,nrz.de,braunschweiger-zeitung.de,abendblatt.de,wolfsburger-nachrichten.de,wolfenbuetteler-zeitung.de,ynet.co.il#$#div[class="tp-modal"][style="z-index: 300050; display: block;"] { display: none !important; }
-nordbayern.de,thelocal.ch,morgenpost.de,waz.de,nrz.de,braunschweiger-zeitung.de,abendblatt.de,wolfsburger-nachrichten.de,wolfenbuetteler-zeitung.de,ynet.co.il#$#div[class="tp-modal"][style="z-index: 300050; display: block;"] ~ div.tp-backdrop { display: none !important; }
+inews.co.uk,nordbayern.de,thelocal.ch,morgenpost.de,waz.de,nrz.de,braunschweiger-zeitung.de,abendblatt.de,wolfsburger-nachrichten.de,wolfenbuetteler-zeitung.de,ynet.co.il#$#html > body.tp-modal-open { overflow: auto !important; }
+inews.co.uk,nordbayern.de,thelocal.ch,morgenpost.de,waz.de,nrz.de,braunschweiger-zeitung.de,abendblatt.de,wolfsburger-nachrichten.de,wolfenbuetteler-zeitung.de,ynet.co.il#$#div[class="tp-modal"][style="z-index: 300050; display: block;"] { display: none !important; }
+inews.co.uk,nordbayern.de,thelocal.ch,morgenpost.de,waz.de,nrz.de,braunschweiger-zeitung.de,abendblatt.de,wolfsburger-nachrichten.de,wolfenbuetteler-zeitung.de,ynet.co.il#$#div[class="tp-modal"][style="z-index: 300050; display: block;"] ~ div.tp-backdrop { display: none !important; }
 buy.tinypass.com##.plus-banner[external-event-trackingvars*="Banner-"][external-event-trackingvars*="-sticky" i]
 mebel169.ru###show-coupon-btn
 weltsparen.de###newsletter-subscription-modal
@@ -36423,6 +36427,7 @@ kaigai-matome.net##.blogrolls
 umamusume-umapyoi.com,incident-wo.com##.blogroll-wrapper
 incident-wo.com###custom_html-35
 blog.livedoor.jp,duellinks.doorblog.jp,dragonquestwalk.blog.jp##.rss
+pokemon-matome.net###header_rssbox
 pokemon-matome.net##div[class^="rssinline"]
 pokemon-matome.net##div[class^="rss_inner"]
 h-library.com,4545comics.com##.card-white__blue.padding8
