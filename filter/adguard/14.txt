@@ -1,8 +1,8 @@
-! Checksum: YhtvsYS0QOjwJU8ALOx/+w
+! Checksum: uGeKPATVFhhtP41f82bYrQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.23.11
-! TimeUpdated: 2022-06-16T09:30:40+00:00
+! Version: 2.1.23.12
+! TimeUpdated: 2022-06-16T10:30:36+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -16861,6 +16861,10 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/121968
+@@||cdnjs.cloudflare.com/ajax/libs/cookieconsent*/cookieconsent.min.$domain=werbringtwas.com
+werbringtwas.com#@#.cc-window[aria-label="cookieconsent"]
+werbringtwas.com#@#.cc-banner
 ! https://github.com/AdguardTeam/AdguardFilters/issues/121679
 colvital.de#@#.cookie-consent:not(body):not(html)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/121425
@@ -19610,6 +19614,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+downdetector.jp###apps-card
 nefisyemektarifleri.com##.app-presentation
 oxfordmail.co.uk###piano-floating-bottom-banner
 afternoon-tea.net##.header-app-banner
@@ -30288,6 +30293,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+ukrinform.*##.projectsBlock
 chesterstandard.co.uk##.send-us-your-news-cta
 smartbuyglasses.de#$#.preloaded_lightbox { display: none!important; }
 smartbuyglasses.de#$#.fb_lightbox-overlay { display: none!important; }
