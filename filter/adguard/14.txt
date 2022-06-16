@@ -1,8 +1,8 @@
-! Checksum: 1UnoDe9EvIDrZ8UImEcO1Q
+! Checksum: PkW9Ykg2n0900Uc3273cuw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.23.21
-! TimeUpdated: 2022-06-16T18:30:35+00:00
+! Version: 2.1.23.22
+! TimeUpdated: 2022-06-16T22:30:35+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7007,6 +7007,7 @@ cc-fan.tv,cn-fan.tv,fox-fan.tv,nf-fan.tv#$#.pub_300x250.pub_300x250m.pub_728x90.
 /cookie-consent-tool/*
 ###acceptCookiesBar
 /wp_content/plugins/gdpr_patron/*
+||clickskeks.at^$third-party
 ||consent.nit.ro^$third-party
 /wp-content/plugins/dsgvo-tools-cookie-hinweis-datenschutz/*
 ||delivery.consentconverter.com/delivery/cmp.php
@@ -9497,9 +9498,9 @@ thebaffler.com##.gdpr-alert
 vrbankeg.de#$#.lightbox--cookie-consent { display: none !important; }
 vrbankeg.de#$#.darken-layer { display: none !important; }
 vrbankeg.de#$#body { position: unset!important; }
-adfc-radtourismus.de,deutschland-per-rad.de,verl.de#$#body { overflow: auto !important; padding-right: 0 !important; }
-adfc-radtourismus.de,deutschland-per-rad.de,verl.de#$##cookieman-modal { display: none !important; }
-adfc-radtourismus.de,deutschland-per-rad.de,verl.de#$##cookieman-modal ~ div.modal-backdrop { display: none !important; }
+stadt-wien.at,adfc-radtourismus.de,deutschland-per-rad.de,verl.de#$#body { overflow: auto !important; padding-right: 0 !important; }
+stadt-wien.at,adfc-radtourismus.de,deutschland-per-rad.de,verl.de#$##cookieman-modal { display: none !important; }
+stadt-wien.at,adfc-radtourismus.de,deutschland-per-rad.de,verl.de#$##cookieman-modal ~ div.modal-backdrop { display: none !important; }
 irisguardian.com###obfx-cookie-bar
 zoxs.de#$##gdpr-dialog { display: none !important; }
 zoxs.de#$#.modal-backdrop { display: none !important; }
@@ -10296,7 +10297,7 @@ kreiskrankenhaus-weisswasser.de,steuerberater-vos.de,garten-krug.de,mm-liebenswe
 retroplace.com#$#body { overflow: auto !important; position: static !important; padding-right: 0 !important; }
 retroplace.com#$##retroplaceCookies { display: none !important; }
 retroplace.com#$##retroplaceCookies ~ *:not(.ekko-lightbox):not(.modal-backdrop) + div.modal-backdrop { display: none !important; }
-rp-online-dating.de,mzflirt.de###ccp-overlay
+isarsingles.de,rp-online-dating.de,mzflirt.de###ccp-overlay
 smarturl.it###cookie-banner-cta
 ||landkreis-stade.de/static/static/jscript/cookiedough_min.js
 ||widgets.tourismusnetz.com/tn-cookie-widget.js
@@ -15864,6 +15865,7 @@ privacy.lecker.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent
 privacy.madame.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent-v2")){var g=new MutationObserver(function(){setTimeout(function(){var b=document.querySelector('button.no-children[path="\[0,2,1\]"]');b&&b.click();},300);setTimeout(function(){var c=document.querySelector('div[title="Berechtigte Interessen"]'); c&&c.click();},300);setTimeout(function(){var d=document.querySelectorAll('label[aria-checked="true"] > .off'); d.forEach(function(d){d.click();});},800); var f=document.querySelector('button.no-children[path="\[0,3,0\]"]'); setTimeout(function(){f&&f.click();},1000);});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},3E4)}});
 consent.ladbible.com,consent.gamingbible.co.uk,consent.unilad.co.uk#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var g=new MutationObserver(function(){var b=document.querySelector('button[title*="Accept" i]');b&&(g.disconnect(),b.click())});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
 !
+premiumkino.de#%#//scriptlet('set-cookie', 'cookie_required', 'true')
 happydog.de#%#//scriptlet('set-cookie', 'mnd-cookie-accepted-happydogde4', '1')
 colvital.de#%#//scriptlet('set-cookie-reload', 'epCookieConsent', '0')
 lolaliza.com#%#//scriptlet('set-cookie', 'enableTracking', 'false')
