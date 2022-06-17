@@ -1,8 +1,8 @@
-! Checksum: PkW9Ykg2n0900Uc3273cuw
+! Checksum: Mu27zp1iWPGUBjUX5JECVw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.23.22
-! TimeUpdated: 2022-06-16T22:30:35+00:00
+! Version: 2.1.23.24
+! TimeUpdated: 2022-06-17T00:30:35+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7515,6 +7515,7 @@ mein-schoener-garten.de#$?#.sp-message-open { overflow: auto !important; positio
 !
 !
 !
+semana.com##.pos-relative
 manutd.com##.cookie-informative-message
 smartbuyglasses.de##.GDPR-cookies
 ||rottler.de/typo3temp/*/jquery.bs.gdpr.cookies-
@@ -15865,6 +15866,7 @@ privacy.lecker.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent
 privacy.madame.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent-v2")){var g=new MutationObserver(function(){setTimeout(function(){var b=document.querySelector('button.no-children[path="\[0,2,1\]"]');b&&b.click();},300);setTimeout(function(){var c=document.querySelector('div[title="Berechtigte Interessen"]'); c&&c.click();},300);setTimeout(function(){var d=document.querySelectorAll('label[aria-checked="true"] > .off'); d.forEach(function(d){d.click();});},800); var f=document.querySelector('button.no-children[path="\[0,3,0\]"]'); setTimeout(function(){f&&f.click();},1000);});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},3E4)}});
 consent.ladbible.com,consent.gamingbible.co.uk,consent.unilad.co.uk#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var g=new MutationObserver(function(){var b=document.querySelector('button[title*="Accept" i]');b&&(g.disconnect(),b.click())});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
 !
+uxfeedback.ru#%#//scriptlet('set-local-storage-item', 'uxfb_cookies', 'true')
 premiumkino.de#%#//scriptlet('set-cookie', 'cookie_required', 'true')
 happydog.de#%#//scriptlet('set-cookie', 'mnd-cookie-accepted-happydogde4', '1')
 colvital.de#%#//scriptlet('set-cookie-reload', 'epCookieConsent', '0')
@@ -16869,6 +16871,8 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/121932
+uxfeedback.ru#@#.cookies-notification:not(html):not(body)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/121968
 @@||cdnjs.cloudflare.com/ajax/libs/cookieconsent*/cookieconsent.min.$domain=werbringtwas.com
 werbringtwas.com#@#.cc-window[aria-label="cookieconsent"]
@@ -19622,6 +19626,10 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+forums.oneplus.com##.app-recommand-layer
+oneplus.com##.side-download-dialog
+semana.com##.footer-store
+semana.com##.footer-store + hr
 locondo.jp###anime_sab
 swarmapp.com#%#//scriptlet("set-cookie", "hasShownSwarmUpsell", "true")
 swarmapp.com##.fixedUpsellTop
@@ -30308,6 +30316,9 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+elespectador.com##.Button_googleAlert
+elespectador.com##.BannerNewsletter
+semana.com##.footer-google-news
 jooble.org##div[data-test-name="_subscriptionWidget"]
 creativespirits.info###exit-intent
 sloanreview.mit.edu##.welcome-box
