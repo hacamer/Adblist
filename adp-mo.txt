@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: JTq1tQGnWONiWb01lH0DEQ
+! Checksum: gP8T0Z7L/HHF1NxKS+gR6A
 ! Title: My AdFilters（for Mobile）
 ! Expires: 12 hours
-! Version: 202206180325
-! Last Modified: 2022年06月18日 03:25
+! Version: 202206180430
+! Last Modified: 2022年06月18日 04:30
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 68689
+! Total count: 68693
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -15553,6 +15553,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||adsales.snidigital.com/*/ads-config.min.js$script
 @@||adserve.atedra.com/vast/wrap.php?$script,domain=repeatmyvids.com
 @@||adserve.atedra.com/zones.php$xmlhttprequest,domain=repeatmyvids.com
+@@||adservex.media.net/videoAds.js?$script,domain=forbes.com
 @@||adservice.google.*/adsid/integrator.js$domain=player.tubia.com
 @@||adservice.google.*/adsid/integrator.js^$domain=gentside.com|gentside.de|gentside.co.uk|gentside.com.br|esgentside.com|maxisciences.com|ohmymag.com|ohmymag.de|ohmymag.com.br|ohmirevista.com
 @@||adservice.google.com/adsid/integrator.js$domain=943thex.com
@@ -21303,7 +21304,11 @@ canale.live##+js(set-constant, canRunAds, true)
 canale.live##+js(set-constant, google_tag_data, emptyObj)
 canale.live##+js(set-constant, isBlocked, false)
 canarianweekly.com##.banner-in-content
-canberratimes.com.au,examiner.com.au,theland.com.au##.space-y-2
+canberratimes.com.au,examiner.com.au,theland.com.au###newswell-leaderboard-container
+canberratimes.com.au,examiner.com.au,theland.com.au##div[id^="leaderboard-"]
+canberratimes.com.au,examiner.com.au,theland.com.au##div[id^="mrec-"]
+canberratimes.com.au,examiner.com.au,theland.com.au##div[id^="newswell-side-"]
+canberratimes.com.au,examiner.com.au,theland.com.au,whoscored.com###billboard-container
 cancam.jp,saitama-np.co.jp#@#div[id^="div-gpt-"]
 cankaoxiaoxi.com###qihupic
 canonrumors.com##.blogroll-ad
@@ -31488,7 +31493,6 @@ who.is##a[href^="https://www.name.com/redirect/"]
 whois.com#@#.full-width-banner
 whoreshub.com##.col-second
 whoreshub.com##.spot-col
-whoscored.com###billboard-container
 whowhatwear.co.uk##.ad-mount
 why-tech.it##+js(no-setTimeout-if, eb-fadeIn, 0)
 why-tech.it#@#.adsbygoogle
