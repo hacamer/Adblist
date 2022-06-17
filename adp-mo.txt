@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: gP8T0Z7L/HHF1NxKS+gR6A
+! Checksum: UN6v3De1pR8IoLNoEa2BDg
 ! Title: My AdFilters（for Mobile）
 ! Expires: 12 hours
-! Version: 202206180430
-! Last Modified: 2022年06月18日 04:30
+! Version: 202206180528
+! Last Modified: 2022年06月18日 05:28
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 68693
+! Total count: 68699
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -1289,6 +1289,9 @@
 ###kbbAdsMainCenterAd
 ###kfpopupDiv
 ###kt_player > a[target="_blank"]
+###large-bottom-leaderboard-ad
+###large-leaderboard-ad
+###large-middle-leaderboard-ad
 ###layerad
 ###leader-ad
 ###leader-companion > a[href]
@@ -10749,7 +10752,6 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /img/91/*_600.
 /img/91/*_600_
 /img/ad-
-/img/ad.
 /img/ad/*
 /img/ad_$domain=~kazi.co.jp|~rakuten.co.jp
 /img/ads/*$domain=~save.ca
@@ -21999,12 +22001,15 @@ cyberscoop.com##+js(abort-current-script, document.getElementById, show_welcome_
 cyfostreams.com#@#.banner_ad
 cyfostreams.com,godmods.com,sonradangamer.com,pentruea.com,software-on.com,tunovelaligera.com,open3dmodel.com,dr-farfar.com,fcportables.com,nulledpremium.com,nsfw247.to,filecr.com##+js(abort-on-property-read, mdp_deblocker)
 cyol.com,hc360.com##div[class^="AD"]
+cyprus-mail.com##div[id^="cypru-"]
 czbj.js.cn#@#.adArea
 czechcasting.com##.recommended-projects
 czechvideo.org##+js(abort-current-script, document.addEventListener, initBCbongacams_popPopunder)
 czechvideo.org##+js(window.open-defuser)
 cztv.com##.ad_003
 cztv.com##div[class^="banner_"]
+d123movies.to##.mobile-btn > div
+d123movies.to,yifymovies.one##.mvic-btn
 d1xz.net##.base_ad_300_250
 d1xz.net##.base_ad_640_90
 d1xz.net##.base_ad_960_90
@@ -23401,6 +23406,7 @@ forbes.com##.video-placeholder
 forbes.com##div[class^="fbs-ad--"]
 forbes.com#$#.main-content--body { padding-top: unset !important; }
 forbes.pl##.placeholder
+forbesafrica.com##div[id^="incontentAd"]
 fordclub.eu#@#.reklama
 fordgalaxy.org.uk##+js(no-setTimeout-if, test.offsetHeight)
 forebears.io##.banner-h
@@ -46866,6 +46872,7 @@ zyue.com##div[id^="divad_"]
 ||hotstar.com/v1/identify
 ||hotstar.com/v1/track
 ||hottraffic.nl^$third-party
+||hotwire-widget.dailywire.com^$third-party
 ||houanjijuxie.cn^
 ||houdodoo.net^
 ||houfang8.com^
@@ -65423,7 +65430,6 @@ zyue.com##div[id^="divad_"]
 ||video.onnetwork.tv^$domain=sciaga.pl
 ||video.qq.com/checktime?
 ||video.twimg.com/ext_tw_video/*/pu/$domain=topgirl.co
-||video.twimg.com/ext_tw_video/*/pu/$xmlhttprequest,third-party,domain=~twitter.com|~twimg.com
 ||video231.oss-cn-beijing.aliyuncs.com^
 ||videoaccess.xyz^
 ||videoadex.com^$third-party
