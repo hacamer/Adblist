@@ -1,8 +1,8 @@
-! Checksum: +49gDlYfIOdjy6XtIYMnYA
+! Checksum: 6Q0vZnmEwWJJs7qEv9yWPQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.23.25
-! TimeUpdated: 2022-06-17T07:30:36+00:00
+! Version: 2.1.23.27
+! TimeUpdated: 2022-06-17T09:30:36+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -3301,6 +3301,7 @@ hgtv.com#@#.showads
 !
 !
 !
+tweaking4all.com##.t4a_helpus
 lingust.ru##p[style="border-top: 2px solid #FEABAB; border-bottom: 2px solid #FEABAB; background: #FFDFDF; padding: 0.8em;"]
 nesoacademy.org#?#div[class^="jss"]:has(> ins.adsbygoogle)
 tweakers.net##.whitelistMessage
@@ -7516,6 +7517,9 @@ mein-schoener-garten.de#$?#.sp-message-open { overflow: auto !important; positio
 !
 !
 !
+ortobom.com.br###aceitaCookies
+||lepictorium.fr/Pictorium/scripts/cookie-consent-
+unstop.com##.cookies-save
 semana.com##.pos-relative
 manutd.com##.cookie-informative-message
 smartbuyglasses.de##.GDPR-cookies
@@ -15946,7 +15950,7 @@ humboldtforum.org#%#//scriptlet('set-cookie', 'acceptCookie', 'true')
 hometogo.de#%#(function(){document.cookie.includes("cookie_consent=")||(document.cookie='cookie_consent={"timestamp":'+Date.now()+',"functional":true,"analytical":false,"marketing":false,"names":{"localStorage":{"analyticsdata":0,"analyticslastAction":0},"cookie":{"bftul":0},"thirdParty":{"facebookTracking":0,"hotJar":0,"trustBadge":0,"braze":0,"gtm_a_adup":0,"gtm_a_bing":0,"gtm_a_ctri":0,"gtm_a_fb":0,"gtm_a_ga":0,"gtm_a_gads":0,"gtm_a_pin":0,"gtm_a_tvsq":0,"gtm_a_yand":0,"gtm_m_adup":0,"gtm_m_crit":0,"gtm_m_gads":0,"gtm_m_myta":0,"gtm_m_rtbh":0,"gtm_m_tabo":0,"gtm_a_tiktok":0,"adcellTracking":0,"tradetrackerTracking":0}}}')})();
 allmusicitalia.it#%#//scriptlet("set-constant", "initCookieConsent", "noopFunc")
 cam.start.canon#%#//scriptlet('set-cookie', 'user_accepts_cookies', 'false')
-bike24.*#%#(function(){document.cookie.includes("cookieConsent=")||(document.cookie='cookieConsent={"basket-store":true,"emarsys":false,"google-ga":false,"google-tm":false,"trbo":false}; path=/;')})();
+bike24.*#%#(function(){document.cookie.includes("cookieConsent=")||(document.cookie='cookieConsent={"algolia":false,"basket-store":true,"emarsys":false,"google-ga":false,"google-tm":false,"trbo":false,"zenloop":false}; path=/;')})();
 mag.lexus.co.uk#%#//scriptlet("set-cookie", "viewed_cookie_policy", "yes")
 mag.lexus.co.uk#%#//scriptlet("set-cookie", "cookielawinfo-checkbox-necessary", "yes")
 mag.lexus.co.uk#%#//scriptlet("set-cookie", "cookielawinfo-checkbox-advertisement", "yes")
@@ -20461,7 +20465,7 @@ track24.ru#?#.theiaStickySidebar > div.ds:has(> h3 > i.icon-android)
 outlook.live.com#?#.react-tel-input > input.form-control:upward(4)
 m.hindustantimes.com##.openappbutton-main
 toppr.com##div[class^="question_suggestionsAppBannerWrapper__"]
-dicionarioinformal.com.br,5-fifth.com,news.sky.com,chat.babel.com,getwordly.com,school-turnup.com,naked-science.ru,vod.tvp.pl,tvn24.pl,m.lamoda.ru,lkfl2.nalog.ru##.smartbanner
+ortobom.com.br,dicionarioinformal.com.br,5-fifth.com,news.sky.com,chat.babel.com,getwordly.com,school-turnup.com,naked-science.ru,vod.tvp.pl,tvn24.pl,m.lamoda.ru,lkfl2.nalog.ru##.smartbanner
 profile.ru##div[class="read-yzd mobile-only"]
 biokadar.com#?#.sidebar > div.widget:has(> div.textwidget > center > a[href="https://www.biokadar.com/biokadarcom.apk"])
 allwish.me,teknowebim.com,op.gg,cameralabs.org##a[href^="https://play.google.com/store/apps/details?id="]
@@ -30317,6 +30321,8 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+ortobom.com.br###newsletterHomeSection
+unstop.com##.subscribe-bg
 elespectador.com##.Button_googleAlert
 elespectador.com##.BannerNewsletter
 semana.com##.footer-google-news
