@@ -1,8 +1,8 @@
-! Checksum: wpc25+9gFolZHC59nCDZFw
+! Checksum: KzvaM95Uep8sEXhIv9LMqQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.23.32
-! TimeUpdated: 2022-06-17T14:30:38+00:00
+! Version: 2.1.23.33
+! TimeUpdated: 2022-06-17T15:30:38+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7515,6 +7515,8 @@ mein-schoener-garten.de#$?#.sp-message-open { overflow: auto !important; positio
 !
 !
 !
+aceandtate.com##body #transcend
+catused.com##body.cookieMsg::before
 lotto-brandenburg.de#%#//scriptlet('set-cookie', 'policyAgreed', '1')
 studocu.com#?##main-wrapper + div:not([id]):not([class]):has(div:not([class]) > span:contains(/\sCookies$/))
 ortobom.com.br###aceitaCookies
@@ -19682,7 +19684,7 @@ ozmall.co.jp##.cmp__banner-item > a[href^="/app/"]
 lp.p.pia.jp##.piawebFooter__download
 folk-media.com##.l-footer__appPcBanner
 wowma.jp###js-deepLinkBanner
-baitoru.com##.common-appBanner
+baitoru.com##div[class*="-appBanner"]
 baitoru.com#?#div[style="padding:40px 10px 0px;"] > a[href^="https://app.adjust.com"]:upward(1)
 rakuten-card.co.jp##.footerNav__item--app
 handyticket.de###app-alert
@@ -21756,6 +21758,8 @@ malimali5.com#$#body.stop-scrolling { height: unset !important; overflow: auto !
 malimali5.com#$#.sweet-overlay { display: none !important; }
 malimali5.com#$#.sweet-alert { display: none !important; }
 search.yahoo.co.jp##.sw-Perorin
+sofatutor.com##.js-exit-intent-popup
+sofatutor.com##.js-exit-intent-overlay
 wired.com##.consumer-marketing-unit
 mixed.de###wrapper ~ .slbContentEl
 aomeitech.com#?#.am-promotion-entry
@@ -25702,7 +25706,6 @@ fossil.com#$#.modals { display:none!important; }
 fossil.com#$#.modal-backdrop { display:none!important; }
 popsugar.com,popsugar.com.au,popsugar.co.uk##.email-exitintent-widget
 ||glam.com/wp-content/plugins/mds_p2popup/popup-handler.js
-1337x.bypassed.ws##body > cloudflare-app[app="flashcard"][data-position="left"][style^="z-index: 100"]
 usplabsdirect.com##.privy-popup-container
 usplabsdirect.com##.privy-tab-container
 npvua.com##.spu-centered
