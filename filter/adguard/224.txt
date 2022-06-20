@@ -1,8 +1,8 @@
-! Checksum: QtLCm3fnw4wlpYphjz36sw
+! Checksum: 9/ee69kFn6cvMWm4mKbbgw
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.0.58.90
-! TimeUpdated: 2022-06-20T05:30:58+00:00
+! Version: 2.0.58.92
+! TimeUpdated: 2022-06-20T12:31:37+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1102,6 +1102,9 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .r
 !
 !
 !
+home.firefoxchina.cn##a[title][track_key="sites_saoma"]
+home.firefoxchina.cn##a[track_key="sites_mingzhan"] + a[title="VIP"]
+home.firefoxchina.cn##.border-gray-200.tuijian
 malimali5.com##a[href^="https://www.odancool.com/"]
 ||malimali5.com/ad1.png
 fuliba2022.net###focusslide
@@ -4091,6 +4094,7 @@ ubmcmm.baidustatic.com
 ##img[onclick*="/ayx700.com/"]
 ##img[onclick*="/c7.net/"]
 ||jrhbhz.com^
+||dierguanggao.xyz^
 ##a[href*="/682kg.com"]
 ||306842.com^
 ||9191919199.com^
@@ -4102,6 +4106,7 @@ ubmcmm.baidustatic.com
 ||kkuuu.top^
 ||tangkai.ltd^
 ||tklm77.top^
+##a[href="https://guapitv.app/"]
 ||diyiguanggao.xyz^
 ##a[href*=".xxgxqscl.com/"]
 ||app0003.xyz^
@@ -11814,6 +11819,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zzsky.cn/images/a_d_
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
+||xonlines.com/upload/gg/
 szxx.com.cn###A0
 tmioe.com##a[target="_blank"] > img[src*=".sinaimg.cn"]
 tmioe.com##.ad_single_0
@@ -19697,6 +19703,7 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 @@||pstatp.com/cdn/*/jquery/$script,domain=bxwx11.com
 @@||zmtt.net^$script,domain=luoqiuzw.com
 !#Novels ads union
+||mtsry.top^
 ||slifindy.top^
 ||dj57.club^
 ||ukan.online^
@@ -19706,6 +19713,7 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 ||shaonlt.love^
 ||dengzhou.us^
 ||slibindy.top^
+||yundingez.top^
 ||luotuoma.cool^
 ||randolph.love^
 ||hggtt.top^
@@ -19845,6 +19853,7 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 ||ienglish.ren^
 ||jsk.wang^
 ||readysugerfree.top^
+##a[href*=".eampakt.com/"]
 ##a[href$=".120ydrayy.com"]
 ##a[href*=".1956hl.com/"]
 ##a[href*=".233787.com/"]
