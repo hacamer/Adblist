@@ -1,8 +1,8 @@
-! Checksum: hXU0pZFot0TUUCW/0vJi4A
+! Checksum: rPyROAT/ANKxDFJ87QSdcg
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.41.40
-! TimeUpdated: 2022-06-20T15:31:37+00:00
+! Version: 2.0.41.41
+! TimeUpdated: 2022-06-20T17:03:27+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -353,6 +353,7 @@ journal-plaza.net#?#.rightside div.block.bnavi[-ext-has="h3.dtitle:contains(Сч
 !||i.snssdk.com/log/*
 !||i.snssdk.com/slardar/sdk.js
 !
+||uplift-platform.com^$third-party
 ||lmepbq.com^
 ||tzegilo.com^
 ||cdn.rlets.com^
@@ -23089,6 +23090,9 @@ link.gmapp*.net$image
 !---- Domain pecific rules ----
 !------------------------------
 !
+||kayak.com^$cookie=kmkid
+||kayak.com^$cookie=csid
+||kayak.com^$cookie=kayak.mc
 $cookie=/^_gd/,domain=leichtathletik.de
 $cookie=tint-anonymous-uid,domain=leichtathletik.de
 ||thirdweb.com^$cookie=/^ph_phc_/
