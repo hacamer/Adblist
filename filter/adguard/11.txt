@@ -1,8 +1,8 @@
-! Checksum: mTSyQPxSj81wjSp908ZuBw
+! Checksum: axjykUfyXE8CL9IQ4UW+2A
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.30.74
-! TimeUpdated: 2022-06-20T15:30:23+00:00
+! Version: 2.0.30.75
+! TimeUpdated: 2022-06-20T16:30:26+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -218,6 +218,8 @@
 .ad.kakaocorp.com^
 .ad.kakao.com^
 !
+||x-eu.64e98469810bd13e2b45e52d19d6fddfe333b3528350d8cfa792d478.com^
+||a.471cc486764581c9508c0c803356a704c27ac3e37c1223a84557c58c.com^
 ||skadsdk.appsflyer.com^
 ||alt-ad.mail.ru^
 ||chavoads.com^
@@ -5647,6 +5649,7 @@ fplgameweek.com##mobile-sticky-ads
 ||graph.facebook.com^$app=com.booking
 !
 ! Blocking Facebook mobile ads
+||graph.facebook.com^$app=com.openmygame.games.android.crossword.plants|com.openmygame.games.android.fillwordsoffline|com.openmygame.games.android.jigsawpuzzle|com.openmygame.games.android.jsurvive|com.openmygame.games.android.swipeelements|com.openmygame.games.android.wordpizza|com.openmygame.games.android.wordsearchsea|com.openmygame.games.kr.client|com.openmygame.magicwordsearch
 ||graph.facebook.com^$app=com.make.it.fly|com.slingshot.basketball|com.slingshot.biker|com.slingshot.car|com.slingshot.train
 ||graph.facebook.com^$app=com.geumson.nookslist
 ||graph.facebook.com^$app=com.pixelpoint
@@ -5953,6 +5956,8 @@ fplgameweek.com##mobile-sticky-ads
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/122306
+||startup.mobile.yandex.net^$app=com.openmygame.games.android.crossword.plants|com.openmygame.games.android.fillwordsoffline|com.openmygame.games.android.jigsawpuzzle|com.openmygame.games.android.jsurvive|com.openmygame.games.android.swipeelements|com.openmygame.games.android.wordpizza|com.openmygame.games.android.wordsearchsea|com.openmygame.games.kr.client|com.openmygame.magicwordsearch
 ! https://github.com/AdguardTeam/AdguardFilters/issues/121406
 ||startup.mobile.yandex.net^$app=limehd.ru.ctv
 ||mradx.net^$app=limehd.ru.ctv
