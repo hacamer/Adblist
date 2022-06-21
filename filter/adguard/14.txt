@@ -1,8 +1,8 @@
-! Checksum: Xf4HW+ZD6gdJHHGvK3sjsw
+! Checksum: F+7I7IEAQAQUVA9HLZwrKA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.23.62
-! TimeUpdated: 2022-06-21T08:30:36+00:00
+! Version: 2.1.23.63
+! TimeUpdated: 2022-06-21T10:30:35+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7521,6 +7521,7 @@ mein-schoener-garten.de#$?#.sp-message-open { overflow: auto !important; positio
 !
 !
 !
+home3.ee##div[class^="js-cookies-"]
 curiositystream.com#?#main ~ div[class]:has(> div.flex > div.inline-block > button:contains(Cookies))
 cruisemapper.com##.sitePrivacyPolicy
 htw-berlin.de##div[id^="gdpr-"]
@@ -8800,8 +8801,8 @@ bfore.ai###cookies-form-container
 kulturkaufhaus.de##.dialogCookieWarning
 raetseldino.de###cookieBG
 buser.com.br##.cookie-policy-alert
-klett.de#$#body { overflow: visible!important; padding-right: 0!important; }
-klett.de#$##cookie-consent-modal___BV_modal_outer_ { display: none!important; }
+inbank.pl,klett.de#$#body { overflow: visible!important; padding-right: 0!important; }
+inbank.pl,klett.de#$##cookie-consent-modal___BV_modal_outer_ { display: none!important; }
 modepark.de#$#.vex-theme-plain { display: none!important; }
 modepark.de#$#body { position: static!important; overflow: visible!important; }
 msmode.de##body .cookie-warning
@@ -16894,7 +16895,7 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !
 !
 ! @@||cdn.cookielaw.org/scripttemplates/otSDKStub.js
-@@||cdn.cookielaw.org/scripttemplates/otSDKStub.js$domain=cc.com|3sat.de|zdf.de|costco.com|giantbomb.com|glovoapp.com|rte.ie|digitaltrends.com|spiele.bild.de|spiele.stern.de|vanityfair.com|saarbruecker-zeitung.de|olympics.com|dziendobry.tvn.pl|bergfreunde.de|oe24.at|epicgames.com|toteraz.pl|natgeotv.com|midomi.com|volksfreund.de|kawasaki.com|foxchannels.com.tr|ga.de|shop.mango.com|kralmuzik.com.tr|westernunion.com|roastmarket.de|new.cappex.com|vimeo.com|heute.at|ntv.com.tr|wargaming.net|metacritic.com|gq-magazine.co.uk|viafree.dk|viafree.fi|viafree.no|viafree.se|glamour.de|cbsnews.com|worldoftanks.ru|vg247.com|newyorker.com|games.miamiherald.com|eurogamer.es|eurogamer.de|bet.com|ikonpass.com|mcdelivery.de|id.trimble.com|skateboarding.transworld.net|newegg.com|docs.vmware.com|udemy.com|olx.pl|usmagazine.com|uefa.com|milwaukeetool.eu|muscleandfitness.com|20min.ch
+@@||cdn.cookielaw.org/scripttemplates/otSDKStub.js$domain=cc.com|3sat.de|zdf.de|costco.com|giantbomb.com|glovoapp.com|rte.ie|digitaltrends.com|spiele.bild.de|spiele.stern.de|vanityfair.com|saarbruecker-zeitung.de|olympics.com|dziendobry.tvn.pl|bergfreunde.de|oe24.at|epicgames.com|toteraz.pl|natgeotv.com|midomi.com|volksfreund.de|kawasaki.com|foxchannels.com.tr|ga.de|shop.mango.com|kralmuzik.com.tr|westernunion.com|roastmarket.de|new.cappex.com|vimeo.com|heute.at|ntv.com.tr|wargaming.net|metacritic.com|gq-magazine.co.uk|viafree.dk|viafree.fi|viafree.no|viafree.se|glamour.de|cbsnews.com|worldoftanks.ru|vg247.com|newyorker.com|games.miamiherald.com|eurogamer.es|eurogamer.de|bet.com|ikonpass.com|mcdelivery.de|id.trimble.com|skateboarding.transworld.net|newegg.com|docs.vmware.com|udemy.com|olx.pl|usmagazine.com|uefa.com|milwaukeetool.eu|muscleandfitness.com|20min.ch|ted.com
 !
 ! Required for apps only
 ! When request is blocked then there is an error "Unexpected token / in JSON at position 0"
@@ -21781,6 +21782,8 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+bookoffonline.co.jp###m1
+bookoffonline.co.jp##.ModalItems-overlay
 angrybirds.com##.campaign-splash
 manabi.benesse.ne.jp##.adsenseWrap
 view-next.benesse.jp#$#.remodal-is-locked { overflow: auto !important; touch-action: auto !important; }
@@ -34685,6 +34688,8 @@ newsweek.com##iframe[src="http://sns.europe.newsweek.com/newsletter?popup=1"]
 !######### JS tweaks ##########
 !##############################
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/122250
+modyolo.com#%#//scriptlet("adjust-setTimeout", "#download-loading", "*", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/122188
 kiemlua.com,world-trips.net,newforex.online#%#//scriptlet("adjust-setInterval", "/count-|-wait/", "*", "0.02")
 gamelopte.com#%#//scriptlet("adjust-setInterval", "yuidea-", "*", "0.02")
