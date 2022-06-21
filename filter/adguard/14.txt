@@ -1,8 +1,8 @@
-! Checksum: N69zmD8amzeNqItAlU/WzA
+! Checksum: Xf4HW+ZD6gdJHHGvK3sjsw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.23.60
-! TimeUpdated: 2022-06-21T06:30:35+00:00
+! Version: 2.1.23.62
+! TimeUpdated: 2022-06-21T08:30:36+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2864,16 +2864,13 @@ instiz.net#$?#.backlogo { background-image: none !important; }
 !
 ! Important: don't block paywalls
 !
-! START: Mail.ru
-! Main page
-!
+! START: VK group
 !
 minigames.mail.ru#%#//scriptlet("abort-current-inline-script", "$", "advBlock")
 mmminigames.mail.ru#%#//scriptlet("abort-current-inline-script", "$", "showAd")
 !
 otvet.mail.ru##.wrapper_columns > div.column_right
 otvet.mail.ru#%#//scriptlet("set-constant", "Object.prototype.direct", "undefined")
-!
 !
 my.mail.ru#%#//scriptlet('set-constant', 'Object.prototype.isAdblockEnable', 'noopFunc')
 !
@@ -2885,7 +2882,10 @@ e.mail.ru,octavius.mail.ru#%#//scriptlet("set-constant", "Object.prototype.adv-l
 @@||e.mail.ru^$generichide
 @@||octavius.mail.ru^$generichide
 @@||an.yandex.ru/system/context.js$domain=e.mail.ru|octavius.mail.ru
-! END: mail.ru
+!
+||ok.ru/res/js/app/RightColumn_*.js
+ok.ru##.dialogWrapperBanner
+! END: VK group
 !
 ! START: Yandex
 !
@@ -3038,7 +3038,7 @@ bloody-disgusting.com,haberolduk.com,askdifference.com,multics.eu,pipeflare.io,t
 !
 !--- Admiral ---
 ! can be closed
-sportskeeda.com,gamerant.com,gamerjournalist.com,voetbalzone.nl,theurbanlist.com,golf.com,xda-developers.com,metv.com,nbcnews.com,wegotthiscovered.com,savvytime.com,nbcsportsedge.com,haber3.com,androidpolice.com,news.com.au,forums.radioreference.com,boston.com,reviewgeek.com,technicpack.net,theblaze.com,morfix.co.il,factinate.com,phonearena.com,stripes.com,progameguides.com,weatherbug.com,patheos.com,online-tech-tips.com,digitaltrends.com,helpdeskgeek.com,britannica.com,wrestlinginc.com,superherohype.com,news24.com,pgatour.com,wral.com,gamepur.com,fin24.com,geekzone.co.nz,upi.com,thewindowsclub.com,androidcure.com,secondnexus.com,health24.com,wokesloth.com,sport24.co.za,onmsft.com,cultofmac.com,washingtontimes.com#%#//scriptlet('abort-current-inline-script', 'document.createElement', 'admiral')
+worldtravelguide.net,sportskeeda.com,gamerant.com,gamerjournalist.com,voetbalzone.nl,theurbanlist.com,golf.com,xda-developers.com,metv.com,nbcnews.com,wegotthiscovered.com,savvytime.com,nbcsportsedge.com,haber3.com,androidpolice.com,news.com.au,forums.radioreference.com,boston.com,reviewgeek.com,technicpack.net,theblaze.com,morfix.co.il,factinate.com,phonearena.com,stripes.com,progameguides.com,weatherbug.com,patheos.com,online-tech-tips.com,digitaltrends.com,helpdeskgeek.com,britannica.com,wrestlinginc.com,superherohype.com,news24.com,pgatour.com,wral.com,gamepur.com,fin24.com,geekzone.co.nz,upi.com,thewindowsclub.com,androidcure.com,secondnexus.com,health24.com,wokesloth.com,sport24.co.za,onmsft.com,cultofmac.com,washingtontimes.com#%#//scriptlet('abort-current-inline-script', 'document.createElement', 'admiral')
 mangasee123.com#%#//scriptlet("abort-current-inline-script", "document.createElement", "googletag")
 grandprix247.com,familyminded.com,xcalibrscans.com,cbsnews.com,finviz.com,ign.com,workandmoney.com,today.com,rottentomatoes.com,walterfootball.com,dotesports.com,boredpanda.com,cleveland.com#%#//scriptlet("set-constant", "admiral", "noopFunc")
 ! cannot be closed
@@ -3062,6 +3062,7 @@ digitaltrends.com#@#.text_ads_2
 ! editorial.rottentomatoes.com#@#.text-ad
 ! @@||ad.doubleclick.net/ddm/adj^$domain=editorial.rottentomatoes.com
 !
+||laughablelizards.com^$third-party
 ||floweryflavor.com^$third-party
 ||fearlessfaucet.com^$third-party
 ||terrifictooth.com^$third-party
@@ -10946,7 +10947,7 @@ alumatex.pl#$#html.pum-open-overlay { overflow: auto !important; }
 alumatex.pl#$#.pum-overlay[data-popmake*="rodo"] { display: none !important; }
 kingston.com##.nofication-widget
 heimkino.org,pfannen.org##.orakelAdvice
-marjin.com.tr,mismarsanalmarket.com,temin.com.tr,kocakbaklava.com.tr,kocak.com.tr,aksesuarix.com##.cerez-mesaji
+gurmeninyeri.com,marjin.com.tr,mismarsanalmarket.com,temin.com.tr,kocakbaklava.com.tr,kocak.com.tr,aksesuarix.com##.cerez-mesaji
 cekkazan.com.tr##.pum-overlay[data-popmake*="cerez-politikasi"]
 today.ua##.politic_confidel
 artigercek.com###myUserConsent
@@ -11001,7 +11002,7 @@ komsu.com,narecza.com,shop.miele.com.tr##.CerezPp
 mehr-kosmetik-shop.de,imid.med.pl,topographic-map.com##.popup
 ||aussiearcade.com/js/privacy-consent-banner.js
 ramsey.com.tr##.CookieLink
-lsm.lv##.cookiemsg
+tppd.com.tr,lsm.lv##.cookiemsg
 dexerto.com###consent-ui-gdpr
 dvag.de#$#dva-m-cookie-overlay { display: none !important; }
 dvag.de#$#body { overflow: visible !important; }

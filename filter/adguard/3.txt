@@ -1,8 +1,8 @@
-! Checksum: exITRVZF8DHge1lOZkOh/w
+! Checksum: uKqnZCE+SZQ6bH+io0sj7Q
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.41.43
-! TimeUpdated: 2022-06-20T19:31:26+00:00
+! Version: 2.0.41.45
+! TimeUpdated: 2022-06-21T08:31:23+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -353,6 +353,8 @@ journal-plaza.net#?#.rightside div.block.bnavi[-ext-has="h3.dtitle:contains(Сч
 !||i.snssdk.com/log/*
 !||i.snssdk.com/slardar/sdk.js
 !
+||my.rtmark.net^
+||tzegilo.com^
 ||cdn.stroeerdigitalgroup.de^$third-party
 ||uplift-platform.com^$third-party
 ||lmepbq.com^
@@ -3989,6 +3991,7 @@ journal-plaza.net#?#.rightside div.block.bnavi[-ext-has="h3.dtitle:contains(Сч
 ! These domains are used for tracking purposes according to the data that is being sent there.
 ! More info: https://getadmiral.com/products/measure
 !
+||laughablelizards.com^$third-party
 ||floweryflavor.com^$third-party
 ||fearlessfaucet.com^$third-party
 ||terrifictooth.com^$third-party
@@ -19738,6 +19741,7 @@ charlestownwyllie.oaklawnnonantum.com^
 /fbpix-events-
 /fbevents.js
 /fbevents.min.js
+/facebook_pixel_
 !
 ! Cloudflare
 /\/(public|resources|static|assets)\/([a-f0-9]){28,31}$/$script,xmlhttprequest,~third-party
