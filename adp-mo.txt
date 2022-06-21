@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: CCeoZocm2KQwap1GK8/phA
+! Checksum: iqlVz2dxuiBysiK1i+5w5g
 ! Title: My AdFilters（for Mobile）
 ! Expires: 12 hours
-! Version: 202206212152
-! Last Modified: 2022年06月21日 21:52
+! Version: 202206212229
+! Last Modified: 2022年06月21日 22:29
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 67891
+! Total count: 67896
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -29107,12 +29107,15 @@ sexu.*#?#.section--sm > .title--sm:contains(/^Advertising$/)
 sexu.com##.content__body .info
 sexuhot.com##+js(abort-on-property-read, history.replaceState)
 sexuhot.com##+js(abort-on-property-write, atOptions)
+sexvid.*###banner_video
+sexvid.*##.bottom_spots
+sexvid.*##.spots_thumbs
+sexvid.*##.video-holder > div.tool_bar
 sexvid.xxx##+js(abort-on-property-read, pu)
 sexvid.xxx##.bottom_spots
 sexvid.xxx##.box_site
 sexvid.xxx##.download_link
 sexvid.xxx##.spots_field
-sexvid.xxx##.video-holder > div.tool_bar
 sexvid.xxx#?#.spots_thumbs > .spots_title:contains(Advertisement)
 sexyandfunny.com###best-friends
 sexyandfunny.com###sexy-links
@@ -57774,6 +57777,8 @@ zyue.com##div[id^="divad_"]
 ||sexu.com/api/events
 ||sexu.com/api/ttrack
 ||sexufly.com^$third-party
+||sexvid.*/mia/
+||sexvid.*/stpd/
 ||sexvid.xxx/ftsm/
 ||sexvid.xxx/mia/
 ||sexy-more.com^$third-party

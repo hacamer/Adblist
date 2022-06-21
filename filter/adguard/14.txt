@@ -1,8 +1,8 @@
-! Checksum: 6e+OjpTaTqnPZmXotNJvmA
+! Checksum: U86nTtla9Ijk7T7+kTPcrQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.23.66
-! TimeUpdated: 2022-06-21T13:02:15+00:00
+! Version: 2.1.23.67
+! TimeUpdated: 2022-06-21T14:18:31+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7546,7 +7546,7 @@ catused.com##body.cookieMsg::before
 lotto-brandenburg.de#%#//scriptlet('set-cookie', 'policyAgreed', '1')
 studocu.com#?##main-wrapper + div:not([id]):not([class]):has(div:not([class]) > span:contains(/\sCookies$/))
 ortobom.com.br###aceitaCookies
-||lepictorium.fr/Pictorium/scripts/cookie-consent-
+/scripts/cookie-consent-$domain=lepictorium.fr|agence-lepictorium.com|univie.ac.at
 unstop.com##.cookies-save
 semana.com##.pos-relative
 salomon.com#$#div[aria-label^="Cookie"] { display: none !important; }
@@ -15900,6 +15900,7 @@ privacy.lecker.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent
 privacy.madame.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent-v2")){var g=new MutationObserver(function(){setTimeout(function(){var b=document.querySelector('button.no-children[path="\[0,2,1\]"]');b&&b.click();},300);setTimeout(function(){var c=document.querySelector('div[title="Berechtigte Interessen"]'); c&&c.click();},300);setTimeout(function(){var d=document.querySelectorAll('label[aria-checked="true"] > .off'); d.forEach(function(d){d.click();});},800); var f=document.querySelector('button.no-children[path="\[0,3,0\]"]'); setTimeout(function(){f&&f.click();},1000);});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},3E4)}});
 consent.ladbible.com,consent.gamingbible.co.uk,consent.unilad.co.uk#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var g=new MutationObserver(function(){var b=document.querySelector('button[title*="Accept" i]');b&&(g.disconnect(),b.click())});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
 !
+flynorse.com#%#document.cookie = "N0_CONSENT=essential";
 rynekpierwotny.pl#%#//scriptlet('set-local-storage-item', 'lscache-cookieMessageIsRead', 'true')
 e-ladestation.aldi-sued.de#%#AG_onLoad(function() {var b=new MutationObserver(function() {var c=document.querySelector('button.ppms_cm_button_primary'); c&&(b.disconnect(),c.click()) });b.observe(document, {childList: !0,subtree: !0});setTimeout(function() {b.disconnect()}, 1E4)});
 uxfeedback.ru#%#//scriptlet('set-local-storage-item', 'uxfb_cookies', 'true')
@@ -21786,6 +21787,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+accuweather.com##.jw-flag-floating .jw-wrapper
 ogorod.ru##.BottomPanel-root
 bookoffonline.co.jp###m1
 bookoffonline.co.jp##.ModalItems-overlay
@@ -30373,6 +30375,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+flynorse.com##app-mailing-list
 mattressfirm.com#$#body { position: unset !important; }
 mattressfirm.com#$#.modal-email-subscription { display: none !important; }
 mattressfirm.com#$#.modal-email-subscription + div.msc-modal__backdrop { display: none !important; }
