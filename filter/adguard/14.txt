@@ -1,8 +1,8 @@
-! Checksum: yTedaWH0OfVFcuxlp8wATw
+! Checksum: 6e+OjpTaTqnPZmXotNJvmA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.23.64
-! TimeUpdated: 2022-06-21T11:30:36+00:00
+! Version: 2.1.23.66
+! TimeUpdated: 2022-06-21T13:02:15+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -21786,6 +21786,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+ogorod.ru##.BottomPanel-root
 bookoffonline.co.jp###m1
 bookoffonline.co.jp##.ModalItems-overlay
 angrybirds.com##.campaign-splash
@@ -29419,6 +29420,7 @@ experts-exchange.com##.ctaSolutionStickyWrapper
 theguardian.com##.contributions__adblock
 ||contributions.guardianapis.com^
 !
+onlypult.com##.navbar-promo
 creativespirits.info##.prom
 shefinds.com##.house__unit
 deepl.com###lmt_pro_ad_container
@@ -30371,6 +30373,9 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+mattressfirm.com#$#body { position: unset !important; }
+mattressfirm.com#$#.modal-email-subscription { display: none !important; }
+mattressfirm.com#$#.modal-email-subscription + div.msc-modal__backdrop { display: none !important; }
 academics.de##.js-registration-fence
 academics.de##.widgets-registration-teaser
 321linsen.de#$##subscribeModal { display: none!important; }
@@ -35646,7 +35651,7 @@ apps2app.com#%#//scriptlet("adjust-setInterval", "#countdown", "", "0.02")
 ! mage.si - skip timer
 mage.si#%#//scriptlet("adjust-setInterval", "countdown", "", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/56155
-dood.*#%#//scriptlet("adjust-setInterval", ".countdown", "", "0.02")
+dood.la,dood.pm,dood.so,dood.to,dood.watch,dood.ws#%#//scriptlet("adjust-setInterval", ".countdown", "", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/56151
 clicads.fr#%#//scriptlet("adjust-setInterval", "#pleasewait", "", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/56054
