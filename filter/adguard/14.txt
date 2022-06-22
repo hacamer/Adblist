@@ -1,8 +1,8 @@
-! Checksum: JKDRg3t52sBZI4LGhDOBXw
+! Checksum: wwgpe9Hoj+Bh0Rv9lh6l8g
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.23.75
-! TimeUpdated: 2022-06-22T08:30:38+00:00
+! Version: 2.1.23.76
+! TimeUpdated: 2022-06-22T09:02:59+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -5511,7 +5511,8 @@ cc-fan.tv,cn-fan.tv,fox-fan.tv,nf-fan.tv#$#.pub_300x250.pub_300x250m.pub_728x90.
 !######### General element hiding rules ################
 !#######################################################
 !
-##footer-lgpd
+##.footer-lgpd
+###footer-lgpd
 ###cookie-bg
 ##.cookiealert.show
 ###cm-cookie-window
@@ -7524,6 +7525,7 @@ mein-schoener-garten.de#$?#.sp-message-open { overflow: auto !important; positio
 !
 !
 !
+anwb.nl##.critical-dialog
 revolut.com##.cookie-consent-widget
 app.revolut.com#?##root > div[role="dialog"] > div[class*="styled__CookieConsentModalBase-"]:upward(1)
 home3.ee##div[class^="js-cookies-"]
@@ -11303,10 +11305,8 @@ krasnoeibeloe.ru#?##age_popup_container > div.popup_bottom_bl > div.popup_bottom
 cmoto.ru,stiltv.ru###oct-policy
 promobit.com.br##.pr-cookie
 alternative.me###footer > div[style^="position: fixed; bottom:"][style*="z-index:"]
-giromarilia.com.br##.footer-lgpd
 kalunga.com.br###divCookiePoliticaPrivacidade
 holodilnik.ru##.alert-compliance
-shoptime.com.br##.footer-lgpd-opened
 telecineplay.com.br##div[class^="StyledCookiebanner__"]
 flex-tools.com#$#.cookieBar { display: none !important; }
 flex-tools.com#$#body { overflow: auto !important; }
