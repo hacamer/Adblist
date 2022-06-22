@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: TKZdzX+f8x6yQlUxjgzquA
+! Checksum: huQgudJe2FSuUo3zjK+bYg
 ! Title: My AdFilters Lite
 ! Expires: 1 hours (Sometimes updates are delayed)
-! Version: 202206221439
-! Last Modified: 2022年06月22日 14:39
+! Version: 202206221529
+! Last Modified: 2022年06月22日 15:29
 ! Homepage: https://github.com/hacamer/Adblist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、Adgk、大萌主的规则
 ! 并补充了贴吧过滤规则，感谢各位的分享！
 ! 如有任何疑问、意见或建议，请反馈给：杏梢
 !
-! Total count: 37483
+! Total count: 37487
 ###Ad_windows
 ###ChapterView > .slide-baidu
 ###Layeraa1
@@ -2121,7 +2121,6 @@ $websocket,domain=5nj.com|cechi8.com
 /[a-z]+\d+\.cnzz\./
 /\(com\?\d+/$third-party
 /\/ad\d*\./$script
-/\/data\/cache\/(?!(common\.|common_extra\.|bbcode\.|editor\.|forum\.|forum_post\.|forum_viewthread\.js|home\.|portal\.|seditor|smilies))[a-z_]+\.js/$script,domain=pcbeta.com
 /\/upload\/[a-z0-9]{7}\/[0-9]+-[0-9]?\/[a-z0-9]{32}\.gif/$domain=higu.tv
 /^(?!.*(bootstrapcdn.com|cdn.ampproject.org|cloudflare.com|disqus.com|disquscdn.com|dmca.com|ebacdn.com|facebook.net|fbcdn.net|fluidplayer.com|fontawesome.com|github.io|google.com|googleapis.com|googletagmanager.com|gstatic.com|jquery.com|jsdelivr.net|jwpcdn.com|jwplatform.com|polyfill.io|recaptcha.net|shrink.pe|twitter.com|ulogin.ru|unpkg.com|userapi.com|vidazoo.com|vk.com|yandex.|yastatic.net|ytimg.com|zencdn.net|player|youtube.com|cackle.me|googleoptimize.com|vuukle.com|chatango.com|twimg.com|google-analytics.com|hcaptcha.com|raincaptcha.com|media-imdb.com|blogger.com|hwcdn.net|instagram.com|wp.com)).*$/$third-party,script,domain=yemancomic.com|qimiaoxiaoshuo.com
 /_xa/ads?
@@ -5902,6 +5901,10 @@ $websocket,domain=5nj.com|cechi8.com
 @@||passiontimes.hk^*-ad.php?
 @@||paypalobjects.com/pa/js/min/pa.js
 @@||paypalobjects.com/tagmgmt/bootstrap.js
+@@||pcbeta.com/data/cache//common_
+@@||pcbeta.com/data/cache/common_extra.js
+@@||pcbeta.com/data/cache/forum_post.js
+@@||pcbeta.com/data/cache/forum_viewthread.js
 @@||pchome.com.tw/img/js/xpcadshow.js$domain=game735.com
 @@||pchomepay.com.tw/share/js/
 @@||petrochina.com.cn/advertisement_
@@ -30493,6 +30496,7 @@ zznews.cn##.ad:not([style])
 ||pcauto.com.cn/forum/fz/hots/
 ||pcauto.com.cn/zt/*_dialog/cjx-pc-half_
 ||pcauto.com.cn/zt/halfprice/
+||pcbeta.com/data/cache/*_*.js
 ||pcbeta.com/data/cache/_djwbhgprrtnmby.js
 ||pcbeta.com/data/cache/common_fbdbbsyuzhttpx.js
 ||pcbeta.com/static/image/biz/$image

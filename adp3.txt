@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: hNTu5UlmqaYd6+eQ4yMrvA
+! Checksum: 3S/r9IplORfIlLFlekUHmg
 ! Title: AdFilters 
 ! Expires: 12 hours
-! Version: 202206221439
-! Last Modified: 2022年06月22日 14:39
+! Version: 202206221529
+! Last Modified: 2022年06月22日 15:29
 ! Homepage: https://github.com/hacamer/Adblist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、EasyPrivacy、大萌主
 ! 仅合并规则，未做其余任何处理
 ! 如有任何疑问、意见或建议，请反馈至：杏梢
 !
-! Total count: 41315
+! Total count: 41319
 ###ChapterView > .slide-baidu
 ###SOHU_MAIN > .module-cmt-float-bar
 ###TopAdvert
@@ -1823,7 +1823,6 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /Wrappers?cmd=
 /YuduStatistics/*
 /ZagUser.js
-/\/data\/cache\/(?!(common\.|common_extra\.|bbcode\.|editor\.|forum\.|forum_post\.|forum_viewthread\.js|home\.|portal\.|seditor|smilies))[a-z_]+\.js/$script,domain=pcbeta.com
 /^https?:\/\/(.+?\.)?hardware\.info\/js\/[a-z]{1,}\/[0-9]{4,}\.js/$domain=hardware.info
 /^https?:\/\/fdts\.ebay-kleinanzeigen\.de\/[a-z0-9]{13,18}\.js\?/$script,domain=ebay-kleinanzeigen.de
 /^https?:\/\/nav\.sciencedirect\.com\/[a-zA-Z0-9]{14,}\.js/$script,domain=sciencedirect.com
@@ -9022,6 +9021,10 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||paypalobjects.com/web/*/gAnalytics.js$script,domain=paypal.com
 @@||pbskids.org/js/ga-current.js
 @@||pcbac.com/web/legacy/js/analytics.js$script,~third-party
+@@||pcbeta.com/data/cache//common_
+@@||pcbeta.com/data/cache/common_extra.js
+@@||pcbeta.com/data/cache/forum_post.js
+@@||pcbeta.com/data/cache/forum_viewthread.js
 @@||pchome.com.tw/img/js/xpcadshow.js$domain=game735.com
 @@||pchomepay.com.tw/share/js/
 @@||pelaaja.fi/sites/default/files/googleanalytics/analytics.js$~third-party
@@ -29942,6 +29945,7 @@ zyue.com##div[id^="divad_"]
 ||pcauto.com.cn/forum/fz/hots/
 ||pcauto.com.cn/zt/*_dialog/cjx-pc-half_
 ||pcauto.com.cn/zt/halfprice/
+||pcbeta.com/data/cache/*_*.js
 ||pccoo.cn/js/dlv1.0.js
 ||pcejsc.hellomolly.com^
 ||pcfvnp.undercovertourist.com^

@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: LfOLTdIu3wkp/USWgrAAqw
+! Checksum: D13li0uiG044GODdzPVlQg
 ! Title: AdFilters Lite
 ! Expires: 1 hours (Sometimes updates are delayed)
-! Version: 202206221439
-! Last Modified: 2022年06月22日 14:39
+! Version: 202206221529
+! Last Modified: 2022年06月22日 15:29
 ! Homepage: https://github.com/hacamer/Adblist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、Adgk、大萌主的规则
 ! 仅合并并去重规则，未做其余任何处理
 ! 如有任何疑问、意见或建议，请反馈给：杏梢
 !
-! Total count: 23460
+! Total count: 23464
 ###ChapterView > .slide-baidu
 ###SOHU_MAIN > .module-cmt-float-bar
 ###TopAdvert
@@ -1291,7 +1291,6 @@ $third-party,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biqu.ge|bi
 /[a-z]+\d+\.cnzz\./
 /\(com\?\d+/$third-party
 /\/ad\d*\./$script
-/\/data\/cache\/(?!(common\.|common_extra\.|bbcode\.|editor\.|forum\.|forum_post\.|forum_viewthread\.js|home\.|portal\.|seditor|smilies))[a-z_]+\.js/$script,domain=pcbeta.com
 /_xa/ads?
 /_xa/ads_
 /a-d-s/*
@@ -3642,6 +3641,10 @@ $third-party,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biqu.ge|bi
 @@||passiontimes.hk^$generichide
 @@||paypalobjects.com/pa/js/min/pa.js
 @@||paypalobjects.com/tagmgmt/bootstrap.js
+@@||pcbeta.com/data/cache//common_
+@@||pcbeta.com/data/cache/common_extra.js
+@@||pcbeta.com/data/cache/forum_post.js
+@@||pcbeta.com/data/cache/forum_viewthread.js
 @@||pchome.com.tw/img/js/xpcadshow.js$domain=game735.com
 @@||pchomepay.com.tw/share/js/
 @@||pg-wuming.com^$generichide
@@ -19032,6 +19035,7 @@ zznews.cn##.ad:not([style="margin-top:0px;padding-top:0px;"]),.ad1000-60
 ||pcauto.com.cn/forum/fz/hots/
 ||pcauto.com.cn/zt/*_dialog/cjx-pc-half_
 ||pcauto.com.cn/zt/halfprice/
+||pcbeta.com/data/cache/*_*.js
 ||pcbeta.com/static/image/biz/$image
 ||pccoo.cn/js/dlv1.0.js
 ||pcgames.com.cn/g/
