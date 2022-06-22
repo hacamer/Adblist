@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: RPQhzdFjJH3YX8QRj7Grnw
+! Checksum: ydnhDDyKcVGViCNU/dlrYA
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202206222100
-! Last Modified: 2022年06月22日 21:00
+! Version: 202206222150
+! Last Modified: 2022年06月22日 21:50
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 72871
+! Total count: 72884
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -4377,6 +4377,7 @@
 ##.gnt_tbr.gnt_tb
 ##.gnt_x
 ##.goAdverticum
+##.goads
 ##.google-ad
 ##.google-ad-160-600
 ##.google-ad-block
@@ -16125,6 +16126,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||ad.atown.jp/adserver/$domain=ad.atown.jp
 @@||ad.crwdcntrl.net^$script,domain=rtl.nl
 @@||ad.doubleclick.net/*/adi/com.ytbc/$domain=youtube.com
+@@||ad.doubleclick.net/clk*&destinationURL=$popup
 @@||ad.doubleclick.net/crossdomain.xml$object-subrequest,domain=play.tv|playtv.fr
 @@||ad.doubleclick.net/ddm/$popup,domain=billiger.de|guide-epargne.be|legacy.com|mail.yahoo.com|nytimes.com|spaargids.be
 @@||ad.doubleclick.net/ddm/ad/*$domain=twitch.tv,third-party
@@ -16243,6 +16245,8 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||adr.realclick.co.kr/favicon.ico$subdocument,image,domain=shencomics.com
 @@||adroll.com/edaa^$domain=youronlinechoices.com
 @@||adroll.com^$xmlhttprequest,domain=adroll.com
+@@||ads-api.twitter.com/*/accounts/$domain=analytics.twitter.com
+@@||ads-api.twitter.com/*/apps?app_store_identifiers=$domain=analytics.twitter.com
 @@||ads-twitter.com/oct.js$domain=jp.square-enix.com
 @@||ads.3dtuning.com/ad?placement=*&$~third-party
 @@||ads.a-static.com/ads.js|
@@ -16642,6 +16646,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||aseanlegacy.net/modules/adblock/controller.php
 @@||aseanlegacy.net/senzement/ads.png
 @@||aseanlegacy.net/senzement/senzement.js.php
+@@||asianembed.io/encrypt-ajax.php?id=
 @@||asianovel.com^$generichide
 @@||ask4movie.io^$generichide
 @@||asmwall.com/js/ads.js|$~third-party
@@ -19680,6 +19685,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||onlinemschool.com^$generichide
 @@||onlinetyping.org/detroitchicago/cmbdv2.js
 @@||onlinevideoconverter.com^$generichide
+@@||onlyfans.com/theme/onlyfans/spa/statistics.js$~third-party
 @@||onlytech.com/community/js/*/AdsenseBlockView.js$domain=onlytech.com
 @@||onvasortir.com^$generichide
 @@||ooodesi.com^$generichide
@@ -19995,7 +20001,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||pagead2.googlesyndication.com^$script,domain=hackintosh.computer
 @@||pagerank.fr/js*/advert.js?$script
 @@||paginegialle.it/js/shinystat.js
-@@||pagure.io/static/issues_stats.js?
+@@||pagure.io/static/issues_stats.js$~third-party
 @@||paigeeworld.com^$generichide
 @@||pailcrime.com^$script,xmlhttprequest
 @@||paintplantation.com^$script,xmlhttprequest
@@ -20052,7 +20058,6 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||paypalobjects.com/web/*/gAnalytics.js$script,domain=paypal.com
 @@||paywall-ad-bucket.s3.amazonaws.com/ad_300_250.jpg
 @@||pbs.twimg.com/ad_img/$image,xmlhttprequest
-@@||pbskids.org/js/ga-current.js
 @@||pcbac.com/web/legacy/js/analytics.js$script,~third-party
 @@||pcbeta.com/data/cache//common_
 @@||pcbeta.com/data/cache/common_extra.js
@@ -20129,7 +20134,6 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||play.nova.bg/prebid-ads.js
 @@||play.wtk.insys.pl/Scripts/InsysPlayer.v0.1.0/adTest.png$image
 @@||playbitco.in/show_ads.js$script
-@@||playcanvas.com.*/keen.min.js
 @@||playep.pro/log_event$~third-party,xmlhttprequest
 @@||player.aplhb.adipolo.com/prebidlink/$script,domain=dropgalaxy.com
 @@||player.avplayer.com^$script,domain=explosm.net
@@ -25664,6 +25668,9 @@ dvdsreleasedates.com##.fieldtable-light > .disccell
 dyhjw.com##.guessEntranceOpen
 dyhjw.com##.index_luckdraw
 dyhjw.com##.nn_link
+dyktanda.pl##a[href^="https://bit.ly/"].highlight
+dyktanda.pl##div[style="width: 100%; display: flex; justify-content: center;"]
+dyktanda.pl##footer + aside[class="modal-container modal-container-loaded"]#modal
 dynamo.kiev.ua,liga.net,epravda.com.ua,pravda.com.ua,www.i.ua,isport.ua,football.ua#$#abort-current-inline-script decodeURIComponent getAdBlockStatus; abort-current-inline-script document.querySelector /banner/
 dynast.io##+js(addEventListener-defuser, DOMContentLoaded, adsBlocked)
 dytt5.net##.detail-body > .fly-panel
@@ -41397,6 +41404,7 @@ zyue.com##div[id^="divad_"]
 ||asewlfjqwlflkew.com^
 ||asg.allweb.click^
 ||asg.aphex.me^
+||asg.bhabhiporn.pro^
 ||asg.faperoni.com^
 ||asg.pornoplay.online^
 ||asg.sdtraff.com^
@@ -54234,6 +54242,7 @@ zyue.com##div[id^="divad_"]
 ||lhesqk.karatov.com^
 ||lhewdj.fnac.pt^
 ||lhhlkj.yoursuperfoods.de^
+||lhippac.cn^
 ||lhmos.com^
 ||lhs-3844b.com^
 ||lhy1.xyz^
@@ -67060,6 +67069,7 @@ zyue.com##div[id^="divad_"]
 ||thenagesnide.com^
 ||thenceafeard.com^
 ||thench.net^$third-party
+||thenipslip.com/8bf6a64db50f.js
 ||theonecdn.com^
 ||theoplayer.com/t?
 ||thepaper.cn/bottomBanner_
@@ -71787,6 +71797,7 @@ zyue.com##div[id^="divad_"]
 ||xxxshake.com/assets/f_load.js
 ||xxxshake.com/static/js/script.js
 ||xxxvogue.net/_ad
+||xxxxsx.com/sw.js
 ||xxzj.pro^
 ||xy.nullrefexcep.com^$third-party
 ||xy33.smallable.com^
@@ -71806,6 +71817,7 @@ zyue.com##div[id^="divad_"]
 ||xyuwxpupdr.com^
 ||xywy.com/zhixing/
 ||xyxgbs.lezhin.com^
+||xyxhtyy.cn^
 ||xyy9.xyz^
 ||xyz.bestool.pl^
 ||xyz0k4gfs.xyz^
@@ -72565,6 +72577,7 @@ zyue.com##div[id^="divad_"]
 ||zhengyuanguojimc.com^
 ||zhenjiang365.cn/*/ad_
 ||zhenxinchicken.xyz^
+||zhetoutiao.top^
 ||zhev.com.cn/file/weixin/
 ||zhflodsix.cn^
 ||zhibo.me/js/fd.js
