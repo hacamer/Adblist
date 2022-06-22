@@ -1,8 +1,8 @@
-! Checksum: i+oAZyU24CDyv6F9XKjMUQ
+! Checksum: JKDRg3t52sBZI4LGhDOBXw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.23.73
-! TimeUpdated: 2022-06-22T06:30:38+00:00
+! Version: 2.1.23.75
+! TimeUpdated: 2022-06-22T08:30:38+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -3038,7 +3038,7 @@ bloody-disgusting.com,haberolduk.com,askdifference.com,multics.eu,pipeflare.io,t
 !
 !--- Admiral ---
 ! can be closed
-thethaiger.com,worldtravelguide.net,sportskeeda.com,gamerant.com,gamerjournalist.com,voetbalzone.nl,theurbanlist.com,golf.com,xda-developers.com,metv.com,nbcnews.com,wegotthiscovered.com,savvytime.com,nbcsportsedge.com,haber3.com,androidpolice.com,news.com.au,forums.radioreference.com,boston.com,reviewgeek.com,technicpack.net,theblaze.com,morfix.co.il,factinate.com,phonearena.com,stripes.com,progameguides.com,weatherbug.com,patheos.com,online-tech-tips.com,digitaltrends.com,helpdeskgeek.com,britannica.com,wrestlinginc.com,superherohype.com,news24.com,pgatour.com,wral.com,gamepur.com,fin24.com,geekzone.co.nz,upi.com,thewindowsclub.com,androidcure.com,secondnexus.com,health24.com,wokesloth.com,sport24.co.za,onmsft.com,cultofmac.com,washingtontimes.com#%#//scriptlet('abort-current-inline-script', 'document.createElement', 'admiral')
+dualshockers.com,thethaiger.com,worldtravelguide.net,sportskeeda.com,gamerant.com,gamerjournalist.com,voetbalzone.nl,theurbanlist.com,golf.com,xda-developers.com,metv.com,nbcnews.com,wegotthiscovered.com,savvytime.com,nbcsportsedge.com,haber3.com,androidpolice.com,news.com.au,forums.radioreference.com,boston.com,reviewgeek.com,technicpack.net,theblaze.com,morfix.co.il,factinate.com,phonearena.com,stripes.com,progameguides.com,weatherbug.com,patheos.com,online-tech-tips.com,digitaltrends.com,helpdeskgeek.com,britannica.com,wrestlinginc.com,superherohype.com,news24.com,pgatour.com,wral.com,gamepur.com,fin24.com,geekzone.co.nz,upi.com,thewindowsclub.com,androidcure.com,secondnexus.com,health24.com,wokesloth.com,sport24.co.za,onmsft.com,cultofmac.com,washingtontimes.com#%#//scriptlet('abort-current-inline-script', 'document.createElement', 'admiral')
 mangasee123.com#%#//scriptlet("abort-current-inline-script", "document.createElement", "googletag")
 grandprix247.com,familyminded.com,xcalibrscans.com,cbsnews.com,finviz.com,ign.com,workandmoney.com,today.com,rottentomatoes.com,walterfootball.com,dotesports.com,boredpanda.com,cleveland.com#%#//scriptlet("set-constant", "admiral", "noopFunc")
 ! cannot be closed
@@ -3063,6 +3063,7 @@ digitaltrends.com#@#.text_ads_2
 ! @@||ad.doubleclick.net/ddm/adj^$domain=editorial.rottentomatoes.com
 !
 ! Add same rules to the Admiral section of Tracking Protection filter
+||handsomelyhealth.com^$third-party
 ||expansioneggnog.com^$third-party
 ||laughablelizards.com^$third-party
 ||floweryflavor.com^$third-party
@@ -34712,6 +34713,9 @@ newsweek.com##iframe[src="http://sns.europe.newsweek.com/newsletter?popup=1"]
 !######### JS tweaks ##########
 !##############################
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/122461
+anime-sanka.com#%#//scriptlet("adjust-setInterval", "decodeURIComponent(link)", "", "0.02")
+ouo.io#%#(()=>{if(location.href.includes("?s=http")){const a=location.href.split("?s=").slice(1);try{location.assign(a)}catch(a){}}})();
 ! https://github.com/AdguardTeam/AdguardFilters/issues/122250
 modyolo.com#%#//scriptlet("adjust-setTimeout", "#download-loading", "*", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/122188
