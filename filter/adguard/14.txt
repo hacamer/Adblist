@@ -1,8 +1,8 @@
-! Checksum: HvMwrrBXhm9p9QJWKtgQ9g
+! Checksum: YlGwQqcNyMby9LMWQ+4Zjg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.23.90
-! TimeUpdated: 2022-06-23T12:30:35+00:00
+! Version: 2.1.23.92
+! TimeUpdated: 2022-06-23T13:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7525,6 +7525,7 @@ mein-schoener-garten.de#$?#.sp-message-open { overflow: auto !important; positio
 !
 !
 !
+stewmac.com##.cookiebannerblock
 super.cz#$#.szn-cmp-dialog-container { display: none!important; }
 super.cz#$#.scmp_noscroll { overflow: auto !important; }
 tvbanywhere.com###gdprcookie
@@ -19686,6 +19687,8 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+fotor.com##div[class^="BtnOpenApp_btn"]
+fotor.com##div[class^="MobileToApp_goart_app_ad"]
 ouest-france.fr##.bp-revive_x10_x14
 ouest-france.fr###bloc_x14
 dtf.ru,vc.ru,tjournal.ru##.mobile-bar-container
@@ -30403,6 +30406,9 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+stewmac.com#$#body { overflow: auto !important; }
+stewmac.com#$#.lightbox-newsletter-form { display: none !important; }
+stewmac.com#$#.modal-backdrop { display: none !important; }
 news.ru##.most-discuss__subscribe
 news.ru##.bem-main-video__subscr
 watchasian.ac###sidebar > div.fanpage
@@ -32301,7 +32307,7 @@ independent.co.uk###newsletter-component
 goalkicker.com##.sign-up
 concursosnobrasil.com.br##.box-boletim
 drphil.com##.main-newsletter-signup
-avclub.com,jalopnik.com###js_alerts_sidebar
+gizmodo.com,theroot.com,jalopnik.com,lifehacker.com,avclub.com,jalopnik.com###js_alerts_sidebar
 thehindubusinessline.com###articleInline-nl
 felomena.com##.subscribe-conteiner
 cryptobriefing.com##.widget-newsletter-form
