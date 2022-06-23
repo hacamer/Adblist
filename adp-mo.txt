@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: DQxz+rrhf6Gm2VNYWknLUg
+! Checksum: Js+vpq281+9cXwAsPdJz8A
 ! Title: My AdFilters（for Mobile）
 ! Expires: 12 hours
-! Version: 202206230731
-! Last Modified: 2022年06月23日 07:31
+! Version: 202206231032
+! Last Modified: 2022年06月23日 10:32
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 67771
+! Total count: 67792
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -1459,6 +1459,7 @@
 ###quads-admin-ads-js
 ###r_adver
 ###rc-row-container
+###recommend-float + .footer + .popup
 ###recommendAdBox
 ###refine-ad
 ###reklama
@@ -5536,6 +5537,7 @@
 ##.tnt-ads
 ##.tnt-ads-container
 ##.tnt-dmp-reactive
+##.top > a > .topline[src^="/photo/"]
 ##.top-ad
 ##.top-ad-970x90
 ##.top-ad-area
@@ -6174,6 +6176,7 @@
 ##a[href^="https://go.nordvpn.net/aff"] > img
 ##a[href^="https://go.strpjmp.com/"]
 ##a[href^="https://go.tmrjmp.com"]
+##a[href^="https://go.xlviirdr.com"]
 ##a[href^="https://go.xxxiijmp.com"]
 ##a[href^="https://go.xxxjmp.com"]
 ##a[href^="https://gohere.pl/"]
@@ -6301,6 +6304,7 @@
 ##div[class^="adbanner_"]
 ##div[class^="ads-partner-"]
 ##div[class^="adunit_"]
+##div[class^="is_"] > a > img[referrerpolicy="no-referrer"][src*="hdslb.com"]
 ##div[class^="kiwi-ad-wrapper"]
 ##div[class^="kiwiad-desktop"]
 ##div[class^="kiwiad-popup"]
@@ -6366,6 +6370,7 @@
 ##div[id^="vuukle-ad-"]
 ##div[id^="yandex_ad"]
 ##div[id^="zergnet-widget"]
+##div[onclick*=".yyav5.top"]
 ##div[onclick*="?i_code="]
 ##div[onclick^="window.location.href"][onclick*=".bcebos."]
 ##div[style=" max-width:979px;  margin:0 auto;"] > a > img[height="60px"]
@@ -6433,7 +6438,6 @@
 ##script + #rbbox
 ##script[src="/static/base.js"] + #couplet
 ##script[src="/template/kuhei2/skin/base.js"] + #couplet
-##section[class^="recirclist_recircList__"]
 ##span[id^="ezoic-pub-ad-placeholder-"]
 ##span[title="neteasefooter"]
 ##style + .topd
@@ -11391,6 +11395,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /meta-tracker/*
 /metatraffic/track.asp?
 /metric/?mid=
+/metric/?wid=
 /metric/gauge
 /metrica/sp.js
 /metricool.js
@@ -15554,6 +15559,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||ads.muxiv.com/address/$xmlhttprequest
 @@||ads.pinterest.com^$popup
 @@||ads.privacy.qq.com^$domain=privacy.qq.com
+@@||ads.pubmatic.com/AdServer/js/pwt/$script,domain=india.com
 @@||ads.remix.es/advertisement.js|
 @@||ads.roblox.com/v*/sponsored-pages$xmlhttprequest
 @@||ads.roblox.com/v1/sponsored-pages$xmlhttprequest,domain=roblox.com
@@ -24613,6 +24619,7 @@ historycollection.com##div[class^="cis_add_block"]
 historydaily.org##.adwrapper
 historykon.pl##.adv_content
 hit180.com##.widget_ui_orbui:nth-child(-n+2)
+hitbdsm.com##a[href^="https://go.rabbitsreviews.com/"]
 hitc.com,dualshockers.com##+js(set-constant, pbjs.setConfig, noopFunc)
 hitc.com,dualshockers.com##.GRVMpuWrapper
 hitc.com,thefocus.news##.GRVMpuWrapper
@@ -27334,7 +27341,7 @@ news18.com#?#.recomeded_story > ul > li > div[style="min-height:100px"]:upward(1
 news18a.com,tom.com##.ina_ad_class
 news24.jp#@#.adText
 news247.gr##body .ad-widget
-news24online.com##.db_shw_mb_blk
+news24online.com##.clearfix.db_shw_mb_blk
 news24online.com##mybot
 news9live.com###left_before_story
 newsbomb.gr##.banner-section
@@ -30888,6 +30895,7 @@ uc123.com##.s-left
 uc123.com##.s-right
 uc123.com##.side-hot
 ucas.com#?#.section__sidebar-second > .region--sidebar-second.sticky > .brick--article-mpu-first:upward(1)
+ucompares.com##.tablepress-id-46
 ucptt.com##.hidden-sm
 udn.com###ec
 udn.com##.overlay-container
@@ -32853,6 +32861,7 @@ zyue.com##div[id^="divad_"]
 ||24ur.com/bin/player/?mod=statistics&
 ||2500sz.com/site/
 ||254a.com^
+||258c7c3d75.com^
 ||258ydh.com^
 ||258zw.com^$third-party
 ||2613.store^
@@ -36695,6 +36704,7 @@ zyue.com##div[id^="divad_"]
 ||asdb.xyz^
 ||asdfix.com^
 ||asdpoi.com^
+||asdqwe.ltd^
 ||asemskull.com^
 ||aservices.party^
 ||asewlfjqwlflkew.com^
@@ -38619,6 +38629,7 @@ zyue.com##div[id^="divad_"]
 ||cameraprive.com^$third-party
 ||cameraunswing.com^
 ||camghosts.com^$third-party
+||camilo4free.cfd^
 ||camiocw.com^
 ||camisado.actonservice.com^
 ||cammpaign.com^
@@ -39112,6 +39123,7 @@ zyue.com##div[id^="divad_"]
 ||childlikecook.com^
 ||childlikecrowd.com^
 ||childlikeform.com^
+||china-india.wang^
 ||china.chemnet.com/cnbanner/
 ||china.cn/js/common/daniel_pop/
 ||china.cn/js/common/local_hydn/
@@ -43863,6 +43875,7 @@ zyue.com##div[id^="divad_"]
 ||fangfeeling.com^
 ||fanghua2.cn^
 ||fangjslc.com^
+||fangshan.us^
 ||fangzhixinxi.cn^
 ||fankwmgxe.com^
 ||fanli.in^
@@ -44518,6 +44531,7 @@ zyue.com##div[id^="divad_"]
 ||freshplum.com^$third-party
 ||fresnel-events.vimeocdn.com^
 ||fretfulfurniture.com^
+||freudunsneck.com^
 ||freychang.fun^
 ||fridgestretched.com^
 ||friend17.net^
@@ -48698,6 +48712,7 @@ zyue.com##div[id^="divad_"]
 ||kguke.com^
 ||khayatarai.com^
 ||khcdhu.saraschool.net^
+||khdry.top^
 ||khimxz.shoesforcrews.com^
 ||khlgdkxien.com^
 ||khrtac.xiangha.com^
@@ -52160,6 +52175,7 @@ zyue.com##div[id^="divad_"]
 ||mtzenhigqg.com^
 ||muatui.com^
 ||muchotrust.com^
+||mucinshasht.com^
 ||mucums.com^
 ||mud4.destinia.com.eg^
 ||muddledaftermath.com^
@@ -54387,6 +54403,7 @@ zyue.com##div[id^="divad_"]
 ||pikedhelloed.com^
 ||pikeletkiyi.com^
 ||pikzor.com^$third-party
+||pilaryhurrah.com^
 ||pilgrimarym.club^
 ||pimpandhost.com/mikakoku/
 ||pimpandhost.com/static/html/
@@ -57925,6 +57942,7 @@ zyue.com##div[id^="divad_"]
 ||shqbsdjatunl.com^$third-party
 ||shqmetrics.sony.com^
 ||shrek.6.cn^
+||shrewdoscular.com^
 ||shriekdestitute.com^
 ||shrillbighearted.com^
 ||shrillspoon.com^
@@ -64094,6 +64112,7 @@ zyue.com##div[id^="divad_"]
 ||uestat.video.qiyi.com^
 ||ueuodgnrhb.com^
 ||ueuodgnrhb.com^$third-party
+||ufile.cc/crod.js
 ||ufile.io/assets/js/ab.js
 ||ufpcdn.com^
 ||ufvyywlrgpgpyl.com^
@@ -64633,6 +64652,7 @@ zyue.com##div[id^="divad_"]
 ||viavideo.digital^$third-party
 ||vibuin.com^
 ||vic-m.co^
+||vichycobourg.com^
 ||vicspendig.club^
 ||victoriouspastimeculture.com^
 ||vid.me^
@@ -66287,6 +66307,7 @@ zyue.com##div[id^="divad_"]
 ||wxktv.cn^
 ||wxs666.cn^
 ||wxxfqc.com^
+||wy123.fun^
 ||wy213.com^$popup,third-party
 ||wydong.top^
 ||wydoxlhdsojndw.com^
