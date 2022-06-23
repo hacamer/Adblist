@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: bMrvk5Bd+E9eyOUVPns4Pg
+! Checksum: kMXwnXu0yVEWr0qXAhHjIw
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202206240049
-! Last Modified: 2022年06月24日 00:49
+! Version: 202206240135
+! Last Modified: 2022年06月24日 01:35
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 72942
+! Total count: 72944
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -7512,6 +7512,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /?log=performance-
 /?mob.ct=
 /?record&key=
+/?ref=$popup,domain=hltv.org
 /?sentry_key=
 /?sentry_version=
 /?swift-performance-tracking
@@ -35280,9 +35281,8 @@ txahz.com###archy_ad2
 txtbook.com.cn##.ledu-advWrap
 txxx.*##.video-content > div + div:last-child
 txxx.*#?#.page-video > div.video-videos-slider ~ div[class]:matches-css(justify-content: center)
+txxx.*#?#.video-content > div:first-child > div[class]:has(> div > a[href="#"])
 txxx.*,upornia.*##.video-videos-slider
-txxx.com##+js(abort-on-property-read, vertis.popunder.neverblock)
-txxx.com##+js(set-constant, vdaVars.neverblock.loaderUrl, undefined)
 txxx.com##div.text > a
 txxx.com#$#override-property-read skpPop true; abort-on-property-read open
 txxx.com,txxx.tube##.video-content a[href="#"]
@@ -35435,7 +35435,7 @@ uporn.icu,al.ly,missav.com,futplayhd.net,canaistv.top,tanmandammy.net,imgsto.com
 uporn.icu,shorterall.com,familyporn.tv,biqle.com,verhentai.top,lovefap.com,sdefx.cloud,info-english.ru,alluretube.com,anyxvideos.com,fucktheporn.com,hugetits.win,italianporn.com.es,mommysucks.com,mzansinudes.com,napiszar.com,onlineporn24.com,porntube15.com,pornvdoxxx.com,pozdravlove.ru,sexavgo.com,store-of-beats.ru,pinayvids.com,dvdplay.*,sxyprn.*,mmopeon.ru,acervodaputaria.com.br,animefenix.com,masahub.net,rule34porn.net,hispasexy.org,tokyoblog.tv,idolsblog.tv,sturls.com,sexphimhd.net,freeporn.org.uk,xvideos2020.me,pornovidea.net,youporn.red,animesanka.*,adsh.cc,85tube.com,pornobr.ninja,ekasiwap.com,hentaidexy.com,pornoruhe.net,girl2sex.com,suki48.web.id,xpornass.com,javhd.icu,mxtube.net,juicyoldpussy.com,sexofilm.co,xnxx66.com,paidthe.site,illink.net,xxxlucah.com,mangaraw.org,pornbox.cc,pornhex.com,xxxhub.cc,sexe-libre.org,picrok.com,zplayer.live,ccurl.net,jav688.com,datawav.club,xxxpicz.com,canyoublockit.com,mypornhere.com,skidrowcodex.net##+js(set-constant, D4zz, noopFunc)
 upornia.*##.videoplayer-wrapper + div > div[class]:only-child
 upornia.*##div[class$="related"] + div.aa_label
-upornia.*,txxx.*#?#.video-content > div[class] > div.text > a[href="#"]:upward(2)
+upornia.*#?#.video-content > div[class] > div.text > a[href="#"]:upward(2)
 upornia.com##+js(abort-current-script, skipPop, /.*/)
 upornia.com##.aa_label
 upornia.com##.aa_label + div > section
@@ -50154,6 +50154,7 @@ zyue.com##div[id^="divad_"]
 ||go.email.jbhunt.com^
 ||go.emails.discoveryplus.com^
 ||go.emersonautomation.com^
+||go.ezodn.com^
 ||go.federalbank.co.in^
 ||go.foremostmedia.com^
 ||go.fuze.com^
@@ -54279,6 +54280,7 @@ zyue.com##div[id^="divad_"]
 ||lhaqtn.lyst.ca^
 ||lhesqk.karatov.com^
 ||lhewdj.fnac.pt^
+||lhgjewelry.com^
 ||lhhlkj.yoursuperfoods.de^
 ||lhippac.cn^
 ||lhmos.com^
