@@ -1,8 +1,8 @@
-! Checksum: 4a88LEjB+rUffMSz/h/iCA
+! Checksum: UP3Lvss9vFqp3c3JcAomQg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.23.88
-! TimeUpdated: 2022-06-23T08:30:36+00:00
+! Version: 2.1.23.89
+! TimeUpdated: 2022-06-23T09:30:35+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7525,6 +7525,9 @@ mein-schoener-garten.de#$?#.sp-message-open { overflow: auto !important; positio
 !
 !
 !
+super.cz#$#.szn-cmp-dialog-container { display: none!important; }
+super.cz#$#.scmp_noscroll { overflow: auto !important; }
+tvbanywhere.com###gdprcookie
 ||ekonomist.com.tr/wp-content/*/efl.js
 afpforum.com###dvRGPDcookie
 yibian.hopto.org###we-use-cookie
@@ -8631,7 +8634,7 @@ eapteka.ru##.cookie-informer
 topchretien.com###rgpd
 diocese-quimper.fr###wpca-popup-modal
 xn--d1aiavecq8cxb.xn--p1ai##app-block-page-header > div.shell
-bursahakimiyet.com.tr,yenidonem.com.tr##.kvkkpop
+lifebursa.com,bursahakimiyet.com.tr,yenidonem.com.tr##.kvkkpop
 tapipol.pl###panel_cookie_bottom
 zoomtventertainment.com##div[class^="GdprCSS-container-"]
 macron.com#$#body { overflow: auto !important; }
@@ -15905,6 +15908,7 @@ privacy.lecker.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent
 privacy.madame.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent-v2")){var g=new MutationObserver(function(){setTimeout(function(){var b=document.querySelector('button.no-children[path="\[0,2,1\]"]');b&&b.click();},300);setTimeout(function(){var c=document.querySelector('div[title="Berechtigte Interessen"]'); c&&c.click();},300);setTimeout(function(){var d=document.querySelectorAll('label[aria-checked="true"] > .off'); d.forEach(function(d){d.click();});},800); var f=document.querySelector('button.no-children[path="\[0,3,0\]"]'); setTimeout(function(){f&&f.click();},1000);});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},3E4)}});
 consent.ladbible.com,consent.gamingbible.co.uk,consent.unilad.co.uk#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var g=new MutationObserver(function(){var b=document.querySelector('button[title*="Accept" i]');b&&(g.disconnect(),b.click())});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
 !
+ranking.perspektywy.pl#%#//scriptlet('set-cookie', 'perspektywy_cookies', '1')
 flynorse.com#%#document.cookie = "N0_CONSENT=essential";
 rynekpierwotny.pl#%#//scriptlet('set-local-storage-item', 'lscache-cookieMessageIsRead', 'true')
 e-ladestation.aldi-sued.de#%#AG_onLoad(function() {var b=new MutationObserver(function() {var c=document.querySelector('button.ppms_cm_button_primary'); c&&(b.disconnect(),c.click()) });b.observe(document, {childList: !0,subtree: !0});setTimeout(function() {b.disconnect()}, 1E4)});
@@ -16914,6 +16918,8 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/122507
+ranking.perspektywy.pl#@##cookieModal
 ! https://github.com/AdguardTeam/AdguardFilters/issues/122560
 ! "Sign In" button doesn't work if cookie notice is not accepted
 forbes.com#@##truste-consent-track
@@ -27569,6 +27575,7 @@ abendzeitung-muenchen.de###webpush-app
 /firebase.js$domain=novayagazeta.ru|comments.ua|kinosimka.net|ilan365.net|cnbcindonesia.com|haberzamani.net|oxy.cloud|allbasketball.org|auslogics.com|kartalyuvasi.com.tr|cnnindonesia.com|fbc.ua|astv.ru|pln-pskov.ru|aylink.co
 /firebase-messaging.js$domain=s.akiba-souken.com|bfm.ru|theswagsports.com|focus.ua|ukranews.com|comments.ua|coub.com|porno90.me|cnnamador.com|giallozafferano.it|wcostream.com|fptplay.vn|jooble.org|mobile01.com|myinstants.com|pdalife.ru|rg.ru|m.iguides.ru|donanimhaber.com|profile.ru|womanhit.ru|news.noteru.com|narodna-pravda.ua|newstm.in|sabah.com.tr|dreamstime.com|popbee.com|avtovzglyad.ru|allbasketball.org|tw.news.yahoo.com|takvim.com.tr|jn.pt|ria.ru|pars.host|calculator-online.net|operanewsapp.com|ahaber.com.tr|tamindir.com|concursosnobrasil.com.br|kompas.com|news.ebc.net.tw|recyclingtoday.com|homedecoratione.com|khersondaily.com|mirtesen.ru|womanhit.ru|belsat.eu|gearbest.com|op.gg|novayagazeta.ru|pocket-lint.com|turunculevye.com|bloomberght.com|stardima.com|aksam.com.tr|portamur.ru|fishki.net|ranking.goo.ne.jp|ohmymag.com|mgronline.com|semnasem.org|bluradio.com|carwale.com|finanznachrichten.de|home.kingsoft.jp
 !
+lifebursa.com##body div#notificationPopup
 einvestidor.estadao.com.br###push-notification-prompt-container
 girafa.com.br#%#//scriptlet('set-cookie', 'saiupagina', 'true')
 sloanreview.mit.edu##.news-signup
@@ -29441,6 +29448,7 @@ experts-exchange.com##.ctaSolutionStickyWrapper
 theguardian.com##.contributions__adblock
 ||contributions.guardianapis.com^
 !
+super.cz###szn-premium
 ||aurora.network/images/banners/
 onlypult.com##.navbar-promo
 creativespirits.info##.prom
