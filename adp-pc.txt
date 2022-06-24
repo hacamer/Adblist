@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: CjuRlpKfXGHKL587EpEHiQ
+! Checksum: 1B8zgnFmMLnkZZYBq4ZPhw
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202206241333
-! Last Modified: 2022年06月24日 13:33
+! Version: 202206241438
+! Last Modified: 2022年06月24日 14:38
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 72967
+! Total count: 72970
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -20010,6 +20010,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||pailcrime.com^$script,xmlhttprequest
 @@||paintplantation.com^$script,xmlhttprequest
 @@||paleleaf.com^$script,xmlhttprequest
+@@||palixi.net/assets/js/prebid-ads.js
 @@||pamelarandom.com^$script,xmlhttprequest
 @@||panditfiles.pro^$generichide
 @@||pandora.com/images/public/devicead/$image
@@ -31687,6 +31688,8 @@ paidthe.site##+js(abort-on-property-read, open)
 paidtomoney.com##+js(window.open-defuser)
 paigeeworld.com##.top-ad-container
 painart.ru##body > div[id][style^="display: block"][style*="background: red"]
+palixi.net##+js(no-fetch-if, pagead2.googlesyndication.com)
+palixi.net##+js(set-constant, canRunAds, true)
 palmtube.com##+js(window.open-defuser)
 pan.baidu.com##.phone-banner
 pan.baidu.com##.upload-bar.global-clearfix
