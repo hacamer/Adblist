@@ -1,8 +1,8 @@
-! Checksum: 7lAOdCCL8ohLZUW0IA90lw
+! Checksum: IERRrw2lkmUPR3Ml91JZlg
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.41.62
-! TimeUpdated: 2022-06-24T07:31:28+00:00
+! Version: 2.0.41.63
+! TimeUpdated: 2022-06-24T09:03:16+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -89,6 +89,9 @@
 ! https://developer.chrome.com/docs/privacy-sandbox/topics/
 ! TODO: replace with a scriptlet later: https://github.com/AdguardTeam/Scriptlets/issues/214
 #%#//scriptlet('set-constant', 'Document.prototype.browsingTopics', 'undefined')
+! https://github.com/AdguardTeam/AdguardFilters/issues/122614
+nine.com.au#%#(()=>{window.tracking={setConfig(){},trackPage(){},trackVideoAutoFail(){}}})();
+nine.com.au#%#//scriptlet('prevent-element-src-loading', 'script', 'share.9cdn.net/share/long_cache/js/tracking/tracking')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/121698
 configurator.ducati.com#%#//scriptlet("set-constant", "WURFL", "emptyObj")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/121510
@@ -24574,6 +24577,7 @@ $app=com.miui.analytics
 ! For platforms which do not support $redirect rules
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/122614
 ! https://github.com/AdguardTeam/AdguardFilters/issues/122396
 @@||cdn.segmentify.com^$domain=gratis.com
 !#safari_cb_affinity
