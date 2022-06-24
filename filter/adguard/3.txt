@@ -1,8 +1,8 @@
-! Checksum: sLqOEqOXJtPXgq4TtdRYTA
+! Checksum: cTRKH2oEzx9R6qXJgoOVCw
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.41.66
-! TimeUpdated: 2022-06-24T12:31:33+00:00
+! Version: 2.0.41.67
+! TimeUpdated: 2022-06-24T13:03:33+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -24819,10 +24819,8 @@ suki-kira.com#%#//scriptlet("remove-attr", "disabled", "button.vote-submit")
 @@||cdnjs.cloudflare.com/ajax/libs/fingerprintjs2/2.1.0/fingerprint2.js$script,domain=picoworkers.com
 ||picoworkers.com/login.php$replace=/\/fingerprint2.js" integrity="/\/fingerprint2.js" _integrity="/
 ||cdnjs.cloudflare.com/ajax/libs/fingerprintjs2/2.1.0/fingerprint2.js$script,redirect=fingerprintjs2,domain=picoworkers.com,important
-! TODO: remove after extension release (next after 4.0.159) Must be checked if fingerprintjs2 redirect is supported
 ! https://github.com/AdguardTeam/AdguardFilters/issues/108296
 ||new.hnair.com/hainanair/ibe/static/scripts/new/profile/fingerprint2.js$script,redirect=fingerprintjs2,important
-! TODO: remove after extension release (next after 4.0.159) Must be checked if fingerprintjs2 redirect is supported
 @@||new.hnair.com/hainanair/ibe/static/scripts/new/profile/fingerprint2.js
 ! https://github.com/AdguardTeam/AdguardFilters/issues/108678
 ! https://github.com/AdguardTeam/AdguardFilters/issues/108760
@@ -24860,7 +24858,6 @@ ntp.msn.com#@%#navigator.getBattery = undefined;
 ! https://github.com/AdguardTeam/Scriptlets/issues/141#issuecomment-921042595
 @@||cloudflare.com/ajax/libs/fingerprintjs2/$script,domain=gamebox.gesoten.com
 ||cloudflare.com/ajax/libs/fingerprintjs2/$script,redirect=fingerprintjs2,domain=gamebox.gesoten.com,important
-! TODO: remove after extension release (next after 4.0.159) Must be checked if fingerprintjs2 redirect is supported
 ! riteaid.com
 @@||rfksrv.com/rfk/js/*/init.js$script,domain=riteaid.com
 ! jolie.de/maedche.de - broken picture gallery
