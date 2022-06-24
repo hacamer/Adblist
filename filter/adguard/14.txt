@@ -1,8 +1,8 @@
-! Checksum: EaNvwADionO1VUPV1K641A
+! Checksum: b32Y7rnOiFwr1+Im5mqXzA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.24.2
-! TimeUpdated: 2022-06-24T12:30:46+00:00
+! Version: 2.1.24.4
+! TimeUpdated: 2022-06-24T15:30:37+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7529,6 +7529,7 @@ tvbanywhere.com###gdprcookie
 ||ekonomist.com.tr/wp-content/*/efl.js
 afpforum.com###dvRGPDcookie
 yibian.hopto.org###we-use-cookie
+chat.mozilla.org##.mx_ToastContainer
 anwb.nl##.critical-dialog
 revolut.com##.cookie-consent-widget
 app.revolut.com#?##root > div[role="dialog"] > div[class*="styled__CookieConsentModalBase-"]:upward(1)
@@ -28123,6 +28124,8 @@ disk.yandex.*##.mail360-banner
 @@||yastatic.net/daas/atom.js$domain=mail.yandex.by|mail.yandex.kz|mail.yandex.ru|mail.yandex.ua|mail.yandex.com|mail.yandex.com.tr
 !-----------------------------------------------
 !
+! sueddeutsche.de - self-promo at end of article
+sueddeutsche.de##div[data-hydration-component-name="JobOffers"]
 ! computerbase.de - self-promo in article at bottom
 computerbase.de##.pro-box
 ! https://github.com/AdguardTeam/AdguardFilters/issues/120219

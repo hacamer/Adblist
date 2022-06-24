@@ -1,8 +1,8 @@
-! Checksum: D+iqeM6UVO5Z5cLmZhVluw
+! Checksum: XXr5I7wMKD03qEM8Mg3zCg
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.0.64.52
-! TimeUpdated: 2022-06-24T11:31:35+00:00
+! Version: 2.0.64.53
+! TimeUpdated: 2022-06-24T15:31:28+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -85,6 +85,7 @@
 ! Bad:  @@||example.org^$stealth (should be in AdGuard Base - whitelist_stealth.txt)
 !
 !
+||share-count.donreach.com^$third-party
 ||button-share.zalo.me^$third-party
 ||xn--r1a.website^$third-party
 ||share.gree.jp^$third-party
@@ -243,6 +244,7 @@
 ! Bad: .org/ads/$domain=example.org (for instance, should be in speficic.txt)
 !
 !
+||share.donreach.com^$third-party
 /plugins/content/jllike/*
 /Twitter_b_rect.$image
 /linebutton_$image
