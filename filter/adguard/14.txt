@@ -1,8 +1,8 @@
-! Checksum: UQGj+kvKXLQu5ZHaqWd40A
+! Checksum: SjPSgncgQQ7i3CLI5KX8wA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.23.98
-! TimeUpdated: 2022-06-24T09:02:29+00:00
+! Version: 2.1.24.0
+! TimeUpdated: 2022-06-24T10:30:37+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -12238,7 +12238,7 @@ desimartini.com#$#body { overflow: visible !important; }
 psse-wagrowiec.pl##.pwebbox-plugin-cookie_policy
 premium-rum.de###cookiestopRoot
 clavejuegos.com###ogcc_barContainer
-forum.digitalfernsehen.de,freewebsitetemplates.com,forums.mydigitallife.net##.pageContent > .PanelScroller.Notices
+forum.digitalfernsehen.de,freewebsitetemplates.com,forums.mydigitallife.net##body .PanelScroller.Notices
 planetfitness.com###pf-privacy-policy-notice
 hidemy.name,uprightpose.com###gdpr-block
 gillette.com.tr,headandshoulders.com.tr,agizbakimuzmani.com##.divOneTrustMainContainer
@@ -19691,6 +19691,8 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+search.shutoko-eng.jp##.androidBnr
+search.shutoko-eng.jp##.qr
 magickum.com##.banerpril
 fotor.com##div[class^="BtnOpenApp_btn"]
 fotor.com##div[class^="MobileToApp_goart_app_ad"]
@@ -29455,6 +29457,7 @@ experts-exchange.com##.ctaSolutionStickyWrapper
 theguardian.com##.contributions__adblock
 ||contributions.guardianapis.com^
 !
+odysee.com##.claim-preview--premium-plus
 super.cz###szn-premium
 ||aurora.network/images/banners/
 onlypult.com##.navbar-promo

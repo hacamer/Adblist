@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: RbGFDZQA2OBAxSx+Y8nOgQ
+! Checksum: ZpFXhP8lO5rH4SDQjZldug
 ! Title: edentwCustom
 ! Expires: 12 hours
-! Version: 202206241730
-! Last Modified: 2022年06月24日 17:30
+! Version: 202206241835
+! Last Modified: 2022年06月24日 18:35
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自Adblock Warning Removal List、ABP filters、anti-adblock-killer-filters，感谢各位大大的分享！
 ! 仅合并规则，未做其余任何处理
@@ -2641,6 +2641,7 @@ bing.com#?#li[class="b_algo"]:-abp-has(>h2 + div[class="b_caption"] > [class^="b
 bing.com#?#li[class="b_algo"]:-abp-has(a[href="#"]:not([class]))
 bitcoins4.me##.alert.alert-block
 bitvid.sx###aad
+blablastream.rip,papadustream.co,papystreamings.com,voirseries.rip#$#abort-on-property-read localStorage; abort-on-property-write JSON.parse
 blackdesert-info.ru##div[class][style*="z-index"][style*="999999;"][style*="background"][style*="rgb"]
 bleachmx.co#@##adsense
 blesk.cz###stickyfloatLeftEmptySpaceCheckLeft
@@ -2762,8 +2763,8 @@ corporatecentral.com#@#.adsbygoogle
 cosplay-porn.one#$#abort-on-property-read biads
 cowcotland.com,wamiz.com###adblocker
 cp-g.net###adblock_layer
-cq.ru#$#abort-on-property-read CQ.routes.fabddrn
 cq.ru#$#hide-if-matches-xpath './/a[@class][@target="_blank"]/following::img[@class][string-length(@src) > 70]/ancestor::div[@class][1]'
+cq.ru#$#prevent-listener DOMContentLoaded 'banners'
 creativeuncut.com###g_abox
 crichd.tv###notice
 crunchyroll.com#$#json-prune 'value.media.ad_breaks'
@@ -3618,7 +3619,6 @@ outlook.live.com##.N3k7EN5vRGTrONWBPg250
 outlook.live.com._6tqjFb_HmyQup_NPe6dhC
 p2pcast.tv#@##adblock
 painart.ru##body > div[id][style^="display: block"][style*="background: red"]
-papadustream.co,papystreamings.com,voirseries.rip#$#abort-on-property-read localStorage; abort-on-property-write JSON.parse
 papergeek.fr##[id^="padb_widget_"]
 paratechnik.ru#$#abort-current-inline-script decodeURIComponent
 parenting.pl#$#abort-on-property-read slot
