@@ -1,8 +1,8 @@
-! Checksum: b32Y7rnOiFwr1+Im5mqXzA
+! Checksum: gNlsVI8H1655LFipCXB9KA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.24.4
-! TimeUpdated: 2022-06-24T15:30:37+00:00
+! Version: 2.1.24.5
+! TimeUpdated: 2022-06-24T16:30:35+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -16917,6 +16917,8 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/122678
+@@||gigacloud.ua/assets/*/cookieconsent.
 ! https://github.com/AdguardTeam/AdguardFilters/issues/122648
 @@||sdk.privacy-center.org^$domain=ledauphine.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/122507
