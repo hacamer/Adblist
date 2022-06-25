@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: PhFY11JudvU0G0WhoRXNDw
+! Checksum: TvQ6lONfQs1DmPE1dIZJNQ
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202206252227
-! Last Modified: 2022年06月25日 22:27
+! Version: 202206252331
+! Last Modified: 2022年06月25日 23:31
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 72975
+! Total count: 72980
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -1888,6 +1888,8 @@
 ##.GridHouseAdRight
 ##.InsertedAd
 ##.MacPlayer > #play-pause
+##.MapLayout_BottomAd
+##.MapLayout_BottomMobiAd
 ##.ModeLayout-ad
 ##.NavBarAd
 ##.Normal-add
@@ -28662,8 +28664,7 @@ insider.gr##.admanager-content
 insidermonkey.com##.top-left-ad
 insidertracking.com##+js(no-setTimeout-if, no_ad, 15000)
 insomnia.gr,kingsinteriors.co.uk#@#.adlink
-instacart.com#?#div[class="css-1pc1srv-ItemCardHoverProvider"]:-abp-has(.css-8t254x-SponsoredProductBadge)
-instacart.com#?#li:-abp-contains(Sponsored)
+instacart.com#?#div[class$="-ItemCardHoverProvider"]:-abp-has(div[data-ads-badge="Sponsored"])
 instalki.pl###outer > #banner
 instalki.pl##.module-adv
 instamp3.zone##+js(remove-attr, href, a.getUrl.btn)
@@ -29135,6 +29136,7 @@ jooble.org##a[href^="/BannusHandler?"]
 joq-albania.com,joqalbania.com##div[class^="adunit-"]
 journaldev.com##+js(abort-on-property-read, mailoptin_globals.public_js)
 journaldugeek.com##.banner__content
+joxfm.com,jox2fm.com##a[href^="https://www.milb.com/"]
 joyreactor.cc##div#sidebar
 joytv.fun,dajunbi.com##.basic-banner
 jpopsingles.eu#@#.adBanner
@@ -36156,12 +36158,14 @@ wiseway.com.cn##.float-kefu
 wishanimes.com,hd-streams.org,skidrowreloaded.com##+js(abort-current-script, Promise, FingerprintJS)
 witcherhour.com##+js(abort-on-property-read, gothamBatAdblock)
 wjx.cn###ctl01_ContentPlaceHolder1_divProMsg
+wlevradio.com##a[href^="https://omny.fm/shows/just-start-the-conversation"]
 wmzhe.com##.aibyte_ad
 wmzhe.com##.downloader
 wn789.com##.sidebar > .widget:not(:first-child):not(.widget_ui_posts)
 wn789.com##a[href^="http"]:not([href*="://www.wn789."]) > img
 wnacg.com,wnacg.org##a[href^="http"]:not([href*="wnacg."]) img
 wnacg.com,wnacg.org##script + div > a > img
+wncv.com##.simple-image
 wnp.pl##body div.ad.block
 woego.cn#@##topAds
 wolframclient.net#@#.adsbygoogle
@@ -36516,6 +36520,7 @@ xtgreat.com
 xtits.com#?#.container > div.block-content > div.table:has(> div.spot-holder > div.adv-title)
 xtits.com,tubepornclassic.com##.adv-title
 xtits.xxx##.re-under-player
+xtrasports1300.com,wncv.com,wzpl.com,wlevradio.com,wxbm.com,wskz.com##a[href^="https://www.sweetdeals.com"]
 xtremetop100.com##a[href="/contact.php"] > img
 xtremetop100.com#@#img[width="468"][height="60"]
 xtuan.com###foot_zhaobiao_bar
