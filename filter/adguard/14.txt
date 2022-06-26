@@ -1,8 +1,8 @@
-! Checksum: tqtMkbiYDJNwbazbscM+Dw
+! Checksum: Cvp4Yr5U6mo5Jjk3u3PczA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.24.12
-! TimeUpdated: 2022-06-26T00:30:34+00:00
+! Version: 2.1.24.13
+! TimeUpdated: 2022-06-26T14:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -30392,6 +30392,9 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+raiffeisen.com#$#RNModal { display: none!important; }
+raiffeisen.com#$##RNModal ~ .modal-backdrop { display: none!important; }
+raiffeisen.com#$#body { overflow: visible!important; padding-right: 0!important; }
 itzine.ru##.single-footer > a[href="https://telegram.me/itzine/"]
 itzine.ru##.single-footer > a[href^="https://yandex.ru/news/?"]
 build.com#$#body { overflow: auto !important; }
