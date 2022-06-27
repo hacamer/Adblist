@@ -1,8 +1,8 @@
-! Checksum: CVEnEemAMStHA4Ysod7o3A
+! Checksum: asJAyvpAHe8ypIGMQR+UQw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.24.16
-! TimeUpdated: 2022-06-27T06:30:34+00:00
+! Version: 2.1.24.18
+! TimeUpdated: 2022-06-27T08:30:43+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7522,6 +7522,8 @@ mein-schoener-garten.de#$?#.sp-message-open { overflow: auto !important; positio
 !
 !
 !
+arcane.no#$#div[class^="index-module_overlay"] { display: none !important; }
+arcane.no#$#body[data-noscroll="true"] { overflow: auto !important; }
 invisalign.*##div[class^="ConciergePopup"]
 zawodtyper.pl###cookie-allow-box
 vitra.com.tr##.kvkk-modal-container
@@ -9388,7 +9390,6 @@ zoo24.de##.dsgvo-banner
 aircon.pl,zymetric.pl##.cookies-stn
 mylifebox.com##.welcome-page__cookie-notif
 globalhungerindex.org###ckpolicy
-vigo.de##.newsletter-box
 heyhaustier.de##.cmplz-soft-cookiewall
 superlegalbrinquedos.com.br,pasch-net.de##.modal-cookies
 lcwaikiki.com##.cookie__policy__container
@@ -12325,6 +12326,7 @@ intersport.se###cookie-warning-app
 intersport.no###magecomp-cookie-template
 intersport.si,intersport.rs,intersport.me,intersport.hr,intersport.ba#$#.modals-wrapper { display: none!important; }
 intersport.si,intersport.rs,intersport.me,intersport.hr,intersport.ba#$#body { overflow: visible!important; }
+intersport.si,intersport.rs,intersport.me,intersport.hr,intersport.ba#$#.fancybox-overlay { display: none!important; }
 newbalance.gr,intersport.gr##.x-cookie-acceptance
 myfilology.ru###alert-message
 westfalia.de##.cookieConsentLayer
@@ -13548,7 +13550,6 @@ ilanversen.com###cookiesusage
 agenturfilmgesichter.de,agentur-filmgesichter.de###cookietoast
 nanodatex.pl###cookis-box
 theathletesfoot.com###cpolicy
-dziennikbaltycki.pl,dzienniklodzki.pl,dziennikpolski24.pl,dziennikzachodni.pl,echodnia.eu,expressbydgoski.pl,expressilustrowany.pl,gazetakrakowska.pl,gazetalubuska.pl,gazetawroclawska.pl,gk24.pl,gloswielkopolski.pl,gol24.pl,gp24.pl,gratka.pl,gs24.pl,katowice.naszemiasto.pl,kurierlubelski.pl,motofakty.pl,naszemiasto.pl,nowiny24.pl,nowosci.com.pl,nto.pl,polskatimes.pl,pomorska.pl,poranny.pl,sportowy24.pl,strefaagro.pl,strefabiznesu.pl,stronakobiet.pl,telemagazyn.pl,to.com.pl,wspolczesna.pl###cross-dialog
 krupp-krankenhaus.de,encoreungateau.com###ct-ultimate-gdpr-cookie-popup
 pri.org###cta_prompt_bottom
 antoineonline.com###ctl00_overlay
@@ -16805,7 +16806,7 @@ evaair.com#%#document.cookie = "_EVAcookieaccept=Y";
 hbvl.be#%#document.cookie = "C_05 = {%22C%22:%221.0%22%2C%22ID%22:%229dee0a48-e1b7-475f-9456-da27157e009e%22%2C%22P%22:%22' + location.href + '%22%2C%22T%22:%222018-08-04T17:54:39.929Z%22%2C%22V%22:%22Y%22%2C%22F%22:1}; path=/; domain=.hbvl.be";
 standaard.be#%#document.cookie = "C_05 = {%22C%22:%221.0%22%2C%22ID%22:%229dee0a48-e1b7-475f-9456-da27157e009e%22%2C%22P%22:%22' + location.href + '%22%2C%22T%22:%222018-08-04T17:54:39.929Z%22%2C%22V%22:%22Y%22%2C%22F%22:1}; path=/; domain=.standaard.be";
 vivaldi.com#%#AG_onLoad(function() { if (document.cookie.indexOf('acceptedCookies') == -1) { document.cookie = "acceptedCookies=true"; location.reload(); } });
-gry.pl#%#document.cookie = "euconsent=BOR-LGFOR-LHnABABAPLBE_AAACDWABgACEGoA; path=/;";
+gry.pl#%#AG_onLoad(function(){if(-1==document.cookie.indexOf("OptanonAlertBoxClosed")){var a=new MutationObserver(function(){var b=document.querySelector("#onetrust-consent-sdk"),c=document.querySelector("button#onetrust-accept-btn-handler");b&&c&&(a.disconnect(),c.click(),b.style="display: none !important;")});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)}});
 popsugar.com,popsugar.com.au,popsugar.co.uk#%#AG_onLoad(function() { setTimeout(function() { if(window.location.href.indexOf("gdpr-consent?destination")){document.getElementsByClassName('evidon-banner-acceptbutton')[0].click();} }, 300); });
 gva.be#%#document.cookie = "C_05 = {%22C%22:%221.0%22%2C%22ID%22:%229dee0a48-e1b7-475f-9456-da27157e009e%22%2C%22P%22:%22' + location.href + '%22%2C%22T%22:%222018-08-04T17:54:39.929Z%22%2C%22V%22:%22Y%22%2C%22F%22:1}; path=/; domain=.gva.be";
 gadgethacks.com#%#//scriptlet("set-constant", "WHT.ShowConsentForm", "trueFunc")
@@ -18092,7 +18093,6 @@ kupbilecik.pl#@#.cookie-container
 @@||app.usercentrics.eu/browser-ui/latest/bundle.js$domain=studycheck.de
 @@||api.usercentrics.eu/settings^$domain=studycheck.de
 @@||aggregator.service.usercentrics.eu/aggregate^$domain=studycheck.de
-! https://github.com/AdguardTeam/AdguardFilters/issues/76611
 ! https://github.com/AdguardTeam/AdguardFilters/issues/75642
 new.talktalk.co.uk#@#.cookie-banner:not(body):not(html)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/75582
@@ -19081,8 +19081,10 @@ mediamarkt.nl#@##cookieLayer
 evaair.com#@##cookies
 ! https://github.com/AdguardTeam/AdguardFilters/issues/19922
 parliamentlive.tv#@##cookies
-! gry.pl - some games don't work until cookie notice is accepted
+! https://github.com/AdguardTeam/AdguardFilters/issues/122845
 gry.pl#@#div[class^="app_gdpr"]
+gry.pl#@##onetrust-consent-sdk
+@@||cookie-cdn.cookiepro.com^$domain=gry.pl
 ! https://github.com/AdguardTeam/AdguardFilters/issues/20596
 ! https://github.com/AdguardTeam/AdguardFilters/issues/31739
 ! https://github.com/AdguardTeam/AdguardFilters/issues/22961
@@ -19931,7 +19933,6 @@ kurashiru.com##.AppLp-content
 kurashiru.com##.SpApp-recipesShowFloatButton
 kurashiru.com##.PcToAppBanner
 kurashiru.com##.footer-image-wrapper
-sp.nicovideo.jp###jsSmartAppBanner
 sp.nicovideo.jp##.watch-OpeningPlayerInfo_LaunchAppsButton
 sp.nicovideo.jp##.siteWide-AppModalWithLogin
 navitime.co.jp###smartapp-banner-area
@@ -24813,8 +24814,6 @@ libertaddigital.com,libremercado.com##.ampliacion
 galka.if.ua#$##fb-modal { display: none!important; }
 galka.if.ua#$#.modal-backdrop { display: none!important; }
 galka.if.ua#$#body { overflow: visible!important; }
-intersport.si,intersport.rs,intersport.me,intersport.hr,intersport.ba#$#.fancybox-overlay { display: none!important; }
-intersport.si,intersport.rs,intersport.me,intersport.hr,intersport.ba#$#body { overflow: visible!important; }
 modagamers.com##.wa__btn_popup
 nashvancouver.com###exit_content.modal
 nashvancouver.com###exit_content.modal ~ div.modal-backdrop
@@ -33926,7 +33925,7 @@ primamedia.ru##.news_subscribe_form
 stackoverflow.com##.newsletter-anon
 polizeinews.ch##.newsletter-banner
 maclife.de##.newsletter-blk
-arbeitssicherheit.de,smartasset.com,digitalcitizen.life,steuertipps.de,glamour.pl,przyslijprzepis.pl,kobieta.pl,daemmen-und-sanieren.de,vigo.de,libhunt.com,dreamstime.com,antyweb.pl,brennenstuhl.com,pianetadesign.it,saashub.com,developer.mozilla.org,disqus.com,notebooki.pl,schweizer-illustrierte.ch##.newsletter-box
+vigo.de,arbeitssicherheit.de,smartasset.com,digitalcitizen.life,steuertipps.de,glamour.pl,przyslijprzepis.pl,kobieta.pl,daemmen-und-sanieren.de,vigo.de,libhunt.com,dreamstime.com,antyweb.pl,brennenstuhl.com,pianetadesign.it,saashub.com,developer.mozilla.org,disqus.com,notebooki.pl,schweizer-illustrierte.ch##.newsletter-box
 it-times.de##.newsletter-box.teaser-box--blue
 verbraucherzentrale.de,verbraucherzentrale.nrw##.newsletter-button
 britannica.com##.newsletter-c
@@ -36950,7 +36949,6 @@ fooda.com##.olark-bottom-left
 ||clloudia.com^$third-party
 ||livechat.chat2desk.com$third-party
 ||content.astro7.ru/js/chat-bot-
-||cdn.envybox.io/widget/$third-party
 ||st.yagla.ru^$third-party
 ||cdn.callbackhunter.com^$third-party
 ||verbox.ru^$third-party
