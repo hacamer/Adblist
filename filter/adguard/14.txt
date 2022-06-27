@@ -1,8 +1,8 @@
-! Checksum: VIK9Uu17idJrbA07axVTjQ
+! Checksum: kDTfJ83hoo8kAl2iecZMbw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.24.27
-! TimeUpdated: 2022-06-27T16:30:37+00:00
+! Version: 2.1.24.29
+! TimeUpdated: 2022-06-27T17:30:38+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7508,7 +7508,7 @@ foromtb.com#%#//scriptlet('prevent-setTimeout', 'f.parentNode.removeChild(f)', '
 !
 abcgundem.com,duplichecker.com,foromtb.com,dekudeals.com,encuentra24.com,krone.at##body div.fc-consent-root
 ! ###sliding-popup
-iyihisset.com,amerika21.de,museicapitolini.org,developer.nvidia.com,zillya.com,inrim.it,jneurosci.org,medrxiv.org,novartis.com.tr,royal.uk,transcom.com,netcologne.de,belltower.news,bigfm.de,click.ro,demokrata.hu,emma.de,gysev.hu,humanite.fr,ikgastarten.nl,la7.it,london.gov.uk,mavcsoport.hu,mcdonalds.at,mcdonalds.it,mises.org,mnm.hu,musescore.com,nbcsports.com,pnas.org###sliding-popup
+veolia.de,iyihisset.com,amerika21.de,museicapitolini.org,developer.nvidia.com,zillya.com,inrim.it,jneurosci.org,medrxiv.org,novartis.com.tr,royal.uk,transcom.com,netcologne.de,belltower.news,bigfm.de,click.ro,demokrata.hu,emma.de,gysev.hu,humanite.fr,ikgastarten.nl,la7.it,london.gov.uk,mavcsoport.hu,mcdonalds.at,mcdonalds.it,mises.org,mnm.hu,musescore.com,nbcsports.com,pnas.org###sliding-popup
 ! ###CookiesPolicy
 multiplan.com.br,jundiaishopping.com.br,ribeiraoshopping.com.br,shoppingvilaolimpia.com.br,parkshopping.com.br,barrashopping.com.br,parkshoppingbarigui.com.br,barrashoppingsul.com.br,parkshoppingcanoas.com.br,patiosavassi.com,diamondmall.com.br,morumbishopping.com.br###CookiesPolicy
 ! Sourcepoint cookie consent
@@ -21187,6 +21187,7 @@ imageban.ru##img[alt="Get it on Google Play"]
 mediamarkt.de##.mrh-app-banner
 rt.com###offers
 !
+reddit.com#$#.m-blurred { filter: none !important; }
 reddit.com#$#div[class="NavFrame"] div[class="XPromoPopup m-active"] { display: none !important; }
 reddit.com#$#.XPromoBlockingModal { display: none !important; }
 reddit.com#%#//scriptlet('remove-class', 'scroll-disabled', 'body')
@@ -22443,6 +22444,7 @@ toyokeizai.net##div[class^="SURVIN_GUIDE_"]
 bursahakimiyet.com.tr,yenidonem.com.tr##.floating-wpp
 blog-jp.janetter.net##.tmblr-iframe--follow-teaser
 ||cxense.com/cx.cce.js$domain=gamespark.jp|inside-games.jp
+reddit.com#$#xpromo-nsfw-blocking-modal { display: none !important; }
 reddit.com#$#div[style^="filter: blur"] { filter: none !important; }
 reddit.com#$#.scroll-disabled { overflow: auto !important;position: static !important; }
 reddit.com#$#.scroll-is-blocked { overflow: auto !important; }
@@ -27583,6 +27585,7 @@ abendzeitung-muenchen.de###webpush-app
 /firebase.js$domain=novayagazeta.ru|comments.ua|kinosimka.net|ilan365.net|cnbcindonesia.com|haberzamani.net|oxy.cloud|allbasketball.org|auslogics.com|kartalyuvasi.com.tr|cnnindonesia.com|fbc.ua|astv.ru|pln-pskov.ru|aylink.co
 /firebase-messaging.js$domain=s.akiba-souken.com|bfm.ru|theswagsports.com|focus.ua|ukranews.com|comments.ua|coub.com|porno90.me|cnnamador.com|giallozafferano.it|wcostream.com|fptplay.vn|jooble.org|mobile01.com|myinstants.com|pdalife.ru|rg.ru|m.iguides.ru|donanimhaber.com|profile.ru|womanhit.ru|news.noteru.com|narodna-pravda.ua|newstm.in|sabah.com.tr|dreamstime.com|popbee.com|avtovzglyad.ru|allbasketball.org|tw.news.yahoo.com|takvim.com.tr|jn.pt|ria.ru|pars.host|calculator-online.net|operanewsapp.com|ahaber.com.tr|tamindir.com|concursosnobrasil.com.br|kompas.com|news.ebc.net.tw|recyclingtoday.com|homedecoratione.com|khersondaily.com|mirtesen.ru|womanhit.ru|belsat.eu|gearbest.com|op.gg|novayagazeta.ru|pocket-lint.com|turunculevye.com|bloomberght.com|stardima.com|aksam.com.tr|portamur.ru|fishki.net|ranking.goo.ne.jp|ohmymag.com|mgronline.com|semnasem.org|bluradio.com|carwale.com|finanznachrichten.de|home.kingsoft.jp
 !
+eltiempo.com##.signwall-notificacion
 gala.fr##.showPush
 gala.fr##.showPush +div.genericModal-overlay
 ||assets.alicdn.com/*/*nano-webpush-ui-
@@ -30416,6 +30419,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+papier.com###email-pop-up-container
 daily.afisha.ru##.bottom-social
 life.ru##div[class^="CommonLayout_animation_notification_"]
 5-tv.ru##p[class^="contAlt cFadeDark"]
