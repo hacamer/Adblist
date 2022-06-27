@@ -1596,7 +1596,8 @@ wcofun.com#$##wrapfabtest { height: 1px !important; }
 wcofun.com##+js(set-constant, isAdBlockActive, false)
 wcofun.com##+js(no-setTimeout-if, AdBlock)
 ||chd4.com/blocks/$script
-sms24.me,sms24.info##+js(no-setTimeout-if, /ADBLOCK|window\.\$ado/)
+sms24.me,sms24.info##+js(addEventListener-defuser, , showAdblock())
+sms24.me,sms24.info##+js(no-setTimeout-if, /ADBLOCK|window\.\$ado|showAdblock/)
 sms24.me,sms24.info##+js(remove-class, preloader, .preloader)
 sms24.me,sms24.info##+js(remove-class, placeholder-content, .placeholder-content)
 sms24.me,sms24.info#$?#.placeholder { remove: true; }

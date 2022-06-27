@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: ns4KEVe1hovz32aUKXZdlQ
+! Checksum: 7LUI3IOqk/GndHgBEh2/Cg
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202206271639
-! Last Modified: 2022年06月27日 16:39
+! Version: 202206271731
+! Last Modified: 2022年06月27日 17:31
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 72882
+! Total count: 72890
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -4920,7 +4920,6 @@
 ##.mvp_ad_widget
 ##.my-ads
 ##.myAds
-##.myui-vodlist__thumb[data-original*=".pstatp.com/"]
 ##.n_ad
 ##.national_ad
 ##.native-ad
@@ -6160,6 +6159,7 @@
 ##a[href*=".kluvcc.com/"]
 ##a[href*=".meta-hh.com/"]
 ##a[href*=".meta-kp.com/"]
+##a[href*=".meta-wg.com/"]
 ##a[href*=".mieseng.com/"]
 ##a[href*=".nktxv.com/"]
 ##a[href*=".picoville.com/"]
@@ -16535,6 +16535,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||api.perfops.net^$script,xmlhttprequest,domain=cdnperf.com|dnsperf.com
 @@||api.solvemedia.com/papi/
 @@||api.splice.com/www/advertisement/community-explore$domain=splice.com
+@@||api.touchnote.io^$xmlhttprequest,domain=app.touchnote.com
 @@||apibay.org^$script,xmlhttprequest,domain=thepiratebay.org
 @@||apis.google.com/js/plusone.js$domain=pornhub.com
 @@||apis.google.com^$domain=openload.co|oload.tv|javno.me|imagebam.com|imagevenue.com|playvid.com|4horlover.com|linkshrink.net
@@ -19652,6 +19653,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||optimizely.addmilk.nl^$image,domain=simyo.nl
 @@||optimizely.com/datafiles/$domain=nike.com|talktalk.co.uk|wallapop.com
 @@||optimizely.com^$script,domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de
+@@||optimove.net^$domain=app.touchnote.com
 @@||optout.mookie1.com/optout
 @@||optout.networkadvertising.org^$document
 @@||optyczne.pl/adsense.js$script
@@ -33608,7 +33610,8 @@ smm.cn##.top_taishan_jinzhu
 smotrisport.online,smotrisport.tv##.dont-add-our-site-pls
 sms-receive.net#$#.adsbygoogle { height: 0!important; }
 sms-receive.net#@#.adsbygoogle
-sms24.me,sms24.info##+js(no-setTimeout-if, /ADBLOCK|window\.\$ado/)
+sms24.me,sms24.info##+js(addEventListener-defuser, , showAdblock())
+sms24.me,sms24.info##+js(no-setTimeout-if, /ADBLOCK|window\.\$ado|showAdblock/)
 sms24.me,sms24.info##+js(remove-class, placeholder-content, .placeholder-content)
 sms24.me,sms24.info##+js(remove-class, preloader, .preloader)
 sms24.me,sms24.info##body > div[style^="position: fixed; z-index: 1000"]
@@ -37871,6 +37874,7 @@ zyue.com##div[id^="divad_"]
 ||666625.xyz^
 ||666627.xyz^
 ||666632.xyz^
+||666637.xyz^
 ||6669667.com^
 ||666video.asia^
 ||66996.top^
@@ -38131,6 +38135,7 @@ zyue.com##div[id^="divad_"]
 ||a-mo.net^
 ||a-pagerank.net^$third-party
 ||a-reporting.nytimes.com^
+||a.10tianqi.com^
 ||a.20minutes.fr^
 ||a.52zxw.com^
 ||a.777n.com^
@@ -50795,6 +50800,7 @@ zyue.com##div[id^="divad_"]
 ||hboav.com/guga/
 ||hbplatform.com^$third-party
 ||hbssjd.cn^
+||hbtyk.top^
 ||hbunmokcwopj.com^
 ||hbuweb.net^
 ||hbx.df-srv.de^
@@ -51772,6 +51778,7 @@ zyue.com##div[id^="divad_"]
 ||iiikefu.com/wp-content/plugins/halfdata-green-popups/js/lepopup.js
 ||iiilab.com/sponsor/getByPage
 ||iiiuuu.top^
+||iirpvchv.cn^
 ||iis7.com/ys/css2018/ggw.js
 ||iivt.com^$third-party
 ||ijaabm.bravotv.com^
@@ -55006,6 +55013,7 @@ zyue.com##div[id^="divad_"]
 ||ltdxdwjsf.com^
 ||ltecrf.dhgate.com^
 ||lthhiw.medpets.nl^
+||ltht.tech^
 ||lthwsj.com^
 ||ltripg.marti.mx^
 ||lts*.qq.com^*.ts?index=$media,redirect=noop-0.1s.mp3,domain=qq.com
