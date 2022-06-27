@@ -1,8 +1,8 @@
-! Checksum: i7tU2FJTc/huMmpPjt1+1w
+! Checksum: zaaLVfyk9+B31jBDoQoNkw
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.41.70
-! TimeUpdated: 2022-06-27T08:31:33+00:00
+! Version: 2.0.41.72
+! TimeUpdated: 2022-06-27T10:31:31+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -5187,6 +5187,9 @@ nethunt.com/api/v1/track/email/$image
 ! Disabled in DNS filter
 ||telemetry.mozilla.org^
 !
+||pwkrakanmet.met.gov.my^
+||stats.coursepad.com^
+||analytics.gate.co.id^
 ||webstats.pixcell.ch^
 ||analytics.cloud.coveo.com^
 ||rum.condenastdigital.com^
@@ -20256,6 +20259,8 @@ _tracking.php?b=
 /analytics.js$domain=freexcafe.com|rusvideos.tv|nakubani.ru|lun.com|songsara.net|newsmax.com|bolgehastanesi.com|ewtc.de|newsdig.tbs.co.jp
 ||assets.adobedtm.com^$domain=mcclatchydc.com|elnuevoherald.com|bellinghamherald.com|sacbee.com|charlotteobserver.com|newsobserver.com|miamiherald.com|ef.ru|algida.com.tr|bmw-motorrad.co.uk|cif.com.tr|clearhaircare.com|domestos.com|dove.com|elidor.com.tr|f1sport.autorevue.cz|geico.com|gittigidiyor.com|hellmanns.com.tr|herkessofraya.com|johnsonsbaby.com.tr|lipton.com|lnk.to|lux.com|magnumicecream.com|neutrogena.com.tr|omo.com|rexona.com|samsung.com|sap.com|schwarzkopf.com.tr|signalturkiye.com|msnbc.com|nbcnews.com|kbb.com|eurosport.ru|timgate.it|intermiles.com|oxfordmail.co.uk
 !
+||flux-cdn.com/*/analytics/
+||zimbio.com/beacon.gif?
 ||um.viuapi.io/loggingservice/
 ||toneden.io/*/analytics/
 ||bangkokpost.com/hits/*?t=
@@ -23057,7 +23062,7 @@ dreamprogs.net##td[width="88"][height="31"]
 !+ NOT_PLATFORM(ios, ext_safari)
 ||yandex.*/clck/
 !+ NOT_PLATFORM(ios, ext_android_cb)
-||naver.net/wcslog.js$domain=~kyobobook.co.kr
+||naver.net/wcslog.js
 !
 ! blueconic.net on hearst.com sites
 /script.js|$~third-party,domain=beaumontenterprise.com|chron.com|ctinsider.com|ctpost.com|darientimes.com|expressnews.com|fairfieldcitizenonline.com|fuelfix.com|greenwichtime.com|hearstmediact.com|hearstmediatx.com|houstonchronicle.com|lmtonline.com|middletownpress.com|milfordmirror.com|mrt.com|myplainview.com|mysanantonio.com|ncadvertiser.com|newmilfordspectrum.com|newstimes.com|nhregister.com|ourmidland.com|registercitizen.com|seattlepi.com|sfchronicle.com|sfgate.com|sheltonherald.com|stamfordadvocate.com|thehour.com|theintelligencer.com|theridgefieldpress.com|timesunion.com|trumbulltimes.com|westport-news.com|wiltonbulletin.com|yourconroenews.com
@@ -24582,6 +24587,8 @@ $app=com.miui.analytics
 ! For platforms which do not support $redirect rules
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/122824
+@@||jsainsbury.*.qualtrics.com/jfe/form/$subdocument
 ! https://github.com/AdguardTeam/AdguardFilters/issues/122659
 ||api.ipify.org/?format=json$xmlhttprequest,redirect=nooptext,domain=utils.surf
 ! https://github.com/AdguardTeam/AdguardFilters/issues/122614
@@ -24790,7 +24797,7 @@ extrahop.com#%#//scriptlet('prevent-setTimeout', 'ad blocker')
 ! www.satofull.jp images not shown
 @@||rtoaster.jp/Rtoaster.js$domain=satofull.jp
 ! https://github.com/AdguardTeam/AdguardFilters/issues/111052
-@@||wcs.naver.net/wcslog.js$domain=ciokorea.com|adpiamall.com|live.joins.com|naver.com|jbe.go.kr|privatenote.co.kr
+@@||wcs.naver.net/wcslog.js$domain=ciokorea.com|adpiamall.com|live.joins.com|naver.com|jbe.go.kr|privatenote.co.kr|dabangapp.com|kyobobook.co.kr
 ! https://github.com/AdguardTeam/AdguardFilters/issues/110504
 @@||pv.sohu.com/cityjson$domain=bulletin.cebpubservice.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/110958
