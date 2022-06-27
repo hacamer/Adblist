@@ -1,8 +1,8 @@
-! Checksum: Og3rKFCcKNMMKVU5xl1TyQ
+! Checksum: CVEnEemAMStHA4Ysod7o3A
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.24.15
-! TimeUpdated: 2022-06-26T21:02:45+00:00
+! Version: 2.1.24.16
+! TimeUpdated: 2022-06-27T06:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -34737,6 +34737,10 @@ newsweek.com##iframe[src="http://sns.europe.newsweek.com/newsletter?popup=1"]
 !######### JS tweaks ##########
 !##############################
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/122833
+speedynews.xyz,xmod.in#%#//scriptlet("adjust-setInterval", "updatePercentage", "100", "0.02")
+! https://github.com/AdguardTeam/AdguardFilters/issues/122674
+blisseyhusband.in#%#//scriptlet("adjust-setInterval", "downloadButton", "", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/122461
 anime-sanka.com#%#//scriptlet("adjust-setInterval", "decodeURIComponent(link)", "", "0.02")
 ouo.io#%#(()=>{if(location.href.includes("?s=http")){const a=location.href.split("?s=").slice(1);try{location.assign(a)}catch(a){}}})();
