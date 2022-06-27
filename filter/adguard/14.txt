@@ -1,8 +1,8 @@
-! Checksum: FSp9L7SQ3rXLoNUqHObVxA
+! Checksum: zkstOObKjb7cOl6kI1nwDw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.24.21
-! TimeUpdated: 2022-06-27T10:30:42+00:00
+! Version: 2.1.24.23
+! TimeUpdated: 2022-06-27T12:30:35+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -92,6 +92,8 @@
 ! https://github.com/AdguardTeam/AdguardFilters/issues/76987
 youtube.com#%#AG_onLoad(function() {var a = new MutationObserver(function() {if (document.querySelector('yt-upsell-dialog-renderer')) {var b = document.querySelector('.ytd-popup-container[popup-size="UPSELL_DIALOG_RENDERER_POPUP_SIZE_LARGE"] #dismiss-button:not(.dismissed), .upsell-dialog-lightbox .upsell-dialog-dismiss-button button:not(.dismissed)');setTimeout(function() {b&&b.click()}, 3E2)}});a.observe(document, {childList: !0,subtree: !0});setTimeout(function() {a.disconnect()}, 3E3)});
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/122829
+svoboda.org#?#.wsw > div.wsw__embed:has(> div.infgraphicsAttach > div[id^="GR-"] > a[href^="https://news.google.com/publications/"])
 ! watchmaster.com
 watchmaster.com#$##modalPreOwned { display: none !important; }
 watchmaster.com#$#.modal-backdrop { display: none !important; }
@@ -7522,6 +7524,10 @@ mein-schoener-garten.de#$?#.sp-message-open { overflow: auto !important; positio
 !
 !
 !
+unkrautfuchs.de#?#body > div.offcanvas:has(> div.offcanvas-content-container > div.offcanvas-cookie)
+unkrautfuchs.de#$#.modal-backdrop { display: none !important; }
+unkrautfuchs.de#$#html.no-scroll { overflow: auto !important; }
+/assets/pandectes-core.js$domain=arktis.de
 rocketjobs.pl###__next > [class^="css-"] + div[offset="20"][class^="css-"]
 bulldogjob.pl##footer + div.fixed.shadow-article
 arcane.no#$#div[class^="index-module_overlay"] { display: none !important; }
@@ -13851,7 +13857,7 @@ reverb.com##.intl-settings-nag
 mediaexpert.pl#$#.is-cookies { display: none !important; }
 mediaexpert.pl#$#body.is-bodyScrollDisabled { overflow: visible !important; }
 electro.pl,3sat.de,ccc.eu##.is-cookies
-tetrisfriends.com##.iziToast-wrapper
+pictures.reuters.com,tetrisfriends.com##.iziToast-wrapper
 sierratradingpost.com##.js-acceptCookieDiv
 duckduckgo.com##.js-badge-cookie-msg
 mall.pl##.js-consent-panel
@@ -19696,6 +19702,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+meetup.com##div[data-testid="MobileAppBanner"]
 calendar.yahoo.co.jp##.js-AppBanner
 search.shutoko-eng.jp##.androidBnr
 search.shutoko-eng.jp##.qr
@@ -21821,6 +21828,8 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+eikaiwa.dmm.com###jsBannerFloat
+pp-prozozh.ru###bottom_fixed_m
 finance.yahoo.com##.player.vp-docked-mode > div.vp-content
 roote.ekispert.net###balloon
 ||zimuku.org/sp1.gif
@@ -22694,8 +22703,8 @@ okazurand.net###ado-side-drawer
 infoq.com#$#.promo { display: none !important; }
 infoq.com#$#.promo + header { margin-top: 0 !important; }
 michelin.pl##.apos-dialog-box-blackout
-ionos.com#$#body[style^="overflow:"] { overflow: auto !important; }
-ionos.com#$#div[id^="bio_ep"] { display: none !important; }
+thesaurus.net,ionos.com#$#body[style^="overflow:"] { overflow: auto !important; }
+thesaurus.net,ionos.com#$#div[id^="bio_ep"] { display: none !important; }
 portea.com##.modal
 sddhelp.ru##.modal--discount
 tgju.org###popup-layer-container
@@ -30402,6 +30411,8 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+life.ru##div[class^="CommonLayout_animation_notification_"]
+5-tv.ru##p[class^="contAlt cFadeDark"]
 newyorker.com##div[class^="paywall"]
 newyorker.com##.cm-footer__wrapper
 agents.media##subscribe-c2a
