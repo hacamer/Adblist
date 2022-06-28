@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: H7vES4y6cC5tx619pWE9zw
+! Checksum: ISkn321BNXNOeBZEIhboyw
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202206281529
-! Last Modified: 2022年06月28日 15:29
+! Version: 202206281642
+! Last Modified: 2022年06月28日 16:42
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 73014
+! Total count: 73021
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -23483,8 +23483,6 @@ baixing.com##.red-package
 baixing.com##.refashion-listing-banner
 bajarpelisgratis.com,jkanime.top,pelismart.com,pelispoptv.com,series-de.online,torrentdownloads.pro#$#abort-on-property-read localStorage; abort-on-property-write JSON.parse
 bajeczki.org##.site-content > .vjs-ex-mcn-video
-baliphim.com#$#override-property-read time_load_ads_1 0; override-property-read time_load_ads_2 0
-baliphim.com,lucaphim.com#$#abort-current-inline-script parseInt break;case $.
 balkantelevizija.net#@#.adsBox
 ballzaa.com##.banner-box
 baloo.co,123tvseries.co##+js(abort-current-script, z, stop.bind)
@@ -24012,8 +24010,9 @@ brushes8.com##.zjianad
 bs.to##+js(abort-current-script, Date, a.href,a.href)
 bs.to,burningseries.co#$#abort-current-inline-script Object
 bscscan.com##.bg-dark > div.container > div.row > div.col-12.col-lg-5
+bscscan.com##.d-lg-inline-block
+bscscan.com##.showcase-banner-spacing
 bscscan.com##ul.ui-autocomplete > li > a[target="_blank"][title="Links to an External Advertiser site"]
-bscscan.com,etherscan.io##.d-lg-inline-block
 bt.cn##.left_wrap:nth-child(3)
 bt.cn,lotour.com##.btad
 btc2019.tk##+js(window.open-defuser)
@@ -25996,8 +25995,9 @@ etest8.com##.subtop2right
 etextlib.ru##.head_bann
 etextlib.ru##.partners
 etherscan.*##.text-center > a[href][target="_blank"][class*="d-lg-inline-block"]
-etherscan.io##a[href^="https://goto.etherscan.com/"]
-etherscan.io,fastpic.ru,freesteam.io,theblockcrypto.com##.d-lg-block
+etherscan.com##.d-lg-inline-block-alt
+etherscan.com##.showcase-banner-text
+etherscan.io##a[href^="https://goto.etherscan.com/"] > img
 ethgasstation.info##.promo-wrap
 eto-razvod.ru##.banner_img
 etoland.co.kr###main_bn
@@ -26241,6 +26241,7 @@ fastconverter.net#$#abort-on-property-read afScript
 fastconverter.net#?#:xpath(//div[contains(@style,"fixed") and contains(@style,"z-index")]/ancestor-or-self::div[@style][1])
 fastjobs.sg#@#.adbox
 fastpic.org,~new.fastpic.org#$#abort-current-inline-script document.querySelectorAll, popMagic; abort-current-inline-script Math.random; abort-on-property-read document.getElementsByTagName; abort-on-property-read utarget_script; override-property-read document.querySelector null
+fastpic.ru,freesteam.io,theblockcrypto.com##.d-lg-block
 fastseduction.com,independent.co.uk###partners
 fastvid.co,hqq.*,player.koreanpornmovie.xyz,imsdb.pw##a[href="https://t.me/Russia_Vs_Ukraine_War3"]
 fastvid.co,player.koreanpornmovie.xyz,imsdb.pw##a[onclick$="openAuc();"]
@@ -29881,7 +29882,7 @@ lowendtalk.com###Foot > a[href] > img
 lowendtalk.com##.Row > #Panel > div:not([class]):not([id]) > a[href] > img
 lowendtalk.com##iframe[height="70px"][width="258px"]
 lpg-forum.pl##+js(no-setTimeout-if, $('#overlay').fadeIn)
-lphim.net#$#abort-on-property-read localStorage
+lphim.net,subnhanh.net#$#abort-on-property-read localStorage
 lr-club.com##a[href="https://adblockplus.org/ru/faq_basics#disable"]
 lrepacks.net#$#abort-current-inline-script document.createElement 'delete window'
 lrt.lt##.banner-block
@@ -34870,6 +34871,11 @@ toolxox.com##+js(abort-current-script, document.createElement, adblock)
 toopl.xyz##+js(window.open-defuser)
 top.gg##+js(nano-setTimeout-booster, readyToVote, 12000)
 top.gg##+js(no-setTimeout-if, .AD_ID)
+topagrar.pl##.article__ad
+topagrar.pl#?#div[data-id="container"]:has(> div[width] > div[class^="sc-"] > div[data-autoscale-warpper] > div[id^="adocean"])
+topagrar.pl#?#div[data-id="container"]:has(> div[width] > div[id^="adocean"])
+topagrar.pl#?#section[class^="sc-"]:has(> div[class^="sc-"] > div[class^="sc-"] > div[data-id="container"] > div[width] > div[class^="sc-"] > div[data-autoscale-warpper] > div[id^="adocean"])
+topagrar.pl#?#section[class^="sc-"]:has(> div[class^="sc-"] > div[data-id="container"] > div[width] > div[class^="sc-"] > div[data-autoscale-warpper] > div[id^="adocean"])
 topbestalternatives.com#?#center > .label.top:contains(/^ADVERTISEMENT$/)
 topcraft.ru##.ad-info
 topfilmz.com#@##adsense
@@ -66489,6 +66495,7 @@ zyue.com##div[id^="divad_"]
 ||synthasite.net^$third-party
 ||synthesissocietysplitting.com^
 ||synthesizespoon.com^
+||synthira.ru/templates/Synthira/images/newbanner
 ||syqhvv.vivense.com^
 ||syqqmm.com^
 ||syri.net/marketing/a.php?
