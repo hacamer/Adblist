@@ -1,8 +1,8 @@
-! Checksum: eFjVx6nt3fwIOYfSgLgs1Q
+! Checksum: mQoNPczshF268de86qRHxw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.24.39
-! TimeUpdated: 2022-06-28T16:30:41+00:00
+! Version: 2.1.24.41
+! TimeUpdated: 2022-06-28T17:30:33+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -13023,7 +13023,7 @@ wireless-bolt.hu###cookieusing
 congstar.de###cpolicy-bar
 igg.com###cross_site_cookie_popup
 investmentwatchblog.com###custom_html-14
-msnbc.com,nbcnews.com###cx_bottom_banner
+today.com,msnbc.com,nbcnews.com###cx_bottom_banner
 europepmc.org###data-protection-banner
 youporn.*###euCookieModal
 redtube.com,redtube.net###eu_cookie_disclaimer
@@ -16942,6 +16942,8 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/easylist/easylist/commit/bfc2b908eb28d3d34a83efae5bff75a91025a9fc
+@@||onetrust.com/webform/$domain=lushaprivacy.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/122725
 diorama-world.com#@#.cookie-consent-content
 diorama-world.com#@#.cookie-consent:not(body):not(html)
@@ -30440,6 +30442,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+today.com##.nl-signup-inline
 tycsports.com##.subs-box
 vistaprint.de#?#main > div.standard-hero-short:has(div:contains(/^Abonnieren Sie unsere E-Mails.$/))
 noktabursa.com.tr##.googlenews
