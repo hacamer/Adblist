@@ -1,8 +1,8 @@
-! Checksum: kDTfJ83hoo8kAl2iecZMbw
+! Checksum: kxb7xj6cUBM8/GkZZhtjLw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.24.29
-! TimeUpdated: 2022-06-27T17:30:38+00:00
+! Version: 2.1.24.30
+! TimeUpdated: 2022-06-28T06:30:38+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -3307,6 +3307,7 @@ hgtv.com#@#.showads
 !
 !
 !
+mgsm.pl#%#//scriptlet("set-constant", "checkAdblockBait", "noopFunc")
 ||amazfitwatchfaces.com/assets/plugins/growl/jquery.growl.js
 docs.pyrogram.org###banner
 pyrogram.org#%#//scriptlet("set-constant", "adsOk", "true")
@@ -5085,6 +5086,7 @@ postimees.ee#%#//scriptlet('remove-class', 'cookie-paywall-visible', 'article')
 it-actual.ru#$#.adsbygoogle { transform: scale(0) !important; height: 0 !important; }
 !
 !#safari_cb_affinity(general)
+mgsm.pl#@#.banner_ad
 postimees.ee#@#.adBanner
 textstudio.co#@#.adsbyyahoo
 signupgenius.com#@#.adholder2
@@ -7524,6 +7526,7 @@ mein-schoener-garten.de#$?#.sp-message-open { overflow: auto !important; positio
 !
 !
 !
+dokariery.pl###zgoda-cookie-sec
 unkrautfuchs.de#?#body > div.offcanvas:has(> div.offcanvas-content-container > div.offcanvas-cookie)
 unkrautfuchs.de#$#.modal-backdrop { display: none !important; }
 unkrautfuchs.de#$#html.no-scroll { overflow: auto !important; }
