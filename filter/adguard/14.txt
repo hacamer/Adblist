@@ -1,8 +1,8 @@
-! Checksum: P4kMMbSFmWR+o1UzUrvnYg
+! Checksum: eFjVx6nt3fwIOYfSgLgs1Q
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.24.38
-! TimeUpdated: 2022-06-28T15:30:50+00:00
+! Version: 2.1.24.39
+! TimeUpdated: 2022-06-28T16:30:41+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7528,6 +7528,8 @@ mein-schoener-garten.de#$?#.sp-message-open { overflow: auto !important; positio
 !
 !
 !
+journiapp.com#?#body > #modal-root:has(> div.base-modal > div.base-modal__container > div[class*="cookieBanner_"])
+vistaprint.de##.consent-manager-banner
 ezviz.com##.useofcookies-tip
 smule.com#?#div[class^="sc-"]:has(> span > a[href="/cookiepolicy"])
 smule.com#?#div[class]:has(> div[class^="Overlay-"] a[href="/cookiepolicy"])
@@ -19713,6 +19715,8 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+journiapp.com#?#div[class^="stickyDetails_container"] > div[class^="stickyDetails_content"]:has(> div[class^="details_actionSection"] > div[class^="details_storeButtons"])
+journiapp.com##div[class^="details_mobileCTABox"]
 cancam.jp###addToHomeScreen
 smule.com#?#div[class^="_"]:has(> div[class^="_"]:contains(Download the app:) + div[class^="_"] > a[href^="https://app.adjust.com/"])
 meetup.com##div[data-testid="MobileAppBanner"]
@@ -27601,6 +27605,7 @@ abendzeitung-muenchen.de###webpush-app
 /firebase.js$domain=novayagazeta.ru|comments.ua|kinosimka.net|ilan365.net|cnbcindonesia.com|haberzamani.net|oxy.cloud|allbasketball.org|auslogics.com|kartalyuvasi.com.tr|cnnindonesia.com|fbc.ua|astv.ru|pln-pskov.ru|aylink.co
 /firebase-messaging.js$domain=s.akiba-souken.com|bfm.ru|theswagsports.com|focus.ua|ukranews.com|comments.ua|coub.com|porno90.me|cnnamador.com|giallozafferano.it|wcostream.com|fptplay.vn|jooble.org|mobile01.com|myinstants.com|pdalife.ru|rg.ru|m.iguides.ru|donanimhaber.com|profile.ru|womanhit.ru|news.noteru.com|narodna-pravda.ua|newstm.in|sabah.com.tr|dreamstime.com|popbee.com|avtovzglyad.ru|allbasketball.org|tw.news.yahoo.com|takvim.com.tr|jn.pt|ria.ru|pars.host|calculator-online.net|operanewsapp.com|ahaber.com.tr|tamindir.com|concursosnobrasil.com.br|kompas.com|news.ebc.net.tw|recyclingtoday.com|homedecoratione.com|khersondaily.com|mirtesen.ru|womanhit.ru|belsat.eu|gearbest.com|op.gg|novayagazeta.ru|pocket-lint.com|turunculevye.com|bloomberght.com|stardima.com|aksam.com.tr|portamur.ru|fishki.net|ranking.goo.ne.jp|ohmymag.com|mgronline.com|semnasem.org|bluradio.com|carwale.com|finanznachrichten.de|home.kingsoft.jp
 !
+tycsports.com###modalCognitoPush
 eltiempo.com##.signwall-notificacion
 gala.fr##.showPush
 gala.fr##.showPush +div.genericModal-overlay
@@ -30435,6 +30440,8 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+tycsports.com##.subs-box
+vistaprint.de#?#main > div.standard-hero-short:has(div:contains(/^Abonnieren Sie unsere E-Mails.$/))
 noktabursa.com.tr##.googlenews
 ||static3.car.ru/js_min/d3ccad35a90401b5b5aa1797d99c5a8f_yg_promo.js
 stoneforest.ru#?#.td-ss-main-sidebar > aside.widget_text:has(> div.textwidget > a[href="https://ttttt.me/stoneforest"])
