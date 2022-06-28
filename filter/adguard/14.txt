@@ -1,8 +1,8 @@
-! Checksum: uvMA1TjHEYfK+u62/2hX5g
+! Checksum: ww4wKsloU8+8FvSKqUKPww
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.24.33
-! TimeUpdated: 2022-06-28T10:30:47+00:00
+! Version: 2.1.24.35
+! TimeUpdated: 2022-06-28T12:30:53+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -3040,7 +3040,7 @@ bloody-disgusting.com,haberolduk.com,askdifference.com,multics.eu,pipeflare.io,t
 !
 !--- Admiral ---
 ! can be closed
-dualshockers.com,thethaiger.com,worldtravelguide.net,sportskeeda.com,gamerant.com,gamerjournalist.com,voetbalzone.nl,theurbanlist.com,golf.com,xda-developers.com,metv.com,nbcnews.com,wegotthiscovered.com,savvytime.com,nbcsportsedge.com,haber3.com,androidpolice.com,news.com.au,forums.radioreference.com,boston.com,reviewgeek.com,technicpack.net,theblaze.com,morfix.co.il,factinate.com,phonearena.com,stripes.com,progameguides.com,weatherbug.com,patheos.com,online-tech-tips.com,digitaltrends.com,helpdeskgeek.com,britannica.com,wrestlinginc.com,superherohype.com,news24.com,pgatour.com,wral.com,gamepur.com,fin24.com,geekzone.co.nz,upi.com,thewindowsclub.com,androidcure.com,secondnexus.com,health24.com,wokesloth.com,sport24.co.za,onmsft.com,cultofmac.com,washingtontimes.com#%#//scriptlet('abort-current-inline-script', 'document.createElement', 'admiral')
+wrestlezone.com,dualshockers.com,thethaiger.com,worldtravelguide.net,sportskeeda.com,gamerant.com,gamerjournalist.com,voetbalzone.nl,theurbanlist.com,golf.com,xda-developers.com,metv.com,nbcnews.com,wegotthiscovered.com,savvytime.com,nbcsportsedge.com,haber3.com,androidpolice.com,news.com.au,forums.radioreference.com,boston.com,reviewgeek.com,technicpack.net,theblaze.com,morfix.co.il,factinate.com,phonearena.com,stripes.com,progameguides.com,weatherbug.com,patheos.com,online-tech-tips.com,digitaltrends.com,helpdeskgeek.com,britannica.com,wrestlinginc.com,superherohype.com,news24.com,pgatour.com,wral.com,gamepur.com,fin24.com,geekzone.co.nz,upi.com,thewindowsclub.com,androidcure.com,secondnexus.com,health24.com,wokesloth.com,sport24.co.za,onmsft.com,cultofmac.com,washingtontimes.com#%#//scriptlet('abort-current-inline-script', 'document.createElement', 'admiral')
 mangasee123.com#%#//scriptlet("abort-current-inline-script", "document.createElement", "googletag")
 grandprix247.com,familyminded.com,xcalibrscans.com,cbsnews.com,finviz.com,ign.com,workandmoney.com,today.com,rottentomatoes.com,walterfootball.com,dotesports.com,boredpanda.com,cleveland.com#%#//scriptlet("set-constant", "admiral", "noopFunc")
 ! cannot be closed
@@ -3065,6 +3065,7 @@ digitaltrends.com#@#.text_ads_2
 ! @@||ad.doubleclick.net/ddm/adj^$domain=editorial.rottentomatoes.com
 !
 ! Add same rules to the Admiral section of Tracking Protection filter
+||tastelesstrucks.com^$third-party
 ||handsomelyhealth.com^$third-party
 ||expansioneggnog.com^$third-party
 ||laughablelizards.com^$third-party
@@ -7526,6 +7527,9 @@ mein-schoener-garten.de#$?#.sp-message-open { overflow: auto !important; positio
 !
 !
 !
+smule.com#?#div[class]:has(> div[class^="Overlay-"] a[href="/cookiepolicy"])
+smule.com#$#body[style^="overflow:"] { overflow: auto !important; }
+redgifs.com##.Cookie
 kobo.com##.gdpr-consent-wrap
 dokariery.pl###zgoda-cookie-sec
 unkrautfuchs.de#?#body > div.offcanvas:has(> div.offcanvas-content-container > div.offcanvas-cookie)
@@ -15858,7 +15862,6 @@ plarium.com#?#div:has(> div > div >a[href="/ru/konfidentsialnost-i-ispolzovaniye
 streamelements.com#?#div:has(> span > a[href="https://streamelements.com/cookies"])
 push4site.com#?#.message:has(a[href="/Home/PersonalData"])
 ulule.com#?##react-ulule-header > div[class^="sc-"]:has( > p > span > a[href="https://www.ulule.com/about/cookie-policy/"])
-smule.com#?#div:has(> span > span > a[href="https://www.smule.com/cookiepolicy"])
 mobile.ulule.com#?#.b-header > div[class^="Container-sc-"]:has(> p[class^="CookieText"])
 kk.no#?#div[class]:has(> h1:contains(Vi bryr oss om ditt personvern))
 eneba.com#?##app > div[class]:has( > div[class] > p > a[href="/privacy-policy"])
@@ -19706,6 +19709,8 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+cancam.jp###addToHomeScreen
+smule.com#?#div[class^="_"]:has(> div[class^="_"]:contains(Download the app:) + div[class^="_"] > a[href^="https://app.adjust.com/"])
 meetup.com##div[data-testid="MobileAppBanner"]
 calendar.yahoo.co.jp##.js-AppBanner
 search.shutoko-eng.jp##.androidBnr
@@ -30426,6 +30431,9 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+stoneforest.ru#?#.td-ss-main-sidebar > aside.widget_text:has(> div.textwidget > a[href="https://ttttt.me/stoneforest"])
+click-or-die.ru#?#.post-content > p:has(> a[href="https://t.me/clickordie"])
+click-or-die.ru#?#.post-content > p:has(> a[href="https://t.me/clickordie"]) + p
 foto.mueller.de##section > [name="newsletterSignupFloatingBox"]
 papier.com###email-pop-up-container
 daily.afisha.ru##.bottom-social
