@@ -1,8 +1,8 @@
-! Checksum: ywznv3q/r5zV0JQEw6RDag
+! Checksum: P4kMMbSFmWR+o1UzUrvnYg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.24.36
-! TimeUpdated: 2022-06-28T13:30:38+00:00
+! Version: 2.1.24.38
+! TimeUpdated: 2022-06-28T15:30:50+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7528,6 +7528,8 @@ mein-schoener-garten.de#$?#.sp-message-open { overflow: auto !important; positio
 !
 !
 !
+ezviz.com##.useofcookies-tip
+smule.com#?#div[class^="sc-"]:has(> span > a[href="/cookiepolicy"])
 smule.com#?#div[class]:has(> div[class^="Overlay-"] a[href="/cookiepolicy"])
 smule.com#$#body[style^="overflow:"] { overflow: auto !important; }
 redgifs.com##.Cookie
@@ -11164,7 +11166,7 @@ buzz.ie#$##gdpr-consent-notice { display: none !important; }
 calc-online.xyz##.privacy-cookie-banner
 lojadomecanico.com.br##.box-termo-lgpd
 apoia.se##.banner--lgpd
-pflanzen-fuer-dich.de,muenzen-engel.de,mein-streu.de,dvs-beregnung.de,hollandshop24.de,asia-in.de,bike-store.de,berlinbottle.de,schraubenhandel24.de,fotomayrshop.de,mindtecstore.com,medplus24.de,spar-paradies.eu,belama.de,lf-textilhandel.de,uhr24.de,tedi.de,segment.com,sport-greifenberg.de,iffysonlinestore.com,victoriahealth.com###consent-manager
+der-roemer-shop.de,pflanzen-fuer-dich.de,muenzen-engel.de,mein-streu.de,dvs-beregnung.de,hollandshop24.de,asia-in.de,bike-store.de,berlinbottle.de,schraubenhandel24.de,fotomayrshop.de,mindtecstore.com,medplus24.de,spar-paradies.eu,belama.de,lf-textilhandel.de,uhr24.de,tedi.de,segment.com,sport-greifenberg.de,iffysonlinestore.com,victoriahealth.com###consent-manager
 amediateka.ru##div[class^="CookieAgreement_"]
 aachener-bank.de,meine-rvb.de,volksbankeg.de,fiduciagad.de#$#body.no-scroll { position: static !important; }
 aachener-bank.de,meine-rvb.de,volksbankeg.de,fiduciagad.de#$#body > .darken-layer { display: none !important; }
@@ -15926,6 +15928,7 @@ privacy.lecker.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent
 privacy.madame.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent-v2")){var g=new MutationObserver(function(){setTimeout(function(){var b=document.querySelector('button.no-children[path="\[0,2,1\]"]');b&&b.click();},300);setTimeout(function(){var c=document.querySelector('div[title="Berechtigte Interessen"]'); c&&c.click();},300);setTimeout(function(){var d=document.querySelectorAll('label[aria-checked="true"] > .off'); d.forEach(function(d){d.click();});},800); var f=document.querySelector('button.no-children[path="\[0,3,0\]"]'); setTimeout(function(){f&&f.click();},1000);});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},3E4)}});
 consent.ladbible.com,consent.gamingbible.co.uk,consent.unilad.co.uk#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var g=new MutationObserver(function(){var b=document.querySelector('button[title*="Accept" i]');b&&(g.disconnect(),b.click())});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
 !
+smule.com#%#document.cookie = "smule_consent={%22cookieBannerVersionValue%22:2%2C%22acceptedCookies%22:[%22marketing%22%2C%22functionality%22]}";
 ledauphine.com#%#AG_onLoad(function(){if(-1===document.cookie.indexOf('euconsent-v2')){var b=new MutationObserver(function(){var a=document.querySelector('button[id="didomi-notice-agree-button"]');a&&a.click()});b.observe(document,{childList:!0,subtree:!0});setTimeout(function(){b.disconnect()},1E4)}});
 ranking.perspektywy.pl#%#//scriptlet('set-cookie', 'perspektywy_cookies', '1')
 flynorse.com#%#document.cookie = "N0_CONSENT=essential";
@@ -30413,7 +30416,7 @@ bournemouthecho.co.uk,eveningtimes.co.uk,greenocktelegraph.co.uk,heraldscotland.
 ! ##.subscribe
 daily.afisha.ru,cnnturk.com,ko.ru,torontovka.com,mrpl.city,mydeliciousmeals.com,marieclaire.ru,inforeactor.ru,kp.ua,trendymen.ru,plus-aliance.ru,instyle.ru,slovodel.com,twilio.com,novostivl.ru,exkavator.ru,logincasino.com.ua,newinform.com,riafan.ru,liveposts.ru,320volt.com,versia.ru,neft.by,expert.ru,shopify.com,zoutons.com,myfreesoft.ru,maximonline.ru,woman.ru,parents.ru,vokrugsveta.ru,psychologies.ru,ellegirl.ru,wday.ru,elle.ru,marieclaire.ru,indiatimes.com,shopify.in,vz.ru,searchengineland.com,sport.segodnya.ua,vokrugsveta.ru,censor.net,fizzicseducation.com.au,fparf.ru,revouninstaller.com,logincasino.com,borsagundem.com,officelife.media,kod.ru,masterinvest.info,bessarabia.ua,football.kulichki.net,jeotermalhaberler.com,glavcom.ua,hindustantimes.com,hightech.fm,culture.ru,obozrevatel.com,blog.eva.ua,officiel-online.com,wccftech.com,ideanomics.ru,gazetki.by,goldsilver.com,kp.ru,infobus.eu,atorus.ru,castorama.ru,guzellikbulvari.com,marieclaire.ua,mvs.gov.ua,gadgets.ndtv.com,oneplus.com,tickets.ua,europaplus.ru,krossovki.com,belretail.by,thecollegefix.com,femmie.ru,prostofinovo.ru,mauijim.com,netpeak.net,wday.ru,buhgalteria.ru,ellegirl.ru,gameslog.ru,gizmag.com,healthhacks.ru,klerk.ru,menshealth.com,rbc.ru,snce.ru,turizm.ru,wegame.com.ua##.subscribe
 ! ##.subscription
-ural56.ru,slidstvo.info,cozumpark.com,x-team.com,m.vz.ru,shoppinglive.ru,starhit.ru,gamemag.ru,careeraddict.com,glasswire.com,metaratings.ru,starhit.ru,busfor.ua,brighteon.com,championat.com,goodhouse.ru,ichip.ru,irk.ru,thepostmillennial.com,skidochnik.com.ua##.subscription
+hcdinamo.by,ural56.ru,slidstvo.info,cozumpark.com,x-team.com,m.vz.ru,shoppinglive.ru,starhit.ru,gamemag.ru,careeraddict.com,glasswire.com,metaratings.ru,starhit.ru,busfor.ua,brighteon.com,championat.com,goodhouse.ru,ichip.ru,irk.ru,thepostmillennial.com,skidochnik.com.ua##.subscription
 ! ##body > div[id][style*="top: 0px; width: 100%; z-index: 99999999;"]
 quinhillyer.com,johnbiver.com,jasonmattera.com,ipatriot.com,hooligancharters.com,greatamericanpolitics.com,dailylol.com,clickitconservativenews.com,brasspills.com,brandonvallorani.com,affluentinvestor.com,thinkamericana.com,schaftleinreport.com##body > div[id][style*="top: 0px; width: 100%; z-index: 99999999;"]
 ! ##a[href^="https://news.google.com/publications/"]
@@ -30432,6 +30435,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+noktabursa.com.tr##.googlenews
 ||static3.car.ru/js_min/d3ccad35a90401b5b5aa1797d99c5a8f_yg_promo.js
 stoneforest.ru#?#.td-ss-main-sidebar > aside.widget_text:has(> div.textwidget > a[href="https://ttttt.me/stoneforest"])
 click-or-die.ru#?#.post-content > p:has(> a[href="https://t.me/clickordie"])
@@ -33149,7 +33153,7 @@ outlookindia.com,theregister.co.uk,theregister.com,collider.com##.newsletter_sig
 vulture.com##.newsletter-flex-text
 fitomarket.ru##.subscribe_section_mainpage
 daan.dev##.halfway-post.widget-area
-girlonthenet.com,substack.com,santiye.com.tr,rb.ru,investors.com##.subscribe-widget
+noktabursa.com.tr,girlonthenet.com,substack.com,santiye.com.tr,rb.ru,investors.com##.subscribe-widget
 theguardian.com##.email-sub__iframe
 adme.media##div[data-test-id="subscription-block"]
 opindia.com,downloadhub.host,burakyeni.com##form[action="https://feedburner.google.com/fb/a/mailverify"]
