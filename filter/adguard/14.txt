@@ -1,8 +1,8 @@
-! Checksum: mQoNPczshF268de86qRHxw
+! Checksum: NfgIRp8DWBREoXgH6cyaUw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.24.41
-! TimeUpdated: 2022-06-28T17:30:33+00:00
+! Version: 2.1.24.42
+! TimeUpdated: 2022-06-28T18:30:35+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7528,6 +7528,8 @@ mein-schoener-garten.de#$?#.sp-message-open { overflow: auto !important; positio
 !
 !
 !
+fanbox.cc#?##root > div > div > div[class^="sc-"] > div > a[href="https://policies.pixiv.net/#privacy"]:upward(2)
+postnauka.ru##cookies
 journiapp.com#?#body > #modal-root:has(> div.base-modal > div.base-modal__container > div[class*="cookieBanner_"])
 vistaprint.de##.consent-manager-banner
 ezviz.com##.useofcookies-tip
@@ -21850,6 +21852,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+postnauka.ru##donate-bar
 azcentral.com##div[class="gnt_em_vp_c"][data-g-s="vp_dk"]
 finance.yahoo.com##.smartphone div#module-featurebar
 nypost.com##.player-single.vjs-pip-active
@@ -30442,6 +30445,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+zentrum-der-gesundheit.de#?#main > div > div[class*="lime"]:has(> form > button[aria-label="Jetzt anmelden"])
 today.com##.nl-signup-inline
 tycsports.com##.subs-box
 vistaprint.de#?#main > div.standard-hero-short:has(div:contains(/^Abonnieren Sie unsere E-Mails.$/))
