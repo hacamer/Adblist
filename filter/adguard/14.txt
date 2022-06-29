@@ -1,8 +1,8 @@
-! Checksum: D1kun67YfSY+NBryAsgI1A
+! Checksum: UXDVFsit1qrkFaG7sXxRdQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.24.45
-! TimeUpdated: 2022-06-29T08:30:39+00:00
+! Version: 2.1.24.46
+! TimeUpdated: 2022-06-29T09:02:36+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7492,8 +7492,8 @@ voltimum.de,borek.de,azubi.de,denk-keramik.de,aquarienpflanzen-shop.de,deutsches
 gelbeseiten.de,gasag.de##div[class^="cmpbox"]
 blastbrigade.com,tonspion.de,bier.by,test.de,kicker.de##div[id^="cmpbox"]
 ! For the case if the scroll page is blocked and the functionality of the site works correctly. Otherwise, make the JS rule
-weser-kurier.de,engelhorn.de,wg-gesucht.de,heizung-billiger.de,herold.at,nn.de,nordbayern.de#$#div[id^="cmpbox"] { display: none !important; }
-weser-kurier.de,engelhorn.de,wg-gesucht.de,heizung-billiger.de,herold.at,nn.de,nordbayern.de#$#body { overflow: auto !important; }
+stadt-bremerhaven.de,weser-kurier.de,engelhorn.de,wg-gesucht.de,heizung-billiger.de,herold.at,nn.de,nordbayern.de#$#div[id^="cmpbox"] { display: none !important; }
+stadt-bremerhaven.de,weser-kurier.de,engelhorn.de,wg-gesucht.de,heizung-billiger.de,herold.at,nn.de,nordbayern.de#$#body { overflow: auto !important; }
 !
 ! #$##cookie-law-info-bar/#$#.cli-modal-backdrop
 autohaus-pauli.de,technik-hauptstadt.de,terminaloil.ee,johner-institut.de,hoyenapple.com,west-games.com,boerse-aktuell.de,orion.fm,widerspruch.org,pruefungsratgeber.de,marmaray.gov.tr,atnews.gr,teslawissen.ch,yashodahospitals.com,kinetikwellbeing.com,pctipps.de,citrinsolar.de,lewento.de,bauplan-bauanleitung.de#$##cookie-law-info-bar { display: none !important; }
@@ -16224,7 +16224,7 @@ pandacheck.com#%#AG_onLoad(function(){if(!document.cookie.includes("cc_cookie"))
 gold.de#%#AG_onLoad(function(){if(!document.cookie.includes("cc_cookie")){var g=new MutationObserver(function(){var b=document.querySelector('#cm_secondary_btn');var c=document.querySelector('#cs_save__btn');b&&b.click();setTimeout(function(){ c&&c.click(); }, 300);});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
 draco.de#%#//scriptlet("set-cookie", "cookiePermissionsSet", "true")
 tv2play.hu#%#//scriptlet("set-cookie", "cookiePolicyAccepted", "true")
-infranken.de#%#AG_onLoad(function(){var a=new MutationObserver(function(){var b=document.querySelector("#cmpbox .cmpboxbtnyes"),c=document.querySelector('div[id^="cmpbox"]'),d=document.querySelector('.cmpboxWelcomeGDPR[style^="display: block;"]'),e=document.querySelector("#cmpbox.cmpstyleroot:not(.cmpboxWelcomeGDPR)");b&&c&&d&&(a.disconnect(),b.click(),c.style="display: none !important;");e&&a.disconnect()});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()}, 1E4)});
+brita.de,infranken.de#%#AG_onLoad(function(){var a=new MutationObserver(function(){var b=document.querySelector("#cmpbox .cmpboxbtnyes"),c=document.querySelector('div[id^="cmpbox"]'),d=document.querySelector('.cmpboxWelcomeGDPR[style^="display: block;"]'),e=document.querySelector("#cmpbox.cmpstyleroot:not(.cmpboxWelcomeGDPR)");b&&c&&d&&(a.disconnect(),b.click(),c.style="display: none !important;");e&&a.disconnect()});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()}, 1E4)});
 podcasts.podinstall.com#%#AG_onLoad(function(){if(-1==document.cookie.indexOf("euconsent-v2")){var a=new MutationObserver(function(){var b=document.querySelector('.qc-cmp2-container .qc-cmp2-summary-buttons button[mode="primary"]'),c=document.querySelector("#qc-cmp2-container");b&&c&&(a.disconnect(),b.click(),c.style="display: none !important;")});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)}});
 fly4free.pl#%#AG_onLoad(function(){if(-1==document.cookie.indexOf("euconsent-v2")){var a=new MutationObserver(function(){var b=document.querySelector('.qc-cmp2-container .qc-cmp2-summary-buttons button[mode="primary"]');b&&(a.disconnect(),b.click())});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)}});
 wroclaw.pl#%#//scriptlet('set-cookie', 'iRodoInfo', '1')
@@ -16947,6 +16947,8 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/123002
+@@||consentmanager.mgr.consensu.org^$domain=brita.de
 ! https://github.com/AdguardTeam/AdguardFilters/issues/123000
 @@||wildvogel-futter.de/wp-content/plugins/complianz-gdpr/assets/*/cookieconsent.min.
 ! https://github.com/easylist/easylist/commit/bfc2b908eb28d3d34a83efae5bff75a91025a9fc
@@ -24089,8 +24091,8 @@ zinspilot.de,fussball.com,ionos.it,giardiniblog.it#$##bio_ep { display: none !im
 zinspilot.de,fussball.com,ionos.it,giardiniblog.it#$##bio_ep_bg { display: none !important; }
 puntocellulare.it#$?##pushbox { remove: true; }
 puntocellulare.it#%#//scriptlet('set-cookie', 'ilike', '1')
-oploverz.asia,gartenflora.de,pasada.com.tr,sonperiyot.com,vpncompare.co.uk,nurgsm.com,retromedia.pl,ranchoportugues.com.br,knote.com.tr,capage.in,ekremcoskundoner.com.tr,savunmahaber.com,python-scripts.com,labkom.co.id,petroturk.com##.sgpb-popup-overlay
-oploverz.asia,gartenflora.de,pasada.com.tr,sonperiyot.com,retromedia.pl,ranchoportugues.com.br,knote.com.tr,capage.in,ekremcoskundoner.com.tr,savunmahaber.com,python-scripts.com,labkom.co.id,petroturk.com###sgpb-popup-dialog-main-div-wrapper
+gameviet.mobi,oploverz.asia,gartenflora.de,pasada.com.tr,sonperiyot.com,vpncompare.co.uk,nurgsm.com,retromedia.pl,ranchoportugues.com.br,knote.com.tr,capage.in,ekremcoskundoner.com.tr,savunmahaber.com,python-scripts.com,labkom.co.id,petroturk.com##.sgpb-popup-overlay
+gameviet.mobi,oploverz.asia,gartenflora.de,pasada.com.tr,sonperiyot.com,retromedia.pl,ranchoportugues.com.br,knote.com.tr,capage.in,ekremcoskundoner.com.tr,savunmahaber.com,python-scripts.com,labkom.co.id,petroturk.com###sgpb-popup-dialog-main-div-wrapper
 voltimum.de,sicurezza.net##.mf-modal-overlay
 voltimum.de,sicurezza.net##.mf-modal-iframe
 apk.tw###main01
@@ -29499,6 +29501,7 @@ theguardian.com##.contributions__adblock
 ||contributions.guardianapis.com^
 !
 odysee.com##.claim-preview--premium-plus
+stadt-bremerhaven.de##iframe.wp-embedded-content
 super.cz###szn-premium
 ||aurora.network/images/banners/
 onlypult.com##.navbar-promo
