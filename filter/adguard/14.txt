@@ -1,8 +1,8 @@
-! Checksum: 4yYCLbrhVaIFmf/zB6GVQA
+! Checksum: qOtBeYR/nnpT14u82eaSfA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.24.51
-! TimeUpdated: 2022-06-29T13:30:36+00:00
+! Version: 2.1.24.52
+! TimeUpdated: 2022-06-29T14:32:23+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -9388,9 +9388,6 @@ fensterkoenig.com#$#body { overflow: auto !important; }
 fensterkoenig.com#$#.cli-modal-backdrop { display: none!important; }
 fensterkoenig.com#$##cookie-law-info-bar { display: none!important; }
 elriwa.de##.hbcom-cookiepanel.bottom
-home-connect.com,junker-home.com,gaggenau.com,balay.es,profilo.com,constructa.com,pitsos.gr#$#.cookielaw-modal-layer { display: none !important; }
-home-connect.com,junker-home.com,gaggenau.com,balay.es,profilo.com,constructa.com,pitsos.gr#$#body.cookielaw-blur-background > * { filter: none !important; }
-home-connect.com,junker-home.com,gaggenau.com,balay.es,profilo.com,constructa.com,pitsos.gr#$#body.cookielaw-blur-background { overflow-y: visible !important; }
 nttdata.com,aireuropa.com###ensNotifyBanner[aria-label="Consent Banner"]
 app.prende.tv##.cookie--banner
 flyuia.com#$#body { overflow: visible !important; }
@@ -13211,7 +13208,7 @@ stubhub.cz,stubhub.de,stubhub.dk,stubhub.es,stubhub.fi,stubhub.fr,stubhub.no,stu
 noweinwestycje.pl,morizon.pl##.cookiesNotificationOuter
 marvelousdesigner.com##.cookiesUseAgree
 iar.com##.cookies__info
-dt-updates.com,disk-tools.com,daemon-tools.cc,oreopeople.com##.cookies_banner
+rewasd.com,dt-updates.com,disk-tools.com,daemon-tools.cc,oreopeople.com##.cookies_banner
 siemens.com##.cookiesnotification
 myapples.ru##.copyright_fixed
 eu.aoc.com##.country-popup
@@ -15609,6 +15606,12 @@ mazda.hu#$#div[class^="mxp-main-tools-navigation"] { transform: translateY(49px)
 ! xn--giant-dsseldorf-5vb.de#$#.modal-backdrop { display: none!important; }
 xn--giant-dsseldorf-5vb.de#$#body { overflow: visible!important; }
 !
+!+ NOT_OPTIMIZED
+home-connect.com,junker-home.com,gaggenau.com,balay.es,profilo.com,constructa.com,pitsos.gr#$#.cookielaw-modal-layer { display: none !important; }
+!+ NOT_OPTIMIZED
+home-connect.com,junker-home.com,gaggenau.com,balay.es,profilo.com,constructa.com,pitsos.gr#$#body.cookielaw-blur-background > * { filter: none !important; }
+!+ NOT_OPTIMIZED
+home-connect.com,junker-home.com,gaggenau.com,balay.es,profilo.com,constructa.com,pitsos.gr#$#body.cookielaw-blur-background { overflow-y: visible !important; }
 !+ NOT_OPTIMIZED
 m.n11.com##.header > div.warning
 !+ NOT_OPTIMIZED
@@ -28201,6 +28204,8 @@ disk.yandex.*##.mail360-banner
 @@||yastatic.net/daas/atom.js$domain=mail.yandex.by|mail.yandex.kz|mail.yandex.ru|mail.yandex.ua|mail.yandex.com|mail.yandex.com.tr
 !-----------------------------------------------
 !
+! https://github.com/Yuki2718/adblock/issues/60
+famitsu.com#?#.banner-ad-mark:upward(1)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/122870
 ||r.mradx.net^*.html?data=$subdocument,domain=cloud.mail.ru
 cloud.mail.ru#$##app div[class^="Public-desktop_"] { width: 100% !important; }
