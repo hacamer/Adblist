@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: lQpXpmWCs6O10SNLJtgL2w
+! Checksum: i6zQMNJifMnMf9VgJxd0XQ
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202207010433
-! Last Modified: 2022年07月01日 04:33
+! Version: 202207010531
+! Last Modified: 2022年07月01日 05:31
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 73073
+! Total count: 73093
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -1518,6 +1518,7 @@
 ###promo_ads
 ###propagandaInsert[style="display: flex;"]
 ###pub728x90
+###pubexchange_below_content
 ###publicidad
 ###pushDownAd
 ###pushdown_ad
@@ -1941,6 +1942,7 @@
 ##.a-ad--skyscraper
 ##.a-ad--wide
 ##.a-d-250
+##.a-d-holder-container
 ##.a160x600
 ##.a300x250
 ##.a468x60
@@ -18601,7 +18603,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||imasdk.googleapis.com/js/sdkloader/*$script,domain=mindgames.com|htmlgames.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3$domain=rotana.net
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=10play.com.au
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=247sports.com|api.screen9.com|bbc.com|blastingnews.com|bloomberg.com|cbsnews.com|cbssports.com|chicagotribune.com|cnet.com|crhoy.com|distro.tv|einthusan.tv|embed.comicbook.com|etonline.com|games.usatoday.com|givemesport.com|goodmorningamerica.com|goodstream.uno|howstuffworks.com|iheart.com|insideedition.com|metacritic.com|missoulian.com|newsweek.com|paralympic.org|player.abacast.net|player.earthtv.com|player.performgroup.com|popculture.com|rte.ie|scrippsdigital.com|sonyliv.com|tdn.com|truvid.com|tubitv.com|worldsurfleague.com|zdnet.com|zeebiz.com
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=247sports.com|api.screen9.com|bbc.com|blastingnews.com|bloomberg.com|cbsnews.com|cbssports.com|chicagotribune.com|cnet.com|crhoy.com|distro.tv|einthusan.tv|embed.comicbook.com|etonline.com|games.usatoday.com|givemesport.com|goodmorningamerica.com|goodstream.uno|howstuffworks.com|iheart.com|insideedition.com|metacritic.com|missoulian.com|newsweek.com|paralympic.org|player.abacast.net|player.earthtv.com|player.performgroup.com|popculture.com|rte.ie|scrippsdigital.com|sonyliv.com|tdn.com|truvid.com|tubitv.com|worldsurfleague.com|wsj.com|zdnet.com|zeebiz.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=24h.com.vn
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=3bmeteo.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=4gtv.tv|881903.com|ani.gamer.com.tw|appledaily.com|hamivideo.hinet.net|line.me|linetv.tw|litv.tv|mytvsuper.com|nextmedia.com|now.com|tvb.com|udn.com|ulifestyle.com.hk|xuite.net
@@ -25263,6 +25265,7 @@ dictionary.com,thesaurus.com##aside[id$="728x90"]
 diet-weight-lose.com#@#.ad-position
 digg.com##div[id^="bsa-zone_"]
 digg.com#?#.tracking-widest:-abp-contains(Sponsored)
+digg.com#?#article.fp-vertical-story:-abp-has(a[href="/channel/digg-pick"])
 digg.com#?#article.fp-vertical-story:-abp-has(a[href="/channel/promotion"])
 digg.com#?#article.fp-vertical-story:-abp-has(div:-abp-contains(SPONSORED))
 digg.com#?#article.relative:-abp-has(div:-abp-contains(SPONSORED))
@@ -39426,6 +39429,7 @@ zznews.cn##.ad:not([style])
 ||ad.kisscartoon.nz^
 ||ad.kisscartoon.sh^
 ||ad.kubicad.icu^
+||ad.kubiccomps.icu^
 ||ad.linkprice.com^$third-party
 ||ad.linksynergy.com^
 ||ad.mail.ru^
@@ -40151,6 +40155,7 @@ zznews.cn##.ad:not([style])
 ||agathazanna.com^
 ||agatystuffs.com^
 ||agcs-knowledge.allianz.com^
+||ageistlutists.com^
 ||agenduret.com^
 ||agentanalytics.com^$third-party
 ||agentinteractive.com^$third-party
@@ -47307,6 +47312,7 @@ zznews.cn##.ad:not([style])
 ||e44150775e.site^
 ||e48.xyz^
 ||e49.xyz^
+||e55cdcbcd2.com^
 ||e5af61b2d8c19c16.online^
 ||e5asyhilodice.com^
 ||e5obq1v261.www.lurkit.com^
@@ -49071,6 +49077,7 @@ zznews.cn##.ad:not([style])
 ||flabbyyolkinfection.com^
 ||flagcounter.com^$third-party
 ||flaghit.com^$third-party
+||flagmantensity.com^
 ||flags.es^$third-party
 ||flakyfeast.com^$third-party
 ||flare-analytics.com^$third-party
@@ -49538,6 +49545,7 @@ zznews.cn##.ad:not([style])
 ||fundingchoicesmessages.google.com^
 ||fundingchoicesmessages.google.com^$domain=video.repubblica.it
 ||fundraising.centuryresources.com^
+||funkerpep.com^
 ||funneld.com^$third-party
 ||funnelytics.io^$third-party
 ||funnyairplane.com^
@@ -50297,6 +50305,7 @@ zznews.cn##.ad:not([style])
 ||go2link.net^$third-party
 ||go2speed.org^
 ||go2tutor.com/lifebox.asp
+||go6shde9nj2itle.com^
 ||goaciptu.net^
 ||goads.pro^
 ||goadservices.com^$third-party
@@ -52075,6 +52084,7 @@ zznews.cn##.ad:not([style])
 ||immaohao.cn^
 ||immenseflakespyramid.com^
 ||immensehoney.com^$third-party
+||immixteddo.com^
 ||immunocap.thermofisher.com^
 ||imnmediatel.com^
 ||imonomy.com^$third-party
@@ -52806,6 +52816,7 @@ zznews.cn##.ad:not([style])
 ||irchincsp.com^
 ||irecommend.ru/collect/
 ||iredirect.net^
+||irenicaserrano.com^
 ||irmcjtqdzrp.com^
 ||iroby.com^
 ||ironbeast.io^$third-party
@@ -59339,6 +59350,7 @@ zznews.cn##.ad:not([style])
 ||pervasivebacksrate.com^
 ||pervclips.com/tube/contents/images-banners/
 ||pesaea.autoesa.cz^
+||pestgermagriculture.com^
 ||petametrics.com^$third-party
 ||petasusawber.com^
 ||petchesa.net^
@@ -62797,6 +62809,7 @@ zznews.cn##.ad:not([style])
 ||septembership.com^
 ||septfd2em64eber.com^
 ||sepyra.com^$third-party
+||seraialumins.com^
 ||serch26.biz^
 ||serconmp.com^
 ||serdaive.com^
@@ -64495,6 +64508,7 @@ zznews.cn##.ad:not([style])
 ||snack-media.com^$third-party
 ||snagbaudhulas.com^
 ||snailsengine.com^
+||snailteasesimulator.com^
 ||snakemineral.com^
 ||snakesshop.com^
 ||snakesstone.com^
@@ -66244,6 +66258,7 @@ zznews.cn##.ad:not([style])
 ||strossle.com^$third-party
 ||strossle.it^$third-party
 ||stroublederaa.club^
+||strowedatellan.com^
 ||strpst.com^$domain=xhamster.com
 ||strs.jp^$third-party
 ||strtapeadblock.club/stat/
@@ -66363,6 +66378,7 @@ zznews.cn##.ad:not([style])
 ||sunrtb.*/s?m=
 ||sunsekrious.com^
 ||sunset.com/tia/
+||sunsetjuxtapositioninvoke.com^
 ||suntcontent.se^$third-party
 ||sunwardamoraic.com^
 ||sunyujia.top^
@@ -66395,6 +66411,7 @@ zznews.cn##.ad:not([style])
 ||supfree.net^$xmlhttprequest
 ||supjav.buzz^
 ||suppermalignant.com^
+||supplerneedled.com^
 ||supply.upjers.com^
 ||supplyframe.com^$third-party
 ||support.api.prod.net.zooplus.de^
@@ -66429,6 +66446,7 @@ zznews.cn##.ad:not([style])
 ||survicate.com^$third-party
 ||surzoe.com^
 ||sushipool.com^$third-party
+||suspectedsinewnotary.com^
 ||suspendseed.com^
 ||sutiletoroid.com^
 ||suukcn.com^
@@ -69714,6 +69732,7 @@ zznews.cn##.ad:not([style])
 ||vansky.com/agdg/vans/adv
 ||vansky.com/index_files/*.gif
 ||vapingunderground.com/js/vapingunderground/3253a5a323gaw352.js$domain=vapingunderground.com
+||varechphugoid.com^
 ||varietyofdisplayformats.com^
 ||variflight.com/carnoc/ad/
 ||variouscreativeformats.com^
@@ -70070,6 +70089,7 @@ zznews.cn##.ad:not([style])
 ||vivistats.com^$third-party
 ||vivocha.com^$third-party
 ||vivociti.com/images/$third-party
+||vizcloud.store/E/
 ||vizisense.net^$third-party
 ||vizual.ai^*/click-stream-event?
 ||vizury.com/analyze/
@@ -70823,7 +70843,7 @@ zznews.cn##.ad:not([style])
 ||widgets.jutarnji.hr/instar/index.html
 ||widgets.oddschecker.com^
 ||widgets.outbrain.com/outbrain.js
-||widgets.outbrain.com^$domain=cnn.com
+||widgets.outbrain.com^$domain=cnn.com|mamasuncut.com
 ||widgets.tree.com^
 ||widgets.trustedshops.com^$third-party
 ||widgetserver.com/metrics/
