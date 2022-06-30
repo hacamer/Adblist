@@ -1,8 +1,8 @@
-! Checksum: WcJ9hU1ZECv97pPMi8hbqg
+! Checksum: AJgGPtsIb9fJjZgbg0ilPQ
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.0.64.78
-! TimeUpdated: 2022-06-30T08:31:28+00:00
+! Version: 2.0.64.79
+! TimeUpdated: 2022-06-30T09:31:30+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1968,7 +1968,8 @@ mapfan.com##mf-share-button
 makerstown.cookpad.com##div[data-react-class="Share/ShareButton"]
 allnightnippon.com##.news_detail_sns
 mens-hairstyle.jp,nict.go.jp##.sns_link
-thelocal.de##.single-article-actions
+! thelocal.de##.single-article-actions -- breaks article view, rule below fixes it
+thelocal.de##.action-share
 beauty.hotpepper.jp##div[class="cFix mT20 mB75"]
 news.google.com##div[class] > div[class] + div[class] > span[jscontroller] > div[role="button"][aria-label]
 okwave.jp##.fa-share-square
