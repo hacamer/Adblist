@@ -1,8 +1,8 @@
-! Checksum: TQw/673wYJOc6OQI38FIDw
+! Checksum: k3qL/WPge+boHobkSH8Yyg
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.0.59.90
-! TimeUpdated: 2022-06-30T11:30:59+00:00
+! Version: 2.0.59.92
+! TimeUpdated: 2022-06-30T15:31:07+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -928,7 +928,7 @@ subhd.com#%#sessionStorage.setItem("hassession", 1);
 ! https://github.com/AdguardTeam/AdguardFilters/issues/31004
 m.86kl.com#%#//scriptlet('abort-on-property-read', 'akumtagcc')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/30701
-qq.com#%#//scriptlet('json-prune', 'ad')
+~work.weixin.qq.com,qq.com#%#//scriptlet('json-prune', 'ad')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/33510
 ! https://github.com/AdguardTeam/AdguardFilters/issues/33458
 axjbt.com,avcao.cc#%#//scriptlet('abort-on-property-read', 'myclick')
@@ -4246,6 +4246,12 @@ ubmcmm.baidustatic.com
 ||hsiaik.com^
 ||slizindy.top^
 ||kgsz.cn^
+||kj-gov.cn^
+||k31bpzf.xyz^
+||yaomuzhubao.com^
+||ajzsa.xyz^
+||ajzs.xyz^
+||vvpingtai.com^
 .8ox.cn
 ##a[href$=".120ydrayy.com"]
 ##a[href*=".1956hl.com/"]
@@ -15597,7 +15603,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||stulip.org/static/js/header.js
 ||su.bdimg.com/static/dspui/js/
 ||sub.powerapple.com^
-||subhd.la/back/ad_
+||huo720.com/back/ad_
 ||sucloud.xyz/js/tou.js
 ||sudupan.com^*.gif
 ||sufile.com/jsa/
@@ -16463,6 +16469,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zzzyk.com/js/
 ||weibo.cn/status/banner?
 ||wake-up-neo.com/bnet/
+dmh8.com##div[id^="test"]
 szxx.com.cn###A0
 szxx.com.cn###A1
 szxx.com.cn###A2
