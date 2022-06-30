@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: i6zQMNJifMnMf9VgJxd0XQ
+! Checksum: FvQTv14VdLjeQ1KyRk1h3A
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202207010531
-! Last Modified: 2022年07月01日 05:31
+! Version: 202207010631
+! Last Modified: 2022年07月01日 06:31
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 73093
+! Total count: 73100
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -4323,6 +4323,7 @@
 ##.full-adv
 ##.full-bleed-ad
 ##.full-bns-block
+##.full-page-ad
 ##.full-top-ad-area
 ##.full-width-ad
 ##.full_ad
@@ -13145,6 +13146,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /simtracker.min.js
 /sinaLoginReward2014.
 /sinaLoginReward2014_comment.
+/single-advertisements?
 /siq-analytics.
 /site-tracker-
 /site-tracker.
@@ -28649,7 +28651,9 @@ insider.gr##.admanager-content
 insidermonkey.com##.top-left-ad
 insidertracking.com##+js(no-setTimeout-if, no_ad, 15000)
 insomnia.gr,kingsinteriors.co.uk#@#.adlink
+instacart.com##.css-uf7278
 instacart.com#?#div[class$="-ItemCardHoverProvider"]:-abp-has(div[data-ads-badge="Sponsored"])
+instacart.com#?#div[class$="-ItemCardHoverProvider"]:-abp-has(div[data-sp-badge="Sponsored"])
 instalki.pl###outer > #banner
 instalki.pl##.module-adv
 instamp3.zone##+js(remove-attr, href, a.getUrl.btn)
@@ -33671,6 +33675,7 @@ sm.cn##a[href^="http://m.sm.cn/adclick?"]
 sm.cn##div[id*="_Shopping_Etao_"]
 sm.cn##div[id^="ad_ele_"]
 sm.ms##.advert_foot
+smagnet.so###AD
 smaker.pl##.advert--container
 smaker.pl##.block--adv--padding
 smallseo.tools##+js(no-setTimeout-if, testAd.offsetHeight === 0)
@@ -47046,6 +47051,7 @@ zznews.cn##.ad:not([style])
 ||dripappliance.com^
 ||driv-analytics.com^$third-party
 ||driverequest.com^
+||drivevideo.xyz/advert/
 ||drivingdirt.com^
 ||drjgjngf.com^
 ||drlimmode9ddd.cloudfront.net^
@@ -67233,6 +67239,7 @@ zznews.cn##.ad:not([style])
 ||thedailybeast.com/static/js/thirdparty.
 ||thedevs.cyou/hh/script-manager.js
 ||thefilter.com/events/view?
+||thefinancialexpress.com.bd/images/rocket-250-250.png
 ||thefontzone.com^
 ||thefreedictionary.com/_/tr.ashx?
 ||thefreehitcounter.com^$third-party
