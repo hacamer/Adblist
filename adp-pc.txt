@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: uCYhhTbTHosd2MoPuP6xAw
+! Checksum: VWNiJDB82b+Lln/QR2Enzg
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202206301928
-! Last Modified: 2022年06月30日 19:28
+! Version: 202206302102
+! Last Modified: 2022年06月30日 21:02
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 73041
+! Total count: 73048
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -2943,6 +2943,7 @@
 ##.adholder
 ##.adholder2
 ##.adiframe
+##.adindicator
 ##.adinfo
 ##.adinjwidget
 ##.adinner
@@ -23860,6 +23861,7 @@ blog.aming.info##+js(window.open-defuser)
 blog.csdn.net##.t0
 blog.csdn.net##SCRIPT[src^="https://csdnimg.cn/release/phoenix/vendor/linkCatcher/linkCatcher.js"] + .t0
 blog.naver.com###ssp-adpost
+blog.textpage.xyz##+js(abort-current-script, document.createElement, adsbygoogle.js)
 blogfa.com##+js(set-constant, showbanner, noopFunc)
 bloggingguidance.com##+js(window.open-defuser)
 blognews.in##+js(no-fetch-if, pagead2.googlesyndication.com)
@@ -25589,6 +25591,8 @@ drtuber.com,thisvid.com,vivatube.com##.spots
 drugs.com##.sideBoxStackedAdWrap
 drugs.com##.topbanner-wrap
 drv5.cn###xzq
+drweil.com##.promo-blurb
+drweil.com##.promo-blurb-label
 dstar.pzk.pl#@#.adsbox
 dstar.pzk.pl#@#.adsbygoogle
 dt.no##.am-bazaar-ad
@@ -30282,6 +30286,8 @@ mcrypto.club,cashearn.cc,faucetclub.net,faucetofbob.xyz,bitlinks.pw,faucet.furim
 mcrypto.club,ptc4btc.com,eldibux.com,coinsearns.com##div[id^="promo"]
 md4u.ru###pagecontent > div[style*="background-color"]
 md5hashing.net##+js(set-constant, _app.adsBlocked.set, falseFunc)
+mdisk.me##.live-ad
+mdisk.me##.sterra-ad
 me-gay.com##.b-uvb-spot
 me-gay.com,gaysuperman.com##.mobile-random
 me360.com##.footer-booking-open
@@ -41442,6 +41448,7 @@ zznews.cn##.ad:not([style])
 ||assessment.vetassess.com.au^
 ||assets.garron.blog^
 ||assets.garron.me^
+||assets.mdisk.me/convertor/img/direct-link-ad-bottom.
 ||assets.msn.com/bundles/*/weather/latest/river-feed.
 ||assets.msn.com/bundles/v1/microsoftNews/latest/placement-manager.*.js$domain=microsoftnews.msn.com
 ||assets.spectrumhealthlakeland.org^
