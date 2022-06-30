@@ -1,8 +1,8 @@
-! Checksum: +Rvut9mFqMMtJ/yXo69Lvw
+! Checksum: /wIHrwo/gzxg1nz75uQeVw
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.42.1
-! TimeUpdated: 2022-06-30T15:31:33+00:00
+! Version: 2.0.42.2
+! TimeUpdated: 2022-06-30T17:03:41+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -358,6 +358,7 @@ journal-plaza.net#?#.rightside div.block.bnavi[-ext-has="h3.dtitle:contains(Сч
 !||i.snssdk.com/slardar/sdk.js
 !
 ||utt.impactcdn.com^
+||feathr.co^$third-party
 ||automizely-analytics.com^$third-party
 ||metrics.dominos.com.tr^
 ||salesloft.com^$third-party
@@ -20318,7 +20319,7 @@ _analytics.js?
 /__Analytics-Start?url=
 /akam/*/pixel_
 /?mailoptin-ajax=track_optin_impression
-/collector.php?
+/collector.php?$~subdocument
 /matomo.php?action_name=
 /matomo.js$domain=~github.com
 /newrelic-gpt.

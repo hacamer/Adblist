@@ -1,8 +1,8 @@
-! Checksum: iXVmnntOJRNtDJFJ17SvDg
+! Checksum: jvMrO3qOlWsWi8DYmIhTsQ
 ! Title: AdGuard Social Media filter
 ! Description: Filter for social media widgets such as 'Like' and 'Share' buttons and more.
-! Version: 2.0.64.81
-! TimeUpdated: 2022-06-30T12:31:35+00:00
+! Version: 2.0.64.82
+! TimeUpdated: 2022-06-30T17:31:27+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -359,6 +359,7 @@ lj_bookmarklet
 ! Good: example.org#?#main > div.row:has(> div.ad)
 ! Bad: example.org##main > div.ad (should be in specific.txt)
 !
+majikichi.com#?##extra > div.column-inner > div.column-inner-2 > div.plugin-memo:has(> .side > center > a[href^="http://cloud.feedly.com"])
 hcdinamo.by#?#.sidebar > span:contains(/^Мы в социальных сетях$/)
 sakurafile.com#?#.filepanel > tbody > tr > td > ul:only-child > li > a[href^="javascript:share_"]:upward(3)
 odysee.com#?#.channel__quick-actions > button[type="button"]:has(> span.button__content > svg[class*="-Share"])
