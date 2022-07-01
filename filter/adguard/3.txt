@@ -1,8 +1,8 @@
-! Checksum: Jk+ywPSDRw2XtAd23khK3A
+! Checksum: C0hg44GhTHlkx0SeN0rv+g
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.42.5
-! TimeUpdated: 2022-07-01T13:03:22+00:00
+! Version: 2.0.42.6
+! TimeUpdated: 2022-07-01T14:31:22+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -5202,6 +5202,7 @@ nethunt.com/api/v1/track/email/$image
 ! Blocking piwik analytics subdomain
 |piwik.
 !
+||sp-trk.com^$third-party
 ||acelogger.heraldcorp.com^
 ||t.hypers.com.cn^
 ||log.ycapp.yiche.com^
@@ -24971,6 +24972,8 @@ $app=com.miui.analytics
 ! For platforms which do not support $redirect rules
 !
 !
+! https://jbbs.shitaraba.net/bbs/read.cgi/internet/25463/1652115193/259
+@@||googletagmanager.com/gtm.js$domain=onlineshop.ocn.ne.jp
 ! https://github.com/easylist/easylist/pull/12432
 @@||googletagmanager.com/gtm.js$domain=type.jp
 ! https://github.com/AdguardTeam/AdguardFilters/issues/123018
