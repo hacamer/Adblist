@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: 5uRgZm81ZkKyNc0MXizLyg
+! Checksum: IBMhhnjDoyIKUOQhcbeJvw
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202207012336
-! Last Modified: 2022年07月01日 23:36
+! Version: 202207020053
+! Last Modified: 2022年07月02日 00:53
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 73057
+! Total count: 73062
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -31136,6 +31136,7 @@ news.sky.com##div[data-ad-format="leaderboard"]
 news.sohu.com##.god-first
 news.sohu.com,www.sohu.com#?#.list16 > ul > li:-abp-contains(广告)
 news.yahoo.com###sda-LDRB
+news.yahoo.com##.caas-iframe.fireplace
 news18.com##.n18nheader > div.n18thder
 news18.com##.obBody
 news18.com##.outBrainWrapper
@@ -34554,6 +34555,7 @@ thegatewaypundit.com##a[href="#"]
 thegatewaypundit.com#$#abort-on-property-read adtoniq; abort-on-property-write adtoniq; abort-on-property-write bomab; abort-on-property-write zacak; abort-on-property-write kozuq
 thegay.com##+js(abort-on-property-read, GameLacker)
 thegay.com##+js(abort-on-property-read, adver.popunder.neverblock)
+thegay.com##.underplayer__info > div
 thegay.com##.wrapper + section
 thegay.com#?#.underplayer__info > div:has( > div#und_ban)
 theglobeandmail.com##.container-with-ad
@@ -47957,6 +47959,7 @@ zznews.cn##.ad:not([style])
 ||ematicsolutions.com^$third-party
 ||embed.comicbook.com^$subdocument
 ||embed.ex.co^$third-party
+||embed.fireplace.yahoo.com/embed/*?articleId=$domain=news.yahoo.com
 ||embed.mystream.to^$popup,badfilter
 ||embed.sendtonews.com^$domain=andhrafriends.com|titantv.com
 ||embed.sendtonews.com^$third-party
@@ -67208,6 +67211,8 @@ zznews.cn##.ad:not([style])
 ||thefontzone.com^
 ||thefreedictionary.com/_/tr.ashx?
 ||thefreehitcounter.com^$third-party
+||thegay.com/nofa/
+||thegay.com/psyttioschbs/
 ||thehentaiworld.com/fro_lo*.js
 ||thehun.net/banners/
 ||themaxmall.com^

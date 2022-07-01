@@ -1,8 +1,8 @@
-! Checksum: K/VRPEWq+jDOwaZITYid4w
+! Checksum: vI9MFMMvM6YTRudz7rjZ/Q
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.24.81
-! TimeUpdated: 2022-07-01T15:30:42+00:00
+! Version: 2.1.24.82
+! TimeUpdated: 2022-07-01T16:30:36+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -5528,6 +5528,7 @@ cc-fan.tv,cn-fan.tv,fox-fan.tv,nf-fan.tv#$#.pub_300x250.pub_300x250m.pub_728x90.
 !######### General element hiding rules ################
 !#######################################################
 !
+##.shopui-eu-cookie-bar
 ##.footer-lgpd
 ###footer-lgpd
 ###cookie-bg
@@ -7543,6 +7544,7 @@ cosmopolitan.de#$?#.sp-message-open body { overflow: auto !important; position: 
 !
 !
 !
+thesafetysupplycompany.co.uk###lnCookieBar
 elmedia-video-player.com##.bc_bkp
 atlantic.money###opt-in
 jedynka.polskieradio.pl##div[class^="Box-sc-mskus"][width][height][overflow="auto"]
@@ -19812,7 +19814,7 @@ swarmapp.com##.fixedUpsellTop
 swarmapp.com#%#//scriptlet('remove-class', 'pushDown', '#container.pushDown')
 downdetector.jp###apps-card
 nefisyemektarifleri.com##.app-presentation
-oxfordmail.co.uk###piano-floating-bottom-banner
+bournemouthecho.co.uk,dorsetecho.co.uk,oxfordmail.co.uk###piano-floating-bottom-banner
 afternoon-tea.net#$#.header-app-banner { display: none!important; }
 afternoon-tea.net#%#//scriptlet('remove-class', 'js-bannar-band', 'header')
 macaro-ni.jp##.globalFooter__appWrapper
@@ -28260,6 +28262,7 @@ mail.yandex.ru,mail.yandex.by,mail.yandex.com,mail.yandex.com.tr,mail.yandex.fr,
 radio.yandex.by,radio.yandex.kz,radio.yandex.ru,radio.yandex.ua##.page-station__brand
 realty.yandex.ru##.Offer__taxiBannerContainer
 disk.yandex.*##.mail360-banner
+rasp.yandex.*##.TravelHotelsBanner
 ! Adblock detection
 @@||yastatic.net/daas/atom.js$domain=mail.yandex.by|mail.yandex.kz|mail.yandex.ru|mail.yandex.ua|mail.yandex.com|mail.yandex.com.tr
 !-----------------------------------------------
@@ -30542,6 +30545,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+/images/bentham_newsletter.jpg$domain=benthamscience.com|eurekaselect.com
 firesticktricks.com##.banner-btm-section
 whistleout.com.au##div[data-subscribe]
 megatop.by##.v-application--wrap > div.action.d-flex
