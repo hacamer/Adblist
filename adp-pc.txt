@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: nLpbIQqK2IZCz8YP710fsg
+! Checksum: YHjV8fv2mA1qjkp/oiwnhg
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202207012101
-! Last Modified: 2022年07月01日 21:01
+! Version: 202207012149
+! Last Modified: 2022年07月01日 21:49
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 73042
+! Total count: 73048
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -17280,7 +17280,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||consciouscheese.com^$script,xmlhttprequest
 @@||consciousdirt.com^$script,xmlhttprequest
 @@||consistpotato.com^$script,xmlhttprequest
-@@||console.otc.t-systems.com/mrs/rest/api/v1/log?type=$script,~third-party
+@@||console.otc.t-systems.com/mrs/rest/api/v1/log?type=$~third-party,xmlhttprequest
 @@||console.statsig.com/_next/static/chunks/pages/$script,~third-party
 @@||contacts.google.com^$generichide
 @@||content*.uplynk.com/channel/*.m3u8?$domain=abc.com
@@ -28945,6 +28945,7 @@ javhdporn.net#@#.ad-placement
 javher.com###video #sources
 javher.com##+js(set-constant, Object.prototype.showPopUnder, noopFunc)
 javher.com##.affiliate-card-container
+javher.com##.videoWrapper > a[target="_blank"]
 javher.com,javtrailers.com###popunderLink
 javhub.net###ui-block > div.form-group + div.container + div[class]
 javhub.net##div[class*="banner-"]
@@ -30382,6 +30383,8 @@ meijutt.tv###weixin_clos
 meijutt.tv##.a960_index
 meijuxingqiu.com##.fixed-bottom-bar
 meilleurpronostic.fr#$#freeze-element #secondary abort aside
+meinvoice.vn##.banner-sticky-wrap
+meinvoice.vn##.content-post-adversite
 meishij.net##.cp_body_right
 meitu.com###meipaiFixed
 meizhou.cn##.toptonglan
@@ -33768,6 +33771,7 @@ socketloop.com#@##banner_ads
 soft-down.net##.box-top-xiazai
 soft.macx.cn#@##googlead
 soft.macx.cn#@##googlead1
+soft32.com###bottomer
 soft32.com###toper
 soft98.ir##.shad
 soft98.ir##.shad2
@@ -35742,6 +35746,8 @@ vjav.com##+js(set-constant, adver, noopFunc)
 vjav.com##.videos-tube-friends
 vjav.com,hdzog.com##.suggestions
 vjav.com,hotmovs.com##.afs_ads + span[class] > div[style=""]:only-child > div:only-child
+vjav.me##.right > div.content
+vjav.me,javfuq.com,javhat.tv,javfindx.com###previewBox
 vjav.tube,tubepornclassic.com,privatehomeclips.com##.jwplayer > div.afs_ads + span[class]
 vjmedia.com.hk###author-spotlight + .clear + div
 vjmedia.com.hk###text-33
