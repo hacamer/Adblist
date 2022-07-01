@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: jrewrt7fY+IPXPbOOwlIYQ
+! Checksum: VgUaQPqS25+fzgPb9TB3fA
 ! Title: AdFilters 
 ! Expires: 12 hours
-! Version: 202207011055
-! Last Modified: 2022年07月01日 10:55
+! Version: 202207011232
+! Last Modified: 2022年07月01日 12:32
 ! Homepage: https://github.com/hacamer/Adblist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、EasyPrivacy、大萌主
 ! 仅合并规则，未做其余任何处理
 ! 如有任何疑问、意见或建议，请反馈至：杏梢
 !
-! Total count: 41614
+! Total count: 41621
 ###ChapterView > .slide-baidu
 ###SOHU_MAIN > .module-cmt-float-bar
 ###TopAdvert
@@ -3587,6 +3587,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /event?eventType=
 /event?pmo=
 /event?ref=
+/event?sendBeacon=
 /event?stat_
 /event?t=view&
 /event?token=
@@ -7884,6 +7885,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 ://metrika.*/analytics.
 ://mint.*/?js
 ://piwik.$domain=~matomo.org|~piwik.pro
+://posthog.$domain=~posthog.com
 ://segment-api.
 ://segment-cdn.
 ://stats.*/index.js
@@ -9645,7 +9647,7 @@ aeink.com##p[style*=".alicdn.com/"]
 affyun.com##.text
 affyun.com##.text ~ a
 afzhan.com,cngold.org,hbzhan.com,panjin.net,qq.com,tongxiang.net##.advs
-age.tv,agemys.com##+js(noeval-if, devtoolsDetector)
+age.tv,agemys.cc##+js(noeval-if, devtoolsDetector)
 agmov.com,huaban.com##.promotion
 ahgame.com,china.com.cn,dandanzan.com,netbardh.com,pangzitv.com,twoeggz.com###pop
 ahtv.cn,duhama.tv,frdic.com,huasing.net,it168.com,qinbing.cn###ads
@@ -9990,6 +9992,7 @@ biqugee.com##div[style="width:976px;"]
 bitauto.com###advCarsumType1
 bitauto.com###dyAdv
 bitauto.com,yinyuetai.com#@#a[href^="http://ad.doubleclick.net/"]
+bixinlive.com
 biznetvigator.com#@##container_ad
 bjcathay.com
 bjd.com.cn##.screenad
@@ -12044,6 +12047,7 @@ qq.com,yxad.com##.l_qq_com
 qq.com,yy.com,le.com##+js(nowebrtc)
 qqaiqin.com#@#.ad_468
 qqxiazai.com##.bt_abtn2
+quandangdang.net
 qudao.com###wechat
 quickapp.cn
 qunar.com##.flight_ad
@@ -17842,6 +17846,7 @@ zznews.cn##.ad:not([style])
 ||capitalone.com/collector/
 ||capriciouscorn.com^$third-party
 ||capsquirrel.com^$third-party
+||captcha-display.com^
 ||captify.co.uk^$third-party
 ||captivate.ai^$third-party
 ||captora.com^$third-party
@@ -20509,6 +20514,7 @@ zznews.cn##.ad:not([style])
 ||dropbox.com/alternate_
 ||dropbox.com/log/
 ||dropbox.com/log_
+||dropboxfingerprintjs.com^$third-party
 ||drrzzl.cn^
 ||drudgereport.com/204.png
 ||drudgereport.com/js/responsive-
@@ -29724,6 +29730,7 @@ zznews.cn##.ad:not([style])
 ||open.ua/stat/
 ||open8.cn^$third-party
 ||openclick.com^$third-party
+||openfpcdn.io^
 ||opengam.com^
 ||openguid.org^$third-party
 ||openhit.com^$third-party
@@ -36968,7 +36975,7 @@ zznews.cn##.ad:not([style])
 ||toutiao.com^*/user_log/
 ||toutiao.haotui.com/data/js/0.js
 ||toutiao.xn--fiqs8s^
-||toutiaoimg.com/origin/$image,domain=mgtv1.tv|mgtv.cc|agemys.com|acgndmku.com|subaibaiys.com
+||toutiaoimg.com/origin/$image,domain=mgtv1.tv|mgtv.cc|agemys.cc|acgndmku.com|subaibaiys.com
 ||toutiaoimg.com^$domain=1024pz.com
 ||toutiaoyule.com/n/dspshow.
 ||tovery.net^$third-party
