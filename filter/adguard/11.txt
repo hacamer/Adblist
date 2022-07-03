@@ -1,8 +1,8 @@
-! Checksum: w89/pqZSJLF+wQsDrtRnwg
+! Checksum: XOFwDfm0fnupI5YOIJy+fw
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.30.98
-! TimeUpdated: 2022-07-01T11:30:21+00:00
+! Version: 2.0.31.0
+! TimeUpdated: 2022-07-03T16:30:20+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1309,6 +1309,7 @@ fontanka.ru#?##adv_mob_sticky-mobile-smi:upward(2)
 adme.media#?#div[data-test-id="article-content"] > div[class*=" "] > div > div:contains(Реклама):upward(2)
 duplichecker.com#?#.data_inbox > div[style]:has(> div > span > ._ap_apex_ad)
 grapee.jp#?#aside > div[class^="mod-ads-area"]:upward(1)
+ameblo.jp#?#div[class^="_"] > aside[class^="_"] section > div[class^="_"] > a[href^="https://dokusho-ojikan.jp/ameba_manga_login"]:only-child:upward(1)
 ameblo.jp#?#article > div[class^="_"]:last-child > header[class^="_"] + div:not([class]) > div.skin-bd-color[class^="_"]:first-child:has(> div[class^="_"]:only-child)
 iphone-mania.jp##.related:contains(PR)
 iphone-mania.jp##.related:contains(PR) + div.top_new_menu_ul
@@ -3652,7 +3653,7 @@ m.focus.de##.cls_hor
 werstreamt.es##.sdfrK
 mobile.twitter.com##div[data-testid="primaryColumn"] div[aria-label="Timeline: Your Home Timeline"] div[data-testid="placementTracking"] > div:not([data-testid="videoPlayer"])
 ||chesterstream.akamaized.net/chester-adcross/$domain=ameblo.jp
-ameblo.jp##div[class^="_"] > aside[class^="_"] section[class] > div[class^="_"] > a[href^="https://dokusho-ojikan.jp/ameba_manga_login"]:only-child
+ameblo.jp##div[class^="_"] > aside[class^="_"] section > div[class^="_"] > a[href^="https://dokusho-ojikan.jp/ameba_manga_login"]:only-child
 ameblo.jp##div[data-slot-type="injectedAds"]
 ameblo.jp###entryLi > li.skin-mod-bg-color.skinOpacity
 ameblo.jp##div[class^="_"]:empty
