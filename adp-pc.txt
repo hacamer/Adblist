@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: j5ffmC5+pH5sF7bf9iPcqg
+! Checksum: EOpcr/SJ7bKc51khlT7DQQ
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202207050049
-! Last Modified: 2022年07月05日 00:49
+! Version: 202207050134
+! Last Modified: 2022年07月05日 01:34
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 72955
+! Total count: 72959
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -19223,6 +19223,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||megafon.ru/static/?files=*/tealeaf.js
 @@||megaline.co/intermission/loadTargetUrl$xmlhttprequest
 @@||megatube.xxx/atrm/s/s/js/m/pr-before.js
+@@||megaup.net/*/*.gif$domain=megaup.net
 @@||megaup.net^$generichide
 @@||megaurl.in^$generichide
 @@||megaxtreme.net^$generichide
@@ -30274,6 +30275,7 @@ megaup.net#$#.image-container .mcimg { height: 185px !important; }
 megaup.net#$#.imgAds > img { height: 250px !important; }
 megaup.net#$#.imgAds { height: 250px !important; }
 megaup.net#$#.metaRedirectWrapperBottomAds img { width: 300px !important; }
+megaup.net#$#img[src^="https://megaup.net/imageads/"] { position: absolute !important; left: -3000px !important; }
 megaurl.in##+js(window.open-defuser)
 megaxh.com##.xplayer-banner-bottom
 megogo.net,megogo.ru##.specialBlock_v1
@@ -43629,6 +43631,8 @@ zznews.cn##.ad:not([style])
 ||cdnativepush.com^
 ||cdnaz.win^
 ||cdnbmb.com^
+||cdncg.com^*/Aepku
+||cdncg.com^*/peiyinquan
 ||cdncont.com^
 ||cdnfjz.com^
 ||cdngain.com^
@@ -43723,7 +43727,6 @@ zznews.cn##.ad:not([style])
 ||cgicounter.oneandone.co.uk^
 ||cgicounter.onlinehome.de^
 ||cgicounter.puretec.de^
-||cgown.com^*/peiyinquan
 ||cgqkhc.trendyol.com^
 ||cgznataqg.com^
 ||ch.sharpmarketing.eu^
@@ -65159,6 +65162,7 @@ zznews.cn##.ad:not([style])
 ||ssp.njxzwh.com^
 ||ssp.rambler.ru^
 ||ssp.seznam.cz^
+||sspai.com/api/v1/recommend*=article_
 ||sspai.com/attachment/sponsor/
 ||ssports.iqiyi.com/app/$object-subrequest
 ||ssports.iqiyi.com/json/shop/shopInfo
