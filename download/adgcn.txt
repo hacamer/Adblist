@@ -260,6 +260,7 @@
 ||1002.men^
 ||ad.juksy.com^
 ||ads.tvb.com^
+rjno1.com##+js(set-constant, rwc20adloadok, true)
 yibian.hopto.org###no-adblock-box
 bigpixel.cn#$?##PAGE_AD_1 { remove: true; }
 bigpixel.cn##+js(set-constant, killads, true)
@@ -294,25 +295,6 @@ yodu.org#$#body[style] { overflow: auto !important; }
 linovelib.com#$##byspider { display: none !important; }
 linovelib.com#$#body[style] { overflow: auto !important; }
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=noop.js,domain=linovelib.com
-rjno1.com##+js(no-setTimeout-if, /_show\(".+?"\); ?\}/)
-rjno1.com##+js(addEventListener-defuser, error, event.target.tagName)
-||c0.ifengimg.com/iis/iis_$script,redirect=noop.js,important,domain=rjno1.com
-@@||c0.ifengimg.com/iis/iis_$domain=rjno1.com
-||rjno1.com/wp-content/themes/moban/moban-js/show_ads.js$script,redirect=noop.js,important,domain=rjno1.com
-@@||rjno1.com/wp-content/themes/moban/moban-js/show_ads.js$domain=rjno1.com
-||jspassport.ssl.qhimg.com^$script,redirect=noop.js,domain=rjno1.com
-@@||googletagmanager.com/gtag/js$script,domain=rjno1.com
-@@||pos.baidu.com^$script,domain=rjno1.com
-||pos.baidu.com^$script,redirect=noop.js,domain=rjno1.com,important
-@@||cpro.baidu.com/cpro/ui/rt.js$domain=rjno1.com
-||cpro.baidu.com/cpro/ui/rt.js$script,redirect=noop.js,domain=rjno1.com,important
-@@||cpro.baidustatic.com/cpro/ui/cm.js$script,domain=rjno1.com
-@@||hm.baidu.com/hm.js?$script,domain=rjno1.com
-@@||rjno1.com^$generichide
-@@||pagead2.googlesyndication.com/$script,xmlhttprequest,domain=rjno1.com
-||g.doubleclick.net/pagead/ads?$subdocument,redirect=noop.html,domain=rjno1.com,important
-@@||g.doubleclick.net/pagead/ads?$subdocument,domain=rjno1.com
-||img*.126.net/ntesrich/*/adControl-indexx-v*.js?v=$script,redirect=noop.js,domain=rjno1.com
 zhangxinxu.com#@#.sldebar_out + *,style[id] + a[class]
 zhangxinxu.com#$#.sldebar_out + * { height: 0!important; }
 tingfm.com##+js(no-setTimeout-if, adblock)
@@ -510,9 +492,6 @@ pixnet.net#?##main > div.header-fixed-area:has(> div#header-ad-fixed)
 ptthito.com#?##main-content > div[style*="margin-top:"]:not([class]):has(> .adsbygoogle)
 o8tv.com#?#.container > .row > .myui-panel-bg:has(> .myui-panel-box > .myui-panel_bd > .myui-vodlist > .col-lg-8 > .myui-vodlist__box > a[target="_blank"])
 o8tv.com#?#.container > .row > .myui-panel-bg:has(> .myui-panel-box > .myui-panel_bd > .col-xs-1 > a[target="_blank"] > img)
-rjno1.com#?#.post > div[class^="ivo"] > .adsbygoogle:upward(1)
-rjno1.com#?#.site-main > div[class^="ivo"]:has(.adsbygoogle)
-rjno1.com#?#.sidebar > div[class^="ivo"]:has(> .space > script:contains(slotbydup))
 cartoon18.com#?#.container-fluid > .row > .item:has(> .card > .card-body > .lines > span.badge:contains(/^ad$/))
 segmentfault.com#?##question-wrap > .row > .col-xl-auto:has(> #first-ad:first-child + #gridAd + #second-ad:last-child)
 bbs.pcbeta.com#?##toptb ~ #wp > div[class]:matches-css(height : /170px/)
@@ -681,6 +660,7 @@ ipv6.baidu.com,m.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###resul
 ||alicdn.com^$image,domain=m.k1k.cc|thcdy.co|27k.cc|1024pa.com|hg6384.com-www.6u7u.com|4080kan.com|dy686.net
 ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .result ~ div:not([class]):not([style])
 /^(?!.*(bootstrapcdn.com|cdn.ampproject.org|cloudflare.com|disqus.com|disquscdn.com|dmca.com|ebacdn.com|facebook.net|fbcdn.net|fluidplayer.com|fontawesome.com|github.io|google.com|googleapis.com|googletagmanager.com|gstatic.com|jquery.com|jsdelivr.net|jwpcdn.com|jwplatform.com|polyfill.io|recaptcha.net|shrink.pe|twitter.com|ulogin.ru|unpkg.com|userapi.com|vidazoo.com|vk.com|yandex.|yastatic.net|ytimg.com|zencdn.net|player|youtube.com|cackle.me|googleoptimize.com|vuukle.com|chatango.com|twimg.com|google-analytics.com|hcaptcha.com|raincaptcha.com|media-imdb.com|blogger.com|hwcdn.net|instagram.com|wp.com)).*$/$third-party,script,domain=yemancomic.com|qimiaoxiaoshuo.com|gaofuwu.org
+rjno1.com##main > div[class^="qnb"]
 ||thisav.com/js/bioep.js
 ||ptyw.yiche.com/ssp/
 yiche.com##.right-box > div[class^="ad"]
@@ -1246,10 +1226,6 @@ avcao.cc##.ps-body > div[class^="adv-top"]
 ||axjbt.com/dbxf/pctc.js
 udn.com##.mag_topic > a[href][target="_blank"] > img[src^="https://p.udn.com.tw/upf/"][src*="_banners/Special/"]
 ||p.udn.com.tw/upf/*_banners/Special/
-rjno1.com##div[class*="-a-d1"]
-rjno1.com##div[class*="-a-d2"]
-rjno1.com##div[class*="-a-d3"]
-rjno1.com##div[class*="-a-d4"]
 javdove.com##.ad-body
 javdove.com##.tdads-nonlinear
 69vj.com###nta
