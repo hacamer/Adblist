@@ -1,8 +1,8 @@
-! Checksum: XfgkS8dLvDRa0I4qE0aVMw
+! Checksum: YrqRPa6OrC5pu+Q09BFRlA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.24.96
-! TimeUpdated: 2022-07-04T06:30:35+00:00
+! Version: 2.1.24.97
+! TimeUpdated: 2022-07-04T07:30:40+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -3323,6 +3323,8 @@ hgtv.com#@#.showads
 !
 !
 !
+fachwerk.de##body .test-adblock-overlay:not(#style_important)
+fachwerk.de#%#//scriptlet('prevent-xhr', 'pagead2.googlesyndication.com', 'true')
 mgsm.pl#%#//scriptlet("set-constant", "checkAdblockBait", "noopFunc")
 ||amazfitwatchfaces.com/assets/plugins/growl/jquery.growl.js
 docs.pyrogram.org###banner
@@ -7543,6 +7545,10 @@ voici.fr,the-sun.com,thesun.ie,capital.fr,ladbible.com,hitc.com,dualshockers.com
 !
 !
 !
+mustijamirri.fi#$#body[style^="overflow:"] { overflow: auto !important; height: auto !important; }
+mustijamirri.fi#$#html[style^="overflow:"] { overflow: auto !important; height: auto !important; }
+mustijamirri.fi#$#.privacy_headsup_overlay { display: none !important; }
+mustijamirri.fi#$##cookie_consent { display: none !important; }
 upm.com##.cookie-policy-opt-out
 vci.de##.c-cookie-consent-banner
 bosch-professional.com##dock-privacy-settings
@@ -16999,6 +17005,10 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! mustijamirri.fi
+mustijamirri.fi#@##cookie_consent
+! https://github.com/AdguardTeam/AdguardFilters/issues/123297
+@@||cdn.jsdelivr.net/npm/cookieconsent*/build/cookieconsent.min.js$domain=enterpriseminilease.ch
 ! https://github.com/AdguardTeam/AdguardFilters/issues/123444
 @@||consent.cookiebot.com/uc.js$domain=werder.de
 ! https://github.com/AdguardTeam/AdguardFilters/issues/123176
@@ -36223,9 +36233,10 @@ onioncloud.stream,ihls.pro#%#(function(){var c=window.setInterval;window.setInte
 boost.ink#%#(function(){var b=new MutationObserver(function(){var a=document.querySelector('script[src^="/assets/js/unlock.js"][version]');if(a){var c=a.getAttribute("version");c&&setTimeout(function(){window.location=atob(c)},500)}});b.observe(document,{childList:!0,subtree:!0})})();
 ! https://github.com/AdguardTeam/AdguardFilters/issues/38274
 k2nblog.com#%#!function(){if(-1<location.pathname.indexOf("/linkdl.htm")){var b64dest=location.href.split("linkdl.html?url=");if(b64dest&&b64dest[1]){location=atob(b64dest[1]);}}}();
+! https://github.com/AdguardTeam/AdguardFilters/issues/123405
 ! https://github.com/AdguardTeam/AdguardFilters/issues/110006
 ! https://github.com/AdguardTeam/AdguardFilters/issues/34644
-onet.pl#%#AG_onLoad(function(){if(-1!==window.location.href.indexOf("onet.pl/?utm_source=")){var a=document.querySelector('a[href][onclick*="Nitro_clickmore"][onclick*="czytaj_wiecej"]');a&&location.replace(a.href)}});
+onet.pl#%#AG_onLoad(function(){if(-1!==window.location.href.indexOf("onet.pl/?utm_source=")){const o=new MutationObserver(function(){var e=document.querySelector('a[href][onclick*="Nitro_clickmore"][onclick*="czytaj_wiecej"]')||document.querySelector('a[href][class^="NitroCard_sectionLink_"]');e&&(o.disconnect(),location.replace(e.href))});o.observe(document,{childList:!0,subtree:!0}),setTimeout(function(){o.disconnect()},1e4)}});
 ! https://github.com/AdguardTeam/AdguardFilters/issues/38542
 ! https://github.com/AdguardTeam/AdguardFilters/issues/37849
 up-to-down.net#%#AG_onLoad(function(){if(window.location.href.match(/https?:\/\/up-to-down\.net\/\d+\//)){var a=document.body.textContent.match(/window\.location\.href = \("([\s\S]*?)"\);/);if(a&&a[1])location=a[1];}});
