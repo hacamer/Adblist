@@ -1,8 +1,8 @@
-! Checksum: mqy893VHnVkfFcSd2BPO3g
+! Checksum: XdxTzIdvrFVoW8TKFPa0gg
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.0.60.24
-! TimeUpdated: 2022-07-04T13:31:08+00:00
+! Version: 2.0.60.25
+! TimeUpdated: 2022-07-04T14:31:16+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -766,6 +766,8 @@ rjno1.com#?#.sidebar > div[class^="ivo"]:has(> .space > script:contains(slotbydu
 cartoon18.com#?#.container-fluid > .row > .item:has(> .card > .card-body > .lines > span.badge:contains(/^ad$/))
 ! https://github.com/AdguardTeam/AdguardFilters/issues/90640
 segmentfault.com#?##question-wrap > .row > .col-xl-auto:has(> #first-ad:first-child + #gridAd + #second-ad:last-child)
+! https://github.com/AdguardTeam/AdguardFilters/issues/123472
+bbs.pcbeta.com#?##toptb ~ #wp > div[class]:matches-css(height : /170px/)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/88392
 bbs.pcbeta.com#?##toptb ~ #wp > div[class] > ul ~ div[class]:has(> div[class] > div > .adsbygoogle)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/76857
@@ -12934,7 +12936,8 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||centurys.net/promo_
 ||cfzhushou.com^*/King_Chance_Layer.js
 ||cgfdjz.net/xia.js
-||cgown.com^*/peiyinquan
+||cdncg.com^*/Aepku
+||cdncg.com^*/peiyinquan
 ||chahua.org/aimg/
 ||chakd.com/images/xitie160x60.gif
 ||changsha.cn/front_js/site_ad/4/site_ad_284.js
@@ -15458,7 +15461,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||ssp.kdnet.net^
 ||ssp.njxzwh.com^
 ||ssp.zf313.com^
-||sspai.com/api/v1/recommends?*=article_
+||sspai.com/api/v1/recommend*=article_
 ||sspai.com/attachment/sponsor/
 ||sss777.net/Alove-A/
 ||sssvd.china.com^

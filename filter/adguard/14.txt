@@ -1,8 +1,8 @@
-! Checksum: NNaqMFRcShUPpQV8GuAMoA
+! Checksum: YQlR7/Ly85ZENY52AuPYsw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.25.2
-! TimeUpdated: 2022-07-04T13:02:53+00:00
+! Version: 2.1.25.3
+! TimeUpdated: 2022-07-04T14:30:55+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7545,6 +7545,8 @@ voici.fr,the-sun.com,thesun.ie,capital.fr,ladbible.com,hitc.com,dualshockers.com
 !
 !
 !
+seascanner.co.uk##.lazyload-wrapper  + div[style="opacity: 1; transform: none;"]
+2rad-lampe.de###cookie_information
 mapy.spravazeleznic.cz###cookiesCotainer
 kern-haus.de#$#body { overflow: auto !important; }
 kern-haus.de#$#body #tarteaucitronRoot { display: none !important; }
@@ -28298,6 +28300,9 @@ rasp.yandex.*##.TravelHotelsBanner
 @@||yastatic.net/daas/atom.js$domain=mail.yandex.by|mail.yandex.kz|mail.yandex.ru|mail.yandex.ua|mail.yandex.com|mail.yandex.com.tr
 !-----------------------------------------------
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/123268
+||gamewith.jp/ad/
+gamewith.jp##.walkthrough-hikari
 ! https://github.com/AdguardTeam/AdguardFilters/issues/123102#issuecomment-1171069566
 thelocal.*#?#.tp-modal:has(> div.tp-iframe-wrapper > iframe[src^="https://buy.tinypass.com/checkout/offer/show?displayMode="])
 thelocal.*#$#.tp-backdrop.tp-active { display: none !important; }
