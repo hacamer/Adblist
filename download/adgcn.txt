@@ -434,9 +434,8 @@ wenxuecity.com##+js(set-constant, adsbygoogle, noopFunc)
 lnk2.cc##+js(set-constant, adblock, false)
 @@||lnk2.cc/js/ad_code.js
 youranshare.com##+js(abort-current-script, $, adskilltest)
-tsubasa.im##+js(set-constant, compare_post, noopFunc)
-tsubasa.im##+js(remove-class, d-none, body)
-tsubasa.im#?#.alert-adblock
+tsubasa.im##+js(no-setTimeout-if, /home/?adblock=)
+tsubasa.im##+js(no-setInterval-if, /home/?adblock=)
 @@||getitfree.cn/wp-content/plugins/adunblocker/public/js/banner_ads_*.js
 getitfree.cn##+js(abort-current-script, document.getElementById, /!document\.getElementById\([\s\S]*?\.style\.display=/)
 zhenbuka3.com,zhenbuka2.com,bukaivip.com##+js(no-setTimeout-if, ad_load_fail)
