@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: fkJizz+dLU2ausQrjKUkAQ
+! Checksum: 6dew05B/HhOhv/JaJww3/Q
 ! Title: My AdFilters（for Mobile）
 ! Expires: 12 hours
-! Version: 202207051529
-! Last Modified: 2022年07月05日 15:29
+! Version: 202207051636
+! Last Modified: 2022年07月05日 16:36
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 67841
+! Total count: 67849
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -3713,6 +3713,7 @@
 ##.bottom-ads-wrapper
 ##.bottom-adv
 ##.bottom-gg
+##.bottom-mobile-ad
 ##.bottom-post-ad-space
 ##.bottom-post-ads
 ##.bottomAd
@@ -29017,8 +29018,11 @@ search.yahoo.com##.searchRightBottomAds
 search.yahoo.com##.searchRightMiddleAds
 searchenginejournal.com##.avert-text
 searchenginejournal.com##.sej-unit
+searchenginejournal.com##.sss_slo.content-unit
+searchenginejournal.com##.sss_slo.sej-bbb-section
 searchenginejournal.com##.sss_slot
 searchenginejournal.com##[id^="SEJ_300x250_"]
+searchenginejournal.com##a[rel="sponsored noopener"]
 searchenginereports.net##+js(no-xhr-if, pagead2.googlesyndication.com)
 searchresults.cc##+js(set-constant, test, true)
 seattlepride.org##.section_sponsorship
@@ -29157,6 +29161,9 @@ shemalez.com##+js(set-constant, adver, noopFunc)
 shemalez.com,voyeurhit.com##.afs_ads + [class] > div[style=""]
 shengxinwang.net###floatDivBoxs
 shfq.com##.index_banner_ad
+shieldsgazette.com##.dmpu-ad
+shieldsgazette.com#?##frameInner div[class^="sc-"] > #topBanner:only-child:upward(1)
+shieldsgazette.com#?#.sidebar > div[class^="sc-"] > div[class^="sc-"] > div[id^="sidebarMPU"]:upward(1)
 shinden.pl##+js(abort-on-property-read, popjs.init)
 shinden.pl##+js(abort-on-property-write, AdservingModule)
 shinden.pl##+js(set-constant, _pop, noopFunc)
@@ -55758,6 +55765,7 @@ zznews.cn##.ad:not([style])
 ||quant.jp/track/
 ||quant.jp^$third-party
 ||quanta.la^$third-party
+||quantcast.com/?log
 ||quantcast.mgr.consensu.org/?log
 ||quantcount.com^$third-party
 ||quantserve.com^
