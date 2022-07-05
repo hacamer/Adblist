@@ -1,8 +1,8 @@
-! Checksum: CjVyIEjXEuJfI2d4thSWYw
+! Checksum: NYxibRTbZWuZ2eJFER1xkQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.25.19
-! TimeUpdated: 2022-07-05T12:30:40+00:00
+! Version: 2.1.25.20
+! TimeUpdated: 2022-07-05T13:03:04+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7549,6 +7549,7 @@ voici.fr,the-sun.com,thesun.ie,capital.fr,ladbible.com,hitc.com,dualshockers.com
 !
 !
 !
+algolia.com###__next > div.bdtw-1.pos-fixed
 hardx.com,21sextury.com###ConsentCookiePopup
 webnode.com.co###cookiebar-root
 t-mobile.com#$#.xpr-cookieModal { display: none!important; }
@@ -8816,7 +8817,7 @@ xn----9sbmbgknu2ce4eva.xn--j1amh##.footer_cookie_alert
 matrixetf.finance##.bottom_Policy
 alixblog.com##.cookie-alert-overlay
 cifraclub.com.br###toastLgpd
-ibood.com##div[data-testid="cookie-banner"]
+monese.com,ibood.com##div[data-testid="cookie-banner"]
 ucsusa.org###block-cookienotice
 coddyschool.com##.collect-data
 kohl24.de###coe_cookies_container
@@ -10181,7 +10182,7 @@ mediamarkt.nl,saturn.de##div[class^="gdpr-cookie-layer"]
 klingspor.id###vinegar-bottle
 truecaller.com###app > footer + div.fixed > span
 madeiramadeira.com.br,lojaasus.com.br##.lgpd-container
-catho.com.br###__next > div[class^="style__OverlayBlock-"]
+catho.com.br##div[class^="style__OverlayBlock-"]
 ||comic.pixiv.net/api/app/gdpr/messages|$xmlhttprequest
 blogdumoderateur.com##.hw-cc-main
 storemaven.com##.maven-component--cookies-notice
@@ -21973,6 +21974,8 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+smallseotools.com###FITS_con
+fontanka.ru##div[data-sticky-id="bottomStickyElement"]
 erli.pl#%#(function(){try{if("undefined"!=typeof localStorage){const b=JSON.stringify({lastSeenAt:new Date,viewsCounter:1});localStorage.setItem("ERLI_PRO_GUEST_MODAL_DATA",b)}}catch(a){}})();
 hardx.com,21sextury.com##.promobar
 hancinema.net##.footer  + div[style^="position:fixed;padding"]
@@ -30614,6 +30617,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+wccftech.com##.subscribe-now
 comments.ua##article > br + p[style^="font-weight: 700!important"]
 totylkoteoria.pl##.popup-mask
 totylkoteoria.pl##.newsletter

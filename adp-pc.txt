@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: Vc6hY0lku6eZy9NOO+d/WQ
+! Checksum: JdQs5J5kWy8LFY1MoVfdXQ
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202207052104
-! Last Modified: 2022年07月05日 21:04
+! Version: 202207052202
+! Last Modified: 2022年07月05日 22:02
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 73025
+! Total count: 73029
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -14586,8 +14586,6 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /xxd.php?id=$script,third-party
 /xxgg/app.js
 /xxgg/book.js
-/xxgg/dj*.js
-/xxgg/pf*.js
 /xxx.js|$script,~third-party
 /xy.gif?
 /yad_sortab_cetlog.js
@@ -15539,7 +15537,6 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 :10443/$script,subdocument,third-party
 :12443/*/*-*-*.$script,third-party
 :18443/*/*-*-*.js$third-party
-:4433/hm/cdn/static/jq_
 :4443/ty/x-$script,third-party
 :8080/ad/
 :8898/ads_
@@ -19732,6 +19729,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=simply-debrid.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=skmedix.pl
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=skript.pl
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=smallseotools.com,badfilter
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=sms-receive.net
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=smsget.net
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=speedof.me
@@ -19795,6 +19793,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=xiaopan.co
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=b2bhint.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=liout.com|moneysave.info|ygodl.com|youneed.win
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=smallseotools.com
 @@||pagead2.googlesyndication.com/pagead/js/google_top_exp.js$domain=freeserial-keys.blogspot.com
 @@||pagead2.googlesyndication.com/pagead/js/google_top_exp.js$domain=soranews24.com
 @@||pagead2.googlesyndication.com/pagead/js/lidar.js$domain=soranews24.com
@@ -20960,6 +20959,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||static-redesign.cnbcfm.com/dist/components-PcmModule-Taboola-*.js$domain=cnbc.com
 @@||static-videostar2.4vod.tv/assets/js/adcheck.js$script,domain=videostar.pl
 @@||static-videostar2.4vod.tv/assets/js/adcheck.min.js$script,domain=videostar.pl
+@@||static.*.com/content/js/pubfig.*.js$domain=lightnovelpub.com|webnovelpub.com
 @@||static.adf.ly/static/image/
 @@||static.adf.ly/static/image/ad*.png$image,third-party
 @@||static.adman.gr^$domain=naftemporiki.gr
@@ -20995,7 +20995,6 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||static.lci.fr/assets/scripts/common/user-agent-analyzer.js$script,~third-party
 @@||static.leaddyno.com/js$script,domain=s4l.us
 @@||static.lexpress.fr/*/ads.css
-@@||static.lightnovelpub.com/content/js/sailthru.js
 @@||static.okccdn.com/builds/desktop/js/tracking_center.$script,domain=okcupid.com
 @@||static.opensubtitles.org/libs/js/common.js
 @@||static.opensubtitles.org/libs/js/urlshortener.js
@@ -29646,7 +29645,6 @@ liftable.com#@##sponsoredwellcontainertop
 liftable.com#@#.MBoxAdMain
 liga.net#@#div[id^="div-gpt-ad"]
 lightningmaps.org##+js(set-constant, wb_insert, noopFunc)
-lightnovelpub.com##+js(no-setTimeout-if, abchecker)
 lightnovelpub.com##.adsbox
 lightnovelpub.com##.lnadcontainer
 lightreading.com##a[href^="/lg_redirect.asp?piddl_lgid_docid="]
@@ -35869,6 +35867,7 @@ wccftech.com##.ad a[href][rel="sponsored"]
 wccftech.com##.bg-square
 wccftech.com##.bg-vertical
 wccftech.com##div[data-amp-original-style] a[href][rel="sponsored"]
+wccftech.com#?#.main-container > div[style]:has(> div.bg-horizontal div[id^="div-gpt-ad"])
 wco.tv##+js(no-setTimeout-if, AdBlock)
 wco.tv##+js(set-constant, isAdBlockActive, false)
 wco.tv#@#.adBanner
@@ -35939,6 +35938,7 @@ webmd.com##.module-top-picks
 webmd.com##.responsive-sharethrough-wrapper
 webmd.com##.top-picks
 webmd.com##div.ad[id^="ads"]
+webnovelpub.com,lightnovelpub.com##+js(no-setTimeout-if, abchecker)
 webofcomics.ru##.reklandvipinfo
 webpornblog.com##+js(abort-current-script, doMyStuff)
 webshort.in##+js(window.open-defuser)
@@ -41856,6 +41856,7 @@ zznews.cn##.ad:not([style])
 ||badirectoryz.carte-gr.total.fr^
 ||badjniop.top^
 ||badlniop.top^
+||badlnniop.top^
 ||badmintoncn.com/cbo_include/js/cboaaa.js
 ||badmniop.top^
 ||badspads.com^
@@ -49803,6 +49804,7 @@ zznews.cn##.ad:not([style])
 ||gdg.gardnerdenver.com^
 ||gdgy56.com^
 ||gdjvznzeik.com^
+||gdls114.com^
 ||gdm1.toner.fr^
 ||gdmdigital.com^
 ||gdmjskjx.com^
@@ -49964,6 +49966,7 @@ zznews.cn##.ad:not([style])
 ||gezaehlt.de^$third-party
 ||gezkdx7.com^
 ||gf108.com^
+||gfdh56.site^
 ||gfghr.com^
 ||gfgywe.abril.com.br^
 ||gflcsiot.com^
@@ -49992,7 +49995,6 @@ zznews.cn##.ad:not([style])
 ||gg.sonhoo.com^
 ||gg.uuu9.com^
 ||gg.yxdown.com^
-||gg.zhhbqg.com^
 ||ggcode.2345.com^
 ||ggdm1.nhaidu.net^
 ||gggwv.cn^
@@ -58925,6 +58927,7 @@ zznews.cn##.ad:not([style])
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,xmlhttprequest,redirect=noop.js,domain=romadd.com,important
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,redirect=googlesyndication.com/adsbygoogle.js,domain=photopea.com,important
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,redirect=noop.js,domain=10play.com.au
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,redirect=noop.js,domain=smallseotools.com,important
 ||pagead2.googlesyndication.com/pagead/managed/js/adsense/*/show_ads_impl_fy2019.js$script,xmlhttprequest,redirect=noop.js,domain=beatsnoop.com
 ||pagead2.googlesyndication.com/pagead/show_ads.js$script,domain=ehubsoft.net,redirect=noop.js
 ||pagead2.googlesyndication.com/pagead/show_ads.js$script,redirect=noop.js,domain=herokuapp.com
@@ -65474,6 +65477,7 @@ zznews.cn##.ad:not([style])
 ||static-ss.xvideos-cdn.com/*/js/skins/min/default.pp.static.js
 ||static-ssp.yidianzixun.com^
 ||static-tracking.klaviyo.com^
+||static.*.com/content/js/abdbundle.*.js$domain=lightnovelpub.com|webnovelpub.com
 ||static.accessban.com/advertisement/$domain=tgju.org
 ||static.adsafeprotected.com/vans-adapter-google-ima.js$script,redirect=noop.js,domain=motorsport.tv,important
 ||static.asia^
@@ -65489,7 +65493,6 @@ zznews.cn##.ad:not([style])
 ||static.gridsumdissector.com^
 ||static.ichehome.com^
 ||static.iqiyi.com/js/common/mars_v.js$script
-||static.lightnovelpub.com/content/js/abdbundle.*.js
 ||static.mediafire.com/images/backgrounds/download/affiliate_fullpage/
 ||static.meijiacun.com^
 ||static.my.ge/*/js/banners.js
@@ -72710,6 +72713,7 @@ zznews.cn##.ad:not([style])
 ||zhetoutiao.top^
 ||zhev.com.cn/file/weixin/
 ||zhflodsix.cn^
+||zhhbqg.com/ww/
 ||zhibo8.cc/js/adv-slide-toggle.js
 ||zhiboiot.cn^
 ||zhide-edu.cn^
