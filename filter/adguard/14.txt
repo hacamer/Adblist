@@ -1,8 +1,8 @@
-! Checksum: fkisJnANLe3P0LFGgG+m9g
+! Checksum: HDVTM8rwJ4ztMfN98aYbCw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.25.22
-! TimeUpdated: 2022-07-05T15:30:38+00:00
+! Version: 2.1.25.23
+! TimeUpdated: 2022-07-05T16:30:53+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -5531,6 +5531,7 @@ cc-fan.tv,cn-fan.tv,fox-fan.tv,nf-fan.tv#$#.pub_300x250.pub_300x250m.pub_728x90.
 !######### General element hiding rules ################
 !#######################################################
 !
+###mfn-gdpr
 ##.Cms_CookieConsent
 ##.shopui-eu-cookie-bar
 ##.footer-lgpd
@@ -8202,7 +8203,6 @@ veed.io##div[fs-cc="banner"]
 floristics.info###redim-cookiehint-bottom
 whitebit.com###__layout > div > main + div.ui-kit.is-dark
 uber.com##div[data-baseweb="toaster"]
-prosta-spolka.pl###mfn-gdpr
 finishline.com###PrivacyPolicyBanner
 ||dimedic.eu/*/cookies/cookies
 exidegroup.com###exide-gtm-scripts-modal
@@ -21976,6 +21976,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+fitsmallbusiness.com##.fit-omv2-campaign-popup
 smallseotools.com###FITS_con
 fontanka.ru##div[data-sticky-id="bottomStickyElement"]
 erli.pl#%#(function(){try{if("undefined"!=typeof localStorage){const b=JSON.stringify({lastSeenAt:new Date,viewsCounter:1});localStorage.setItem("ERLI_PRO_GUEST_MODAL_DATA",b)}}catch(a){}})();
