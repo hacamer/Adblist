@@ -1,8 +1,8 @@
-! Checksum: E2Gkj0tg5BgAe5fEwnJvrQ
+! Checksum: GouHoUrTom2kZB3X+Et1zA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.25.40
-! TimeUpdated: 2022-07-06T17:02:23+00:00
+! Version: 2.1.25.41
+! TimeUpdated: 2022-07-06T18:30:36+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7553,6 +7553,8 @@ voici.fr,the-sun.com,thesun.ie,capital.fr,ladbible.com,hitc.com,dualshockers.com
 !
 !
 !
+livoo.fr#$##tarteaucitronAlertBig { display: none!important; }
+livoo.fr#$#html { overflow: auto!important; }
 handelsbanken.co.uk##.shb-cookie-consent__wrapper
 danskebank.co.uk#$#body { overflow: auto !important; }
 danskebank.co.uk#$#.cookie-consent-banner-modal { display: none !important; }
@@ -17065,6 +17067,9 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/123474
+livoo.fr#@##tarteaucitronRoot
+livoo.fr#@##tarteaucitronAlertBig
 ! https://github.com/AdguardTeam/AdguardFilters/issues/123280
 kern-haus.de#@##tarteaucitronRoot
 kern-haus.de#@##tarteaucitronAlertBig
@@ -19862,6 +19867,8 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+b.hatena.ne.jp##.top-app-banner
+b.hatena.ne.jp##.comment-store
 lylcrc.cn###bdnovel
 blutspendedienst.com#%#//scriptlet("set-cookie-reload", "smartbanner_exited", "1")
 buy.line.me##.app-appPromotionBanner
