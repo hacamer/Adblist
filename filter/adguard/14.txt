@@ -1,8 +1,8 @@
-! Checksum: iUy1TYpPmEhjFi3flmEQIA
+! Checksum: E2Gkj0tg5BgAe5fEwnJvrQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.25.39
-! TimeUpdated: 2022-07-06T16:30:40+00:00
+! Version: 2.1.25.40
+! TimeUpdated: 2022-07-06T17:02:23+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7553,6 +7553,10 @@ voici.fr,the-sun.com,thesun.ie,capital.fr,ladbible.com,hitc.com,dualshockers.com
 !
 !
 !
+handelsbanken.co.uk##.shb-cookie-consent__wrapper
+danskebank.co.uk#$#body { overflow: auto !important; }
+danskebank.co.uk#$#.cookie-consent-banner-modal { display: none !important; }
+atombank.co.uk##div[class^="cookie-banner__"]
 bet365.com##.CookieConsent__Wrapper
 invoiceocean.rs,invoiceocean.hr,efakturierung.de,bitfaktura.cz,invoiceocean.com,bitfactura.com##.bottom-right.jGrowl
 ||suncorp.com.au/content/suncorp/website/*/home/banking/notifications/data-policy/*/notification.notify.json
