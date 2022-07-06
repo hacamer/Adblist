@@ -1,8 +1,8 @@
-! Checksum: yqmsyMDshhCmC319BlNa7A
+! Checksum: uV3XfQkip+IuJdPKASNb7Q
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.25.29
-! TimeUpdated: 2022-07-06T08:30:41+00:00
+! Version: 2.1.25.31
+! TimeUpdated: 2022-07-06T09:30:37+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7551,6 +7551,7 @@ voici.fr,the-sun.com,thesun.ie,capital.fr,ladbible.com,hitc.com,dualshockers.com
 !
 !
 !
+oktavatula.com###nca-cookiesaccept-line
 rankmath.com###mts_gdpr_popup
 pvs-studio.com##.personal-data-confirm
 stewes.de#%#//scriptlet('set-constant', 'HB.CookieSettings.init', 'noopFunc')
@@ -15863,6 +15864,7 @@ roesle.com,moses-verlag.de,radonline.de,arctic.de#$#.acris-cookie-consent ~ .mod
 ! Extended CSS rules
 !
 !
+wierzynek.pl#?#.configMessages:has(a[href^="polityka-prywatnosci"])
 telnyx.com#?#footer + div[class^="styled__Container-"]:has(> div[class^="styled__CookieText-"])
 cleantalk.org###uses_c
 fantrax.com#?#.toast.ng-trigger-enterLeave:has(> article[role="alert"] > p:contains(We use cookies to improve your experience))
@@ -27308,7 +27310,7 @@ zlavomat.sk#@##credential_picker_container
 !
 ! Disabling of push-notifications
 wallstreet-online.de,dni.ru,polit.info#%#if (window.PushManager) { window.PushManager.prototype.subscribe = function () { return { then: function (func) { } }; }; }
-macwelt.de,pcwelt.de#%#//scriptlet("set-constant", "firebase.messaging", "noopFunc")
+life.ru,macwelt.de,pcwelt.de#%#//scriptlet("set-constant", "firebase.messaging", "noopFunc")
 !
 ! To be discussed
 ! #%#//scriptlet("set-constant", "Notification.permission", "denied")
@@ -30628,6 +30630,8 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+mvdmedia.ru##.sharing + div[style^="margin-bottom:"]
+life.ru##div[class^="styles_footerBlock__"] > div[class^="styles_root__"]
 zakaz.atbmarket.com##.netpeak-popup-conteiner
 diejugendherbergen.de##.newsletter-popup22
 animeworld.tv#?##sidebar > div.widget.simple-film-list:has(> div.widget-body > div.social-aw)
