@@ -1,8 +1,8 @@
-! Checksum: 7xHBwuR7dHRxl0YV6Ucoww
+! Checksum: Pn2t+lhASyyw9S1U0D9pFw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.25.34
-! TimeUpdated: 2022-07-06T12:30:36+00:00
+! Version: 2.1.25.36
+! TimeUpdated: 2022-07-06T13:30:35+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7551,6 +7551,9 @@ voici.fr,the-sun.com,thesun.ie,capital.fr,ladbible.com,hitc.com,dualshockers.com
 !
 !
 !
+||say-move.org/style/js/gdpr/
+kunststoffweb.de##.featherlight
+||kunststoffweb.de/*/consent-management/*/init_consent.js
 ousuca.com#$#html { overflow: auto !important; }
 ousuca.com#$#body { overflow: auto !important; }
 ousuca.com##body > div[data-bg][style*="z-index: 99999; pointer-events: all; display: block; filter: none;"]
@@ -15451,9 +15454,9 @@ daad.de#$#.cookie-consent-open { overflow: auto !important; }
 trade.telia.se#$##cookie-modal-wrapper { display: none !important; }
 trade.telia.se#$#body { overflow: auto !important; }
 !
-moebelplus.de,itsco.de,noor.eu#$#div[data-feature="Web.Core.Feature.PrivacyCategory.Dialog"] { display: none !important; }
-moebelplus.de,itsco.de,noor.eu#$#div[data-feature="Web.Core.Feature.PrivacyCategory.Dialog"] ~ div.modal-backdrop { display: none !important; }
-moebelplus.de,itsco.de,noor.eu#$#body { overflow: auto !important; }
+prolighting.de,moebelplus.de,itsco.de,noor.eu#$#div[data-feature="Web.Core.Feature.PrivacyCategory.Dialog"] { display: none !important; }
+prolighting.de,moebelplus.de,itsco.de,noor.eu#$#div[data-feature="Web.Core.Feature.PrivacyCategory.Dialog"] ~ div.modal-backdrop { display: none !important; }
+prolighting.de,moebelplus.de,itsco.de,noor.eu#$#body { overflow: auto !important; }
 !
 utopia.de,rtl.de#$#div[id^="sp_message_"] { display: none !important; }
 utopia.de,rtl.de#$#html.sp-message-open { overflow: visible !important; position: static !important; margin-top: 0!important; }
@@ -30642,6 +30645,9 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+theatlantic.com##div[class^="LostInventoryMessage_root__"]
+theatlantic.com##div[class^="LostInventoryMessage_clsAvoider__"]
+theatlantic.com###site > div#leaflets
 inews.zoombangla.com##.code-block + div[class]:has(> blockquote > strong > a[href^="https://news.google.com/publications/"])
 mvdmedia.ru##.sharing + div[style^="margin-bottom:"]
 life.ru##div[class^="styles_footerBlock__"] > div[class^="styles_root__"]
