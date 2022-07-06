@@ -1,8 +1,8 @@
-! Checksum: 0AdYidVGaeOTUniR7npOaw
+! Checksum: iUy1TYpPmEhjFi3flmEQIA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.25.38
-! TimeUpdated: 2022-07-06T15:30:38+00:00
+! Version: 2.1.25.39
+! TimeUpdated: 2022-07-06T16:30:40+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7553,14 +7553,16 @@ voici.fr,the-sun.com,thesun.ie,capital.fr,ladbible.com,hitc.com,dualshockers.com
 !
 !
 !
+bet365.com##.CookieConsent__Wrapper
+invoiceocean.rs,invoiceocean.hr,efakturierung.de,bitfaktura.cz,invoiceocean.com,bitfactura.com##.bottom-right.jGrowl
 ||suncorp.com.au/content/suncorp/website/*/home/banking/notifications/data-policy/*/notification.notify.json
 ||say-move.org/style/js/gdpr/
 kunststoffweb.de##.featherlight
 ||kunststoffweb.de/*/consent-management/*/init_consent.js
-ousuca.com#$#html { overflow: auto !important; }
-ousuca.com#$#body { overflow: auto !important; }
-ousuca.com##body > div[data-bg][style*="z-index: 99999; pointer-events: all; display: block; filter: none;"]
-ousuca.com#$#body > * { filter: unset !important; }
+gosch.de,ousuca.com#$#html { overflow: auto !important; }
+gosch.de,ousuca.com#$#body { overflow: auto !important; }
+gosch.de,ousuca.com#$#body > div[data-bg][style*="z-index: 99999; pointer-events: all; display: block; filter: none;"] { display: none !important; }
+gosch.de,ousuca.com#$#body > * { filter: unset !important; }
 podchaser.com##._17x8w7g
 podchaser.com#%#//scriptlet('set-cookie', 'CookieAlertBoxClosed', '1')
 oktavatula.com###nca-cookiesaccept-line
@@ -15016,7 +15018,7 @@ bidolubaski.com,hurriyetemlak.com,hotnewhiphop.com,vonovia.de,whitehatsec.com,yu
 momox.de##.cookie-teaser
 sarsilmaz.com,karakartal.com,sporx.com,superfb.com,webaslan.com##.cookie-text
 delfi.lv###cookiePolicyBlock
-breuninger.com##.cookieAcceptance
+standox.com,breuninger.com##.cookieAcceptance
 repertuarim.com##.cookieCheck
 emmenetonchien.com##.cookieCnilCustom
 thenextweb.com##.cookieConsent
@@ -27373,6 +27375,7 @@ abendzeitung-muenchen.de###webpush-app
 .site/?pus=$script,third-party
 !
 ###kp-subscribe-window
+||bro1.biz^
 ||clicktimes.bid^
 ||dolohatum.com^
 ||news-yakaja.cc^$third-party
@@ -30649,6 +30652,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+schuhplus.com###popu-12384
 theatlantic.com##div[class^="LostInventoryMessage_root__"]
 theatlantic.com##div[class^="LostInventoryMessage_clsAvoider__"]
 theatlantic.com###site > div#leaflets
@@ -30682,7 +30686,7 @@ megatop.by##.v-application--wrap > div.action.d-flex
 mignews.com##.button-telegram
 skay.ua##.newsletter_block_section
 levi.com##div[data-testid="auth-modal-controller"]
-space.com,windowscentral.com,gamesradar.com,laptopmag.com,livescience.com,musicradar.com,pcgamer.com,tomsguide.com,toptenreviews.com,androidcentral.com,tomshardware.com,techradar.com###slice-container-exitIntent
+whathifi.com,space.com,windowscentral.com,gamesradar.com,laptopmag.com,livescience.com,musicradar.com,pcgamer.com,tomsguide.com,toptenreviews.com,androidcentral.com,tomshardware.com,techradar.com###slice-container-exitIntent
 lamartina.com#?#.MuiDialog-root[style^="position:"][role="presentation"]:has(> div.MuiDialog-container span + div[class] > label[for^="newsletter_"])
 lamartina.com#$#body[style*="overflow:"] { overflow: auto !important; padding-right: 0 !important; }
 discovermagazine.com#$#body { overflow: auto !important; }
@@ -34431,7 +34435,7 @@ kaldata.com##.tdn_block_newsletter_subscribe
 t-online.de##.teaser-cr-subscribe
 brigitte.de##.teaserNewsletter
 wunderweib.de##.teaser_html
-regnum.ru##.telegram-banner
+charter97.org,regnum.ru##.telegram-banner
 bitgid.com##.telegram-long
 yurasumy.livejournal.com##.telegram-userpromo
 gazeta.ru##.telegram_info
