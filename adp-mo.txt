@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: nJ1bJIHmdxU6XZ/NSqVh0g
+! Checksum: s1ME+mVsRWjIBpUOrSLgXg
 ! Title: My AdFilters（for Mobile）
 ! Expires: 12 hours
-! Version: 202207071529
-! Last Modified: 2022年07月07日 15:29
+! Version: 202207071640
+! Last Modified: 2022年07月07日 16:40
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 67929
+! Total count: 67935
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -4913,6 +4913,7 @@
 ##.post-ad-type
 ##.post-ads
 ##.post-advertisement
+##.post-sidebar-ad
 ##.postAd
 ##.post__article-top-ad-wrapper
 ##.post__inarticle-ad-template
@@ -22077,7 +22078,8 @@ detik.com#@#.banner_reg
 deusasporno.com.br,pornos.blog.br,sambaporno2.com,sexoamador.blog.br,videospornozinhos.com,videosexoquente.com,xvideosf.com##+js(addEventListener-defuser, click, popunder)
 developers.google.com#@##google-ads
 dexerto.com##.aspect-video
-dexerto.com##div[id^="dex-ad-"]
+dexerto.com##.bg-neutral-grey-4
+dexerto.com##.py-4
 dexerto.com##div[id^="jwplayer_"]
 dextools.io##app-banner
 dextools.io##app-mini-banner
@@ -24937,9 +24939,11 @@ imgtaxi.com#$##image_details { margin-top: 30px !important; }
 imgtaxi.com#?#.sidebar > div:has( > iframe[src^="frame.php?"])
 imgtaxi.com#?#.sidebar > h3:has( > a:contains(Recommended))
 imgtorrnt.in##+js(abort-on-property-write, pndrCodeScript)
+imgur.com##+js(nano-setTimeout-booster, /function\(\)\{try\{|adBegan/, 5000, 0.02)
 imgur.com##+js(set-constant, ADBLOCKED, false)
 imgur.com##.PrimisPlayerContainer
 imgur.com##.Top300x600
+imgur.com#$#.RewardVideo { display: none !important; }
 imgur.com,pushsquare.com,songlyrics.com##.masthead
 imgweika.buzz,imguiwe.buzz,imgklx.xyz,imgkaka.xyz,imgyear.icu,federleqa.icu,nemenlake.icu,rtkenale.icu,cloudgallery.net,imgair.net,imgfrost.net,imgair.net###pbe
 imgwia.buzz,imgkorle.buzz,imgkoc.buzz,imgwer.buzz,imgqte.buzz,imgbbd.buzz,imgxvd.buzz,imglkju.buzz,imglqw.buzz,imgyng.buzz,imgpekele.buzz,imgwex.buzz,imgkuiw.xyz,imgveni.xyz,imglina.xyz,imgtrw.buzz,imgjut.buzz,imgweika.buzz,imguiwe.buzz,imgkane.buzz,imgkoka.buzz,imgkia.buzz,imgalor.xyz,imgklx.xyz,imgkaka.xyz,imgyear.icu,federleqa.icu,nemenlake.icu,opalekr.icu,pixsera.net,rtkenale.icu,cloudgallery.net,imgair.net,imgfrost.net,imgair.net##+js(addEventListener-defuser, click, checkTarget)
@@ -25082,6 +25086,7 @@ interia.pl,pomponik.pl##+js(abort-current-script, decodeURIComponent, Inpl.Abd.o
 interpals.net##div[style^="float: right;"][style*="min-height: 600px;"]
 interracial.com##+js(window.open-defuser, 1, about:blank)
 interviewbit.com##div[data-el="ibpp-ribbon"]
+intibia.com##div[class^="style__AdUnitSlot-"]
 intoday.in#@#.ad_banner
 intoday.in#@#.right-ad
 investing.com###findABroker
@@ -27798,6 +27803,7 @@ pervclips.com##.remove-spots
 pervclips.com##.thumb_spots
 pervertedmilfs.com##.arielle
 pesstatsdatabase.com##.ad-tag + center > a > img
+petapixel.com##.video-aspect-wrapper
 petitchef.*##.akcelo-placeholder
 petrochina.com.cn#@#.ggbox
 petshop.ru#@#.advert-block
