@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: eEDKA9HONeKhuetzqqw+KQ
+! Checksum: 6n3di+rIkem2qurg9ErDfw
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202207072105
-! Last Modified: 2022年07月07日 21:05
+! Version: 202207072201
+! Last Modified: 2022年07月07日 22:01
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 73137
+! Total count: 73139
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -15408,6 +15408,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 913e.com###appnote
 913e.com###footad_913e
 91duba.com,iduba.com###topBanner
+91hs.top,hsex.men##.col-xs-12 > a[target="_blank"]
 91p20.space
 91porn.com##+js(set-constant, player.preroll, noopFunc)
 91porny.com,jiuse205.com,jiuse702.com##.container-fluid.p-0[class*="mb-"]
@@ -20948,7 +20949,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||static-redesign.cnbcfm.com/dist/components-PcmModule-Taboola-*.js$domain=cnbc.com
 @@||static-videostar2.4vod.tv/assets/js/adcheck.js$script,domain=videostar.pl
 @@||static-videostar2.4vod.tv/assets/js/adcheck.min.js$script,domain=videostar.pl
-@@||static.*.com/content/js/pubfig.*.js$domain=lightnovelpub.com|webnovelpub.com
+@@||static.*.com/content/js/pubfig.*.js$domain=lightnovelpub.com|webnovelpub.com|lightnovelspot.com
 @@||static.adf.ly/static/image/
 @@||static.adf.ly/static/image/ad*.png$image,third-party
 @@||static.adman.gr^$domain=naftemporiki.gr
@@ -28025,7 +28026,6 @@ hqporner.com##.ad_video
 hqporner.com##.black_friday
 hqq.tv##a[title="Free money easy"]
 hsex.men###container > div:not([class])
-hsex.men##.col-xs-12 > a[target="_blank"]
 hsi.com#@#.hs-cta-wrapper
 htmleaf.com##.htmleaf-adv
 htmlsave.com##+js(remove-attr, href, a[id][href^='#PleaseDisableAdblock'])
@@ -29635,6 +29635,8 @@ liga.net#@#div[id^="div-gpt-ad"]
 lightningmaps.org##+js(set-constant, wb_insert, noopFunc)
 lightnovelpub.com##.adsbox
 lightnovelpub.com##.lnadcontainer
+lightnovelspot.com,webnovelpub.com,lightnovelpub.com##+js(no-setTimeout-if, abchecker)
+lightnovelspot.com,webnovelpub.com,lightnovelpub.com##.lnadcontainer
 lightreading.com##a[href^="/lg_redirect.asp?piddl_lgid_docid="]
 lilymanga.com,msn.com##a[href^="https://amzn.to/"]
 limaenvivo.com##IMG[title="close"]
@@ -35929,8 +35931,6 @@ webmd.com##.module-top-picks
 webmd.com##.responsive-sharethrough-wrapper
 webmd.com##.top-picks
 webmd.com##div.ad[id^="ads"]
-webnovelpub.com,lightnovelpub.com##+js(no-setTimeout-if, abchecker)
-webnovelpub.com,lightnovelpub.com##.lnadcontainer
 webofcomics.ru##.reklandvipinfo
 webpornblog.com##+js(abort-current-script, doMyStuff)
 webshort.in##+js(window.open-defuser)
@@ -38093,6 +38093,7 @@ zznews.cn##.ad:not([style])
 ||9136.com^
 ||9191919199.com^
 ||91cy.top^
+||91hs005.xyz^*.gif
 ||91jiedai.cn^
 ||91p20.space/fans/
 ||91rb.net/fc/
@@ -65563,7 +65564,7 @@ zznews.cn##.ad:not([style])
 ||static-ss.xvideos-cdn.com/*/js/skins/min/default.pp.static.js
 ||static-ssp.yidianzixun.com^
 ||static-tracking.klaviyo.com^
-||static.*.com/content/js/abdbundle.*.js$domain=lightnovelpub.com|webnovelpub.com
+||static.*.com/content/js/abdbundle.*.js$domain=lightnovelpub.com|webnovelpub.com|lightnovelspot.com
 ||static.accessban.com/advertisement/$domain=tgju.org
 ||static.adsafeprotected.com/vans-adapter-google-ima.js$script,redirect=noop.js,domain=motorsport.tv,important
 ||static.asia^
@@ -70935,6 +70936,7 @@ zznews.cn##.ad:not([style])
 ||witalfieldt.com^
 ||withcubed.com^$third-party
 ||withinresentful.com^
+||wiuspckmn.bar^
 ||wiz.ghostbed.com^
 ||wizaly.com^$third-party
 ||wizardmarndl.com^
