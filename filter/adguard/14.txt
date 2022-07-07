@@ -1,8 +1,8 @@
-! Checksum: k13fOKE+4weO0jPFoYhfYg
+! Checksum: nk0LGGyXahwdWJ8stBvmtw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.25.46
-! TimeUpdated: 2022-07-07T09:30:40+00:00
+! Version: 2.1.25.47
+! TimeUpdated: 2022-07-07T10:30:48+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7555,6 +7555,7 @@ voici.fr,the-sun.com,thesun.ie,capital.fr,ladbible.com,hitc.com,dualshockers.com
 !
 !
 !
+zabkagroup.com#?#.popup:has(> div.popup-inner div.cookies-footer)
 livoo.fr#$##tarteaucitronAlertBig { display: none!important; }
 livoo.fr#$#html { overflow: auto!important; }
 handelsbanken.co.uk##.shb-cookie-consent__wrapper
@@ -9306,7 +9307,7 @@ techbone.de#$#body { overflow: visible !important; padding-right: 0 !important; 
 mail.ru##.b-header-agreements
 tudumnetflix.com.br##.cookies-auth
 arcserve.com##.pps-privacy-policy-strip
-kartonmodellbau.de,wvv.de##.ccm-root
+maler-vergleich.com,kartonmodellbau.de,wvv.de##.ccm-root
 n-ergie.de##.cookie-compliance-bar
 nuuvem.com##.consent-warning
 aps.org##div[class^="app__cookie-footer"]
@@ -22013,6 +22014,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+||app.getresponse.com/view_webform_*.js$domain=terenyinwestycyjne.info
 ||pb-news.info/wp-content/themes/jnews/assets/*/remodal
 baumarkt.check24.de#$#body[style*="overflow"] { overflow: auto !important; }
 baumarkt.check24.de#$##app-points-campaign-desktop { display: none !important; }

@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: bAGB6itgxhqU2Q84/W+9Zg
+! Checksum: KkyhrWIoGl0Wft1YHiSrhA
 ! Title: My AdFilters（for Mobile）
 ! Expires: 12 hours
-! Version: 202207071740
-! Last Modified: 2022年07月07日 17:40
+! Version: 202207071835
+! Last Modified: 2022年07月07日 18:35
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 67935
+! Total count: 67949
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -22046,6 +22046,10 @@ delfi.lt#@#.revolut-juosta
 delfi.lv##+js(set-constant, Adform, emptyObj)
 delfi.lv##div[class^="city24"]
 delfi.lv##div[data-ad-placement]
+delicious-audio.com##.one-big-ads
+delicious-audio.com#$##cboxOverlay { display: none!important; }
+delicious-audio.com#$##colorbox { display: none!important; }
+delicious-audio.com#$#body[style="overflow: hidden;"] { overflow: visible!important; }
 delicious.com.au,taste.com.au##.prom-header
 deluxemusic.tv#@#.article_ad
 dembed1.com##+js(window.open-defuser, !/download?id=)
@@ -23450,6 +23454,8 @@ freeiptvgen.com##+js(abort-current-script, document.createElement, adblock)
 freemagazines.top##+js(set-constant, adsbygoogle.length, undefined)
 freemail.hu###content-container div[class^="Grid-item-"] > a[target="_blank"]:not([href^="#"])
 freemc.host##+js(no-setInterval-if, adsbygoogle, 1000)
+freemcserver.net##+js(no-fetch-if, google.com/pagead/conversion_async.js)
+freemcserver.net##+js(no-setTimeout-if, localStorage['\x)
 freemovies.tv##.publis-bottom
 freenod32key.com,nod32key.xyz##.mobile-ad
 freeones.com##.js-track-event
@@ -25258,6 +25264,7 @@ jaatmods.gamepure.in##+js(no-fetch-if, pagead2.googlesyndication.com)
 jable.tv##div[class^="root-"]
 jacquieetmicheltv.net##+js(set-constant, is_adblocked, false)
 jacquieetmicheltv.net##+js(set-constant, showPopunder, noopFunc)
+jagonews24.com##.inner_ad_item
 jagran.com###aniview
 jagranjosh.com###target-11
 jagranjosh.com##.Adplace
@@ -28376,6 +28383,7 @@ prothomalo.com##div[class*="_ad_"] > a
 prothomalo.com##div[class*="_ads_"]
 prothomalo.com##div[class^="blank-m__adslot-"]
 prothomalo.com##div[class^="breakingNewsSlider-m__ad-bottom"]
+prothomalo.com##iframe[src^="https://service.prothomalo.com/campaigns/"]
 protopage.com##+js(set-constant, displayAds, false)
 protopage.com#?#body > div[style^="position: absolute"]:has(.adsbygoogle)
 protopage.com#?#body > div[style^="position: absolute"]:has(> div[style*="/web/images/12x"])
@@ -30045,6 +30053,8 @@ temporary-phone-number.com##div[class^="adsense-"]
 temporarymail.com##+js(set-constant, adsRunningNew, noopFunc)
 tenforums.com##.posts > li.postcontainer.chill[id^="yui-gen"]
 tenforums.com##div[data-fuse]
+terenyinwestycyjne.info##.advert-block-wide
+terenyinwestycyjne.info#?#.news-list > .news-item:has(> .advert-block-wide)
 terraria.wiki.gg##[href^="https://store.steampowered.com/app/"]
 terrarium.com.pl##+js(set-constant, canRunAds, true)
 tesla-club.eu#@#.reklama
@@ -30978,6 +30988,7 @@ vcomic.net##+js(set-constant, canRunAds, true)
 vcrypt.net##+js(remove-attr, onclick, .btncontinue)
 vdianying.cc##div[style^="display:block !important;"]
 vdisk.weibo.com###ads_layer
+vebo1.net##div[class^="col-"] > p[class^="mb-"] > a[target="_blank"]
 vedantu.com##.banner-text
 venge.io##+js(set-constant, SDKLoaded, true)
 ventax.net##+js(set-constant, PopUP, noopFunc)
@@ -31283,6 +31294,7 @@ wbiao.cn##.wb-panel
 wbur.org##.section--uw
 wbur.org##.uw--rec
 wccftech.com##.ad a[href][rel="sponsored"]
+wccftech.com##.bg-horizontal
 wccftech.com##.bg-square
 wccftech.com##.bg-vertical
 wccftech.com##.main-background-wrap
@@ -46320,6 +46332,8 @@ zznews.cn##.ad:not([style])
 ||hit-counters.net^$third-party
 ||hit-counts.com^$third-party
 ||hit-parade.com^$third-party
+||hit.gemius.pl/gplayer.js$script,redirect=noop.js,domain=vod.tvp.pl|cyfrowa.tvp.pl
+||hit.gemius.pl/gstream.js$script,redirect=noop.js,domain=vod.tvp.pl|cyfrowa.tvp.pl
 ||hit.gemius.pl/xgemius.js$script,redirect=noop.js,domain=wp.pl|money.pl|o2.pl|pudelek.pl|komorkomania.pl|gadzetomania.pl|fotoblogia.pl|autokult.pl|abczdrowie.pl|parenting.pl|videostar.pl|autocentrum.pl
 ||hit.interia.pl^
 ||hit.meta.ua^
