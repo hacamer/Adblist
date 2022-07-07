@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: 79l9GNjmMh+WzHZrEGexSA
+! Checksum: PvKAfwDtfbDCRnH6KDBqAQ
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202207071337
-! Last Modified: 2022年07月07日 13:37
+! Version: 202207071440
+! Last Modified: 2022年07月07日 14:40
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 73090
+! Total count: 73096
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -15442,6 +15442,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 9gag.com##.salt-container
 9gag.com##[style^="width: 640px; min-height: 360px;"]
 9gag.com#?#.list-stream > article:has(p > a[target="_blank"]:contains(Promoted))
+9gag.com#?#.list-stream > article:not([id]):has(> header > .post-header > .ui-post-creator > .promoted)
 9gag.com#?#.list-stream > article:not([id]):has(a[href="https://9gag.com/advertise"])
 9gag.com#?#div[id^="sidebar-stream-"] > h4:contains(Advertisement)
 9gag.com,hotstar.com,sport360.fit,talksport.com,trademe.co.nz##.billboard
@@ -24132,6 +24133,7 @@ cdkeys.com#$#body .wrapper { background: none!important; }
 cdkm.com##+js(set-constant, google_jobrunner, noopFunc)
 cdn.ampproject.org,linguee.com,thesuburban.com###banner_top
 cdn.javpornsite.com##.inplayer-wrapper
+cdn.sosrom.cn
 cdn.tiv.pw###Advertisement1
 cdn.tiv.pw##.drt
 cdn.tiv.pw##.floater
@@ -28568,7 +28570,7 @@ investing.com##.dfpVideo
 investing.com##.generalOverlay
 investing.com##.largeBannerCloser
 investing.com##.midHeader
-investing.com##div[class^="AdBillboard_"]
+investing.com##div[class*="AdBillboard_"]
 investing.com##div[class^="outbrain_outbrain-wrapper_"]
 investing.com#?#.wrapper div > div.OUTBRAIN:upward(1)
 investing.com,esportsearnings.com##div[class^="ad_"]
@@ -30910,6 +30912,10 @@ nashfm100.com##div[onclick*="https://deucepub.com/"]
 nasyun.com##img[width="275"]
 nasyun.com##img[width="970"]
 natemat.pl##div[class^="adslot"]
+national-geographic.pl##.advertising-box-wrapper
+national-geographic.pl##.menu-container ~ p[style^="font-size: 11px; margin-bottom: 0; text-align: center;"]
+national-geographic.pl##div[id^="ecomm-placement-"]
+national-geographic.pl#?#.content-content > h2.ng-header:contains(/^(SKLEP KULTOWY|To również cię zainteresuje)$/)
 nationalgeographic.com##.FrameBackgroundFull--grey
 nationalheraldindia.com##.header-m__ad-top__36Hpg
 nationalheraldindia.com##.styles-m__dfp__3T0-C
@@ -67685,7 +67691,7 @@ zznews.cn##.ad:not([style])
 ||toutiao.com^*/user_log/
 ||toutiao.haotui.com/data/js/0.js
 ||toutiao.xn--fiqs8s^
-||toutiaoimg.com/origin/$image,domain=mgtv1.tv|mgtv.cc|agemys.cc|acgndmku.com|subaibaiys.com
+||toutiaoimg.com/origin/$image,domain=mgtv1.tv|agemys.cc|acgndmku.com|subaibaiys.com
 ||toutiaoimg.com^$domain=1024pz.com
 ||toutiaoyule.com/n/dspshow.
 ||tovery.net^$third-party
