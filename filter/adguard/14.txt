@@ -1,8 +1,8 @@
-! Checksum: nk0LGGyXahwdWJ8stBvmtw
+! Checksum: SgyZzrRjLDSpb3FcSgSEFw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.25.47
-! TimeUpdated: 2022-07-07T10:30:48+00:00
+! Version: 2.1.25.48
+! TimeUpdated: 2022-07-07T11:30:44+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -3326,6 +3326,7 @@ hgtv.com#@#.showads
 !
 !
 !
+penize.cz#%#//scriptlet('prevent-setTimeout', 'adblock')
 intibia.com#%#//scriptlet('prevent-fetch', 'www3.doubleclick.net')
 clicknupload.to#@#.adsBox
 newscon.net##.adblock-warning
@@ -4546,7 +4547,7 @@ thedigitalfix.com#$#body { margin-top: 0!important; }
 thedigitalfix.com#%#Object.defineProperty(window, 'adCheck', { value: 0 });
 anison.fm##.rightb_in
 desu.me##.xyz_wrapper_inner
-smartcockpit.com###adblocker
+penize.cz,smartcockpit.com###adblocker
 @@||im.haberturk.com/assets/js/adblock.js
 @@||sts.seelive.me/js/cnads.js
 ||media.news.com.au/cs/nca/latest/public/js/p/*/promo-display^
