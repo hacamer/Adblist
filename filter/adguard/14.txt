@@ -1,8 +1,8 @@
-! Checksum: SRYF2p2vwEs8tt8tRkm/iw
+! Checksum: enI8w8Ao3vO50osBvYc8Yw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.25.62
-! TimeUpdated: 2022-07-08T13:30:50+00:00
+! Version: 2.1.25.63
+! TimeUpdated: 2022-07-08T14:30:40+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -27406,6 +27406,7 @@ abendzeitung-muenchen.de###webpush-app
 .site/?pus=$script,third-party
 !
 ###kp-subscribe-window
+||mailer.i.bizml.ru^
 ||bro1.biz^
 ||clicktimes.bid^
 ||dolohatum.com^
@@ -29718,6 +29719,8 @@ experts-exchange.com##.ctaSolutionStickyWrapper
 theguardian.com##.contributions__adblock
 ||contributions.guardianapis.com^
 !
+androidacy.com###block-39
+thebell.io##.arena-banner
 spectator.co.uk##div[amp-access="p.showBanner"]
 spectator.co.uk##.MeterBanner-module__banner
 spectator.co.uk#$#div[class^="HouseSlotSubscriptionBanner-"] { display: none !important; margin-bottom: 6rem !important; }
@@ -30688,6 +30691,10 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~theoatmeal.com,~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+eatthis.com##.newsletter-window
+eatthis.com##.widget-postup-standalone-form
+naked-science.ru##.single_subscribe
+chayka.lv##.ch-telegram-banner-container
 delicious-audio.com#$##container div.wow-modal-overlay { display: none!important; }
 delicious-audio.com#$#body[style="overflow: hidden;"] { overflow: visible!important; }
 sfchronicle.com#?#.hst-freeform:has(> div.BC_body > div.BC_wrapper > p.BC_disclaimer)
