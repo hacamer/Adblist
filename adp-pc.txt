@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: l/4HcQtoPi1F2r+ZSQeF8Q
+! Checksum: xth33W2xe8/I6iSr75klKQ
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202207080731
-! Last Modified: 2022年07月08日 07:31
+! Version: 202207081040
+! Last Modified: 2022年07月08日 10:40
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 73169
+! Total count: 73175
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -6029,7 +6029,6 @@
 ##DFP-AD
 ##FBS-AD
 ##LEADERBOARD-AD
-##SCRIPT + A[target="_bank"] > IMG[src*=".c-ctrip.com"][style="width:100%;height:auto;"]
 ##[class*="__adspot-title-container"]
 ##[class*="__adv-block"]
 ##[class][data-sitename][data-header-version] > div[id^="detection-block"]
@@ -6142,6 +6141,7 @@
 ##a[href*=".saeilkorea.com/"]
 ##a[href*=".sky1818.net"]
 ##a[href*=".ssmh"][href*="?u="]
+##a[href*=".supernfp.com/"]
 ##a[href*=".tea123.me"]
 ##a[href*=".thejierou.net"]
 ##a[href*=".tholikiranam.com/"]
@@ -6553,6 +6553,7 @@
 ##script + #coupletBox
 ##script + #rbbox
 ##script + a[href^="https://l.hyenadata.com/"]
+##script + a[target="_bank"] > img[src*=".c-ctrip.com"][style="width:100%;height:auto;"]
 ##script[src="/static/base.js"] + #couplet
 ##script[src="/template/kuhei2/skin/base.js"] + #couplet
 ##span[id^="ezoic-pub-ad-placeholder-"]
@@ -9951,7 +9952,6 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /csp_log?
 /csp_report.gne?
 /css/78dfj/*.js
-/css/ad-$domain=~ad-shield.io
 /css/ad.
 /css/ads-
 /css/ads.
@@ -12204,7 +12204,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /pageview?user_guid=
 /pageviews-counter-
 /pageviews.gif?
-/pageviews/*$domain=~mediawiki.org|~pageviews.wmcloud.org|~tools.wmflabs.org|~wikimedia.org|~wikipedia.org
+/pageviews/*$domain=~mediawiki.org|~pageviews.wmcloud.org|~quiz.mkpo.li|~tools.wmflabs.org|~wikimedia.org|~wikipedia.org
 /pageviews?token=
 /pageviews_counter.
 /parsely-events.
@@ -12658,7 +12658,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /radio-analytics.htm
 /radium-one.js
 /rainbow/master-js
-/rainbow/track
+/rainbow/track|
 /randomad.
 /rass7.$script,~third-party
 /rass7.*.js^$script,domain=upornia.com|vjav.com
@@ -37938,6 +37938,7 @@ zznews.cn##.ad:not([style])
 ||666653.xyz^
 ||666657.xyz^
 ||666672.xyz^
+||666673.xyz^
 ||6667778882021.site^
 ||6669667.com^
 ||666video.asia^
@@ -43735,6 +43736,7 @@ zznews.cn##.ad:not([style])
 ||cdrvrs.com^
 ||cdsbnrs.com^
 ||cdtbox.rocks^
+||cdweikebaba.xin^
 ||cdxyb.cn^
 ||cdynxqqckkxof.com^
 ||cdyqc.com^
@@ -44126,6 +44128,7 @@ zznews.cn##.ad:not([style])
 ||cleanbrowser.network^
 ||cleanflawlessredir.com^
 ||cleanmediaads.com^
+||clear7.love^
 ||clearadnetwork.com^
 ||clearant.club^
 ||clearbitjs.com^$third-party
@@ -54770,6 +54773,7 @@ zznews.cn##.ad:not([style])
 ||liupan.asia^
 ||liushuaib.xyz^
 ||liuxue86.com/js/ideng/liuxue-show
+||liuzhen.love^
 ||liuzishen.com^
 ||live-partner.com/tags?
 ||live.alljobs.co.il^
@@ -66485,7 +66489,7 @@ zznews.cn##.ad:not([style])
 ||surnamesubqueryaloft.com^
 ||survey.interquest.com^
 ||survey.io/log?
-||surveymonkey.com/collect/
+||surveymonkey.com/collect/$third-party
 ||surveymonkey.com/resp/api/metrics
 ||surveyscout.com^$third-party
 ||surveywall-api.survata.com^$third-party
@@ -68221,6 +68225,7 @@ zznews.cn##.ad:not([style])
 ||track.cafu.com^
 ||track.cedsdigital.it^
 ||track.clubcar.com^
+||track.coherentpath.com^
 ||track.contently.com^
 ||track.cordial.io^
 ||track.custora.com^
@@ -72651,6 +72656,7 @@ zznews.cn##.ad:not([style])
 ||yysvzaodorhv.com^
 ||yytcdn.com/js/common/widget/pcpusher.
 ||yyttc.top^
+||yyttm.top^
 ||yyv.co/Webservices/jsParseLinks.aspx$script,third-party
 ||yyv.co/visitScript/$script,third-party
 ||yywz123.com/file/A*.js
