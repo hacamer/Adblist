@@ -1,8 +1,8 @@
-! Checksum: 4jL2cjqZrwQ/xEInurxVTQ
+! Checksum: WXixtJw2xS+CtXRgHDctwA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.25.64
-! TimeUpdated: 2022-07-08T15:30:42+00:00
+! Version: 2.1.25.65
+! TimeUpdated: 2022-07-08T16:30:35+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7558,6 +7558,7 @@ voici.fr,the-sun.com,thesun.ie,capital.fr,ladbible.com,hitc.com,dualshockers.com
 !
 !
 !
+fibabanka.com.tr##.efilli-layout-fibabanka
 apimages.com##[class^="optanon-show-settings"]
 delio.com.pl##div[class^="fixed bottom-0 left-0 right-0 w-full flex justify-center bg-"]
 guicheweb.com.br###alert_cookie
@@ -19877,6 +19878,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+tumblr.com#?#div[aria-label="Notification"]:has(> div > a[href="/open/app?referrer=mobile_banner"])
 lipscosme.com##.welcome-index__hero
 m.baomoi.com##.bm_Bp
 b.hatena.ne.jp##.top-app-banner
@@ -22022,6 +22024,11 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 !######### Subscription popups add to subscriptions.txt #########
 !
+fibabanka.com.tr##.kiraz-countly-banner--popup
+fibabanka.com.tr##.lity
+tumblr.com#$?##glass-container > div[aria-modal="true"]:has(a[href="/register?source=login_register_center"])  { display: none !important; }
+tumblr.com#$#body { overflow: auto !important; }
+tumblr.com##div[style="background:#7c5cff;color:#ffffff"]
 tf1info.fr##.container__Pip
 webnode.jp##.wnd-free-stripe
 mandahakko.com##.banner_flt
@@ -36556,6 +36563,7 @@ lezhinus.com,lezhin.com###viewer-coach
 qanda.ai##div[class^="Picture__Protector-"]
 codedosa.com###wpcp-error-message
 !--- CSS ---
+fibabanka.com.tr#$#html { margin-top: 0px !important; }
 on.od.ua#$#.footer_wrapper { padding-bottom: 0px !important; }
 olympics.com#$#.b2p-main { margin-top: 0 !important; }
 iqihang.com#$#.el-popup-parent--hidden { overflow: auto !important; }
