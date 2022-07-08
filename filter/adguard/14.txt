@@ -1,8 +1,8 @@
-! Checksum: In2HOOCHBrnoaEKDbzXe0Q
+! Checksum: Hmg+sR+It0lPyfNE5cGT8g
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.25.66
-! TimeUpdated: 2022-07-08T17:30:37+00:00
+! Version: 2.1.25.67
+! TimeUpdated: 2022-07-08T20:30:35+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2809,7 +2809,6 @@ hdmulti.net##.social-counters
 tonkosti.ru##.social-friends
 thefreethoughtproject.com##.social-icons-widget
 sportarena.com##.social-like
-tass.ru##.social-promo
 tomshardware.co.uk,tomshardware.com##.social-promote-box
 kinopoisk.ru##.social-teasers
 filmix.ac,filmix.tech,filmix.zone##.social-wrap
@@ -19880,6 +19879,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+myfin.by##.own-services-promo
 tumblr.com#?#div[aria-label="Notification"]:has(> div > a[href="/open/app?referrer=mobile_banner"])
 lipscosme.com##.welcome-index__hero
 m.baomoi.com##.bm_Bp
@@ -26066,7 +26066,6 @@ top10travel.online##.float-posts-nav
 desigual.com##.t005-overlay
 desigual.com##.t005-lightbox
 ecoreporter.de,reischmann.biz,bergfreunde.de,campdavid-soccx.de###newsletter-popup
-tass.ru##div[ng-class*="popupOpened"]
 answear.ua###popupNewsletterWrap
 ||courier-js.dallasnews.com/courier-client.js
 gruenderszene.de##.container > #rotation-box
@@ -30701,6 +30700,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~theoatmeal.com,~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+myfin.by##.article__content > div[data-ga-experement="short-infinity-news"] > h4[style="text-align: center;"]
 eatthis.com##.newsletter-window
 eatthis.com##.widget-postup-standalone-form
 naked-science.ru##.single_subscribe
@@ -33107,7 +33107,7 @@ kocpc.com.tw##.feedly-link
 kocpc.com.tw##.feedburn
 kocpc.com.tw###sidebar > div#custom_html-4 > h3
 fark.com##.newsletter_callout
-news-front.info,tass.ru##.social-news-buttons
+news-front.info##.social-news-buttons
 sezamzpavy.cz#?#div[class] > div:has(> iframe[src^="https://share.seznam.cz"])
 sezamzpavy.cz##div[data-dot="newsletter"]
 interestingengineering.com##.main-subscription
