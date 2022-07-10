@@ -1,8 +1,8 @@
-! Checksum: 3YlkkYmnFpBnExTmMnsJZg
+! Checksum: +tYgUnhD7j5fpH6Ls1EQ5A
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.25.76
-! TimeUpdated: 2022-07-10T13:02:16+00:00
+! Version: 2.1.25.77
+! TimeUpdated: 2022-07-10T16:30:35+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -17080,6 +17080,8 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/easylist/easylist/commit/24aa1aecc78d0f583d2c8cf6dd81fa23f98370bd
+@@||usercentrics.eu^$script,xmlhttprequest,domain=paketshop.myhermes.de
 ! https://github.com/easylist/easylist/commit/1cc12d17586081b4dc14a17f3e9b69c45411c36f
 ! https://github.com/uBlockOrigin/uAssets/issues/13963
 @@||cdn.cookielaw.org/scripttemplates/otSDKStub.js$domain=wallapop.com
@@ -20305,7 +20307,7 @@ nazology.net##.post-googlenews
 ||united-arrows.co.jp/sp/js/smartbanner/
 rakuten-card.co.jp,sp.ch.nicovideo.jp,m.economictimes.com,skype.com###appBanner
 sp.ch.nicovideo.jp##.c-fixedAppBanner
-ch.nicovideo.jp,bushikaku.net##.banner
+bushikaku.net##.banner
 ch.nicovideo.jp###chapplink
 ch.nicovideo.jp##.ads_nicovideo
 live.nicovideo.jp##a[class^="___app-download-banner"]
