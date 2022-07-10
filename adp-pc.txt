@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: sBtn+IgDb/yx1lVQLwDVwg
+! Checksum: p7wLjw5ldr+fmKUsttzz4g
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202207100730
-! Last Modified: 2022年07月10日 07:30
+! Version: 202207101043
+! Last Modified: 2022年07月10日 10:43
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 73233
+! Total count: 73261
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -798,6 +798,7 @@
 ###adspot-728x90-pos1
 ###adsquare
 ###adsright
+###adsright_header
 ###adss
 ###adsside
 ###adstop
@@ -1847,6 +1848,8 @@
 ##.Article-advert
 ##.ArticleAd
 ##.ArticleAdWrapper
+##.BOX_Ad
+##.BOX_LeadAd
 ##.BannerAd
 ##.BeOpWidget
 ##.BetterJsPopOverlay
@@ -2040,6 +2043,7 @@
 ##.ad-banner
 ##.ad-banner-box
 ##.ad-banner-container
+##.ad-banner-full-wrapper
 ##.ad-banner-image
 ##.ad-banner-label
 ##.ad-banner-leaderboard
@@ -2131,6 +2135,7 @@
 ##.ad-container__sticky-wrapper
 ##.ad-content
 ##.ad-content-area
+##.ad-content-wrapper
 ##.ad-cover
 ##.ad-ctn
 ##.ad-d
@@ -2426,6 +2431,7 @@
 ##.ad-wrap--leaderboard
 ##.ad-wrapper
 ##.ad-wrapper--flexibleportrait
+##.ad-wrapper-mobile-atf
 ##.ad-wrapper-outer
 ##.ad-wrapper-top
 ##.ad-wrapper__ad-slug
@@ -3649,6 +3655,7 @@
 ##.area_ad
 ##.area_ad03
 ##.area_ad09
+##.arena-ad-col
 ##.artAd
 ##.artad
 ##.article-ad
@@ -6380,6 +6387,7 @@
 ##amp-fx-flying-carpet
 ##app-ad
 ##app-advertisement
+##ark-top-ad
 ##aside[id^="adrotate_widgets-"]
 ##aside[id^="advads_ad_widget-"]
 ##body .has-ad
@@ -13916,6 +13924,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /trackingScriptLoader.
 /trackingService.min.js
 /trackingService/*
+/trackingTools.
 /trackingVtm.
 /tracking_NodeheaderJS.
 /tracking_add_ons.
@@ -15440,7 +15449,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 9hentai.*##+js(addEventListener-defuser, click, flashElement)
 9ht.com,cesafe.com,downcc.com,downyi.com,paopaoche.net,pc0359.cn,pc6.com,xfdown.com###gaosuxiazai
 9ht.com,pc0359.cn,pc6.com##.downnow
-9jaflaver.com,alaskapublic.org,allkeyshop.com,ancient-origins.net,animeidhentai.com,arabtimesonline.com,biblestudytools.com,carmag.co.za,cnx-software.com,coingolive.com,cryptoslate.com,digitallydownloaded.net,dotesports.com,downturk.net,forum.ragezone.com,fresherslive.com,gizmochina.com,glodls.to,guidedhacking.com,hackernoon.com,hlstester.com,indishare.org,linkhub.icu,litecoin-faucet.com,mbauniverse.com,mediaite.com,myreadingmanga.info,nexter.org,owaahh.com,parkablogs.com,pastemytxt.com,premiumtimesng.com,resultuniraj.co.in,retail.org.nz,rtvonline.com,thinknews.com.ng,totemtattoo.com,trancentral.tv,ultshare.com,vumafm.co.za,wccftech.com,yeyeboyz.net,yugatech.com,zmescience.com##[href*="bit.ly/"]
+9jaflaver.com,alaskapublic.org,allkeyshop.com,ancient-origins.net,animeidhentai.com,arabtimesonline.com,biblestudytools.com,carmag.co.za,cnx-software.com,coingolive.com,cryptoslate.com,digitallydownloaded.net,dotesports.com,downturk.net,forum.ragezone.com,fresherslive.com,gizmochina.com,glodls.to,guidedhacking.com,hackernoon.com,hlstester.com,indishare.org,linkhub.icu,litecoin-faucet.com,mbauniverse.com,mediaite.com,myreadingmanga.info,newsfirst.lk,nexter.org,owaahh.com,parkablogs.com,pastemytxt.com,premiumtimesng.com,resultuniraj.co.in,retail.org.nz,rtvonline.com,thinknews.com.ng,totemtattoo.com,trancentral.tv,ultshare.com,vumafm.co.za,wccftech.com,yeyeboyz.net,yugatech.com,zmescience.com##[href*="bit.ly/"]
 9ku.com##.youFix
 9l.pl#@#.boxAds
 9le8.com###program_play_right
@@ -19317,7 +19326,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||mp3fy.com^$generichide
 @@||mp4upload.com/ads.js
 @@||mp4upload.com/embed-*.html$popup
-@@||mparticle.com/js/v2/*/mparticle.js$script,domain=bk.com|cnbc.com
+@@||mparticle.com/js/v2/*/mparticle.js$script,domain=bk.com|cnbc.com|motortrendondemand.com
 @@||mps.nbcuni.com/fetch/ext/load-nbcsports-web.js$domain=nbcsports.com
 @@||mpsnare.iesnare.com/snare.js$script,domain=power.fi
 @@||mpsnare.iesnare.com^$script,domain=citi.com|citibank.com|enmasse.com|equifax.ca|jbhifi.com.au|login.skype.com|usbank.com|vitacost.com|westernunion.com
@@ -19913,6 +19922,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||pasty.link^$generichide
 @@||pataks.pl/core,_assets$script,~third-party
 @@||patreonusercontent.com/*.gif?token-$image,domain=patreon.com
+@@||pay.citylink.pro/stats/services/$~third-party
 @@||payload.cargocollective.com^$image,~third-party
 @@||paypal.com/xoplatform/logger/api/logger$domain=play.leagueofkingdoms.com
 @@||paypalobjects.com/*/pageView.js$script,domain=paypal.com
@@ -22426,6 +22436,7 @@ airhdx.com##+js(abort-on-property-read, _wm)
 airhdx.com##+js(window.open-defuser)
 airmail.news,govevents.com,protipster.com##.display
 airplaydirect.com#@##header_ad
+airplaydirect.com,cultofcalcio.com,dailynews.lk,economicconfidential.com,newzimbabwe.com,opednews.com,roadtester.com.au,runechat.com,tfetimes.com,therainbowtimesmass.com##img[height="90"]
 airtravelinfo.kr#@#.adsbygoogle
 aiscore.com##.justify-center.w100
 aishoujizy.com###ShouYe_ShangBu > .HtmlMoKua:first-child
@@ -22503,7 +22514,7 @@ allkeyshop.com,cdkeyit.it,cdkeynl.nl,cdkeypt.pt,clavecd.es,goclecd.fr,keyforstea
 allmonitors24.com,streamable.com##.topbanner
 allmusic.com#$#.advertising { position: absolute!important; left: -3000px!important; }
 allmusic.com#$#.leaderboard { position: absolute!important; left: -3000px!important; }
-allmyfaves.com,allthetests.com,dailynews.lk,dealsonwheels.co.nz,dosgamesarchive.com,eth-converter.com,farmtrader.co.nz,freealts.pw,goosegame.io,greatbritishchefs.com,moviesfoundonline.com,openstreetmap.org,vstreamhub.com###banner
+allmyfaves.com,allthetests.com,dailynews.lk,dealsonwheels.co.nz,dosgamesarchive.com,eth-converter.com,farmtrader.co.nz,freealts.pw,goosegame.io,greatbritishchefs.com,moviesfoundonline.com,openstreetmap.org,sundayobserver.lk,vstreamhub.com###banner
 allscrabblewords.com,famously-dead.com,famouslyarrested.com,famouslyscandalous.com,iamgujarat.com,lolcounter.com,mpog100.com,samayam.com,timesofindia.com,vijaykarnataka.com##.ad1
 allscrabblewords.com,famously-dead.com,famouslyarrested.com,famouslyscandalous.com,khaama.com,mpog100.com##.ad2
 allscrabblewords.com,mpog100.com##.ad3
@@ -23871,7 +23882,7 @@ bro.adcast.tech,bro.adcast.site##.mask.adblock
 browardpalmbeach.com,dallasobserver.com,houstonpress.com,miaminewtimes.com,phoenixnewtimes.com,westword.com##.AirBillboardInlineContent
 browardpalmbeach.com,dallasobserver.com,houstonpress.com,miaminewtimes.com,phoenixnewtimes.com,westword.com##.beforeBillboard
 browse.gmarket.co.kr##.box__component-sponsor-link
-browserhow.com,charlieintel.com,cryptoslate.com,flickeringmyth.com,gameinfinitus.com,hdmovies4u.live,iotwreport.com,rezence.com,rok.guide##.code-block
+browserhow.com,charlieintel.com,chromeunboxed.com,cryptoslate.com,flickeringmyth.com,gameinfinitus.com,hdmovies4u.live,iotwreport.com,rezence.com,rok.guide##.code-block
 browserleaks.com###vpn_img
 browserleaks.com###vpn_text
 browsershots.org#@#.advert_area
@@ -24939,6 +24950,7 @@ dailymotion.com##div[class^="AdBanner"]
 dailymotion.com##div[class^="DisplayAd"]
 dailymotion.com##div[class^="VideoInfo__videoInfoAdContainer"]
 dailymotion.com#@#.ad_box
+dailynews.lk,german-way.com,power987.co.za,qsaltlake.com,tfetimes.com##img[height="250"]
 dailynewsegypt.com##.widget_rotatingbanners
 dailyrecord.co.uk##.hotjobs
 dailyringtone.com#@##top-ad-unit
@@ -26812,6 +26824,7 @@ fullpremiums.com##IMG[src="templates/plugmod/images/a.png"]
 fully-fundedscholarships.com##.theiaStickySidebar > div.widget_block[id^="block"]
 fullyu.com##.rightSide-top-ads
 fun4earn.xyz##+js(window.open-defuser)
+functions-online.com##.box_wide
 fuqer.com##+js(abort-on-property-read, fUnder)
 futbol24.com##.adv2
 futbol24.com##.rek
@@ -31066,6 +31079,7 @@ newser.com##+js(abort-current-script, document.createElement, IsAdblockRequest)
 newser.com##+js(abort-on-property-read, checkAds)
 newser.com##.RightRailAds
 newser.com#@##divRightRail > div:first-child
+newsfirst.lk###sponsored-content-1
 newshub.co.nz###island-unit-2
 newsit.gr##.advert
 newsit.gr##.inside-article > div[style="min-height: 280px;"]
@@ -32385,6 +32399,7 @@ pptv.com###installApp
 pptv.com##.advView-two,#p-mark
 pr-cy.ru##div[id^="aabb"]
 pr0gramm.com##.side-wide-skyscraper
+practicalecommerce.com##.partners-sidebar
 pradjadj.com##+js(set-constant, google_jobrunner, noopFunc)
 pravda.ru##.yaRtbBlock
 preemlinks.com#@##divads
@@ -37939,6 +37954,7 @@ zznews.cn##.ad:not([style])
 ||666672.xyz^
 ||666673.xyz^
 ||666674.xyz^
+||666679.xyz^
 ||6667778882021.site^
 ||6669667.com^
 ||666video.asia^
@@ -45986,7 +46002,9 @@ zznews.cn##.ad:not([style])
 ||dailymail.co.uk/geo/
 ||dailymail.co.uk/rta2/
 ||dailymail.co.uk^*/linkListItem-$domain=thisismoney.co.uk
+||dailymirror.lk/youmaylike
 ||dailymotion.com/logger/
+||dailynews.lk/sites/default/files/pictures/BO-Banner-NEW.gif
 ||dailyporn.club/at/code.php
 ||dailystuffall.com^$third-party
 ||daima.dsxdn.com^
@@ -50045,6 +50063,7 @@ zznews.cn##.ad:not([style])
 ||gfn1.ugap.fr^
 ||gfncg.cn^
 ||gfnormal00aa.com^
+||gfnormal00aj.com^
 ||gfnttldx.com^
 ||gfpplflrif.com^
 ||gfstrck.com^
@@ -50117,6 +50136,7 @@ zznews.cn##.ad:not([style])
 ||ginningsteri.com^
 ||giocdn.com^$third-party
 ||giosg.com^*/public/trace/
+||giphy.com/embed/$domain=srilankamirror.com
 ||giraff.io^$third-party
 ||giraffepiano.com^$third-party
 ||girise.com^
@@ -50388,6 +50408,7 @@ zznews.cn##.ad:not([style])
 ||gog-statics.com/js/frontpagelogintracking-$script,domain=gog.com
 ||gog-statics.com/js/loginTracking-$script,domain=gog.com
 ||gog.cn/sys/online_calc.js
+||gogpix.cn^
 ||goingtocontent.com^
 ||goingup.com^$third-party
 ||gold.szonline.net^
@@ -55336,6 +55357,7 @@ zznews.cn##.ad:not([style])
 ||luyten-98c.com^
 ||luzulabeguile.com^
 ||lvhqntk.cn^
+||lvjoe.pw^
 ||lvkuaizi.com^
 ||lvodomo.info^
 ||lvsechufang.com^
@@ -60177,6 +60199,7 @@ zznews.cn##.ad:not([style])
 ||ppxldikxksuo.com^
 ||ppyibei.com^
 ||pqdhda.bluepops.co.kr^
+||pqfgtp.cn^
 ||pqlcpm.kindoh.co.kr^
 ||pqn7.cheque-dejeuner.fr^
 ||pqorwmmlkf.com^
@@ -63346,6 +63369,7 @@ zznews.cn##.ad:not([style])
 ||sintelligence.marykayintouch.com^
 ||sippansy.com^
 ||sippingsunned.com^
+||siqwfy.cn^
 ||sirdata.io^$third-party
 ||siredonlacs.com^
 ||sireundermineoperative.com^
@@ -65252,6 +65276,7 @@ zznews.cn##.ad:not([style])
 ||srfhtrjzvf.com^
 ||srgev.com^
 ||srgwxvm.cn^
+||srilankamirror.com/images/banners/
 ||srivge.smiggle.com.au^
 ||srkfhl.cn^
 ||srmdata.com^$third-party
@@ -66293,6 +66318,7 @@ zznews.cn##.ad:not([style])
 ||storage.beytoote.com/images/adsbeytoote/
 ||storage.data-vp.com/vp/t.js
 ||storage.googleapis.com/afs-prod/tags
+||storage.googleapis.com/cdn.newsfirst.lk/advertisements/$domain=newsfirst.lk
 ||storage.googleapis.com/rasin/*/hm.js
 ||storage.syncmedia.io/libs/sm_capture_
 ||storeapi.net^$third-party
@@ -66457,6 +66483,7 @@ zznews.cn##.ad:not([style])
 ||sunburnquasars.com^
 ||suncenturyautumn.com^
 ||sundayceremonytitanic.com^
+||sundayobserver.lk/sites/default/files/pictures/COVID19-Flash-1_0.gif
 ||sundayscrewinsulting.com^
 ||sundaysky.com/sst.gif?
 ||sundaysky.com/vop/$third-party
@@ -69766,6 +69793,7 @@ zznews.cn##.ad:not([style])
 ||utrosy.com^
 ||uts.auction.co.kr^
 ||uttermosthobbies.com^
+||uu99k.com^
 ||uuaoz.com^
 ||uue2.destinia.ir^
 ||uuidksinc.net^$third-party
