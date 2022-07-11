@@ -1,8 +1,8 @@
-! Checksum: jeK6Zz0XOc5cLtc3CLXYSw
+! Checksum: 1SWMkFa+fElxbBTwpHRsLw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.25.89
-! TimeUpdated: 2022-07-11T17:30:37+00:00
+! Version: 2.1.25.90
+! TimeUpdated: 2022-07-11T18:30:37+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -13268,7 +13268,7 @@ forex.com##.alert-section[data-cookie-alert="cookieAlert"]
 ufa.de##.analytics
 vrm-epaper.de,badische-zeitung.de,heute.at,ots.at##.apa-consent-wrapper
 invitro.ru##.attention--page
-loxotrona.net,serfery.ru##.b-accept-cookie
+vladimirbelev.ru,loxotrona.net,serfery.ru##.b-accept-cookie
 nordlb.de,letyshops.com##.b-cookie-banner
 afisha.bigmir.net##.b-disclaimer
 reg.ru##.b-policy-info
@@ -22059,6 +22059,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 ! Subscription popups add to subscriptions.txt
 !
+||hobbytimes.jp/js/modal.js
 transfermarkt.*##tm-language-hint
 bing.com##div[data-viewname="GiveModeFlyoutUpsell"]
 defenseone.com,govexec.com,nextgov.com,route-fifty.com#%#//scriptlet('set-constant', 'GEMG.ConversionModule', 'noopFunc')
@@ -30741,6 +30742,9 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~theoatmeal.com,~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+vladimirbelev.ru##.b-follow
+vladimirbelev.ru#$?#body > div.fancybox-container:has(div.fancybox-content > aside.b-subscribe) { display: none!important; }
+vladimirbelev.ru#$#body { overflow: auto!important; }
 incrussia.ru##.sub-form-wrapper
 incrussia.ru##.inline-subscription-form
 incrussia.ru##.stk-mask > a[href="https://t.me/incrussiamedia"]
@@ -34174,7 +34178,7 @@ xatakawindows.com##.aside-newsletter-box
 xatakandroid.com##.aside-newsletter-box > .newsletter-form
 sibnet.ru##.b-dzen-widget
 rg.ru##.b-favourites-sources__list
-serfery.ru##.b-footer-callout
+vladimirbelev.ru,serfery.ru##.b-footer-callout
 svyaznoy.ru##.b-footer-subscribe-block
 irk.ru##.b-news-subscription
 104.ua##.b-newsletter-sub
