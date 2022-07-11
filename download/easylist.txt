@@ -1155,6 +1155,9 @@ streamadblockplus.xyz#@#.skyscraper.ad
 @@||luscious.net/sailthru.js
 photopea.com##+js(no-fetch-if, /pagead2\.googlesyndication\.com|cmp\.uniconsent\.com/)
 minorpatch.com#@#.adsbygoogle
+minorpatch.com#@#.AdBox
+minorpatch.com##+js(abort-current-script, Array.prototype.shift, _0x)
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,redirect=googlesyndication.com/adsbygoogle.js,domain=minorpatch.com
 @@||nulledsite.com/ads-prebid.js
 nulledsite.com##+js(addEventListener-defuser, load, _blocker)
 tesla-club.eu#@#.reklama
@@ -1846,8 +1849,8 @@ unrar.flowsoft7.com##+js(set-constant, gadb, false)
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=noop.js,domain=unrar.flowsoft7.com
 scanner.thetimetube.com##+js(set-constant, gadb, false)
 @@||static.*.com/content/js/pubfig.*.js$domain=lightnovelpub.com|webnovelpub.com|lightnovelspot.com
-||static.*.com/content/js/abdbundle.*.js$domain=lightnovelpub.com|webnovelpub.com|lightnovelspot.com
-lightnovelspot.com,webnovelpub.com,lightnovelpub.com##+js(no-setTimeout-if, abchecker)
+||static.*.com/content/js/abdbundle.*.js$domain=lightnovelpub.com|webnovelpub.com|lightnovelspot.com|lightnovelworld.com
+lightnovelworld.com,lightnovelspot.com,webnovelpub.com,lightnovelpub.com##+js(no-setTimeout-if, abchecker)
 @@/js/prebid-ads.js$~third-party,domain=vippaste.xyz|sharetext.me|getpaste.link|pastebr.xyz
 vippaste.xyz,sharetext.me,getpaste.link,pastebr.xyz##+js(set-constant, isAdBlockActive, false)
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=nrl.com
@@ -6187,6 +6190,8 @@ open.fm##.listAdvSlot
 money.pl,pudelek.pl#?#style + div[class*=" "] > img[src^="https://v.wpimg.pl/"] + div:last-child:upward(1)
 o2.pl#?#div[class*=" "]:has(> div:not([class]):not([id]) > script:contains(registerPlaceholder))
 www.o2.pl#?#div[class*=" "] > img[src^="https://www.o2.pl/"]:first-child + div:last-child:upward(1)
+www.o2.pl#?##root > div > div[class^="sc-"] > div[class*=" "] > img[src^="https://v.wpimg.pl/"]:first-child + img[src^="https://v.wpimg.pl/"]:last-child:upward(1)
+www.o2.pl#?##root > div > div[class^="sc-"] > div[class*=" "] > img[src^="https://v.wpimg.pl/"]:first-child + img[src^="https://v.wpimg.pl/"] + div:last-child:upward(1)
 !+ NOT_OPTIMIZED
 www.o2.pl#?##root div[class]:matches-property("/__reactInternalInstance/.return.memoizedProps.slotNumber"="/\d+/")
 !+ NOT_OPTIMIZED
@@ -6240,7 +6245,7 @@ dobreprogramy.pl##+js(no-setTimeout-if, mark("PrebidDamOpen"))
 profil.wp.pl##+js(set-constant, Object.prototype.loadAndRunBunch, noopFunc)
 tech.wp.pl,sportowefakty.wp.pl,kobieta.wp.pl##+js(no-setTimeout-if, ()=>o.open())
 money.pl##+js(no-setTimeout-if, [native code], !50)
-gadzetomania.pl,komorkomania.pl,autocentrum.pl,pudelek.pl,vpolshchi.pl,parenting.pl,autokult.pl,abczdrowie.pl,magazyn.wp.pl,kobieta.wp.pl,ksiazki.wp.pl,tech.wp.pl,opinie.wp.pl,teleshow.wp.pl,gwiazdy.wp.pl,film.wp.pl,wiadomosci.wp.pl,finanse.wp.pl##+js(no-setTimeout-if, [native code], !120000)
+o2.pl,gadzetomania.pl,komorkomania.pl,autocentrum.pl,pudelek.pl,vpolshchi.pl,parenting.pl,autokult.pl,abczdrowie.pl,magazyn.wp.pl,kobieta.wp.pl,ksiazki.wp.pl,tech.wp.pl,opinie.wp.pl,teleshow.wp.pl,gwiazdy.wp.pl,film.wp.pl,wiadomosci.wp.pl,finanse.wp.pl##+js(no-setTimeout-if, [native code], !120000)
 vpolshchi.pl,parenting.pl,autokult.pl,abczdrowie.pl,magazyn.wp.pl,kobieta.wp.pl,ksiazki.wp.pl,tech.wp.pl,opinie.wp.pl,teleshow.wp.pl,gwiazdy.wp.pl,film.wp.pl,wiadomosci.wp.pl,finanse.wp.pl##+js(set-constant, Object.prototype.iABD, emptyArr)
 kafeteria.pl,dobreprogramy.pl,open.fm,abczdrowie.pl,www.o2.pl,parenting.pl,fotoblogia.pl,gadzetomania.pl,komorkomania.pl,autocentrum.pl,autokult.pl,pudelek.pl,magazyn.wp.pl,facet.wp.pl,turystyka.wp.pl,gwiazdy.wp.pl,teleshow.wp.pl,gry.wp.pl,kuchnia.wp.pl,ksiazki.wp.pl,wiadomosci.wp.pl,moto.wp.pl,pogoda.wp.pl,fitness.wp.pl,turystyka.wp.pl,wroclaw.wp.pl,wawalove.wp.pl,opinie.wp.pl,tech.wp.pl,sportowefakty.wp.pl,kobieta.wp.pl,finanse.wp.pl##+js(abort-on-property-write, Object.prototype.callBids)
 www.wp.pl,parenting.pl,kafeteria.pl,magazyn.wp.pl,facet.wp.pl,turystyka.wp.pl,gwiazdy.wp.pl,teleshow.wp.pl,gry.wp.pl,kuchnia.wp.pl,ksiazki.wp.pl,sportowefakty.wp.pl,film.wp.pl,wiadomosci.wp.pl,kobieta.wp.pl,moto.wp.pl,horoskop.wp.pl,twojeip.wp.pl,money.pl,polygamia.pl,vibez.pl,abczdrowie.pl,pudelek.pl##+js(abort-on-property-write, Object.prototype.directOnly)
@@ -8645,7 +8650,7 @@ newsshopper.co.uk###piano-floating-bottom-banner
 work.ink##.you-need-to-update-your-adblock-filter
 ||embed.fireplace.yahoo.com/embed/*?articleId=$domain=news.yahoo.com
 news.yahoo.com##.caas-iframe.fireplace
-lightnovelspot.com,webnovelpub.com,lightnovelpub.com##.lnadcontainer
+lightnovelworld.com,lightnovelspot.com,webnovelpub.com,lightnovelpub.com##.lnadcontainer
 pornhub.com,pornhub.org,pornhub.net,pornhubthbh7ap3u.onion##.bottomNav > a[rel="noopener nofollow"]
 vjav.me##.right > div.content
 javher.com##.videoWrapper > a[target="_blank"]
