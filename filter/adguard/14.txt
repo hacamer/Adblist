@@ -1,8 +1,8 @@
-! Checksum: oC+YwCcc/SNxsd9721dkEQ
+! Checksum: QMFbb29j+NgZo1cS8iRsuw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.25.97
-! TimeUpdated: 2022-07-12T10:30:36+00:00
+! Version: 2.1.25.99
+! TimeUpdated: 2022-07-12T12:30:36+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7566,6 +7566,8 @@ whats-on-netflix.com#$#html.sp-message-open body { overflow-y: visible !importan
 !
 !
 !
+hot.at###info-overlay
+avia.de###avia-cookie-consent
 wohnglueck.de###usercentrics-root
 ksiegaimion.com##.eucl
 intersport.com.cy#$?#body > .fancybox-container:has(#cookies-modal-id) { display: none !important; }
@@ -16415,7 +16417,7 @@ bilyoner.com#%#//scriptlet('set-local-storage-item', 'desktop/acceptAnalyticalCo
 bilyoner.com#%#//scriptlet('set-local-storage-item', 'desktop/isCookiePrefBannerShowed', 'true')
 robinhood.com#%#//scriptlet('set-cookie', 'gdpr_consent', '1')
 publikationen.dguv.de#%#//scriptlet('set-cookie', 'allowCookie', '1')
-ble.de,schleswig-holstein.de,verfassungsschutz.de,aufstiegs-bafoeg.de,bne-portal.de,bmbf.de#%#document.cookie="gsbbanner=closed; path=/;";
+bafa.de,ble.de,schleswig-holstein.de,verfassungsschutz.de,aufstiegs-bafoeg.de,bne-portal.de,bmbf.de#%#document.cookie="gsbbanner=closed; path=/;";
 mubi.com#%#//scriptlet('set-cookie', 'mubi-cookie-consent', 'true')
 gut-leben-in-deutschland.de#%#(function() { try { if ("undefined" != typeof localStorage) { localStorage.setItem("gut-leben-cookie-banner-hidden", "true") } } catch (ex) {} })();
 starfieldtech.com#%#//scriptlet('set-cookie', 'pwinteraction', '1')
@@ -17107,10 +17109,16 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/124083
+bafa.de#@##cookiebanner
+bafa.de#@#.cookiebanner:not(body)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/123986
 ble.de#@##cookiebanner
 ble.de#@#.cookiebanner:not(body)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/123888
+! TODO: remove a rule below when apps with CoreLibs 1.10 will be released
+!+ PLATFORM(windows, mac, android)
+@@||app.usercentrics.eu/browser-ui/latest/loader.js$third-party
 @@||ap*.usercentrics.eu^$domain=wohnglueck.de
 ! https://github.com/AdguardTeam/AdguardFilters/issues/124034
 @@||sdk.privacy-center.org^$domain=lesoir.be
@@ -19926,6 +19934,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+kufar.by###open-in-app-button
 apfelpage.de###appful-overlay-banner
 myfin.by##.own-services-promo
 tumblr.com#?#div[aria-label="Notification"]:has(> div > a[href="/open/app?referrer=mobile_banner"])
@@ -27888,6 +27897,7 @@ abendzeitung-muenchen.de###webpush-app
 /firebase.js$domain=novayagazeta.ru|comments.ua|kinosimka.net|ilan365.net|cnbcindonesia.com|haberzamani.net|oxy.cloud|allbasketball.org|auslogics.com|kartalyuvasi.com.tr|cnnindonesia.com|fbc.ua|astv.ru|pln-pskov.ru|aylink.co
 /firebase-messaging.js$domain=webursa.com|s.akiba-souken.com|bfm.ru|theswagsports.com|focus.ua|ukranews.com|comments.ua|coub.com|porno90.me|cnnamador.com|giallozafferano.it|wcostream.com|fptplay.vn|jooble.org|mobile01.com|myinstants.com|pdalife.ru|rg.ru|m.iguides.ru|donanimhaber.com|profile.ru|womanhit.ru|news.noteru.com|narodna-pravda.ua|newstm.in|sabah.com.tr|dreamstime.com|popbee.com|avtovzglyad.ru|allbasketball.org|tw.news.yahoo.com|takvim.com.tr|jn.pt|ria.ru|pars.host|calculator-online.net|operanewsapp.com|ahaber.com.tr|tamindir.com|concursosnobrasil.com.br|kompas.com|news.ebc.net.tw|recyclingtoday.com|homedecoratione.com|khersondaily.com|mirtesen.ru|womanhit.ru|belsat.eu|gearbest.com|op.gg|novayagazeta.ru|pocket-lint.com|turunculevye.com|bloomberght.com|stardima.com|aksam.com.tr|portamur.ru|fishki.net|ranking.goo.ne.jp|ohmymag.com|mgronline.com|semnasem.org|bluradio.com|carwale.com|finanznachrichten.de|home.kingsoft.jp|sputnik.kg
 !
+kufar.by##div[class^="styles_webpush_banner__"]
 pecom.ru##.gr-visual-prompt
 ladbible.com##div[data-cypress="soft-push-notification-modal"]
 polskieradio.pl##.main-page__bell
