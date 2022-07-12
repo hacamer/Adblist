@@ -1,8 +1,8 @@
-! Checksum: QMFbb29j+NgZo1cS8iRsuw
+! Checksum: 1ij5qZ6Vdb7xE0g24bE1Vw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.25.99
-! TimeUpdated: 2022-07-12T12:30:36+00:00
+! Version: 2.1.26.1
+! TimeUpdated: 2022-07-12T13:30:40+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7566,6 +7566,7 @@ whats-on-netflix.com#$#html.sp-message-open body { overflow-y: visible !importan
 !
 !
 !
+codesandbox.io#?#div[class^="elements__ToastContainer"] > a[href="/legal/privacy"]:upward(1)
 hot.at###info-overlay
 avia.de###avia-cookie-consent
 wohnglueck.de###usercentrics-root
@@ -11088,7 +11089,7 @@ real.de#$##consentOverlay { display: none !important; }
 real.de#$#html { overflow: visible !important; }
 constantin-film.de#$#.cookielayer { display: none !important; }
 mclaren.com##div[class*="-cookie-alert"]
-sosyalturk.net,hatayvatan.com,mymemur.com.tr,coinotag.com,haberolduk.com###kanews-cookie-box
+muglayenigun.com,sosyalturk.net,hatayvatan.com,mymemur.com.tr,coinotag.com,haberolduk.com###kanews-cookie-box
 bitci.com##.bw-cnotify
 voltus.de###cookiesModal
 sviaz-expo.ru##.cookie-attention
@@ -15030,7 +15031,7 @@ investing.com##.consentBarWrapper
 curiouscat.me##.consentWrapper
 mamikreisel.de##.container .js-notification-info
 promod.de##.content_cookies
-uaz.ru,nakubani.ru,eksmo.ru,papajohns.com.tr,dreamtv.com.tr,jobinfo.hu,kanald.com.tr,radyod.com,slowturk.com.tr##.cookie-accept
+e-consystems.com,uaz.ru,nakubani.ru,eksmo.ru,papajohns.com.tr,dreamtv.com.tr,jobinfo.hu,kanald.com.tr,radyod.com,slowturk.com.tr##.cookie-accept
 foodspring.de,m.shop-apotheke.com##.cookie-advice
 fussball.de##.cookie-advise
 u-mama.ru,gumtree.co.za,btclod.com,a12.com,ontiva.com,dr-telemed.ru,myfasol.ru,ponyexpress.ru,litres.ru,amediateka.ru,hansa.rs,schnaeppchenfuchs.com,xsport.ua##.cookie-agreement
@@ -16088,6 +16089,7 @@ privacy.lecker.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent
 privacy.madame.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent-v2")){var g=new MutationObserver(function(){setTimeout(function(){var b=document.querySelector('button.no-children[path="\[0,2,1\]"]');b&&b.click();},300);setTimeout(function(){var c=document.querySelector('div[title="Berechtigte Interessen"]'); c&&c.click();},300);setTimeout(function(){var d=document.querySelectorAll('label[aria-checked="true"] > .off'); d.forEach(function(d){d.click();});},800); var f=document.querySelector('button.no-children[path="\[0,3,0\]"]'); setTimeout(function(){f&&f.click();},1000);});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},3E4)}});
 consent.ladbible.com,consent.gamingbible.co.uk,consent.unilad.co.uk#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var g=new MutationObserver(function(){var b=document.querySelector('button[title*="Accept" i]');b&&(g.disconnect(),b.click())});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
 !
+wohnglueck.de#%#(()=>{window.UC_UI={acceptService:function(){return new Promise(a=>{a()})},rejectService:function(){return new Promise(a=>{a()})},isInitialized:function(){return!0},getServicesBaseInfo:function(){return[{id:"",consent:{history:[{status:!0,type:"explicit"}]},name:""}]}},AG_onLoad(function(){const a=document.querySelectorAll(".sc-embed > .js_res[data-consent-service-id]");a.forEach(a=>{a.setAttribute("data-consent-service-id","")});const b=document.querySelectorAll(".sc-embed .js_boxReject");b.forEach(a=>{a.style="display: none;"})})})();
 investmap.pl#%#//scriptlet('set-cookie', 'rodov2', '1')
 mypolitics.pl#%#//scriptlet('set-local-storage-item', 'scriptsPreferences', 'emptyObj')
 suncorp.com.au#%#//scriptlet('set-cookie', 'key-event-suncorp-data-policy-closeFlag', '1')
@@ -17116,10 +17118,6 @@ bafa.de#@#.cookiebanner:not(body)
 ble.de#@##cookiebanner
 ble.de#@#.cookiebanner:not(body)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/123888
-! TODO: remove a rule below when apps with CoreLibs 1.10 will be released
-!+ PLATFORM(windows, mac, android)
-@@||app.usercentrics.eu/browser-ui/latest/loader.js$third-party
-@@||ap*.usercentrics.eu^$domain=wohnglueck.de
 ! https://github.com/AdguardTeam/AdguardFilters/issues/124034
 @@||sdk.privacy-center.org^$domain=lesoir.be
 ! https://github.com/AdguardTeam/AdguardFilters/issues/123990
@@ -22084,6 +22082,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 ! Subscription popups add to subscriptions.txt
 !
+e-consystems.com###my-welcome-message
 ||hobbytimes.jp/js/modal.js
 transfermarkt.*##tm-language-hint
 bing.com##div[data-viewname="GiveModeFlyoutUpsell"]
@@ -24664,7 +24663,7 @@ cuerpomente.com##.sticky-subscription
 yock.games##.spin-drawer
 ||linuxbabe.com/wp-content/uploads/pum/pum-site-
 deutschepost.de###fixedOverlays
-ilksesgazetesi.com###fvpp-blackout
+e-consystems.com,ilksesgazetesi.com###fvpp-blackout
 meest.com##.news-modal
 secretmag.ru##a[href="https://forms.gle/x8sPLVhY7g8F2J6t6"]
 novomundo.com.br###MODAL_lead--PCDescontoFrete
@@ -30770,6 +30769,7 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~theoatmeal.com,~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+muglayenigun.com##.kanews-article-action-left
 whats-on-netflix.com##.moOptinForm
 vladimirbelev.ru##.b-follow
 vladimirbelev.ru#$?#body > div.fancybox-container:has(div.fancybox-content > aside.b-subscribe) { display: none!important; }

@@ -1,8 +1,8 @@
-! Checksum: mpWcWkDLYrnWl1UPIglyrA
+! Checksum: oTACmEOI6hXZcOMTf+fuUA
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.31.18
-! TimeUpdated: 2022-07-12T12:30:19+00:00
+! Version: 2.0.31.19
+! TimeUpdated: 2022-07-12T13:02:36+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1370,7 +1370,7 @@ cuebic.biz#?#.shelf-text script[src^="https://img.ad-nex.com/"]:upward(.shelf-te
 vipcle2.com#?#body > div[id^="text-"] > div.textwidget:has(> div[class^="ad300"])
 mydramalist.com#?#.app-body > div[class]:first-child:has(> .is-mobile > div[class] > .mdl-gpt-tag)
 ameblo.jp#?#div > div[class^="_"] > aside[class^="_"]:first-child > div[class^="_"] > aside[class^="_"]:only-child > div[class^="_"][class$="_"]:only-child > div:not([class]):only-child:empty:upward(3)
-ameblo.jp#?#main + aside[class^="_"] > div[class^="_"]:only-child > div[class^="_"]:only-child > div:not([class]):only-child:empty:upward(1)
+ameblo.jp#?#main + aside[class^="_"] > div[class^="_"]:only-child > div[class^="_"]:only-child > div:only-child:upward(1)
 ameblo.jp#?#div[class^="_"] > aside[class^="_"] > div[class^="_"] > div[id*="adFooterMegaPanel"]:upward(3)
 ameblo.jp#?##blogMegaPanelOfficial:empty:upward(1)
 ameblo.jp#?#div[style="overflow:hidden"] > div[class^="_"] > aside[class^="_"] > div[class^="_"] > aside[class^="_"] > div[class^="_"] > div[id$="adFooterMegaPanel"]:upward(3)
