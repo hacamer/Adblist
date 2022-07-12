@@ -1,8 +1,8 @@
-! Checksum: v7QzEClehVr/tLvTYXWJ5A
+! Checksum: 48h6mX8F5wrzd4+5kec9Tw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.25.94
-! TimeUpdated: 2022-07-12T07:30:41+00:00
+! Version: 2.1.25.95
+! TimeUpdated: 2022-07-12T08:30:39+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2595,6 +2595,8 @@ hi-tech.mail.ru##.sticky_footer div[class^="block block_padding rb-block-"]
 ##.sosyal:not(body):not(html)
 ##.td_block_social_counter
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/124102
+e1.ru#$#button[data-test="report-news-button"] + div[class] { visibility: hidden !important; }
 ! pianoweb.fr
 pianoweb.fr##a[class="fleche-basdepage"] ~ a[class^="logo-"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/123184
@@ -7561,6 +7563,7 @@ business-punk.com,voici.fr,the-sun.com,thesun.ie,capital.fr,ladbible.com,hitc.co
 !
 !
 !
+wohnglueck.de###usercentrics-root
 ksiegaimion.com##.eucl
 intersport.com.cy#$?#body > .fancybox-container:has(#cookies-modal-id) { display: none !important; }
 intersport.com.cy#$#body { overflow: visible !important; }
@@ -14099,7 +14102,7 @@ kurier.at##.siteCookie
 skoda.hu##.skoda5-statisticsOptBox
 daybreakgames.com##.soe-cookie-policy
 tekzen.com.tr##.sp-fancybox-wrap.fancybox-type-iframe
-ip3-press.com,sketchbook.com,salzwedelerbaumkuchen.de,gentlemanstationer.com,nakedandfamousdenim.com,velkase.com,audiophileon.com,annaclemens.com,worldnaturephotographyawards.com,praxis-alex-berlin.com,zahnarzt-kyber.de,eduardo-monica.com,neverware.com,turk.net,hearthmusic.com,huskichocolate.com,linnbad.no,podtrac.com,quillsoft.ca,redthreadgames.com,welcome.volleyballworld.tv##.sqs-cookie-banner-v2
+purposedisruptors.org,ip3-press.com,sketchbook.com,salzwedelerbaumkuchen.de,gentlemanstationer.com,nakedandfamousdenim.com,velkase.com,audiophileon.com,annaclemens.com,worldnaturephotographyawards.com,praxis-alex-berlin.com,zahnarzt-kyber.de,eduardo-monica.com,neverware.com,turk.net,hearthmusic.com,huskichocolate.com,linnbad.no,podtrac.com,quillsoft.ca,redthreadgames.com,welcome.volleyballworld.tv##.sqs-cookie-banner-v2
 audi.hu##.statisticsOptBox
 hrs.de##.sw-cookie-layer
 amplitude-studios.com##.system-notification-container > div[id*="-policy-"]
@@ -17100,6 +17103,8 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/123888
+@@||ap*.usercentrics.eu^$domain=wohnglueck.de
 ! https://github.com/AdguardTeam/AdguardFilters/issues/124034
 @@||sdk.privacy-center.org^$domain=lesoir.be
 ! https://github.com/AdguardTeam/AdguardFilters/issues/123990
@@ -19914,6 +19919,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+apfelpage.de###appful-overlay-banner
 myfin.by##.own-services-promo
 tumblr.com#?#div[aria-label="Notification"]:has(> div > a[href="/open/app?referrer=mobile_banner"])
 lipscosme.com##.welcome-index__hero
@@ -20089,6 +20095,7 @@ dailymail.co.uk#$#body > section#mobile-content { margin-top: 0 !important; heig
 konest.com##div[style$="width:128px; height:240px;"]
 k-jz.com###smart_app_banner
 k-jz.com###app_guide
+torisetsu.biz##.app_guide
 m.facebook.com##div[data-type="vscroller"] > div[style="margin-top:5px; height:167px; z-index:0; width:360px;"][data-mcomponent="MContainer"][data-tti-phase]
 storm.mg#%#//scriptlet("set-cookie", "app_download_banner", "true")
 storm.mg###floating_bottom_ad
@@ -22660,7 +22667,8 @@ bmu.edu.in##.form-sec_popup
 wacul-ai.com##.modal-banner-cv
 wacul-ai.com###fixed-aia-registration
 boosteroid.com##.popup-wrap
-der-postillon.com###steady-floating-button-wrapper
+31mag.nl#?##steady-floating-button-wrapper
+31mag.nl,der-postillon.com###steady-floating-button-wrapper
 classy-online.jp##fw-storyblock
 teams.qiita.com##.cvFLg_wrap
 it-trend.jp###bottomScrollNavi_form-and-all-add
