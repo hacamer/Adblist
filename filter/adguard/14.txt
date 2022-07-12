@@ -1,8 +1,8 @@
-! Checksum: mAfqx5NMtoc6X4h+FMaBQQ
+! Checksum: 8cGTqaTuLRLyMNhjfCelVg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.26.5
-! TimeUpdated: 2022-07-12T17:02:14+00:00
+! Version: 2.1.26.6
+! TimeUpdated: 2022-07-12T18:30:38+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -3025,8 +3025,8 @@ skegnessstandard.co.uk,sunderlandecho.com,blackpoolgazette.co.uk,derbyshiretimes
 !
 ! ai_front anti-adblock
 ptisidiastima.com,medebooks.xyz,re-library.com,mobilereset99.com#%#//scriptlet("abort-on-property-write", "ai_front")
-cee-trust.org,udemydl.com,biopills.net,ptisidiastima.com,medebooks.xyz,re-library.com,mobilereset99.com##[style*="cursor:"][style*="user-select: none;"][style*="z-index:"]
-cee-trust.org,udemydl.com#%#//scriptlet("abort-on-property-read", "ai_run_scripts")
+apkmos.com,cee-trust.org,udemydl.com,biopills.net,ptisidiastima.com,medebooks.xyz,re-library.com,mobilereset99.com##[style*="cursor:"][style*="user-select: none;"][style*="z-index:"]
+apkmos.com,cee-trust.org,udemydl.com#%#//scriptlet("abort-on-property-read", "ai_run_scripts")
 !
 ! General anti-adblock rules
 !@@.com/ads.js|$~third-party,domain=~1ppt.com
@@ -7566,6 +7566,7 @@ whats-on-netflix.com#$#html.sp-message-open body { overflow-y: visible !importan
 !
 !
 !
+kts.weszlo.com#%#//scriptlet('set-cookie', 'cookiesActive', 'false')
 aok-erleben.de##div[data-module="cookie-manager-dialog"]
 hoyer.de#?##gatsby-focus-wrapper > div[class^="backdrop "][aria-hidden="false"]
 stadtwerke-flensburg.de##.modal--not-deactivatable
@@ -9332,7 +9333,7 @@ cordis.europa.eu##app-cookies-consent
 flashscore.ru,op.europa.eu##.customCookie
 mossoveta.ru##.cookieagree
 tresorit.com#?#footer + aside[class^="cM_"]:has(> div > div > img[alt="Cookie"])
-knauber-erdgas.de,knauberstrom.de###cookieoverlay_outer
+knauber-heizoel.de,knauber-erdgas.de,knauberstrom.de###cookieoverlay_outer
 swt.de###COOKIE_POLICY
 ||thueringerenergie.de/*/cc.js?
 abbyy.com###legal-popup
