@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: AQ8iENSRiQALGg7p7NHWXA
+! Checksum: 2qz2Bk4NPxxWUZ6Qti3Waw
 ! Title: edentwCustom
 ! Expires: 12 hours
-! Version: 202207130050
-! Last Modified: 2022年07月13日 00:50
+! Version: 202207130134
+! Last Modified: 2022年07月13日 01:34
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自Adblock Warning Removal List、ABP filters、anti-adblock-killer-filters，感谢各位大大的分享！
 ! 仅合并规则，未做其余任何处理
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 4748
+! Total count: 4749
 ###AdBlockDialog
 ###WarningCodec
 ###aabl-container
@@ -3963,7 +3963,8 @@ sport.cz###adSklikUnderArticle
 sport.cz##.combi_text__ad
 sport.cz##div#page > .combi
 sport.cz##iframe[frameborder][scrolling][src^="https://www.sport.cz/"]
-sportowefakty.wp.pl#$#hide-if-matches-xpath '//div[@class ][1]/div[not(*) and not(normalize-space())][@class]/ancestor::div[@class][1][not(contains(@class,"npp-container")) and not(string-length(@class)=7)]'
+sportowefakty.wp.pl#$#hide-if-matches-xpath './/img[string-length(@src)>155]/following::span/a[string-length(@href)>1000]/ancestor::li[@class]'
+sportowefakty.wp.pl#$#hide-if-matches-xpath '//div[@class ][1]/div[not(*) and not(normalize-space())][@class][not(contains(@class,"gallerybox"))]/ancestor::div[@class][1][not(contains(@class,"npp-container")) and not(string-length(@class)=41) and not(string-length(@class)=7)]'
 sports.ru,tribuna.com#$#override-property-read Object.prototype.getRandomArrayElement noopFunc
 sports4u.tv,sports4u.live#@##adblock
 sportshubtv.com###ad_show
@@ -4247,7 +4248,7 @@ wowhq.umbb.net##IMG[width="970"][height="90"]
 wowhq.umbb.net##[href^="http://porreiropa.com/cms/"] > IMG
 wp.pl#$#abort-on-property-write gafReady
 wp.pl#$#hide-if-matches-xpath './/a[@target]/img[string-length(@src)>130]/ancestor::div[starts-with(@class,"teaser")]'
-wp.pl#$#hide-if-matches-xpath './/div[@class]/a[@target="_blank"][string-length(@href) >1700]/img[@class][string-length(@src) > 100]/following-sibling::span[@class]/following::span[@class][4]/ancestor::div[@class and @*[not(@class)]=""][contains(@class," ")][contains(@*[not(@class)]," ")]/parent::div'
+wp.pl#$#hide-if-matches-xpath './/div[@class]/a[@target="_blank"][string-length(@href) >1700]/img[@class][string-length(@src) > 100]/following-sibling::span[@class]/following::span[@class][4]/ancestor::div[@class and @*[not(@class)]=""][contains(@class," ")][contains(@*[not(@class)]," ")]/parent::div[not(@id="gallerybox_id")]'
 wp.pl#$#hide-if-matches-xpath './/div[@class][@style="height: 133.056px;"]/a[@href]/div[@class]/ancestor::div[@class][2]'
 wp.pl#$#hide-if-matches-xpath './/img[@class][string-length(@src) >115]/following-sibling::img[@class][string-length(@src) > 115]/ancestor::div[1]'
 wp.pl#$#hide-if-matches-xpath '//a[@class][string-length(@href) >2200]/div[@class]/div/ancestor::div[@class="rail"]'
