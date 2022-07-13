@@ -1,8 +1,8 @@
-! Checksum: Wt+g9g0SfsO7sCpF99RZWg
+! Checksum: deNyFyX3CHQQvxCNqj0FrA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.26.11
-! TimeUpdated: 2022-07-13T08:30:36+00:00
+! Version: 2.1.26.12
+! TimeUpdated: 2022-07-13T09:30:46+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -9124,7 +9124,7 @@ remember.de#$#.modal-backdrop { display: none !important; }
 remember.de#$##trocookie-cookiebox { display: none !important; }
 remember.de#$#body { overflow: visible !important; padding-right: 0 !important; }
 ||blik.com/assets/ConsentManager/js/cmp.js
-nomonday.pl,blik.com###cm-overlay
+erbud.pl,nomonday.pl,blik.com###cm-overlay
 hidromelphilipmead.com.br##.js-notification-cookie-banner
 royalpets.com.br##.footer__terms
 bikroy.com##div[class^="cookie-consent-container"]
@@ -16105,6 +16105,7 @@ privacy.madame.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent
 consent.ladbible.com,consent.gamingbible.co.uk,consent.unilad.co.uk#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var g=new MutationObserver(function(){var b=document.querySelector('button[title*="Accept" i]');b&&(g.disconnect(),b.click())});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
 !
 songtradr.com#%#//scriptlet('set-cookie', 'cpaccpted', 'true')
+stern.de#%#AG_onLoad(function(){try{if(-1==document.cookie.indexOf("__cmpconsent")||!localStorage.getItem("__cmpconsent")){const c=new MutationObserver(function(){const a=document.querySelector("#cmpbox .cmptxt_btn_yes");a&&(c.disconnect(),a.click())});c.observe(document,{childList:!0,subtree:!0}),setTimeout(function(){c.disconnect()},1E4)}}catch(a){}});
 wohnglueck.de#%#(()=>{window.UC_UI={acceptService:function(){return new Promise(a=>{a()})},rejectService:function(){return new Promise(a=>{a()})},isInitialized:function(){return!0},getServicesBaseInfo:function(){return[{id:"",consent:{history:[{status:!0,type:"explicit"}]},name:""}]}},AG_onLoad(function(){const a=document.querySelectorAll(".sc-embed > .js_res[data-consent-service-id]");a.forEach(a=>{a.setAttribute("data-consent-service-id","")});const b=document.querySelectorAll(".sc-embed .js_boxReject");b.forEach(a=>{a.style="display: none;"})})})();
 investmap.pl#%#//scriptlet('set-cookie', 'rodov2', '1')
 mypolitics.pl#%#//scriptlet('set-local-storage-item', 'scriptsPreferences', 'emptyObj')
