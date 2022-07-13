@@ -1,8 +1,8 @@
-! Checksum: 1boRDpy3rLnBTfz+wLWCDQ
+! Checksum: pbQdo6osddPp2pQirnCXDw
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.42.46
-! TimeUpdated: 2022-07-13T09:31:37+00:00
+! Version: 2.0.42.47
+! TimeUpdated: 2022-07-13T11:31:24+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -5214,6 +5214,7 @@ nethunt.com/api/v1/track/email/$image
 ! Blocking piwik analytics subdomain
 |piwik.
 !
+||p543.inquirer.com^
 ||cnt.hd21.com^
 ||ubuyanalytics.ubuy.com^
 ||hit.c97.org^
@@ -24164,6 +24165,8 @@ $app=com.miui.analytics
 ! For platforms which do not support $redirect rules
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/123893
+@@||googleoptimize.com/optimize.js$domain=inquirer.com
 ! https://github.com/AdguardTeam/AdguardFilters/pull/124143
 @@||api.cxense.com/public/widget/data$domain=friday.gold
 ! https://github.com/easylist/easylist/commit/24aa1aecc78d0f583d2c8cf6dd81fa23f98370bd
