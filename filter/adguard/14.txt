@@ -1,8 +1,8 @@
-! Checksum: IAHDhis4rvVaEad7vURjNg
+! Checksum: 3xmYMmvqXIU+PCAIPY9nuA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.26.26
-! TimeUpdated: 2022-07-14T08:30:34+00:00
+! Version: 2.1.26.27
+! TimeUpdated: 2022-07-14T10:30:49+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7643,7 +7643,8 @@ t-mobile.com#$#body { overflow: auto!important; }
 timhortons.co.uk##.user-permission
 tescobank.com#$##ensPrivacyBlock { display: none !important; }
 tescobank.com#$##ensNotifyBanner { display: none !important; }
-tescobank.com#$#body, html { overflow: auto !important; }
+tescobank.com#$#body { overflow: auto !important; }
+tescobank.com#$#html { overflow: auto !important; }
 barclays.co.uk##.barclays-gdpr__consent-pane
 starlingbank.com#?#body > div[data-focus-lock-disabled]:has(> div[role="dialog"] > div[class] > h3)
 kingscross.co.uk##.argent_cookies
@@ -19963,6 +19964,7 @@ early-riser.com#?#div[class] ~ h1[style]:contains(Newsletter) + p + div[class]
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
 !
+news.kodansha.co.jp##.spaceSp .inlineC
 apkpure.com##.aegon-link
 dokuha.jp##.app-item
 calend.ru##.banner2
@@ -30821,8 +30823,9 @@ turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisga
 ##.widget_blog_subscription
 ~theoatmeal.com,~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
 !
+cnet.com##div[section="homepage-email-promo"]
 handelshof.de#?#body > div.fancybox-container:has(> div.fancybox-inner > div.fancybox-stage div.newsletter-modal)
-handelshof.de#$#body, html { overflow: auto !important; }
+handelshof.de#$#html { overflow: auto !important; }
 easeus.com##div[class^="email_box_"]
 ||static.klaviyo.com/onsite/js/klaviyo.js$domain=stetson.com
 molistar.com##.box-post-share-gg
