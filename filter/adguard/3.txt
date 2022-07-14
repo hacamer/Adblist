@@ -1,8 +1,8 @@
-! Checksum: wL0956G4PvjxLqAILPY35w
+! Checksum: hvFyItg/ZjI9DdYz7qXe6A
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.42.55
-! TimeUpdated: 2022-07-14T11:08:34+00:00
+! Version: 2.0.42.56
+! TimeUpdated: 2022-07-14T12:31:28+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -22843,6 +22843,9 @@ $cookie=wuuid,domain=duolingo.com|duolingo.cn
 !---- Generic rules -----------
 !------------------------------
 !
+! ShareThis tracking
+$cookie=__stid
+$cookie=__stidv
 ! igaw.io - used to make advertisements more relevant to the specific visitor
 $cookie=__igaw__adid
 ! WeCanTrack - used to track the visitor’s session
@@ -24184,6 +24187,8 @@ $app=com.miui.analytics
 ! For platforms which do not support $redirect rules
 !
 !
+! https://github.com/uBlockOrigin/uAssets/issues/14013
+@@||googletagmanager.com/gtm.js$domain=ci-en.dlsite.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/123893
 @@||googleoptimize.com/optimize.js$domain=inquirer.com
 ! https://github.com/AdguardTeam/AdguardFilters/pull/124143

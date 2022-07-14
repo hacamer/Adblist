@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: bTyb5fqmeKxNuJMrGZg9Yg
+! Checksum: 0NH5QPOAw/iVuexglOclKA
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202207141927
-! Last Modified: 2022年07月14日 19:27
+! Version: 202207142101
+! Last Modified: 2022年07月14日 21:01
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 74072
+! Total count: 74080
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -17231,6 +17231,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||cdn.fluidplayer.com/*/current/fluidplayer.min.js
 @@||cdn.fuseplatform.net/publift/tags/*/fuse.js$domain=client.falixnodes.net
 @@||cdn.games.mobinozer.com/shared/loader/advert.js
+@@||cdn.heapanalytics.com^$script,domain=libertymutual.com
 @@||cdn.jsdelivr.net/*/clappr^
 @@||cdn.jsdelivr.net/clappr
 @@||cdn.jsdelivr.net/combine/npm/jquery
@@ -20218,6 +20219,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||pastepot.com^$script,xmlhttprequest
 @@||pastepub.com^$generichide
 @@||pastes.binbox.io/ad/banner$subdocument
+@@||pastesearch.xyz/js/prebid-ads.js
 @@||pastoralcorn.com^$script,xmlhttprequest
 @@||pastoralroad.com^$script,xmlhttprequest
 @@||pasty.link^$generichide
@@ -30930,6 +30932,8 @@ mivo.com##.top-ads
 mix.dj###maskads
 mix.dj##.classAds
 mix957gr.com##+js(no-fetch-if, pagead2.googlesyndication.com)
+mixanitouxronou.gr##.narrow-ad
+mixanitouxronou.gr##div[class="prel min-height"]
 mixdrop.*##+js(abort-on-property-read, nativeInit)
 mixdrop.*##+js(addEventListener-defuser, click, dtnoppu)
 mixdrop.*##+js(set-constant, MDinjectP2, undefined)
@@ -32185,6 +32189,7 @@ pastemagazine.com##div[id$="_rectangle"]
 pastemagazine.com#$#.site-navigation { margin-top: 0 !important; }
 pastemagazine.com,theonion.com##.dfp
 pastenow.ru###google-block
+pastesearch.xyz##+js(set-constant, isAdBlockActive, false)
 patrioty.org.ua###ad_pu_modal
 paultan.org##.wrapper-footer
 pausecafein.fr###adb-pop
@@ -44353,6 +44358,7 @@ zznews.cn##.ad:not([style])
 ||cdn.jwplayer.com/players/*.js$domain=imfdb.org
 ||cdn.midas-network.com^$third-party
 ||cdn.nsimg.net/cache/landing/*.xml
+||cdn.optmn.cloud^
 ||cdn.ouo.io/js/full-page-script.js$script,third-party
 ||cdn.pcworld.*/idg_gpt_pipeline_$script
 ||cdn.pljs.ru^$third-party
@@ -46090,6 +46096,7 @@ zznews.cn##.ad:not([style])
 ||crtxbebfhp.com^
 ||cruced.com^
 ||cruced.com^$third-party
+||crumbs.robinhood.com^
 ||crunchbase.com/rw7M6iAV/init.js
 ||crunchybears.com^
 ||crunchyroll.com/tracker?
@@ -50880,6 +50887,7 @@ zznews.cn##.ad:not([style])
 ||glersakr.com^
 ||glersakr.com^$popup
 ||gletsokr.com^
+||glia.com^$third-party
 ||gliacloud.com/player/adgeek_teep
 ||gliffyfreaked.com^
 ||glihelethy.com^
