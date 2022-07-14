@@ -1,8 +1,8 @@
-! Checksum: 2YJWkEsxF43Ag3N9dC7yKQ
+! Checksum: OLKJczMfdPojgjKG7aIFfA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.26.32
-! TimeUpdated: 2022-07-14T15:30:36+00:00
+! Version: 2.1.26.33
+! TimeUpdated: 2022-07-14T16:30:41+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7524,7 +7524,7 @@ moviepilot.de,jofogas.hu,m.rtl.be,elmundo.es,vecernji.hr,zive.cz,gamepro.de#$##d
 moviepilot.de,jofogas.hu,m.rtl.be,elmundo.es,vecernji.hr,zive.cz,gamepro.de#$#html > body.didomi-popup-open { overflow: auto !important; position: unset !important; }
 !
 ! cmpbox cookies
-mioga.de,ankerkraut.de,voltimum.de,borek.de,azubi.de,denk-keramik.de,aquarienpflanzen-shop.de,deutschesee.de,bluray-disc.de,medpex.de,eventim.de,teekanne.de,mdm.de,traunsteiner-tagblatt.de,westlotto.de,kalledaskabel.de,dastelefonbuch.de,telefonbuch.de,swm.de,ptaheute.de,nivea.*,nw.de,absolventa.de,porzellanhandel24.de,blastbrigade.com,blic.rs,queer.de,inqa.de,bmas.de,mail.ru###cmpbox
+bm-online.de,fenster24.de,mioga.de,ankerkraut.de,voltimum.de,borek.de,azubi.de,denk-keramik.de,aquarienpflanzen-shop.de,deutschesee.de,bluray-disc.de,medpex.de,eventim.de,teekanne.de,mdm.de,traunsteiner-tagblatt.de,westlotto.de,kalledaskabel.de,dastelefonbuch.de,telefonbuch.de,swm.de,ptaheute.de,nivea.*,nw.de,absolventa.de,porzellanhandel24.de,blastbrigade.com,blic.rs,queer.de,inqa.de,bmas.de,mail.ru###cmpbox
 gelbeseiten.de,gasag.de##div[class^="cmpbox"]
 blastbrigade.com,tonspion.de,bier.by,test.de,kicker.de##div[id^="cmpbox"]
 ! For the case if the scroll page is blocked and the functionality of the site works correctly. Otherwise, make the JS rule
@@ -7567,6 +7567,10 @@ whats-on-netflix.com#$#html.sp-message-open body { overflow-y: visible !importan
 !
 !
 !
+baudiscount-fenster.de###rodonew
+deutscher-fenstershop.de###rule_assept
+green-24.de#$#.uk-modal { display: none !important; }
+green-24.de#$#.uk-modal-page { overflow: auto !important; }
 mixanitouxronou.gr##.newsletter_form
 my.bulbapp.com###elementor-popup-modal-21891
 iobit.com##.agree-pop
@@ -9365,7 +9369,7 @@ techbone.de#$#body { overflow: visible !important; padding-right: 0 !important; 
 mail.ru##.b-header-agreements
 tudumnetflix.com.br##.cookies-auth
 arcserve.com##.pps-privacy-policy-strip
-maler-vergleich.com,kartonmodellbau.de,wvv.de##.ccm-root
+daemmen-und-sanieren.de,maler-vergleich.com,kartonmodellbau.de,wvv.de##.ccm-root
 n-ergie.de##.cookie-compliance-bar
 nuuvem.com##.consent-warning
 aps.org##div[class^="app__cookie-footer"]
@@ -16113,6 +16117,7 @@ privacy.lecker.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent
 privacy.madame.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent-v2")){var g=new MutationObserver(function(){setTimeout(function(){var b=document.querySelector('button.no-children[path="\[0,2,1\]"]');b&&b.click();},300);setTimeout(function(){var c=document.querySelector('div[title="Berechtigte Interessen"]'); c&&c.click();},300);setTimeout(function(){var d=document.querySelectorAll('label[aria-checked="true"] > .off'); d.forEach(function(d){d.click();});},800); var f=document.querySelector('button.no-children[path="\[0,3,0\]"]'); setTimeout(function(){f&&f.click();},1000);});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},3E4)}});
 consent.ladbible.com,consent.gamingbible.co.uk,consent.unilad.co.uk#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var g=new MutationObserver(function(){var b=document.querySelector('button[title*="Accept" i]');b&&(g.disconnect(),b.click())});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
 !
+captaincoupon.de#%#//scriptlet('set-local-storage-item', 'areCookiesAccepted', 'true')
 technikum-wien.at#%#AG_onLoad(function() {var b=new MutationObserver(function() {var c=document.querySelector('button[aria-label="Externe Medien akzeptieren"]'); c&&(b.disconnect(),c.click()) });b.observe(document, {childList: !0,subtree: !0});setTimeout(function() {b.disconnect()}, 1E4)});
 songtradr.com#%#//scriptlet('set-cookie', 'cpaccpted', 'true')
 stern.de#%#AG_onLoad(function(){try{if(-1==document.cookie.indexOf("__cmpconsent")||!localStorage.getItem("__cmpconsent")){const c=new MutationObserver(function(){const a=document.querySelector("#cmpbox .cmptxt_btn_yes");a&&(c.disconnect(),a.click())});c.observe(document,{childList:!0,subtree:!0}),setTimeout(function(){c.disconnect()},1E4)}}catch(a){}});
@@ -17138,6 +17143,8 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !+ PLATFORM(windows, mac, android)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/124304
+captaincoupon.de#@#.cookie-modal
 ! https://github.com/AdguardTeam/AdguardFilters/issues/124210
 @@||sdk.privacy-center.org^$domain=index.hr
 ||sdk.privacy-center.org/*/loader.js$script,redirect=didomi-loader,domain=index.hr,important
