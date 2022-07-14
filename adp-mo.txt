@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: And09Ek8BdSo1Sm3tH1UAg
+! Checksum: wMtj8t2HKK3nEfCuG9IeDA
 ! Title: My AdFilters（for Mobile）
 ! Expires: 12 hours
-! Version: 202207150325
-! Last Modified: 2022年07月15日 03:25
+! Version: 202207150433
+! Last Modified: 2022年07月15日 04:33
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 68981
+! Total count: 68985
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -16910,6 +16910,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||game-tsutaya.tsite.jp/pc/common/scripts/analytics/s_code_ggame.js
 @@||game24h.vn/js/ads_v*.js?v=$domain=game24h.vn
 @@||game735.com^$generichide
+@@||game8.jp/api/ad/advertisement_placements?*sp_under_archive
 @@||gamecode.win^$generichide
 @@||gamefaucet.com/assets/js/fuckadblock.js
 @@||gamemod.mobi^$generichide
@@ -29487,6 +29488,8 @@ sarapbabe.com##a.has-text-danger
 sashares.co.za##a[data-wpel-link="external"]
 satellite-calculations.com##+js(set-constant, blck_enabled, false)
 satikids.com##+js(remove-attr, href, a[href^="/away.php"][rel="nofollow"][target="_blank"])
+satoshitap.com##+js(abort-current-script, document.getElementById, ads_)
+satoshitap.com##ins[style*="width:468px;"][style*="height:60px;"]
 saungfirmware.id##+js(set-constant, short_url_app_vars.force_disable_adblock, undefined)
 saungfirmware.id#@##ad-banner:not([style="height: 5px; width: 5px; position: absolute; top: 0;"])
 saungfirmware.id#@#.ad-banner:not([style="height: 5px; width: 5px; position: absolute; top: 0;"]):not(.blocker-tester + .ad-banner)
@@ -38717,6 +38720,7 @@ zznews.cn##.ad:not([style])
 ||bmcdn1.com^$third-party
 ||bmcdn2.com^
 ||bmcdn3.com^
+||bmcdn4.com^
 ||bmcm.pw^
 ||bmfads.com/app/display/items.php$script,redirect=noop.js,domain=fc.madshiba.fun,important
 ||bmfads.com^$third-party
