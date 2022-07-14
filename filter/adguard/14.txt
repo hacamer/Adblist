@@ -1,8 +1,8 @@
-! Checksum: 3xmYMmvqXIU+PCAIPY9nuA
+! Checksum: YQ3BSLKIHa0CUTKYZLI9lA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.26.27
-! TimeUpdated: 2022-07-14T10:30:49+00:00
+! Version: 2.1.26.28
+! TimeUpdated: 2022-07-14T11:07:49+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -3333,7 +3333,7 @@ wago.io##body .wago-recovery-container
 wago.io#%#//scriptlet('prevent-element-src-loading', 'script', 'nitropay.com/ads-')
 penize.cz#%#//scriptlet('prevent-setTimeout', 'adblock')
 intibia.com#%#//scriptlet('prevent-fetch', 'www3.doubleclick.net')
-clicknupload.to#@#.adsBox
+forex-trnd.com,clicknupload.to#@#.adsBox
 newscon.net##.adblock-warning
 fachwerk.de##body .test-adblock-overlay:not(#style_important)
 fachwerk.de#%#//scriptlet('prevent-xhr', 'pagead2.googlesyndication.com', 'true')
@@ -7567,6 +7567,7 @@ whats-on-netflix.com#$#html.sp-message-open body { overflow-y: visible !importan
 !
 !
 !
+my.bulbapp.com###elementor-popup-modal-21891
 iobit.com##.agree-pop
 hollisterco.com##.flash-message[data-flash-message-group-id="marketing-cookie-accept"]
 koctas.com.tr##.cookie-dark-filter
@@ -22124,6 +22125,7 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 ! Subscription popups add to subscriptions.txt
 !
+my.bulbapp.com##.contact-bar
 mtame.jp###slide_window
 boxil.jp#$##modal-appeal-download { display: none!important; }
 boxil.jp#$#body { overflow: auto!important; padding-right: 0!important; }
@@ -37366,6 +37368,7 @@ full-count.jp#?#section > div.c-heading:has(> p.c-heading__en:contains(RECOMMEND
 .ru/proxy_*.php?p___=*&part_url=*.php?callback=*&token=*&iso=
 .net/proxy_*.php?p___=*&part_url=*.php?callback=*&token=*&iso=
 !
+||cbot.ai^$third-party
 ||cp.skibble.com.ua^$third-party
 colorescience.com##.gobot-overlay
 ||whatya.solairo-api.com^$third-party
