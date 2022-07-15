@@ -1,8 +1,8 @@
-! Checksum: 4qBilk2jVItEbvOGiIKjRA
+! Checksum: MO1oTAL4iTQC5/OEzjtSdQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.26.39
-! TimeUpdated: 2022-07-15T06:30:47+00:00
+! Version: 2.1.26.40
+! TimeUpdated: 2022-07-15T08:30:54+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -76,6 +76,7 @@
 !-------------------------------------------------------------------!
 !---------------------- Annoyances ---------------------------------!
 !-------------------------------------------------------------------!
+! TODO: remove these files when the related ones in the filters are removed
 !
 ! This section contains the list of the rules against annoyances that are not falling under existing categories. Rules should be domain-specific.
 !
@@ -19586,10 +19587,6 @@ mycard2go.com#@#.cookiebar
 fashionette.de#@##cookies-notice
 foodnetwork.co.uk#@#.cookie-message:not(html):not(body)
 !
-! TODO: remove from @include in FiltersRegistry, then from here
-!
-! TODO: remove from @include in FiltersRegistry, then from here
-!
 ! This section contains the list of rules are against banners that promote mobile apps.
 ! Note, that the file consists of multiple sections for different purposes. For instance, there is a section for exceptions and some platform-specific sections.
 !
@@ -37772,3 +37769,326 @@ hackstore.net,activationkeys.co,bicfic.com,boxcracked.com,idmcrackpatch.com,acti
 hackstore.net,activationkeys.co,bicfic.com,boxcracked.com,idmcrackpatch.com,activationkey.net,activatorproductkey.org,androidride.com,c4crack.com,chserialkey.com,ckfile.com,crack4us.com,cracksmod.com,cracxsoftwares.com,creativefabrica.com,downloadmockup.com,f4freesoftware.com,freeappstorepc.com,fullpcsoftz.com,gomovies.co,hentairon.net,latestcracked.com,megawarez.org,procrackerz.org,profullcrack.com,psdfreebies.com,realhax.com,sajidpc.com,serialkeypro.com,shehrozpc.com,sjcrack.com,soft7star.com,warezcrack.net,workingkeys.org#$#.onp-sl-social-locker { display: none!important; }
 latestcracked.com#$#.onp-sl-signin-locker { display: none!important; }
 warezcrack.net#$#.onp-sl-content > [data-lock-id^="onpLock"] { display: block!important; }
+!-------------------------------------------------------------------!
+!---------------------- Cookies ------------------------------------!
+!-------------------------------------------------------------------!
+!
+! dummy. Content must be replaced by corresponding rules
+!
+||dummy.rule^$badfilter
+dummy.rule###mfn-gdpr
+dummy.rule##.Cms_CookieConsent
+dummy.rule##.shopui-eu-cookie-bar
+dummy.rule##.footer-lgpd
+dummy.rule###footer-lgpd
+dummy.rule###cookie-bg
+dummy.rule##.cookiealert.show
+dummy.rule###cm-cookie-window
+dummy.rule##.amgdprcookie-bar-container
+dummy.rule###machete_cookie_container
+!
+! dummy. Content must be replaced by corresponding rules
+!
+||dummy.rule^$badfilter
+dummy.rule###mfn-gdpr
+dummy.rule##.Cms_CookieConsent
+dummy.rule##.shopui-eu-cookie-bar
+dummy.rule##.footer-lgpd
+dummy.rule###footer-lgpd
+dummy.rule###cookie-bg
+dummy.rule##.cookiealert.show
+dummy.rule###cm-cookie-window
+dummy.rule##.amgdprcookie-bar-container
+dummy.rule###machete_cookie_container
+!
+! dummy. Content must be replaced by corresponding rules
+!
+||dummy.rule^$badfilter
+dummy.rule###mfn-gdpr
+dummy.rule##.Cms_CookieConsent
+dummy.rule##.shopui-eu-cookie-bar
+dummy.rule##.footer-lgpd
+dummy.rule###footer-lgpd
+dummy.rule###cookie-bg
+dummy.rule##.cookiealert.show
+dummy.rule###cm-cookie-window
+dummy.rule##.amgdprcookie-bar-container
+dummy.rule###machete_cookie_container
+!-------------------------------------------------------------------!
+!---------------------- Popups -------------------------------------!
+!-------------------------------------------------------------------!
+!
+! dummy. Content must be replaced by corresponding rules
+!
+||dummy.rule^$badfilter
+dummy.rule###mfn-gdpr
+dummy.rule##.Cms_CookieConsent
+dummy.rule##.shopui-eu-cookie-bar
+dummy.rule##.footer-lgpd
+dummy.rule###footer-lgpd
+dummy.rule###cookie-bg
+dummy.rule##.cookiealert.show
+dummy.rule###cm-cookie-window
+dummy.rule##.amgdprcookie-bar-container
+dummy.rule###machete_cookie_container
+!
+! dummy. Content must be replaced by corresponding rules
+!
+||dummy.rule^$badfilter
+dummy.rule###mfn-gdpr
+dummy.rule##.Cms_CookieConsent
+dummy.rule##.shopui-eu-cookie-bar
+dummy.rule##.footer-lgpd
+dummy.rule###footer-lgpd
+dummy.rule###cookie-bg
+dummy.rule##.cookiealert.show
+dummy.rule###cm-cookie-window
+dummy.rule##.amgdprcookie-bar-container
+dummy.rule###machete_cookie_container
+!
+! dummy. Content must be replaced by corresponding rules
+!
+||dummy.rule^$badfilter
+dummy.rule###mfn-gdpr
+dummy.rule##.Cms_CookieConsent
+dummy.rule##.shopui-eu-cookie-bar
+dummy.rule##.footer-lgpd
+dummy.rule###footer-lgpd
+dummy.rule###cookie-bg
+dummy.rule##.cookiealert.show
+dummy.rule###cm-cookie-window
+dummy.rule##.amgdprcookie-bar-container
+dummy.rule###machete_cookie_container
+!
+! dummy. Content must be replaced by corresponding rules
+!
+||dummy.rule^$badfilter
+dummy.rule###mfn-gdpr
+dummy.rule##.Cms_CookieConsent
+dummy.rule##.shopui-eu-cookie-bar
+dummy.rule##.footer-lgpd
+dummy.rule###footer-lgpd
+dummy.rule###cookie-bg
+dummy.rule##.cookiealert.show
+dummy.rule###cm-cookie-window
+dummy.rule##.amgdprcookie-bar-container
+dummy.rule###machete_cookie_container
+!
+! dummy. Content must be replaced by corresponding rules
+!
+||dummy.rule^$badfilter
+dummy.rule###mfn-gdpr
+dummy.rule##.Cms_CookieConsent
+dummy.rule##.shopui-eu-cookie-bar
+dummy.rule##.footer-lgpd
+dummy.rule###footer-lgpd
+dummy.rule###cookie-bg
+dummy.rule##.cookiealert.show
+dummy.rule###cm-cookie-window
+dummy.rule##.amgdprcookie-bar-container
+dummy.rule###machete_cookie_container
+!
+! dummy. Content must be replaced by corresponding rules
+!
+||dummy.rule^$badfilter
+dummy.rule###mfn-gdpr
+dummy.rule##.Cms_CookieConsent
+dummy.rule##.shopui-eu-cookie-bar
+dummy.rule##.footer-lgpd
+dummy.rule###footer-lgpd
+dummy.rule###cookie-bg
+dummy.rule##.cookiealert.show
+dummy.rule###cm-cookie-window
+dummy.rule##.amgdprcookie-bar-container
+dummy.rule###machete_cookie_container
+!
+! dummy. Content must be replaced by corresponding rules
+!
+||dummy.rule^$badfilter
+dummy.rule###mfn-gdpr
+dummy.rule##.Cms_CookieConsent
+dummy.rule##.shopui-eu-cookie-bar
+dummy.rule##.footer-lgpd
+dummy.rule###footer-lgpd
+dummy.rule###cookie-bg
+dummy.rule##.cookiealert.show
+dummy.rule###cm-cookie-window
+dummy.rule##.amgdprcookie-bar-container
+dummy.rule###machete_cookie_container
+!
+! dummy. Content must be replaced by corresponding rules
+!
+||dummy.rule^$badfilter
+dummy.rule###mfn-gdpr
+dummy.rule##.Cms_CookieConsent
+dummy.rule##.shopui-eu-cookie-bar
+dummy.rule##.footer-lgpd
+dummy.rule###footer-lgpd
+dummy.rule###cookie-bg
+dummy.rule##.cookiealert.show
+dummy.rule###cm-cookie-window
+dummy.rule##.amgdprcookie-bar-container
+dummy.rule###machete_cookie_container
+!
+! dummy. Content must be replaced by corresponding rules
+!
+||dummy.rule^$badfilter
+dummy.rule###mfn-gdpr
+dummy.rule##.Cms_CookieConsent
+dummy.rule##.shopui-eu-cookie-bar
+dummy.rule##.footer-lgpd
+dummy.rule###footer-lgpd
+dummy.rule###cookie-bg
+dummy.rule##.cookiealert.show
+dummy.rule###cm-cookie-window
+dummy.rule##.amgdprcookie-bar-container
+dummy.rule###machete_cookie_container
+!
+! dummy. Content must be replaced by corresponding rules
+!
+||dummy.rule^$badfilter
+dummy.rule###mfn-gdpr
+dummy.rule##.Cms_CookieConsent
+dummy.rule##.shopui-eu-cookie-bar
+dummy.rule##.footer-lgpd
+dummy.rule###footer-lgpd
+dummy.rule###cookie-bg
+dummy.rule##.cookiealert.show
+dummy.rule###cm-cookie-window
+dummy.rule##.amgdprcookie-bar-container
+dummy.rule###machete_cookie_container
+!-------------------------------------------------------------------!
+!---------------------- MobileApp ----------------------------------!
+!-------------------------------------------------------------------!
+!
+! dummy. Content must be replaced by corresponding rules
+!
+||dummy.rule^$badfilter
+dummy.rule###mfn-gdpr
+dummy.rule##.Cms_CookieConsent
+dummy.rule##.shopui-eu-cookie-bar
+dummy.rule##.footer-lgpd
+dummy.rule###footer-lgpd
+dummy.rule###cookie-bg
+dummy.rule##.cookiealert.show
+dummy.rule###cm-cookie-window
+dummy.rule##.amgdprcookie-bar-container
+dummy.rule###machete_cookie_container
+!
+! dummy. Content must be replaced by corresponding rules
+!
+||dummy.rule^$badfilter
+dummy.rule###mfn-gdpr
+dummy.rule##.Cms_CookieConsent
+dummy.rule##.shopui-eu-cookie-bar
+dummy.rule##.footer-lgpd
+dummy.rule###footer-lgpd
+dummy.rule###cookie-bg
+dummy.rule##.cookiealert.show
+dummy.rule###cm-cookie-window
+dummy.rule##.amgdprcookie-bar-container
+dummy.rule###machete_cookie_container
+!
+! dummy. Content must be replaced by corresponding rules
+!
+||dummy.rule^$badfilter
+dummy.rule###mfn-gdpr
+dummy.rule##.Cms_CookieConsent
+dummy.rule##.shopui-eu-cookie-bar
+dummy.rule##.footer-lgpd
+dummy.rule###footer-lgpd
+dummy.rule###cookie-bg
+dummy.rule##.cookiealert.show
+dummy.rule###cm-cookie-window
+dummy.rule##.amgdprcookie-bar-container
+dummy.rule###machete_cookie_container
+!-------------------------------------------------------------------!
+!---------------------- Other Annoyances ---------------------------!
+!-------------------------------------------------------------------!
+!
+! dummy. Content must be replaced by corresponding rules
+!
+||dummy.rule^$badfilter
+dummy.rule###mfn-gdpr
+dummy.rule##.Cms_CookieConsent
+dummy.rule##.shopui-eu-cookie-bar
+dummy.rule##.footer-lgpd
+dummy.rule###footer-lgpd
+dummy.rule###cookie-bg
+dummy.rule##.cookiealert.show
+dummy.rule###cm-cookie-window
+dummy.rule##.amgdprcookie-bar-container
+dummy.rule###machete_cookie_container
+!
+! dummy. Content must be replaced by corresponding rules
+!
+||dummy.rule^$badfilter
+dummy.rule###mfn-gdpr
+dummy.rule##.Cms_CookieConsent
+dummy.rule##.shopui-eu-cookie-bar
+dummy.rule##.footer-lgpd
+dummy.rule###footer-lgpd
+dummy.rule###cookie-bg
+dummy.rule##.cookiealert.show
+dummy.rule###cm-cookie-window
+dummy.rule##.amgdprcookie-bar-container
+dummy.rule###machete_cookie_container
+!
+! dummy. Content must be replaced by corresponding rules
+!
+||dummy.rule^$badfilter
+dummy.rule###mfn-gdpr
+dummy.rule##.Cms_CookieConsent
+dummy.rule##.shopui-eu-cookie-bar
+dummy.rule##.footer-lgpd
+dummy.rule###footer-lgpd
+dummy.rule###cookie-bg
+dummy.rule##.cookiealert.show
+dummy.rule###cm-cookie-window
+dummy.rule##.amgdprcookie-bar-container
+dummy.rule###machete_cookie_container
+!-------------------------------------------------------------------!
+!---------------------- Widgets ------------------------------------!
+!-------------------------------------------------------------------!
+!
+! dummy. Content must be replaced by corresponding rules
+!
+||dummy.rule^$badfilter
+dummy.rule###mfn-gdpr
+dummy.rule##.Cms_CookieConsent
+dummy.rule##.shopui-eu-cookie-bar
+dummy.rule##.footer-lgpd
+dummy.rule###footer-lgpd
+dummy.rule###cookie-bg
+dummy.rule##.cookiealert.show
+dummy.rule###cm-cookie-window
+dummy.rule##.amgdprcookie-bar-container
+dummy.rule###machete_cookie_container
+!
+! dummy. Content must be replaced by corresponding rules
+!
+||dummy.rule^$badfilter
+dummy.rule###mfn-gdpr
+dummy.rule##.Cms_CookieConsent
+dummy.rule##.shopui-eu-cookie-bar
+dummy.rule##.footer-lgpd
+dummy.rule###footer-lgpd
+dummy.rule###cookie-bg
+dummy.rule##.cookiealert.show
+dummy.rule###cm-cookie-window
+dummy.rule##.amgdprcookie-bar-container
+dummy.rule###machete_cookie_container
+!
+! dummy. Content must be replaced by corresponding rules
+!
+||dummy.rule^$badfilter
+dummy.rule###mfn-gdpr
+dummy.rule##.Cms_CookieConsent
+dummy.rule##.shopui-eu-cookie-bar
+dummy.rule##.footer-lgpd
+dummy.rule###footer-lgpd
+dummy.rule###cookie-bg
+dummy.rule##.cookiealert.show
+dummy.rule###cm-cookie-window
+dummy.rule##.amgdprcookie-bar-container
+dummy.rule###machete_cookie_container
