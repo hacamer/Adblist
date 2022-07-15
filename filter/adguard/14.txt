@@ -1,8 +1,8 @@
-! Checksum: +A9eOFMpyYTq5N2Q+4CLJg
+! Checksum: 0HSyyniLEeIX+4XnApuKag
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.26.37
-! TimeUpdated: 2022-07-14T20:30:34+00:00
+! Version: 2.1.26.38
+! TimeUpdated: 2022-07-15T05:30:34+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -3534,7 +3534,7 @@ tvvse.my1.ru###cont-i > span[style="color:red"]
 samfw.com###block-mess
 samfw.com###block-mess ~ div.holder
 quermania.de###getyourguide2
-macdrop.net##.adp-popup
+cmacked.com,macdrop.net##.adp-popup
 animejp.net##.halim-film-notice
 hentainhaven.com##body > div.text-center[style="color:white; font-size:16px;"]
 mapa-turystyczna.pl#%#//scriptlet("prevent-setTimeout", "comBlocked")
@@ -34954,6 +34954,8 @@ newsweek.com##iframe[src="http://sns.europe.newsweek.com/newsletter?popup=1"]
 !######### JS tweaks ##########
 !##############################
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/124297
+cmacked.com#%#//scriptlet("adjust-setInterval", ".show_download_links", "", "0.02")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/123709
 pickhopes.com#%#//scriptlet("set-constant", "timer", "0")
 ffworld.xyz#%#//scriptlet("set-constant", "count", "0")
