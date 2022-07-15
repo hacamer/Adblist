@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: 8rlX5dp5lIPhihmI2/LCVQ
+! Checksum: AU125WVgIRPSGlphnEC3eQ
 ! Title: My AdFilters（for Mobile）
 ! Expires: 12 hours
-! Version: 202207150732
-! Last Modified: 2022年07月15日 07:32
+! Version: 202207151056
+! Last Modified: 2022年07月15日 10:56
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 68986
+! Total count: 68995
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -199,6 +199,7 @@
 ###ad-horizontal-header
 ###ad-horizontal-top
 ###ad-img
+###ad-incontent
 ###ad-index
 ###ad-jack
 ###ad-label
@@ -11775,6 +11776,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /newsstat/*
 /newstat/*
 /newstatsinc.
+/newtrackingscript.
 /nextPerformanceRetargeting.
 /next_analytics.
 /nextdaymedia-ads/*
@@ -15505,6 +15507,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||1trackapp.com//static/tracking/$script,domain=1track.ru
 @@||1trackapp.com/static/tracking/$domain=1track.ru
 @@||1trackapp.com/static/tracking/$script,stylesheet,~third-party
+@@||210.40.130.91^*/ad.css?$stylesheet
 @@||230book.com/images/bqg.js$domain=230book.net
 @@||2doc.nl^*/vpro-analytics/Analytics.js$xmlhttprequest
 @@||2mdn.net/instream/
@@ -17831,7 +17834,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||maxmind.com/geoip/$xmlhttprequest,domain=bandai-hobby.net|elgato.com|filld.com|ibanez.com
 @@||maxmind.com/geoip/$xmlhttprequest,domain=dcshoes.fr
 @@||maxmind.com^*/geoip.js$domain=aljazeera.com|ballerstatus.com|bikemap.net|carltonjordan.com|cashu.com|coolsport.tv|dereon.com|dr.dk|driftinnovation.com|everydaysource.com|fab.com|girlgames4u.com|incgamers.com|ip-address.cc|maaduu.com|qatarairways.com|sat-direction.com|sotctours.com|stoli.com|vibe.com
-@@||maxmind.com^*/geoip2.js$domain=boostedboards.com|donorschoose.org|elgato.com|fallout4.com|filld.com|ibanez.com|metronews.ca|mtv.com.lb|runningheroes.com|teslamotors.com
+@@||maxmind.com^*/geoip2.js$domain=boostedboards.com|donorschoose.org|elgato.com|fallout4.com|filld.com|ibanez.com|instamed.com|metronews.ca|mtv.com.lb|runningheroes.com|teslamotors.com
 @@||maxmind.com^*/geoip2.js?$script,domain=dcshoes.fr
 @@||maxstream.video^$generichide
 @@||mc-premium.org/assets/js/fuckadblock.js
@@ -20951,7 +20954,7 @@ bdsmx.tube,inporn.com##section[is-footer-banners]
 beanfun.com#@#.ad-slider
 beatsnoop.com##+js(abort-current-script, document.createElement, adblock)
 beautyvsfashion.com##div[class^="adunit-"]
-beckershospitalreview.com##.becker_doubleclick
+beckershospitalreview.com##.moduletable > .becker_doubleclick
 beebom.com###block-44
 beef1999.blogspot.com##+js(abort-on-property-read, LieDetector)
 beef1999.blogspot.com##+js(noeval-if, /_statcounter|use_adebloker|my_ads_url/)
@@ -31677,9 +31680,9 @@ vidlii.com##+js(set-constant, adsbygoogle.loaded, true)
 vidload.net##+js(addEventListener-defuser, , popunder)
 vidload.net##+js(no-setInterval-if, ppu_exp)
 vidlox.me##+js(set-constant, adb, 0)
+vidmoly.*##img[id^="abo"]
 vidmoly.me,vidmoly.net,vidmoly.to##+js(abort-on-property-read, abs1)
 vidmoly.me,vidmoly.net,vidmoly.to#@#.adsBox
-vidmoly.net##img[id^="abo"]
 vidoza.net###videotop > iframe
 vidoza.net##.in-block[style*="z-index:"]
 vidoza.net,vidoza.org##.prevent-first-click
@@ -32730,6 +32733,7 @@ youtube.com##.ytp-ad-progress-list
 youtube.com##YTM-PROMOTED-VIDEO-RENDERER
 youtube.com##[layout*="display-ad-"]
 youtube.com##ytd-compact-promoted-video-renderer
+youtube.com##ytd-engagement-panel-section-list-renderer
 youtube.com##ytd-promoted-sparkles-text-search-renderer
 youtube.com##ytd-promoted-sparkles-web-renderer
 youtube.com##ytd-search-pyv-renderer
@@ -41861,6 +41865,7 @@ zznews.cn##.ad:not([style])
 ||d3s7ggfq1s6jlj.cloudfront.net^
 ||d3sbxpiag177w8.cloudfront.net^
 ||d3t3bxixsojwre.cloudfront.net^$all
+||d3t3z4teexdk2r.cloudfront.net^
 ||d3t5ngjixpjdho.cloudfront.net^
 ||d3tglifpd8whs6.cloudfront.net^
 ||d3tozt7si7bmf7.cloudfront.net^
@@ -45940,6 +45945,7 @@ zznews.cn##.ad:not([style])
 ||gfnormal00aj.com^
 ||gfnormal00ak.com^
 ||gfnormal00an.com^
+||gfnormal07ae.com^
 ||gfnttldx.com^
 ||gfpplflrif.com^
 ||gfstrck.com^
@@ -52284,6 +52290,7 @@ zznews.cn##.ad:not([style])
 ||messagenovice.com^
 ||messari.io/js/wutangtrack.js
 ||messenger-notify.digital^
+||messenger.com/ajax/bnzai?
 ||messiah.id/api/event
 ||messiah.id/js/script.js
 ||messyoranges.com^
@@ -53404,6 +53411,7 @@ zznews.cn##.ad:not([style])
 ||myvisualiq.net^$image,script,third-party
 ||mywebstats.com.au^$third-party
 ||mywebstats.org^$third-party
+||mywei.love^
 ||mywondertrip.com^
 ||myxuak.mir-kubikov.ru^
 ||myyuye.club^
@@ -65862,6 +65870,7 @@ zznews.cn##.ad:not([style])
 ||vidhdthe.online/mavennofile.js
 ||vidible.tv/trk/
 ||vidigital.ru^$third-party
+||vidmoly.*/static/vastAD.js
 ||vidmoly.me/*.php?*=*&*&$xmlhttprequest
 ||vidora.com^$third-party
 ||vidoza.net/sw.js$important
