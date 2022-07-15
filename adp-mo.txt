@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: pfFym0OHrbM14iyCGpybxQ
+! Checksum: DMWe6Nu5LeyRdEQhrIUzWg
 ! Title: My AdFilters（for Mobile）
 ! Expires: 12 hours
-! Version: 202207151349
-! Last Modified: 2022年07月15日 13:49
+! Version: 202207151438
+! Last Modified: 2022年07月15日 14:38
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 68908
+! Total count: 68915
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -9779,8 +9779,9 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 /css/78dfj/*.js
 /css/ads-
 /css/adv.
+/css/banr*.html$domain=assia.*|assia4.com|assia23.com
 /css/gg.js
-/css/jquerymin*.js$domain=assia.*|assia4.com
+/css/jquerymin*.js$domain=assia.*|assia4.com|assia23.com
 /cssjs/ads/*
 /cta-loaded.js
 /ctd-sourcepoint.
@@ -20523,8 +20524,9 @@ asp300.com,asp300.net##.tit02 > a
 assamtribune.com###async_body_tags
 assamtribune.com###left_level_before_tags
 assbbs.com###ass_adv
-assia4.com##+js(abort-on-property-read, ClickUnder)
-assia4.com,assia.*##+js(window.open-defuser)
+assia23.com,assia4.com##+js(abort-on-property-read, ClickUnder)
+assia23.com,assia4.com,assia.*##+js(window.open-defuser)
+assia23.com,assia4.com,assia.*##body > div[class^="ban"]
 asspoint.com,babepedia.com,babesandstars.com,blackhaloadultreviews.com,dbnaked.com,freeones.com,gfycatporn.com,javfor.me,mansurfer.com,newpornstarblogs.com,ok.porn,porn-star.com,porn.com,porndoe.com,pornhubpremium.com,pornstarchive.com,rogreviews.com,sexyandfunny.com,shemaletubevideos.com,spankbang.com,str8upgayporn.com,the-new-lagoon.com,tube8.com,wcareviews.com,xxxonxxx.com,youporn.com##a[href*=".com/track/"]
 asupload.com##+js(window.open-defuser)
 asurascans.com#?#.theiaStickySidebar > div.section:has(> div.releases:contains(Advertisement))
@@ -21477,6 +21479,7 @@ capsulenz.com,ssbcrack.com##.td_spot_img_all
 carandbike.com#@#.ad300
 cararegistrasi.com##+js(window.open-defuser)
 cardgames.io##.don-draper > label
+cardscanner.co##+js(no-setTimeout-if, ('body').css('overflow')
 careerindia.com##.inhouse-content
 careerindia.com#@#.os-header-ad
 cargurus.co.uk##.leaderboardWrapper
@@ -30301,14 +30304,14 @@ streamz.cc##+js(remove-attr, onclick, form[action="dodownload.dll"] > input[oncl
 streamzz.*,live-eventsport.com,vidlink.org,streamz.*,nullpk.com,mitly.us,merdekaid.online,software-on.com##a[href^="http://deloplen.com/"]
 streamzz.*,streamz.*##+js(window.open-defuser, 1, /video.php)
 streetinsider.com#@##ad_space
-strefabiznesu.pl,strefaagro.pl,motofakty.pl##.componentsPromotionsPromotedList:not([data-event-position-context="componentsPromotionsPromotedList"])
-strefabiznesu.pl,strefaagro.pl,motofakty.pl##.componentsPromotionsSubjectCategoryPromoted:not([data-event-position-context="componentsPromotionsSubjectCategoryPromoted"])
-strefabiznesu.pl,strefaagro.pl,motofakty.pl,kurierlubelski.pl##.componentsListingLargeRow__content > div[data-turn-on-display] > .atomsListingArticleTileWithSeparatedLink > a[title="Reklama"]
-strefabiznesu.pl,strefaagro.pl,motofakty.pl,kurierlubelski.pl#?#.componentsListingLargeRow__content > div[data-turn-on-display]:has(> .atomsListingArticleTileWithSeparatedLink > .adsSlotContainer)
 strikeout.cc##+js(addEventListener-defuser, error, blockMsg)
 strikeout.co#@#.AdSense
 strikeout.nu##+js(json-prune, *.*, *.clk)
 strmrdrfrx.live,strmrdrpx.xyz,tacsiz.com##+js(set-constant, adsConfig.enabled, false)
+stronakobiet.pl,strefabiznesu.pl,strefaagro.pl,motofakty.pl##.componentsPromotionsPromotedList:not([data-event-position-context="componentsPromotionsPromotedList"])
+stronakobiet.pl,strefabiznesu.pl,strefaagro.pl,motofakty.pl##.componentsPromotionsSubjectCategoryPromoted:not([data-event-position-context="componentsPromotionsSubjectCategoryPromoted"])
+stronakobiet.pl,strefabiznesu.pl,strefaagro.pl,motofakty.pl,kurierlubelski.pl##.componentsListingLargeRow__content > div[data-turn-on-display] > .atomsListingArticleTileWithSeparatedLink > a[title="Reklama"]
+stronakobiet.pl,strefabiznesu.pl,strefaagro.pl,motofakty.pl,kurierlubelski.pl#?#.componentsListingLargeRow__content > div[data-turn-on-display]:has(> .atomsListingArticleTileWithSeparatedLink > .adsSlotContainer)
 strtape.*##+js(window.open-defuser)
 strtape.*#@#.google-ad
 strtapeadblocker.art#@#.skyscraper.ad
@@ -37318,6 +37321,7 @@ zznews.cn##.ad:not([style])
 ||asccdn.com^
 ||ascdwiah.com^
 ||ascend.ai^$third-party
+||ascensionpatterbearable.com^
 ||ascpqnj-oam.global.ssl.fastly.net^
 ||asdasdad.net^
 ||asdfix.com^
@@ -48607,6 +48611,7 @@ zznews.cn##.ad:not([style])
 ||iolam.it/trk
 ||iomsew.com^
 ||ionia.pro^
+||ioniaukmla.xyz^
 ||iono.fm/tracking?
 ||ioomb.cn^
 ||iople.com^
@@ -49651,6 +49656,7 @@ zznews.cn##.ad:not([style])
 ||king3rsc7ol9e3ge.com^
 ||kingads.mobi^
 ||kingwam.com^
+||kingwitheaa.lol^
 ||kingyonlendir.link^
 ||kinkledunendly.com^
 ||kinleung.cn^
@@ -57312,6 +57318,7 @@ zznews.cn##.ad:not([style])
 ||resources.opentext.com^
 ||resources.opentext.de^
 ||resources.securew2.com^
+||respectfullysavvy.com^
 ||respectrain.com^
 ||responder.wt.heise.de^
 ||response.arizonacoyotes.com^

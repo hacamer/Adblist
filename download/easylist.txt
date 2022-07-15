@@ -1201,6 +1201,7 @@ smallseotools.com#@#.adsbygoogle
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=smallseotools.com,badfilter
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=smallseotools.com
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,redirect=noop.js,domain=smallseotools.com,important
+cardscanner.co##+js(no-setTimeout-if, ('body').css('overflow')
 @@||static.panda-novel.com/static/*/js/plugins/adview_*_ads.js
 panda-novel.com##+js(set-constant, pandaAdviewValidate, true)
 satoshitap.com##+js(abort-current-script, document.getElementById, ads_)
@@ -6539,10 +6540,10 @@ wykop.pl###wpladtop
 wykop.pl##a[href^="https://www.wykop.pl/adverts"]
 wykop.pl#?##itemsStream > .link:has(a[href^="http://www.wykop.pl/reklama"])
 gazeta.pl##.o-section__adform
-strefabiznesu.pl,strefaagro.pl,motofakty.pl,kurierlubelski.pl##.componentsListingLargeRow__content > div[data-turn-on-display] > .atomsListingArticleTileWithSeparatedLink > a[title="Reklama"]
-strefabiznesu.pl,strefaagro.pl,motofakty.pl,kurierlubelski.pl#?#.componentsListingLargeRow__content > div[data-turn-on-display]:has(> .atomsListingArticleTileWithSeparatedLink > .adsSlotContainer)
-strefabiznesu.pl,strefaagro.pl,motofakty.pl##.componentsPromotionsPromotedList:not([data-event-position-context="componentsPromotionsPromotedList"])
-strefabiznesu.pl,strefaagro.pl,motofakty.pl##.componentsPromotionsSubjectCategoryPromoted:not([data-event-position-context="componentsPromotionsSubjectCategoryPromoted"])
+stronakobiet.pl,strefabiznesu.pl,strefaagro.pl,motofakty.pl,kurierlubelski.pl##.componentsListingLargeRow__content > div[data-turn-on-display] > .atomsListingArticleTileWithSeparatedLink > a[title="Reklama"]
+stronakobiet.pl,strefabiznesu.pl,strefaagro.pl,motofakty.pl,kurierlubelski.pl#?#.componentsListingLargeRow__content > div[data-turn-on-display]:has(> .atomsListingArticleTileWithSeparatedLink > .adsSlotContainer)
+stronakobiet.pl,strefabiznesu.pl,strefaagro.pl,motofakty.pl##.componentsPromotionsPromotedList:not([data-event-position-context="componentsPromotionsPromotedList"])
+stronakobiet.pl,strefabiznesu.pl,strefaagro.pl,motofakty.pl##.componentsPromotionsSubjectCategoryPromoted:not([data-event-position-context="componentsPromotionsSubjectCategoryPromoted"])
 dziennikbaltycki.pl,dzienniklodzki.pl,dziennikpolski24.pl,dziennikzachodni.pl,echodnia.eu,expressbydgoski.pl,expressilustrowany.pl,gazetakrakowska.pl,gazetalubuska.pl,gazetawroclawska.pl,gk24.pl,gloswielkopolski.pl,gol24.pl,gp24.pl,gs24.pl,katowice.naszemiasto.pl,kurierlubelski.pl,motofakty.pl,naszemiasto.pl,nowiny24.pl,nowosci.com.pl,nto.pl,polskatimes.pl,pomorska.pl,poranny.pl,sportowy24.pl,strefaagro.pl,strefabiznesu.pl,stronakobiet.pl,telemagazyn.pl,to.com.pl,wspolczesna.pl##.componentsPromotionsArticlePromotedList
 dziennikbaltycki.pl,dzienniklodzki.pl,dziennikpolski24.pl,dziennikzachodni.pl,echodnia.eu,expressbydgoski.pl,expressilustrowany.pl,gazetakrakowska.pl,gazetalubuska.pl,gazetawroclawska.pl,gk24.pl,gloswielkopolski.pl,gol24.pl,gp24.pl,gs24.pl,katowice.naszemiasto.pl,kurierlubelski.pl,motofakty.pl,naszemiasto.pl,nowiny24.pl,nowosci.com.pl,nto.pl,polskatimes.pl,pomorska.pl,poranny.pl,sportowy24.pl,strefaagro.pl,strefabiznesu.pl,stronakobiet.pl,telemagazyn.pl,to.com.pl,wspolczesna.pl##.promoContainer
 instalki.pl##.module-adv
@@ -8545,8 +8546,8 @@ buffstream.net##+js(remove-attr, onclick, .list-group > a[onclick^="window.open(
 planetsuzy.org##+js(window.open-defuser)
 gotblop.com##+js(set-constant, popunderUrl, undefined)
 pornokeep.com##+js(set-constant, bdet, noopFunc)
-assia4.com,assia.*##+js(window.open-defuser)
-assia4.com##+js(abort-on-property-read, ClickUnder)
+assia23.com,assia4.com,assia.*##+js(window.open-defuser)
+assia23.com,assia4.com##+js(abort-on-property-read, ClickUnder)
 15min.lt##+js(abort-current-script, performance.mark, googlesyndication.com)
 myshared.ru,slideplayer.biz,slideplayer.biz.tr,slideplayer.com,slideplayer.com.br,slideplayer.cz,slideplayer.dk,slideplayer.es,slideplayer.fi,slideplayer.fr,slideplayer.hu,slideplayer.in.th,slideplayer.info,slideplayer.it,slideplayer.nl,slideplayer.no,slideplayer.org,slideplayer.pl,slideplayer.se##+js(set-constant, service.show_after_load, noopFunc)
 won.pe##+js(remove-attr, href, #skipbox > a[href^="http://redirect.won.pe/ad/"]#skip_button)
@@ -11323,7 +11324,9 @@ eurogamer.*##.desktop_mpu
 nintendolife.com##div[data-dfp-sizes]
 nintendolife.com##.items > .item-insert
 ||mellowads.com/pop.js$important
-/css/jquerymin*.js$domain=assia.*|assia4.com
+assia23.com,assia4.com,assia.*##body > div[class^="ban"]
+/css/banr*.html$domain=assia.*|assia4.com|assia23.com
+/css/jquerymin*.js$domain=assia.*|assia4.com|assia23.com
 ||livexscores.com/rekban.php
 pacogames.com###ga_sp_banner
 pacogames.com###ga_sp_preloader
@@ -21738,6 +21741,7 @@ tf2r.com#@#.adverts
 ||asacdn.com^
 ||asccdn.com^
 ||ascdwiah.com^
+||ascensionpatterbearable.com^
 ||asdasdad.net^
 ||asdfix.com^
 ||asdpoi.com^
@@ -23692,6 +23696,7 @@ tf2r.com#@#.adverts
 ||ioadserve.com^
 ||iodideeyebath.cam^
 ||ioheiy.com^
+||ioniaukmla.xyz^
 ||iople.com^
 ||iphumiki.com^
 ||ipmbnqqaon.com^
@@ -23887,6 +23892,7 @@ tf2r.com#@#.adverts
 ||kindleloving.com^
 ||king3rsc7ol9e3ge.com^
 ||kingads.mobi^
+||kingwitheaa.lol^
 ||kingyonlendir.link^
 ||kinkledunendly.com^
 ||kinoneeloign.com^
@@ -25326,6 +25332,7 @@ tf2r.com#@#.adverts
 ||resistcorrectly.com^
 ||resniks.pro^
 ||resonance.pk^
+||respectfullysavvy.com^
 ||responservbzh.icu^
 ||responserver.com^
 ||responsibleassociation.com^
