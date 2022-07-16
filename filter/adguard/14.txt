@@ -1,8 +1,8 @@
-! Checksum: mJBsg0Owty9y+t/payX81A
+! Checksum: glpjYE1WUKzgWKwY+wR31w
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.26.52
-! TimeUpdated: 2022-07-16T03:30:39+00:00
+! Version: 2.1.26.53
+! TimeUpdated: 2022-07-16T16:30:39+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -20608,6 +20608,7 @@ news.yahoo.co.jp##a[data-ylk^="rsec:webtoapp;slk:bnr_"]
 news.yahoo.co.jp###wrapper > #peron
 partner.yahoo.co.jp##.Rsab
 paypayfleamarket.yahoo.co.jp###appadbnr
+weather.yahoo.co.jp##.doubleImage_cardBetween
 weather.yahoo.co.jp##.linkAndroid
 weather.yahoo.co.jp###content > #doubleImage.tracked_mods.doubleImage-skew
 weather.yahoo.co.jp###doubleImage
@@ -20615,7 +20616,6 @@ weather.yahoo.co.jp##.footeLinkPromo
 weather.yahoo.co.jp##.appLink
 weather.yahoo.co.jp##.mdStickyFooter
 weather.yahoo.co.jp##a[href^="https://app.adjust.com/"]
-weather.yahoo.co.jp##.doubleImage_cardBetween > div[data-doubleimage="short"]
 shopping.yahoo.co.jp,103.by##.AppBanner
 search.yahoo.co.jp###contentsInner > article[class^="W2ALink_W2ALink__"]
 sports.yahoo.co.jp###header > #RSAB
@@ -21774,6 +21774,9 @@ theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 ! Specific sites
 ! Subscription popups add to subscriptions.txt
 !
+yaneyasan13.net###footer_contact
+yaneyasan13.net###footerFloatingMenu
+livable.co.jp##.s-floating_contacts
 kens5.com##.video__docker_state_docked
 my.bulbapp.com##.contact-bar
 mtame.jp###slide_window
@@ -21792,7 +21795,7 @@ e-consystems.com###my-welcome-message
 transfermarkt.*##tm-language-hint
 bing.com##div[data-viewname="GiveModeFlyoutUpsell"]
 defenseone.com,govexec.com,nextgov.com,route-fifty.com#%#//scriptlet('set-constant', 'GEMG.ConversionModule', 'noopFunc')
-sunloft.co.jp##.Bnr
+ikstudie.com,sunloft.co.jp##.Bnr
 mysuki.jp##div[id$="-cta"]
 fibabanka.com.tr##.kiraz-countly-banner--popup
 fibabanka.com.tr##.lity
@@ -22414,8 +22417,8 @@ gillette.jp#$#.dialog-search-popup { display: none!important; }
 gillette.jp#$#.fixed { position: static!important; }
 gillette.jp#$#.stop-scroll { overflow: auto!important; }
 paypay.ne.jp#?#.is-modalContentsShow a.bannerModal__link[href^="https://paypay.ne.jp/event/"][data-eventaction]:upward(.is-modalContentsShow)
-paypay.ne.jp#$#body[style="overflow: hidden;"] { overflow: auto!important; }
-paypay.ne.jp#$#html[style="overflow: hidden;"] { overflow: auto!important; }
+paypay.ne.jp#$#body[style*="overflow: hidden"] { overflow: auto!important; }
+paypay.ne.jp#$#html[style*="overflow: hidden"] { overflow: auto!important; }
 nttdocomo.co.jp##.ppko-page > div#btnFixedBlock.js-scrollBtn
 ||lrepacks.net/templates/biz-ideas/new_year_motnyay/script.js
 lrepacks.net##.b-page_newyear
@@ -28177,6 +28180,15 @@ rasp.yandex.*##.TravelHotelsBanner
 @@||yastatic.net/daas/atom.js$domain=mail.yandex.by|mail.yandex.kz|mail.yandex.ru|mail.yandex.ua|mail.yandex.com|mail.yandex.com.tr
 !-----------------------------------------------
 !
+! obtrusive promo banners
+||mj-king.net/img/BannerAdvertisement/
+||mj-king.net/img/bnr/bnr_*_300x200.gif
+||mjk-r.net/common/sample/full01/img/bnr_
+||mjk-r.net/common/sample/full01/img/bg_special_
+||mjk-r.net/common/sample/smart01/img/bnr_
+mjk-r.net###bnrLongSpFt
+mjk-r.net###frontrBnr
+mj-king.net,mjk-r.net###bg-banner
 ! overclockers.ru - блок ""Анонсы и реклама
 overclockers.ru#?#.main-wrap > div.grid > div.container-block:has(> div > div > div.an-block-desc)
 ! redundant banner
@@ -37020,6 +37032,8 @@ mhealth.ru##.incut_readmore
 ||js.trendmd.com/trendmd.$third-party
 techxplore.com,phys.org##.embed-responsive-trendmd
 naobzorah.ru###shopBlock
+! gacraft recommendations
+||gacraft.jp^$third-party
 ! popIn recommendations
 mbs.jp##.common-wrap--ranking
 ||api.popin.cc^$third-party
