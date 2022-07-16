@@ -1,8 +1,8 @@
-! Checksum: glpjYE1WUKzgWKwY+wR31w
+! Checksum: JLIgontXeVGzWsSctQOlZg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.26.53
-! TimeUpdated: 2022-07-16T16:30:39+00:00
+! Version: 2.1.26.54
+! TimeUpdated: 2022-07-16T18:30:40+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7048,7 +7048,7 @@ cc-fan.tv,cn-fan.tv,fox-fan.tv,nf-fan.tv#$#.pub_300x250.pub_300x250m.pub_728x90.
 ~intersport.de##.cookie-banner:not(body):not(html)
 !+ NOT_OPTIMIZED
 ###cookie-law-info-bar
-! NOTE: Section end
+! NOTE: General element hiding end ⬆️
 ! !SECTION: Cookies - General element hiding
 !
 !#######################################################
@@ -7439,7 +7439,7 @@ _europecookielaw.
 ||clickio.mgr.consensu.org^$third-party
 ||cdn.consentmanager.mgr.consensu.org^$third-party
 ||quantcast.mgr.consensu.org^$third-party
-! NOTE: Section end
+! NOTE: General URL end ⬆️
 ! !SECTION: Cookies - General URL
 !
 ! This section contains the list of domain-specific rules that block cookie notifications.
@@ -7479,7 +7479,7 @@ xataka.com###cookies-overlay
 isolaillyon.it,gametimers.it,yalujailbreak.net###cookie-notice
 chimica-online.it###cookieChoiceInfo
 strunz.com###v-cookielaw
-! NOTE: Section end
+! NOTE: Specific rules($generichide) end ⬆️
 ! !SECTION: Cookies - Specific rules($generichide)
 !
 !
@@ -16067,7 +16067,7 @@ m.standaard.be##.dialog-backdrop
 m.standaard.be##.gdpr-dialog
 ! https://github.com/AdguardTeam/AdguardFilters/issues/29104
 ! https://github.com/AdguardTeam/AdguardFilters/issues/15967
-! NOTE: Section end
+! NOTE: Specific basic end ⬆️
 ! !SECTION: Cookies - Specific basic
 !
 !--- JS rules---
@@ -17093,7 +17093,7 @@ youtube.com#%#(function(){window.self!==window.top||document.cookie.includes("vi
 ! youtube.com#%#AG_onLoad(function(){if(document.cookie.indexOf('CONSENT=YES+yt.') === -1){var a=new MutationObserver(function(){var b=document.querySelector('.termlinks + div[class*="ytd-consent-bump-"] > ytd-button-renderer:last-child');b&&(a.disconnect(),b.click())});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)}});
 ! https://gist.github.com/AdamWr/b32688adb0393d31525f445ee5ab4302#file-gistfile1-txt
 google.*,youtube.com#%#(function(){try{var time=(new Date).getTime();var cookieDate=new Date(time+1314E6);var hostname=location.host;var locSubString=null;if(!hostname.startsWith("google.")&&!hostname.startsWith("youtube."))locSubString=hostname.substring(hostname.indexOf(".")+1);var loc=locSubString||hostname;if(document.cookie.indexOf("CONSENT=YES")!==-1)return;document.cookie="CONSENT=YES+; domain="+loc+"; path=/; expires="+cookieDate.toUTCString()}catch(ex){console.error("AG: failed to set consent cookie: "+ex)}})();
-! NOTE: Section end
+! NOTE: Specific rules(JS) end ⬆️
 ! !SECTION: Cookies - Specific rules(JS)
 !
 !
@@ -17104,7 +17104,7 @@ stockmann.com#$#.cookie-dialog-screen { display: none!important; }
 !
 ! SECTION: Cookies - Specific rules(HTML)
 m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
-! NOTE: Section end
+! NOTE: Specific rules(HTML) end ⬆️
 ! !SECTION: Cookies - Specific rules(HTML)
 !
 !--- Replace rules---
@@ -17127,7 +17127,7 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 ||dobreprogramy.pl/$replace=/(\n|"use strict";)\((window\._|self\.webpackChunk)_proto_[\s\S]*?"AKCEPTUJ.[\s\S]*?I PRZECHODZ.[\s\S]*?DO SERWISU".*//,script
 ||vpolshchi.pl/$replace=/(\n|"use strict";)\((window\._|self\.webpackChunk)_proto_[\s\S]*?"ПОГОДЖУЮСЬ І ПЕРЕХОДЖУ ДО[\s\S]*?СЕРВІСУ".*//,script
 ! !SECTION: Cookies - Specific rules(replace)
-! NOTE: Section end
+! NOTE: Specific rules end ⬆️
 ! !SECTION: Cookies - Specific rules
 !
 ! This section contains the list of rules that fix incorrect blocking of cookie notifications by generic rules. Rules should be domain-specific.
@@ -19591,16 +19591,14 @@ foodnetwork.co.uk#@#.cookie-message:not(html):not(body)
 ! Good: any type of the rules will be good
 ! Bad: @@||example.org^$stealth (should be in AdGuard Base - whitelist_stealth.txt)
 !
-! TODO: bookmarks: Whitelist, Rules with Hints, generic, mobile only(directive)
-! TODO: review girectives. Maybe we can decrease their number and optimize
 !
 !#######################################################
 !######### Banners of mobile apps for the sites ########
 !#######################################################
 !
-!### HINTS are at the end of file
+!### HINTS are at the end of Specific section
 !
-! generic
+! SECTION: Mobile apps - generic rules
 /wp-content/plugins/ioimedia-app-banner/*
 /js/jquery.smartbanner.js
 ||2app.lk^$third-party
@@ -19611,7 +19609,11 @@ foodnetwork.co.uk#@#.cookie-message:not(html):not(body)
 ###smartbanner.windows
 ##head[prefix~="medium-com:"] ~ body .js-openInAppButton
 ##head[prefix~="medium-com:"] ~ body .js-postActionsBarContent > .js-readNextInteractions
+! NOTE: Generic rules end ⬆️
+! !SECTION: Mobile apps - Generic rules
 !
+!
+! SECTION: Mobile apps - Specific
 tenki.jp##.app-week-btn-img-box
 noin.shop##.promote-app
 kuronekoyamato.co.jp##.customer-top-app
@@ -21130,177 +21132,46 @@ imageban.ru##img[alt="Get it on Google Play"]
 ||vizefinalsorupaylasimi.com/uploads/googleplay.jpg
 mediamarkt.de##.mrh-app-banner
 rt.com###offers
-!
-reddit.com#$#.m-blurred { filter: none !important; }
-reddit.com#$#div[class="NavFrame"] div[class="XPromoPopup m-active"] { display: none !important; }
-reddit.com#$#.XPromoBlockingModal { display: none !important; }
-reddit.com#%#//scriptlet('remove-class', 'scroll-disabled', 'body')
-reddit.com#%#//scriptlet('remove-class', 'm-blurred', '.m-blurred')
-!
-! https://github.com/AdguardTeam/AdguardFilters/pull/100226
-m.webtoons.com##._appDownloadPopup
-m.webtoons.com#$#.pop_download_home { display: none !important; }
-m.webtoons.com#$#.dim.home { display: none !important; }
-m.webtoons.com#$#._homeAppDownloadPopup { display: none !important; }
-m.webtoons.com#$#body { overflow: visible !important; position: relative !important; }
-!
-atresplayer.com#?#div[class^="style__StyledGlobalWrapper-"] > div[class^="style__StyledGenericModal-"]:has(> a[title="Descargar la app"])
-!+ PLATFORM(android)
-atresplayer.com##div[class^="style__BreakSpace-"]
-!
-9gag.com##a[class="get-the-app-banner"]
-9gag.com#$#.open-in-app { display: none !important; }
-9gag.com#$#body { overflow: auto !important; }
-!+ NOT_OPTIMIZED
-9gag.com##.download-app-container
-!
-rtl2.de#$#body { overflow: auto !important; }
-rtl2.de#$#.campaign-overlay { display: none !important; }
-!
-goodreads.com#$#html.withAppInstallationBanner .siteHeader { top: 0 !important; }
-goodreads.com#$#html[style="margin-top: 80px;"] { margin-top: 0 !important; }
-!
-!+ NOT_OPTIMIZED
-retrip.jp,rtrp.jp#$##page[style^="padding-top"] { padding-top: 45px!important; }
-!+ NOT_OPTIMIZED
-retrip.jp,rtrp.jp#$#header-induction { display: none!important; }
-!+ NOT_OPTIMIZED
-retrip.jp,rtrp.jp#$#header.ng-scope[style^="height"] { height: auto!important; }
-!
-mobile.reuters.com#$#.header-main { margin-top: 0 !important; }
-mobile.reuters.com#$#nav.section-nav { padding-top: 54px !important; }
-mobile.reuters.com#$#section.search-nav { padding-top: 0 !important; }
-mobile.reuters.com#$##nonEditBannerContainer { display: none !important; }
-!
+cnnbrasil.com.br#%#//scriptlet('set-cookie-reload', 'CNNsmartbanner', '1')
+bilyoner.com#%#//scriptlet('set-cookie', 'smartbanner-closed', 'true')
+izi.ua#%#if (typeof sessionStorage != 'undefined' && sessionStorage.setItem) { sessionStorage.setItem('hideMobilePopup', '1'); };
+leroymerlin.ru#%#//scriptlet('set-cookie', 'daysToHide', '14')
+protonmail.com#%#//scriptlet('set-cookie', 'ch.protonmail.android-smartbanner-closed', 'true')
+kompas.com#%#//scriptlet('set-cookie', 'cbapps_close', '1')
+kinopovtor1.online#%#//scriptlet("abort-on-property-read", "stickyConfig")
+m.kwejk.pl#%#(function(){var a=new Date;a=a.getFullYear()+"-"+(a.getMonth()+1)+"-"+a.getDate();document.cookie="closed="+a})();
+b.hatena.ne.jp#%#document.cookie = "android-smartapp-banner=1; path=/;";
+akinator.mobi#%#document.cookie="com.digidust.elokence.akinator.freemium-smartbanner-closed=true; path=/;";
+yemek.com#%#(function() { try { if ("undefined" != typeof localStorage) { localStorage.setItem("smartAppStatus", "false") } } catch (ex) {} })();
+m.jbzd.cc,m.jbzdy.cc#%#document.cookie = "play-creation=1; path=/;";
+intermarche.pl#%#document.cookie = "interapp_redirect=false; path=/;";
+vodafone.cz,m.jdsports.co.uk,mmajunkie.com#%#document.cookie="sb-closed=true; path=/;";
+fcn.de,kq2.com,kdrv.com,wfft.com,wtva.com,wktv.com,actionnewsnow.com#%#document.cookie = "smartbanner-closed=true; path=/;";
+wiwo.de#%#document.cookie = "appInstall=true";
+m.nhaccuatui.com#%#document.cookie = "isCloseSmartAppBanner=true";
+m.standaard.be#%#document.cookie = "sb-closed=true";
+givemesport.com#%#document.cookie = "gms.appPromo=1";
+appticker.de#%#(function(){var b=window.setTimeout;window.setTimeout=function(a,c){if(!/loadAppStoreBanner/.test(a.toString()))return b(a,c)};})();
+forvo.com,trthaber.com,kanald.com.tr#%#document.cookie = "smartbanner_exited=1";
+sahibinden.com#%#document.cookie = "sbt=none";
+sahibinden.com#%#localStorage.setItem('smartBanner', '{"smartAppBannerEnabled":true}');
+m.n11.com#%#document.cookie = "appRedirectionCancelled=true";
+monster.de#%#document.cookie = "jobr.splitter.cookie=true";
+m.sportmaster.ru#%#document.cookie = "esm-sb-closed=true";
+life.ru#%#document.cookie = "smartbanner=already_shows";
+finanzen.net#%#document.cookie="sb-closed=true; path=/;";
 svyaznoy.ru#%#//scriptlet('remove-class', 'android-banner-on-page')
-!
 ebay.*###gh-appBanner
-!
-!+ NOT_OPTIMIZED
-m.tokopedia.com#$#div[data-testid="divBottomSheetWebToApp"] { display: none!important; }
-m.tokopedia.com#$#body { overflow: visible!important; }
-m.tokopedia.com#$#.unf-overlay { display: none!important; }
-m.tokopedia.com#$?#body > div > div.unf-sheet__wrapper:has(> article img[alt="app"]) { display: none!important; }
-!
-!
 m.avito.ru##div[data-marker="main-container"] > div[data-scroll-blocker="true"]
-!
 vodafone.ua#$#div.smartbanner { display: none !important; }
 vodafone.ua#$#.smartbanner-show { margin-top: 0 !important; }
-!
 m.imgur.com#$#div[class^="SeeImgurOIA-"] { display: none!important; }
 m.imgur.com#$#body { overflow-y: visible!important; }
-!
 c.mi.com#$#.xm-header.app-down .top { top: 0 !important; }
 c.mi.com#$#.xm-header.app-down { margin-top: 0 !important; }
 c.mi.com#$#.app-download { display: none !important; }
-!
 msn.com#$##irisbannerph { display: none !important; }
 msn.com#%#//scriptlet('remove-class', 'irisbactive-top', 'body')
-!
-citrus.ua#$#.download-mobile-app { display: none !important; }
-citrus.ua#$#html { overflow: visible !important; }
-citrus.ua#$#body { overflow: visible !important; }
-!
-touch.mail.ru##.tp-1-overlay
-touch.mail.ru#$?#body > div[class^="meta-block-"] { display: none !important; }
-touch.mail.ru#$?#body { overflow: visible !important; }
-touch.mail.ru#$?#html { overflow: visible !important; }
-!
-m.soundcloud.com#$##app > #content { padding-top: 45px !important; }
-m.soundcloud.com#$#.upsellBanner { display: none !important; }
-!
-m.box.com#$#.mobile-app-banner { display: none!important; }
-m.box.com#$#.app-banner-enabled div.page { top: 0!important; }
-! adidas.ru
-adidas.ru#$#.mobile_app_baner_container { display: none!important; }
-adidas.ru#$#body > .sticky-wrapper { height: 61px!important; }
-! https://github.com/AdguardTeam/AdguardFilters/issues/122817
-instagram.com##section._9arc7
-! https://github.com/AdguardTeam/AdguardFilters/issues/37627
-24h.m.pchome.com.tw#$##smartbanner[class*="shown"]+#WRAPPER .block_H { top: 0 !important; }
-24h.m.pchome.com.tw#$##smartbanner[class*="shown"]+#WRAPPER { margin-top: 0px !important; }
-! https://github.com/AdguardTeam/AdguardFilters/issues/37542
-!+ NOT_OPTIMIZED
-zdf.de#$#.smartbanner-show { margin-top: 0 !important; }
-!+ NOT_OPTIMIZED
-zdf.de#$#.smartbanner-show header.b-header { top: 0 !important; }
-!+ NOT_OPTIMIZED
-zdf.de#$#.smartbanner { display: none !important; }
-! https://github.com/AdguardTeam/AdguardFilters/issues/32617
-vivareal.com.br#$#.site-header[data-smart-banner] { margin-top:0px!important; }
-vivareal.com.br#$#.app-smart-banner { display:none!important; }
-! https://github.com/AdguardTeam/AdguardFilters/issues/32028
-cardsmobile.ru#$#.cm-menu--page-begin[style="top: 60px;"] { top: 0!important; }
-cardsmobile.ru#$#body > div[class="cm-dbn"] { position: absolute!important; left: -3000px!important; }
-cardsmobile.ru#$#body > section[class="cm-s-0"][style="padding-top: 196px;"] { padding-top: 88px!important; }
-! https://github.com/AdguardTeam/AdguardFilters/issues/31093
-fandom.com#$#body { margin-top: 0!important; }
-fandom.com#$#.smart-banner { display: none!important; }
-fandom.com#$#.global-navigation-mobile-wrapper { top: 0!important; }
-! https://github.com/AdguardTeam/AdguardFilters/issues/29195
-hidemyna.me#$#.main-download-popup { display: none!important; }
-hidemyna.me#$##top-menu { top: 0px!important; }
-hidemyna.me#$?##content-section > header:not(:has(> *)) { display: none!important; }
-! https://github.com/AdguardTeam/AdguardFilters/issues/24616
-! https://github.com/AdguardTeam/AdguardFilters/issues/43626
-linkedin.com#$#.no-scroll { overflow:visible!important; }
-! linkedin.com#$#.modal-container { display:none!important; }
-linkedin.com#$#.shared-modal-open { overflow:visible!important; }
-!
-bigbasket.com#$#.smart-banner .mdl-layout__drawer-button { top: 0!important; }
-bigbasket.com#$#smart-banner { display: none!important; }
-!
-tieba.baidu.com#$#.navbar-box { top: 44px!important; }
-tieba.baidu.com#$#body .tb-index-navbar .navbar-view { top: 24px!important;}
-! https://github.com/AdguardTeam/AdguardFilters/issues/17404
-bing.com#$#.b_hphb { display:block!important; }
-bing.com#$##bLogoExp { display:block!important; }
-! https://github.com/AdguardTeam/AdguardFilters/issues/37020
-unian.net#$#.app-weather { display: none!important; }
-unian.net#$#.main-column > div > aside { height: 30px!important; }
-! https://github.com/AdguardTeam/AdguardFilters/issues/16638
-zillow.com#$##app-upsell > .fixed-banner { display: none!important; }
-! https://github.com/AdguardTeam/AdguardFilters/issues/16641
-givemesport.com#$##gms-editorial > .gms-article-indicator.floating-fixed { margin-top: 0!important; }
-!
-aminoapps.com#$?#html:has(> body) { overflow: visible!important; }
-aminoapps.com#$#.overlay { display: none!important; }
-aminoapps.com#$#.get-app { display: none!important; }
-! https://github.com/AdguardTeam/AdguardFilters/issues/16094
-m.imgur.com#$#.AppBanner-container { height: 50px!important; }
-!
-tvrain.ru#$#.smartbanner { display: none!important; }
-tvrain.ru#$#html.smartbanner-show { margin-top: 0!important; }
-! https://github.com/AdguardTeam/AdguardFilters/issues/8962
-m.tr.beinsports.com#$#body > .android.shown { display: none!important; }
-m.tr.beinsports.com#$#form > header[style="top: 78px;"] { top: 0!important; }
-m.tr.beinsports.com#$#.content_section[style="margin-top: 78px;"] { margin-top: 0!important; }
-! https://github.com/AdguardTeam/AdguardFilters/issues/7860
-sat1.de#$##smartbanner { display: none!important; }
-sat1.de#$#html.mob[style^="margin-top:"] { margin-top: 0!important; }
-! https://github.com/AdguardTeam/AdguardFilters/issues/8071
-m.aboutyou.de#$#.app-teaser { display: none!important; }
-m.aboutyou.de#$#.app-teaser+.fake-nav-bar+* .bar-header { top: 0!important; }
-m.aboutyou.de#$#.app-teaser+.fake-nav-bar+*+.container { padding-top: 0!important; }
-! https://forum.adguard.com/index.php?threads/madame-lefigaro-fr.23720/
-lefigaro.fr#$#html.smartBanner header#fig-header { height: 50px!important; }
-! https://github.com/AdguardTeam/AdguardFilters/issues/5474
-m.vlive.tv#$#.pop_banner { display: none!important; }
-m.vlive.tv#$#body.layer_open { position: relative!important; }
-m.vlive.tv#$#.pop_banner+#wrap .vlive_top { top: 0!important; }
-m.vlive.tv#$#.pop_banner+#wrap { padding-top: 0!important; }
-!
-kicker.de#$##ovHeader { top: 0!important; }
-kicker.de#$##ovContentScroller { padding-top: 0!important; }
-!
-m.ulmart.ru#$#.smartbanner { display: none!important; }
-m.ulmart.ru#$#.smartbanner_show .snap-content, .smartbanner_show .snap-drawers { top: 0!important; }
-!
-teb.com.tr#$#html { margin-top: 0!important; }
-teb.com.tr#$##smartbanner.android { display: none!important; }
-teb.com.tr#$##smartbanner.ios { display: none!important; }
-!
 mytuner-radio.com###appDownloadAd
 d19jioddu7q9d3.cloudfront.net,d1e6t2g7k08m8d.cloudfront.net,svoboda.azureedge.net,svoboda.org#$#.promo-banner { display: none !important; }
 d19jioddu7q9d3.cloudfront.net,d1e6t2g7k08m8d.cloudfront.net,svoboda.azureedge.net,svoboda.org#$#body { padding-top: 0 !important; }
@@ -21332,48 +21203,106 @@ ask.fm#$##appPromoter{ display: none!important; }
 ask.fm#$#body.appPromoBody{ margin: 0!important; }
 tripadvisor.co.uk,tripadvisor.jp,tripadvisor.com.br#$##PAGE_CONTAINER.smartbanner_shown_on_top { top: 0!important; }
 tripadvisor.de,tripadvisor.be,tripadvisor.ca,tripadvisor.co,tripadvisor.co.id,tripadvisor.co.uk,tripadvisor.com,tripadvisor.com.au,tripadvisor.com.br,tripadvisor.com.gr,tripadvisor.com.mx,tripadvisor.com.my,tripadvisor.com.sg,tripadvisor.com.tr,tripadvisor.com.tw,tripadvisor.es,tripadvisor.fr,tripadvisor.ie,tripadvisor.in,tripadvisor.it,tripadvisor.jp,tripadvisor.net,tripadvisor.nl,tripadvisor.se#$#._1iK6seYO:has(div[class^="memx-gating-overlays-GateRedesignSignIn__modalContainer"]) { display:none !important; }
+24h.m.pchome.com.tw#$##smartbanner[class*="shown"]+#WRAPPER .block_H { top: 0 !important; }
+24h.m.pchome.com.tw#$##smartbanner[class*="shown"]+#WRAPPER { margin-top: 0px !important; }
+9gag.com##.download-app-container
+9gag.com##a[class="get-the-app-banner"]
+9gag.com#$#.open-in-app { display: none !important; }
+9gag.com#$#body { overflow: auto !important; }
+adidas.ru#$#.mobile_app_baner_container { display: none!important; }
+adidas.ru#$#body > .sticky-wrapper { height: 61px!important; }
+aminoapps.com#$#.get-app { display: none!important; }
+aminoapps.com#$#.overlay { display: none!important; }
+aminoapps.com#$?#html:has(> body) { overflow: visible!important; }
+atresplayer.com#?#div[class^="style__StyledGlobalWrapper-"] > div[class^="style__StyledGenericModal-"]:has(> a[title="Descargar la app"])
+bigbasket.com#$#.smart-banner .mdl-layout__drawer-button { top: 0!important; }
+bigbasket.com#$#smart-banner { display: none!important; }
+bing.com#$##bLogoExp { display:block!important; }
+bing.com#$#.b_hphb { display:block!important; }
+cardsmobile.ru#$#.cm-menu--page-begin[style="top: 60px;"] { top: 0!important; }
+cardsmobile.ru#$#body > div[class="cm-dbn"] { position: absolute!important; left: -3000px!important; }
+cardsmobile.ru#$#body > section[class="cm-s-0"][style="padding-top: 196px;"] { padding-top: 88px!important; }
+citrus.ua#$#.download-mobile-app { display: none !important; }
+citrus.ua#$#body { overflow: visible !important; }
+citrus.ua#$#html { overflow: visible !important; }
+fandom.com#$#.global-navigation-mobile-wrapper { top: 0!important; }
+fandom.com#$#.smart-banner { display: none!important; }
+fandom.com#$#body { margin-top: 0!important; }
+givemesport.com#$##gms-editorial > .gms-article-indicator.floating-fixed { margin-top: 0!important; }
+goodreads.com#$#html.withAppInstallationBanner .siteHeader { top: 0 !important; }
+goodreads.com#$#html[style="margin-top: 80px;"] { margin-top: 0 !important; }
+hidemyna.me#$##top-menu { top: 0px!important; }
+hidemyna.me#$#.main-download-popup { display: none!important; }
+hidemyna.me#$?##content-section > header:not(:has(> *)) { display: none!important; }
+instagram.com##section._9arc7
+kicker.de#$##ovContentScroller { padding-top: 0!important; }
+kicker.de#$##ovHeader { top: 0!important; }
+lefigaro.fr#$#html.smartBanner header#fig-header { height: 50px!important; }
+linkedin.com#$#.no-scroll { overflow:visible!important; }
+linkedin.com#$#.shared-modal-open { overflow:visible!important; }
+m.aboutyou.de#$#.app-teaser { display: none!important; }
+m.aboutyou.de#$#.app-teaser+.fake-nav-bar+* .bar-header { top: 0!important; }
+m.aboutyou.de#$#.app-teaser+.fake-nav-bar+*+.container { padding-top: 0!important; }
+m.box.com#$#.app-banner-enabled div.page { top: 0!important; }
+m.box.com#$#.mobile-app-banner { display: none!important; }
+m.imgur.com#$#.AppBanner-container { height: 50px!important; }
+m.soundcloud.com#$##app > #content { padding-top: 45px !important; }
+m.soundcloud.com#$#.upsellBanner { display: none !important; }
+m.tokopedia.com#$#.unf-overlay { display: none!important; }
+m.tokopedia.com#$#body { overflow: visible!important; }
+m.tokopedia.com#$#div[data-testid="divBottomSheetWebToApp"] { display: none!important; }
+m.tokopedia.com#$?#body > div > div.unf-sheet__wrapper:has(> article img[alt="app"]) { display: none!important; }
+m.tr.beinsports.com#$#.content_section[style="margin-top: 78px;"] { margin-top: 0!important; }
+m.tr.beinsports.com#$#body > .android.shown { display: none!important; }
+m.tr.beinsports.com#$#form > header[style="top: 78px;"] { top: 0!important; }
+m.ulmart.ru#$#.smartbanner { display: none!important; }
+m.ulmart.ru#$#.smartbanner_show .snap-content, .smartbanner_show .snap-drawers { top: 0!important; }
+m.vlive.tv#$#.pop_banner { display: none!important; }
+m.vlive.tv#$#.pop_banner+#wrap .vlive_top { top: 0!important; }
+m.vlive.tv#$#.pop_banner+#wrap { padding-top: 0!important; }
+m.vlive.tv#$#body.layer_open { position: relative!important; }
+m.webtoons.com##._appDownloadPopup
+m.webtoons.com#$#._homeAppDownloadPopup { display: none !important; }
+m.webtoons.com#$#.dim.home { display: none !important; }
+m.webtoons.com#$#.pop_download_home { display: none !important; }
+m.webtoons.com#$#body { overflow: visible !important; position: relative !important; }
+mobile.reuters.com#$##nonEditBannerContainer { display: none !important; }
+mobile.reuters.com#$#.header-main { margin-top: 0 !important; }
+mobile.reuters.com#$#nav.section-nav { padding-top: 54px !important; }
+mobile.reuters.com#$#section.search-nav { padding-top: 0 !important; }
+reddit.com#$#.m-blurred { filter: none !important; }
+reddit.com#$#.XPromoBlockingModal { display: none !important; }
+reddit.com#$#div[class="NavFrame"] div[class="XPromoPopup m-active"] { display: none !important; }
+reddit.com#%#//scriptlet('remove-class', 'm-blurred', '.m-blurred')
+reddit.com#%#//scriptlet('remove-class', 'scroll-disabled', 'body')
+retrip.jp,rtrp.jp#$##page[style^="padding-top"] { padding-top: 45px!important; }
+retrip.jp,rtrp.jp#$#header-induction { display: none!important; }
+retrip.jp,rtrp.jp#$#header.ng-scope[style^="height"] { height: auto!important; }
+rtl2.de#$#.campaign-overlay { display: none !important; }
+rtl2.de#$#body { overflow: auto !important; }
+sat1.de#$##smartbanner { display: none!important; }
+sat1.de#$#html.mob[style^="margin-top:"] { margin-top: 0!important; }
+teb.com.tr#$##smartbanner.android { display: none!important; }
+teb.com.tr#$##smartbanner.ios { display: none!important; }
+teb.com.tr#$#html { margin-top: 0!important; }
+tieba.baidu.com#$#.navbar-box { top: 44px!important; }
+tieba.baidu.com#$#body .tb-index-navbar .navbar-view { top: 24px!important;}
+touch.mail.ru##.tp-1-overlay
+touch.mail.ru#$?#body > div[class^="meta-block-"] { display: none !important; }
+touch.mail.ru#$?#body { overflow: visible !important; }
+touch.mail.ru#$?#html { overflow: visible !important; }
+tvrain.ru#$#.smartbanner { display: none!important; }
+tvrain.ru#$#html.smartbanner-show { margin-top: 0!important; }
+unian.net#$#.app-weather { display: none!important; }
+unian.net#$#.main-column > div > aside { height: 30px!important; }
+vivareal.com.br#$#.app-smart-banner { display:none!important; }
+vivareal.com.br#$#.site-header[data-smart-banner] { margin-top:0px!important; }
+zdf.de#$#.smartbanner { display: none !important; }
+zdf.de#$#.smartbanner-show header.b-header { top: 0 !important; }
+zdf.de#$#.smartbanner-show { margin-top: 0 !important; }
+zillow.com#$##app-upsell > .fixed-banner { display: none!important; }
 !
-! JS
-!
-cnnbrasil.com.br#%#//scriptlet('set-cookie-reload', 'CNNsmartbanner', '1')
-bilyoner.com#%#//scriptlet('set-cookie', 'smartbanner-closed', 'true')
-izi.ua#%#if (typeof sessionStorage != 'undefined' && sessionStorage.setItem) { sessionStorage.setItem('hideMobilePopup', '1'); };
-leroymerlin.ru#%#//scriptlet('set-cookie', 'daysToHide', '14')
-protonmail.com#%#//scriptlet('set-cookie', 'ch.protonmail.android-smartbanner-closed', 'true')
-kompas.com#%#//scriptlet('set-cookie', 'cbapps_close', '1')
-kinopovtor1.online#%#//scriptlet("abort-on-property-read", "stickyConfig")
-m.kwejk.pl#%#(function(){var a=new Date;a=a.getFullYear()+"-"+(a.getMonth()+1)+"-"+a.getDate();document.cookie="closed="+a})();
-b.hatena.ne.jp#%#document.cookie = "android-smartapp-banner=1; path=/;";
-akinator.mobi#%#document.cookie="com.digidust.elokence.akinator.freemium-smartbanner-closed=true; path=/;";
-yemek.com#%#(function() { try { if ("undefined" != typeof localStorage) { localStorage.setItem("smartAppStatus", "false") } } catch (ex) {} })();
-m.jbzd.cc,m.jbzdy.cc#%#document.cookie = "play-creation=1; path=/;";
-intermarche.pl#%#document.cookie = "interapp_redirect=false; path=/;";
-vodafone.cz,m.jdsports.co.uk,mmajunkie.com#%#document.cookie="sb-closed=true; path=/;";
-fcn.de,kq2.com,kdrv.com,wfft.com,wtva.com,wktv.com,actionnewsnow.com#%#document.cookie = "smartbanner-closed=true; path=/;";
-wiwo.de#%#document.cookie = "appInstall=true";
-m.nhaccuatui.com#%#document.cookie = "isCloseSmartAppBanner=true";
-m.standaard.be#%#document.cookie = "sb-closed=true";
-givemesport.com#%#document.cookie = "gms.appPromo=1";
-appticker.de#%#(function(){var b=window.setTimeout;window.setTimeout=function(a,c){if(!/loadAppStoreBanner/.test(a.toString()))return b(a,c)};})();
-forvo.com,trthaber.com,kanald.com.tr#%#document.cookie = "smartbanner_exited=1";
-sahibinden.com#%#document.cookie = "sbt=none";
-sahibinden.com#%#localStorage.setItem('smartBanner', '{"smartAppBannerEnabled":true}');
-m.n11.com#%#document.cookie = "appRedirectionCancelled=true";
-monster.de#%#document.cookie = "jobr.splitter.cookie=true";
-m.sportmaster.ru#%#document.cookie = "esm-sb-closed=true";
-life.ru#%#document.cookie = "smartbanner=already_shows";
-finanzen.net#%#document.cookie="sb-closed=true; path=/;";
-!
-!
-!--- Rules with Hints
-!
-!+ PLATFORM(android)
-pinterest.*#%#AG_onLoad(function(){var a=new MutationObserver(function(){if(document.querySelector('div[data-test-id="appUpsell-continue"] > button')){document.querySelector('div[data-test-id="appUpsell-continue"] > button').click(); a.disconnect();}});a.observe(document,{childList: !0, subtree: !0});});
-! Suppressing PWA "Add To Home screen" annoyance
-! Limit it to mobile versions only
-! causes some issues: https://github.com/AdguardTeam/AdguardForMac/issues/550
-!+ PLATFORM(android, ios)
-~kurer-sreda.ru,~chorki.com,~zattoo.com,~zaycev.net,~xltrax.ee,~hitta.se,~mail.ru,~v7player.wostreaming.net,~facebook.com,~instagram.com,~drive.google.com$$link[rel="manifest"]
+! Misc rules, removed during optimization. If some rules are in groups, no need to move them here
 !
 !+ NOT_OPTIMIZED
 m.apkpure.com##.aegon-down-item
@@ -21554,21 +21483,18 @@ honeysanime.com#$##wrap-app-notice { display: none !important; }
 !+ NOT_OPTIMIZED
 m.tokopedia.com#$#div[data-testid="divOverlay"] { display: none!important; }
 !
-!--- Directive
-!--- Android && iOS
-afisha.ru#?#div[id="__PAGE__"] > div[class]:has(> a[href^="https://redirect.appmetrica.yandex.com/serve/"])
-pinkoi.com#$##g-app-bar { display: none !important; }
-pinkoi.com#$#.s-app-banner div#m-mainview { padding-top: 51px !important; }
-lihkg.com#?##app > div#splitView ~ div[class]:has(> div[class] div[class]:contains(APP))
-temp-mail.org#%#//scriptlet('remove-class', 'smartbanner-show', 'html')
-ozon.ru#$?#.mobile > div.modal-mask:has(> div.modal-wrapper > div.modal-container > div.modal-content h2:contains(OZON ещё лучше в приложении)) { display: none!important; }
-ozon.ru#$#body { overflow: visible!important; }
-ozon.ru#$#html { overflow: visible!important; }
-newzit.com#$#div[class*="hasSmartBanner_"] > div[class^="banner_"] { display: none !important; }
-newzit.com#$#div[class*="hasSmartBanner_"] { padding-top: 0 !important; }
 !
-! Unhide for Android CB if top padding cannot be removed
 !
+!--- Mobile sites only
+!   SECTION: Mobile apps - Mobile sites only
+!
+! Suppressing PWA "Add To Home screen" annoyance
+! Limit it to mobile versions only
+! causes some issues: https://github.com/AdguardTeam/AdguardForMac/issues/550
+~kurer-sreda.ru,~chorki.com,~zattoo.com,~zaycev.net,~xltrax.ee,~hitta.se,~mail.ru,~v7player.wostreaming.net,~facebook.com,~instagram.com,~drive.google.com$$link[rel="manifest"]
+!
+atresplayer.com##div[class^="style__BreakSpace-"]
+pinterest.*#%#AG_onLoad(function(){var a=new MutationObserver(function(){if(document.querySelector('div[data-test-id="appUpsell-continue"] > button')){document.querySelector('div[data-test-id="appUpsell-continue"] > button').click(); a.disconnect();}});a.observe(document,{childList: !0, subtree: !0});});
 mistore.jp##.js-lead-banner
 m.timesofindia.com##div[class^="nonAppView"] > div[class^="_"] > a[href*="app.goo.gl/"]
 belluna.jp###applidl_bn
@@ -21628,9 +21554,24 @@ townwork.net##.MP-appDl
 lulucos-bys.jp##.m-banner-download-app-top-fixed
 arine.jp##.SiteHeader-app-banner
 nhk.or.jp###appsbanner
+afisha.ru#?#div[id="__PAGE__"] > div[class]:has(> a[href^="https://redirect.appmetrica.yandex.com/serve/"])
+pinkoi.com#$##g-app-bar { display: none !important; }
+pinkoi.com#$#.s-app-banner div#m-mainview { padding-top: 51px !important; }
+lihkg.com#?##app > div#splitView ~ div[class]:has(> div[class] div[class]:contains(APP))
+temp-mail.org#%#//scriptlet('remove-class', 'smartbanner-show', 'html')
+ozon.ru#$?#.mobile > div.modal-mask:has(> div.modal-wrapper > div.modal-container > div.modal-content h2:contains(OZON ещё лучше в приложении)) { display: none!important; }
+ozon.ru#$#body { overflow: visible!important; }
+ozon.ru#$#html { overflow: visible!important; }
+newzit.com#$#div[class*="hasSmartBanner_"] > div[class^="banner_"] { display: none !important; }
+newzit.com#$#div[class*="hasSmartBanner_"] { padding-top: 0 !important; }
+!   NOTE: Mobile sites only end ⬆️
+!   !SECTION: Mobile apps - Mobile sites only
+! NOTE: Specific end ⬆️
+! !SECTION: Mobile apps - Specific
+!
 !
 !--- Whitelist
-!
+! SECTION: Mobile apps - Whitelist
 ! https://github.com/AdguardTeam/AdguardFilters/issues/118200 RECOMMEND not shown
 @@||fashion-headline.com/js/jquery.smartbanner.js
 ! https://github.com/AdguardTeam/AdguardFilters/issues/113325
@@ -21648,6 +21589,10 @@ nhk.or.jp###appsbanner
 ! https://github.com/AdguardTeam/AdguardFilters/issues/35423
 @@||cdn.bustracker.utrack.com/js/jquery.smartbanner.js
 !
+! Unhide for Android CB if a CSS rules required
+! NOTE: Whitelist end ⬆️
+! !SECTION: Mobile apps - Whitelist
+!
 ! This section contains the list of rules that block in-page popups (like banners with special offers) and floating elements.
 ! At the bottom of this file, you can find the allowlist that fixes issues caused by the rules from this file.
 !
@@ -21655,125 +21600,119 @@ nhk.or.jp###appsbanner
 ! Bad: @@||example.org^$stealth (should be in AdGuard Base - whitelist_stealth.txt)
 !
 !
-! TODO: bookmarks: Whitelist, Specific sites, Generic rules, third-party
+! SECTION: Popups - generic rules
 !
-! "Add to home screen in mobile Chrome"
-||mail.ru/manifest.json
-||m.lenta.ru/manifest.json
-!
-! third-party
-||penglue.jp^$third-party
-||delivery.satr.jp^$third-party
-/wp-content/themes/Newspaper-child/*$~stylesheet,domain=~dyvys.info|~capital.de|~inside-digital.de|~expressvpn.com|~botanichka.ru
-||server.connecto.io^$third-party
-||elp.evolok.net^$third-party
-||api.sorunapp.com^$third-party
-||widget.pico.tools^$third-party
-||popupmaker.com^$third-party
-||popcard.unibuddy.co^$third-party
-##.gs-subscribe
-||sdk.*.braze.com^$third-party
-||api.cazamba.com^$third-party
-||cdn.pn.vg^$third-party
-||socialsend.ru^$third-party
-||static.superbot.works^$third-party
-||trbo.com^$third-party
-/wp-content/plugins/thrive-leads/*
-/wp-content/plugins/modesco-zen-subscribe/*
-||tradeins.ru^$third-party
-||panel.smartpoint.pro^$third-party
-||code.clicktex.ru^$third-party
-||yakutia.io^$third-party
-||cdn.swellrewards.com^$third-party
 ###siradaki-haberler
-! https://github.com/AdguardTeam/AdguardFilters/issues/90111
-! https://github.com/AdguardTeam/AdguardFilters/issues/90110
-! https://github.com/AdguardTeam/AdguardFilters/issues/90109
-! https://github.com/AdguardTeam/AdguardFilters/issues/90108
-://journey.*.com/compiler-$script,~third-party
-!
-! Generic rules
+###trd-exitintentbox
+###wbounce-modal
+##.gs-subscribe
+##.td-more-articles-box
 ! "Sign in with your Google account" popup
 ! desktop
 ###credential_picker_container
 ! mobile
 ###credential_picker_iframe
+!
+.ru/?iam=$script
+/cdn-cgi/pe/bag2?r[]=*mailget.net
+/download.plagin.js
+/plugins/facebook-page-promoter-$~stylesheet
+/wp-content/plugins/arscode-ninja-popups/*
+/wp-content/plugins/chimpmatepro/*
+/wp-content/plugins/facebook-fanbox-popup/*
+/wp-content/plugins/icegram/*
+/wp-content/plugins/mailchimp/*
+/wp-content/plugins/modesco-zen-subscribe/*
+/wp-content/plugins/popup-maker/*$~stylesheet
+/wp-content/plugins/thrive-leads/*
+/wp-content/themes/Newspaper-child/*$~stylesheet,domain=~dyvys.info|~capital.de|~inside-digital.de|~expressvpn.com|~botanichka.ru
 ! AppNexus CMP popups
 /cmp/cmp.*.js
 /cmp/cmp.js
 !
-! extensions promo
-||splash-screen.net^$third-party
-anidub.link###banerapps
-pdfcandy.com##.popup__extension
-meet.jit.si##.chrome-extension-banner
-smallpdf.com##body > div#app > div[class]:has(> div > div > img[alt="Chrome"])
-sodapdf.com##.be-tooltip
-||api.callpage.io/*/widgets^$third-party
-||chatinator.com^$third-party
-.ru/?iam=$script
-||inffuse-fbpopup.appspot.com/widget.html
-||unpkg.com/@textback/notification-widget
-||traq.li^$third-party
-##.td-more-articles-box
-||kakanas.ru^$third-party
-||milotree.com^$third-party
-||downloads.mailchimp.com/js/signup-forms/
-/wp-content/plugins/mailchimp/*
-||optmstr.com^$third-party
-||salesmanago.pl/static/sm.js
-||salesmanago.pl/*/popups.js
-||lazabu.ru^$third-party
-||wasbetenhep.ru^$third-party
-||gazsop.ru^$third-party
-||wat.chatwat.xyz^$third-party
-||chat.whatsappx.xyz^$third-party
-||extstatadv.ru^$third-party
-||tvcok.ru^$third-party
-||attantarow.ru^$third-party
-||kinhenathow.ru^$third-party
-||labuza.ru^$third-party
-||widget.privy.com^$third-party
-||popup.wisepops.com^$third-party
-||lakiff.ru^$third-party
-||falan.ru^$third-party
-||my.leadpages.net^$third-party
-||terthoreper.ru^$third-party
-||borgan.ru^$third-party
-||fortbegother.ru^$third-party
-||kriloff.ru^$third-party
-/plugins/facebook-page-promoter-$~stylesheet
-||my.hellobar.com^$third-party
-||leadpages.co^$third-party
-||optnmstr.com^$third-party
-||messenger.ngageics.com^$third-party
-/wp-content/plugins/popup-maker/*$~stylesheet
-||s3.amazonaws.com/mailmunch/
-||a.mailmunch.co/app/$script,third-party
-/wp-content/plugins/icegram/*
-###wbounce-modal
 ||7pisem.com^$third-party
 ||7pisem.ru^$third-party
-###trd-exitintentbox
-/cdn-cgi/pe/bag2?r[]=*mailget.net
-/wp-content/plugins/arscode-ninja-popups/*
-/wp-content/plugins/facebook-fanbox-popup/*
+||a.mailmunch.co/app/$script,third-party
+||api.callpage.io/*/widgets^$third-party
+||api.cazamba.com^$third-party
+||api.sorunapp.com^$third-party
+||attantarow.ru^$third-party
+||borgan.ru^$third-party
+||cdn*.pdmntn.com^$third-party
 ||cdn-library.su/plusonet/lib/$domain=~pluso.net
+||cdn.pn.vg^$third-party
+||cdn.swellrewards.com^$third-party
+||chat.whatsappx.xyz^$third-party
+||chatinator.com^$third-party
+||code.clicktex.ru^$third-party
+||delivery.satr.jp^$third-party
+||downloads.mailchimp.com/js/signup-forms/
+||elp.evolok.net^$third-party
+||extstatadv.ru^$third-party
+||falan.ru^$third-party
 ||files.jumpoutpopup.ru^$third-party,domain=~makedreamprofits.com
+||form.typeform.com^$domain=theoryandpractice.ru
+||fortbegother.ru^$third-party
+||gazsop.ru^$third-party
+||inffuse-fbpopup.appspot.com/widget.html
+||kakanas.ru^$third-party
+||kinhenathow.ru^$third-party
+||kriloff.ru^$third-party
+||labuza.ru^$third-party
+||lakiff.ru^$third-party
+||lazabu.ru^$third-party
+||leadpages.co^$third-party
 ||mailganer.com/jsapi/*?ref=
 ||mailget.net^$third-party
+||messenger.ngageics.com^$third-party
+||milotree.com^$third-party
+||my.hellobar.com^$third-party
+||my.leadpages.net^$third-party
+||optmstr.com^$third-party
 ||optnmnstr.com^$third-party
-||static.popmechanic.ru/service/loader.js$third-party
-/wp-content/plugins/chimpmatepro/*
-/download.plagin.js
+||optnmstr.com^$third-party
+||panel.smartpoint.pro^$third-party
 ||pdmntn.com/popups^
-||cdn*.pdmntn.com^$third-party
-||form.typeform.com^$domain=theoryandpractice.ru
-theoryandpractice.ru##a[href^="https://form.typeform.com/"]
+||penglue.jp^$third-party
+||popcard.unibuddy.co^$third-party
+||popup.wisepops.com^$third-party
+||popupmaker.com^$third-party
+||s3.amazonaws.com/mailmunch/
+||salesmanago.pl/*/popups.js
+||salesmanago.pl/static/sm.js
+||sdk.*.braze.com^$third-party
+||server.connecto.io^$third-party
+||socialsend.ru^$third-party
+||splash-screen.net^$third-party
+||static.popmechanic.ru/service/loader.js$third-party
+||static.superbot.works^$third-party
+||terthoreper.ru^$third-party
+||tradeins.ru^$third-party
+||traq.li^$third-party
+||trbo.com^$third-party
+||tvcok.ru^$third-party
+||unpkg.com/@textback/notification-widget
+||wasbetenhep.ru^$third-party
+||wat.chatwat.xyz^$third-party
+||widget.pico.tools^$third-party
+||widget.privy.com^$third-party
+||yakutia.io^$third-party
+! https://github.com/AdguardTeam/AdguardFilters/issues/90111
+! https://github.com/AdguardTeam/AdguardFilters/issues/90110
+! https://github.com/AdguardTeam/AdguardFilters/issues/90109
+! https://github.com/AdguardTeam/AdguardFilters/issues/90108
+://journey.*.com/compiler-$script,~third-party
+! NOTE: Generic rules end ⬆️
+! !SECTION: Popups - Generic rules
 !
 ! Specific sites
-! Subscription popups add to subscriptions.txt
-!
+! SECTION: Popups - Specific
+anidub.link###banerapps
+meet.jit.si##.chrome-extension-banner
+pdfcandy.com##.popup__extension
+smallpdf.com##body > div#app > div[class]:has(> div > div > img[alt="Chrome"])
+sodapdf.com##.be-tooltip
+theoryandpractice.ru##a[href^="https://form.typeform.com/"]
 yaneyasan13.net###footer_contact
 yaneyasan13.net###footerFloatingMenu
 livable.co.jp##.s-floating_contacts
@@ -26554,10 +26493,9 @@ com-magazin.de##w-div[role$="dialog"]
 /jquery.magnific-popup.min.js$domain=ufatime.ru|koreanworld.ru
 !
 !
-!
-! https://github.com/AdguardTeam/AdguardFilters/issues/115278
-!+ PLATFORM(android, ios)
-lena-miro.ru#?#body > div:not([class]):has(> div[style] button.js-install-prompt__close-btn)
+! "Add to home screen in mobile Chrome"
+||mail.ru/manifest.json
+||m.lenta.ru/manifest.json
 ! Twitter login popup
 ! https://github.com/AdguardTeam/AdguardFilters/issues/112718#issuecomment-1069965416
 twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion,twitter.com#$?#div[data-testid="sheetDialog"] > :not(div[data-testid="IntentLoginSheet_Login_Sheet"]) div[aria-label=""] > img[class^="css-"][src$="/privacy_cover.png"]:upward(div[role="group"]) { display: none !important; }
@@ -26925,20 +26863,9 @@ saocarlosagora.com.br#$?#html.fancybox-lock:has(> body) > body > div.fancybox-ov
 saocarlosagora.com.br#$?#html.fancybox-lock:has(> body) > body { overflow: visible!important; }
 saocarlosagora.com.br#$?#html.fancybox-lock:has(> body) { overflow: visible!important; }
 !
-unian.net#$#.main-menu__content > div[class^="popup-"] { display: none !important; }
-theoryandpractice.ru#$#div[data-qa="mobile-modal"] { display: none !important; }
-theoryandpractice.ru#$#body[class*="modal-open"] { overflow: auto !important; position: static !important; }
-!
-!+ NOT_PLATFORM(ios, ext_android_cb)
-m.hh.ru##div[data-qa$="-banner"]
-!+ PLATFORM(android, ios, ext_android_cb)
-maxfoodfun.com##.pixnet-happix-pilot__launcher-bar__gift-notification
-!
 community.spiceworks.com#$##photo-join-modal[data-modal-el="overlay"] { display: none !important; }
 community.spiceworks.com#$#.join-login-wrapper.join-login-alt--six-second[data-alt-modal] { display: none !important; }
 community.spiceworks.com#$#.sui-u-no-scroll { overflow: visible !important; }
-!+ PLATFORM(android, ios, ext_android_cb)
-metrolyrics.com###videoContainer
 !
 medicinenet.com#%#document.cookie = "MNINewsLetterRB=SHOWN";
 !
@@ -27085,6 +27012,19 @@ bomb01.com#$#.modal-open { overflow: visible!important; }
 easy-deutsch.de#%#AG_onLoad(function() { document.querySelector('html').style.cssText+=';overflow: auto!important'; });
 easy-deutsch.de#%#AG_onLoad(function() { setTimeout(function() { var el = document.querySelector('.tve-leads-slide-in.tve-tl-anim'); if (el) {el.remove()} }, 2500); });
 !
+!   SECTION: Popups - Mobile sites only
+unian.net#$#.main-menu__content > div[class^="popup-"] { display: none !important; }
+theoryandpractice.ru#$#div[data-qa="mobile-modal"] { display: none !important; }
+theoryandpractice.ru#$#body[class*="modal-open"] { overflow: auto !important; position: static !important; }
+lena-miro.ru#?#body > div:not([class]):has(> div[style] button.js-install-prompt__close-btn)
+m.hh.ru##div[data-qa$="-banner"]
+maxfoodfun.com##.pixnet-happix-pilot__launcher-bar__gift-notification
+unn.com.ua##body > .fancybox-opened
+unn.com.ua##body > .fancybox-opened + .fancybox-overlay
+metrolyrics.com###videoContainer
+!   NOTE: Mobile sites only end ⬆️
+!   !SECTION: Popups - Mobile sites only
+!
 !+ NOT_OPTIMIZED
 clubdam.com##.l-page-bottom__cv
 !+ NOT_OPTIMIZED
@@ -27105,16 +27045,39 @@ medonet.pl##body.withFPU::before
 kurashiru.com#$##dly-LandingPopupBanner { display: none!important; }
 !+ NOT_OPTIMIZED
 kurashiru.com#$#html.dly-modal-active { overflow: auto!important; }
+! NOTE: Specific end ⬆️
+! !SECTION: Popups - Specific
 !
 !
 !
-!==================================================================================================================
-!============================================section===============================================================
-! TODO: TEMPORARY SECTION ============must be removed after moving the rules to new files==========================
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
 !
 !
 !--- Whitelist
-!
+! SECTION: Popups - Whitelist
 ! https://github.com/AdguardTeam/AdguardFilters/issues/118320
 zlavomat.sk#@##credential_picker_container
 ! https://twitter.com/nkym4575/status/1504995658675093505
@@ -27138,6 +27101,8 @@ zlavomat.sk#@##credential_picker_container
 !
 @@||my.leadpages.net/template/$script,domain=weddingjams.com|thesaturdaypaper.com.au|careercontessa.com
 @@||my.leadpages.net^*/public/
+! NOTE: Section end
+! !SECTION: Popups - Whitelist
 !
 ! This section contains the list of rules that block website push notifications ("subscribe to the news" kind of notifications).
 !
