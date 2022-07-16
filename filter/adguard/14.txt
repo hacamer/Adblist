@@ -1,8 +1,8 @@
-! Checksum: JLIgontXeVGzWsSctQOlZg
+! Checksum: MBRI6l/GvvkPGVAdiob69w
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.26.54
-! TimeUpdated: 2022-07-16T18:30:40+00:00
+! Version: 2.1.26.55
+! TimeUpdated: 2022-07-16T19:30:39+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -7452,7 +7452,6 @@ _europecookielaw.
 !#######################################################
 !######### Rules for specific sites ####################
 !#######################################################
-! SECTION: Cookies - Specific rules
 ! SECTION: Cookies - Specific basic
 !
 ! https://github.com/AdguardTeam/AdguardFilters/issues/25529
@@ -7462,7 +7461,7 @@ _europecookielaw.
 google.ad,google.ae,google.al,google.am,google.as,google.at,google.az,google.ba,google.be,google.bf,google.bg,google.bi,google.bj,google.bs,google.bt,google.by,google.ca,google.cat,google.cd,google.cf,google.cg,google.ch,google.ci,google.cl,google.cm,google.cn,google.co.ao,google.co.bw,google.co.ck,google.co.cr,google.co.id,google.co.il,google.co.in,google.co.jp,google.co.ke,google.co.kr,google.co.ls,google.co.ma,google.co.mz,google.co.nz,google.co.th,google.co.tz,google.co.ug,google.co.uk,google.co.uz,google.co.ve,google.co.vi,google.co.za,google.co.zm,google.co.zw,google.com,google.com.af,google.com.ag,google.com.ai,google.com.ar,google.com.au,google.com.bd,google.com.bh,google.com.bn,google.com.bo,google.com.br,google.com.bz,google.com.co,google.com.cu,google.com.cy,google.com.do,google.com.ec,google.com.eg,google.com.et,google.com.fj,google.com.gh,google.com.gi,google.com.gt,google.com.hk,google.com.jm,google.com.kh,google.com.kw,google.com.lb,google.com.ly,google.com.mm,google.com.mt,google.com.mx,google.com.my,google.com.na,google.com.nf,google.com.ng,google.com.ni,google.com.np,google.com.om,google.com.pa,google.com.pe,google.com.pg,google.com.ph,google.com.pk,google.com.pr,google.com.py,google.com.qa,google.com.sa,google.com.sb,google.com.sg,google.com.sl,google.com.sv,google.com.tj,google.com.tr,google.com.tw,google.com.ua,google.com.uy,google.com.vc,google.com.vn,google.cv,google.cz,google.de,google.dj,google.dk,google.dm,google.dz,google.ee,google.es,google.fi,google.fm,google.fr,google.ga,google.ge,google.gg,google.gl,google.gm,google.gp,google.gr,google.gy,google.hn,google.hr,google.ht,google.hu,google.ie,google.im,google.iq,google.is,google.it,google.je,google.jo,google.kg,google.ki,google.kz,google.la,google.li,google.lk,google.lt,google.lu,google.lv,google.md,google.me,google.mg,google.mk,google.ml,google.mn,google.ms,google.mu,google.mv,google.mw,google.ne,google.nl,google.no,google.nr,google.nu,google.pl,google.pn,google.ps,google.pt,google.ro,google.rs,google.ru,google.rw,google.sc,google.se,google.sh,google.si,google.sk,google.sm,google.sn,google.so,google.sr,google.st,google.td,google.tg,google.tk,google.tl,google.tm,google.tn,google.to,google.tt,google.vg,google.vu,google.ws###taw > div[style^="padding:"] > div.med + div.RDvo0e
 !
 ! For the sites with '$generichide' exclusions
-! SECTION: Cookies - Specific rules($generichide)
+!   SECTION: Cookies - Specific rules($generichide)
 adzsafe.com##.cookie-block
 nyaa.net###cookie-warning
 lego.com#$#aside[class^="Modalstyles__Container"] { display: none !important; }
@@ -7480,7 +7479,7 @@ isolaillyon.it,gametimers.it,yalujailbreak.net###cookie-notice
 chimica-online.it###cookieChoiceInfo
 strunz.com###v-cookielaw
 ! NOTE: Specific rules($generichide) end ⬆️
-! !SECTION: Cookies - Specific rules($generichide)
+!   !SECTION: Cookies - Specific rules($generichide)
 !
 !
 /consent.[\s\S]*.de/$domain=mopo.de|duda-kinderzeitung.de|dumont.de|dumont-rheinland.de|rheinische-anzeigenblaetter.de|yourjob.de
@@ -17127,8 +17126,6 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 ||dobreprogramy.pl/$replace=/(\n|"use strict";)\((window\._|self\.webpackChunk)_proto_[\s\S]*?"AKCEPTUJ.[\s\S]*?I PRZECHODZ.[\s\S]*?DO SERWISU".*//,script
 ||vpolshchi.pl/$replace=/(\n|"use strict";)\((window\._|self\.webpackChunk)_proto_[\s\S]*?"ПОГОДЖУЮСЬ І ПЕРЕХОДЖУ ДО[\s\S]*?СЕРВІСУ".*//,script
 ! !SECTION: Cookies - Specific rules(replace)
-! NOTE: Specific rules end ⬆️
-! !SECTION: Cookies - Specific rules
 !
 ! This section contains the list of rules that fix incorrect blocking of cookie notifications by generic rules. Rules should be domain-specific.
 !
@@ -27109,16 +27106,32 @@ zlavomat.sk#@##credential_picker_container
 ! Good: any type of the rules will be good
 ! Bad: @@||example.org^$stealth (should be in AdGuard Base - whitelist_stealth.txt)
 !
-! TODO: bookmarks: Fixing the issues
-! TODO: devide by rule types(generic/3p/specific, whitelist...)
 !
-! Disabling of push-notifications
-wallstreet-online.de,dni.ru,polit.info#%#if (window.PushManager) { window.PushManager.prototype.subscribe = function () { return { then: function (func) { } }; }; }
-life.ru,macwelt.de,pcwelt.de#%#//scriptlet("set-constant", "firebase.messaging", "noopFunc")
+! SECTION: Push notifications - Generic rules
+###kp-subscribe-window
+###NotificationsAskMsg
+###onesignal-popover-container
+###smart_push_smio_overlay
+###smart_push_smio_window
+###visilabs_web_push_perm_box
+##.insider-opt-in-notification
+##.tsoft-push--in-notification
+##amp-web-push-widget
 !
-! To be discussed
-! #%#//scriptlet("set-constant", "Notification.permission", "denied")
-!
+/push.js?utm_source=*&domain=$script
+-push-notifications/$script,stylesheet
+.club/rp/rp.php?site=
+.com/sdk/siteScript?p_id=*&hold=*&subid_*sitescript&subid*
+.vafrike.ru^$third-party
+/?smpushprofile=load_frontend_push_js
+/js/pushsubscribe.js
+/pnsw_init.js
+/pus2/app.js
+/pushJs/*$third-party,script
+/smio-push-notification/*
+/storefrontmarketing/webpush/webpush.client.
+/wp-content/plugins/push-notification/*
+/pushwoosh-$script,domain=~pushwoosh.com
 ! `window.wpnConfig`
 ! https://vinuser5.biz/?pu=ha3gemtcg45ha3ddf4ytanju
 .me/?pu=$script,third-party
@@ -27136,436 +27149,422 @@ life.ru,macwelt.de,pcwelt.de#%#//scriptlet("set-constant", "firebase.messaging",
 .name/?pus=$script,third-party
 .site/?pus=$script,third-party
 !
-!
-||celesterium.com^$third-party
-abendzeitung-muenchen.de###webpush-app
-||moengage.com^$third-party
-||heroesdom.com^$third-party
-||karuna4u.com^$third-party
-||pushofferpro.com^$third-party
-||leechiza.net^$third-party
-.com/sdk/siteScript?p_id=*&hold=*&subid_*sitescript&subid*
-||pushiki.ru^$third-party
-||push-money.ru^$third-party
-###kp-subscribe-window
-||mailer.i.bizml.ru^
-||bro1.biz^
-||clicktimes.bid^
-||dolohatum.com^
-||news-yakaja.cc^$third-party
-||news-hefoja.cc^$third-party
-||yourbestru.site^$third-party
-/webpush.$domain=egoiapp2.com|haberler.com|haberler.com|haberturk.com|soccer.ru|internet-technologies.ru|sondakika.com|brigitte.de
-||canzocoos.com^
-||calculator.codes^$third-party
-||swaptrap.live^
-||pushpro.co.za^$third-party
-/storefrontmarketing/webpush/webpush.client.
-||jagevirom.com^
-||mediaboom.site^
-/pnsw_init.js
-/js/pushsubscribe.js
-||varroterius.com^$third-party
-||yisogarom.com^$third-party
-||lecaleros.com^$third-party
-||guideforwindows.top^$third-party
-||bezrukov.fun^$third-party
-||pushcode.jp^$third-party
-||vkonrakte.com^$third-party
-||webpushonline.com^$third-party
-||xedo.me^$third-party
-||mypush.online^$third-party
-||vitalectium.com^$third-party
-||checke.biz^$third-party
-||clairpixum.com^$third-party
-||bitmakerz.biz^$third-party
-||app.najva.com^$third-party
-||izooto.com^$third-party
+||cleverpush.com^$third-party,domain=~app.bsdex.de
+||sdk.push7.jp^$third-party,domain=~secret2.cygames.co.jp
+||widget.intercom.io^$third-party,domain=~app.rezi.io|~intercom.com|~backerclub.co|~quidco.com|~green.energy
 ||a.trstplse.com^$third-party
-||ismcdn.jp^*/webpush_dialog.$third-party
-||cr-eam.com^$third-party
-||push.anews.one^$third-party
-||api.infinario.com^$third-party
-||mucizewus.com^$third-party
-||lib1.biz^$third-party
-||pecukirom.com^$third-party
-||pushid.info^$third-party
-/smio-push-notification/*
-###smart_push_smio_overlay
-###smart_push_smio_window
-||push.estart.jp^$third-party
-||britopush.com^$third-party
-||pushpanda.io^$third-party
-||burningpushing.info^$third-party
-||inpptouch.info^$third-party
-||push.knd.ro^$third-party
-||loulouly.net^$third-party
-||vistoolr.net^$third-party
-||traglencium.com^$third-party
-||pushex.net^$third-party
-||sdkloc1.com^$third-party
-||stumtererum.com^$third-party
-||chensenconter.com^$third-party
-||powr.io^$third-party
-||colamirus.com^$third-party
-||trynews.me^$third-party
-||push.webandname.com^$third-party
-||aswpsdkeu.com^$third-party
 ||abcnewspro.com^
+||accengage.net^$third-party
 ||achilles-ena.com^
+||actirinius.com^$third-party
+||actuanius.com^$third-party
+||admessage.support^$third-party
+||adsblockkpush.com^$third-party
+||alerts.hungama.com^$third-party
+||allstat-pp.ru^$third-party
+||amacritus.com^$third-party
+||amfeed.ru^$third-party
 ||amsfi.com^
 ||amsthr.com^
 ||amsvts.com^
 ||android-win-reward.com^
+||api.infinario.com^$third-party
+||api.jeeng.com^$third-party
+||api.pushnami.com^$third-party
 ||api.savemedia.website^$third-party
+||api.sociaplus.com^$third-party
+||api.useinsider.com^$third-party
+||app.dengage.com^$third-party
+||app.getbeamer.com^$third-party
+||app.najva.com^$third-party
+||aptashark.club^$third-party
+||aquarepush.com^$third-party
+||arianelab.com^$third-party
+||aristianewr.club^$third-party
+||aswpsdkeu.com^$third-party
+||aswpsdkus.com^$third-party
+||bagirastyle.ru^$third-party
+||bakibarus.com^$third-party
+||bezrukov.fun^$third-party
+||bigreal.org^$third-party
+||bildirim.net^$third-party
+||bildirimci.net^$third-party
+||bildirnet.com^$third-party
+||bildirt.com^$third-party
+||bitmakerz.biz^$third-party
+||bmfeed.ru^$third-party
+||bosspush.com^$third-party
+||britopush.com^$third-party
+||bro1.biz^
+||bttm.guru^$third-party
+||burningpushing.info^$third-party
+||burstinious.com^$third-party
+||calculator.codes^$third-party
+||canzocoos.com^
 ||catchynews.net^
+||cdn.carrotquest.io^$third-party
+||cdn.contentsitesrv.com/js/push/$third-party
+||cdn.frizbit.com/frizbitjs^$third-party
+||cdn.gravitec.net^$third-party
+||cdn.hostpush.info$third-party
+||cdn.instadrama.site^$third-party
+||cdn.jeapie.com^$third-party
+||cdn.letreach.com^$third-party
+||cdn.mxapis.com^$third-party
+||cdn.onepush.app^$third-party
+||cdn.p-n.io^$third-party
+||cdn.siteswithcontent.com^$third-party
+||cdn.subscribers.com^$third-party
+||cdn.webpush.jp^$third-party
+||cdnt.netcoresmartech.com^$third-party
+||celesterium.com^$third-party
+||centrnotify.com^$third-party
+||centrpush.com^$third-party
 ||check-now.online^
+||checke.biz^$third-party
+||checkpost.club^$third-party
+||chensenconter.com^$third-party
 ||chgilks.com^
+||chitai-gorod.ru/*/js/push_subscribe_firebase.js
+||clairpixum.com^$third-party
 ||click-to-win-prize.com^
+||clicktimes.bid^
+||cloud.roistat.com^$third-party
+||colamirus.com^$third-party
+||corported.com^$third-party
+||cr-eam.com^$third-party
+||cracataum.com^$third-party
+||crimitating.com^$third-party
+||currepush.com^$third-party
+||d2r1yp2w7bby2u.cloudfront.net^$third-party
+||d3bo67muzbfgtl.cloudfront.net/edrone_2_0.js
+||dankulavius.com^$third-party
+||danorenius.com^$third-party
+||datswebnnews.com^$third-party
+||defundium.com^$third-party
+||deltaction.com^$third-party
+||device-api.indigitall.com^$third-party
+||dgpcdn.org^$third-party
+||disrepush.com^$third-party
 ||distributiontomatoes.com^
+||dlyakleopushey.ru^$third-party
+||dolohatum.com^
+||dolweerum.com^$third-party
+||dryum.ru^$third-party
+||easyfeeed.com^$third-party
 ||easyinformer.com^
+||emarketingsuite.net^$third-party
+||encounts.com^$third-party
 ||erihj.com^
+||esputnik.com^$third-party
+||esterlonder.com^$third-party
+||face-push.com^$third-party
+||feductius.com^$third-party
 ||feed-6009.coderformylife.info^
+||feedify.net^$third-party
+||feraciumus.com^$third-party
+||fernomius.com^$third-party
 ||fire-push.net^
+||first.megas44.ru^$third-party
 ||fistcartyped.casa^
+||foxpush.com^$third-party
+||foxpush.net^$third-party
+||fspark-ap.com^$third-party
+||gagwebapi.com/api/webpush/$third-party
+||gatecurium.com^$third-party
+||gerdonarium.com^$third-party
+||getpush.net^$third-party
+||getpush.org^$third-party
+||getpushmonkey.com^$third-party
 ||gewrh.com^
+||gogool.ru^$third-party
+||guideforwindows.top^$third-party
+||hattepush.com^$third-party
+||heroesdom.com^$third-party
+||hilleness.info^$third-party
+||hostpush.info^$third-party
+||hrbpark.bid^$third-party
+||hurdleyreer.info^$third-party
+||ichecknotifyfriends.info^$third-party
+||informfeed.ru^$third-party
 ||inpcut.com^
+||inpptouch.info^$third-party
 ||inspirenews.net^
+||install.searchfrit.com^$third-party
+||iopushtech.com^$third-party
+||ismcdn.jp^*/webpush_dialog.$third-party
 ||ittorchicer.com^
+||izooto.com^$third-party
+||jagevirom.com^
+||jubi.ai^$third-party
+||karuna4u.com^$third-party
+||kattepush.com^$third-party
+||kerchenovias.com^$third-party
+||kursatarak.com^$third-party
 ||latest.android-central.news^
 ||latest.news-pro.today^
+||lecaleros.com^$third-party
+||leechiza.net^$third-party
+||leefmylife.info^$third-party
 ||liatutsch-comeceful.icu^
+||lib1.biz^$third-party
+||list-news.net^$third-party
 ||lmy.de^
+||loboclick.com^$third-party
 ||lodder6.biz^
+||loulouly.net^$third-party
+||luravius.com^$third-party
+||m-th.ru^$third-party
+||magarimot.com^$third-party
+||mailer.i.bizml.ru^
+||majorworker.com^$third-party
+||master-push.com^$third-party
+||master-push.net^$third-party
+||maylohack.ru^$third-party
+||mediaboom.site^
+||meladonicum.com^$third-party
+||merdihatus.com^$third-party
+||mibknb.com^$third-party
+||moengage.com^$third-party
 ||mol17.biz^
 ||mol3.biz^
+||monstelenius.com^$third-party
+||motazeever.com^$third-party
+||motbw.com^$third-party
+||mp3lofts.com^$third-party
+||mp3starz.com^$third-party
+||mucizewus.com^$third-party
+||mypush.online^$third-party
+||n1goserch.com^$third-party
+||nativesubscribe.pro^
+||navse.pukchpok.online^$third-party
+||netmera-web.com^$third-party
+||news-back.best^
 ||news-back.com^
 ||news-back2.com^
 ||news-delta.com^
 ||news-easy.com^
 ||news-gamma.com^
+||news-hefoja.cc^$third-party
 ||news-jupiter.com^
 ||news-mars.com^
 ||news-pro.net^
 ||news-robot.com^
 ||news-venere.com^
+||news-yakaja.cc^$third-party
 ||news.ueep.com^
 ||news.vuer.net^
+||news2day.me^$third-party
 ||newscaffe.net^
+||newsforall.biz/push/$third-party
+||newsgrabber.me^$third-party
 ||newsmagic.net^
 ||newswe.org^
+||notification-time.com^$third-party
 ||notification.best^
 ||notify-guru.com^
 ||notify-master.net^
+||notify-service.com^$third-party
+||notify.hindustantimes.com/resources/js/dm-script.js
 ||notify.premium-news.me^
 ||notify.rocks^
 ||ntsecd.com^
+||ntvsw.com^$third-party
 ||nwliko.com^
 ||nydrctnk.com^
 ||nyphtrue.com^
 ||ofhappinyer.com^
+||olgtex.com^$third-party
+||onesignal.com^$third-party
+||p.dengage.com^$third-party
+||panaur.com^$third-party
+||partishion.com^$third-party
+||pathfootprint.com^$third-party
+||pathlime.com^$third-party
+||pathlinex.com^$third-party
+||patrospermit.com^$third-party
+||pecukirom.com^$third-party
 ||personal-video.live^
+||piranida.com^$third-party
+||powr.io^$third-party
 ||praght.tech^
 ||pro-news.net^
 ||pro-web.net^
+||pronews.me^$third-party
+||prospertinum.com^$third-party
+||psh.one^$third-party
+||purchacade.info^$third-party
+||puscomosca.com^$third-party
+||push-ad.com^$third-party
+||push-centr.com^$third-party
+||push-centr.net^$third-party
+||push-free.com^$third-party
+||push-house.net^$third-party
+||push-money.ru^$third-party
+||push-news.net^$third-party
+||push-pro.net^$third-party
+||push.akket.com^
+||push.all-stor.ru^$third-party
+||push.anews.one^$third-party
+||push.asahiinteractive.com^$third-party
+||push.connect.digital^$third-party
+||push.esputnik.com.ua^$third-party
+||push.estart.jp^$third-party
+||push.expert^$third-party
+||push.knd.ro^$third-party
+||push.maribacaberita.com^
 ||push.news-pro.today^
+||push.newscraft.io^
 ||push.ueep.com^
+||push.webandname.com^$third-party
+||push.world^$third-party
+||push.zdips.ru^
+||push4site.com^$third-party
+||pushalert.co^$third-party
+||pushall.ru/widget.php$third-party
+||pushassist.com^$third-party
+||pushaya.com^$third-party
+||pushbasitop.ru^$third-party
+||pushbird.com^$third-party
+||pushcentr.com^$third-party
+||pushchev.info^$third-party
+||pushcode.jp^$third-party
+||pushcodetop.ru^$third-party
+||pushcrew.com^$third-party
+||pushell.info^$third-party
+||pushengage.com^$third-party
+||pushere.info^$third-party
+||pushex.io^$third-party
+||pushex.net^$third-party
+||pushid.info^$third-party
+||pushify.com^$third-party
+||pushiki.ru^$third-party
+||pushkahouse.com^$third-party
+||pushkapro.com^$third-party
+||pushkintop.ru^$third-party
+||pushland.net^$third-party
+||pushmaster-cdn.xyz^$third-party
+||pushmaster.xyz^$third-party
+||pushnotificationx.com^$third-party
+||pushofferpro.com^$third-party
+||pushout.ru^$third-party
+||pushpad.xyz^$third-party
+||pushpanda.io^$third-party
+||pushpro.co.za^$third-party
+||pushprofit.net^$third-party
+||pushprofit.ru^$third-party
 ||pushpush.net^
+||pushpushgo.com^$third-party
+||pushsar.com^$third-party
 ||pushwelcome.com^
+||pushwoosh.com^$third-party
+||reallypab.com^$third-party
+||realpush.media^$third-party
+||redpsh.pro^$third-party
+||relateddigital.com^$third-party
+||reprocautious.com^$third-party
+||robot.net.ua/upload/crm/site_button/loader_$third-party
+||rocket-push.com^$third-party
+||rokettsaince.com^$third-party
+||rushhips.com^$third-party
+||salesmanago.com^$third-party
+||sckxppzdm.com^$third-party
+||sdk.jeeng.com^$third-party
+||sdkloc1.com^$third-party
+||secure.esputnik.com.ua^$third-party
+||select5.realpush.network^$third-party
 ||send-news.net^
+||send-notice.com^$third-party
+||sendelven.com^$third-party
+||sendpulse.com^$third-party
+||serumawus.com^$third-party
+||setrowid.com^$third-party
+||shaidolt.com^$third-party
+||sitreleastme.info^$third-party
 ||smart-push.best^
+||spacepush.ru^$third-party
+||spattepush.com^$third-party
 ||special-offers.online^
+||ss.6ib.ru^$third-party
+||static.pushe.co^$third-party
+||stengeholt.com^$third-party
 ||sticky.news^
+||stumtererum.com^$third-party
+||swaptrap.live^
+||tafrebadus.com^$third-party
+||tempersonic.com^$third-party
 ||today.vuer.net^
+||topswp.com^
+||tracker.wigzopush.com^
+||traglencium.com^$third-party
+||traneranium.com^$third-party
+||tranqulitius.com^$third-party
+||trenchenious.com^$third-party
+||trendentrium.com^$third-party
+||trenrasius.com^$third-party
+||trourted.pro^$third-party
+||truepush.com^$third-party
+||trynews.me^$third-party
+||tutad.ru^
 ||u21drwj6mp.com^
+||ucfeed.ru^$third-party
+||unattepush.com^$third-party
 ||us.xmlppcbuzz.com^
+||valkirum.com^$third-party
+||varroterius.com^$third-party
+||vergilimus.com^$third-party
+||via.batch.com^$third-party
+||viapush.com^$third-party
+||vinuser5.biz^$third-party
+||vistoolr.net^$third-party
+||vitalectium.com^$third-party
 ||vivdq.com^
+||vkonrakte.com^$third-party
+||volanosier.com^$third-party
+||vultispotus.com^$third-party
+||web-sdk.urbanairship.com/notify/
+||web.webpushs.com^$third-party
+||webpush.hackers.com^
+||webpush.ria.com^
+||webpushonline.com^$third-party
+||webpushr.com^$third-party
+||wertendium.com^$third-party
+||whitepush.biz^$third-party
 ||win-your-prize.com^
 ||windowsguidenews.com^
-||news-back.best^
+||womanshouz.ru^$third-party
+||wonderpush.com^$third-party
+||wp.24smi.org^
+||wpush.biz^$third-party
+||wwclicknews.club^
+||wwopenclick.vip^$third-party
+||wwsercher.biz^$third-party
+||xedo.me^$third-party
 ||xyznews1.today^
 ||xyznews2.today^
 ||xyznews3.today^
 ||xyznews4.today^
+||yisogarom.com^$third-party
 ||you-just-won-prize.com^
-||m-th.ru^$third-party
-||pathlinex.com^$third-party
-||rocket-push.com^$third-party
-||push.asahiinteractive.com^$third-party
-||cdn.onepush.app^$third-party
-||dryum.ru^$third-party
-||gatecurium.com^$third-party
-||spattepush.com^$third-party
-||volanosier.com^$third-party
-||webpushr.com^$third-party
-||push-free.com^$third-party
-||pushprofit.net^$third-party
-||magarimot.com^$third-party
--push-notifications/$script,stylesheet
-||corported.com^$third-party
-||dgpcdn.org^$third-party
-||gerdonarium.com^$third-party
-||monstelenius.com^$third-party
-||bmfeed.ru^$third-party
-||pathfootprint.com^$third-party
-||rokettsaince.com^$third-party
-||zorbanmat.com^$third-party
-||via.batch.com^$third-party
-||hrbpark.bid^$third-party
-||dolweerum.com^$third-party
-||getpush.org^$third-party
-||trenrasius.com^$third-party
-||aswpsdkus.com^$third-party
-/wp-content/plugins/push-notification/*
-||web-sdk.urbanairship.com/notify/
-.club/rp/rp.php?site=
-||pushkintop.ru^$third-party
-||bosspush.com^$third-party
-||web.webpushs.com^$third-party
-||device-api.indigitall.com^$third-party
-||easyfeeed.com^$third-party
-||feductius.com^$third-party
-||rushhips.com^$third-party
-||traneranium.com^$third-party
-||esterlonder.com^$third-party
-||vinuser5.biz^$third-party
-||ss.6ib.ru^$third-party
-||n1goserch.com^$third-party
-||majorworker.com^$third-party
-###NotificationsAskMsg
-###visilabs_web_push_perm_box
-###onesignal-popover-container
-||dankulavius.com^$third-party
-||notify.hindustantimes.com/resources/js/dm-script.js
-||chitai-gorod.ru/*/js/push_subscribe_firebase.js
-||kerchenovias.com^$third-party
-||wertendium.com^$third-party
-||bagirastyle.ru^$third-party
-||meladonicum.com^$third-party
-||alerts.hungama.com^$third-party
-||foxpush.net^$third-party
-||reallypab.com^$third-party
-||sendelven.com^$third-party
-||truepush.com^$third-party
-||actuanius.com^$third-party
-||jubi.ai^$third-party
-||bildirnet.com^$third-party
-||face-push.com^$third-party
-||relateddigital.com^$third-party
-||admessage.support^$third-party
-||ntvsw.com^$third-party
-||ichecknotifyfriends.info^$third-party
-||valkirum.com^$third-party
-||luravius.com^$third-party
-||amacritus.com^$third-party
-||bakibarus.com^$third-party
-||danorenius.com^$third-party
-||newsgrabber.me^$third-party
-||actirinius.com^$third-party
-||defundium.com^$third-party
-||app.getbeamer.com^$third-party
-||hurdleyreer.info^$third-party
-||feraciumus.com^$third-party
-||select5.realpush.network^$third-party
-||tranqulitius.com^$third-party
-||deltaction.com^$third-party
-||trenchenious.com^$third-party
-||tempersonic.com^$third-party
-||informfeed.ru^$third-party
-||bildirt.com^$third-party
-||cracataum.com^$third-party
-||pushchev.info^$third-party
-||pushsar.com^$third-party
-||olgtex.com^$third-party
-||nativesubscribe.pro^
-||topswp.com^
-||wwclicknews.club^
-||fernomius.com^$third-party
-||push.zdips.ru^
-||cdn.p-n.io^$third-party
-||news2day.me^$third-party
-||prospertinum.com^$third-party
-||mibknb.com^$third-party
-||currepush.com^$third-party
-||partishion.com^$third-party
-||ucfeed.ru^$third-party
-||kattepush.com^$third-party
-||pathlime.com^$third-party
-||aptashark.club^$third-party
-||redpsh.pro^$third-party
-||bigreal.org^$third-party
-||whitepush.biz^$third-party
-||onesignal.com^$third-party
-||list-news.net^$third-party
-||tutad.ru^
-||wwsercher.biz^$third-party
-||install.searchfrit.com^$third-party
-||pushland.net^$third-party
-||send-notice.com^$third-party
-||notify-service.com^$third-party
-||push-news.net^$third-party
-||piranida.com^$third-party
-||encounts.com^$third-party
-||hattepush.com^$third-party
-||hostpush.info^$third-party
-||checkpost.club^$third-party
-||allstat-pp.ru^$third-party
-||getpush.net^$third-party
-||datswebnnews.com^$third-party
-||unattepush.com^$third-party
-/?smpushprofile=load_frontend_push_js
+||yourbestru.site^$third-party
 ||z6uc8er1mzx8n2qd.pro^$third-party
-||hilleness.info^$third-party
-||pushbasitop.ru^$third-party
-||spacepush.ru^$third-party
-||aquarepush.com^$third-party
-||adsblockkpush.com^$third-party
-||cdn.hostpush.info$third-party
-||api.useinsider.com^$third-party
-||bttm.guru^$third-party
-||pushere.info^$third-party
-||pronews.me^$third-party
-||arianelab.com^$third-party
-||newsforall.biz/push/$third-party
-||psh.one^$third-party
-##.insider-opt-in-notification
-##.tsoft-push--in-notification
-||pushout.ru^$third-party
-||sdk.push7.jp^$third-party,domain=~secret2.cygames.co.jp
-||pushpushgo.com^$third-party
-||robot.net.ua/upload/crm/site_button/loader_$third-party
-||cdn.carrotquest.io^$third-party
-||notification-time.com^$third-party
-||push-ad.com^$third-party
-||realpush.media^$third-party
-||pushnotificationx.com^$third-party
-||getpushmonkey.com^$third-party
-||cdn.contentsitesrv.com/js/push/$third-party
-||sckxppzdm.com^$third-party
-||puscomosca.com^$third-party
-||pushbird.com^$third-party
-||pushalert.co^$third-party
-||trourted.pro^$third-party
-||cdn.frizbit.com/frizbitjs^$third-party
-||cloud.roistat.com^$third-party
-/pus2/app.js
-/push.js?utm_source=*&domain=$script
-||pushell.info^$third-party
-||pushkapro.com^$third-party
-||cdn.siteswithcontent.com^$third-party
-||pushkahouse.com^$third-party
-||womanshouz.ru^$third-party
-||viapush.com^$third-party
-||d2r1yp2w7bby2u.cloudfront.net^$third-party
-||push-pro.net^$third-party
-||centrnotify.com^$third-party
-||centrpush.com^$third-party
-||pushex.io^$third-party
-||push-house.net^$third-party
-||master-push.net^$third-party
-||wpush.biz^$third-party
-||pushprofit.ru^$third-party
-||push-centr.com^$third-party
-||pushcentr.com^$third-party
-||push-centr.net^$third-party
-||master-push.com^$third-party
-||d3bo67muzbfgtl.cloudfront.net/edrone_2_0.js
-||emarketingsuite.net^$third-party
-||push.maribacaberita.com^
-||iopushtech.com^$third-party
-||widget.intercom.io^$third-party,domain=~app.rezi.io|~intercom.com|~backerclub.co|~quidco.com|~green.energy
-||pushpad.xyz^$third-party
-||gagwebapi.com/api/webpush/$third-party
-||foxpush.com^$third-party
-||accengage.net^$third-party
-||wonderpush.com^$third-party
-||pushify.com^$third-party
-||tracker.wigzopush.com^
-||netmera-web.com^$third-party
-/pushwoosh-$script,domain=~pushwoosh.com
-||setrowid.com^$third-party
-||api.sociaplus.com^$third-party
-||bildirim.net^$third-party
-||cdn.gravitec.net^$third-party
-||cdn.jeapie.com^$third-party
-||cdn.letreach.com^$third-party
-||sendpulse.com^$third-party
-||panaur.com^$third-party
-||push.connect.digital^$third-party
-||esputnik.com^$third-party
-||secure.esputnik.com.ua^$third-party
-||push.esputnik.com.ua^$third-party
-||push.expert^$third-party
-||push.world^$third-party
-||pushall.ru/widget.php$third-party
-||pushassist.com^$third-party
-||pushcrew.com^$third-party
-||pushengage.com^$third-party
-||pushwoosh.com^$third-party
-||push4site.com^$third-party
-||cleverpush.com^$third-party,domain=~app.bsdex.de
-||pushaya.com^$third-party
-||trendentrium.com^$third-party
-||purchacade.info^$third-party
-||amfeed.ru^$third-party
-||static.pushe.co^$third-party
-||loboclick.com^$third-party
-||aristianewr.club^$third-party
-||reprocautious.com^$third-party
-##amp-web-push-widget
-||vergilimus.com^$third-party
-||dlyakleopushey.ru^$third-party
-||serumawus.com^$third-party
-||webpush.hackers.com^
-||cdn.webpush.jp^$third-party
-/pushJs/*$third-party,script
-||gogool.ru^$third-party
-||cdn.subscribers.com^$third-party
-||push.akket.com^
-||wwopenclick.vip^$third-party
-.vafrike.ru^$third-party
-||maylohack.ru^$third-party
-||bildirimci.net^$third-party
-||patrospermit.com^$third-party
-||crimitating.com^$third-party
-||push.all-stor.ru^$third-party
-||feedify.net^$third-party
-||app.dengage.com^$third-party
-||salesmanago.com^$third-party
-||leefmylife.info^$third-party
-||wp.24smi.org^
-||burstinious.com^$third-party
-||motazeever.com^$third-party
-||shaidolt.com^$third-party
-||sitreleastme.info^$third-party
-||api.pushnami.com^$third-party
-||first.megas44.ru^$third-party
-||sdk.jeeng.com^$third-party
-||stengeholt.com^$third-party
-||vultispotus.com^$third-party
-||api.jeeng.com^$third-party
-||navse.pukchpok.online^$third-party
-||motbw.com^$third-party
-||mp3lofts.com^$third-party
-||mp3starz.com^$third-party
-||cdn.mxapis.com^$third-party
-||tafrebadus.com^$third-party
-||fspark-ap.com^$third-party
-||disrepush.com^$third-party
-||merdihatus.com^$third-party
-||kursatarak.com^$third-party
-||cdn.instadrama.site^$third-party
-||pushcodetop.ru^$third-party
-||p.dengage.com^$third-party
-||pushmaster-cdn.xyz^$third-party
-||pushmaster.xyz^$third-party
-||push.newscraft.io^
-||webpush.ria.com^
-||cdnt.netcoresmartech.com^$third-party
+||zorbanmat.com^$third-party
+! NOTE: Generic rules end ⬆️
+! !SECTION: Push notifications - Generic rules
+!
+!
+!
+!
+!
+!
+!
+! SECTION: Push notifications - Specific
 !
 /firebase.js$domain=novayagazeta.ru|comments.ua|kinosimka.net|ilan365.net|cnbcindonesia.com|haberzamani.net|oxy.cloud|allbasketball.org|auslogics.com|kartalyuvasi.com.tr|cnnindonesia.com|fbc.ua|astv.ru|pln-pskov.ru|aylink.co
 /firebase-messaging.js$domain=webursa.com|s.akiba-souken.com|bfm.ru|theswagsports.com|focus.ua|ukranews.com|comments.ua|coub.com|porno90.me|cnnamador.com|giallozafferano.it|wcostream.com|fptplay.vn|jooble.org|mobile01.com|myinstants.com|pdalife.ru|rg.ru|m.iguides.ru|donanimhaber.com|profile.ru|womanhit.ru|news.noteru.com|narodna-pravda.ua|newstm.in|sabah.com.tr|dreamstime.com|popbee.com|avtovzglyad.ru|allbasketball.org|tw.news.yahoo.com|takvim.com.tr|jn.pt|ria.ru|pars.host|calculator-online.net|operanewsapp.com|ahaber.com.tr|tamindir.com|concursosnobrasil.com.br|kompas.com|news.ebc.net.tw|recyclingtoday.com|homedecoratione.com|khersondaily.com|mirtesen.ru|womanhit.ru|belsat.eu|gearbest.com|op.gg|novayagazeta.ru|pocket-lint.com|turunculevye.com|bloomberght.com|stardima.com|aksam.com.tr|portamur.ru|fishki.net|ranking.goo.ne.jp|ohmymag.com|mgronline.com|semnasem.org|bluradio.com|carwale.com|finanznachrichten.de|home.kingsoft.jp|sputnik.kg
 !
+abendzeitung-muenchen.de###webpush-app
+/webpush.$domain=egoiapp2.com|haberler.com|haberler.com|haberturk.com|soccer.ru|internet-technologies.ru|sondakika.com|brigitte.de
 /js/push.js$domain=site.ua|gorod24.online|ytro.news|vz.ru
 kgw.com##.page__notifications
 kufar.by##div[class^="styles_webpush_banner__"]
@@ -28032,13 +28031,21 @@ armeniasputnik.am,sputniknewslv.com##.modal-push
 aol.com#$#.m-notifications-banner { display: none !important; }
 aol.com#$#.banner-active { margin-top: 0 !important; }
 !
+! Disabling of push-notifications
+wallstreet-online.de,dni.ru,polit.info#%#if (window.PushManager) { window.PushManager.prototype.subscribe = function () { return { then: function (func) { } }; }; }
+life.ru,macwelt.de,pcwelt.de#%#//scriptlet("set-constant", "firebase.messaging", "noopFunc")
+! Currently unsupported - 'denied'
+! #%#//scriptlet("set-constant", "Notification.permission", "denied")
+! NOTE: Specific end ⬆️
+! !SECTION: Push notifications - Specific
 !
-!==================================================================================================================
-!============================================section===============================================================
-! TODO: TEMPORARY SECTION ============must be removed after moving the rules to new files==========================
 !
-! Fixing the issues
 !
+!
+!
+!
+!--- Whitelist
+! SECTION: Push notifications - Whitelist
 ! https://github.com/AdguardTeam/AdguardFilters/issues/121072
 @@||powr.io/powr.js$domain=lavatools.co
 @@||powr.io/form-builder/$domain=lavatools.co
@@ -28084,6 +28091,8 @@ aol.com#$#.banner-active { margin-top: 0 !important; }
 @@||cdn.sendpulse.com/js/push/*.js$domain=surfingbird.ru
 ! https://github.com/AdguardTeam/AdguardFilters/issues/73132
 @@||api.savemedia.website^$domain=convert2mp3.club
+! NOTE: Whitelist end ⬆️
+! !SECTION: Push notifications - Whitelist
 !
 ! This is section contains the list of rules that block websites' own banners at our discretion.
 !
@@ -29485,6 +29494,7 @@ experts-exchange.com##.ctaSolutionStickyWrapper
 theguardian.com##.contributions__adblock
 ||contributions.guardianapis.com^
 !
+! SECTION: Self-promo - regular rules
 wired.com##.paywall-bar__consumer-marketing-unit
 medvestnik.by##.bannergroupbanner-top
 androidacy.com###block-39
@@ -30426,21 +30436,28 @@ eiga.com##.header-pure-banner
 ! Bad: @@||example.org^$stealth (should be in AdGuard Base - whitelist_stealth.txt)
 !
 !
-!==================================================================================================================
-!============================================section===============================================================
-! TODO: TEMPORARY SECTION ============must be removed after moving the rules to new files==========================
 !
 ! Genegic rules
-||loader.wisepops.com^$third-party
-||js.emailable.com^$third-party
-||inyourarea.co.uk^$third-party
+! SECTION: Self-promo - Generic
 ##.followit--follow-form-container
-||embeds.fanmatics.com^$third-party
-||cp.unisender.com/*/form-widget-loader.js$third-party
 ##.widget_blog_subscription
 ~theoatmeal.com,~copays.org,~nothing.tech,~mega-debrid.eu,~curvegames.com,~news.un.org,~norwichzen.org.uk,~dereferer.me###mc_embed_signup
-!==================================================================================================================
 !
+||embeds.fanmatics.com^$third-party
+||inyourarea.co.uk^$third-party
+||js.emailable.com^$third-party
+||loader.wisepops.com^$third-party
+||cp.unisender.com/*/form-widget-loader.js$third-party
+! e2ma subscription forms
+||signup.e2ma.net^$third-party
+/e2ma.js
+||static-cdn.e2ma.net/signups/$third-party
+! NOTE: Generic end ⬆️
+! !SECTION: Self-promo - Generic
+!
+!
+!
+! SECTION: Self-promo - Specific
 ! common names
 ! ##.cta-component-half-width
 andoveradvertiser.co.uk,asianimage.co.uk,banburycake.co.uk,barryanddistrictnews.co.uk,basildonstandard.co.uk,basingstokegazette.co.uk,bicesteradvertiser.net,borehamwoodtimes.co.uk,braintreeandwithamtimes.co.uk,brentwoodlive.co.uk,bridportnews.co.uk,bromsgroveadvertiser.co.uk,bucksfreepress.co.uk,burytimes.co.uk,campaignseries.co.uk,chelmsfordweeklynews.co.uk,chorleycitizen.co.uk,clactonandfrintongazette.co.uk,cotswoldjournal.co.uk,cravenherald.co.uk,croydonguardian.co.uk,dailyecho.co.uk,darlingtonandstocktontimes.co.uk,dorsetecho.co.uk,droitwichadvertiser.co.uk,dudleynews.co.uk,ealingtimes.co.uk,echo-news.co.uk,enfieldindependent.co.uk,eppingforestguardian.co.uk,epsomguardian.co.uk,eveningtimes.co.uk,eveshamjournal.co.uk,falmouthpacket.co.uk,freepressseries.co.uk,gazette-news.co.uk,gazetteherald.co.uk,gazetteseries.co.uk,greenocktelegraph.co.uk,guardian-series.co.uk,halesowennews.co.uk,halsteadgazette.co.uk,hampshirechronicle.co.uk,harrowtimes.co.uk,harwichandmanningtreestandard.co.uk,heraldscotland.com,heraldseries.co.uk,herefordtimes.com,hillingdontimes.co.uk,ilkleygazette.co.uk,keighleynews.co.uk,kidderminstershuttle.co.uk,knutsfordguardian.co.uk,lancashiretelegraph.co.uk,ledburyreporter.co.uk,leighjournal.co.uk,ludlowadvertiser.co.uk,maldonandburnhamstandard.co.uk,malverngazette.co.uk,messengernewspapers.co.uk,middlewichguardian.co.uk,milfordmercury.co.uk,newsshopper.co.uk,northwichguardian.co.uk,northyorkshireadvertiser.co.uk,oxfordmail.co.uk,oxfordtimes.co.uk,penarthtimes.co.uk,prestwichandwhitefieldguide.co.uk,redditchadvertiser.co.uk,richmondandtwickenhamtimes.co.uk,romseyadvertiser.co.uk,runcornandwidnesworld.co.uk,salisburyjournal.co.uk,smallholder.co.uk,southendstandard.co.uk,southwalesargus.co.uk,southwalesguardian.co.uk,southwestfarmer.co.uk,stalbansreview.co.uk,sthelensstar.co.uk,stourbridgenews.co.uk,surreycomet.co.uk,suttonguardian.co.uk,swindonadvertiser.co.uk,tewkesburyadmag.co.uk,theargus.co.uk,theboltonnews.co.uk,thenational.scot,thenorthernecho.co.uk,theoldhamtimes.co.uk,thescottishfarmer.co.uk,thetelegraphandargus.co.uk,thetottenhamindependent.co.uk,thewestmorlandgazette.co.uk,thurrockgazette.co.uk,times-series.co.uk,tivysideadvertiser.co.uk,wandsworthguardian.co.uk,warringtonguardian.co.uk,watfordobserver.co.uk,wearvalleyadvertiser.co.uk,westerntelegraph.co.uk,wharfedaleobserver.co.uk,wilmslowguardian.co.uk,wiltsglosstandard.co.uk,wiltshiretimes.co.uk,wimbledonguardian.co.uk,wirralglobe.co.uk,witneygazette.co.uk,worcesternews.co.uk,yorkpress.co.uk,yourlocalguardian.co.uk##.cta-component-half-width
@@ -34493,14 +34510,6 @@ worldometers.info#?#div:matches-css(border:3px):has(> div > div > div > iframe[s
 ||widgets.contentfleet.com/newsletter/
 ||womenshealthmag.com/*/files/wh-newsletter-signup$image
 ||x.mail.bonnier-subscriptions.com^$domain=flyingmag.com|popsci.com
-!
-tvrain.ru##.menu3__foreign-agent-wrapper
-! e2ma subscription forms
-||signup.e2ma.net^$third-party
-/e2ma.js
-||static-cdn.e2ma.net/signups/$third-party
-!
-!
 !+ NOT_OPTIMIZED
 amp.scmp.com###newsletter-register-widget
 !+ NOT_OPTIMIZED
@@ -34508,14 +34517,21 @@ mail.ru###subscriptionFormWeekMainBlockId
 !+ NOT_OPTIMIZED
 magazine.skyeng.ru##.tg-banner
 !
+tvrain.ru##.menu3__foreign-agent-wrapper
+! NOTE: Specific end ⬆️
+! !SECTION: SECTION: Self-promo - Specific
 !
-!==================================================================================================================
-!============================================section===============================================================
-! TODO: TEMPORARY SECTION ============must be removed after moving the rules to new files==========================
+!
+!
+!
+!
+!
+!
+!
 !
 !
 !--- Whitelist
-!
+! SECTION: Self-promo - Whitelist
 ! https://github.com/AdguardTeam/AdguardFilters/issues/116753
 @@||artivive.activehosted.com/*/embed.php$domain=artivive.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/111595
@@ -34523,6 +34539,8 @@ magazine.skyeng.ru##.tg-banner
 ! https://github.com/AdguardTeam/AdguardFilters/issues/95023
 @@||sibforms.com/serveUnsub/
 @@||sibforms.com/serve/$domain=camelactive.com
+! NOTE: Whitelist end ⬆️
+! !SECTION: Self-promo - Whitelist
 !
 ! This section contains the list of rules that are used for UI tweaks and other similar cases. For instance, we unblock the right context menu or unblock selecting text on a webpage.
 !
