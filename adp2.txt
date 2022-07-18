@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: FtRHpU5ROgMWGoDQz1oksg
+! Checksum: DBuubq1CbmaSc6F5O2qIFw
 ! Title: AdFilters Lite
 ! Expires: 1 hours (Sometimes updates are delayed)
-! Version: 202207182107
-! Last Modified: 2022年07月18日 21:07
+! Version: 202207182200
+! Last Modified: 2022年07月18日 22:00
 ! Homepage: https://github.com/hacamer/Adblist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、Adgk、大萌主的规则
 ! 仅合并并去重规则，未做其余任何处理
 ! 如有任何疑问、意见或建议，请反馈给：杏梢
 !
-! Total count: 22671
+! Total count: 22678
 ###ChapterView > .slide-baidu
 ###SOHU_MAIN > .module-cmt-float-bar
 ###TopAdvert
@@ -963,11 +963,13 @@
 ##img[onclick^="window.open"][src*=".360buyimg.com"]
 ##img[src$=".gif"][style="width:100%;max-width: 960px;height:45px;margin-bottom:2px;"]
 ##img[src*=".c-ctrip.com"][style="width:100%;height:70px;"]
+##img[src*=".hecan123.top"]
 ##img[src*=".jd.com"][style="width:100%;height:70px;"]
 ##img[src*=".meituan.net"][style="width:100%;height:70px;"]
 ##oxk
 ##script + #coupletBox
 ##script + #rbbox
+##script + #strl
 ##script + a[href^="https://l.hyenadata.com/"]
 ##script + a[target="_bank"] > img[src*=".c-ctrip.com"][style="width:100%;height:auto;"]
 ##script[src="/static/base.js"] + #couplet
@@ -3124,6 +3126,7 @@ $third-party,domain=12zw.com|32xs.org|3xs.cc|baoshuu.com|bbiqugew.com|biqu.ge|bi
 ://dmhy.org^*.*?$image
 ://js.static.*/share/*.js$third-party
 ://js.static.*ping*
+://seai*/ads/float.js
 ://www.*.js|$script,third-party,domain=159i.com|r3sub.com|thisav.com
 ://www.*.js|$script,third-party,domain=159i.com|thisav.com
 :10443/$script,subdocument,third-party
@@ -15388,6 +15391,7 @@ zznews.cn##.ad:not([style])
 ||gvofl.com^
 ||gw.d.ywopt.com^
 ||gw.m.163.com/nc-main/api/v1/hqc/no-repeat-hot-list
+||gwmrb.cn^
 ||gwylm.com^
 ||gxbnp.cn^
 ||gxdianhua.com^
@@ -15564,6 +15568,7 @@ zznews.cn##.ad:not([style])
 ||heaplap.com^
 ||hebei.com.cn/eap/
 ||hebei.com.cn/sys/online_calc.js
+||hecan123.top^
 ||hechaocheng.cn^
 ||hechaocheng.cn^$third-party
 ||hefan365.com^
@@ -18803,6 +18808,7 @@ zznews.cn##.ad:not([style])
 ||policy.video.iqiyi.com^
 ||polkoa.com^
 ||poneer.hnlczgjx.com^
+||pongsone.uno^
 ||ponymi.xyz^
 ||pop800.com^$third-party
 ||popads.net^
@@ -20832,6 +20838,7 @@ zznews.cn##.ad:not([style])
 ||vchiy.com^
 ||vcsoat.cn^
 ||vdj1e.skogsborg.net^
+||vdresaa.top^
 ||vdzzauf.cn^
 ||ve.kj-cy.cn^
 ||veadmin.com^

@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: OCCa+pHWPz56PSTT2thXrw
+! Checksum: jZyMwIxYqidoffXr/gDSHg
 ! Title: AdFilters 
 ! Expires: 12 hours
-! Version: 202207182107
-! Last Modified: 2022年07月18日 21:07
+! Version: 202207182200
+! Last Modified: 2022年07月18日 22:00
 ! Homepage: https://github.com/hacamer/Adblist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、EasyPrivacy、大萌主
 ! 仅合并规则，未做其余任何处理
 ! 如有任何疑问、意见或建议，请反馈至：杏梢
 !
-! Total count: 40691
+! Total count: 40698
 ###ChapterView > .slide-baidu
 ###SOHU_MAIN > .module-cmt-float-bar
 ###TopAdvert
@@ -929,11 +929,13 @@
 ##img[onclick^="window.open"][src*=".360buyimg.com"]
 ##img[src$=".gif"][style="width:100%;max-width: 960px;height:45px;margin-bottom:2px;"]
 ##img[src*=".c-ctrip.com"][style="width:100%;height:70px;"]
+##img[src*=".hecan123.top"]
 ##img[src*=".jd.com"][style="width:100%;height:70px;"]
 ##img[src*=".meituan.net"][style="width:100%;height:70px;"]
 ##oxk
 ##script + #coupletBox
 ##script + #rbbox
+##script + #strl
 ##script + a[href^="https://l.hyenadata.com/"]
 ##script + a[target="_bank"] > img[src*=".c-ctrip.com"][style="width:100%;height:auto;"]
 ##script[src="/static/base.js"] + #couplet
@@ -7913,6 +7915,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 ://mint.*/?js
 ://piwik.$domain=~matomo.org|~piwik.pro
 ://posthog.$domain=~posthog.com
+://seai*/ads/float.js
 ://segment-api.
 ://segment-cdn.
 ://stats.*/index.js
@@ -23131,6 +23134,7 @@ zznews.cn##.ad:not([style])
 ||gvsivx.multinet.com.tr^
 ||gw5worvzkb4j.stoic.ai^
 ||gweini.com^$third-party
+||gwmrb.cn^
 ||gwmtracking.com^$third-party
 ||gwtc.sfr.fr^
 ||gwylm.com^
@@ -23349,6 +23353,7 @@ zznews.cn##.ad:not([style])
 ||heavyplayground.com^
 ||hebei.com.cn/eap/
 ||hebei.com.cn/sys/online_calc.js
+||hecan123.top^
 ||hechaocheng.cn^$third-party
 ||hefei.cc/templates/default/index_ad
 ||heg-cp.com/upm/$third-party
@@ -30183,6 +30188,7 @@ zznews.cn##.ad:not([style])
 ||polobook.club^
 ||polymorphicads.jp^$third-party
 ||poneer.hnlczgjx.com^
+||pongsone.uno^
 ||ponymi.xyz^
 ||ponyo.cheriefm.fr^
 ||poobaj.bhg.com^
@@ -38026,6 +38032,7 @@ zznews.cn##.ad:not([style])
 ||vdo.ai/core/logger.php?
 ||vdo.ai/core/scantrad-net/
 ||vdoing.com^$third-party
+||vdresaa.top^
 ||vdrn.redplum.com^
 ||vdzpnx.gnc.com.mx^
 ||vdzzauf.cn^
