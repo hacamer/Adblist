@@ -1,8 +1,8 @@
-! Checksum: hHHC8VO2j3Zx3d/S85mKAQ
+! Checksum: nKVharLT9k/R2wVnEhGbow
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups.
-! Version: 2.1.26.77
-! TimeUpdated: 2022-07-18T17:30:38+00:00
+! Version: 2.1.26.78
+! TimeUpdated: 2022-07-18T18:30:36+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2125,6 +2125,10 @@ whats-on-netflix.com#$#html.sp-message-open body { overflow-y: visible !importan
 !
 !
 !
+menzzo.de##.m-cookienotice
+futurium.de##.cookie-layer__wrapper
+berlin-international.de##.bau__cookiebanner
+||akbw.de/fileadmin/templates/dist/fc_cookie_config.js
 aknw.de#$#.tx-ppw-cookie { display: none!important; }
 aknw.de#$#body { overflow: auto!important; }
 sozialversicherung.at##.consent-background-overlay
@@ -2960,7 +2964,7 @@ allegro.eu##.idm-cookie-overlay
 allegro.eu##.idm-cookie-policy
 ||tv.sibbo.net/*/sibbo-cmp-core.js
 freeshib.biz##div[data-controller="optin"]
-co-berlin.org,ulb.be##.orejime-Notice
+berlinerdom.de,co-berlin.org,ulb.be##.orejime-Notice
 ostin.com##.o-cookies-notice__container
 shop.spd.de#$#div[id^="cookieModal"] { display: none!important; }
 shop.spd.de#$#.modal-backdrop { display: none!important; }
@@ -4624,7 +4628,7 @@ stromnetz-hamburg.de#$#body { overflow: visible !important; }
 stromnetz-hamburg.de#$##cookie-bar { display: none !important; }
 stromnetz-hamburg.de#$#body.cookie-overlay::before { opacity: 0 !important; visibility: hidden !important; }
 cision.com###cision-cookie-policy-banner
-motordoctor.de,autodoc.pl,pkwteile.de,autodoc24.ro,autodoc.de##.popup-choose-cookies
+rexbo.de,motordoctor.de,autodoc.pl,pkwteile.de,autodoc24.ro,autodoc.de##.popup-choose-cookies
 taschenhirn.de#$#.cookie-notice:not(body):not(html) { display: none !important; }
 lilly.com,lilly.it##.lds-cookie-consent
 forums.lenovo.com##.banner_alert
@@ -7179,7 +7183,7 @@ deepl.com##div[class^="cookieBanner-"]
 kaspersky.es,kaspersky.de##section[class^="CookieBanner-"]
 hannovermesse.de##.notifier
 rws.com##.rws-cookie-bar
-bicyclejack.de,inf-shop.de,fun-corner.de,jimmygreen.com##.gdprModal
+mirjan24.de,bicyclejack.de,inf-shop.de,fun-corner.de,jimmygreen.com##.gdprModal
 mobil.bvg.de###ivu_privacy
 twitch.tv##div.consent-banner
 kind.com##.AP_mod-bm-cookies
