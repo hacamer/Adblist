@@ -1,8 +1,8 @@
-! Checksum: yEQK5zyfL+zfp3OV0ZzKqA
+! Checksum: 8xV3Btplb9CKfDY/QhH6+w
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.1.26.92
-! TimeUpdated: 2022-07-19T17:02:09+00:00
+! Version: 2.1.26.93
+! TimeUpdated: 2022-07-19T20:30:37+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2125,6 +2125,7 @@ whats-on-netflix.com#$#html.sp-message-open body { overflow-y: visible !importan
 !
 !
 !
+||die-ik.de/typo3conf/*/cookieman
 einrichten-design.de#$#html { overflow: auto !important; }
 einrichten-design.de#$#body { overflow: auto !important; }
 einrichten-design.de#$#.modal-backdrop { display: none !important; }
@@ -2400,7 +2401,6 @@ jush.pl##.t972__banner
 totalizator.pl##.privacy-popup
 interacty.me##div[class^="CookiesBanner_"]
 discoverychannel.com.tr###dni-notifications
-||landwirtschaft.de/typo3conf/*cookieman/
 agriline24.de##body .pp-accept-cookies-block
 trademachines.de##.tm-cookie-dialog-root
 speisekarte24.de###dasu
@@ -27575,6 +27575,7 @@ tvrain.ru##.menu3__foreign-agent-wrapper
 ! HINTS are at the end of Specific section
 !
 ! SECTION: Mobile apps - Specific
+terabox.com#$#.introduce-top-panel .introduce-sticky-btn img { position: static !important; }
 mapion.co.jp##.btn-ptn2
 filmora.wondershare.com.ru##body > div.d-lg-none > div.py-3
 forfun.com##.app-promo
