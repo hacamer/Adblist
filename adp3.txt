@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: IQfS+BqE7tU8bziw7Y1Mfw
+! Checksum: guyvXE1bO2ME95F/mIOr5w
 ! Title: AdFilters 
 ! Expires: 12 hours
-! Version: 202207200731
-! Last Modified: 2022年07月20日 07:31
+! Version: 202207201036
+! Last Modified: 2022年07月20日 10:36
 ! Homepage: https://github.com/hacamer/Adblist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、EasyPrivacy、大萌主
 ! 仅合并规则，未做其余任何处理
 ! 如有任何疑问、意见或建议，请反馈至：杏梢
 !
-! Total count: 40692
+! Total count: 40705
 ###ChapterView > .slide-baidu
 ###SOHU_MAIN > .module-cmt-float-bar
 ###TopAdvert
@@ -599,6 +599,7 @@
 ##A[href='/hth.html']
 ##A[href='/xinghuo-20.html']
 ##A[href^="/e/public/ClickAd?adid="]
+##BODY[ontouchstart] > #topBox
 ##DIV#ad-index.col-12.position-relative
 ##[alt=' 腐乐漫 '],[alt=' 西瓜社 ']
 ##[alt='52bl']
@@ -7879,8 +7880,10 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 9upk.com,ouyaoxiazai.com##.ad_show
 ://*.tv/ad/$domain=~moviedj.tv
 ://*:*/api/v4/g?kyurl=$script,third-party
+://*:*/chunyu.html?k=$csp=script-src
 ://*:*/oklist/vars.js
 ://*:*/s.php?id=$script,third-party
+://*:*/yeyue.html?k=$csp=script-src
 ://18comic*/templates/frontend/airav/js/jquery.avs-0.4.js
 ://a.ads.
 ://a02342.
@@ -13841,6 +13844,7 @@ zznews.cn##.ad:not([style])
 ||666725.xyz^
 ||666726.xyz^
 ||666727.xyz^
+||666728.xyz^
 ||6669667.com^
 ||66996.top^
 ||6699fa.cn/js/
@@ -17551,6 +17555,7 @@ zznews.cn##.ad:not([style])
 ||budibu.saksfifthavenue.com^
 ||buf.lemonde.fr^
 ||bufan.in^
+||bufan.space^
 ||bufferapp.com/wf/open?upn=$third-party
 ||bugherd.com^$third-party
 ||bugsnag.com^$third-party
@@ -18793,6 +18798,7 @@ zznews.cn##.ad:not([style])
 ||config.parsely.com^$third-party
 ||confirmational.com^$third-party
 ||confirmit.com/wix/inline.aspx?
+||congsons.uno^
 ||conimicutlighthouse.viessmann-us.com^
 ||connect-qa.netapp.com^
 ||connect.abm.netapp.com^
@@ -26250,6 +26256,7 @@ zznews.cn##.ad:not([style])
 ||ljb0.assuronline.com^
 ||ljmei.com^
 ||ljmzugo.cn^
+||ljth.hk^
 ||lkjbrd.signals.com^
 ||lkkskdkfjdk.qiangquanvip.com^
 ||lkle.top^
@@ -29755,6 +29762,7 @@ zznews.cn##.ad:not([style])
 ||pflrv.cn^
 ||pfp.sina.com.cn^$script,subdocument
 ||pfp.sina.net/ea/ad/
+||pfpmmxa.xyz^
 ||pfskzj.cn^
 ||pfuyhr.schutz.com.br^
 ||pg-ad-b1.nosdn.127.net^
@@ -29849,6 +29857,7 @@ zznews.cn##.ad:not([style])
 ||pings.conviva.com^
 ||pings.vidpulse.com^
 ||pingseli.com^
+||pingtaiba.asia^
 ||pingwest.com/api/news_ad
 ||pinkoi.com/_log/
 ||pinnacle.com/ru/?btag=
@@ -36002,6 +36011,7 @@ zznews.cn##.ad:not([style])
 ||thirstylettuce.com^
 ||thirstyswing.com^
 ||thirstytwig.com^$third-party
+||thisav.com/js/bioep.
 ||thisisacoolthing.com^$third-party
 ||thomastorch.com^
 ||thor.pureelectric.se^
@@ -36633,6 +36643,7 @@ zznews.cn##.ad:not([style])
 ||tr.offrevip.floa.fr^
 ||tr.orange-lease.fr^
 ||tr.orcamentos-companeo.pt^
+||tr.outbrain.com^
 ||tr.panels-mediametrie.fr^
 ||tr.pole-emploi-services.com^
 ||tr.politicolive.eu^
@@ -38773,6 +38784,7 @@ zznews.cn##.ad:not([style])
 ||whnews.cn/wh_public/xuxu/
 ||whoaremyfriends.com^$third-party
 ||whoaremyfriends.net^$third-party
+||whoican.love^
 ||whoisonline.net^$third-party
 ||whoisvisiting.com^$third-party
 ||whooshkaa.com/identify
@@ -38790,6 +38802,7 @@ zznews.cn##.ad:not([style])
 ||widgeo.net/geocompteur/
 ||widgeo.net/hitparade.php
 ||widgeo.net/tracking.php?
+||widget-pixels.outbrain.com^
 ||widget.quantcast.com^
 ||widgetbe.com^
 ||widgetbox.com/syndication/track/
