@@ -1,8 +1,8 @@
-! Checksum: jYWP61UM8PKg+2f3juF3Kg
+! Checksum: Qrucpkx1giT+bkLpEepSFg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.1.27.3
-! TimeUpdated: 2022-07-20T13:30:37+00:00
+! Version: 2.1.27.4
+! TimeUpdated: 2022-07-20T14:30:37+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -21846,7 +21846,7 @@ com-magazin.de##w-div[role$="dialog"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/112718#issuecomment-1069965416
 twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion,twitter.com#$?#div[data-testid="sheetDialog"] > :not(div[data-testid="IntentLoginSheet_Login_Sheet"]) div[aria-label=""] > img[class^="css-"][src$="/privacy_cover.png"]:upward(div[role="group"]) { display: none !important; }
 twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion,twitter.com#$?#div[data-testid="sheetDialog"] > :not(div[data-testid="IntentLoginSheet_Login_Sheet"]) div[role="button"]:not([data-testid]) + div[role="button"]:not([data-testid]):upward(div[role="group"]) { display: none !important; }
-twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion,twitter.com#$?#html { overflow: auto !important; padding-right: 0 !important; }
+twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion,twitter.com#$?#html { overflow: auto !important; padding-right: 0 !important; overscroll-behavior-y: auto !important; }
 ! Yandex
 mail.yandex.by,mail.yandex.com,mail.yandex.com.tr,mail.yandex.fr,mail.yandex.kz,mail.yandex.ru,mail.yandex.ua##.promo-gen-theme-fs-Container
 yandex.*##.desk-notif-card__card[aria-label="Реклама"]
@@ -23482,6 +23482,7 @@ techwafer.com,moonshot.news,radiokp.ru,brestcity.com,aykiri.com.tr,yenicaggazete
 turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisgazetesi.com,kocaelikoz.com,enkocaeli.com##.block-pano > div.as
 turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisgazetesi.com,kocaelikoz.com,enkocaeli.com###_s_fan
 !
+hurrythefoodup.com##div[id^="cp_popup_id"]
 bbc.com##div[id^="piano-inline"]
 phileweb.com###rmenu_mail
 nextpit.de##.np-nl-widget
@@ -32415,6 +32416,9 @@ mail.google.com##header[role="banner"] > div[class] > div.gb_yf > div.gb_gc[role
 !--- Microsoft Edge banners --------------------
 msn.com###eubanner
 !--- Yandex self-promo -------------------------
+!+ PLATFORM(android, ios)
+[$path=/^\/$/]yandex.*##.search-select-promo__wrapper
+!
 [$path=/^\/$/]yandex.*##.search-bubbles
 yandex.*#?#.desk-notif-card__card:has(> div.desk-notif-card__title:contains(/Попробовать|Подключить Плюс/))
 yandex.*##.news-app > div.news-navigation-menu__wrapper ~ div[class][data-log-id]
