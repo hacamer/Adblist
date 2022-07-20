@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: 2lhBqjdN0EL0B1IGgj0GWg
+! Checksum: 3mxBdXDfpfVIJ6usMERx5A
 ! Title: edentwCustom
 ! Expires: 12 hours
-! Version: 202207201836
-! Last Modified: 2022年07月20日 18:36
+! Version: 202207201927
+! Last Modified: 2022年07月20日 19:27
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自Adblock Warning Removal List、ABP filters、anti-adblock-killer-filters，感谢各位大大的分享！
 ! 仅合并规则，未做其余任何处理
@@ -4261,7 +4261,6 @@ wurst-client.tk#@#.adsbygoogle
 www.blesk.cz##[class*="-wrapperf-prapper"], [class*="pikyTentBot_"], #stickyBottomRightAbsolute, [class="lol__out"], img[width='970'][height="310"], a[style*="blewid: 970px; height: 310px"], div[id*="-hor"]
 www.elektroda.pl#$#abort-on-property-read popupStatus; abort-on-property-write welcomeAdContainer
 www.facebook.com,web.facebook.com##span a[aria-labelledby][role="link"][target="_blank"][tabindex="0"]
-www.facebook.com,web.facebook.com#$#hide-if-contains-visible-text /[Sponsred]{9}|[Gesponrtd]{10}|[Sponrisé]{10}|[Comandité]{9}|[Publicda]{10}/ 'div#watch_feed div[class^="_"]' 'a[href="#"][role="link"]'
 www.facebook.com,web.facebook.com#$#hide-if-contains-visible-text /[Sponsred]{9}|[Gesponrtd]{10}|[Sponrisé]{10}|[Comandité]{9}|[Publicda]{10}/ 'div[role=feed] div[role=article]' 'a[href="#"][role="link"]'
 www.facebook.com,web.facebook.com#$#hide-if-contains-visible-text /[Sponsred]{9}|[Gesponrtd]{10}|[Sponrisé]{10}|[Comandité]{9}|[Publicda]{10}/ 'div[role=feed] div[role=article]' 'a[href^="?__cft__"]'
 www.facebook.com,web.facebook.com#$#hide-if-contains-visible-text /^Sponsorlu|Sponsored|Gesponsert|Patrocinado|Sponsorisé|Publicidad|Commandité|Gesponsord|Sponsorowane|Реклама|Sponsa|Sponset|Sponsorizat|Bersponsor|Ditaja|Sponsorizzato|Sponsoreret|Sponsrad$/ div[aria-labelledby] div[role^="button"]
@@ -4273,6 +4272,7 @@ www.facebook.com,web.facebook.com#$#hide-if-matches-xpath './/div[@role="feed"]/
 www.facebook.com,web.facebook.com#$#hide-if-matches-xpath './/div[@role="feed"]//div[@aria-describedby][@aria-labelledby][@role="article"]//div[starts-with(@aria-label,"[FB-Employee-Only]")]/ancestor::div[@aria-describedby][@aria-labelledby][@role="article"]'
 www.facebook.com,web.facebook.com#$#hide-if-matches-xpath './/object[@type="nested/pressable"]/a[@role="link"]/span[contains("|Sponsoreret|Sponsrad|Patrocinado|Sponsa|Bersponsor|Commandité|Ditaja|Gesponsert|Gesponsord|Publicidad|Sponset|Sponsored|Sponsorisé|Sponsorizat|Sponsorizzato|Sponsorlu|Sponsorowane|Реклама|ממומן|تمويل شوي|دارای پشتیبانی مالی|سپانسرڈ|مُموَّل|प्रायोजित|সৌজন্যে|ได้รับการสนับสนุน|内容|贊助|Sponsoroitu|May Sponsor|Được tài trợ|", concat("|", text(), "|"))]/ancestor::span[2]'
 www.facebook.com,web.facebook.com#$#hide-if-matches-xpath '//a[@aria-label][@href][@role="link"][@tabindex="0"]//div[@class]/span[@class][contains(normalize-space(),"Sponsored")]/ancestor::a[@aria-label][1]'
+www.facebook.com,web.facebook.com#$#race start; hide-if-contains-visible-text /[Sponsred]{9}|[Gesponrtd]{10}|[Sponrisé]{10}|[Comandité]{9}|[Publicda]{10}/ 'div#watch_feed div[class^="_"]' 'a[href^="?__cft__"]'; hide-if-contains-visible-text /[Sponsred]{9}|[Gesponrtd]{10}|[Sponrisé]{10}|[Comandité]{9}|[Publicda]{10}/ 'div#watch_feed div[class^="_"]' 'a[href="#"][role="link"]'; race stop;
 www.goha.ru,3dnews.ru#$#abort-on-property-read Ya
 www.ixbt.com#$#abort-on-property-read adv_obj; abort-current-inline-script document.getElementById branding
 www.linkedin.com#$#simulate-event-poc click 'xpath(//*[text()="Promoted" or text()="Sponsored" or text()="Dipromosikan" or text()="Propagováno" or text()="Promoveret" or text()="Anzeige" or text()="Promocionado" or text()="促銷內容" or text()="Post sponsorisé" or text()="프로모션" or text()="Post sponsorizzato" or text()="广告" or text()="プロモーション" or text()="Treść promowana" or text()="Patrocinado" or text()="Promovat" or text()="Продвигается" or text()="Marknadsfört" or text()="Nai-promote" or text()="ได้รับการโปรโมท" or text()="Öne çıkarılan içerik" or text()="الترويج"]/ancestor::div[@data-id]//video[@autoplay="autoplay"])' 10
