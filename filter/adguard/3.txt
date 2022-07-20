@@ -1,8 +1,8 @@
-! Checksum: kwSCdk66ybx3xunKQdXFZw
+! Checksum: lHTfeAFm3avUcARCsOKY5A
 ! Title: AdGuard Tracking Protection filter
 ! Description: The most comprehensive list of various online counters and web analytics tools. Use this filter if you do not want your actions on the Internet to be tracked.
-! Version: 2.0.42.79
-! TimeUpdated: 2022-07-19T16:31:25+00:00
+! Version: 2.0.42.81
+! TimeUpdated: 2022-07-20T08:31:36+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -358,6 +358,9 @@ journal-plaza.net#?#.rightside div.block.bnavi[-ext-has="h3.dtitle:contains(Сч
 !||i.snssdk.com/log/*
 !||i.snssdk.com/slardar/sdk.js
 !
+||cookie.sync.usonar.jp^
+||pt.appirits.com^
+||cdn.zx-adnet.com^$third-party
 ||d2hrivdxn8ekm8.cloudfront.net^$third-party
 ||track.cmcassets.com^
 ||script.fixel.ai^
@@ -5222,6 +5225,7 @@ nethunt.com/api/v1/track/email/$image
 ! Blocking piwik analytics subdomain
 |piwik.
 !
+||collector.github.com^
 ||logs.unchecky.com^
 ||logging.e-himart.co.kr^
 ||weblog.e-himart.co.kr^
@@ -20943,6 +20947,8 @@ _tracking.php?b=
 ||srv.wego.com/analytics/
 ||cdn.jsdelivr.net/gh/zahidsattarahmed/storeview/newtrackingscript.min.js
 /page_counter_$script,domain=costype.net|imagis.jp|konootokonoko.com|oppaimall.com
+||n11scdn.akamaized.net^*ha.js
+||n11.com/*/ha.js
 ||vechtsportonline.nl/static/*/tracking.js
 ||embed.mikmak.tv/brandTracking/
 ||mangadex.org/api/event
@@ -21527,7 +21533,6 @@ tourister.ru##.nt-foot-item[style="overflow:hidden;"]
 ||pravo.ru/assets/*/js/event.js
 ||mercury.coupang.com/e.gif?
 ||lemonde.fr/bucket/*/js/smartTag.bundle.js
-||n11scdn.akamaized.net/ha.js
 ||fivemsociety.com/analitik.js
 ||baseendpoint.stern.de/wrapper/metrics
 ||bs.yandex.ru/count/
@@ -21916,7 +21921,6 @@ semprotyuk.com##div[style^="margin-bottom:150px;"][style*="padding-right:2em;"]
 ||sex-studentki.pro/system/stat/
 /static/peg_utils/peg_logger$domain=parship.de|elitepartner.de
 ||ikaclo.jp/api/admin/access_logs
-||n11scdn.akamaized.net/assets/javascripts/ha.js
 ||playbrain.io/analytics/
 ||linkwithin.com/pixel.png
 ||hotstar.com/*/track$domain=~bifrost-api.hotstar.com
@@ -23552,7 +23556,6 @@ dreamprogs.net##td[width="88"][height="31"]
 ||mtcs.nhk.or.jp/b/ss/$image
 ||mtvnservices.com/aria/uuid.html
 ||mtvnservices.com/metrics/
-||n11.com/assets/javascripts/ha.js
 ||n11.com/realTime/count
 ||nbcnews.com/databox/databoxservice.asmx/GetLocation$domain=nbcnews.com
 ||nbcnews.com/trackingService/$domain=nbcnews.com

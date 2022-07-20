@@ -1,8 +1,8 @@
-! Checksum: 306hPsYNND9GPfSvEht+xg
+! Checksum: 1ezPWTxrdKvtwug963FEpA
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.1.26.95
-! TimeUpdated: 2022-07-20T06:30:36+00:00
+! Version: 2.1.26.97
+! TimeUpdated: 2022-07-20T08:30:35+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2125,6 +2125,8 @@ whats-on-netflix.com#$#html.sp-message-open body { overflow-y: visible !importan
 !
 !
 !
+||jampartizan.com/i.js
+||jampartizan.com/m.js
 ||die-ik.de/typo3conf/*/cookieman
 einrichten-design.de#$#html { overflow: auto !important; }
 einrichten-design.de#$#body { overflow: auto !important; }
@@ -22472,6 +22474,7 @@ zlavomat.sk#@##credential_picker_container
 .name/?pus=$script,third-party
 .site/?pus=$script,third-party
 !
+||pt.appirits.com^
 ||cleverpush.com^$third-party,domain=~app.bsdex.de
 ||sdk.push7.jp^$third-party,domain=~secret2.cygames.co.jp
 ||widget.intercom.io^$third-party,domain=~app.rezi.io|~intercom.com|~backerclub.co|~quidco.com|~green.energy
