@@ -1,8 +1,8 @@
-! Checksum: XFcQ87B0DxOZocuDUZEG2w
+! Checksum: lQohOCpFH6aaYUDV3nVp8A
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.1.27.8
-! TimeUpdated: 2022-07-20T20:30:35+00:00
+! Version: 2.1.27.9
+! TimeUpdated: 2022-07-20T21:30:37+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -16934,11 +16934,11 @@ aol.com#$#.ad__tile { height: 10px!important; position: absolute!important; left
 ! !SECTION: Anti-adblock - The rules for content blockers only
 !
 !
-! This section contains the list of rules that block in-page popups (like banners with special offers) and floating elements.
+! This section contains the list of generic rules that block in-page popups (like banners with special offers) and floating elements.
 ! At the bottom of this file, you can find the allowlist that fixes issues caused by the rules from this file.
 !
 ! Good: any type of the rules will be good
-! Bad: @@||example.org^$stealth (should be in AdGuard Base - whitelist_stealth.txt)
+! Bad: example.org#@##credential_picker_container (should be in AdGuard Base - popups_whitelist.txt)
 !
 !
 ! SECTION: Popups - generic rules
@@ -17051,7 +17051,7 @@ aol.com#$#.ad__tile { height: 10px!important; position: absolute!important; left
 ! At the bottom of this file, you can find the allowlist that fixes issues caused by the rules from this file.
 !
 ! Good: any type of the rules will be good
-! Bad: @@||example.org^$stealth (should be in AdGuard Base - whitelist_stealth.txt)
+! Bad: @@||example.org^ (should be in AdGuard Base - popups_whitelist.txt)
 !
 ! Specific sites
 ! SECTION: Popups - Specific
@@ -22401,11 +22401,11 @@ kurashiru.com#$#html.dly-modal-active { overflow: auto!important; }
 ! !SECTION: Popups - Specific
 !
 !
-! This section contains the list of rules that block in-page popups (like banners with special offers) and floating elements.
+! This section contains the list of rules that fix the problems, caused by incorrect blocking of in-page popups.
 ! At the bottom of this file, you can find the allowlist that fixes issues caused by the rules from this file.
 !
-! Good: any type of the rules will be good
-! Bad: @@||example.org^$stealth (should be in AdGuard Base - whitelist_stealth.txt)
+! Good: @@||popups.org^$domain=example.org
+! Bad: ||example.org^
 !
 !--- Whitelist
 ! SECTION: Popups - Whitelist
@@ -22435,7 +22435,7 @@ zlavomat.sk#@##credential_picker_container
 ! NOTE: Section end
 ! !SECTION: Popups - Whitelist
 !
-! This section contains the list of rules that block website push notifications ("subscribe to the news" kind of notifications).
+! This section contains the list of generic rules that block website push notifications ("subscribe to the news" kind of notifications).
 !
 ! Good: any type of the rules will be good
 ! Bad: @@||example.org^$stealth (should be in AdGuard Base - whitelist_stealth.txt)
@@ -22891,7 +22891,7 @@ zlavomat.sk#@##credential_picker_container
 ! This section contains the list of rules that block website push notifications ("subscribe to the news" kind of notifications).
 !
 ! Good: any type of the rules will be good
-! Bad: @@||example.org^$stealth (should be in AdGuard Base - whitelist_stealth.txt)
+! Bad: @@||push.org^$domain=example.org (should be in AdGuard Base - push-notifications_whitelist.txt)
 !
 ! SECTION: Push notifications - Specific
 !
@@ -23376,10 +23376,11 @@ life.ru,macwelt.de,pcwelt.de#%#//scriptlet("set-constant", "firebase.messaging",
 ! !SECTION: Push notifications - Specific
 !
 !
-! This section contains the list of rules that block website push notifications ("subscribe to the news" kind of notifications).
+! This section contains the list of rules that fix the problems, caused by incorrect blocking of website push notifications.
+! At the bottom of this file, you can find the allowlist that fixes issues caused by the rules from this file.
 !
-! Good: any type of the rules will be good
-! Bad: @@||example.org^$stealth (should be in AdGuard Base - whitelist_stealth.txt)
+! Good: @@||popups.org^$domain=example.org
+! Bad: ||example.org^
 !
 !--- Whitelist
 ! SECTION: Push notifications - Whitelist
@@ -23431,11 +23432,11 @@ life.ru,macwelt.de,pcwelt.de#%#//scriptlet("set-constant", "firebase.messaging",
 ! NOTE: Whitelist end ⬆️
 ! !SECTION: Push notifications - Whitelist
 !
-! This section contains the list of rules that block the promotion of subscriptions, newsletters.
+! This section contains the list of generic rules that block the promotion of subscriptions, newsletters.
 ! Examples: "subscribe to our blog", "subscribe to our newsletter" blocks in all kinds of blocks.
 !
 ! Good: any type of the rules will be good
-! Bad: @@||example.org^$stealth (should be in AdGuard Base - whitelist_stealth.txt)
+! Bad: @@||signup.e2ma.net^$domain=example.org (should be in AdGuard Base - subscriptions_whitelist.txt)
 !
 !
 !
@@ -23462,7 +23463,7 @@ life.ru,macwelt.de,pcwelt.de#%#//scriptlet("set-constant", "firebase.messaging",
 ! Examples: "subscribe to our blog", "subscribe to our newsletter" blocks in all kinds of blocks.
 !
 ! Good: any type of the rules will be good
-! Bad: @@||example.org^$stealth (should be in AdGuard Base - whitelist_stealth.txt)
+! Bad: @@||signup.e2ma.net^$domain=example.org (should be in AdGuard Base - subscriptions_whitelist.txt)
 !
 ! SECTION: Subscriptions - Specific
 ! common names
@@ -27541,8 +27542,8 @@ tvrain.ru##.menu3__foreign-agent-wrapper
 ! This section contains the list of rules that block the promotion of subscriptions, newsletters.
 ! Examples: "subscribe to our blog", "subscribe to our newsletter" blocks in all kinds of blocks.
 !
-! Good: any type of the rules will be good
-! Bad: @@||example.org^$stealth (should be in AdGuard Base - whitelist_stealth.txt)
+! Good: @@||signup.e2ma.net^$domain=example.org
+! Bad: ||example.org^ (should be in AdGuard Base - subscriptions_specific.txt)
 !
 !--- Whitelist
 ! SECTION: Subscriptions - Whitelist
@@ -27560,11 +27561,10 @@ tvrain.ru##.menu3__foreign-agent-wrapper
 !---------------------- MobileApp ----------------------------------!
 !-------------------------------------------------------------------!
 !
-! This section contains the list of rules are against banners that promote mobile apps.
-! Note, that the file consists of multiple sections for different purposes. For instance, there is a section for exceptions and some platform-specific sections.
+! This section contains the list of generic rules are against banners that promote mobile apps.
 !
-! Good: any type of the rules will be good
-! Bad: @@||example.org^$stealth (should be in AdGuard Base - whitelist_stealth.txt)
+! Good: ##amp-app-banner
+! Bad: example.org###amp-app-banner (should be in mobile-app_specific.txt)
 !
 ! SECTION: Mobile apps - generic rules
 /wp-content/plugins/ioimedia-app-banner/*
@@ -27586,11 +27586,13 @@ tvrain.ru##.menu3__foreign-agent-wrapper
 ! Note, that the file consists of multiple sections for different purposes. For instance, there is a section for exceptions and some platform-specific sections.
 !
 ! Good: any type of the rules will be good
-! Bad: @@||example.org^$stealth (should be in AdGuard Base - whitelist_stealth.txt)
+! Bad: example.org#@##smartbanner.ios (should be in AdGuard Base - mobile-app_whitelist.txt)
 !
 ! HINTS are at the end of Specific section
 !
 ! SECTION: Mobile apps - Specific
+tinhte.vn##a[href="https://tinhte.vn/app"]
+tinhte.vn##.app-install-wrapper
 warcrimes.gov.ua##.modal-app
 terabox.com#$#.introduce-top-panel .introduce-sticky-btn img { position: static !important; }
 mapion.co.jp##.btn-ptn2
@@ -29557,11 +29559,10 @@ newzit.com#$#div[class*="hasSmartBanner_"] { padding-top: 0 !important; }
 !   !SECTION: Mobile apps - Mobile sites only
 !
 !
-! This section contains the list of rules are against banners that promote mobile apps.
-! Note, that the file consists of multiple sections for different purposes. For instance, there is a section for exceptions and some platform-specific sections.
+! This section contains the list of rules that fix incorrect blocking of mobile app banners. Rules should be domain-specific.
 !
-! Good: any type of the rules will be good
-! Bad: @@||example.org^$stealth (should be in AdGuard Base - whitelist_stealth.txt)
+! Good: example.org#@##smartbanner.ios
+! Bad:  example.org###smartbanner.ios (should be in cookies_specific.txt)
 !
 ! SECTION: Mobile apps - Whitelist
 ! https://github.com/AdguardTeam/AdguardFilters/issues/118200 RECOMMEND not shown
