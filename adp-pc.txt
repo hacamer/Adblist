@@ -1,15 +1,15 @@
 [Adblock Plus 3.0]
-! Checksum: 6W7FncJHdhmapUPTDwhG9g
+! Checksum: 7gw1j3tZ3aFf8yUJBV6Htw
 ! Title: My AdFilters（for PC）
 ! Expires: 2 hours
-! Version: 202207212229
-! Last Modified: 2022年07月21日 22:29
+! Version: 202207212337
+! Last Modified: 2022年07月21日 23:37
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
 ! 如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
-! Total count: 73066
+! Total count: 73067
 ###ADCENTER
 ###ADInterest
 ###ADSLOT_1
@@ -27354,6 +27354,7 @@ gaoqingw.com###sidebar a[href^="http"]:not([href*="gaoqingw"])
 gaoqingw.com##.search + .widget
 gaoqingw.com##b > div[style="text-align:center"]
 garaz.cz##div[data-e2e="mol-advert"]
+garaz.cz#@#.b_ad
 garticphone.com###garticphone-com_160x600
 garutexpress.id##+js(no-fetch-if, pagead2.googlesyndication.com)
 gas.goodlife.tw###widgets
@@ -27591,7 +27592,7 @@ gmw.cn##.ad_pics
 gmw.cn##.g_adMain
 gmx.*,transfermarkt.*##+js(abort-on-property-read, Object.prototype.autoRecov)
 gnula.cc,series24.nu#$#abort-on-property-read localStorage; abort-on-property-write JSON.parse; abort-on-property-read asgPopScript
-gnula.nu,pelispop.me,tmomanga.com#$#abort-on-property-write JSON.parse
+gnula.nu,pelisnow.to,pelispop.me,tmomanga.com#$#abort-on-property-write JSON.parse
 gnula.nu,xpaja.net#$#abort-current-inline-script String.fromCharCode /atob|btoa|break/
 gnula.se,pelismart.com#$#abort-on-property-read localStorage
 go.bitcoinly.in##+js(window.open-defuser)
@@ -33944,7 +33945,6 @@ shvoong.co.il##+js(abort-on-property-read, bg_backgrounds)
 si.com##.m-balloon-header--spacer
 si.com##.m-detail--feature-spacer
 si.com##.m-outbrain
-si.com#@#.m-embed
 siasat.com##.awt_ad_code
 siasat.com##.stream-item-in-post
 siasat.com,androidtvbox.eu##.stream-item
@@ -50226,6 +50226,7 @@ zznews.cn##.ad:not([style])
 ||gaosan.com/js/b.js
 ||gaoyuhu.top^
 ||garacy.cn^
+||garaz.cz/*/static/js/ssp.js
 ||gardoult.com^
 ||garibamarmose.com^
 ||garlandnaninflict.com^
