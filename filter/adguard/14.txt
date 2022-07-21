@@ -1,8 +1,8 @@
-! Checksum: jF3znSXVfloT73+yMuxIIg
+! Checksum: Fnvld0J19CZjEN1E22tJsw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.1.27.11
-! TimeUpdated: 2022-07-21T10:30:58+00:00
+! Version: 2.1.27.13
+! TimeUpdated: 2022-07-21T12:30:57+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -3246,9 +3246,6 @@ lovit.ru##.priv_frame
 psbank.ru##.wrapper-bottom
 calvinklein.com.br##.vtex-modal-layout-0-x-modal--cookie-block-class
 quizdeveloper.com##.cookie-condition
-rule34.paheal.net#$#.tnc { display:none !important; }
-rule34.paheal.net#$#.tnc_bg { display:none !important; }
-rule34.paheal.net#$#body.censored * { filter:none !important; }
 geschwindigkeit.*,meter.net,netmeter.co.uk,predkosc.pl,rychlost.sk,speedmeter.hu,testdebit.fr,testvelocidad.es,testvelocita.it,xn--zcka2bjc9dzp.jp###eu-cookies2
 eujuicers.pl##.cookie_consent__alert
 urbancity.pl##.notification-alert-wrapper.fixed-bottom
@@ -10490,6 +10487,12 @@ roesle.com,moses-verlag.de,radonline.de,arctic.de#$#.acris-cookie-consent ~ .mod
 ! Misc rules, removed during optimization. If some rules are in groups, no need to move them here
 !
 !+ NOT_OPTIMIZED
+rule34.paheal.net#$#.tnc { display:none !important; }
+!+ NOT_OPTIMIZED
+rule34.paheal.net#$#.tnc_bg { display:none !important; }
+!+ NOT_OPTIMIZED
+rule34.paheal.net#$#body.censored * { filter:none !important; }
+!+ NOT_OPTIMIZED
 operanewsapp.com##.container
 !+ NOT_OPTIMIZED
 tommy.com#$##cookiesMessage { display: none !important; }
@@ -10738,7 +10741,7 @@ depop.com#%#//scriptlet("set-cookie", "gdpr__depop__functional", "true")
 depop.com#%#//scriptlet("set-cookie", "gdpr__google__analytics", "false")
 depop.com#%#//scriptlet("set-cookie", "gdpr__facebook__social", "false")
 kayak.de#%#AG_onLoad(function(){if(!window.location.href.includes('consent')){var b=new MutationObserver(function(){var a=document.querySelector('div[class$="-footer"] > span[class$="-decline"] > button');a&&a.click()});b.observe(document,{childList:!0,subtree:!0});setTimeout(function(){b.disconnect()},1E4)}});
-volksfreund.de#%#AG_onLoad(function(){var a=new MutationObserver(function(){var b=document.querySelector('#consentAccept');b&&(a.disconnect(),b.click())});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)});
+wz.de,volksfreund.de#%#AG_onLoad(function(){var a=new MutationObserver(function(){var b=document.querySelector('#consentAccept');b&&(a.disconnect(),b.click())});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)});
 derstandard.at,derstandard.de#%#AG_onLoad(function(){var a=new MutationObserver(function(){var b=document.querySelector('button[title="Einverstanden"]');b&&(a.disconnect(),b.click())});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)});
 youmath.it#%#AG_onLoad(function(){var a=new MutationObserver(function(){var b=document.querySelector('#pt-actions > button + button');b&&(a.disconnect(),b.click())});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},1E4)});
 qwic.nl,qwic.eu,qwic.de#%#//scriptlet('set-cookie', 'cookie_consent', '0')
@@ -23489,6 +23492,7 @@ techwafer.com,moonshot.news,radiokp.ru,brestcity.com,aykiri.com.tr,yenicaggazete
 turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisgazetesi.com,kocaelikoz.com,enkocaeli.com##.block-pano > div.as
 turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisgazetesi.com,kocaelikoz.com,enkocaeli.com###_s_fan
 !
+dometic.com#?##container div[class]:has(> button[aria-label="Schließen"])
 hurrythefoodup.com##div[id^="cp_popup_id"]
 bbc.com##div[id^="piano-inline"]
 phileweb.com###rmenu_mail
@@ -35129,6 +35133,8 @@ newsweek.com##iframe[src="http://sns.europe.newsweek.com/newsletter?popup=1"]
 !##############################
 ! SECTION: Tweaks - JS
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/123883
+mein-schoener-garten.de#%#//scriptlet('prevent-addEventListener', 'scroll', 'return"undefined"!=typeof')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/124475
 mohammedkhc.com#%#//scriptlet('adjust-setInterval', 'countdown', '', '0.02')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/124297
