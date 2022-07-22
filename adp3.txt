@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Checksum: RhdqY85OVFcGPjJvzRgTvA
+! Checksum: YOLAc1fyio7EIxcpySCSSA
 ! Title: AdFilters 
 ! Expires: 12 hours
-! Version: 202207220733
-! Last Modified: 2022年07月22日 07:33
+! Version: 202207221041
+! Last Modified: 2022年07月22日 10:41
 ! Homepage: https://github.com/hacamer/Adblist
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance、EasyPrivacy、大萌主
 ! 仅合并规则，未做其余任何处理
 ! 如有任何疑问、意见或建议，请反馈至：杏梢
 !
-! Total count: 40776
+! Total count: 40782
 ###ChapterView > .slide-baidu
 ###SOHU_MAIN > .module-cmt-float-bar
 ###TopAdvert
@@ -593,7 +593,6 @@
 ##A[href='/hth.html']
 ##A[href='/xinghuo-20.html']
 ##A[href^="/e/public/ClickAd?adid="]
-##BODY[ontouchstart] > #topBox
 ##DIV#ad-index.col-12.position-relative
 ##[alt=' 腐乐漫 '],[alt=' 西瓜社 ']
 ##[alt='52bl']
@@ -893,6 +892,7 @@
 ##a[target="_blank"] > img[height="60px"][src*="qlogo.cn"][src$=".png"]
 ##body .has-ad
 ##body > div[style="display:none;"] + div[style="display:none;"] + div[id][class][style^="background-color:"]
+##body[ontouchstart] > #topBox
 ##center > a[target="_blank"] > img[style="padding- bottom:5px;width:960px;height:120px;"]
 ##center > a[target="_blank"] > img[style="padding- bottom:5px;width:960px;height:60px;"]
 ##center > p > a[target="_blank"] > img[width="728px"][height="90px"]
@@ -9072,8 +9072,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||ovp.piksel.tech/ipLookup.php$xmlhttprequest,domain=nhk.or.jp
 @@||oyster.com/wp-content/plugins/smartertravel-shared/assets/js/tracking.min.js$~third-party
 @@||ozone.ru/assets/analytics.$script,~third-party
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=chaojizhibo.net|chtoen.com|dizhishengcheng.com|doitwell.tw|ff14angler.com|freedidi.com|haoweichi.com|it365.abctool.info|linovelib.com|logi.im|monnsutogatya.com|numberempire.com|ozabc.com|patch.ali213.net|pc3mag.com|shenfendaquan.com|switch520.com|vaptcha.com|wenxuecity.com|xbeibeix.com|xiebruce.top|yabook.org|yodu.org
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=wuyong.fun
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=chaojizhibo.net|chtoen.com|dizhishengcheng.com|doitwell.tw|ff14angler.com|freedidi.com|haoweichi.com|it365.abctool.info|linovelib.com|logi.im|monnsutogatya.com|numberempire.com|ozabc.com|patch.ali213.net|pc3mag.com|shenfendaquan.com|switch520.com|vaptcha.com|wenxuecity.com|wuyong.fun|xbeibeix.com|xiebruce.top|yabook.org|yodu.org
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=liout.com|moneysave.info|ygodl.com|youneed.win
 @@||pagead2.googlesyndication.com/pagead/show_ads.js$domain=knowlet3389.blogspot.com|knowlet3389.blogspot.hk|knowlet3389.blogspot.jp|knowlet3389.blogspot.tw|mnighthk.net|weithenn.org
 @@||pagead2.googlesyndication.com^$domain=myqqjd.com
@@ -9220,6 +9219,7 @@ $xmlhttprequest,domain=auroravid.to|flashx.cc|nowvideo.sx|onlinevideoconverter.c
 @@||service.maxymiser.net^$script,domain=enigaseluce.com
 @@||seselah.com^$generichide
 @@||seznam.cz/?spec=*&url=$image,domain=search.seznam.cz
+@@||shana.pe.kr^$generichide
 @@||share.baidu.com^$script,stylesheet,domain=k73.com
 @@||share1223.com^$generichide
 @@||shijue.me/advertise/getList?
@@ -10739,8 +10739,8 @@ fujieace.com##.single-goods
 fuliba2020.net,fuliba2021.net,fuliba2022.net,uliba.net###focusslide
 fuliba2020.net,fuliba2021.net,fuliba2022.net,uliba.net##.widget_custom_html
 fuliba2020.net,fuliba2021.net,fuliba2022.net,uliba.net##.widget_ui_slider
-fuliba2021.net##.orbui-post-footer
 fuliba2021.net,itdog.cn##.orbui
+fuliba2021.net,ypojie.com##.orbui-post-footer
 fullyu.com##.rightSide-top-ads
 fwxgx.com###jPpo_sc
 fwxgx.com##.baibaoxiang
@@ -13035,7 +13035,6 @@ youtube.com,youtube-nocookie.com##+js(json-prune, [].playerResponse.adPlacements
 youtube.com,youtube-nocookie.com##+js(set, playerResponse.adPlacements, undefined)
 youtube.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
 yoyi.com.cn
-ypojie.com##.orbui-post-footer
 ys168.com##div[style="position:fixed; width:200px; top: 330px;right:10px;font-size:9pt;text-align:left;"]
 ysxs8.vip##.ysxs8_w960_1
 ytbbs.com###dd1
@@ -13443,6 +13442,7 @@ zznews.cn##.ad:not([style])
 ||1l-hit.mail.ru^
 ||1pel.com^$third-party
 ||1pwx.com/js/ck.js
+||1so8inqb.cn^
 ||1to1.bbva.com^
 ||1w73a5d.cn^
 ||1x6666.com/img/
@@ -13861,6 +13861,7 @@ zznews.cn##.ad:not([style])
 ||666727.xyz^
 ||666728.xyz^
 ||666729.xyz^
+||666732.xyz^
 ||6669667.com^
 ||66996.top^
 ||6699fa.cn/js/
@@ -15411,6 +15412,7 @@ zznews.cn##.ad:not([style])
 ||ae.bdstatic.com^
 ||ae.cobweb.com^
 ||aem-collector.daumkakao.io^
+||aengbalz.fun^
 ||aerlingus.com/ahktqsewxjhguuxe.js
 ||aerlingus.com/ahktqsewxjhguuxexhr.js
 ||aeromark.actonservice.com^
@@ -29530,6 +29532,7 @@ zznews.cn##.ad:not([style])
 ||p2r14.com^
 ||p30rank.ir^$third-party
 ||p3tt.com^
+||p4f52tll.cn^
 ||p4p.sina.com.cn^
 ||p7ivj09f.xyz^
 ||p7lvj09f.shop^
@@ -35485,6 +35488,7 @@ zznews.cn##.ad:not([style])
 ||sxzzhj.com^
 ||sy.amebame.com^
 ||sy.ameblo.jp^
+||syb.hk^
 ||sydz.tw^
 ||sykc.madeindesign.ch^
 ||sym.zone^
@@ -37914,6 +37918,7 @@ zznews.cn##.ad:not([style])
 ||uoblij.farmaline.be^
 ||uol.com.br/stats?
 ||uolwbz.heine.de^
+||uongsona.uno^
 ||uoowu.com/a/zh*.js
 ||uooyoo.com/hz/*str.js
 ||up-rank.com^$third-party
@@ -39088,6 +39093,7 @@ zznews.cn##.ad:not([style])
 ||wttd.madeleine.de^
 ||wttd.madeleine.fr^
 ||wttd.madeleine.gr^
+||wu3wl2g7.cn^
 ||wudejia.com^
 ||wujinzy.com/images/ok.gif
 ||wujiupic.com^
