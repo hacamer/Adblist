@@ -1,8 +1,8 @@
-! Checksum: 7X5Lj5784/bBJdqSWryNIQ
+! Checksum: Lo4w+r2x5H2rtvpWYd893A
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.1.27.26
-! TimeUpdated: 2022-07-22T12:30:39+00:00
+! Version: 2.1.27.27
+! TimeUpdated: 2022-07-22T14:30:37+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2127,6 +2127,8 @@ whats-on-netflix.com#$#html.sp-message-open body { overflow-y: visible !importan
 !
 !
 !
+audioledcar.com###soycontrolcookies_container
+klimareporter.de##div[id^="cpnb"]
 wedding.pl#$#.modal-open { overflow: auto !important; }
 wedding.pl#$#.modal--cookies.show { display: none !important; }
 wedding.pl#$#.modal-backdrop.show { display: none !important; }
@@ -2139,9 +2141,9 @@ nhm.ac.uk##div[data-show-cookie-banner-overlay]
 foerch.de##.anonymous-consent-banner
 dehn.de#$#html { overflow: auto !important; }
 dehn.de#$#.cookie-layer { display: none !important; }
-sera.de#$#body { overflow: auto !important; }
-sera.de#$##cookieman-modal { display: none !important; }
-sera.de#$##cookieman-modal ~ div.modal-backdrop { display: none !important; }
+imd-berlin.de,sera.de#$#body { overflow: auto !important; }
+imd-berlin.de,sera.de#$##cookieman-modal { display: none !important; }
+imd-berlin.de,sera.de#$##cookieman-modal ~ div.modal-backdrop { display: none !important; }
 thomann.de##.spicy-consent-wrapper
 ||gdpr-settings.s3.amazonaws.com/rcp-rollei/pandectes-asset.
 lectra.com##div[class^="awe-popkies"]
@@ -7779,7 +7781,7 @@ ottplayer.es###cookieAgreeBar
 51015kids.eu,streetstyle24.pl###cookieBan
 mediaexpert.pl###cookieBoxContainer
 wize.life###cookieChoiceBar
-pastesearch.xyz,service.osnabrueck.de,kofteciyusuf.com,trtkurdi.com.tr,trtturk.com.tr,trtmuzik.net.tr,radyo.trt.net.tr,prefix.com.tr,drnilgunturhan.com,c4ddownload.com,pastebr.xyz,textbin.net,shwoghk14.blogspot.com,ustreamy.co,premier-odessa.com.ua,dr.com.tr,idefix.com###cookieConsentContainer
+storyboardthat.com,pastesearch.xyz,service.osnabrueck.de,kofteciyusuf.com,trtkurdi.com.tr,trtturk.com.tr,trtmuzik.net.tr,radyo.trt.net.tr,prefix.com.tr,drnilgunturhan.com,c4ddownload.com,pastebr.xyz,textbin.net,shwoghk14.blogspot.com,ustreamy.co,premier-odessa.com.ua,dr.com.tr,idefix.com###cookieConsentContainer
 clever-fit.com###cookieDataProtection
 tani6torico.com,servicebund.com,negocio.site,car2go.com,business.site###cookieDialog
 gamevicio.com###cookieMSGbx
@@ -23522,6 +23524,7 @@ techwafer.com,moonshot.news,radiokp.ru,brestcity.com,aykiri.com.tr,yenicaggazete
 turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisgazetesi.com,kocaelikoz.com,enkocaeli.com##.block-pano > div.as
 turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisgazetesi.com,kocaelikoz.com,enkocaeli.com###_s_fan
 !
+klimareporter.de###bottom-right
 muenchen.de##.m-newsletter-registration
 dometic.com#?##container div[class]:has(> button[aria-label="Schließen"])
 hurrythefoodup.com##div[id^="cp_popup_id"]
@@ -23906,7 +23909,7 @@ huffingtonpost.jp##.js-newsletter-container
 deutschestheater.de##.JS-Newsletter-Registration
 ticketonline.de,eventim.de#?#.main-content > section[data-c="eviwidget"]:has(.evi-widget-type-general-newsletter)
 miamistandard.news##.pps-popup
-miamistandard.news##.__b-popup1__
+uvi.net,miamistandard.news##.__b-popup1__
 24tv.ua##app-subscription-banner
 ctnews.ru##.goto_news__block
 i-ua.tv##.tm-article a[href="https://t.me/iuatv"]
@@ -27626,6 +27629,8 @@ tvrain.ru##.menu3__foreign-agent-wrapper
 ! HINTS are at the end of Specific section
 !
 ! SECTION: Mobile apps - Specific
+flightradar24.com##.overlay-open-in-app-button
+giphy.com##div[class*="OpenInAppContainer"]
 finance.yahoo.co.jp#?#div[class^="_"] > a[href="https://app.adjust.com/nr7n4gu"]:upward(1)
 moneyforward.com##.app-btns-container
 zaim.net##.top-fix
