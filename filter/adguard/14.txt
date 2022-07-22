@@ -1,8 +1,8 @@
-! Checksum: Lo4w+r2x5H2rtvpWYd893A
+! Checksum: oxdLFJ9soH2I8svNDavp7g
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.1.27.27
-! TimeUpdated: 2022-07-22T14:30:37+00:00
+! Version: 2.1.27.28
+! TimeUpdated: 2022-07-22T16:30:48+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2086,7 +2086,7 @@ moviepilot.de,jofogas.hu,m.rtl.be,elmundo.es,vecernji.hr,zive.cz,gamepro.de#$#ht
 ! cmpbox cookies
 bm-online.de,fenster24.de,mioga.de,ankerkraut.de,voltimum.de,borek.de,azubi.de,denk-keramik.de,aquarienpflanzen-shop.de,deutschesee.de,bluray-disc.de,medpex.de,eventim.de,teekanne.de,mdm.de,traunsteiner-tagblatt.de,westlotto.de,kalledaskabel.de,dastelefonbuch.de,telefonbuch.de,swm.de,ptaheute.de,nivea.*,nw.de,absolventa.de,porzellanhandel24.de,blastbrigade.com,blic.rs,queer.de,inqa.de,bmas.de,mail.ru###cmpbox
 gelbeseiten.de,gasag.de##div[class^="cmpbox"]
-blastbrigade.com,tonspion.de,bier.by,test.de,kicker.de##div[id^="cmpbox"]
+gluehbirne.de,blastbrigade.com,tonspion.de,bier.by,test.de,kicker.de##div[id^="cmpbox"]
 ! For the case if the scroll page is blocked and the functionality of the site works correctly. Otherwise, make the JS rule
 stadt-bremerhaven.de,weser-kurier.de,engelhorn.de,wg-gesucht.de,heizung-billiger.de,herold.at,nn.de,nordbayern.de#$#div[id^="cmpbox"] { display: none !important; }
 stadt-bremerhaven.de,weser-kurier.de,engelhorn.de,wg-gesucht.de,heizung-billiger.de,herold.at,nn.de,nordbayern.de#$#body { overflow: auto !important; }
@@ -2127,6 +2127,8 @@ whats-on-netflix.com#$#html.sp-message-open body { overflow-y: visible !importan
 !
 !
 !
+||laxd.com/share/js/gdpr/
+led2work.com##.waconcookiemanagement-cookiebar
 audioledcar.com###soycontrolcookies_container
 klimareporter.de##div[id^="cpnb"]
 wedding.pl#$#.modal-open { overflow: auto !important; }
@@ -23524,6 +23526,10 @@ techwafer.com,moonshot.news,radiokp.ru,brestcity.com,aykiri.com.tr,yenicaggazete
 turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisgazetesi.com,kocaelikoz.com,enkocaeli.com##.block-pano > div.as
 turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisgazetesi.com,kocaelikoz.com,enkocaeli.com###_s_fan
 !
+hi-news.ru#?#.post__text > p > code:has(> a[href^="https://zen.yandex.ru/hi-news.ru"])
+lkw-teile24.de#$#.popup-newsletter { display: none!important; }
+lkw-teile24.de#$#.modal-backdrop { display: none!important; }
+lkw-teile24.de#$#body { overflow: auto!important; padding-right: 0!important; }
 klimareporter.de###bottom-right
 muenchen.de##.m-newsletter-registration
 dometic.com#?##container div[class]:has(> button[aria-label="Schließen"])
