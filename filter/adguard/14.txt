@@ -1,8 +1,8 @@
-! Checksum: HlWMv90qFihXCvB0JHtzqw
+! Checksum: 5/HM5XpCQF/dKa4x1LkfAw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.1.27.23
-! TimeUpdated: 2022-07-22T09:02:33+00:00
+! Version: 2.1.27.24
+! TimeUpdated: 2022-07-22T10:30:43+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -29638,6 +29638,11 @@ deliveroo.hk##[class^="AppBanner-"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/76987
 youtube.com#%#AG_onLoad(function() {var a = new MutationObserver(function() {if (document.querySelector('yt-upsell-dialog-renderer')) {var b = document.querySelector('.ytd-popup-container[popup-size="UPSELL_DIALOG_RENDERER_POPUP_SIZE_LARGE"] #dismiss-button:not(.dismissed), .upsell-dialog-lightbox .upsell-dialog-dismiss-button button:not(.dismissed)');setTimeout(function() {b&&b.click()}, 3E2)}});a.observe(document, {childList: !0,subtree: !0});setTimeout(function() {a.disconnect()}, 3E3)});
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/124958
+[$path=/search]yandex.ru##.Warning_type_roskomnadzor
+[$path=/video/search]yandex.ru##.prevention_instance_rknWarning
+! https://github.com/AdguardTeam/AdguardFilters/issues/124961
+[$path=/search]nova.rambler.ru##div[class^="SerpWarning__warning"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/124959
 go.mail.ru##.App-RKN
 ! amazon.de video player -- Rating of episode at start as overlay
