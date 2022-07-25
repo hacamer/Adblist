@@ -1,8 +1,8 @@
-! Checksum: 9Z7LRH9hRsO0H3Ddm82zWA
+! Checksum: IUF5rKvUKOjIZdYpqHklLg
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.1.27.37
-! TimeUpdated: 2022-07-24T21:02:39+00:00
+! Version: 2.1.27.38
+! TimeUpdated: 2022-07-25T01:02:09+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -29539,6 +29539,8 @@ m.tokopedia.com#$#div[data-testid="divOverlay"] { display: none!important; }
 ! causes some issues: https://github.com/AdguardTeam/AdguardForMac/issues/550
 ~kurer-sreda.ru,~chorki.com,~zattoo.com,~zaycev.net,~xltrax.ee,~hitta.se,~mail.ru,~v7player.wostreaming.net,~facebook.com,~instagram.com,~drive.google.com$$link[rel="manifest"]
 !
+m.chitai-gorod.ru#$#.mobile-app-popup { display: none!important; }
+m.chitai-gorod.ru#$#body { overflow: auto!important; }
 atresplayer.com##div[class^="style__BreakSpace-"]
 pinterest.*#%#AG_onLoad(function(){var a=new MutationObserver(function(){if(document.querySelector('div[data-test-id="appUpsell-continue"] > button')){document.querySelector('div[data-test-id="appUpsell-continue"] > button').click(); a.disconnect();}});a.observe(document,{childList: !0, subtree: !0});});
 mistore.jp##.js-lead-banner
