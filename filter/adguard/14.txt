@@ -1,8 +1,8 @@
-! Checksum: 3r8SCLSbbAr/XkfT7gvfsA
+! Checksum: Abeoy4zBHB+jYGvA2QLcrQ
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.1.27.42
-! TimeUpdated: 2022-07-25T16:30:42+00:00
+! Version: 2.1.27.43
+! TimeUpdated: 2022-07-25T17:02:14+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -11752,6 +11752,8 @@ m.timesofindia.com,m-timesofindia-com.cdn.ampproject.org$$amp-consent
 !
 ! https://github.com/AdguardTeam/AdguardFilters/issues/125017
 @@||usercentrics.eu^$script,xmlhttprequest,domain=muenchen.de
+! https://github.com/AdguardTeam/AdguardFilters/issues/124957
+@@||app.usercentrics.eu/*/main.js$domain=morenutrition.de
 ! https://github.com/AdguardTeam/AdguardFilters/issues/124976
 @@||suncalc.org/scripts/cookieconsent.min.js$domain=suncalc.org
 ! https://github.com/AdguardTeam/AdguardFilters/issues/124306
@@ -33876,7 +33878,7 @@ theguardian.com##.contributions__adblock
 !
 ! SECTION: Self-promo - Regular rules
 wired.com##.paywall-bar__consumer-marketing-unit
-medvestnik.by##.bannergroupbanner-top
+medvestnik.by##body .container .bannergroupbanner-top
 androidacy.com###block-39
 thebell.io##.arena-banner
 spectator.co.uk##div[amp-access="p.showBanner"]
