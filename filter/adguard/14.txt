@@ -1,8 +1,8 @@
-! Checksum: pItxIf+0qB8jjUyVNNe9Rg
+! Checksum: 4WUKD7ivpWnffQeGdBer1w
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.1.27.45
-! TimeUpdated: 2022-07-25T20:30:38+00:00
+! Version: 2.1.27.46
+! TimeUpdated: 2022-07-26T08:30:42+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2088,8 +2088,8 @@ bm-online.de,fenster24.de,mioga.de,ankerkraut.de,voltimum.de,borek.de,azubi.de,d
 gelbeseiten.de,gasag.de##div[class^="cmpbox"]
 gluehbirne.de,blastbrigade.com,tonspion.de,bier.by,test.de,kicker.de##div[id^="cmpbox"]
 ! For the case if the scroll page is blocked and the functionality of the site works correctly. Otherwise, make the JS rule
-stadt-bremerhaven.de,weser-kurier.de,engelhorn.de,wg-gesucht.de,heizung-billiger.de,herold.at,nn.de,nordbayern.de#$#div[id^="cmpbox"] { display: none !important; }
-stadt-bremerhaven.de,weser-kurier.de,engelhorn.de,wg-gesucht.de,heizung-billiger.de,herold.at,nn.de,nordbayern.de#$#body { overflow: auto !important; }
+bad-gmbh.de,stadt-bremerhaven.de,weser-kurier.de,engelhorn.de,wg-gesucht.de,heizung-billiger.de,herold.at,nn.de,nordbayern.de#$#div[id^="cmpbox"] { display: none !important; }
+bad-gmbh.de,stadt-bremerhaven.de,weser-kurier.de,engelhorn.de,wg-gesucht.de,heizung-billiger.de,herold.at,nn.de,nordbayern.de#$#body { overflow: auto !important; }
 !
 ! #$##cookie-law-info-bar/#$#.cli-modal-backdrop
 drei-franken-info.de,autohaus-pauli.de,technik-hauptstadt.de,terminaloil.ee,johner-institut.de,hoyenapple.com,west-games.com,boerse-aktuell.de,orion.fm,widerspruch.org,pruefungsratgeber.de,marmaray.gov.tr,atnews.gr,teslawissen.ch,yashodahospitals.com,kinetikwellbeing.com,pctipps.de,citrinsolar.de,lewento.de,bauplan-bauanleitung.de#$##cookie-law-info-bar { display: none !important; }
@@ -2127,6 +2127,7 @@ whats-on-netflix.com#$#html.sp-message-open body { overflow-y: visible !importan
 !
 !
 !
+audo.ai###bannerWrapper[style^="background-color:"]
 polskieradio.pl##.wrap-cookie-info-ext
 ghacks.net#%#//scriptlet('remove-class', 'didomi-popup-open', 'body')
 ||cdn.cookiecode.nl/dist/latest.js
@@ -3484,7 +3485,7 @@ app.traderepublic.com##.consentCard
 comcast.com##.c-top-banner
 vaultproject.io##div[data-testid="consent-banner"]
 dentacoin.com##.dcn-privacy-policy-cookie
-lindner-norit.com##.cn-layer
+lindner-group.com,lindner-norit.com##.cn-layer
 eko.kalisz.pl##.widget-cookiesbox
 floristikwerkstatt-mueller.com##.flash[data-cookie="eu_cookie"]
 fdp.de#?#body > #sliding-popup:has(> .eu-cookie-compliance-banner)
@@ -10712,6 +10713,7 @@ privacy.lecker.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent
 privacy.madame.de#%#AG_onLoad(function(){if(!document.cookie.includes("euconsent-v2")){var g=new MutationObserver(function(){setTimeout(function(){var b=document.querySelector('button.no-children[path="\[0,2,1\]"]');b&&b.click();},300);setTimeout(function(){var c=document.querySelector('div[title="Berechtigte Interessen"]'); c&&c.click();},300);setTimeout(function(){var d=document.querySelectorAll('label[aria-checked="true"] > .off'); d.forEach(function(d){d.click();});},800); var f=document.querySelector('button.no-children[path="\[0,3,0\]"]'); setTimeout(function(){f&&f.click();},1000);});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},3E4)}});
 consent.ladbible.com,consent.gamingbible.co.uk,consent.unilad.co.uk#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var g=new MutationObserver(function(){var b=document.querySelector('button[title*="Accept" i]');b&&(g.disconnect(),b.click())});g.observe(document,{childList:!0,subtree:!0});setTimeout(function(){g.disconnect()},1E4)}});
 !
+audo.ai#%#document.cookie = "cookie_consent=%22strictly_necessary%2Cfunctionality%2Cperformance%2Ctargeting%22";
 sourcepoint.lbc.co.uk#%#AG_onLoad(function(){if(window.location.href.includes("consentUUID")){var a=new MutationObserver(function(){var b=document.querySelector('button[title="ACCEPT"]');b&&(a.disconnect(),b.click())});a.observe(document,{childList:!0,subtree:!0});setTimeout(function(){a.disconnect()},2E4)}});
 muenchen.de#%#AG_onLoad(function() { setTimeout(function() { var c=document.querySelector('a[onclick^="usercentrics.updateConsents"]'); c&&(c.click()) }, 300); });
 4kfilme.de#%#AG_onLoad(function() {var b=new MutationObserver(function() {var c=document.querySelector('body > div[id^="a"][id*="-"][data-bg] div[id^="bnnr-body-rightSide-"] > div[style^="text-decoration:"][style*="order: 1;"]'); c&&(b.disconnect(),c.click()) });b.observe(document, {childList: !0,subtree: !0});setTimeout(function() {b.disconnect()}, 1E4)});
@@ -23536,6 +23538,7 @@ techwafer.com,moonshot.news,radiokp.ru,brestcity.com,aykiri.com.tr,yenicaggazete
 turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisgazetesi.com,kocaelikoz.com,enkocaeli.com##.block-pano > div.as
 turkuazgazetesi.net,yenialanya.com,mansetaydin.com,seskocaeli.com,kocaelibarisgazetesi.com,kocaelikoz.com,enkocaeli.com###_s_fan
 !
+howstuffworks.com###async-footer > div.w-full[data-background]
 newstula.ru##.post-content + div[style^="border:1px solid"]
 theculinarytravelguide.com##[data-ff-name="popupNoImage"]
 economist.com##._newsletterContentPromo
@@ -27650,6 +27653,7 @@ tvrain.ru##.menu3__foreign-agent-wrapper
 ! HINTS are at the end of Specific section
 !
 ! SECTION: Mobile apps - Specific
+news.nifty.com##.widget_official_full_app
 vk.sportsbull.jp##.banner-area
 hdi.zetfix.online##.fpage > div.ftitle + noindex
 livelaw.in###header_ad_mobile
