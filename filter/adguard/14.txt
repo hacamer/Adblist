@@ -1,8 +1,8 @@
-! Checksum: C0ERzAs1n8Nyu/3B7O1zPQ
+! Checksum: F/a2olrg8kDpzTHgeHK/aw
 ! Title: AdGuard Annoyances filter
 ! Description: Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.
-! Version: 2.1.27.47
-! TimeUpdated: 2022-07-26T09:03:04+00:00
+! Version: 2.1.27.49
+! TimeUpdated: 2022-07-26T10:30:39+00:00
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -14582,6 +14582,7 @@ digitaltrends.com#@#.text_ads_2
 !
 ! SECTION: Anti-adblock - Regular rules
 ! Do not forget about '!#safari_cb_affinity' section for exclusions
+bbw-chan.nl##div[id^="justall"]
 regex101.com##.jyUE5
 ||radio-online.com.ua/scripts/ads.js
 suncalc.org##div[id^="ads"] > p
@@ -27654,6 +27655,7 @@ tvrain.ru##.menu3__foreign-agent-wrapper
 ! HINTS are at the end of Specific section
 !
 ! SECTION: Mobile apps - Specific
+mts.by##.benefits + div.main-slider__item[style$="url(/local/templates/ns_mts/img/content/app.jpg);"]
 news.nifty.com##.widget_official_full_app
 vk.sportsbull.jp##.banner-area
 hdi.zetfix.online##.fpage > div.ftitle + noindex
